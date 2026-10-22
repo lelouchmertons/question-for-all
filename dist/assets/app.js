@@ -68,7 +68,7 @@ function renderTopicOptions() {
   const subjectId = els["subject-filter"].value;
   if (subjectId === "all") {
     els["topic-filter"].disabled = true;
-    els["topic-filter"].innerHTML = '<option value="all">Escolha uma matéria primeiro</option>';
+    els["topic-filter"].innerHTML = '<option value="all">Selecione a matéria</option>';
     return;
   }
   els["topic-filter"].disabled = false;

@@ -1,0 +1,13 @@
+{
+  "name": "Caderno 330 — Questões de Concurso",
+  "short_name": "Caderno 330",
+  "description": "Questões de concurso comentadas com filtros, progresso local e funcionamento offline.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f2ea",
+  "theme_color": "#145d70",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

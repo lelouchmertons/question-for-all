@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2ea">
+  <meta name="description" content="PWA de estudos com 330 questões de concurso comentadas, filtros por matéria e progresso local.">
+  <title>Caderno 330 — Questões de Concurso</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/styles.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Caderno 330 — início">
+      <span class="brand-number">330</span>
+      <span><strong>Caderno</strong><small>questões de concurso</small></span>
+    </a>
+    <div class="header-actions">
+      <span class="offline-state"><i></i> disponível offline</span>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+        <span class="sun" aria-hidden="true">☀</span>
+        <span class="theme-track"><i></i></span>
+        <span class="moon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="landing" id="inicio">
+      <div class="landing-copy">
+        <p class="eyebrow">ESTUDO ATIVO · GABARITO COMENTADO</p>
+        <h1>Questões para treinar.<br><em>Explicações para aprender.</em></h1>
+        <p class="lede">Escolha a matéria, filtre o assunto e responda no seu ritmo. O gabarito só aparece depois da confirmação, acompanhado de uma explicação completa.</p>
+        <div class="bank-summary" aria-label="Resumo do banco">
+          <span><b id="total-count">330</b> questões</span>
+          <span><b>4</b> matérias</span>
+          <span><b>100%</b> comentadas</span>
+        </div>
+      </div>
+
+      <section class="study-setup" aria-labelledby="setup-title">
+        <header>
+          <p>PREPARE SUA SESSÃO</p>
+          <h2 id="setup-title">O que você quer estudar?</h2>
+        </header>
+
+        <div class="setup-grid">
+          <label>
+            <span>Matéria</span>
+            <select id="subject-filter"></select>
+          </label>
+          <label>
+            <span>Assunto geral</span>
+            <select id="topic-filter"></select>
+          </label>
+          <label>
+            <span>Ordem das questões</span>
+            <select id="order-filter">
+              <option value="sequential">Sequencial</option>
+              <option value="random">Aleatória</option>
+              <option value="wrong">Somente questões erradas</option>
+            </select>
+          </label>
+          <label>
+            <span>Ir para uma questão</span>
+            <div class="number-field">
+              <span>Nº</span>
+              <input id="question-number" type="number" min="1" max="999" inputmode="numeric" placeholder="Ex.: 25">
+            </div>
+            <small>O número é considerado dentro da matéria escolhida.</small>
+          </label>
+        </div>
+
+        <p class="setup-message" id="setup-message" role="status"></p>
+        <div class="setup-actions">
+          <button class="primary-button" id="start-study" type="button">COMEÇAR A ESTUDAR <span>→</span></button>
+          <button class="secondary-button" type="button" disabled title="Recurso planejado para uma próxima versão">SIMULADO <span>EM BREVE</span></button>
+        </div>
+      </section>
+    </section>
+
+    <section class="dashboard" aria-labelledby="progress-title">
+      <div class="dashboard-heading">
+        <p class="eyebrow">SEU RITMO NESTE APARELHO</p>
+        <h2 id="progress-title">Progresso de estudo</h2>
+        <p>Os resultados ficam salvos localmente e continuam disponíveis mesmo sem internet.</p>
+      </div>
+      <div class="progress-cards">
+        <article><span>RESPONDIDAS</span><strong id="answered-count">0</strong><small>de 330 questões</small></article>
+        <article class="correct-card"><span>ACERTOS</span><strong id="correct-count">0</strong><small id="accuracy-rate">0% de aproveitamento</small></article>
+        <article class="wrong-card"><span>PARA REVISAR</span><strong id="wrong-count">0</strong><small>questões erradas</small></article>
+      </div>
+      <div class="progress-line" aria-label="Percentual do banco respondido"><i id="progress-fill"></i></div>
+      <button class="text-button" id="reset-progress" type="button">Apagar progresso deste aparelho</button>
+    </section>
+
+    <section class="study-view" id="estudo" hidden aria-live="polite">
+      <header class="study-toolbar">
+        <button class="back-button" id="back-home" type="button">← VOLTAR AOS FILTROS</button>
+        <div>
+          <strong id="session-position">Questão 1 de 60</strong>
+          <span id="session-label">Matemática · ordem sequencial</span>
+        </div>
+      </header>
+
+      <nav class="question-navigator" aria-label="Navegação pelas questões">
+        <div id="question-strip"></div>
+      </nav>
+      <div class="status-legend" aria-label="Legenda da navegação">
+        <span><i class="unanswered"></i> não respondida</span>
+        <span><i class="correct"></i> correta</span>
+        <span><i class="wrong"></i> incorreta</span>
+        <span><i class="current"></i> atual</span>
+      </div>
+
+      <article class="question-panel">
+        <header class="question-heading">
+          <div>
+            <p id="question-subject">MATEMÁTICA</p>
+            <h2>Questão <span id="question-display-number">01</span></h2>
+          </div>
+          <span class="topic-badge" id="question-topic">Porcentagem</span>
+        </header>
+
+        <div class="question-stem" id="question-stem"></div>
+        <fieldset class="alternatives" id="alternatives">
+          <legend class="sr-only">Escolha uma alternativa</legend>
+        </fieldset>
+
+        <div class="answer-actions">
+          <button class="primary-button" id="confirm-answer" type="button" disabled>CONFIRMAR RESPOSTA</button>
+          <span id="answer-hint">Selecione uma alternativa para continuar.</span>
+        </div>
+
+        <section class="feedback" id="feedback" hidden aria-labelledby="feedback-title">
+          <div class="feedback-result" id="feedback-result"></div>
+          <div class="explanation">
+            <p class="eyebrow">ENTENDA A RESPOSTA</p>
+            <h3 id="feedback-title">Explicação comentada</h3>
+            <div id="feedback-explanation"></div>
+            <dl>
+              <div><dt>Resposta correta</dt><dd id="correct-answer"></dd></div>
+              <div><dt>Assunto</dt><dd id="feedback-topic"></dd></div>
+            </dl>
+          </div>
+        </section>
+
+        <footer class="question-footer">
+          <button id="previous-question" type="button">← ANTERIOR</button>
+          <button id="next-question" type="button">PRÓXIMA →</button>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <strong>Caderno 330</strong>
+    <span>Banco inicial voltado ao concurso de Massaranduba · Farmacêutico · Nível Superior</span>
+  </footer>
+
+  <dialog id="reset-dialog">
+    <form method="dialog">
+      <p class="eyebrow">RECOMEÇAR</p>
+      <h2>Apagar todo o progresso?</h2>
+      <p>Acertos, erros e questões respondidas serão removidos somente deste aparelho. As questões do banco não serão apagadas.</p>
+      <div>
+        <button value="cancel">CANCELAR</button>
+        <button class="danger-button" value="confirm">APAGAR PROGRESSO</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="assets/app.js?v=1"></script>
+</body>
+</html>

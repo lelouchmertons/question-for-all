@@ -1,0 +1,51 @@
+{
+  "matematica": {
+    "count": 60,
+    "answerCounts": {
+      "A": 12,
+      "B": 12,
+      "C": 12,
+      "D": 12,
+      "E": 12
+    },
+    "correctUniquelyLongest": 3,
+    "suspiciousLengthGap": 0
+  },
+  "administracao-publica": {
+    "count": 50,
+    "answerCounts": {
+      "A": 10,
+      "B": 10,
+      "C": 10,
+      "D": 10,
+      "E": 10
+    },
+    "correctUniquelyLongest": 5,
+    "suspiciousLengthGap": 0
+  },
+  "portugues": {
+    "count": 60,
+    "answerCounts": {
+      "A": 12,
+      "B": 12,
+      "C": 12,
+      "D": 12,
+      "E": 12
+    },
+    "correctUniquelyLongest": 8,
+    "suspiciousLengthGap": 1
+  },
+  "farmacia": {
+    "count": 160,
+    "answerCounts": {
+      "A": 32,
+      "B": 32,
+      "C": 32,
+      "D": 32,
+      "E": 32
+    },
+    "correctUniquelyLongest": 28,
+    "suspiciousLengthGap": 3
+  }
+}
+

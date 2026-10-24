@@ -1,0 +1,3 @@
+.openai/
+.vercel/
+node_modules/

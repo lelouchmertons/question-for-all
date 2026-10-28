@@ -53,9 +53,9 @@ function balancedTargets(count, seedText) {
 
 const mathOverrides = {
   1: {
-    stem: "Dois fornecedores apresentaram condições para o mesmo insumo. O fornecedor A cobra R$ 2.500,00 e concede descontos sucessivos de 12% e 5%. O fornecedor B cobra R$ 2.420,00, concede desconto único de 14% e acrescenta frete de R$ 30,00. Qual proposta tem menor custo e qual é a diferença entre elas?",
-    options: ["A proposta A, por R$ 21,20.", "A proposta A, por R$ 9,20.", "A proposta B, por R$ 21,20.", "A proposta B, por R$ 9,20.", "As duas propostas têm o mesmo custo final."],
-    correct: "A proposta A, por R$ 21,20.",
+    stem: "Dois fornecedores apresentaram condições para o mesmo insumo. O fornecedor A cobra R$ 2.500,00 e concede descontos sucessivos de 12% e 5%. O fornecedor B cobra R$ 2.420,00, concede desconto único de 14% e acrescenta frete de R$ 30,00. Qual é a diferença absoluta entre os custos finais?",
+    options: ["R$ 9,20.", "R$ 12,00.", "R$ 18,80.", "R$ 21,20.", "R$ 30,00."],
+    correct: "R$ 21,20.",
     explanation: "Na proposta A, o custo é 2.500 × 0,88 × 0,95 = R$ 2.090,00. Na proposta B, o custo é 2.420 × 0,86 + 30 = R$ 2.111,20. Portanto, A é R$ 21,20 mais barata. Comparar apenas a soma nominal dos percentuais produziria uma conclusão incorreta."
   },
   2: {
@@ -138,55 +138,88 @@ const mathOverrides = {
   }
 };
 
-const rationaleTails = {
-  "administracao-publica": [
-    "sem alcançar as demais hipóteses previstas no regime jurídico aplicável",
-    "independentemente da competência, da finalidade e do procedimento exigidos para o ato",
-    "como se os requisitos legais pudessem ser afastados por conveniência administrativa",
-    "sem distinguir a regra geral das exceções expressamente previstas em lei",
-    "ainda que a situação concreta exigisse fundamentação ou controle específico",
-    "sem considerar os limites impostos pela Constituição e pela legislação pertinente",
-    "como se a atuação administrativa prescindisse de motivação e de controle",
-    "sem observar a repartição de atribuições definida pela norma aplicável"
-  ],
-  portugues: [
-    "sem que a alteração de estrutura modificasse a análise sintática exigida",
-    "independentemente do efeito de sentido produzido pelo contexto do enunciado",
-    "como se a posição do termo não interferisse em sua função no período",
-    "sem observar a norma-padrão ou a relação que os termos estabelecem entre si",
-    "ainda que a substituição modificasse a intenção comunicativa do texto",
-    "sem considerar a coesão e a coerência construídas no trecho apresentado",
-    "como se a forma linguística pudesse ser analisada fora de seu contexto de uso",
-    "independentemente da relação semântica indicada pela construção original"
-  ],
-  farmacia: [
-    "sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão",
-    "tratando esse único elemento como suficiente para orientar toda a conduta subsequente",
-    "independentemente de indicação, contraindicação, risco ou necessidade de monitoramento",
-    "sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo",
-    "como se a avaliação individual do paciente ou do produto não fosse necessária",
-    "sem observar protocolos, registros e critérios de segurança aplicáveis ao caso",
-    "ainda que existissem dados que justificassem reavaliação ou ajuste da conduta",
-    "como regra geral para todos os serviços, usuários e situações envolvidas"
-  ]
-};
-
-const correctContextTails = {
-  "administracao-publica": [
-    "A aplicação concreta deve observar os requisitos e os limites definidos pela norma pertinente.",
-    "O alcance da regra depende da competência, da finalidade e do procedimento exigidos no caso."
-  ],
-  portugues: [
-    "A leitura final deve considerar a função dos termos e o sentido do período completo.",
-    "A classificação decorre da relação que a forma linguística estabelece no contexto."
-  ],
-  farmacia: [
-    "A aplicação prática ainda exige avaliação, registro e acompanhamento adequados.",
-    "A decisão deve ser documentada e revista quando surgirem novos dados clínicos ou operacionais."
-  ]
-};
-
 const manualOptionSets = {
+  "administracao-publica-019": {
+    options: [
+      "direito líquido e certo ameaçado ou violado por ilegalidade ou abuso de poder, quando não amparado por habeas corpus ou habeas data",
+      "acesso ou correção de informações pessoais mantidas em registros de entidades governamentais ou de caráter público",
+      "patrimônio público, moralidade administrativa, meio ambiente ou patrimônio histórico e cultural lesados por ato administrativo",
+      "falta de norma regulamentadora que inviabilize o exercício de direito constitucional ou de prerrogativa ligada à cidadania",
+      "liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder"
+    ], correct: 0
+  },
+  "administracao-publica-022": {
+    options: [
+      "o estrangeiro que obtenha naturalização ordinária após cumprir o período de residência exigido pela legislação",
+      "o nascido no estrangeiro de pai ou mãe brasileira que seja registrado em repartição brasileira competente",
+      "o nascido no Brasil de pais estrangeiros que estejam no País em missão oficial de seu Estado de origem",
+      "o cidadão originário de país de língua portuguesa que resida no Brasil e requeira igualdade de direitos",
+      "o estrangeiro casado com pessoa brasileira, desde que mantenha residência permanente no território nacional"
+    ], correct: 1
+  },
+  "farmacia-010": {
+    options: [
+      "exclusivamente no início do plantão, antes de qualquer contato com pacientes, materiais ou superfícies",
+      "antes de procedimentos cirúrgicos, pois os demais contatos não exigem preparação das mãos",
+      "após tocar superfícies próximas ao paciente, mesmo sem contato direto com ele",
+      "ao final de cada turno, como substituição às oportunidades de higiene ao longo da assistência",
+      "quando houver sangue ou outra matéria orgânica visível nas mãos do profissional"
+    ], correct: 2
+  },
+  "farmacia-011": {
+    options: [
+      "entrega de instruções exclusivamente por escrito, sem oportunidade de dúvidas ou confirmação de entendimento",
+      "desconsideração de crenças, limitações financeiras e dificuldades práticas que interferem no uso do medicamento",
+      "uso prioritário de terminologia técnica, com orientação centrada em protocolos padronizados para todos os usuários",
+      "escuta ativa, linguagem compreensível e confirmação de que o usuário entendeu as orientações",
+      "interrupção precoce do relato para reduzir o tempo de atendimento e padronizar a consulta"
+    ], correct: 3
+  },
+  "farmacia-013": {
+    options: [
+      "concentrar as compras na esfera federal para padronizar a organização da assistência em todo o território",
+      "estimular a automedicação como estratégia prioritária para reduzir a procura por serviços e consultas de saúde",
+      "priorizar preparações manipuladas para ampliar a individualização terapêutica, mesmo quando houver opção industrializada adequada",
+      "garantir segurança, eficácia e qualidade dos medicamentos, promover o uso racional e assegurar o acesso da população aos medicamentos essenciais",
+      "organizar a assistência farmacêutica como atividade de abastecimento, separada das demais políticas de saúde"
+    ], correct: 3
+  },
+  "farmacia-014": {
+    options: [
+      "são destinados prioritariamente a doenças raras por envolverem tecnologias de maior complexidade",
+      "dispensam estudos de eficácia, segurança e qualidade por integrarem listas consideradas prioritárias",
+      "satisfazem as necessidades prioritárias de saúde da população e devem estar disponíveis em formas, quantidades e condições adequadas",
+      "são selecionados pelo menor custo de aquisição, desde que exista opção de efetividade semelhante",
+      "são obrigatoriamente novos, patenteados e vinculados às tecnologias lançadas mais recentemente"
+    ], correct: 2
+  },
+  "farmacia-018": {
+    options: [
+      "preservar identidade, integridade, qualidade e rastreabilidade dos produtos durante sua permanência no estoque",
+      "dispensar registros de entrada, saída, lote e validade quando houver contagem física periódica do estoque",
+      "concentrar o controle na prevenção de furtos, com inspeção periódica das embalagens e das datas de vencimento",
+      "permitir o contato direto das embalagens com piso e paredes para aproveitar integralmente o espaço disponível",
+      "adotar uma faixa de temperatura padronizada para todo o estoque, priorizando o controle operacional do almoxarifado"
+    ], correct: 0
+  },
+  "farmacia-020": {
+    options: [
+      "ato que dispensa análise da prescrição, desde que o produto solicitado esteja disponível no estoque",
+      "etapa administrativa com foco na entrega e no registro do produto ao usuário",
+      "transferência física do medicamento acompanhada apenas da conferência de quantidade e validade",
+      "etapa logística integrada ao controle de estoque, com orientação ao usuário restrita aos medicamentos de maior risco",
+      "ato profissional de fornecimento acompanhado da análise pertinente e de orientações necessárias ao uso seguro e efetivo"
+    ], correct: 4
+  },
+  "farmacia-021": {
+    options: [
+      "tratamento escolhido pelo menor preço unitário disponível.",
+      "vários medicamentos para ampliar a chance de resposta terapêutica.",
+      "medicamento habitual renovado sem reavaliação da necessidade clínica.",
+      "medicamento apropriado à necessidade clínica, em dose e duração adequadas, com informação correta e ao menor custo global compatível com qualidade.",
+      "a tecnologia mais recente disponível quando acrescenta conveniência ao tratamento."
+    ], correct: 3
+  },
   "farmacia-001": {
     options: [
       "o atendimento é reservado a brasileiros natos inscritos em programas públicos de assistência",
@@ -234,16 +267,16 @@ const manualOptionSets = {
   },
   "farmacia-010": {
     options: [
-      "somente antes de procedimentos cirúrgicos, pois os demais contatos não exigem preparação das mãos",
-      "apenas depois da retirada de luvas estéreis, independentemente do que ocorreu durante a assistência",
+      "antes de procedimentos cirúrgicos, pois os demais contatos não exigem preparação das mãos",
+      "ao final de cada turno, como substituição às oportunidades de higiene ao longo da assistência",
       "após tocar superfícies próximas ao paciente, mesmo sem contato direto com ele",
       "exclusivamente no início do plantão, antes de qualquer contato com pacientes, materiais ou superfícies",
-      "apenas quando houver sangue ou outra matéria orgânica visível nas mãos do profissional"
+      "quando houver sangue ou outra matéria orgânica visível nas mãos do profissional"
     ], correct: 2
   },
   "farmacia-011": {
     options: [
-      "uso deliberado de linguagem técnica, ainda que o usuário não consiga relacioná-la ao próprio tratamento",
+      "uso prioritário de terminologia técnica, com orientação centrada em protocolos padronizados para todos os usuários",
       "interrupção precoce do relato para reduzir o tempo de atendimento e padronizar a consulta",
       "entrega de instruções exclusivamente por escrito, sem oportunidade de dúvidas ou confirmação de entendimento",
       "escuta ativa, linguagem compreensível e confirmação de que o usuário entendeu as orientações",
@@ -263,17 +296,17 @@ const manualOptionSets = {
     options: [
       "concentrar todas as compras na esfera federal, sem participação dos Estados e Municípios na organização da assistência",
       "estimular a automedicação como estratégia prioritária para reduzir a procura por serviços e consultas de saúde",
-      "substituir os medicamentos industrializados por preparações manipuladas, independentemente da indicação clínica",
+      "priorizar preparações manipuladas para ampliar a individualização terapêutica, mesmo quando houver opção industrializada adequada",
       "garantir segurança, eficácia e qualidade dos medicamentos, promover o uso racional e assegurar o acesso da população aos medicamentos essenciais",
       "retirar a assistência farmacêutica das políticas de saúde e limitá-la ao abastecimento administrativo de produtos"
     ], correct: 3
   },
   "farmacia-014": {
     options: [
-      "são destinados exclusivamente a doenças raras, independentemente da carga de doença e da necessidade da população",
+      "são destinados prioritariamente a doenças raras por envolverem tecnologias de maior complexidade",
       "dispensam estudos de eficácia, segurança e qualidade por integrarem listas consideradas prioritárias",
       "satisfazem as necessidades prioritárias de saúde da população e devem estar disponíveis em formas, quantidades e condições adequadas",
-      "têm necessariamente o menor preço unitário do mercado, ainda que ofereçam qualidade ou efetividade inferiores",
+      "são selecionados pelo menor custo de aquisição, desde que exista opção de efetividade semelhante",
       "são obrigatoriamente novos, patenteados e vinculados às tecnologias lançadas mais recentemente"
     ], correct: 2
   },
@@ -307,8 +340,8 @@ const manualOptionSets = {
   "farmacia-018": {
     options: [
       "preservar identidade, integridade, qualidade e rastreabilidade dos produtos durante sua permanência no estoque",
-      "manter todos os medicamentos sob a mesma temperatura, independentemente das especificações do fabricante",
-      "impedir furtos, sem necessidade de controlar validade, condição das embalagens ou localização dos produtos",
+      "adotar uma faixa de temperatura padronizada para todo o estoque, priorizando o controle operacional do almoxarifado",
+      "concentrar o controle na prevenção de furtos, com inspeção periódica das embalagens e das datas de vencimento",
       "permitir o contato direto das embalagens com piso e paredes para aproveitar integralmente o espaço disponível",
       "dispensar registros de entrada, saída, lote e validade quando houver contagem física periódica do estoque"
     ], correct: 0
@@ -324,17 +357,17 @@ const manualOptionSets = {
   },
   "farmacia-020": {
     options: [
-      "etapa exclusivamente administrativa, sem responsabilidade clínica sobre a prescrição ou o uso pelo paciente",
+      "etapa administrativa com foco na entrega e no registro do produto ao usuário",
       "ato que dispensa análise da prescrição, desde que o produto solicitado esteja disponível no estoque",
       "simples transferência física de uma caixa ao usuário, sem diálogo sobre indicação, dose ou modo de uso",
-      "atividade limitada à cobrança e à baixa do estoque, independentemente da segurança do tratamento prescrito",
+      "etapa logística integrada ao controle de estoque, com orientação ao usuário restrita aos medicamentos de maior risco",
       "ato profissional de fornecimento acompanhado da análise pertinente e de orientações necessárias ao uso seguro e efetivo"
     ], correct: 4
   },
   "administracao-publica-019": {
     options: [
       "direito líquido e certo ameaçado ou violado por ilegalidade ou abuso de poder, quando não amparado por habeas corpus ou habeas data",
-      "liberdade de locomoção ameaçada ou restringida ilegalmente, ainda que não exista direito demonstrável por prova pré-constituída",
+      "liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder",
       "acesso ou correção de informações pessoais mantidas em registros de entidades governamentais ou de caráter público",
       "falta de norma regulamentadora que inviabilize o exercício de direito constitucional ou de prerrogativa ligada à cidadania",
       "patrimônio público, moralidade administrativa, meio ambiente ou patrimônio histórico e cultural lesados por ato administrativo"
@@ -356,7 +389,7 @@ const manualOptionSets = {
       "o estrangeiro que obtenha naturalização ordinária após cumprir o período de residência exigido pela legislação",
       "o nascido no estrangeiro de pai ou mãe brasileira que seja registrado em repartição brasileira competente",
       "o estrangeiro casado com pessoa brasileira, desde que mantenha residência permanente no território nacional",
-      "o nascido no Brasil de pais estrangeiros, ainda que ambos estejam no País a serviço do Estado de origem",
+      "o nascido no Brasil de pais estrangeiros que estejam no País em missão oficial de seu Estado de origem",
       "o cidadão originário de país de língua portuguesa que resida no Brasil e requeira igualdade de direitos"
     ],
     correct: 1
@@ -395,7 +428,7 @@ const manualOptionSets = {
     options: [
       "resposta nociva e não intencional a um medicamento utilizado em doses normalmente empregadas para profilaxia, diagnóstico ou tratamento",
       "evento evitável capaz de provocar uso inadequado do medicamento ou dano enquanto o produto está sob controle de profissionais ou usuários",
-      "qualquer ocorrência médica desfavorável durante o tratamento, ainda que não exista relação causal demonstrada com o medicamento",
+      "ocorrência clínica desfavorável atribuída ao medicamento após avaliação da relação causal com seu uso",
       "ausência do efeito terapêutico esperado apesar da utilização do medicamento na indicação, na dose e pelo período considerados adequados",
       "alteração de identidade, pureza, potência ou desempenho do produto decorrente de falha de fabricação, armazenamento ou transporte"
     ],
@@ -426,7 +459,7 @@ const manualOptionSets = {
       "somente identificação e assinatura do prescritor, pois concentração, quantidade e posologia podem ser completadas na dispensação",
       "legibilidade, identificação das partes, data, substância, concentração, forma, quantidade, posologia e requisitos próprios do receituário",
       "diagnóstico clínico completo e exames comprobatórios, dispensando a conferência da forma farmacêutica e da quantidade prescrita",
-      "existência do produto no estoque e compatibilidade com a padronização local, ainda que faltem informações obrigatórias do prescritor",
+      "existência do produto no estoque e compatibilidade com a padronização local, deixando a conferência dos dados formais para o registro posterior",
       "assinatura do paciente e autorização administrativa prévia, sem necessidade de verificar data, concentração ou duração do tratamento"
     ],
     correct: 1
@@ -504,10 +537,10 @@ const manualOptionSets = {
   "farmacia-137": {
     options: [
       "incorporar risco ao planejamento, acompanhar o fornecedor e ajustar justificadamente o estoque de segurança e as estratégias de aquisição",
-      "iniciar nova aquisição apenas no ponto de ruptura, evitando que a incerteza do fornecedor gere estoque superior ao consumo médio",
-      "desconsiderar atrasos anteriores quando o fornecedor apresenta menor preço, porque o julgamento da compra se limita à proposta atual",
-      "substituir preventivamente o item por produto não padronizado, ainda que não exista avaliação clínica, técnica ou econômica da alternativa",
-      "formar estoque para todo o exercício independentemente de validade, capacidade de armazenamento, consumo e possibilidade de mudança terapêutica"
+      "manter o estoque de segurança no parâmetro histórico, pois elevar seu nível pode comprometer o giro regular dos demais itens",
+      "priorizar a proposta de menor preço quando o fornecedor atual mantém regularidade documental e prazo contratual vigente",
+      "substituir preventivamente o item por alternativa disponível no mercado, com avaliação restrita à equivalência de apresentação",
+      "ampliar o estoque para cobrir o exercício inteiro, concentrando o monitoramento nas datas de recebimento de cada remessa"
     ],
     correct: 0
   },
@@ -530,6 +563,95 @@ const manualOptionSets = {
       "suspender definitivamente todas as estatinas, sem tentativa de ajuste de dose, mudança de fármaco ou investigação de fatores contribuintes"
     ],
     correct: 0
+  },
+  "farmacia-074": {
+    options: ["500 mL e 500 mL.", "666,7 mL e 333,3 mL.", "600 mL e 400 mL.", "400 mL e 600 mL.", "250 mL e 750 mL."],
+    correct: 1
+  },
+  "farmacia-075": {
+    options: ["1 g em 1 mL.", "10 g em 100 mL.", "1 mg em 100 mL.", "1 g em volume final de 100 mL.", "100 g em 1 mL."],
+    correct: 3
+  },
+  "farmacia-094": {
+    options: [
+      "absorver toda a dose administrada por via oral.",
+      "iniciar a desintegração de um comprimido.",
+      "reduzir pela metade a quantidade ou concentração do fármaco no organismo.",
+      "alcançar a concentração definida como tóxica.",
+      "eliminar uma quantidade fixa de fármaco por unidade de tempo."
+    ], correct: 2
+  },
+  "farmacia-095": {
+    options: [
+      "dez minutos após administração oral.",
+      "quatro a cinco meias-vidas.",
+      "uma única dose de ataque prevista no esquema terapêutico.",
+      "uma hora após o início da administração.",
+      "o momento de interrupção do tratamento."
+    ], correct: 1
+  },
+  "farmacia-110": {
+    options: [
+      "aumentar a absorção intestinal de glicose.",
+      "bloquear de forma irreversível os receptores de insulina.",
+      "reduzir a produção hepática de glicose e melhorar a sensibilidade à insulina, com baixo risco de hipoglicemia quando usada isoladamente.",
+      "reduzir a reserva funcional das células beta pancreáticas.",
+      "estimular a secreção basal de insulina e reduzir a produção hepática de glicose."
+    ], correct: 2
+  },
+  "farmacia-122": {
+    options: [
+      "E, quando o resíduo resultar do uso de objeto perfurante ou cortante.",
+      "A, por apresentar risco biológico decorrente de contato com material orgânico.",
+      "C, quando houver potencial de emissão de radiação ionizante.",
+      "D, após acondicionamento em embalagem destinada a resíduos comuns.",
+      "B, químico."
+    ], correct: 4
+  },
+  "farmacia-144": {
+    options: [
+      "reavaliar e descalonar o tratamento quando clinicamente possível.",
+      "acrescentar outro antimicrobiano para ampliar a cobertura empírica.",
+      "suspender toda a terapia antimicrobiana e aguardar nova prescrição.",
+      "manter a combinação inicial de amplo espectro até o fim do esquema previsto.",
+      "definir a escolha pelo resultado microbiológico sem integrar sítio de infecção e evolução clínica."
+    ], correct: 0
+  },
+  "farmacia-129": {
+    options: [
+      "0 °C.",
+      "8 °C a 15 °C.",
+      "−20 °C a −10 °C.",
+      "15 °C a 30 °C.",
+      "+2 °C a +8 °C."
+    ], correct: 4
+  },
+  "farmacia-130": {
+    options: [
+      "o dano pelo congelamento ocorre apenas em vacinas liofilizadas, pois as demais permanecem estáveis nessa condição",
+      "o descongelamento lento restabelece a qualidade quando a excursão foi identificada logo após sua ocorrência",
+      "o congelamento melhora a estabilidade de vacinas adsorvidas, reduzindo a necessidade de controle de temperatura",
+      "a exposição abaixo da faixa recomendada pode danificá-las irreversivelmente, mesmo quando a embalagem permanece íntegra",
+      "a avaliação do congelamento depende apenas da alteração de cor observada antes da aplicação"
+    ], correct: 3
+  },
+  "farmacia-131": {
+    options: [
+      "manter os produtos identificados e segregados na faixa recomendada, registrar o histórico e solicitar avaliação técnica antes do uso ou descarte",
+      "manter os produtos na faixa habitual enquanto se aguarda decisão, registrando apenas a leitura mais recente do equipamento",
+      "descartar os produtos após registrar a excursão e comunicar a ocorrência somente se houver perda visível nas embalagens",
+      "transferir os itens para equipamento alternativo e retomar o uso quando as leituras posteriores voltarem à faixa recomendada",
+      "corrigir a temperatura do equipamento, apagar o alarme e reiniciar a rotina de dispensação ao final do turno"
+    ], correct: 0
+  },
+  "farmacia-132": {
+    options: [
+      "pode ser utilizada por prazo adicional quando a temperatura registrada permaneceu estável durante todo o armazenamento",
+      "pode ser administrada mediante ciência do usuário, desde que a dose seja anotada no registro nominal de vacinação",
+      "pode ser vinculada a lote válido se ambos os produtos tiverem a mesma apresentação, diluente e fabricante",
+      "não deve ser administrada e precisa ser segregada, registrada e destinada conforme o gerenciamento aplicável",
+      "recupera sua validade quando submetida a congelamento controlado antes do retorno ao estoque"
+    ], correct: 3
   }
 };
 
@@ -556,22 +678,6 @@ function cleanImportedFooter(question) {
     .trim();
 }
 
-function addContextualQualifiers(question) {
-  const tails = rationaleTails[question.subjectId];
-  if (!tails) return;
-  const correct = question.options.find((option) => option.letter === question.answer);
-  const wrong = question.options.filter((option) => option.letter !== question.answer);
-  const wrongAverage = wrong.reduce((sum, option) => sum + option.text.length, 0) / wrong.length;
-  if (correct.text.length - wrongAverage <= 10) return;
-  const minimum = Math.max(54, Math.floor(correct.text.length * 0.7));
-  const start = hash(question.id) % tails.length;
-  wrong.forEach((option, index) => {
-    if (option.text.length >= minimum) return;
-    option.text = option.text.replace(/[.!?]+$/, "");
-    option.text += `, ${tails[(start + index) % tails.length]}.`;
-  });
-}
-
 function reorderOptions(question, targetLetter) {
   const correct = question.options.find((option) => option.letter === question.answer);
   const distractors = question.options
@@ -589,6 +695,7 @@ function reorderOptions(question, targetLetter) {
 
 function validate(bank) {
   const report = {};
+  const cluePhrases = /ainda que existissem|sem considerar as condições clínicas|sem observar protocolos|como regra geral para todos|independentemente de indicação|tratando esse único elemento|como se a avaliação individual|sem exigir conferência/i;
   for (const subject of bank.subjects) {
     const questions = bank.questions.filter((question) => question.subjectId === subject.id);
     const answerCounts = Object.fromEntries("ABCDE".split("").map((letter) => [letter, 0]));
@@ -597,6 +704,7 @@ function validate(bank) {
     for (const question of questions) {
       if (question.options.length !== 5) throw new Error(`${question.id}: quantidade inválida de alternativas.`);
       if (!question.options.some((option) => option.letter === question.answer)) throw new Error(`${question.id}: gabarito ausente.`);
+      if (question.options.some(option => cluePhrases.test(option.text))) throw new Error(`${question.id}: alternativa com pista editorial proibida.`);
       answerCounts[question.answer] += 1;
       const lengths = question.options.map((option) => option.text.length);
       const correctLength = question.options.find((option) => option.letter === question.answer).text.length;
@@ -618,7 +726,6 @@ for (const question of bank.questions) {
   cleanImportedFooter(question);
   applyMathOverrides(question);
   applyManualOptionSet(question);
-  addContextualQualifiers(question);
 }
 
 for (const subject of bank.subjects) {

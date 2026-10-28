@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-24T01:03:32.459Z",
+  "generatedAt": "2026-10-28T06:45:08.440Z",
   "subjects": [
     {
       "id": "matematica",
@@ -33,27 +33,27 @@ export const questionBank = {
       "number": 1,
       "topic": "Porcentagem - descontos sucessivos",
       "area": "Porcentagem",
-      "stem": "Dois fornecedores apresentaram condições para o mesmo insumo. O fornecedor A cobra R$ 2.500,00 e concede descontos sucessivos de 12% e 5%. O fornecedor B cobra R$ 2.420,00, concede desconto único de 14% e acrescenta frete de R$ 30,00. Qual proposta tem menor custo e qual é a diferença entre elas?",
+      "stem": "Dois fornecedores apresentaram condições para o mesmo insumo. O fornecedor A cobra R$ 2.500,00 e concede descontos sucessivos de 12% e 5%. O fornecedor B cobra R$ 2.420,00, concede desconto único de 14% e acrescenta frete de R$ 30,00. Qual é a diferença absoluta entre os custos finais?",
       "options": [
         {
           "letter": "A",
-          "text": "A proposta B, por R$ 9,20."
+          "text": "R$ 12,00."
         },
         {
           "letter": "B",
-          "text": "A proposta B, por R$ 21,20."
+          "text": "R$ 9,20."
         },
         {
           "letter": "C",
-          "text": "A proposta A, por R$ 21,20."
+          "text": "R$ 21,20."
         },
         {
           "letter": "D",
-          "text": "As duas propostas têm o mesmo custo final."
+          "text": "R$ 30,00."
         },
         {
           "letter": "E",
-          "text": "A proposta A, por R$ 9,20."
+          "text": "R$ 18,80."
         }
       ],
       "answer": "C",
@@ -1957,11 +1957,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Os dois sentidos são equivalentes e designam somente os agentes públicos, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "No sentido subjetivo, corresponde apenas às pessoas jurídicas da administração indireta."
         },
         {
           "letter": "B",
-          "text": "No sentido subjetivo, corresponde apenas às pessoas jurídicas da administração indireta, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "Os dois sentidos são equivalentes e designam somente os agentes públicos."
         },
         {
           "letter": "C",
@@ -1969,7 +1969,7 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "No sentido objetivo, designa exclusivamente os órgãos do Poder Executivo, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "No sentido objetivo, designa exclusivamente os órgãos do Poder Executivo."
         },
         {
           "letter": "E",
@@ -1989,11 +1989,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente precisa de autorização quando houver despesa pública."
+          "text": "pode agir sempre que não houver proibição expressa."
         },
         {
           "letter": "B",
-          "text": "pode agir sempre que não houver proibição expressa, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "somente precisa de autorização quando houver despesa pública."
         },
         {
           "letter": "C",
@@ -2053,15 +2053,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Permite que a Administração mantenha qualquer ato em sigilo por conveniência, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "Impõe divulgação irrestrita de todo documento público, sem exceções."
         },
         {
           "letter": "B",
-          "text": "Aplica-se apenas aos atos do Poder Executivo federal, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "Permite que a Administração mantenha qualquer ato em sigilo por conveniência."
         },
         {
           "letter": "C",
-          "text": "A divulgação oficial convalida automaticamente atos ilegais, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "A divulgação oficial convalida automaticamente atos ilegais."
         },
         {
           "letter": "D",
@@ -2069,7 +2069,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "Impõe divulgação irrestrita de todo documento público, sem exceções, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "Aplica-se apenas aos atos do Poder Executivo federal."
         }
       ],
       "answer": "D",
@@ -2085,11 +2085,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "obtenção de resultados a qualquer custo, mesmo contra a lei, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "priorização exclusiva da economia financeira."
         },
         {
           "letter": "B",
-          "text": "priorização exclusiva da economia financeira, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "substituição de todos os controles formais por metas de produtividade."
         },
         {
           "letter": "C",
@@ -2097,11 +2097,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "substituição de todos os controles formais por metas de produtividade, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "atendimento apenas dos usuários que produzam menor custo administrativo."
         },
         {
           "letter": "E",
-          "text": "atendimento apenas dos usuários que produzam menor custo administrativo."
+          "text": "obtenção de resultados a qualquer custo, mesmo contra a lei."
         }
       ],
       "answer": "C",
@@ -2117,7 +2117,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o parentesco elimina o conflito de interesses, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "o parentesco elimina o conflito de interesses."
         },
         {
           "letter": "B",
@@ -2125,15 +2125,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "informações públicas pertencem livremente ao servidor que as produziu, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "o dever ético somente existe quando há crime tipificado."
         },
         {
           "letter": "D",
-          "text": "o dever ético somente existe quando há crime tipificado, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "a ética funcional se limita ao cumprimento do horário de trabalho."
         },
         {
           "letter": "E",
-          "text": "a ética funcional se limita ao cumprimento do horário de trabalho, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "informações públicas pertencem livremente ao servidor que as produziu."
         }
       ],
       "answer": "B",
@@ -2149,7 +2149,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exclusiva do agente, sem participação da pessoa jurídica, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "exclusiva do agente, sem participação da pessoa jurídica."
         },
         {
           "letter": "B",
@@ -2157,15 +2157,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "penal, e não civil, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "inexistente quando o agente é servidor efetivo."
         },
         {
           "letter": "D",
-          "text": "subjetiva, exigindo sempre prova de dolo do agente, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "subjetiva, exigindo sempre prova de dolo do agente."
         },
         {
           "letter": "E",
-          "text": "inexistente quando o agente é servidor efetivo, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "penal, e não civil."
         }
       ],
       "answer": "B",
@@ -2185,19 +2185,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "limitam-se à responsabilidade administrativa, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "não podem coexistir."
         },
         {
           "letter": "C",
-          "text": "excluem o dever de reparar o dano, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "dependem sempre de condenação penal prévia."
         },
         {
           "letter": "D",
-          "text": "dependem sempre de condenação penal prévia, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "excluem o dever de reparar o dano."
         },
         {
           "letter": "E",
-          "text": "não podem coexistir, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "limitam-se à responsabilidade administrativa."
         }
       ],
       "answer": "A",
@@ -2213,15 +2213,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Prefeituras, câmaras municipais e empresas públicas, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "Prefeituras, câmaras municipais e empresas públicas."
         },
         {
           "letter": "B",
-          "text": "Secretarias, departamentos e fundações privadas comuns, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "Ministérios, secretarias e autarquias."
         },
         {
           "letter": "C",
-          "text": "Ministérios, secretarias e autarquias, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "Órgãos públicos, concessionárias e cartórios extrajudiciais."
         },
         {
           "letter": "D",
@@ -2229,7 +2229,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "Órgãos públicos, concessionárias e cartórios extrajudiciais."
+          "text": "Secretarias, departamentos e fundações privadas comuns."
         }
       ],
       "answer": "D",
@@ -2245,19 +2245,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "pode afastar livremente leis federais e estaduais, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "não integra a Federação."
         },
         {
           "letter": "B",
-          "text": "exerce apenas atribuições delegadas pela União, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "possui soberania equivalente à da República Federativa do Brasil."
         },
         {
           "letter": "C",
-          "text": "possui soberania equivalente à da República Federativa do Brasil, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "pode afastar livremente leis federais e estaduais."
         },
         {
           "letter": "D",
-          "text": "não integra a Federação, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "exerce apenas atribuições delegadas pela União."
         },
         {
           "letter": "E",
@@ -2309,19 +2309,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "adotar religião oficial, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "abolir a separação dos Poderes."
         },
         {
           "letter": "B",
-          "text": "conceder soberania aos Municípios, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "conceder soberania aos Municípios."
         },
         {
           "letter": "C",
-          "text": "restringir a livre iniciativa, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "adotar religião oficial."
         },
         {
           "letter": "D",
-          "text": "abolir a separação dos Poderes, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "restringir a livre iniciativa."
         },
         {
           "letter": "E",
@@ -2341,15 +2341,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Legislativo, Tribunal de Contas e Executivo, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "União, Estados e Municípios."
         },
         {
           "letter": "B",
-          "text": "Executivo, Ministério Público e Judiciário, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "Presidência, Congresso e Supremo Tribunal Federal, subordinados entre si."
         },
         {
           "letter": "C",
-          "text": "Presidência, Congresso e Supremo Tribunal Federal, subordinados entre si."
+          "text": "Legislativo, Tribunal de Contas e Executivo."
         },
         {
           "letter": "D",
@@ -2357,7 +2357,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "União, Estados e Municípios, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "Executivo, Ministério Público e Judiciário."
         }
       ],
       "answer": "D",
@@ -2373,11 +2373,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente brasileiros natos são iguais perante a lei, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "somente brasileiros natos são iguais perante a lei."
         },
         {
           "letter": "B",
-          "text": "a igualdade impede qualquer tratamento jurídico diferenciado, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "estrangeiros nunca são alcançados pelos direitos fundamentais."
         },
         {
           "letter": "C",
@@ -2385,11 +2385,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "a igualdade vale somente nas relações com o Poder Executivo, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "a igualdade vale somente nas relações com o Poder Executivo."
         },
         {
           "letter": "E",
-          "text": "estrangeiros nunca são alcançados pelos direitos fundamentais, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "a igualdade impede qualquer tratamento jurídico diferenciado."
         }
       ],
       "answer": "C",
@@ -2405,19 +2405,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente servidores públicos estão sujeitos à lei, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "qualquer autoridade pode criar obrigação por ordem verbal."
         },
         {
           "letter": "B",
-          "text": "decretos sempre podem substituir leis, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "a autonomia privada é ilimitada."
         },
         {
           "letter": "C",
-          "text": "qualquer autoridade pode criar obrigação por ordem verbal, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "somente servidores públicos estão sujeitos à lei."
         },
         {
           "letter": "D",
-          "text": "a autonomia privada é ilimitada, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "decretos sempre podem substituir leis."
         },
         {
           "letter": "E",
@@ -2437,11 +2437,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O Estado pode interferir livremente no funcionamento das associações, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "Associações lícitas de caráter paramilitar são expressamente permitidas."
         },
         {
           "letter": "B",
-          "text": "Associações lícitas de caráter paramilitar são expressamente permitidas."
+          "text": "O Estado pode interferir livremente no funcionamento das associações."
         },
         {
           "letter": "C",
@@ -2449,7 +2449,7 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "Toda pessoa é obrigada a permanecer associada após sua filiação, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "Toda pessoa é obrigada a permanecer associada após sua filiação."
         },
         {
           "letter": "E",
@@ -2501,15 +2501,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "todas as informações relativas a despesas públicas, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "apenas as informações solicitadas por estrangeiros."
         },
         {
           "letter": "B",
-          "text": "apenas as informações solicitadas por estrangeiros, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "todas as informações produzidas pelo Poder Executivo."
         },
         {
           "letter": "C",
-          "text": "todas as informações produzidas pelo Poder Executivo, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "as informações que possam revelar erro administrativo."
         },
         {
           "letter": "D",
@@ -2517,7 +2517,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "as informações que possam revelar erro administrativo."
+          "text": "todas as informações relativas a despesas públicas."
         }
       ],
       "answer": "D",
@@ -2549,7 +2549,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "liberdade de locomoção ameaçada ou restringida ilegalmente, ainda que não exista direito demonstrável por prova pré-constituída"
+          "text": "liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder"
         }
       ],
       "answer": "A",
@@ -2637,7 +2637,7 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "o nascido no Brasil de pais estrangeiros, ainda que ambos estejam no País a serviço do Estado de origem"
+          "text": "o nascido no Brasil de pais estrangeiros que estejam no País em missão oficial de seu Estado de origem"
         },
         {
           "letter": "D",
@@ -2669,15 +2669,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "todos os maiores de 18 anos, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "estrangeiros residentes no Brasil."
         },
         {
           "letter": "D",
-          "text": "estrangeiros residentes no Brasil, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "todos os maiores de 18 anos."
         },
         {
           "letter": "E",
-          "text": "apenas maiores de 70 anos, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "apenas maiores de 70 anos."
         }
       ],
       "answer": "A",
@@ -2725,19 +2725,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Estados, Municípios e comarcas, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "União, Estados e Territórios, excluídos os Municípios."
         },
         {
           "letter": "B",
-          "text": "União e Municípios, excluído o Distrito Federal, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "somente União e Estados."
         },
         {
           "letter": "C",
-          "text": "somente União e Estados, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "União e Municípios, excluído o Distrito Federal."
         },
         {
           "letter": "D",
-          "text": "União, Estados e Territórios, excluídos os Municípios, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "Estados, Municípios e comarcas."
         },
         {
           "letter": "E",
@@ -2757,7 +2757,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "editada unilateralmente pelo prefeito, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "editada unilateralmente pelo prefeito."
         },
         {
           "letter": "B",
@@ -2765,15 +2765,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "sujeita à sanção do governador, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "sujeita à sanção do governador."
         },
         {
           "letter": "D",
-          "text": "aprovada por maioria simples em turno único, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "aprovada pelo Congresso Nacional."
         },
         {
           "letter": "E",
-          "text": "aprovada pelo Congresso Nacional, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "aprovada por maioria simples em turno único."
         }
       ],
       "answer": "B",
@@ -2789,7 +2789,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "legislar privativamente sobre direito penal, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "declarar guerra e celebrar a paz."
         },
         {
           "letter": "B",
@@ -2797,15 +2797,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "emitir moeda, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "legislar privativamente sobre direito penal."
         },
         {
           "letter": "D",
-          "text": "declarar guerra e celebrar a paz, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "manter relações com Estados estrangeiros."
         },
         {
           "letter": "E",
-          "text": "manter relações com Estados estrangeiros, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "emitir moeda."
         }
       ],
       "answer": "B",
@@ -2853,7 +2853,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "as nomeações para qualquer emprego de empresa pública, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "as nomeações para qualquer emprego de empresa pública."
         },
         {
           "letter": "B",
@@ -2861,15 +2861,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "as nomeações de parentes de agentes políticos, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "as nomeações de parentes de agentes políticos."
         },
         {
           "letter": "D",
-          "text": "todas as contratações realizadas pelo prefeito, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "todas as contratações realizadas pelo prefeito."
         },
         {
           "letter": "E",
-          "text": "as funções permanentes de natureza técnica, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "as funções permanentes de natureza técnica."
         }
       ],
       "answer": "B",
@@ -3017,19 +3017,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "maioria absoluta, em dois turnos consecutivos no mesmo dia, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "maioria absoluta, em dois turnos consecutivos no mesmo dia."
         },
         {
           "letter": "C",
-          "text": "voto favorável de três quintos, em três turnos, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "unanimidade, com sanção do prefeito."
         },
         {
           "letter": "D",
-          "text": "unanimidade, com sanção do prefeito, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "voto favorável de três quintos, em três turnos."
         },
         {
           "letter": "E",
-          "text": "maioria simples, em turno único, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "maioria simples, em turno único."
         }
       ],
       "answer": "A",
@@ -3045,7 +3045,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "10% dos vereadores, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "3% dos moradores maiores de 16 anos."
         },
         {
           "letter": "B",
@@ -3053,15 +3053,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "3% dos moradores maiores de 16 anos, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "1% da população total."
         },
         {
           "letter": "D",
-          "text": "1% da população total, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "2% dos servidores municipais."
         },
         {
           "letter": "E",
-          "text": "2% dos servidores municipais, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "10% dos vereadores."
         }
       ],
       "answer": "B",
@@ -3173,11 +3173,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "45 dias da publicação, automaticamente prorrogados, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "45 dias da publicação, automaticamente prorrogados."
         },
         {
           "letter": "B",
-          "text": "5 dias da homologação, sem prorrogação, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "30 dias da nomeação, sem prorrogação."
         },
         {
           "letter": "C",
@@ -3185,11 +3185,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "10 dias da convocação, prorrogáveis por 5 dias, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "5 dias da homologação, sem prorrogação."
         },
         {
           "letter": "E",
-          "text": "30 dias da nomeação, sem prorrogação, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "10 dias da convocação, prorrogáveis por 5 dias."
         }
       ],
       "answer": "C",
@@ -3241,19 +3241,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "a promoção automática para cargo de maior vencimento, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "o retorno do aposentado por invalidez à atividade."
         },
         {
           "letter": "C",
-          "text": "o retorno do aposentado por invalidez à atividade, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "a reinvestidura após invalidação da demissão."
         },
         {
           "letter": "D",
-          "text": "a reinvestidura após invalidação da demissão, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "o retorno do servidor estável ao cargo anteriormente ocupado."
         },
         {
           "letter": "E",
-          "text": "o retorno do servidor estável ao cargo anteriormente ocupado, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "a promoção automática para cargo de maior vencimento."
         }
       ],
       "answer": "A",
@@ -3273,19 +3273,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "a volta do servidor demitido após invalidação da demissão, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "o retorno ao cargo anterior por reprovação em estágio probatório de outro cargo."
         },
         {
           "letter": "C",
-          "text": "o retorno ao cargo anterior por reprovação em estágio probatório de outro cargo, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "a disponibilidade remunerada por extinção do cargo."
         },
         {
           "letter": "D",
-          "text": "o deslocamento do servidor entre repartições, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "o deslocamento do servidor entre repartições."
         },
         {
           "letter": "E",
-          "text": "a disponibilidade remunerada por extinção do cargo, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "a volta do servidor demitido após invalidação da demissão."
         }
       ],
       "answer": "A",
@@ -3301,15 +3301,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "aquisição de nova escolaridade, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "aquisição de nova escolaridade."
         },
         {
           "letter": "B",
-          "text": "promoção por merecimento, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "licença para interesse particular."
         },
         {
           "letter": "C",
-          "text": "aposentadoria voluntária, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "promoção por merecimento."
         },
         {
           "letter": "D",
@@ -3317,7 +3317,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "licença para interesse particular, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "aposentadoria voluntária."
         }
       ],
       "answer": "D",
@@ -3333,19 +3333,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "demissão, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "suspensão."
         },
         {
           "letter": "B",
-          "text": "destituição de função de confiança, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "destituição de função de confiança."
         },
         {
           "letter": "C",
-          "text": "suspensão, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "advertência verbal ou escrita."
         },
         {
           "letter": "D",
-          "text": "advertência verbal ou escrita, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "demissão."
         },
         {
           "letter": "E",
@@ -3401,19 +3401,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o regime eleitoral municipal, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "apenas as contratações terceirizadas do Município."
         },
         {
           "letter": "C",
-          "text": "apenas as contratações terceirizadas do Município, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "exclusivamente o regime disciplinar dos vereadores."
         },
         {
           "letter": "D",
-          "text": "exclusivamente o regime disciplinar dos vereadores, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "o regime eleitoral municipal."
         },
         {
           "letter": "E",
-          "text": "a criação do Poder Judiciário municipal, independentemente da competência, da finalidade e do procedimento exigidos para o ato."
+          "text": "a criação do Poder Judiciário municipal."
         }
       ],
       "answer": "A",
@@ -3429,15 +3429,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "nomear livremente servidores para cargos efetivos, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "julgar crimes praticados por servidores."
         },
         {
           "letter": "B",
-          "text": "elaborar a Lei Orgânica do Município, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "substituir integralmente o setor de recursos humanos."
         },
         {
           "letter": "C",
-          "text": "julgar crimes praticados por servidores, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "nomear livremente servidores para cargos efetivos."
         },
         {
           "letter": "D",
@@ -3445,7 +3445,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "substituir integralmente o setor de recursos humanos, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "elaborar a Lei Orgânica do Município."
         }
       ],
       "answer": "D",
@@ -3461,11 +3461,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exclusivamente por decisões verbais de cada chefia, sem distinguir a regra geral das exceções expressamente previstas em lei."
+          "text": "sem relação com requisitos ou atribuições dos cargos."
         },
         {
           "letter": "B",
-          "text": "como cargos políticos eletivos, ainda que a situação concreta exigisse fundamentação ou controle específico."
+          "text": "exclusivamente por decisões verbais de cada chefia."
         },
         {
           "letter": "C",
@@ -3473,11 +3473,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "sem denominação ou referência remuneratória definida, como se os requisitos legais pudessem ser afastados por conveniência administrativa."
+          "text": "como cargos políticos eletivos."
         },
         {
           "letter": "E",
-          "text": "sem relação com requisitos ou atribuições dos cargos, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "sem denominação ou referência remuneratória definida."
         }
       ],
       "answer": "C",
@@ -3497,19 +3497,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Definição das penas aplicáveis a crimes federais, sem considerar os limites impostos pela Constituição e pela legislação pertinente."
+          "text": "Estruturação da carreira de magistrados estaduais."
         },
         {
           "letter": "C",
-          "text": "Regulamentação de associações privadas, sem alcançar as demais hipóteses previstas no regime jurídico aplicável."
+          "text": "Regulamentação de associações privadas."
         },
         {
           "letter": "D",
-          "text": "Estruturação da carreira de magistrados estaduais, sem observar a repartição de atribuições definida pela norma aplicável."
+          "text": "Organização dos partidos políticos."
         },
         {
           "letter": "E",
-          "text": "Organização dos partidos políticos, como se a atuação administrativa prescindisse de motivação e de controle."
+          "text": "Definição das penas aplicáveis a crimes federais."
         }
       ],
       "answer": "A",
@@ -3597,15 +3597,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "O limite financeiro foi ultrapassado pela perda dos produtos vencidos."
+          "text": "Todos os produtos adquiridos eram desnecessários."
         },
         {
           "letter": "D",
-          "text": "A unidade não realizou qualquer controle de estoque, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "O limite financeiro foi ultrapassado pela perda dos produtos vencidos."
         },
         {
           "letter": "E",
-          "text": "Todos os produtos adquiridos eram desnecessários, sem observar a norma-padrão ou a relação que os termos estabelecem entre si."
+          "text": "A unidade não realizou qualquer controle de estoque."
         }
       ],
       "answer": "B",
@@ -3685,7 +3685,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Casos complexos devem ser recusados; eles reduzem a produtividade registrada, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "Avaliações são sempre injustas; os indicadores não contêm dados numéricos."
         },
         {
           "letter": "B",
@@ -3693,15 +3693,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "Procedimentos numerosos geram maior benefício; casos complexos são raros, sem observar a norma-padrão ou a relação que os termos estabelecem entre si."
+          "text": "Procedimentos numerosos geram maior benefício; casos complexos são raros."
         },
         {
           "letter": "D",
-          "text": "Avaliações são sempre injustas; os indicadores não contêm dados numéricos, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "Casos complexos devem ser recusados; eles reduzem a produtividade registrada."
         },
         {
           "letter": "E",
-          "text": "Indicadores são inúteis; toda comparação entre unidades deve ser abolida, ainda que a substituição modificasse a intenção comunicativa do texto."
+          "text": "Indicadores são inúteis; toda comparação entre unidades deve ser abolida."
         }
       ],
       "answer": "B",
@@ -3817,19 +3817,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "de uma comparação explícita entre dois serviços, sem que a alteração de estrutura modificasse a análise sintática exigida."
+          "text": "de uma comparação explícita entre dois serviços."
         },
         {
           "letter": "C",
-          "text": "do emprego literal do adjetivo “exemplar”, independentemente da relação semântica indicada pela construção original."
+          "text": "do emprego literal do adjetivo “exemplar”."
         },
         {
           "letter": "D",
-          "text": "de uma ordem dirigida aos responsáveis pelo serviço, como se a posição do termo não interferisse em sua função no período."
+          "text": "da ausência de qualquer avaliação sobre o atendimento."
         },
         {
           "letter": "E",
-          "text": "da ausência de qualquer avaliação sobre o atendimento."
+          "text": "de uma ordem dirigida aos responsáveis pelo serviço."
         }
       ],
       "answer": "A",
@@ -3945,19 +3945,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "ambiguidade exclusivamente lexical, ainda que a substituição modificasse a intenção comunicativa do texto."
+          "text": "estrangeirismo sem adaptação."
         },
         {
           "letter": "C",
-          "text": "descrição objetiva de uma paisagem, independentemente da relação semântica indicada pela construção original."
+          "text": "discurso indireto livre."
         },
         {
           "letter": "D",
-          "text": "discurso indireto livre, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "ambiguidade exclusivamente lexical."
         },
         {
           "letter": "E",
-          "text": "estrangeirismo sem adaptação, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "descrição objetiva de uma paisagem."
         }
       ],
       "answer": "A",
@@ -3973,19 +3973,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "apresenta a conclusão como certeza absoluta, independentemente do efeito de sentido produzido pelo contexto do enunciado."
+          "text": "elimina a responsabilidade do autor pela afirmação."
         },
         {
           "letter": "B",
-          "text": "transforma o período em pergunta indireta, como se a posição do termo não interferisse em sua função no período."
+          "text": "apresenta a conclusão como certeza absoluta."
         },
         {
           "letter": "C",
-          "text": "marca uma ordem dirigida ao leitor, sem observar a norma-padrão ou a relação que os termos estabelecem entre si."
+          "text": "transforma o período em pergunta indireta."
         },
         {
           "letter": "D",
-          "text": "elimina a responsabilidade do autor pela afirmação, ainda que a substituição modificasse a intenção comunicativa do texto."
+          "text": "marca uma ordem dirigida ao leitor."
         },
         {
           "letter": "E",
@@ -4165,19 +4165,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Em I, afirma-se que todos os servidores participaram do treinamento, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "Em II, a oração entre vírgulas restringe o grupo de servidores."
         },
         {
           "letter": "B",
-          "text": "Em II, a oração entre vírgulas restringe o grupo de servidores, independentemente da relação semântica indicada pela construção original."
+          "text": "A retirada das vírgulas altera apenas a pronúncia, não a informação."
         },
         {
           "letter": "C",
-          "text": "A retirada das vírgulas altera apenas a pronúncia, não a informação, sem que a alteração de estrutura modificasse a análise sintática exigida."
+          "text": "Em I, afirma-se que todos os servidores participaram do treinamento."
         },
         {
           "letter": "D",
-          "text": "As duas frases possuem necessariamente o mesmo sentido, independentemente do efeito de sentido produzido pelo contexto do enunciado."
+          "text": "As duas frases possuem necessariamente o mesmo sentido."
         },
         {
           "letter": "E",
@@ -4229,19 +4229,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Caso a equipe conferiu o lote, evitaria o erro, sem observar a norma-padrão ou a relação que os termos estabelecem entre si."
-        },
-        {
-          "letter": "B",
           "text": "Quando a equipe conferisse o lote amanhã, evitará o erro."
         },
         {
+          "letter": "B",
+          "text": "Se a equipe conferir o lote, evitaria o erro."
+        },
+        {
           "letter": "C",
-          "text": "Se a equipe conferir o lote, evitaria o erro, independentemente do efeito de sentido produzido pelo contexto do enunciado."
+          "text": "Caso a equipe conferiu o lote, evitaria o erro."
         },
         {
           "letter": "D",
-          "text": "Se a equipe conferisse o lote, evitará o erro, sem que a alteração de estrutura modificasse a análise sintática exigida."
+          "text": "Se a equipe conferisse o lote, evitará o erro."
         },
         {
           "letter": "E",
@@ -4329,19 +4329,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "adjetivo e substantivo, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "substantivo e pronome relativo."
         },
         {
           "letter": "C",
-          "text": "pronome indefinido e adjetivo, independentemente da relação semântica indicada pela construção original."
+          "text": "pronome indefinido e adjetivo."
         },
         {
           "letter": "D",
-          "text": "numeral e advérbio de tempo, sem que a alteração de estrutura modificasse a análise sintática exigida."
+          "text": "adjetivo e substantivo."
         },
         {
           "letter": "E",
-          "text": "substantivo e pronome relativo, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "numeral e advérbio de tempo."
         }
       ],
       "answer": "A",
@@ -4457,19 +4457,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Tratam-se de medidas temporárias, ainda que a substituição modificasse a intenção comunicativa do texto."
+          "text": "Existe, no relatório, dados que precisam de revisão."
         },
         {
           "letter": "C",
-          "text": "Existe, no relatório, dados que precisam de revisão, sem observar a norma-padrão ou a relação que os termos estabelecem entre si."
+          "text": "Houveram diversas alterações no cronograma."
         },
         {
           "letter": "D",
-          "text": "Fazem três meses que o sistema foi implantado, independentemente do efeito de sentido produzido pelo contexto do enunciado."
+          "text": "Tratam-se de medidas temporárias."
         },
         {
           "letter": "E",
-          "text": "Houveram diversas alterações no cronograma, como se a posição do termo não interferisse em sua função no período."
+          "text": "Fazem três meses que o sistema foi implantado."
         }
       ],
       "answer": "A",
@@ -4517,7 +4517,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Havia menas solicitações naquele mês, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "É proibida entrada de pessoas não autorizadas."
         },
         {
           "letter": "B",
@@ -4525,15 +4525,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "Os documentos seguem incluso no processo, independentemente da relação semântica indicada pela construção original."
+          "text": "Havia menas solicitações naquele mês."
         },
         {
           "letter": "D",
-          "text": "Segue anexo as planilhas solicitadas, ainda que a substituição modificasse a intenção comunicativa do texto."
+          "text": "Os documentos seguem incluso no processo."
         },
         {
           "letter": "E",
-          "text": "É proibida entrada de pessoas não autorizadas, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "Segue anexo as planilhas solicitadas."
         }
       ],
       "answer": "B",
@@ -4613,19 +4613,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Tinha comunicado-lhe a decisão anteriormente, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "Se encaminhará amanhã o documento."
         },
         {
           "letter": "B",
-          "text": "Nunca informou-me o motivo da alteração, sem observar a norma-padrão ou a relação que os termos estabelecem entre si."
+          "text": "Nunca informou-me o motivo da alteração."
         },
         {
           "letter": "C",
-          "text": "O servidor que manifestou-se recebeu resposta, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "Tinha comunicado-lhe a decisão anteriormente."
         },
         {
           "letter": "D",
-          "text": "Se encaminhará amanhã o documento, ainda que a substituição modificasse a intenção comunicativa do texto."
+          "text": "O servidor que manifestou-se recebeu resposta."
         },
         {
           "letter": "E",
@@ -4709,19 +4709,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "indica que apenas parte dos usuários apresentou receita, independentemente da relação semântica indicada pela construção original."
+          "text": "é facultativo e não interfere no sentido."
         },
         {
           "letter": "B",
-          "text": "é facultativo e não interfere no sentido, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "torna “usuários” objeto direto da oração."
         },
         {
           "letter": "C",
-          "text": "torna “usuários” objeto direto da oração, independentemente do efeito de sentido produzido pelo contexto do enunciado."
+          "text": "elimina a relação entre apresentação da receita e atendimento."
         },
         {
           "letter": "D",
-          "text": "elimina a relação entre apresentação da receita e atendimento, sem que a alteração de estrutura modificasse a análise sintática exigida."
+          "text": "indica que apenas parte dos usuários apresentou receita."
         },
         {
           "letter": "E",
@@ -4745,7 +4745,7 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "A comissão decidiu: que o recurso era improcedente, como se a posição do termo não interferisse em sua função no período."
+          "text": "Foram analisados: os documentos encaminhados ontem."
         },
         {
           "letter": "C",
@@ -4753,11 +4753,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "Foram analisados: os documentos encaminhados ontem, independentemente do efeito de sentido produzido pelo contexto do enunciado."
+          "text": "A comissão decidiu: que o recurso era improcedente."
         },
         {
           "letter": "E",
-          "text": "A equipe verificou: e corrigiu todos os registros, independentemente da relação semântica indicada pela construção original."
+          "text": "A equipe verificou: e corrigiu todos os registros."
         }
       ],
       "answer": "A",
@@ -4777,11 +4777,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "A comissão decidiu; porque o prazo havia terminado, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "A comissão decidiu; porque o prazo havia terminado."
         },
         {
           "letter": "C",
-          "text": "Os dados; foram analisados cuidadosamente pela equipe."
+          "text": "A unidade recebeu; os produtos solicitados."
         },
         {
           "letter": "D",
@@ -4789,7 +4789,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "A unidade recebeu; os produtos solicitados, ainda que a substituição modificasse a intenção comunicativa do texto."
+          "text": "Os dados; foram analisados cuidadosamente pela equipe."
         }
       ],
       "answer": "D",
@@ -4869,11 +4869,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Os produtos vencidos foram separados dos demais, independentemente da relação semântica indicada pela construção original."
+          "text": "O atendimento foi suspenso por falta de energia."
         },
         {
           "letter": "B",
-          "text": "O atendimento foi suspenso por falta de energia, independentemente do efeito de sentido produzido pelo contexto do enunciado."
+          "text": "A comissão analisou cuidadosamente todos os recursos."
         },
         {
           "letter": "C",
@@ -4881,11 +4881,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "A equipe atualizou os dados na manhã de segunda-feira."
+          "text": "Os produtos vencidos foram separados dos demais."
         },
         {
           "letter": "E",
-          "text": "A comissão analisou cuidadosamente todos os recursos, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "A equipe atualizou os dados na manhã de segunda-feira."
         }
       ],
       "answer": "C",
@@ -4933,11 +4933,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "estrangeirismo incorporado ao português, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "estrangeirismo incorporado ao português."
         },
         {
           "letter": "B",
-          "text": "erro vocabular, pois somente pessoas podem cair, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "hiperônimo de “medicamento”."
         },
         {
           "letter": "C",
@@ -4945,7 +4945,7 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "hiperônimo de “medicamento”, independentemente da relação semântica indicada pela construção original."
+          "text": "erro vocabular, pois somente pessoas podem cair."
         },
         {
           "letter": "E",
@@ -4997,11 +4997,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O servidor começou à revisar os documentos, sem observar a norma-padrão ou a relação que os termos estabelecem entre si."
+          "text": "A orientação foi transmitida à todos os presentes."
         },
         {
           "letter": "B",
-          "text": "O atendimento ocorre de segunda à sexta, como se a posição do termo não interferisse em sua função no período."
+          "text": "O processo ficou sujeito à mudanças posteriores."
         },
         {
           "letter": "C",
@@ -5009,11 +5009,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "O processo ficou sujeito à mudanças posteriores, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "O servidor começou à revisar os documentos."
         },
         {
           "letter": "E",
-          "text": "A orientação foi transmitida à todos os presentes, ainda que a substituição modificasse a intenção comunicativa do texto."
+          "text": "O atendimento ocorre de segunda à sexta."
         }
       ],
       "answer": "C",
@@ -5257,19 +5257,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "metalinguística, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "poética."
         },
         {
           "letter": "C",
-          "text": "poética, independentemente da relação semântica indicada pela construção original."
+          "text": "fática."
         },
         {
           "letter": "D",
-          "text": "fática, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "emotiva."
         },
         {
           "letter": "E",
-          "text": "emotiva, sem que a alteração de estrutura modificasse a análise sintática exigida."
+          "text": "metalinguística."
         }
       ],
       "answer": "A",
@@ -5289,11 +5289,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "A gente viu que o negócio não estava legal e resolveu dar uma olhada."
+          "text": "Tava tudo certo, só que o sistema deu ruim no final."
         },
         {
           "letter": "C",
-          "text": "Tava tudo certo, só que o sistema deu ruim no final, sem considerar a coesão e a coerência construídas no trecho apresentado."
+          "text": "A gente viu que o negócio não estava legal e resolveu dar uma olhada."
         },
         {
           "letter": "D",
@@ -5321,19 +5321,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "composição por justaposição, independentemente da relação semântica indicada pela construção original."
+          "text": "composição por justaposição."
         },
         {
           "letter": "C",
-          "text": "derivação imprópria sem alteração formal, como se a posição do termo não interferisse em sua função no período."
+          "text": "composição por aglutinação."
         },
         {
           "letter": "D",
-          "text": "composição por aglutinação, sem que a alteração de estrutura modificasse a análise sintática exigida."
+          "text": "derivação imprópria sem alteração formal."
         },
         {
           "letter": "E",
-          "text": "abreviação vocabular, independentemente do efeito de sentido produzido pelo contexto do enunciado."
+          "text": "abreviação vocabular."
         }
       ],
       "answer": "A",
@@ -5349,11 +5349,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Neologismo é necessariamente uma palavra importada sem adaptação."
+          "text": "Latinismo é qualquer erro de tradução do latim."
         },
         {
           "letter": "B",
-          "text": "Estrangeirismo é toda palavra antiga que deixou de ser usada."
+          "text": "Neologismo é necessariamente uma palavra importada sem adaptação."
         },
         {
           "letter": "C",
@@ -5361,7 +5361,7 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "Latinismo é qualquer erro de tradução do latim, como se a forma linguística pudesse ser analisada fora de seu contexto de uso."
+          "text": "Estrangeirismo é toda palavra antiga que deixou de ser usada."
         },
         {
           "letter": "E",
@@ -5453,15 +5453,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "O texto defende que a digitalização tornou a conferência desnecessária."
+          "text": "“Embora” introduz uma causa para a eliminação da conferência."
         },
         {
           "letter": "D",
-          "text": "“Embora” introduz uma causa para a eliminação da conferência, sem observar a norma-padrão ou a relação que os termos estabelecem entre si."
+          "text": "O texto defende que a digitalização tornou a conferência desnecessária."
         },
         {
           "letter": "E",
-          "text": "O pronome “ela” retoma “necessidade”, ainda que a substituição modificasse a intenção comunicativa do texto."
+          "text": "O pronome “ela” retoma “necessidade”."
         }
       ],
       "answer": "A",
@@ -5513,11 +5513,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "a assistência deve priorizar exclusivamente intervenções curativas dirigidas a cada usuário já doente, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "todo produto ou tecnologia solicitada pelo usuário deve ser fornecido sem avaliação técnica, clínica ou de incorporação"
         },
         {
           "letter": "C",
-          "text": "todo produto ou tecnologia solicitada pelo usuário deve ser fornecido sem avaliação técnica, clínica ou de incorporação"
+          "text": "a prevenção, o tratamento e a reabilitação devem funcionar como ações independentes, conforme o setor responsável"
         },
         {
           "letter": "D",
@@ -5525,7 +5525,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "a prevenção, o tratamento e a reabilitação devem funcionar como ações independentes, conforme o setor responsável"
+          "text": "a assistência deve priorizar exclusivamente intervenções curativas dirigidas a cada usuário já doente"
         }
       ],
       "answer": "D",
@@ -5709,15 +5709,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "impossível em atendimentos ambulatoriais, domiciliares ou realizados em estabelecimentos de menor porte, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "obrigatoriamente presente antes da admissão do paciente e apenas reconhecida durante a internação"
         },
         {
           "letter": "D",
-          "text": "obrigatoriamente presente antes da admissão do paciente e apenas reconhecida durante a internação, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "causada exclusivamente por bactérias multirresistentes identificadas em culturas microbiológicas"
         },
         {
           "letter": "E",
-          "text": "causada exclusivamente por bactérias multirresistentes identificadas em culturas microbiológicas, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "impossível em atendimentos ambulatoriais, domiciliares ou realizados em estabelecimentos de menor porte"
         }
       ],
       "answer": "A",
@@ -5769,7 +5769,7 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "somente antes de procedimentos cirúrgicos, pois os demais contatos não exigem preparação das mãos"
+          "text": "antes de procedimentos cirúrgicos, pois os demais contatos não exigem preparação das mãos"
         },
         {
           "letter": "C",
@@ -5777,11 +5777,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "apenas depois da retirada de luvas estéreis, independentemente do que ocorreu durante a assistência"
+          "text": "quando houver sangue ou outra matéria orgânica visível nas mãos do profissional"
         },
         {
           "letter": "E",
-          "text": "apenas quando houver sangue ou outra matéria orgânica visível nas mãos do profissional"
+          "text": "ao final de cada turno, como substituição às oportunidades de higiene ao longo da assistência"
         }
       ],
       "answer": "C",
@@ -5805,7 +5805,7 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "uso deliberado de linguagem técnica, ainda que o usuário não consiga relacioná-la ao próprio tratamento"
+          "text": "interrupção precoce do relato para reduzir o tempo de atendimento e padronizar a consulta"
         },
         {
           "letter": "D",
@@ -5813,7 +5813,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "interrupção precoce do relato para reduzir o tempo de atendimento e padronizar a consulta"
+          "text": "uso prioritário de terminologia técnica, com orientação centrada em protocolos padronizados para todos os usuários"
         }
       ],
       "answer": "D",
@@ -5837,15 +5837,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "podem ser comunicadas livremente porque o atendimento foi realizado em unidade integrante do SUS, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
-        },
-        {
-          "letter": "D",
           "text": "podem ser divulgadas em redes sociais desde que o nome do paciente seja abreviado ou omitido na publicação"
         },
         {
+          "letter": "D",
+          "text": "podem ser comunicadas livremente porque o atendimento foi realizado em unidade integrante do SUS"
+        },
+        {
           "letter": "E",
-          "text": "deixam de ser sigilosas quando passam a integrar prontuário eletrônico acessado pela equipe do serviço, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "deixam de ser sigilosas quando passam a integrar prontuário eletrônico acessado pela equipe do serviço"
         }
       ],
       "answer": "A",
@@ -5861,15 +5861,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "concentrar todas as compras na esfera federal, sem participação dos Estados e Municípios na organização da assistência"
+          "text": "priorizar preparações manipuladas para ampliar a individualização terapêutica, mesmo quando houver opção industrializada adequada"
         },
         {
           "letter": "B",
-          "text": "estimular a automedicação como estratégia prioritária para reduzir a procura por serviços e consultas de saúde"
+          "text": "concentrar todas as compras na esfera federal, sem participação dos Estados e Municípios na organização da assistência"
         },
         {
           "letter": "C",
-          "text": "substituir os medicamentos industrializados por preparações manipuladas, independentemente da indicação clínica"
+          "text": "estimular a automedicação como estratégia prioritária para reduzir a procura por serviços e consultas de saúde"
         },
         {
           "letter": "D",
@@ -5893,11 +5893,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "são destinados exclusivamente a doenças raras, independentemente da carga de doença e da necessidade da população"
+          "text": "dispensam estudos de eficácia, segurança e qualidade por integrarem listas consideradas prioritárias"
         },
         {
           "letter": "B",
-          "text": "dispensam estudos de eficácia, segurança e qualidade por integrarem listas consideradas prioritárias"
+          "text": "são destinados prioritariamente a doenças raras por envolverem tecnologias de maior complexidade"
         },
         {
           "letter": "C",
@@ -5905,11 +5905,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "têm necessariamente o menor preço unitário do mercado, ainda que ofereçam qualidade ou efetividade inferiores"
+          "text": "são obrigatoriamente novos, patenteados e vinculados às tecnologias lançadas mais recentemente"
         },
         {
           "letter": "E",
-          "text": "são obrigatoriamente novos, patenteados e vinculados às tecnologias lançadas mais recentemente"
+          "text": "são selecionados pelo menor custo de aquisição, desde que exista opção de efetividade semelhante"
         }
       ],
       "answer": "C",
@@ -5929,11 +5929,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "por decisão isolada do setor financeiro, considerando apenas o limite orçamentário disponível para a compra"
+          "text": "pelo fornecedor vencedor da última licitação, que define os itens conforme sua linha comercial"
         },
         {
           "letter": "C",
-          "text": "pelo fornecedor vencedor da última licitação, que define os itens conforme sua linha comercial, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "por decisão isolada do setor financeiro, considerando apenas o limite orçamentário disponível para a compra"
         },
         {
           "letter": "D",
@@ -5957,15 +5957,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "redigir o edital de licitação e definir exclusivamente as regras jurídicas de contratação dos fornecedores"
+          "text": "escolher a alternativa terapêutica mais segura para cada indivíduo durante a consulta farmacêutica"
         },
         {
           "letter": "B",
-          "text": "escolher a alternativa terapêutica mais segura para cada indivíduo durante a consulta farmacêutica, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "redigir o edital de licitação e definir exclusivamente as regras jurídicas de contratação dos fornecedores"
         },
         {
           "letter": "C",
-          "text": "entregar o medicamento ao usuário e prestar orientação individual após a conferência da prescrição, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "entregar o medicamento ao usuário e prestar orientação individual após a conferência da prescrição"
         },
         {
           "letter": "D",
@@ -6029,15 +6029,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "impedir furtos, sem necessidade de controlar validade, condição das embalagens ou localização dos produtos"
-        },
-        {
-          "letter": "D",
           "text": "permitir o contato direto das embalagens com piso e paredes para aproveitar integralmente o espaço disponível"
         },
         {
+          "letter": "D",
+          "text": "adotar uma faixa de temperatura padronizada para todo o estoque, priorizando o controle operacional do almoxarifado"
+        },
+        {
           "letter": "E",
-          "text": "manter todos os medicamentos sob a mesma temperatura, independentemente das especificações do fabricante"
+          "text": "concentrar o controle na prevenção de furtos, com inspeção periódica das embalagens e das datas de vencimento"
         }
       ],
       "answer": "A",
@@ -6089,7 +6089,7 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "etapa exclusivamente administrativa, sem responsabilidade clínica sobre a prescrição ou o uso pelo paciente"
+          "text": "etapa administrativa com foco na entrega e no registro do produto ao usuário"
         },
         {
           "letter": "C",
@@ -6097,7 +6097,7 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "atividade limitada à cobrança e à baixa do estoque, independentemente da segurança do tratamento prescrito"
+          "text": "etapa logística integrada ao controle de estoque, com orientação ao usuário restrita aos medicamentos de maior risco"
         },
         {
           "letter": "E",
@@ -6117,15 +6117,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o produto mais novo disponível, independentemente de evidência, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "medicamento habitual renovado sem reavaliação da necessidade clínica."
         },
         {
           "letter": "B",
-          "text": "medicamento sem acompanhamento sempre que já o tenha utilizado, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "a tecnologia mais recente disponível quando acrescenta conveniência ao tratamento."
         },
         {
           "letter": "C",
-          "text": "vários medicamentos para aumentar a chance de resposta, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "vários medicamentos para ampliar a chance de resposta terapêutica."
         },
         {
           "letter": "D",
@@ -6133,7 +6133,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "tratamento escolhido apenas pelo menor preço unitário, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "tratamento escolhido pelo menor preço unitário disponível."
         }
       ],
       "answer": "D",
@@ -6153,19 +6153,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "substitui a avaliação clínica do paciente, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "é uma lista comercial de produtos mais vendidos."
         },
         {
           "letter": "C",
-          "text": "obriga todo Município a manter qualquer apresentação disponível no mercado, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "substitui a avaliação clínica do paciente."
         },
         {
           "letter": "D",
-          "text": "inclui somente medicamentos de uso hospitalar, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "obriga todo Município a manter qualquer apresentação disponível no mercado."
         },
         {
           "letter": "E",
-          "text": "é uma lista comercial de produtos mais vendidos, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "inclui somente medicamentos de uso hospitalar."
         }
       ],
       "answer": "A",
@@ -6217,19 +6217,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "eliminar a necessidade de atualização científica, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "substituir o julgamento clínico por decisões financeiras automáticas."
         },
         {
           "letter": "C",
-          "text": "liberar qualquer medicamento sem critérios diagnósticos, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "liberar qualquer medicamento sem critérios diagnósticos."
         },
         {
           "letter": "D",
-          "text": "impedir monitoramento de efetividade e segurança, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "eliminar a necessidade de atualização científica."
         },
         {
           "letter": "E",
-          "text": "substituir o julgamento clínico por decisões financeiras automáticas, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "impedir monitoramento de efetividade e segurança."
         }
       ],
       "answer": "A",
@@ -6245,7 +6245,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "escolher obrigatoriamente o de maior preço, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "ignorar interações e contraindicações."
         },
         {
           "letter": "B",
@@ -6253,15 +6253,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "utilizar propaganda como principal evidência, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "excluir dados epidemiológicos da decisão."
         },
         {
           "letter": "D",
-          "text": "ignorar interações e contraindicações, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "utilizar propaganda como principal evidência."
         },
         {
           "letter": "E",
-          "text": "excluir dados epidemiológicos da decisão, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "escolher obrigatoriamente o de maior preço."
         }
       ],
       "answer": "B",
@@ -6277,19 +6277,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "excluir tendências sazonais, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "excluir tendências sazonais."
         },
         {
           "letter": "B",
-          "text": "repetir mecanicamente o consumo anterior, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "considerar apenas a população cadastrada."
         },
         {
           "letter": "C",
-          "text": "desprezar períodos de desabastecimento, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "desprezar períodos de desabastecimento."
         },
         {
           "letter": "D",
-          "text": "considerar apenas a população cadastrada, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "repetir mecanicamente o consumo anterior."
         },
         {
           "letter": "E",
@@ -6313,19 +6313,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "preferência pessoal do comprador, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "preferência pessoal do comprador."
         },
         {
           "letter": "C",
-          "text": "propaganda de produtos recém-lançados, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "propaganda de produtos recém-lançados."
         },
         {
           "letter": "D",
-          "text": "espaço livre no almoxarifado, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "espaço livre no almoxarifado."
         },
         {
           "letter": "E",
-          "text": "preço do último fornecedor, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "preço do último fornecedor."
         }
       ],
       "answer": "A",
@@ -6341,15 +6341,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "permitir substituição unilateral por qualquer produto, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "omitir forma farmacêutica e concentração."
         },
         {
           "letter": "B",
-          "text": "dispensar exigências sanitárias, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "direcionar sem justificativa para uma marca."
         },
         {
           "letter": "C",
-          "text": "omitir forma farmacêutica e concentração, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "dispensar exigências sanitárias."
         },
         {
           "letter": "D",
@@ -6357,7 +6357,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "direcionar sem justificativa para uma marca, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "permitir substituição unilateral por qualquer produto."
         }
       ],
       "answer": "D",
@@ -6373,19 +6373,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "armazenar tudo antes de conferir, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "conferir somente o valor total da nota fiscal."
         },
         {
           "letter": "B",
-          "text": "misturar imediatamente produtos não conferidos ao estoque liberado, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "misturar imediatamente produtos não conferidos ao estoque liberado."
         },
         {
           "letter": "C",
-          "text": "conferir somente o valor total da nota fiscal, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "aceitar embalagens violadas se o número de unidades estiver correto."
         },
         {
           "letter": "D",
-          "text": "aceitar embalagens violadas se o número de unidades estiver correto, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "armazenar tudo antes de conferir."
         },
         {
           "letter": "E",
@@ -6405,19 +6405,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "à devolução automática ao fornecedor, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "ao descarte imediato de todo produto recebido."
         },
         {
           "letter": "B",
-          "text": "ao descarte imediato de todo produto recebido, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "à área de medicamentos de alto consumo."
         },
         {
           "letter": "C",
-          "text": "ao estoque disponível para dispensação urgente, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "à devolução automática ao fornecedor."
         },
         {
           "letter": "D",
-          "text": "à área de medicamentos de alto consumo, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "ao estoque disponível para dispensação urgente."
         },
         {
           "letter": "E",
@@ -6441,19 +6441,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "utilizar equipamento sem calibração ou verificação, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "ignorar períodos noturnos e fins de semana."
         },
         {
           "letter": "C",
-          "text": "ignorar períodos noturnos e fins de semana, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "utilizar equipamento sem calibração ou verificação."
         },
         {
           "letter": "D",
-          "text": "ocorrer somente quando houver reclamação, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "ocorrer somente quando houver reclamação."
         },
         {
           "letter": "E",
-          "text": "ser substituído pela sensação térmica do funcionário, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "ser substituído pela sensação térmica do funcionário."
         }
       ],
       "answer": "A",
@@ -6469,7 +6469,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "de menor consumo mensal, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "adquiridos pelo maior preço."
         },
         {
           "letter": "B",
@@ -6477,15 +6477,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "com maior quantidade física, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "com maior quantidade física."
         },
         {
           "letter": "D",
-          "text": "adquiridos pelo maior preço, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "recebidos do fornecedor mais antigo, qualquer que seja a validade."
         },
         {
           "letter": "E",
-          "text": "recebidos do fornecedor mais antigo, qualquer que seja a validade."
+          "text": "de menor consumo mensal."
         }
       ],
       "answer": "B",
@@ -6501,11 +6501,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ignorar a divergência se o item for barato, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "atribuir automaticamente a diferença a furto."
         },
         {
           "letter": "B",
-          "text": "alterar o sistema sem registro, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "ignorar a divergência se o item for barato."
         },
         {
           "letter": "C",
@@ -6513,11 +6513,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "lançar entrada fictícia para igualar os saldos, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "lançar entrada fictícia para igualar os saldos."
         },
         {
           "letter": "E",
-          "text": "atribuir automaticamente a diferença a furto, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "alterar o sistema sem registro."
         }
       ],
       "answer": "C",
@@ -6533,11 +6533,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "itens vencidos destinados ao descarte, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "muitos itens de baixo valor acumulado."
         },
         {
           "letter": "B",
-          "text": "exclusivamente medicamentos controlados, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "produtos necessariamente mais críticos clinicamente."
         },
         {
           "letter": "C",
@@ -6545,11 +6545,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "produtos necessariamente mais críticos clinicamente, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "itens vencidos destinados ao descarte."
         },
         {
           "letter": "E",
-          "text": "muitos itens de baixo valor acumulado, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "exclusivamente medicamentos controlados."
         }
       ],
       "answer": "C",
@@ -6569,19 +6569,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "apenas o volume físico ocupado, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "o valor financeiro de aquisição."
         },
         {
           "letter": "C",
-          "text": "o valor financeiro de aquisição, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "a ordem alfabética do princípio ativo."
         },
         {
           "letter": "D",
-          "text": "a idade do fornecedor, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "a idade do fornecedor."
         },
         {
           "letter": "E",
-          "text": "a ordem alfabética do princípio ativo, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "apenas o volume físico ocupado."
         }
       ],
       "answer": "A",
@@ -6597,11 +6597,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "apenas a validade do lote mais antigo, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "somente o espaço disponível."
         },
         {
           "letter": "B",
-          "text": "somente o espaço disponível, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "apenas a quantidade do último pedido."
         },
         {
           "letter": "C",
@@ -6609,11 +6609,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "apenas a quantidade do último pedido, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "apenas a validade do lote mais antigo."
         },
         {
           "letter": "E",
-          "text": "exclusivamente o preço de aquisição, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "exclusivamente o preço de aquisição."
         }
       ],
       "answer": "C",
@@ -6629,19 +6629,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "apenas o número de lotes vencidos, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "o percentual de prescrições atendidas."
         },
         {
           "letter": "B",
-          "text": "o percentual de prescrições atendidas, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "a temperatura média do almoxarifado."
         },
         {
           "letter": "C",
-          "text": "a quantidade de fornecedores cadastrados, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "a quantidade de fornecedores cadastrados."
         },
         {
           "letter": "D",
-          "text": "a temperatura média do almoxarifado, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "apenas o número de lotes vencidos."
         },
         {
           "letter": "E",
@@ -6661,19 +6661,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ocultar itens próximos do vencimento, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "aumentar todos os estoques de segurança."
         },
         {
           "letter": "B",
-          "text": "misturar itens vencidos aos utilizáveis, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "ocultar itens próximos do vencimento."
         },
         {
           "letter": "C",
-          "text": "suspender inventários, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "misturar itens vencidos aos utilizáveis."
         },
         {
           "letter": "D",
-          "text": "aumentar todos os estoques de segurança, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "suspender inventários."
         },
         {
           "letter": "E",
@@ -6697,19 +6697,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "aceitar qualquer excursão de temperatura sem investigação, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "transportar termolábeis sem monitoramento se o percurso for curto."
         },
         {
           "letter": "C",
-          "text": "dispensar avaliação de limpeza do veículo, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "colocar medicamentos diretamente em contato com gelo reciclável."
         },
         {
           "letter": "D",
-          "text": "colocar medicamentos diretamente em contato com gelo reciclável, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "dispensar avaliação de limpeza do veículo."
         },
         {
           "letter": "E",
-          "text": "transportar termolábeis sem monitoramento se o percurso for curto, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "aceitar qualquer excursão de temperatura sem investigação."
         }
       ],
       "answer": "A",
@@ -6725,11 +6725,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "recolocar medicamentos devolvidos diretamente no estoque dispensável, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "descartar qualquer resíduo em lixo comum."
         },
         {
           "letter": "B",
-          "text": "descartar qualquer resíduo em lixo comum, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "misturar resíduos químicos com recicláveis."
         },
         {
           "letter": "C",
@@ -6737,11 +6737,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "transferir toda responsabilidade ao usuário, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "recolocar medicamentos devolvidos diretamente no estoque dispensável."
         },
         {
           "letter": "E",
-          "text": "misturar resíduos químicos com recicláveis, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "transferir toda responsabilidade ao usuário."
         }
       ],
       "answer": "C",
@@ -6757,7 +6757,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "congelá-lo para compensar a exposição ao calor, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "apagar o registro se a embalagem estiver íntegra."
         },
         {
           "letter": "B",
@@ -6765,15 +6765,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "considerar apenas a temperatura no momento da descoberta, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "congelá-lo para compensar a exposição ao calor."
         },
         {
           "letter": "D",
-          "text": "dispensá-lo imediatamente para evitar desperdício, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "dispensá-lo imediatamente para evitar desperdício."
         },
         {
           "letter": "E",
-          "text": "apagar o registro se a embalagem estiver íntegra, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "considerar apenas a temperatura no momento da descoberta."
         }
       ],
       "answer": "B",
@@ -6789,19 +6789,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "número de prateleiras do almoxarifado, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "número de prateleiras do almoxarifado."
         },
         {
           "letter": "B",
-          "text": "percentual de itens classificados como genéricos, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "quantidade de funcionários por turno."
         },
         {
           "letter": "C",
-          "text": "custo de energia por metro quadrado, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "custo de energia por metro quadrado."
         },
         {
           "letter": "D",
-          "text": "quantidade de funcionários por turno, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "percentual de itens classificados como genéricos."
         },
         {
           "letter": "E",
@@ -6821,11 +6821,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "avaliar somente erros de fabricação antes do registro, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "divulgar comercialmente medicamentos novos."
         },
         {
           "letter": "B",
-          "text": "divulgar comercialmente medicamentos novos, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "controlar exclusivamente preços."
         },
         {
           "letter": "C",
@@ -6833,11 +6833,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "controlar exclusivamente preços, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "substituir ensaios clínicos por relatos espontâneos."
         },
         {
           "letter": "E",
-          "text": "substituir ensaios clínicos por relatos espontâneos, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "avaliar somente erros de fabricação antes do registro."
         }
       ],
       "answer": "C",
@@ -6853,11 +6853,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "qualquer reação com nexo causal comprovado, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "somente falha decorrente de erro de medicação."
         },
         {
           "letter": "B",
-          "text": "somente falha decorrente de erro de medicação, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "qualquer reação com nexo causal comprovado."
         },
         {
           "letter": "C",
@@ -6865,11 +6865,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "todo efeito terapêutico esperado, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "todo efeito terapêutico esperado."
         },
         {
           "letter": "E",
-          "text": "apenas evento que causa morte, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "apenas evento que causa morte."
         }
       ],
       "answer": "C",
@@ -6901,7 +6901,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "qualquer ocorrência médica desfavorável durante o tratamento, ainda que não exista relação causal demonstrada com o medicamento"
+          "text": "ocorrência clínica desfavorável atribuída ao medicamento após avaliação da relação causal com seu uso"
         }
       ],
       "answer": "B",
@@ -6949,7 +6949,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ordem automática de retirada do mercado, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "prova definitiva de causalidade."
         },
         {
           "letter": "B",
@@ -6957,15 +6957,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "qualquer propaganda negativa sobre um produto, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "apenas alteração laboratorial já descrita em bula."
         },
         {
           "letter": "D",
-          "text": "prova definitiva de causalidade, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "qualquer propaganda negativa sobre um produto."
         },
         {
           "letter": "E",
-          "text": "apenas alteração laboratorial já descrita em bula, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "ordem automática de retirada do mercado."
         }
       ],
       "answer": "B",
@@ -6981,11 +6981,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "comunicar somente ao fabricante, sem registro assistencial, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "aguardar certeza absoluta de causalidade."
         },
         {
           "letter": "B",
-          "text": "omitir o caso se o evento já constar em bula, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "descartar informações sobre lote e concomitantes."
         },
         {
           "letter": "C",
@@ -6993,11 +6993,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "descartar informações sobre lote e concomitantes, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "comunicar somente ao fabricante, sem registro assistencial."
         },
         {
           "letter": "E",
-          "text": "aguardar certeza absoluta de causalidade, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "omitir o caso se o evento já constar em bula."
         }
       ],
       "answer": "C",
@@ -7013,7 +7013,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "causa alternativa claramente suficiente, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "desconhecimento da dose utilizada."
         },
         {
           "letter": "B",
@@ -7021,15 +7021,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "exposição ocorrida após o desaparecimento definitivo do evento, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "ausência completa de relação temporal."
         },
         {
           "letter": "D",
-          "text": "ausência completa de relação temporal, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "exposição ocorrida após o desaparecimento definitivo do evento."
         },
         {
           "letter": "E",
-          "text": "desconhecimento da dose utilizada, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "causa alternativa claramente suficiente."
         }
       ],
       "answer": "B",
@@ -7045,19 +7045,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "punir individualmente todo erro sem analisar o processo, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "armazenar produtos semelhantes lado a lado sem identificação."
         },
         {
           "letter": "B",
-          "text": "armazenar produtos semelhantes lado a lado sem identificação, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "punir individualmente todo erro sem analisar o processo."
         },
         {
           "letter": "C",
-          "text": "retirar rótulos para reduzir poluição visual, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "confiar apenas na memória dos profissionais."
         },
         {
           "letter": "D",
-          "text": "confiar apenas na memória dos profissionais, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "retirar rótulos para reduzir poluição visual."
         },
         {
           "letter": "E",
@@ -7077,19 +7077,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "sujeitos apenas a controle especial, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "com baixa estabilidade térmica."
         },
         {
           "letter": "B",
-          "text": "indicados apenas em ambiente hospitalar, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "indicados apenas em ambiente hospitalar."
         },
         {
           "letter": "C",
-          "text": "com baixa estabilidade térmica, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "exclusivamente injetáveis de alto custo."
         },
         {
           "letter": "D",
-          "text": "exclusivamente injetáveis de alto custo, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "sujeitos apenas a controle especial."
         },
         {
           "letter": "E",
@@ -7109,15 +7109,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "são necessariamente proibidos na atenção primária, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "produzem erro com maior frequência em qualquer situação."
         },
         {
           "letter": "B",
-          "text": "não exigem protocolos específicos, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "não exigem protocolos específicos."
         },
         {
           "letter": "C",
-          "text": "podem ser identificados apenas pelo preço, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "podem ser identificados apenas pelo preço."
         },
         {
           "letter": "D",
@@ -7125,7 +7125,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "produzem erro com maior frequência em qualquer situação, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "são necessariamente proibidos na atenção primária."
         }
       ],
       "answer": "D",
@@ -7141,11 +7141,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "indústria farmacêutica, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "Poder Judiciário como atividade administrativa ordinária."
         },
         {
           "letter": "B",
-          "text": "Conselho Federal de Medicina exclusivamente, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "Conselho Federal de Medicina exclusivamente."
         },
         {
           "letter": "C",
@@ -7153,11 +7153,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "Poder Judiciário como atividade administrativa ordinária, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "associações comerciais locais."
         },
         {
           "letter": "E",
-          "text": "associações comerciais locais, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "indústria farmacêutica."
         }
       ],
       "answer": "C",
@@ -7173,11 +7173,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "responsabilidade apenas pelas vendas, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "ausência de dever sobre procedimentos escritos."
         },
         {
           "letter": "B",
-          "text": "ausência de dever sobre procedimentos escritos, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "mera cessão formal de nome ao estabelecimento."
         },
         {
           "letter": "C",
@@ -7185,11 +7185,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "transferência integral das obrigações ao proprietário, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "responsabilidade apenas pelas vendas."
         },
         {
           "letter": "E",
-          "text": "mera cessão formal de nome ao estabelecimento, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "transferência integral das obrigações ao proprietário."
         }
       ],
       "answer": "C",
@@ -7301,19 +7301,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "amarela em via única para qualquer lista, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "comum simples sem identificação do prescritor."
         },
         {
           "letter": "B",
-          "text": "verbal, sem documentação, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "verbal, sem documentação."
         },
         {
           "letter": "C",
-          "text": "comum simples sem identificação do prescritor, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "amarela em via única para qualquer lista."
         },
         {
           "letter": "D",
-          "text": "azul sem retenção, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "azul sem retenção."
         },
         {
           "letter": "E",
@@ -7337,19 +7337,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "aceitar cópia simples no lugar do original em todos os casos, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "aceitar cópia simples no lugar do original em todos os casos."
         },
         {
           "letter": "C",
-          "text": "dispensar quantidade ilimitada, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "dispensar quantidade ilimitada."
         },
         {
           "letter": "D",
-          "text": "alterar a prescrição sem contato com o prescritor, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "devolver a notificação sem qualquer registro."
         },
         {
           "letter": "E",
-          "text": "devolver a notificação sem qualquer registro, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "alterar a prescrição sem contato com o prescritor."
         }
       ],
       "answer": "A",
@@ -7429,15 +7429,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "dispensar inventários físicos, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "registrar somente perdas financeiras."
         },
         {
           "letter": "B",
-          "text": "registrar somente perdas financeiras, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "substituir a prescrição."
         },
         {
           "letter": "C",
-          "text": "substituir a prescrição, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "dispensar inventários físicos."
         },
         {
           "letter": "D",
@@ -7445,7 +7445,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "permitir ajustes sem justificativa, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "permitir ajustes sem justificativa."
         }
       ],
       "answer": "D",
@@ -7497,15 +7497,15 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "assinatura do paciente e autorização administrativa prévia, sem necessidade de verificar data, concentração ou duração do tratamento"
+          "text": "existência do produto no estoque e compatibilidade com a padronização local, deixando a conferência dos dados formais para o registro posterior"
         },
         {
           "letter": "C",
-          "text": "diagnóstico clínico completo e exames comprobatórios, dispensando a conferência da forma farmacêutica e da quantidade prescrita"
+          "text": "assinatura do paciente e autorização administrativa prévia, sem necessidade de verificar data, concentração ou duração do tratamento"
         },
         {
           "letter": "D",
-          "text": "existência do produto no estoque e compatibilidade com a padronização local, ainda que faltem informações obrigatórias do prescritor"
+          "text": "diagnóstico clínico completo e exames comprobatórios, dispensando a conferência da forma farmacêutica e da quantidade prescrita"
         },
         {
           "letter": "E",
@@ -7529,19 +7529,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "pedir ao paciente que decida, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "interpretar a palavra por semelhança gráfica."
         },
         {
           "letter": "C",
-          "text": "dispensar metade da embalagem, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "dispensar metade da embalagem."
         },
         {
           "letter": "D",
-          "text": "interpretar a palavra por semelhança gráfica, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "pedir ao paciente que decida."
         },
         {
           "letter": "E",
-          "text": "escolher a dose mais comum, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "escolher a dose mais comum."
         }
       ],
       "answer": "A",
@@ -7561,19 +7561,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "necessariamente constante de compêndio oficial, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "produzida industrialmente em larga escala sem prescrição individual."
         },
         {
           "letter": "C",
-          "text": "destinada apenas a uso veterinário, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "necessariamente constante de compêndio oficial."
         },
         {
           "letter": "D",
-          "text": "produzida industrialmente em larga escala sem prescrição individual, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "dispensada sem rotulagem."
         },
         {
           "letter": "E",
-          "text": "dispensada sem rotulagem, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "destinada apenas a uso veterinário."
         }
       ],
       "answer": "A",
@@ -7589,19 +7589,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "prescrita exclusivamente por nome de marca, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "feita sem procedimento escrito."
         },
         {
           "letter": "B",
-          "text": "feita sem procedimento escrito, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "isenta de controle de qualidade."
         },
         {
           "letter": "C",
-          "text": "isenta de controle de qualidade, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "produzida por qualquer estabelecimento não farmacêutico."
         },
         {
           "letter": "D",
-          "text": "produzida por qualquer estabelecimento não farmacêutico, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "prescrita exclusivamente por nome de marca."
         },
         {
           "letter": "E",
@@ -7621,7 +7621,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "umedecer obrigatoriamente com água, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "dispensar trituração e tamisação em qualquer caso."
         },
         {
           "letter": "B",
@@ -7629,15 +7629,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "misturar apenas a superfície do recipiente, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "misturar apenas a superfície do recipiente."
         },
         {
           "letter": "D",
-          "text": "adicionar todo o diluente de uma vez, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "adicionar todo o diluente de uma vez."
         },
         {
           "letter": "E",
-          "text": "dispensar trituração e tamisação em qualquer caso, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "umedecer obrigatoriamente com água."
         }
       ],
       "answer": "B",
@@ -7653,11 +7653,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "garantir estabilidade química por si só, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "garantir estabilidade química por si só."
         },
         {
           "letter": "B",
-          "text": "esterilizar o material, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "aumentar a umidade deliberadamente."
         },
         {
           "letter": "C",
@@ -7665,11 +7665,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "eliminar a necessidade de pesagem, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "esterilizar o material."
         },
         {
           "letter": "E",
-          "text": "aumentar a umidade deliberadamente, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "eliminar a necessidade de pesagem."
         }
       ],
       "answer": "C",
@@ -7717,15 +7717,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "conter partículas que flutuem permanentemente, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "dispensar orientação de agitação."
         },
         {
           "letter": "B",
-          "text": "formar sedimento compacto e irreversível, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "impedir completamente qualquer sedimentação por tempo ilimitado."
         },
         {
           "letter": "C",
-          "text": "impedir completamente qualquer sedimentação por tempo ilimitado, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "conter partículas que flutuem permanentemente."
         },
         {
           "letter": "D",
@@ -7733,7 +7733,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "dispensar orientação de agitação, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "formar sedimento compacto e irreversível."
         }
       ],
       "answer": "D",
@@ -7813,23 +7813,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "600 mL e 400 mL, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "500 mL e 500 mL."
         },
         {
           "letter": "B",
-          "text": "aproximadamente 666,7 mL e 333,3 mL."
+          "text": "666,7 mL e 333,3 mL."
         },
         {
           "letter": "C",
-          "text": "400 mL e 600 mL, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "250 mL e 750 mL."
         },
         {
           "letter": "D",
-          "text": "500 mL e 500 mL, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "600 mL e 400 mL."
         },
         {
           "letter": "E",
-          "text": "250 mL e 750 mL, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "400 mL e 600 mL."
         }
       ],
       "answer": "B",
@@ -7845,23 +7845,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "1 g de soluto em volume final de 100 mL."
+          "text": "1 g em volume final de 100 mL."
         },
         {
           "letter": "B",
-          "text": "1 g em 1 mL, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "1 g em 1 mL."
         },
         {
           "letter": "C",
-          "text": "10 g em 100 mL, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "1 mg em 100 mL."
         },
         {
           "letter": "D",
-          "text": "100 g em 1 mL, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "100 g em 1 mL."
         },
         {
           "letter": "E",
-          "text": "1 mg em 100 mL, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "10 g em 100 mL."
         }
       ],
       "answer": "A",
@@ -8041,19 +8041,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "suspensão oral, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "suspensão oral."
         },
         {
           "letter": "C",
-          "text": "solução tópica, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "solução tópica."
         },
         {
           "letter": "D",
-          "text": "gel hidrofílico, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "loção aquosa."
         },
         {
           "letter": "E",
-          "text": "loção aquosa, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "gel hidrofílico."
         }
       ],
       "answer": "A",
@@ -8069,11 +8069,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "dispensar a pesagem do diluente, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "preencher visualmente cada cápsula com quantidades diferentes."
         },
         {
           "letter": "B",
-          "text": "preencher visualmente cada cápsula com quantidades diferentes, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "misturar o fármaco apenas ao final."
         },
         {
           "letter": "C",
@@ -8085,7 +8085,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "misturar o fármaco apenas ao final, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "dispensar a pesagem do diluente."
         }
       ],
       "answer": "D",
@@ -8101,7 +8101,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a dureza mecânica isolada do comprimido, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "a esterilidade do comprimido."
         },
         {
           "letter": "B",
@@ -8109,15 +8109,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "apenas a identidade do corante, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "o volume aparente do pó antes da compressão."
         },
         {
           "letter": "D",
-          "text": "o volume aparente do pó antes da compressão, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "a dureza mecânica isolada do comprimido."
         },
         {
           "letter": "E",
-          "text": "a esterilidade do comprimido, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "apenas a identidade do corante."
         }
       ],
       "answer": "B",
@@ -8133,15 +8133,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "manipulação sem controle ambiental, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "ausência de rotulagem."
         },
         {
           "letter": "B",
-          "text": "conservação obrigatória à temperatura ambiente, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "conservação obrigatória à temperatura ambiente."
         },
         {
           "letter": "C",
-          "text": "apenas sabor agradável, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "manipulação sem controle ambiental."
         },
         {
           "letter": "D",
@@ -8149,7 +8149,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "ausência de rotulagem, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "apenas sabor agradável."
         }
       ],
       "answer": "D",
@@ -8169,19 +8169,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "apenas o preço unitário, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "o anonimato do produto."
         },
         {
           "letter": "C",
-          "text": "somente a embalagem externa original, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "somente a embalagem externa original."
         },
         {
           "letter": "D",
-          "text": "o anonimato do produto, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "apenas o preço unitário."
         },
         {
           "letter": "E",
-          "text": "exclusivamente a cor da forma farmacêutica, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "exclusivamente a cor da forma farmacêutica."
         }
       ],
       "answer": "A",
@@ -8197,11 +8197,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o prazo de validade por inspeção visual, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "a aceitabilidade de sabor."
         },
         {
           "letter": "B",
-          "text": "apenas a ausência de microrganismos, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "o prazo de validade por inspeção visual."
         },
         {
           "letter": "C",
@@ -8209,11 +8209,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "a aceitabilidade de sabor, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "somente a quantidade total de produto."
         },
         {
           "letter": "E",
-          "text": "somente a quantidade total de produto, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "apenas a ausência de microrganismos."
         }
       ],
       "answer": "C",
@@ -8293,15 +8293,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o tempo necessário para abrir o frasco, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "a quantidade de microrganismos viáveis apenas."
         },
         {
           "letter": "B",
-          "text": "exclusivamente a massa total da unidade, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "exclusivamente a massa total da unidade."
         },
         {
           "letter": "C",
-          "text": "somente a cor da embalagem, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "somente a cor da embalagem."
         },
         {
           "letter": "D",
@@ -8309,7 +8309,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "a quantidade de microrganismos viáveis apenas, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "o tempo necessário para abrir o frasco."
         }
       ],
       "answer": "D",
@@ -8325,19 +8325,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exclusivamente a validade administrativa da receita, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "somente o número de lote."
         },
         {
           "letter": "B",
-          "text": "apenas a densidade da embalagem secundária, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "exclusivamente a validade administrativa da receita."
         },
         {
           "letter": "C",
-          "text": "somente o número de lote, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "apenas a densidade da embalagem secundária."
         },
         {
           "letter": "D",
-          "text": "apenas a cor do rótulo, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "apenas a cor do rótulo."
         },
         {
           "letter": "E",
@@ -8357,11 +8357,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exclusivamente à ligação do fármaco ao receptor, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "exclusivamente à ligação do fármaco ao receptor."
         },
         {
           "letter": "B",
-          "text": "à fração do fármaco ligada a proteínas, somente, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "à fração do fármaco ligada a proteínas, somente."
         },
         {
           "letter": "C",
@@ -8369,11 +8369,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "ao tempo de desintegração da embalagem, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "ao tempo de desintegração da embalagem."
         },
         {
           "letter": "E",
-          "text": "apenas ao volume urinário produzido, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "apenas ao volume urinário produzido."
         }
       ],
       "answer": "C",
@@ -8389,15 +8389,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "permanecer exclusivamente no plasma, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "não atravessar membranas biológicas."
         },
         {
           "letter": "B",
-          "text": "ser necessariamente eliminado sem metabolização, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "possuir absorção oral de 100%."
         },
         {
           "letter": "C",
-          "text": "possuir absorção oral de 100%, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "permanecer exclusivamente no plasma."
         },
         {
           "letter": "D",
@@ -8405,7 +8405,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "não atravessar membranas biológicas, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "ser necessariamente eliminado sem metabolização."
         }
       ],
       "answer": "D",
@@ -8425,19 +8425,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o tempo para absorção completa, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "a fração ligada à albumina."
         },
         {
           "letter": "C",
-          "text": "a afinidade pelo receptor, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "a quantidade total de fármaco no organismo."
         },
         {
           "letter": "D",
-          "text": "a quantidade total de fármaco no organismo, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "o tempo para absorção completa."
         },
         {
           "letter": "E",
-          "text": "a fração ligada à albumina, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "a afinidade pelo receptor."
         }
       ],
       "answer": "A",
@@ -8453,11 +8453,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "alcançar obrigatoriamente concentração tóxica, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "absorver toda a dose administrada por via oral."
         },
         {
           "letter": "B",
-          "text": "absorver toda a dose oral, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "alcançar a concentração definida como tóxica."
         },
         {
           "letter": "C",
@@ -8465,11 +8465,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "iniciar a desintegração do comprimido, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "eliminar uma quantidade fixa de fármaco por unidade de tempo."
         },
         {
           "letter": "E",
-          "text": "eliminar uma quantidade fixa, independentemente da concentração."
+          "text": "iniciar a desintegração de um comprimido."
         }
       ],
       "answer": "C",
@@ -8493,15 +8493,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "uma única dose, independentemente do fármaco."
+          "text": "uma hora após o início da administração."
         },
         {
           "letter": "D",
-          "text": "exatamente uma hora para todos os medicamentos."
+          "text": "uma única dose de ataque prevista no esquema terapêutico."
         },
         {
           "letter": "E",
-          "text": "somente após interrupção do tratamento."
+          "text": "o momento de interrupção do tratamento."
         }
       ],
       "answer": "B",
@@ -8521,15 +8521,15 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "se deseja substituir todas as doses de manutenção, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "não há necessidade de efeito rápido."
         },
         {
           "letter": "C",
-          "text": "o fármaco não possui margem terapêutica, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "o fármaco não possui margem terapêutica."
         },
         {
           "letter": "D",
-          "text": "não há necessidade de efeito rápido, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "se deseja substituir todas as doses de manutenção."
         },
         {
           "letter": "E",
@@ -8549,19 +8549,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "elimina-se quantidade fixa por unidade de tempo, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "a meia-vida aumenta obrigatoriamente a cada dose."
         },
         {
           "letter": "B",
-          "text": "a meia-vida aumenta obrigatoriamente a cada dose, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "elimina-se quantidade fixa por unidade de tempo."
         },
         {
           "letter": "C",
-          "text": "a depuração é sempre zero, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "não existe relação com a concentração."
         },
         {
           "letter": "D",
-          "text": "não existe relação com a concentração, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "a depuração é sempre zero."
         },
         {
           "letter": "E",
@@ -8585,19 +8585,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "agir sempre após uma única dose, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "reduzir imediatamente a síntese das enzimas."
         },
         {
           "letter": "C",
-          "text": "aumentar a concentração de todo substrato, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "agir sempre após uma única dose."
         },
         {
           "letter": "D",
-          "text": "não apresentar efeito após ser suspenso, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "não apresentar efeito após ser suspenso."
         },
         {
           "letter": "E",
-          "text": "reduzir imediatamente a síntese das enzimas, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "aumentar a concentração de todo substrato."
         }
       ],
       "answer": "A",
@@ -8613,15 +8613,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "eliminar a possibilidade de toxicidade, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "eliminar a possibilidade de toxicidade."
         },
         {
           "letter": "B",
-          "text": "reduzir sempre sua concentração, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "reduzir sempre sua concentração."
         },
         {
           "letter": "C",
-          "text": "impedir qualquer absorção intestinal, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "aumentar necessariamente sua excreção renal."
         },
         {
           "letter": "D",
@@ -8629,7 +8629,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "aumentar necessariamente sua excreção renal, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "impedir qualquer absorção intestinal."
         }
       ],
       "answer": "D",
@@ -8645,15 +8645,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a ligação não pode ser saturável, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "a ligação não pode ser saturável."
         },
         {
           "letter": "B",
-          "text": "a fração ligada atravessa membranas mais rapidamente, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "albumina liga exclusivamente fármacos básicos."
         },
         {
           "letter": "C",
-          "text": "todo deslocamento proteico produz toxicidade clinicamente relevante, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "todo deslocamento proteico produz toxicidade clinicamente relevante."
         },
         {
           "letter": "D",
@@ -8661,7 +8661,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "albumina liga exclusivamente fármacos básicos, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "a fração ligada atravessa membranas mais rapidamente."
         }
       ],
       "answer": "D",
@@ -8677,19 +8677,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "necessariamente mais seguro, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "desprovido de afinidade."
         },
         {
           "letter": "B",
-          "text": "mais eficaz e menos potente, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "mais eficaz e menos potente."
         },
         {
           "letter": "C",
-          "text": "antagonista de Y, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "antagonista de Y."
         },
         {
           "letter": "D",
-          "text": "desprovido de afinidade, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "necessariamente mais seguro."
         },
         {
           "letter": "E",
@@ -8709,19 +8709,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "deslocar-se para a esquerda com maior potência, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "não sofrer qualquer alteração."
         },
         {
           "letter": "B",
-          "text": "não sofrer qualquer alteração, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "deslocar-se para a esquerda com maior potência."
         },
         {
           "letter": "C",
-          "text": "desaparecer irreversivelmente, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "desaparecer irreversivelmente."
         },
         {
           "letter": "D",
-          "text": "apresentar sempre maior efeito máximo, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "apresentar sempre maior efeito máximo."
         },
         {
           "letter": "E",
@@ -8741,7 +8741,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "possuem sempre baixa potência, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "são necessariamente ineficazes por via oral."
         },
         {
           "letter": "B",
@@ -8749,15 +8749,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "dispensam monitoramento, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "possuem sempre baixa potência."
         },
         {
           "letter": "D",
-          "text": "são necessariamente ineficazes por via oral, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "dispensam monitoramento."
         },
         {
           "letter": "E",
-          "text": "não produzem interações, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "não produzem interações."
         }
       ],
       "answer": "B",
@@ -8773,19 +8773,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "suspensão de todos os medicamentos, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "suspensão de todos os medicamentos."
         },
         {
           "letter": "B",
-          "text": "nenhuma alteração em qualquer hipótese, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "apenas mudança da cor da apresentação."
         },
         {
           "letter": "C",
-          "text": "aumento automático da dose de ataque e manutenção, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "nenhuma alteração em qualquer hipótese."
         },
         {
           "letter": "D",
-          "text": "apenas mudança da cor da apresentação, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "aumento automático da dose de ataque e manutenção."
         },
         {
           "letter": "E",
@@ -8805,7 +8805,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "neutralizar o efeito de ambos, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "neutralizar o efeito de ambos."
         },
         {
           "letter": "B",
@@ -8813,15 +8813,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "impedir lesão gastrointestinal, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "reduzir obrigatoriamente o risco hemorrágico."
         },
         {
           "letter": "D",
-          "text": "reduzir obrigatoriamente o risco hemorrágico, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "impedir lesão gastrointestinal."
         },
         {
           "letter": "E",
-          "text": "eliminar a necessidade de monitoramento, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "eliminar a necessidade de monitoramento."
         }
       ],
       "answer": "B",
@@ -8837,11 +8837,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "glaucoma agudo previsível, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "hipoglicemia obrigatória."
         },
         {
           "letter": "B",
-          "text": "supressão medular universal, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "hipocalemia intensa como regra."
         },
         {
           "letter": "C",
@@ -8849,11 +8849,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "hipocalemia intensa como regra, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "glaucoma agudo previsível."
         },
         {
           "letter": "E",
-          "text": "hipoglicemia obrigatória, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "supressão medular universal."
         }
       ],
       "answer": "C",
@@ -8869,15 +8869,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "hiperpotassemia como efeito predominante, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "hiperpotassemia como efeito predominante."
         },
         {
           "letter": "B",
-          "text": "supressão irreversível de insulina em todos os usuários."
+          "text": "broncodilatação direta."
         },
         {
           "letter": "C",
-          "text": "broncodilatação direta, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "supressão irreversível de insulina em todos os usuários."
         },
         {
           "letter": "D",
@@ -8885,7 +8885,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "hipercalemia obrigatória, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "hipercalemia obrigatória."
         }
       ],
       "answer": "D",
@@ -8901,19 +8901,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "hipoglicemia grave, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "hipoglicemia grave."
         },
         {
           "letter": "B",
-          "text": "broncoespasmo por bloqueio beta-2, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "broncoespasmo por bloqueio beta-2."
         },
         {
           "letter": "C",
-          "text": "tosse por aumento de bradicinina, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "tosse por aumento de bradicinina."
         },
         {
           "letter": "D",
-          "text": "agranulocitose inevitável, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "agranulocitose inevitável."
         },
         {
           "letter": "E",
@@ -8933,7 +8933,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "anlodipino, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "losartana."
         },
         {
           "letter": "B",
@@ -8941,15 +8941,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "enalapril exclusivamente por bloqueio beta-2, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "enalapril exclusivamente por bloqueio beta-2."
         },
         {
           "letter": "D",
-          "text": "losartana, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "anlodipino."
         },
         {
           "letter": "E",
-          "text": "hidroclorotiazida, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "hidroclorotiazida."
         }
       ],
       "answer": "B",
@@ -8965,23 +8965,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "aumentar absorção intestinal de glicose, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "aumentar a absorção intestinal de glicose."
         },
         {
           "letter": "B",
-          "text": "estimular secreção de insulina independentemente da glicose, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "bloquear de forma irreversível os receptores de insulina."
         },
         {
           "letter": "C",
-          "text": "reduzir produção hepática de glicose e melhorar sensibilidade à insulina, com baixo risco de hipoglicemia quando usada isoladamente."
+          "text": "reduzir a produção hepática de glicose e melhorar a sensibilidade à insulina, com baixo risco de hipoglicemia quando usada isoladamente."
         },
         {
           "letter": "D",
-          "text": "destruir células beta pancreáticas, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "estimular a secreção basal de insulina e reduzir a produção hepática de glicose."
         },
         {
           "letter": "E",
-          "text": "bloquear irreversivelmente receptores de insulina, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "reduzir a reserva funcional das células beta pancreáticas."
         }
       ],
       "answer": "C",
@@ -8997,7 +8997,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "broncodilatação excessiva, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "síndrome de abstinência opioide."
         },
         {
           "letter": "B",
@@ -9005,15 +9005,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "hiperpotassemia por antagonismo da aldosterona, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "broncodilatação excessiva."
         },
         {
           "letter": "D",
-          "text": "síndrome de abstinência opioide, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "hiperpotassemia por antagonismo da aldosterona."
         },
         {
           "letter": "E",
-          "text": "tosse seca, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "tosse seca."
         }
       ],
       "answer": "B",
@@ -9029,7 +9029,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "misturar qualquer insulina sem verificar compatibilidade, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "misturar qualquer insulina sem verificar compatibilidade."
         },
         {
           "letter": "B",
@@ -9037,15 +9037,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "reutilizar agulhas entre pacientes, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "armazenar canetas de pacientes diferentes juntas sem identificação."
         },
         {
           "letter": "D",
-          "text": "escrever “U” para unidades em qualquer situação, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "escrever “U” para unidades em qualquer situação."
         },
         {
           "letter": "E",
-          "text": "armazenar canetas de pacientes diferentes juntas sem identificação, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "reutilizar agulhas entre pacientes."
         }
       ],
       "answer": "B",
@@ -9061,11 +9061,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "alimento exclusivamente rico em gordura, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "dose adicional de insulina."
         },
         {
           "letter": "B",
-          "text": "dose adicional de insulina, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "apenas água."
         },
         {
           "letter": "C",
@@ -9073,11 +9073,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "apenas água, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "alimento exclusivamente rico em gordura."
         },
         {
           "letter": "E",
-          "text": "jejum até normalização espontânea, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "jejum até normalização espontânea."
         }
       ],
       "answer": "C",
@@ -9093,15 +9093,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "substituir toda automonitorização, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "diagnosticar hipoglicemia aguda em tempo real."
         },
         {
           "letter": "B",
-          "text": "diagnosticar hipoglicemia aguda em tempo real, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "medir glicemia apenas no instante da coleta."
         },
         {
           "letter": "C",
-          "text": "avaliar exclusivamente função renal, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "avaliar exclusivamente função renal."
         },
         {
           "letter": "D",
@@ -9109,7 +9109,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "medir glicemia apenas no instante da coleta, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "substituir toda automonitorização."
         }
       ],
       "answer": "D",
@@ -9125,11 +9125,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "usar antibiótico em toda infecção viral, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "escolher sempre o antimicrobiano de espectro mais amplo."
         },
         {
           "letter": "B",
-          "text": "interromper tratamento assim que houver primeira melhora, em qualquer esquema, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "compartilhar sobras com familiares."
         },
         {
           "letter": "C",
@@ -9137,11 +9137,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "compartilhar sobras com familiares, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "usar antibiótico em toda infecção viral."
         },
         {
           "letter": "E",
-          "text": "escolher sempre o antimicrobiano de espectro mais amplo, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "interromper tratamento assim que houver primeira melhora, em qualquer esquema."
         }
       ],
       "answer": "C",
@@ -9157,7 +9157,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "aumentar a complexidade do regime, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "culpar o paciente por qualquer falha."
         },
         {
           "letter": "B",
@@ -9165,15 +9165,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "culpar o paciente por qualquer falha, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "fornecer orientação padronizada sem perguntar dificuldades."
         },
         {
           "letter": "D",
-          "text": "ocultar possíveis efeitos adversos, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "ocultar possíveis efeitos adversos."
         },
         {
           "letter": "E",
-          "text": "fornecer orientação padronizada sem perguntar dificuldades, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "aumentar a complexidade do regime."
         }
       ],
       "answer": "B",
@@ -9193,19 +9193,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "substituir toda prescrição por medicamentos disponíveis no estoque, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "suspender todos os medicamentos na admissão."
         },
         {
           "letter": "C",
-          "text": "suspender todos os medicamentos na admissão, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "substituir toda prescrição por medicamentos disponíveis no estoque."
         },
         {
           "letter": "D",
-          "text": "copiar uma lista antiga sem confirmar com o paciente, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "copiar uma lista antiga sem confirmar com o paciente."
         },
         {
           "letter": "E",
-          "text": "conferir apenas medicamentos sujeitos a controle especial, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "conferir apenas medicamentos sujeitos a controle especial."
         }
       ],
       "answer": "A",
@@ -9253,7 +9253,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "controle de qualidade é desnecessário para material vegetal, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "toda planta pode ser substituída por outra de nome popular semelhante."
         },
         {
           "letter": "B",
@@ -9261,15 +9261,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "toda planta pode ser substituída por outra de nome popular semelhante, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "controle de qualidade é desnecessário para material vegetal."
         },
         {
           "letter": "D",
-          "text": "“Natural” significa ausência de risco, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "“Natural” significa ausência de risco."
         },
         {
           "letter": "E",
-          "text": "fitoterápicos não interagem com medicamentos, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "fitoterápicos não interagem com medicamentos."
         }
       ],
       "answer": "B",
@@ -9289,19 +9289,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "apenas a data de emissão da nota fiscal, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "exclusivamente o nome popular."
         },
         {
           "letter": "C",
-          "text": "somente o preço de compra, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "apenas a aparência externa da embalagem."
         },
         {
           "letter": "D",
-          "text": "exclusivamente o nome popular, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "apenas a data de emissão da nota fiscal."
         },
         {
           "letter": "E",
-          "text": "apenas a aparência externa da embalagem, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "somente o preço de compra."
         }
       ],
       "answer": "A",
@@ -9317,7 +9317,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O EPI elimina o risco na fonte e dispensa outras medidas, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "O EPI elimina o risco na fonte e dispensa outras medidas."
         },
         {
           "letter": "B",
@@ -9325,15 +9325,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "O EPI pode ser escolhido apenas pelo conforto, sem avaliação do risco, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "Respiradores e máscaras cirúrgicas são equivalentes para qualquer exposição."
         },
         {
           "letter": "D",
-          "text": "Um único tipo de luva protege contra todas as substâncias químicas, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "Um único tipo de luva protege contra todas as substâncias químicas."
         },
         {
           "letter": "E",
-          "text": "Respiradores e máscaras cirúrgicas são equivalentes para qualquer exposição, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "O EPI pode ser escolhido apenas pelo conforto, sem avaliação do risco."
         }
       ],
       "answer": "B",
@@ -9349,19 +9349,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "E, perfurocortante, independentemente da forma."
+          "text": "D, após acondicionamento em embalagem destinada a resíduos comuns."
         },
         {
           "letter": "B",
-          "text": "A, exclusivamente biológico."
+          "text": "C, quando houver potencial de emissão de radiação ionizante."
         },
         {
           "letter": "C",
-          "text": "C, radioativo."
+          "text": "E, quando o resíduo resultar do uso de objeto perfurante ou cortante."
         },
         {
           "letter": "D",
-          "text": "D, comum."
+          "text": "A, por apresentar risco biológico decorrente de contato com material orgânico."
         },
         {
           "letter": "E",
@@ -9413,11 +9413,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "substituir o controle de qualidade do fabricante, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "apenas arrecadar taxas."
         },
         {
           "letter": "B",
-          "text": "apenas arrecadar taxas, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "substituir o controle de qualidade do fabricante."
         },
         {
           "letter": "C",
@@ -9425,11 +9425,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "fiscalizar somente produtos importados, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "garantir lucro mínimo ao estabelecimento."
         },
         {
           "letter": "E",
-          "text": "garantir lucro mínimo ao estabelecimento, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "fiscalizar somente produtos importados."
         }
       ],
       "answer": "C",
@@ -9541,7 +9541,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "apenas no peso do paciente, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "na cor da serpente exclusivamente."
         },
         {
           "letter": "B",
@@ -9549,15 +9549,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "na via oral como primeira escolha, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "na via oral como primeira escolha."
         },
         {
           "letter": "D",
-          "text": "na cor da serpente exclusivamente, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "apenas no peso do paciente."
         },
         {
           "letter": "E",
-          "text": "no tempo de coagulação como único dado possível, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "no tempo de coagulação como único dado possível."
         }
       ],
       "answer": "B",
@@ -9573,23 +9573,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "8 °C a 15 °C, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "8 °C a 15 °C."
         },
         {
           "letter": "B",
-          "text": "-20 °C a -10 °C para todas, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "15 °C a 30 °C."
         },
         {
           "letter": "C",
-          "text": "temperatura ambiente até 30 °C, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "−20 °C a −10 °C."
         },
         {
           "letter": "D",
-          "text": "0 °C exatamente, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "0 °C."
         },
         {
           "letter": "E",
-          "text": "+2 °C a +8 °C, respeitadas as especificações de cada imunobiológico."
+          "text": "+2 °C a +8 °C."
         }
       ],
       "answer": "E",
@@ -9605,23 +9605,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente vacinas liofilizadas sofrem dano pelo frio, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "o dano pelo congelamento ocorre apenas em vacinas liofilizadas, pois as demais permanecem estáveis nessa condição"
         },
         {
           "letter": "B",
-          "text": "basta descongelar para restaurar a qualidade, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "o descongelamento lento restabelece a qualidade quando a excursão foi identificada logo após sua ocorrência"
         },
         {
           "letter": "C",
-          "text": "o congelamento pode ser avaliado apenas pela cor, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "o congelamento melhora a estabilidade de vacinas adsorvidas, reduzindo a necessidade de controle de temperatura"
         },
         {
           "letter": "D",
-          "text": "exposição a temperaturas abaixo da faixa pode danificá-las irreversivelmente, mesmo que a embalagem permaneça íntegra."
+          "text": "a exposição abaixo da faixa recomendada pode danificá-las irreversivelmente, mesmo quando a embalagem permanece íntegra"
         },
         {
           "letter": "E",
-          "text": "congelá-las aumenta a potência, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "a avaliação do congelamento depende apenas da alteração de cor observada antes da aplicação"
         }
       ],
       "answer": "D",
@@ -9637,23 +9637,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "manter os produtos identificados e segregados na faixa recomendada, registrar o histórico e solicitar avaliação técnica antes do uso ou descarte."
+          "text": "manter os produtos identificados e segregados na faixa recomendada, registrar o histórico e solicitar avaliação técnica antes do uso ou descarte"
         },
         {
           "letter": "B",
-          "text": "deixá-los em temperatura ambiente até decisão, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "transferir os itens para equipamento alternativo e retomar o uso quando as leituras posteriores voltarem à faixa recomendada"
         },
         {
           "letter": "C",
-          "text": "descartar sem registrar ou consultar o programa, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "descartar os produtos após registrar a excursão e comunicar a ocorrência somente se houver perda visível nas embalagens"
         },
         {
           "letter": "D",
-          "text": "aplicar rapidamente todas as doses, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "corrigir a temperatura do equipamento, apagar o alarme e reiniciar a rotina de dispensação ao final do turno"
         },
         {
           "letter": "E",
-          "text": "alterar o registro do equipamento, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "manter os produtos na faixa habitual enquanto se aguarda decisão, registrando apenas a leitura mais recente do equipamento"
         }
       ],
       "answer": "A",
@@ -9669,23 +9669,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "pode ser usada por mais 30 dias se refrigerada, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "pode ser vinculada a lote válido se ambos os produtos tiverem a mesma apresentação, diluente e fabricante"
         },
         {
           "letter": "B",
-          "text": "deve ser misturada a lote válido, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "recupera sua validade quando submetida a congelamento controlado antes do retorno ao estoque"
         },
         {
           "letter": "C",
-          "text": "recupera validade após congelamento, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "pode ser administrada mediante ciência do usuário, desde que a dose seja anotada no registro nominal de vacinação"
         },
         {
           "letter": "D",
-          "text": "não deve ser administrada e precisa ser segregada, registrada e destinada conforme o gerenciamento aplicável."
+          "text": "não deve ser administrada e precisa ser segregada, registrada e destinada conforme o gerenciamento aplicável"
         },
         {
           "letter": "E",
-          "text": "pode ser administrada com consentimento do paciente, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "pode ser utilizada por prazo adicional quando a temperatura registrada permaneceu estável durante todo o armazenamento"
         }
       ],
       "answer": "D",
@@ -9701,7 +9701,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "impedir participação do farmacêutico, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "impedir participação do farmacêutico."
         },
         {
           "letter": "B",
@@ -9709,15 +9709,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "dispensar conferência na administração, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "aumentar estoques descentralizados sem controle."
         },
         {
           "letter": "D",
-          "text": "eliminar toda necessidade de prescrição, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "dispensar conferência na administração."
         },
         {
           "letter": "E",
-          "text": "aumentar estoques descentralizados sem controle, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "eliminar toda necessidade de prescrição."
         }
       ],
       "answer": "B",
@@ -9733,7 +9733,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "reproduzir material promocional, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "considerar apenas o preço por caixa."
         },
         {
           "letter": "B",
@@ -9741,15 +9741,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "garantir resultado clínico individual, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "omitir conflitos de interesse."
         },
         {
           "letter": "D",
-          "text": "omitir conflitos de interesse, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "garantir resultado clínico individual."
         },
         {
           "letter": "E",
-          "text": "considerar apenas o preço por caixa, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "reproduzir material promocional."
         }
       ],
       "answer": "B",
@@ -9765,15 +9765,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "medida exclusiva de custo, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "medida exclusiva de custo."
         },
         {
           "letter": "B",
-          "text": "valor que substitui dados de população e tempo, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "sinônimo de dose prescrita diária individual."
         },
         {
           "letter": "C",
-          "text": "sinônimo de dose prescrita diária individual, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "valor que substitui dados de população e tempo."
         },
         {
           "letter": "D",
@@ -9781,7 +9781,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "a dose obrigatória para cada paciente, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "a dose obrigatória para cada paciente."
         }
       ],
       "answer": "D",
@@ -9797,19 +9797,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a embalagem atende ao solicitado, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "a embalagem atende ao solicitado."
         },
         {
           "letter": "B",
-          "text": "a documentação comprova a capacidade exigida, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "o fornecedor oferece prazo de entrega adequado."
         },
         {
           "letter": "C",
-          "text": "o fornecedor oferece prazo de entrega adequado, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "a documentação comprova a capacidade exigida."
         },
         {
           "letter": "D",
-          "text": "o medicamento possui registro válido, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "o medicamento possui registro válido."
         },
         {
           "letter": "E",
@@ -9833,19 +9833,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "formar estoque para todo o exercício independentemente de validade, capacidade de armazenamento, consumo e possibilidade de mudança terapêutica"
+          "text": "priorizar a proposta de menor preço quando o fornecedor atual mantém regularidade documental e prazo contratual vigente"
         },
         {
           "letter": "C",
-          "text": "iniciar nova aquisição apenas no ponto de ruptura, evitando que a incerteza do fornecedor gere estoque superior ao consumo médio"
+          "text": "substituir preventivamente o item por alternativa disponível no mercado, com avaliação restrita à equivalência de apresentação"
         },
         {
           "letter": "D",
-          "text": "desconsiderar atrasos anteriores quando o fornecedor apresenta menor preço, porque o julgamento da compra se limita à proposta atual"
+          "text": "manter o estoque de segurança no parâmetro histórico, pois elevar seu nível pode comprometer o giro regular dos demais itens"
         },
         {
           "letter": "E",
-          "text": "substituir preventivamente o item por produto não padronizado, ainda que não exista avaliação clínica, técnica ou econômica da alternativa"
+          "text": "ampliar o estoque para cobrir o exercício inteiro, concentrando o monitoramento nas datas de recebimento de cada remessa"
         }
       ],
       "answer": "A",
@@ -9861,15 +9861,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "assinar o ato e transferir verbalmente a responsabilidade, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "obedecer para preservar o vínculo empregatício."
         },
         {
           "letter": "B",
-          "text": "ocultar a irregularidade do usuário, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "ocultar a irregularidade do usuário."
         },
         {
           "letter": "C",
-          "text": "abandonar o estabelecimento sem qualquer providência, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "abandonar o estabelecimento sem qualquer providência."
         },
         {
           "letter": "D",
@@ -9877,7 +9877,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "obedecer para preservar o vínculo empregatício, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "assinar o ato e transferir verbalmente a responsabilidade."
         }
       ],
       "answer": "D",
@@ -9893,7 +9893,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "substituídos por memória verbal, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "divulgados em grupo de mensagens pessoal."
         },
         {
           "letter": "B",
@@ -9901,15 +9901,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "divulgados em grupo de mensagens pessoal, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "substituídos por memória verbal."
         },
         {
           "letter": "D",
-          "text": "acessíveis a qualquer funcionário sem necessidade, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "apagados após cada atendimento."
         },
         {
           "letter": "E",
-          "text": "apagados após cada atendimento, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "acessíveis a qualquer funcionário sem necessidade."
         }
       ],
       "answer": "B",
@@ -9957,15 +9957,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "assumir que toda reação possui o mesmo risco de reação cruzada, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "considerar todo efeito gastrointestinal como anafilaxia."
         },
         {
           "letter": "B",
-          "text": "considerar todo efeito gastrointestinal como anafilaxia, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "assumir que toda reação possui o mesmo risco de reação cruzada."
         },
         {
           "letter": "C",
-          "text": "retirar o registro sem entrevistar o paciente, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "retirar o registro sem entrevistar o paciente."
         },
         {
           "letter": "D",
@@ -9973,7 +9973,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "recomendar reexposição domiciliar sem avaliação, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "recomendar reexposição domiciliar sem avaliação."
         }
       ],
       "answer": "D",
@@ -9989,19 +9989,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "síndrome serotoninérgica, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "hepatotoxicidade isolada e edema periférico."
         },
         {
           "letter": "B",
-          "text": "hipoglicemia e tosse, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "síndrome serotoninérgica."
         },
         {
           "letter": "C",
-          "text": "constipação e retenção urinária, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "constipação e retenção urinária."
         },
         {
           "letter": "D",
-          "text": "hepatotoxicidade isolada e edema periférico, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "hipoglicemia e tosse."
         },
         {
           "letter": "E",
@@ -10021,11 +10021,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "antagonizar receptores opioides, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "impedir qualquer metabolismo hepático."
         },
         {
           "letter": "B",
-          "text": "produzir hipoglicemia por reposição de insulina, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "produzir hipoglicemia por reposição de insulina."
         },
         {
           "letter": "C",
@@ -10033,11 +10033,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "impedir qualquer metabolismo hepático, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "reduzir o intervalo QT e impedir arritmias."
         },
         {
           "letter": "E",
-          "text": "reduzir o intervalo QT e impedir arritmias, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "antagonizar receptores opioides."
         }
       ],
       "answer": "C",
@@ -10057,19 +10057,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "manter sempre a combinação mais ampla, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "acrescentar outro antimicrobiano para ampliar a cobertura empírica."
         },
         {
           "letter": "C",
-          "text": "ignorar sítio de infecção e evolução clínica, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "manter a combinação inicial de amplo espectro até o fim do esquema previsto."
         },
         {
           "letter": "D",
-          "text": "acrescentar antimicrobianos sem indicação, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "suspender toda a terapia antimicrobiana e aguardar nova prescrição."
         },
         {
           "letter": "E",
-          "text": "suspender imediatamente toda terapia, independentemente do quadro."
+          "text": "definir a escolha pelo resultado microbiológico sem integrar sítio de infecção e evolução clínica."
         }
       ],
       "answer": "A",
@@ -10085,15 +10085,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "broncodilatação e poliúria protetora, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "broncodilatação e poliúria protetora."
         },
         {
           "letter": "B",
-          "text": "apenas sonolência leve, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "redução universal da pressão arterial."
         },
         {
           "letter": "C",
-          "text": "redução universal da pressão arterial, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "apenas sonolência leve."
         },
         {
           "letter": "D",
@@ -10101,7 +10101,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "hipoglicemia por excesso de insulina, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "hipoglicemia por excesso de insulina."
         }
       ],
       "answer": "D",
@@ -10117,7 +10117,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "da inibição exclusiva da vitamina K, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "de reação alérgica em todos os pacientes."
         },
         {
           "letter": "B",
@@ -10125,15 +10125,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "da formação de cristais de cálcio, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "da formação de cristais de cálcio."
         },
         {
           "letter": "D",
-          "text": "de reação alérgica em todos os pacientes, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "da inibição exclusiva da vitamina K."
         },
         {
           "letter": "E",
-          "text": "do bloqueio irreversível de receptores opioides, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "do bloqueio irreversível de receptores opioides."
         }
       ],
       "answer": "B",
@@ -10153,19 +10153,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "hipertensão grave isolada, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "hiperreflexia generalizada."
         },
         {
           "letter": "C",
-          "text": "midríase com agitação, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "hipertensão grave isolada."
         },
         {
           "letter": "D",
-          "text": "hiperreflexia generalizada, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "midríase com agitação."
         },
         {
           "letter": "E",
-          "text": "diarreia intensa, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "diarreia intensa."
         }
       ],
       "answer": "A",
@@ -10221,15 +10221,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "deitar-se imediatamente, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "ingerir antibiótico preventivamente."
         },
         {
           "letter": "D",
-          "text": "ingerir antibiótico preventivamente, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "deitar-se imediatamente."
         },
         {
           "letter": "E",
-          "text": "aumentar a dose do broncodilatador por conta própria, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "aumentar a dose do broncodilatador por conta própria."
         }
       ],
       "answer": "A",
@@ -10245,19 +10245,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "cura da inflamação das vias aéreas, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "controle excelente e ausência de risco."
         },
         {
           "letter": "B",
-          "text": "controle excelente e ausência de risco, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "cura da inflamação das vias aéreas."
         },
         {
           "letter": "C",
-          "text": "contraindicação absoluta a corticosteroide inalatório, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "que o medicamento controlador deve ser retirado."
         },
         {
           "letter": "D",
-          "text": "que o medicamento controlador deve ser retirado, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "contraindicação absoluta a corticosteroide inalatório."
         },
         {
           "letter": "E",
@@ -10277,11 +10277,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ser interrompido abruptamente em todo paciente, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "dispensar investigação de sinais de alarme digestivo."
         },
         {
           "letter": "B",
-          "text": "ser associado obrigatoriamente a dois antiácidos, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "ser associado obrigatoriamente a dois antiácidos."
         },
         {
           "letter": "C",
@@ -10289,11 +10289,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "ser mantido indefinidamente sem indicação, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "ser mantido indefinidamente sem indicação."
         },
         {
           "letter": "E",
-          "text": "dispensar investigação de sinais de alarme digestivo, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "ser interrompido abruptamente em todo paciente."
         }
       ],
       "answer": "C",
@@ -10341,7 +10341,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "bradicinesia isolada de evolução anual, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "hiporreflexia flácida como achado obrigatório."
         },
         {
           "letter": "B",
@@ -10349,15 +10349,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "hiporreflexia flácida como achado obrigatório, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "apenas constipação crônica."
         },
         {
           "letter": "D",
-          "text": "apenas constipação crônica, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "bradicinesia isolada de evolução anual."
         },
         {
           "letter": "E",
-          "text": "ausência de febre em todos os casos, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "ausência de febre em todos os casos."
         }
       ],
       "answer": "B",
@@ -10373,15 +10373,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "função respiratória em associação com opioides, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "memória e atenção de modo sustentado."
         },
         {
           "letter": "B",
-          "text": "densidade óssea e equilíbrio, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "densidade óssea e equilíbrio."
         },
         {
           "letter": "C",
-          "text": "memória e atenção de modo sustentado, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "função respiratória em associação com opioides."
         },
         {
           "letter": "D",
@@ -10389,7 +10389,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "velocidade de reação, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "velocidade de reação."
         }
       ],
       "answer": "D",
@@ -10405,15 +10405,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "aumento controlado da ingestão hídrica, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "uso de solução salina sob indicação médica."
         },
         {
           "letter": "B",
-          "text": "redução isolada da dose de lítio, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "aumento controlado da ingestão hídrica."
         },
         {
           "letter": "C",
-          "text": "administração de carvão ativado em dose terapêutica, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "redução isolada da dose de lítio."
         },
         {
           "letter": "D",
@@ -10421,7 +10421,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "uso de solução salina sob indicação médica, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "administração de carvão ativado em dose terapêutica."
         }
       ],
       "answer": "D",
@@ -10437,11 +10437,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "eliminar definitivamente todos os vegetais, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "variar amplamente o consumo a cada dia."
         },
         {
           "letter": "B",
-          "text": "variar amplamente o consumo a cada dia, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "dobrar a dose quando consumir folhas verdes."
         },
         {
           "letter": "C",
@@ -10449,11 +10449,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "ignorar dieta e medicamentos concomitantes, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "ignorar dieta e medicamentos concomitantes."
         },
         {
           "letter": "E",
-          "text": "dobrar a dose quando consumir folhas verdes, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "eliminar definitivamente todos os vegetais."
         }
       ],
       "answer": "C",
@@ -10469,19 +10469,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "todos possuem efeito por várias semanas após uma dose, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "todos possuem efeito por várias semanas após uma dose."
         },
         {
           "letter": "B",
-          "text": "podem ser repostos em dose dupla por regra geral, sem exigir conferência documental, técnica ou assistencial antes da continuidade do processo."
+          "text": "não dependem de função renal."
         },
         {
           "letter": "C",
-          "text": "não dependem de função renal, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "podem ser repostos em dose dupla por regra geral."
         },
         {
           "letter": "D",
-          "text": "não existe risco trombótico quando uma dose é omitida, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "não existe risco trombótico quando uma dose é omitida."
         },
         {
           "letter": "E",
@@ -10501,19 +10501,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "vacina inativada, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "vacina inativada."
         },
         {
           "letter": "B",
-          "text": "oxigênio inalatório, sem observar protocolos, registros e critérios de segurança aplicáveis ao caso."
+          "text": "oxigênio inalatório."
         },
         {
           "letter": "C",
-          "text": "água em jejum, como se a avaliação individual do paciente ou do produto não fosse necessária."
+          "text": "água em jejum."
         },
         {
           "letter": "D",
-          "text": "solução fisiológica tópica, ainda que existissem dados que justificassem reavaliação ou ajuste da conduta."
+          "text": "solução fisiológica tópica."
         },
         {
           "letter": "E",
@@ -10533,15 +10533,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o soro demora semanas para iniciar efeito, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "ambos produzem sempre memória imunológica duradoura."
         },
         {
           "letter": "B",
-          "text": "vacinas contêm necessariamente anticorpos prontos, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "o soro demora semanas para iniciar efeito."
         },
         {
           "letter": "C",
-          "text": "ambos produzem sempre memória imunológica duradoura, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "vacinas contêm necessariamente anticorpos prontos."
         },
         {
           "letter": "D",
@@ -10549,7 +10549,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "soros nunca causam reações de hipersensibilidade, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "soros nunca causam reações de hipersensibilidade."
         }
       ],
       "answer": "D",
@@ -10569,19 +10569,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "repreender o paciente e encerrar o atendimento, como regra geral para todos os serviços, usuários e situações envolvidas."
+          "text": "confirmar a dose dobrada sem avaliação."
         },
         {
           "letter": "C",
-          "text": "reiniciar a anlodipino na dose máxima sem conversar com a equipe, independentemente de indicação, contraindicação, risco ou necessidade de monitoramento."
+          "text": "recomendar diurético por conta própria em qualquer situação."
         },
         {
           "letter": "D",
-          "text": "confirmar a dose dobrada sem avaliação, sem considerar as condições clínicas, sanitárias ou operacionais que podem modificar a decisão."
+          "text": "reiniciar a anlodipino na dose máxima sem conversar com a equipe."
         },
         {
           "letter": "E",
-          "text": "recomendar diurético por conta própria em qualquer situação, tratando esse único elemento como suficiente para orientar toda a conduta subsequente."
+          "text": "repreender o paciente e encerrar o atendimento."
         }
       ],
       "answer": "A",

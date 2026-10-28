@@ -141,6 +141,13 @@
             <p class="eyebrow">ENTENDA A RESPOSTA</p>
             <h3 id="feedback-title">Explicação comentada</h3>
             <div id="feedback-explanation"></div>
+            <section class="wrong-diagnostics" id="wrong-diagnostics" hidden aria-labelledby="wrong-diagnostics-title">
+              <p class="eyebrow">REVISE OS DISTRATORES</p>
+              <h4 id="wrong-diagnostics-title">Onde as outras alternativas falham?</h4>
+              <p>Clique em uma letra para destacar o ponto que precisa ser revisto.</p>
+              <div class="diagnostic-buttons" id="wrong-diagnostic-buttons"></div>
+              <div class="diagnostic-detail" id="wrong-diagnostic-detail" aria-live="polite"></div>
+            </section>
             <dl>
               <div><dt>Resposta correta</dt><dd id="correct-answer"></dd></div>
               <div><dt>Assunto</dt><dd id="feedback-topic"></dd></div>
@@ -173,6 +180,6 @@
     </form>
   </dialog>
 
-  <script type="module" src="assets/app.js?v=3"></script>
+  <script type="module" src="assets/app.js?v=4"></script>
 </body>
 </html>

@@ -2051,8 +2051,151 @@ const farmaciaBatchSixOverrides = {
   ], correct: 0 }
 };
 
+const farmaciaBatchSevenOverrides = {
+  "farmacia-121": { options: [
+    "O EPI elimina o risco na fonte e substitui os controles de engenharia, administrativos e as práticas seguras de trabalho.",
+    "O EPI deve ser selecionado conforme o perigo e a atividade, usado corretamente e integrado a controles de engenharia e administrativos.",
+    "Respiradores e máscaras cirúrgicas oferecem a mesma proteção para aerossóis, partículas e exposições químicas de diferentes naturezas.",
+    "Um único modelo de luva protege contra todas as substâncias químicas, desde que o material esteja íntegro no momento do uso.",
+    "O EPI pode ser escolhido pelo conforto e disponibilidade, deixando a avaliação do risco para situações de acidente."
+  ], correct: 1 },
+  "farmacia-122": { options: [
+    "D, quando acondicionado em embalagem destinada a resíduos comuns, independentemente da característica química apresentada.",
+    "C, quando o material possui potencial de emissão de radiação ionizante após sua utilização em serviço de saúde.",
+    "E, quando o resíduo resulta do uso de objeto perfurante ou cortante durante atividade assistencial ou laboratorial.",
+    "A, pois o contato prévio com material orgânico torna qualquer resíduo químico automaticamente infectante.",
+    "B, químico, quando apresenta substâncias capazes de oferecer risco à saúde pública ou ao meio ambiente."
+  ], correct: 4 },
+  "farmacia-123": { options: [
+    "descrever segregação, acondicionamento, identificação, coleta, armazenamento, transporte, tratamento e destinação conforme riscos e normas.",
+    "ser preparado após incidente ambiental ou autuação sanitária, quando os riscos efetivos do serviço passam a ser conhecidos.",
+    "abranger o armazenamento externo e a destinação, deixando a segregação sob decisão dos setores geradores de resíduos.",
+    "classificar todos os resíduos como comuns após o acondicionamento, desde que a coleta interna use recipientes identificados.",
+    "ser elaborado pela empresa coletora, que assume as responsabilidades desde a geração até a disposição final dos resíduos."
+  ], correct: 0 },
+  "farmacia-124": { options: [
+    "arrecadar taxas para financiar o funcionamento dos órgãos públicos responsáveis pela fiscalização de produtos e serviços.",
+    "substituir o controle de qualidade exercido pelo fabricante, assumindo diretamente a responsabilidade por cada lote produzido.",
+    "prevenir e reduzir riscos à saúde mediante regulação, inspeção, monitoramento e adoção de medidas sobre produtos, serviços e processos.",
+    "garantir margem de lucro mínima aos estabelecimentos que comercializam produtos sujeitos à vigilância sanitária.",
+    "fiscalizar produtos importados, enquanto itens produzidos no país permanecem sob controle exclusivo dos fabricantes."
+  ], correct: 2 },
+  "farmacia-125": { options: [
+    "dispensa análise microbiológica quando apresenta sabor aceitável e provém de sistema público submetido a tratamento regular.",
+    "só é considerada potável quando atende aos parâmetros da norma vigente, pois aparência e odor não afastam contaminações.",
+    "não pode conter contaminantes químicos acima dos valores máximos quando não há alteração perceptível de cor, odor ou sabor.",
+    "é considerada potável pela avaliação sensorial, ficando os ensaios laboratoriais restritos a situações de surto ou denúncia.",
+    "prescinde de vigilância quando distribuída por rede pública, cabendo o controle analítico apenas ao ponto de captação da água."
+  ], correct: 1 },
+  "farmacia-126": { options: [
+    "flumazenil, utilizado para reverter manifestações relacionadas à intoxicação por benzodiazepínicos em situações selecionadas.",
+    "vitamina K, empregada para restaurar fatores de coagulação dependentes de vitamina K em intoxicação por anticoagulantes específicos.",
+    "naloxona, antagonista de receptores opioides usada para reverter depressão respiratória relacionada a opioides.",
+    "atropina, utilizada para antagonizar manifestações muscarínicas presentes em síndromes colinérgicas.",
+    "N-acetilcisteína, que repõe precursores de glutationa e limita a lesão hepática na superdose de paracetamol."
+  ], correct: 4 },
+  "farmacia-127": { options: [
+    "azul de metileno, empregado em situações específicas de metemoglobinemia conforme avaliação clínica e laboratorial.",
+    "naloxona, antagonista de receptores opioides com uso direcionado à reversão da toxicidade por opioides.",
+    "atropina, que antagoniza as manifestações muscarínicas da síndrome colinérgica por organofosforados.",
+    "bicarbonato de sódio, empregado como antídoto específico único para reverter todas as manifestações do envenenamento.",
+    "deferoxamina, quelante utilizado na intoxicação por ferro e em outras situações de sobrecarga férrica."
+  ], correct: 2 },
+  "farmacia-128": { options: [
+    "na cor da serpente, pois esse dado visual define o soro adequado mesmo quando não há correlação com o quadro clínico.",
+    "no gênero ou tipo de envenenamento suspeito e na gravidade clínica, seguindo o protocolo, pois o antiveneno possui especificidade.",
+    "na via oral como primeira escolha, pois a absorção digestiva permite neutralizar o veneno antes da disseminação sistêmica.",
+    "no peso corporal isolado, sem considerar o tipo de acidente, manifestações clínicas ou classificação de gravidade.",
+    "no tempo de coagulação como único dado, pois esse exame identifica todas as espécies e mecanismos de envenenamento."
+  ], correct: 1 },
+  "farmacia-129": { options: [
+    "8 °C a 15 °C, faixa utilizada para preservar a estabilidade das vacinas mantidas na rotina da sala de imunização.",
+    "15 °C a 30 °C, faixa adequada para a conservação contínua de imunobiológicos antes da administração.",
+    "−20 °C a −10 °C, condição recomendada para o armazenamento de todas as vacinas distribuídas pelo PNI.",
+    "0 °C, temperatura de referência que impede danos físicos e mantém a potência de vacinas líquidas adsorvidas.",
+    "+2 °C a +8 °C, faixa geralmente recomendada para conservação da maioria das vacinas do PNI."
+  ], correct: 4 },
+  "farmacia-130": { options: [
+    "o dano pelo congelamento ocorre em vacinas liofilizadas, enquanto vacinas líquidas adsorvidas permanecem estáveis nessa condição.",
+    "o descongelamento lento restabelece a qualidade quando a excursão é identificada logo após sua ocorrência.",
+    "o congelamento melhora a estabilidade de vacinas adsorvidas, reduzindo a necessidade de monitorar a temperatura.",
+    "a exposição abaixo da faixa recomendada pode danificá-las irreversivelmente, mesmo quando a embalagem permanece íntegra.",
+    "a avaliação do congelamento depende da alteração de cor observada antes da aplicação da vacina."
+  ], correct: 3 },
+  "farmacia-131": { options: [
+    "manter os produtos identificados e segregados, registrar o histórico e solicitar avaliação técnica antes do uso ou descarte.",
+    "transferir os itens para equipamento alternativo e retomar o uso quando as leituras posteriores voltarem à faixa recomendada.",
+    "descartar os produtos após registrar a excursão, comunicando a ocorrência apenas quando houver perda visível nas embalagens.",
+    "corrigir a temperatura do equipamento, apagar o alarme e reiniciar a rotina de dispensação ao final do turno.",
+    "manter os produtos na faixa habitual enquanto se aguarda decisão, registrando somente a leitura mais recente do equipamento."
+  ], correct: 0 },
+  "farmacia-132": { options: [
+    "pode ser vinculada a lote válido se ambos possuem a mesma apresentação, diluente e fabricante registrados no serviço.",
+    "recupera sua validade quando submetida a congelamento controlado antes do retorno ao estoque da sala de imunização.",
+    "pode ser administrada mediante ciência do usuário, desde que a dose seja anotada no registro nominal de vacinação.",
+    "não deve ser administrada e precisa ser segregada, registrada e destinada conforme o gerenciamento aplicável.",
+    "pode ser utilizada por prazo adicional quando a temperatura registrada permaneceu estável durante o armazenamento."
+  ], correct: 3 },
+  "farmacia-133": { options: [
+    "impedir a participação do farmacêutico no processo de distribuição, pois a separação ocorre diretamente nas unidades assistenciais.",
+    "disponibilizar doses identificadas para cada paciente e horário, favorecendo rastreabilidade e redução de erros e perdas.",
+    "aumentar estoques descentralizados sem controle, para garantir disponibilidade imediata de todos os medicamentos prescritos.",
+    "dispensar a conferência no momento da administração, pois a dose já foi separada para o paciente previamente.",
+    "eliminar a necessidade de prescrição, substituindo-a pela identificação do paciente e pelo horário programado de administração."
+  ], correct: 1 },
+  "farmacia-134": { options: [
+    "considerar o preço por caixa, pois a avaliação econômica dispensa análise de eficácia, segurança e alternativas terapêuticas.",
+    "explicitar pergunta, evidências, eficácia, segurança, qualidade, custos, impacto orçamentário, alternativas e conclusão fundamentada.",
+    "omitir conflitos de interesse, para impedir que informações externas interfiram na análise técnica elaborada pelo serviço.",
+    "garantir resultado clínico individual, pois a padronização confirma que todos os pacientes responderão da mesma maneira.",
+    "reproduzir material promocional do fabricante, usando a descrição comercial como fonte principal de evidência disponível."
+  ], correct: 1 },
+  "farmacia-135": { options: [
+    "medida exclusiva de custo, empregada para comparar preços de medicamentos entre estabelecimentos e fornecedores.",
+    "sinônimo da dose prescrita diária individual, ajustada obrigatoriamente ao peso e à função renal de cada paciente.",
+    "valor que substitui dados de população e tempo, permitindo mensurar consumo sem informar período ou grupo analisado.",
+    "unidade de comparação correspondente à dose média de manutenção diária presumida para a principal indicação em adultos.",
+    "dose obrigatória para cada paciente, usada como referência para definir o esquema terapêutico na prática clínica."
+  ], correct: 3 },
+  "farmacia-136": { options: [
+    "a embalagem atende ao solicitado, mas a oferta apresenta valor inferior às demais propostas recebidas no certame.",
+    "o fornecedor oferece prazo de entrega adequado, atendendo ao cronograma previsto para abastecimento do serviço.",
+    "a documentação comprova a capacidade exigida, incluindo regularidade jurídica e requisitos de qualificação previstos.",
+    "o medicamento possui registro válido, sem divergência entre a apresentação ofertada e a descrição do instrumento convocatório.",
+    "o produto ou a proposta não atende a especificações ou requisitos sanitários e técnicos essenciais definidos no edital."
+  ], correct: 4 },
+  "farmacia-137": { options: [
+    "incorporar risco ao planejamento, acompanhar o fornecedor e ajustar justificadamente o estoque de segurança e as estratégias de aquisição.",
+    "priorizar a proposta de menor preço quando o fornecedor atual mantém regularidade documental e prazo contratual vigente.",
+    "substituir preventivamente o item por alternativa disponível no mercado, avaliando apenas a equivalência de apresentação.",
+    "manter o estoque de segurança no parâmetro histórico, pois elevar seu nível pode comprometer o giro dos demais itens.",
+    "ampliar o estoque para cobrir o exercício inteiro, concentrando o monitoramento nas datas de recebimento das remessas."
+  ], correct: 0 },
+  "farmacia-138": { options: [
+    "obedecer à exigência para preservar o vínculo empregatício, deixando a responsabilidade técnica para o proprietário do estabelecimento.",
+    "ocultar a irregularidade do usuário, pois a comunicação poderia provocar insegurança e prejudicar a imagem do serviço.",
+    "abandonar o estabelecimento sem providência, pois qualquer registro ou comunicação ampliaria o conflito de natureza trabalhista.",
+    "recusar a prática, fundamentar e registrar sua posição e comunicar às instâncias competentes quando necessário.",
+    "assinar o ato e transferir verbalmente a responsabilidade, pois o proprietário detém poder de decisão administrativa."
+  ], correct: 3 },
+  "farmacia-139": { options: [
+    "divulgados em grupo pessoal de mensagens, desde que os participantes atuem no mesmo serviço de saúde.",
+    "claros, completos, rastreáveis, protegidos contra acesso indevido e mantidos segundo requisitos profissionais e legais.",
+    "substituídos por memória verbal da equipe, desde que os profissionais se comuniquem ao final de cada turno.",
+    "apagados após cada atendimento, para impedir que dados antigos influenciem decisões futuras sobre o paciente.",
+    "acessíveis a qualquer funcionário, pois o compartilhamento irrestrito reduz o tempo de consulta durante o atendimento."
+  ], correct: 1 },
+  "farmacia-140": { options: [
+    "ampliar a compra dos dois anti-hipertensivos com base no consumo registrado, mantendo os parâmetros atuais de seleção e reposição.",
+    "substituir a losartana pelo item excedente em todas as prescrições, pois ambos pertencem ao mesmo grupo terapêutico principal.",
+    "revisar seleção e programação, analisar consumo e demanda reprimida, redistribuir lotes viáveis, corrigir reposição e acompanhar indicadores.",
+    "suspender novas aquisições, descartar antecipadamente o item próximo do vencimento e aguardar a normalização da demanda.",
+    "atribuir a falta à retirada irregular pelos pacientes e limitar a intervenção ao reforço das regras de dispensação na unidade."
+  ], correct: 2 }
+};
+
 function applyManualOptionSet(question) {
-  const override = farmaciaBatchSixOverrides[question.id] || farmaciaBatchFiveOverrides[question.id] || farmaciaBatchFourOverrides[question.id] || farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = farmaciaBatchSevenOverrides[question.id] || farmaciaBatchSixOverrides[question.id] || farmaciaBatchFiveOverrides[question.id] || farmaciaBatchFourOverrides[question.id] || farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -2213,7 +2356,8 @@ bank.review = {
   pharmacyBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
   pharmacyBatchFourReviewed: Array.from({ length: 20 }, (_, index) => index + 61),
   pharmacyBatchFiveReviewed: Array.from({ length: 20 }, (_, index) => index + 81),
-  pharmacyBatchSixReviewed: Array.from({ length: 20 }, (_, index) => index + 101)
+  pharmacyBatchSixReviewed: Array.from({ length: 20 }, (_, index) => index + 101),
+  pharmacyBatchSevenReviewed: Array.from({ length: 20 }, (_, index) => index + 121)
 };
 
 const report = validate(bank);

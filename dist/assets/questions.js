@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T23:22:27.362Z",
+  "generatedAt": "2026-10-28T23:35:40.164Z",
   "subjects": [
     {
       "id": "matematica",
@@ -9317,23 +9317,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O EPI elimina o risco na fonte e dispensa outras medidas."
+          "text": "Respiradores e máscaras cirúrgicas oferecem a mesma proteção para aerossóis, partículas e exposições químicas de diferentes naturezas."
         },
         {
           "letter": "B",
-          "text": "O EPI deve ser selecionado conforme o perigo e a atividade, usado e retirado corretamente e integrado a controles de engenharia e administrativos."
+          "text": "O EPI deve ser selecionado conforme o perigo e a atividade, usado corretamente e integrado a controles de engenharia e administrativos."
         },
         {
           "letter": "C",
-          "text": "Respiradores e máscaras cirúrgicas são equivalentes para qualquer exposição."
+          "text": "O EPI elimina o risco na fonte e substitui os controles de engenharia, administrativos e as práticas seguras de trabalho."
         },
         {
           "letter": "D",
-          "text": "Um único tipo de luva protege contra todas as substâncias químicas."
+          "text": "O EPI pode ser escolhido pelo conforto e disponibilidade, deixando a avaliação do risco para situações de acidente."
         },
         {
           "letter": "E",
-          "text": "O EPI pode ser escolhido apenas pelo conforto, sem avaliação do risco."
+          "text": "Um único modelo de luva protege contra todas as substâncias químicas, desde que o material esteja íntegro no momento do uso."
         }
       ],
       "answer": "B",
@@ -9349,23 +9349,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "D, após acondicionamento em embalagem destinada a resíduos comuns."
+          "text": "A, pois o contato prévio com material orgânico torna qualquer resíduo químico automaticamente infectante."
         },
         {
           "letter": "B",
-          "text": "C, quando houver potencial de emissão de radiação ionizante."
+          "text": "C, quando o material possui potencial de emissão de radiação ionizante após sua utilização em serviço de saúde."
         },
         {
           "letter": "C",
-          "text": "E, quando o resíduo resultar do uso de objeto perfurante ou cortante."
+          "text": "D, quando acondicionado em embalagem destinada a resíduos comuns, independentemente da característica química apresentada."
         },
         {
           "letter": "D",
-          "text": "A, por apresentar risco biológico decorrente de contato com material orgânico."
+          "text": "E, quando o resíduo resulta do uso de objeto perfurante ou cortante durante atividade assistencial ou laboratorial."
         },
         {
           "letter": "E",
-          "text": "B, químico."
+          "text": "B, químico, quando apresenta substâncias capazes de oferecer risco à saúde pública ou ao meio ambiente."
         }
       ],
       "answer": "E",
@@ -9381,23 +9381,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "descrever segregação, acondicionamento, identificação, coleta, armazenamento, transporte, tratamento e destinação conforme riscos e normas"
+          "text": "descrever segregação, acondicionamento, identificação, coleta, armazenamento, transporte, tratamento e destinação conforme riscos e normas."
         },
         {
           "letter": "B",
-          "text": "ser preparado após incidente ambiental ou autuação sanitária, quando passam a ser conhecidos os riscos efetivamente existentes no serviço"
+          "text": "ser preparado após incidente ambiental ou autuação sanitária, quando os riscos efetivos do serviço passam a ser conhecidos."
         },
         {
           "letter": "C",
-          "text": "abranger somente armazenamento externo, transporte e destinação, deixando a segregação sob decisão de cada setor gerador"
+          "text": "abranger o armazenamento externo e a destinação, deixando a segregação sob decisão dos setores geradores de resíduos."
         },
         {
           "letter": "D",
-          "text": "classificar todos os resíduos como comuns após seu acondicionamento, desde que a coleta interna ocorra em recipientes identificados"
+          "text": "classificar todos os resíduos como comuns após o acondicionamento, desde que a coleta interna use recipientes identificados."
         },
         {
           "letter": "E",
-          "text": "ser elaborado pela empresa coletora, que assume integralmente a responsabilidade desde o momento em que o resíduo é produzido"
+          "text": "ser elaborado pela empresa coletora, que assume as responsabilidades desde a geração até a disposição final dos resíduos."
         }
       ],
       "answer": "A",
@@ -9413,11 +9413,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "apenas arrecadar taxas."
+          "text": "substituir o controle de qualidade exercido pelo fabricante, assumindo diretamente a responsabilidade por cada lote produzido."
         },
         {
           "letter": "B",
-          "text": "substituir o controle de qualidade do fabricante."
+          "text": "fiscalizar produtos importados, enquanto itens produzidos no país permanecem sob controle exclusivo dos fabricantes."
         },
         {
           "letter": "C",
@@ -9425,11 +9425,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "garantir lucro mínimo ao estabelecimento."
+          "text": "garantir margem de lucro mínima aos estabelecimentos que comercializam produtos sujeitos à vigilância sanitária."
         },
         {
           "letter": "E",
-          "text": "fiscalizar somente produtos importados."
+          "text": "arrecadar taxas para financiar o funcionamento dos órgãos públicos responsáveis pela fiscalização de produtos e serviços."
         }
       ],
       "answer": "C",
@@ -9445,23 +9445,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "dispensa análise microbiológica quando também apresenta sabor aceitável e provém de sistema público submetido a tratamento"
+          "text": "é considerada potável pela avaliação sensorial, ficando os ensaios laboratoriais restritos a situações de surto ou denúncia."
         },
         {
           "letter": "B",
-          "text": "só é considerada potável quando atende aos parâmetros da norma vigente, pois aparência e odor não afastam contaminações"
+          "text": "só é considerada potável quando atende aos parâmetros da norma vigente, pois aparência e odor não afastam contaminações."
         },
         {
           "letter": "C",
-          "text": "pode apresentar contaminantes químicos acima dos valores máximos quando não houver alteração perceptível de cor, odor ou sabor"
+          "text": "dispensa análise microbiológica quando apresenta sabor aceitável e provém de sistema público submetido a tratamento regular."
         },
         {
           "letter": "D",
-          "text": "é considerada potável pela avaliação sensorial, ficando os ensaios laboratoriais reservados a situações de surto ou denúncia"
+          "text": "prescinde de vigilância quando distribuída por rede pública, cabendo o controle analítico apenas ao ponto de captação da água."
         },
         {
           "letter": "E",
-          "text": "prescinde de vigilância quando distribuída por rede pública, cabendo o controle analítico somente ao ponto de captação da água"
+          "text": "não pode conter contaminantes químicos acima dos valores máximos quando não há alteração perceptível de cor, odor ou sabor."
         }
       ],
       "answer": "B",
@@ -9477,23 +9477,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "flumazenil."
+          "text": "naloxona, antagonista de receptores opioides usada para reverter depressão respiratória relacionada a opioides."
         },
         {
           "letter": "B",
-          "text": "vitamina K."
+          "text": "flumazenil, utilizado para reverter manifestações relacionadas à intoxicação por benzodiazepínicos em situações selecionadas."
         },
         {
           "letter": "C",
-          "text": "naloxona."
+          "text": "atropina, utilizada para antagonizar manifestações muscarínicas presentes em síndromes colinérgicas."
         },
         {
           "letter": "D",
-          "text": "atropina."
+          "text": "vitamina K, empregada para restaurar fatores de coagulação dependentes de vitamina K em intoxicação por anticoagulantes específicos."
         },
         {
           "letter": "E",
-          "text": "N-acetilcisteína."
+          "text": "N-acetilcisteína, que repõe precursores de glutationa e limita a lesão hepática na superdose de paracetamol."
         }
       ],
       "answer": "E",
@@ -9509,23 +9509,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "azul de metileno."
+          "text": "naloxona, antagonista de receptores opioides com uso direcionado à reversão da toxicidade por opioides."
         },
         {
           "letter": "B",
-          "text": "naloxona."
+          "text": "azul de metileno, empregado em situações específicas de metemoglobinemia conforme avaliação clínica e laboratorial."
         },
         {
           "letter": "C",
-          "text": "atropina."
+          "text": "atropina, que antagoniza as manifestações muscarínicas da síndrome colinérgica por organofosforados."
         },
         {
           "letter": "D",
-          "text": "bicarbonato de sódio como antídoto específico único."
+          "text": "deferoxamina, quelante utilizado na intoxicação por ferro e em outras situações de sobrecarga férrica."
         },
         {
           "letter": "E",
-          "text": "deferoxamina."
+          "text": "bicarbonato de sódio, empregado como antídoto específico único para reverter todas as manifestações do envenenamento."
         }
       ],
       "answer": "C",
@@ -9541,7 +9541,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "na cor da serpente exclusivamente."
+          "text": "no tempo de coagulação como único dado, pois esse exame identifica todas as espécies e mecanismos de envenenamento."
         },
         {
           "letter": "B",
@@ -9549,15 +9549,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "na via oral como primeira escolha."
+          "text": "na cor da serpente, pois esse dado visual define o soro adequado mesmo quando não há correlação com o quadro clínico."
         },
         {
           "letter": "D",
-          "text": "apenas no peso do paciente."
+          "text": "na via oral como primeira escolha, pois a absorção digestiva permite neutralizar o veneno antes da disseminação sistêmica."
         },
         {
           "letter": "E",
-          "text": "no tempo de coagulação como único dado possível."
+          "text": "no peso corporal isolado, sem considerar o tipo de acidente, manifestações clínicas ou classificação de gravidade."
         }
       ],
       "answer": "B",
@@ -9573,23 +9573,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "8 °C a 15 °C."
+          "text": "0 °C, temperatura de referência que impede danos físicos e mantém a potência de vacinas líquidas adsorvidas."
         },
         {
           "letter": "B",
-          "text": "15 °C a 30 °C."
+          "text": "15 °C a 30 °C, faixa adequada para a conservação contínua de imunobiológicos antes da administração."
         },
         {
           "letter": "C",
-          "text": "−20 °C a −10 °C."
+          "text": "8 °C a 15 °C, faixa utilizada para preservar a estabilidade das vacinas mantidas na rotina da sala de imunização."
         },
         {
           "letter": "D",
-          "text": "0 °C."
+          "text": "−20 °C a −10 °C, condição recomendada para o armazenamento de todas as vacinas distribuídas pelo PNI."
         },
         {
           "letter": "E",
-          "text": "+2 °C a +8 °C."
+          "text": "+2 °C a +8 °C, faixa geralmente recomendada para conservação da maioria das vacinas do PNI."
         }
       ],
       "answer": "E",
@@ -9605,23 +9605,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o dano pelo congelamento ocorre apenas em vacinas liofilizadas, pois as demais permanecem estáveis nessa condição"
+          "text": "o descongelamento lento restabelece a qualidade quando a excursão é identificada logo após sua ocorrência."
         },
         {
           "letter": "B",
-          "text": "o descongelamento lento restabelece a qualidade quando a excursão foi identificada logo após sua ocorrência"
+          "text": "a avaliação do congelamento depende da alteração de cor observada antes da aplicação da vacina."
         },
         {
           "letter": "C",
-          "text": "o congelamento melhora a estabilidade de vacinas adsorvidas, reduzindo a necessidade de controle de temperatura"
+          "text": "o congelamento melhora a estabilidade de vacinas adsorvidas, reduzindo a necessidade de monitorar a temperatura."
         },
         {
           "letter": "D",
-          "text": "a exposição abaixo da faixa recomendada pode danificá-las irreversivelmente, mesmo quando a embalagem permanece íntegra"
+          "text": "a exposição abaixo da faixa recomendada pode danificá-las irreversivelmente, mesmo quando a embalagem permanece íntegra."
         },
         {
           "letter": "E",
-          "text": "a avaliação do congelamento depende apenas da alteração de cor observada antes da aplicação"
+          "text": "o dano pelo congelamento ocorre em vacinas liofilizadas, enquanto vacinas líquidas adsorvidas permanecem estáveis nessa condição."
         }
       ],
       "answer": "D",
@@ -9637,23 +9637,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "manter os produtos identificados e segregados na faixa recomendada, registrar o histórico e solicitar avaliação técnica antes do uso ou descarte"
+          "text": "manter os produtos identificados e segregados, registrar o histórico e solicitar avaliação técnica antes do uso ou descarte."
         },
         {
           "letter": "B",
-          "text": "transferir os itens para equipamento alternativo e retomar o uso quando as leituras posteriores voltarem à faixa recomendada"
+          "text": "descartar os produtos após registrar a excursão, comunicando a ocorrência apenas quando houver perda visível nas embalagens."
         },
         {
           "letter": "C",
-          "text": "descartar os produtos após registrar a excursão e comunicar a ocorrência somente se houver perda visível nas embalagens"
+          "text": "manter os produtos na faixa habitual enquanto se aguarda decisão, registrando somente a leitura mais recente do equipamento."
         },
         {
           "letter": "D",
-          "text": "corrigir a temperatura do equipamento, apagar o alarme e reiniciar a rotina de dispensação ao final do turno"
+          "text": "corrigir a temperatura do equipamento, apagar o alarme e reiniciar a rotina de dispensação ao final do turno."
         },
         {
           "letter": "E",
-          "text": "manter os produtos na faixa habitual enquanto se aguarda decisão, registrando apenas a leitura mais recente do equipamento"
+          "text": "transferir os itens para equipamento alternativo e retomar o uso quando as leituras posteriores voltarem à faixa recomendada."
         }
       ],
       "answer": "A",
@@ -9669,23 +9669,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "pode ser vinculada a lote válido se ambos os produtos tiverem a mesma apresentação, diluente e fabricante"
+          "text": "pode ser vinculada a lote válido se ambos possuem a mesma apresentação, diluente e fabricante registrados no serviço."
         },
         {
           "letter": "B",
-          "text": "recupera sua validade quando submetida a congelamento controlado antes do retorno ao estoque"
+          "text": "recupera sua validade quando submetida a congelamento controlado antes do retorno ao estoque da sala de imunização."
         },
         {
           "letter": "C",
-          "text": "pode ser administrada mediante ciência do usuário, desde que a dose seja anotada no registro nominal de vacinação"
+          "text": "pode ser utilizada por prazo adicional quando a temperatura registrada permaneceu estável durante o armazenamento."
         },
         {
           "letter": "D",
-          "text": "não deve ser administrada e precisa ser segregada, registrada e destinada conforme o gerenciamento aplicável"
+          "text": "não deve ser administrada e precisa ser segregada, registrada e destinada conforme o gerenciamento aplicável."
         },
         {
           "letter": "E",
-          "text": "pode ser utilizada por prazo adicional quando a temperatura registrada permaneceu estável durante todo o armazenamento"
+          "text": "pode ser administrada mediante ciência do usuário, desde que a dose seja anotada no registro nominal de vacinação."
         }
       ],
       "answer": "D",
@@ -9701,7 +9701,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "impedir participação do farmacêutico."
+          "text": "impedir a participação do farmacêutico no processo de distribuição, pois a separação ocorre diretamente nas unidades assistenciais."
         },
         {
           "letter": "B",
@@ -9709,15 +9709,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "aumentar estoques descentralizados sem controle."
+          "text": "eliminar a necessidade de prescrição, substituindo-a pela identificação do paciente e pelo horário programado de administração."
         },
         {
           "letter": "D",
-          "text": "dispensar conferência na administração."
+          "text": "dispensar a conferência no momento da administração, pois a dose já foi separada para o paciente previamente."
         },
         {
           "letter": "E",
-          "text": "eliminar toda necessidade de prescrição."
+          "text": "aumentar estoques descentralizados sem controle, para garantir disponibilidade imediata de todos os medicamentos prescritos."
         }
       ],
       "answer": "B",
@@ -9733,7 +9733,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "considerar apenas o preço por caixa."
+          "text": "omitir conflitos de interesse, para impedir que informações externas interfiram na análise técnica elaborada pelo serviço."
         },
         {
           "letter": "B",
@@ -9741,15 +9741,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "omitir conflitos de interesse."
+          "text": "considerar o preço por caixa, pois a avaliação econômica dispensa análise de eficácia, segurança e alternativas terapêuticas."
         },
         {
           "letter": "D",
-          "text": "garantir resultado clínico individual."
+          "text": "reproduzir material promocional do fabricante, usando a descrição comercial como fonte principal de evidência disponível."
         },
         {
           "letter": "E",
-          "text": "reproduzir material promocional."
+          "text": "garantir resultado clínico individual, pois a padronização confirma que todos os pacientes responderão da mesma maneira."
         }
       ],
       "answer": "B",
@@ -9765,23 +9765,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "medida exclusiva de custo."
+          "text": "valor que substitui dados de população e tempo, permitindo mensurar consumo sem informar período ou grupo analisado."
         },
         {
           "letter": "B",
-          "text": "sinônimo de dose prescrita diária individual."
+          "text": "dose obrigatória para cada paciente, usada como referência para definir o esquema terapêutico na prática clínica."
         },
         {
           "letter": "C",
-          "text": "valor que substitui dados de população e tempo."
+          "text": "sinônimo da dose prescrita diária individual, ajustada obrigatoriamente ao peso e à função renal de cada paciente."
         },
         {
           "letter": "D",
-          "text": "unidade técnica de comparação correspondente à dose média de manutenção diária presumida para a principal indicação do medicamento em adultos."
+          "text": "unidade de comparação correspondente à dose média de manutenção diária presumida para a principal indicação em adultos."
         },
         {
           "letter": "E",
-          "text": "a dose obrigatória para cada paciente."
+          "text": "medida exclusiva de custo, empregada para comparar preços de medicamentos entre estabelecimentos e fornecedores."
         }
       ],
       "answer": "D",
@@ -9797,23 +9797,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a embalagem atende ao solicitado."
+          "text": "a documentação comprova a capacidade exigida, incluindo regularidade jurídica e requisitos de qualificação previstos."
         },
         {
           "letter": "B",
-          "text": "o fornecedor oferece prazo de entrega adequado."
+          "text": "o fornecedor oferece prazo de entrega adequado, atendendo ao cronograma previsto para abastecimento do serviço."
         },
         {
           "letter": "C",
-          "text": "a documentação comprova a capacidade exigida."
+          "text": "o medicamento possui registro válido, sem divergência entre a apresentação ofertada e a descrição do instrumento convocatório."
         },
         {
           "letter": "D",
-          "text": "o medicamento possui registro válido."
+          "text": "a embalagem atende ao solicitado, mas a oferta apresenta valor inferior às demais propostas recebidas no certame."
         },
         {
           "letter": "E",
-          "text": "o produto ou a proposta não atende a especificações e requisitos sanitários ou técnicos essenciais definidos no instrumento convocatório."
+          "text": "o produto ou a proposta não atende a especificações ou requisitos sanitários e técnicos essenciais definidos no edital."
         }
       ],
       "answer": "E",
@@ -9829,23 +9829,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "incorporar risco ao planejamento, acompanhar o fornecedor e ajustar justificadamente o estoque de segurança e as estratégias de aquisição"
+          "text": "incorporar risco ao planejamento, acompanhar o fornecedor e ajustar justificadamente o estoque de segurança e as estratégias de aquisição."
         },
         {
           "letter": "B",
-          "text": "priorizar a proposta de menor preço quando o fornecedor atual mantém regularidade documental e prazo contratual vigente"
+          "text": "priorizar a proposta de menor preço quando o fornecedor atual mantém regularidade documental e prazo contratual vigente."
         },
         {
           "letter": "C",
-          "text": "substituir preventivamente o item por alternativa disponível no mercado, com avaliação restrita à equivalência de apresentação"
+          "text": "manter o estoque de segurança no parâmetro histórico, pois elevar seu nível pode comprometer o giro dos demais itens."
         },
         {
           "letter": "D",
-          "text": "manter o estoque de segurança no parâmetro histórico, pois elevar seu nível pode comprometer o giro regular dos demais itens"
+          "text": "substituir preventivamente o item por alternativa disponível no mercado, avaliando apenas a equivalência de apresentação."
         },
         {
           "letter": "E",
-          "text": "ampliar o estoque para cobrir o exercício inteiro, concentrando o monitoramento nas datas de recebimento de cada remessa"
+          "text": "ampliar o estoque para cobrir o exercício inteiro, concentrando o monitoramento nas datas de recebimento das remessas."
         }
       ],
       "answer": "A",
@@ -9861,15 +9861,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "obedecer para preservar o vínculo empregatício."
+          "text": "obedecer à exigência para preservar o vínculo empregatício, deixando a responsabilidade técnica para o proprietário do estabelecimento."
         },
         {
           "letter": "B",
-          "text": "ocultar a irregularidade do usuário."
+          "text": "assinar o ato e transferir verbalmente a responsabilidade, pois o proprietário detém poder de decisão administrativa."
         },
         {
           "letter": "C",
-          "text": "abandonar o estabelecimento sem qualquer providência."
+          "text": "ocultar a irregularidade do usuário, pois a comunicação poderia provocar insegurança e prejudicar a imagem do serviço."
         },
         {
           "letter": "D",
@@ -9877,7 +9877,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "assinar o ato e transferir verbalmente a responsabilidade."
+          "text": "abandonar o estabelecimento sem providência, pois qualquer registro ou comunicação ampliaria o conflito de natureza trabalhista."
         }
       ],
       "answer": "D",
@@ -9893,7 +9893,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "divulgados em grupo de mensagens pessoal."
+          "text": "divulgados em grupo pessoal de mensagens, desde que os participantes atuem no mesmo serviço de saúde."
         },
         {
           "letter": "B",
@@ -9901,15 +9901,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "substituídos por memória verbal."
+          "text": "substituídos por memória verbal da equipe, desde que os profissionais se comuniquem ao final de cada turno."
         },
         {
           "letter": "D",
-          "text": "apagados após cada atendimento."
+          "text": "apagados após cada atendimento, para impedir que dados antigos influenciem decisões futuras sobre o paciente."
         },
         {
           "letter": "E",
-          "text": "acessíveis a qualquer funcionário sem necessidade."
+          "text": "acessíveis a qualquer funcionário, pois o compartilhamento irrestrito reduz o tempo de consulta durante o atendimento."
         }
       ],
       "answer": "B",
@@ -9925,23 +9925,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ampliar a compra dos dois anti-hipertensivos com base no consumo registrado, mantendo os parâmetros de seleção e reposição já utilizados"
+          "text": "substituir a losartana pelo item excedente em todas as prescrições, pois ambos pertencem ao mesmo grupo terapêutico principal."
         },
         {
           "letter": "B",
-          "text": "substituir a losartana pelo item excedente em todas as prescrições, desde que ambos pertençam ao mesmo grupo terapêutico principal"
+          "text": "atribuir a falta à retirada irregular pelos pacientes e limitar a intervenção ao reforço das regras de dispensação na unidade."
         },
         {
           "letter": "C",
-          "text": "revisar seleção e programação, analisar consumo e demanda reprimida, redistribuir lotes viáveis, corrigir reposição e acompanhar indicadores"
+          "text": "revisar seleção e programação, analisar consumo e demanda reprimida, redistribuir lotes viáveis, corrigir reposição e acompanhar indicadores."
         },
         {
           "letter": "D",
-          "text": "suspender novas aquisições, descartar antecipadamente o item próximo do vencimento e aguardar a normalização espontânea da demanda"
+          "text": "ampliar a compra dos dois anti-hipertensivos com base no consumo registrado, mantendo os parâmetros atuais de seleção e reposição."
         },
         {
           "letter": "E",
-          "text": "atribuir a falta à retirada irregular pelos pacientes e limitar a intervenção ao reforço das regras de dispensação na unidade"
+          "text": "suspender novas aquisições, descartar antecipadamente o item próximo do vencimento e aguardar a normalização da demanda."
         }
       ],
       "answer": "C",
@@ -10856,6 +10856,28 @@ export const questionBank = {
       118,
       119,
       120
+    ],
+    "pharmacyBatchSevenReviewed": [
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140
     ]
   }
 };

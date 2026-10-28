@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T19:30:50.632Z",
+  "generatedAt": "2026-10-28T21:57:20.971Z",
   "subjects": [
     {
       "id": "matematica",
@@ -6757,7 +6757,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "apagar o registro se a embalagem estiver íntegra."
+          "text": "priorizar sua dispensação para reduzir o tempo de permanência após o desvio de temperatura registrado."
         },
         {
           "letter": "B",
@@ -6765,15 +6765,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "congelá-lo para compensar a exposição ao calor."
+          "text": "avaliar a duração da excursão e a temperatura observada no momento em que a falha foi identificada."
         },
         {
           "letter": "D",
-          "text": "dispensá-lo imediatamente para evitar desperdício."
+          "text": "transferi-lo para condição mais fria e comparar a temperatura atual com a faixa indicada na embalagem."
         },
         {
           "letter": "E",
-          "text": "considerar apenas a temperatura no momento da descoberta."
+          "text": "manter o produto identificado e registrar a leitura, liberando-o após inspeção visual da embalagem."
         }
       ],
       "answer": "B",
@@ -6789,19 +6789,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "número de prateleiras do almoxarifado."
+          "text": "custo de energia por área de armazenamento e variação de consumo elétrico no período."
         },
         {
           "letter": "B",
-          "text": "quantidade de funcionários por turno."
+          "text": "percentual de prateleiras ocupadas e utilização média da área destinada ao almoxarifado."
         },
         {
           "letter": "C",
-          "text": "custo de energia por metro quadrado."
+          "text": "quantidade de profissionais escalados por turno e tempo médio de separação de pedidos."
         },
         {
           "letter": "D",
-          "text": "percentual de itens classificados como genéricos."
+          "text": "percentual de medicamentos genéricos incluídos no elenco disponível para dispensação."
         },
         {
           "letter": "E",
@@ -6821,11 +6821,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "divulgar comercialmente medicamentos novos."
+          "text": "monitorar preços de medicamentos e avaliar impacto econômico das tecnologias incorporadas."
         },
         {
           "letter": "B",
-          "text": "controlar exclusivamente preços."
+          "text": "avaliar falhas de fabricação identificadas antes do registro sanitário do medicamento no país."
         },
         {
           "letter": "C",
@@ -6833,11 +6833,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "substituir ensaios clínicos por relatos espontâneos."
+          "text": "acompanhar lançamentos de produtos e divulgar informações comerciais aos serviços de saúde."
         },
         {
           "letter": "E",
-          "text": "avaliar somente erros de fabricação antes do registro."
+          "text": "substituir estudos clínicos por relatos espontâneos de usuários e profissionais após a comercialização."
         }
       ],
       "answer": "C",
@@ -6853,11 +6853,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente falha decorrente de erro de medicação."
+          "text": "ocorrência clínica que exige internação, independentemente da relação temporal com a exposição ao produto."
         },
         {
           "letter": "B",
-          "text": "qualquer reação com nexo causal comprovado."
+          "text": "falha evitável ocorrida nas etapas de prescrição, dispensação, preparo ou administração de medicamento."
         },
         {
           "letter": "C",
@@ -6865,11 +6865,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "todo efeito terapêutico esperado."
+          "text": "resposta nociva cuja relação causal com o medicamento já foi estabelecida após avaliação clínica."
         },
         {
           "letter": "E",
-          "text": "apenas evento que causa morte."
+          "text": "efeito terapêutico previsto que acompanha o mecanismo de ação esperado para o medicamento utilizado."
         }
       ],
       "answer": "C",
@@ -6885,23 +6885,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "alteração de identidade, pureza, potência ou desempenho do produto decorrente de falha de fabricação, armazenamento ou transporte"
+          "text": "resposta nociva e não intencional a medicamento utilizado em doses normalmente empregadas para profilaxia, diagnóstico ou tratamento."
         },
         {
           "letter": "B",
-          "text": "evento evitável capaz de provocar uso inadequado do medicamento ou dano enquanto o produto está sob controle de profissionais ou usuários"
+          "text": "evento evitável capaz de provocar uso inadequado do medicamento ou dano enquanto o produto está sob controle de profissionais ou usuários."
         },
         {
           "letter": "C",
-          "text": "resposta nociva e não intencional a um medicamento utilizado em doses normalmente empregadas para profilaxia, diagnóstico ou tratamento"
+          "text": "ocorrência clínica desfavorável atribuída ao medicamento após avaliação da relação causal com o seu uso."
         },
         {
           "letter": "D",
-          "text": "ausência do efeito terapêutico esperado apesar da utilização do medicamento na indicação, na dose e pelo período considerados adequados"
+          "text": "ausência do efeito terapêutico esperado apesar da utilização do medicamento na indicação, dose e período considerados adequados."
         },
         {
           "letter": "E",
-          "text": "ocorrência clínica desfavorável atribuída ao medicamento após avaliação da relação causal com seu uso"
+          "text": "desvio de identidade, pureza, potência ou desempenho do produto ligado a falha de fabricação, armazenamento ou transporte."
         }
       ],
       "answer": "B",
@@ -6917,19 +6917,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "queixa técnica de qualidade."
+          "text": "falha terapêutica identificada antes da administração, após revisão da indicação e do esquema prescrito."
         },
         {
           "letter": "B",
-          "text": "evento adverso inevitável."
+          "text": "reação adversa grave interrompida pela conferência final, antes de qualquer contato com o paciente."
         },
         {
           "letter": "C",
-          "text": "falha terapêutica confirmada."
+          "text": "queixa técnica relacionada à qualidade do produto e à sua apresentação no momento da dispensação."
         },
         {
           "letter": "D",
-          "text": "reação adversa grave."
+          "text": "evento adverso sem dano clínico, classificado conforme a previsibilidade do medicamento envolvido."
         },
         {
           "letter": "E",
@@ -6949,7 +6949,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "prova definitiva de causalidade."
+          "text": "evidência conclusiva de causalidade, suficiente para confirmar o risco sem necessidade de análise posterior."
         },
         {
           "letter": "B",
@@ -6957,15 +6957,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "apenas alteração laboratorial já descrita em bula."
+          "text": "alteração laboratorial descrita em bula, considerada sinal sempre que ocorrer durante o tratamento do usuário."
         },
         {
           "letter": "D",
-          "text": "qualquer propaganda negativa sobre um produto."
+          "text": "manifestação negativa sobre produto divulgada em meio público, mesmo sem dados clínicos ou relato estruturado."
         },
         {
           "letter": "E",
-          "text": "ordem automática de retirada do mercado."
+          "text": "determinação de retirada imediata do mercado aplicada após qualquer comunicação de suspeita recebida."
         }
       ],
       "answer": "B",
@@ -6981,11 +6981,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "aguardar certeza absoluta de causalidade."
+          "text": "comunicar o caso ao fabricante e aguardar orientação antes de incluí-lo no registro assistencial e discutir a conduta com a equipe."
         },
         {
           "letter": "B",
-          "text": "descartar informações sobre lote e concomitantes."
+          "text": "registrar eventos não descritos em bula, priorizando reações cuja causalidade já tenha sido confirmada e exijam acompanhamento adicional."
         },
         {
           "letter": "C",
@@ -6993,11 +6993,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "comunicar somente ao fabricante, sem registro assistencial."
+          "text": "prestar assistência e aguardar confirmação da relação causal antes de registrar a suspeita nos sistemas de vigilância e comunicar a equipe."
         },
         {
           "letter": "E",
-          "text": "omitir o caso se o evento já constar em bula."
+          "text": "documentar a assistência prestada, deixando dados sobre lote e medicamentos concomitantes para investigação posterior caso a gravidade persista."
         }
       ],
       "answer": "C",
@@ -7013,7 +7013,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "desconhecimento da dose utilizada."
+          "text": "ocorrência do evento em momento anterior ao início do tratamento suspeito, sem nova exposição documentada."
         },
         {
           "letter": "B",
@@ -7021,15 +7021,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "ausência completa de relação temporal."
+          "text": "informação incompleta sobre dose, horário de uso e sequência temporal entre a exposição e o evento relatado."
         },
         {
           "letter": "D",
-          "text": "exposição ocorrida após o desaparecimento definitivo do evento."
+          "text": "presença de causa alternativa suficiente para explicar todo o quadro clínico observado no paciente."
         },
         {
           "letter": "E",
-          "text": "causa alternativa claramente suficiente."
+          "text": "desaparecimento definitivo do evento antes da exposição ao medicamento associado à suspeita apresentada."
         }
       ],
       "answer": "B",
@@ -7045,19 +7045,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "atribuir a prevenção de erros à responsabilização individual, com apuração posterior do profissional envolvido."
+          "text": "atribuir a prevenção de erros à responsabilidade individual e revisar o desempenho após a ocorrência identificada."
         },
         {
           "letter": "B",
-          "text": "usar a memória e a experiência dos profissionais como controle principal antes da dispensação."
+          "text": "dispor produtos semelhantes lado a lado, utilizando identificação disponível no sistema informatizado do serviço."
         },
         {
           "letter": "C",
-          "text": "reduzir rótulos auxiliares e sinais de alerta para simplificar a rotina do estoque."
+          "text": "usar memória e experiência dos profissionais como controle principal, com conferência em situações selecionadas."
         },
         {
           "letter": "D",
-          "text": "manter produtos de aparência ou nomes semelhantes lado a lado, com identificação apenas no sistema informatizado."
+          "text": "manter rótulos essenciais e reduzir sinais auxiliares para simplificar a rotina de organização do estoque."
         },
         {
           "letter": "E",
@@ -7077,19 +7077,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "são destinados predominantemente ao ambiente hospitalar e requerem monitoramento intensivo durante a dispensação."
+          "text": "apresentam sensibilidade térmica e exigem condições específicas de conservação durante o armazenamento."
         },
         {
           "letter": "B",
-          "text": "são medicamentos injetáveis de alto custo, relacionados a terapias de maior complexidade clínica."
+          "text": "têm retenção de receita e controle especial desde a aquisição até a dispensação ao usuário."
         },
         {
           "letter": "C",
-          "text": "têm retenção de receita e exigem controle especial desde a aquisição até a dispensação."
+          "text": "são utilizados em ambiente hospitalar e exigem monitoramento intensivo durante as etapas de dispensação."
         },
         {
           "letter": "D",
-          "text": "apresentam baixa estabilidade térmica e exigem condições específicas de conservação durante todo o armazenamento."
+          "text": "são injetáveis de alto custo relacionados a terapias de maior complexidade clínica e assistencial."
         },
         {
           "letter": "E",
@@ -7109,15 +7109,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "produzem erro com maior frequência em qualquer situação."
+          "text": "podem ser reconhecidos pelo preço de aquisição e pela complexidade administrativa do processo de compra."
         },
         {
           "letter": "B",
-          "text": "não exigem protocolos específicos."
+          "text": "são proibidos na atenção primária, devendo ser utilizados exclusivamente em serviços hospitalares especializados."
         },
         {
           "letter": "C",
-          "text": "podem ser identificados apenas pelo preço."
+          "text": "dispensam protocolos específicos quando armazenados em locais identificados e separados do restante do estoque."
         },
         {
           "letter": "D",
@@ -7125,7 +7125,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "são necessariamente proibidos na atenção primária."
+          "text": "estão associados a maior frequência de erro em qualquer contexto de uso, mesmo com barreiras adequadas."
         }
       ],
       "answer": "D",
@@ -7141,11 +7141,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Poder Judiciário como atividade administrativa ordinária."
+          "text": "Poder Judiciário, por meio de atividade administrativa ligada à revisão de processos sanitários federais e de autorizações de produtos."
         },
         {
           "letter": "B",
-          "text": "Conselho Federal de Medicina exclusivamente."
+          "text": "indústria farmacêutica, mediante controles internos de qualidade e normas aplicáveis a cada produto registrado no mercado."
         },
         {
           "letter": "C",
@@ -7153,11 +7153,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "associações comerciais locais."
+          "text": "Conselho Federal de Medicina, responsável por registrar e fiscalizar os medicamentos comercializados no país e seus estabelecimentos."
         },
         {
           "letter": "E",
-          "text": "indústria farmacêutica."
+          "text": "associações comerciais locais, que definem requisitos sanitários conforme a atividade econômica regional e o porte das empresas."
         }
       ],
       "answer": "C",
@@ -7173,23 +7173,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ausência de dever sobre procedimentos escritos."
+          "text": "permite transferir as obrigações técnicas ao proprietário quando houver contrato de gestão, administração e supervisão interna."
         },
         {
           "letter": "B",
-          "text": "mera cessão formal de nome ao estabelecimento."
+          "text": "permite a cessão formal de nome ao estabelecimento, desde que o proprietário responda pelas decisões administrativas e financeiras."
         },
         {
           "letter": "C",
-          "text": "presença e atuação profissional compatíveis com a legislação, supervisão dos processos e adoção de medidas para assegurar qualidade e segurança."
+          "text": "implica atuação profissional conforme a legislação, supervisão dos processos e medidas para assegurar qualidade e segurança."
         },
         {
           "letter": "D",
-          "text": "responsabilidade apenas pelas vendas."
+          "text": "restringe a responsabilidade do farmacêutico às vendas e ao controle dos documentos fiscais, sem abrangência sobre processos técnicos."
         },
         {
           "letter": "E",
-          "text": "transferência integral das obrigações ao proprietário."
+          "text": "dispensa dever de acompanhar procedimentos escritos quando as rotinas operacionais forem executadas pela equipe técnica do estabelecimento."
         }
       ],
       "answer": "C",
@@ -7301,19 +7301,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "comum simples sem identificação do prescritor."
+          "text": "comum simples, contendo identificação do prescritor e registro eletrônico emitido pela farmácia no ato da dispensação."
         },
         {
           "letter": "B",
-          "text": "verbal, sem documentação."
+          "text": "verbal, acompanhada de anotação no sistema interno da farmácia e confirmação posterior do profissional prescritor."
         },
         {
           "letter": "C",
-          "text": "amarela em via única para qualquer lista."
+          "text": "azul sem retenção, com cópia digital destinada ao paciente e outra mantida no estabelecimento dispensador."
         },
         {
           "letter": "D",
-          "text": "azul sem retenção."
+          "text": "amarela em via única, utilizada para qualquer lista incluída no controle especial previsto na Portaria."
         },
         {
           "letter": "E",
@@ -7337,19 +7337,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "aceitar cópia simples no lugar do original em todos os casos."
+          "text": "devolver a notificação ao paciente e manter no sistema apenas os dados da quantidade efetivamente dispensada."
         },
         {
           "letter": "C",
-          "text": "dispensar quantidade ilimitada."
+          "text": "aceitar cópia simples em substituição ao original, desde que os dados do prescritor possam ser conferidos no sistema."
         },
         {
           "letter": "D",
-          "text": "devolver a notificação sem qualquer registro."
+          "text": "alterar a prescrição para adequar quantidade ou apresentação, comunicando a mudança ao prescritor depois da dispensação."
         },
         {
           "letter": "E",
-          "text": "alterar a prescrição sem contato com o prescritor."
+          "text": "dispensar a quantidade solicitada e registrar a saída ao final do mês, após consolidação do estoque disponível."
         }
       ],
       "answer": "A",
@@ -7365,23 +7365,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a implantação dos novos modelos revogou integralmente a Portaria nº 344/1998 e transferiu o controle das listas aos conselhos profissionais"
+          "text": "a versão inicial dos novos modelos permaneceu obrigatória para impressão durante todo o ano, sem substituição por versão posteriormente atualizada."
         },
         {
           "letter": "B",
-          "text": "todos os modelos anteriores perderam validade para prescrição e dispensação no mesmo dia em que o primeiro modelo novo foi disponibilizado"
+          "text": "os novos modelos são exclusivos de prescrições digitais, enquanto toda prescrição física permanece vinculada aos anexos antigos da Portaria."
         },
         {
           "letter": "C",
-          "text": "a versão inicial dos novos modelos permaneceu obrigatória para impressão durante todo o ano, sem substituição por versão posteriormente atualizada"
+          "text": "todos os modelos anteriores perderam validade para prescrição e dispensação no mesmo dia em que o primeiro modelo novo foi disponibilizado."
         },
         {
           "letter": "D",
-          "text": "os modelos antigos deixaram de poder ser impressos, mas exemplares impressos no período permitido continuam utilizáveis dentro da validade aplicável"
+          "text": "os modelos antigos deixaram de poder ser impressos, mas exemplares impressos no período permitido continuam utilizáveis dentro da validade aplicável."
         },
         {
           "letter": "E",
-          "text": "os novos modelos são exclusivos de prescrições digitais, enquanto toda prescrição física permanece vinculada aos anexos antigos da Portaria"
+          "text": "a implantação dos novos modelos revogou integralmente a Portaria nº 344/1998 e transferiu o controle das listas aos conselhos profissionais."
         }
       ],
       "answer": "D",
@@ -10768,6 +10768,28 @@ export const questionBank = {
       38,
       39,
       40
+    ],
+    "pharmacyBatchThreeReviewed": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
     ]
   }
 };

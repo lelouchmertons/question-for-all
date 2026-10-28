@@ -1570,8 +1570,130 @@ const farmaciaBatchTwoOverrides = {
   ], correct: 2 }
 };
 
+const farmaciaBatchThreeOverrides = {
+  "farmacia-041": { options: [
+    "manter o produto identificado e registrar a leitura, liberando-o após inspeção visual da embalagem.",
+    "segregá-lo, registrar o desvio e avaliar sua estabilidade com base em dados técnicos antes de decidir o destino.",
+    "transferi-lo para condição mais fria e comparar a temperatura atual com a faixa indicada na embalagem.",
+    "priorizar sua dispensação para reduzir o tempo de permanência após o desvio de temperatura registrado.",
+    "avaliar a duração da excursão e a temperatura observada no momento em que a falha foi identificada."
+  ], correct: 1 },
+  "farmacia-042": { options: [
+    "percentual de prateleiras ocupadas e utilização média da área destinada ao almoxarifado.",
+    "quantidade de profissionais escalados por turno e tempo médio de separação de pedidos.",
+    "custo de energia por área de armazenamento e variação de consumo elétrico no período.",
+    "percentual de medicamentos genéricos incluídos no elenco disponível para dispensação.",
+    "percentual de itens ou dias em ruptura de estoque no período."
+  ], correct: 4 },
+  "farmacia-043": { options: [
+    "acompanhar lançamentos de produtos e divulgar informações comerciais aos serviços de saúde.",
+    "monitorar preços de medicamentos e avaliar impacto econômico das tecnologias incorporadas.",
+    "detectar, avaliar, compreender e prevenir eventos adversos ou outros problemas relacionados a medicamentos.",
+    "substituir estudos clínicos por relatos espontâneos de usuários e profissionais após a comercialização.",
+    "avaliar falhas de fabricação identificadas antes do registro sanitário do medicamento no país."
+  ], correct: 2 },
+  "farmacia-044": { options: [
+    "falha evitável ocorrida nas etapas de prescrição, dispensação, preparo ou administração de medicamento.",
+    "resposta nociva cuja relação causal com o medicamento já foi estabelecida após avaliação clínica.",
+    "ocorrência médica indesejável durante o uso de um produto, sem que seja necessariamente estabelecida relação causal.",
+    "efeito terapêutico previsto que acompanha o mecanismo de ação esperado para o medicamento utilizado.",
+    "ocorrência clínica que exige internação, independentemente da relação temporal com a exposição ao produto."
+  ], correct: 2 },
+  "farmacia-045": { options: [
+    "desvio de identidade, pureza, potência ou desempenho do produto ligado a falha de fabricação, armazenamento ou transporte.",
+    "evento evitável capaz de provocar uso inadequado do medicamento ou dano enquanto o produto está sob controle de profissionais ou usuários.",
+    "resposta nociva e não intencional a medicamento utilizado em doses normalmente empregadas para profilaxia, diagnóstico ou tratamento.",
+    "ausência do efeito terapêutico esperado apesar da utilização do medicamento na indicação, dose e período considerados adequados.",
+    "ocorrência clínica desfavorável atribuída ao medicamento após avaliação da relação causal com o seu uso."
+  ], correct: 1 },
+  "farmacia-046": { options: [
+    "queixa técnica relacionada à qualidade do produto e à sua apresentação no momento da dispensação.",
+    "evento adverso sem dano clínico, classificado conforme a previsibilidade do medicamento envolvido.",
+    "falha terapêutica identificada antes da administração, após revisão da indicação e do esquema prescrito.",
+    "reação adversa grave interrompida pela conferência final, antes de qualquer contato com o paciente.",
+    "quase erro ou near miss."
+  ], correct: 4 },
+  "farmacia-047": { options: [
+    "evidência conclusiva de causalidade, suficiente para confirmar o risco sem necessidade de análise posterior.",
+    "informação sobre possível relação causal nova, ou novo aspecto de relação conhecida, que justifica investigação adicional.",
+    "alteração laboratorial descrita em bula, considerada sinal sempre que ocorrer durante o tratamento do usuário.",
+    "manifestação negativa sobre produto divulgada em meio público, mesmo sem dados clínicos ou relato estruturado.",
+    "determinação de retirada imediata do mercado aplicada após qualquer comunicação de suspeita recebida."
+  ], correct: 1 },
+  "farmacia-048": { options: [
+    "prestar assistência e aguardar confirmação da relação causal antes de registrar a suspeita nos sistemas de vigilância e comunicar a equipe.",
+    "documentar a assistência prestada, deixando dados sobre lote e medicamentos concomitantes para investigação posterior caso a gravidade persista.",
+    "prestar o cuidado necessário, documentar dados relevantes e notificar pelos canais aplicáveis mesmo que a causalidade ainda não esteja comprovada.",
+    "comunicar o caso ao fabricante e aguardar orientação antes de incluí-lo no registro assistencial e discutir a conduta com a equipe.",
+    "registrar eventos não descritos em bula, priorizando reações cuja causalidade já tenha sido confirmada e exijam acompanhamento adicional."
+  ], correct: 2 },
+  "farmacia-049": { options: [
+    "informação incompleta sobre dose, horário de uso e sequência temporal entre a exposição e o evento relatado.",
+    "relação temporal plausível e melhora após retirada do medicamento, quando clinicamente interpretável.",
+    "ocorrência do evento em momento anterior ao início do tratamento suspeito, sem nova exposição documentada.",
+    "desaparecimento definitivo do evento antes da exposição ao medicamento associado à suspeita apresentada.",
+    "presença de causa alternativa suficiente para explicar todo o quadro clínico observado no paciente."
+  ], correct: 1 },
+  "farmacia-050": { options: [
+    "atribuir a prevenção de erros à responsabilidade individual e revisar o desempenho após a ocorrência identificada.",
+    "usar memória e experiência dos profissionais como controle principal, com conferência em situações selecionadas.",
+    "manter rótulos essenciais e reduzir sinais auxiliares para simplificar a rotina de organização do estoque.",
+    "dispor produtos semelhantes lado a lado, utilizando identificação disponível no sistema informatizado do serviço.",
+    "separar medicamentos semelhantes, usar alertas e adotar conferência independente nos processos de maior risco."
+  ], correct: 4 },
+  "farmacia-051": { options: [
+    "são utilizados em ambiente hospitalar e exigem monitoramento intensivo durante as etapas de dispensação.",
+    "são injetáveis de alto custo relacionados a terapias de maior complexidade clínica e assistencial.",
+    "têm retenção de receita e controle especial desde a aquisição até a dispensação ao usuário.",
+    "apresentam sensibilidade térmica e exigem condições específicas de conservação durante o armazenamento.",
+    "possuem nomes, grafias, pronúncias ou embalagens semelhantes, capazes de favorecer trocas e exigir diferenciação."
+  ], correct: 4 },
+  "farmacia-052": { options: [
+    "estão associados a maior frequência de erro em qualquer contexto de uso, mesmo com barreiras adequadas.",
+    "dispensam protocolos específicos quando armazenados em locais identificados e separados do restante do estoque.",
+    "podem ser reconhecidos pelo preço de aquisição e pela complexidade administrativa do processo de compra.",
+    "apresentam risco aumentado de dano grave quando ocorre erro, justificando barreiras reforçadas.",
+    "são proibidos na atenção primária, devendo ser utilizados exclusivamente em serviços hospitalares especializados."
+  ], correct: 3 },
+  "farmacia-053": { options: [
+    "Poder Judiciário, por meio de atividade administrativa ligada à revisão de processos sanitários federais e de autorizações de produtos.",
+    "Conselho Federal de Medicina, responsável por registrar e fiscalizar os medicamentos comercializados no país e seus estabelecimentos.",
+    "Agência Nacional de Vigilância Sanitária, sem prejuízo das competências dos demais entes do Sistema Nacional de Vigilância Sanitária.",
+    "associações comerciais locais, que definem requisitos sanitários conforme a atividade econômica regional e o porte das empresas.",
+    "indústria farmacêutica, mediante controles internos de qualidade e normas aplicáveis a cada produto registrado no mercado."
+  ], correct: 2 },
+  "farmacia-054": { options: [
+    "dispensa dever de acompanhar procedimentos escritos quando as rotinas operacionais forem executadas pela equipe técnica do estabelecimento.",
+    "permite a cessão formal de nome ao estabelecimento, desde que o proprietário responda pelas decisões administrativas e financeiras.",
+    "implica atuação profissional conforme a legislação, supervisão dos processos e medidas para assegurar qualidade e segurança.",
+    "restringe a responsabilidade do farmacêutico às vendas e ao controle dos documentos fiscais, sem abrangência sobre processos técnicos.",
+    "permite transferir as obrigações técnicas ao proprietário quando houver contrato de gestão, administração e supervisão interna."
+  ], correct: 2 },
+  "farmacia-058": { options: [
+    "comum simples, contendo identificação do prescritor e registro eletrônico emitido pela farmácia no ato da dispensação.",
+    "verbal, acompanhada de anotação no sistema interno da farmácia e confirmação posterior do profissional prescritor.",
+    "amarela em via única, utilizada para qualquer lista incluída no controle especial previsto na Portaria.",
+    "azul sem retenção, com cópia digital destinada ao paciente e outra mantida no estabelecimento dispensador.",
+    "branca em duas vias, ficando a primeira retida e a segunda com o paciente, devidamente orientada ou carimbada conforme aplicável."
+  ], correct: 4 },
+  "farmacia-059": { options: [
+    "reter a notificação, efetuar os registros exigidos e fornecer ao paciente a documentação que a norma determinar.",
+    "aceitar cópia simples em substituição ao original, desde que os dados do prescritor possam ser conferidos no sistema.",
+    "dispensar a quantidade solicitada e registrar a saída ao final do mês, após consolidação do estoque disponível.",
+    "devolver a notificação ao paciente e manter no sistema apenas os dados da quantidade efetivamente dispensada.",
+    "alterar a prescrição para adequar quantidade ou apresentação, comunicando a mudança ao prescritor depois da dispensação."
+  ], correct: 0 },
+  "farmacia-060": { options: [
+    "a implantação dos novos modelos revogou integralmente a Portaria nº 344/1998 e transferiu o controle das listas aos conselhos profissionais.",
+    "todos os modelos anteriores perderam validade para prescrição e dispensação no mesmo dia em que o primeiro modelo novo foi disponibilizado.",
+    "a versão inicial dos novos modelos permaneceu obrigatória para impressão durante todo o ano, sem substituição por versão posteriormente atualizada.",
+    "os modelos antigos deixaram de poder ser impressos, mas exemplares impressos no período permitido continuam utilizáveis dentro da validade aplicável.",
+    "os novos modelos são exclusivos de prescrições digitais, enquanto toda prescrição física permanece vinculada aos anexos antigos da Portaria."
+  ], correct: 3 }
+};
+
 function applyManualOptionSet(question) {
-  const override = farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -1728,7 +1850,8 @@ bank.review = {
   portugueseBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
   portugueseBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
   portugueseBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
-  pharmacyBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21)
+  pharmacyBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
+  pharmacyBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41)
 };
 
 const report = validate(bank);

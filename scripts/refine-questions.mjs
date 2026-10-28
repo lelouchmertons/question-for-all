@@ -1692,8 +1692,81 @@ const farmaciaBatchThreeOverrides = {
   ], correct: 3 }
 };
 
+const farmaciaBatchFourOverrides = {
+  "farmacia-061": { options: [
+    "no estoque geral, com conferência diária e identificação reforçada das embalagens de maior risco.",
+    "em área identificada e de acesso controlado, com produtos separados por tipo de controle sanitário.",
+    "em local exclusivo, sob chave ou dispositivo de segurança e sob responsabilidade do farmacêutico, conforme a norma aplicável.",
+    "em área destinada à dispensação, com acesso restrito aos colaboradores registrados no sistema informatizado.",
+    "em setor separado da escrituração regular, mantendo apenas os registros específicos de entrada e saída."
+  ], correct: 2 },
+  "farmacia-062": { options: [
+    "registrar perdas e devoluções, permitindo análise financeira do estoque sujeito a controle especial.",
+    "acompanhar receitas dispensadas, substituindo a necessidade de retenção e conferência documental.",
+    "consolidar saldos do sistema, dispensando a realização de inventários e verificações físicas periódicas.",
+    "manter rastreabilidade das entradas, saídas, perdas e saldos, nos instrumentos e sistemas exigidos para o estabelecimento.",
+    "permitir adequação dos saldos após conferência do estoque, com registro simplificado da divergência encontrada."
+  ], correct: 3 },
+  "farmacia-063": { options: [
+    "registro coletivo de prescrições vinculadas a pacientes cadastrados, utilizado para dispensações sucessivas no período.",
+    "formulário preenchido pelo paciente na dispensação e arquivado junto à receita de controle especial correspondente.",
+    "consolida a movimentação das substâncias e dos medicamentos sujeitos à exigência, sob responsabilidade do estabelecimento e do responsável técnico.",
+    "documento que substitui notas fiscais de aquisição e transferência após o lançamento das entradas no sistema adotado.",
+    "relatório que consolida totais de entrada e saída, dispensando registros individuais quando não houver diferença de saldo."
+  ], correct: 2 },
+  "farmacia-064": { options: [
+    "identificação e assinatura do prescritor, complementando concentração, quantidade e posologia durante a dispensação.",
+    "disponibilidade do produto e compatibilidade com a padronização local, seguida de registro posterior dos dados formais.",
+    "assinatura do paciente e autorização administrativa, com conferência de data e duração apenas em prescrições renovadas.",
+    "diagnóstico clínico e exames comprobatórios, priorizando a indicação terapêutica sobre forma e quantidade prescritas.",
+    "legibilidade, identificação das partes, data, substância, concentração, forma, quantidade, posologia e requisitos próprios do receituário."
+  ], correct: 4 },
+  "farmacia-065": { options: [
+    "não dispensar até esclarecer a informação com o prescritor ou por meio seguro e documentado.",
+    "interpretar a palavra conforme a apresentação mais utilizada pelo serviço, registrando a dúvida no atendimento.",
+    "dispensar embalagem com concentração intermediária e orientar o paciente a confirmar a dose antes do primeiro uso.",
+    "solicitar ao paciente que informe a dose habitualmente utilizada, confrontando a resposta com o medicamento prescrito.",
+    "selecionar a dose mais comum para a indicação descrita e informar o prescritor após a dispensação."
+  ], correct: 0 },
+  "farmacia-066": { options: [
+    "preparada na farmácia a partir de prescrição para paciente individualizado, com composição, forma e posologia definidas.",
+    "produzida industrialmente em escala comercial, utilizando fórmula padronizada e apresentação definida pelo fabricante.",
+    "elaborada segundo formulário oficial, com possibilidade de dispensação a diferentes pacientes sem prescrição individual.",
+    "preparada a partir de fórmula interna da farmácia, com adaptação da apresentação após avaliação da equipe técnica.",
+    "destinada a uso veterinário individualizado, com composição ajustada conforme a espécie e o peso do animal."
+  ], correct: 0 },
+  "farmacia-067": { options: [
+    "manipulada a partir de procedimento interno elaborado pela farmácia, com atualização periódica da fórmula utilizada.",
+    "preparada segundo prescrição individual, utilizando formulação adaptada às necessidades do paciente atendido.",
+    "produzida em estabelecimento não farmacêutico, desde que acompanhada de laudo de qualidade do fornecedor.",
+    "elaborada com denominação de marca, mantendo composição definida pelo prescritor para uso do paciente.",
+    "manipulada segundo fórmula descrita em formulário ou compêndio oficialmente reconhecido."
+  ], correct: 4 },
+  "farmacia-068": { options: [
+    "realizar trituração e tamisação sucessivas, incorporando o diluente ao final após redução uniforme das partículas.",
+    "empregar diluição geométrica, adicionando porções de diluente aproximadamente iguais ao volume da mistura já existente a cada etapa.",
+    "misturar o fármaco com a camada superficial do diluente e homogeneizar todo o volume ao término da manipulação.",
+    "adicionar o diluente de uma vez, promovendo mistura mecânica prolongada até reduzir diferenças visíveis de cor.",
+    "umedecer o pó com água purificada e incorporar o diluente gradualmente até formar massa uniforme e seca."
+  ], correct: 1 },
+  "farmacia-069": { options: [
+    "preservar a estabilidade química durante o armazenamento, reduzindo reações de degradação do fármaco na preparação.",
+    "aumentar a umidade da mistura para facilitar a formação de aglomerados e melhorar a fluidez do pó manipulado.",
+    "reduzir o tamanho de partículas e favorecer mistura ou dissolução, conforme a formulação.",
+    "promover esterilização do material por atrito mecânico, removendo contaminantes presentes na superfície das partículas.",
+    "eliminar a necessidade de pesagem individual, pois partículas menores mantêm massa uniforme em qualquer volume separado."
+  ], correct: 2 },
+  "farmacia-071": { options: [
+    "manter partículas dispersas por tempo suficiente, reduzindo a necessidade de agitação antes da administração.",
+    "formar sedimento leve, que permaneça estável no fundo do recipiente após a primeira homogeneização.",
+    "apresentar partículas com densidade semelhante à do veículo, evitando alterações de concentração ao longo do uso.",
+    "sedimentar lentamente e ser facilmente redispersável, permitindo dose uniforme após agitação.",
+    "formar sedimento compacto após o repouso, permitindo retirar a porção superior antes da administração."
+  ], correct: 3 }
+};
+
 function applyManualOptionSet(question) {
-  const override = farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = farmaciaBatchFourOverrides[question.id] || farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -1851,7 +1924,8 @@ bank.review = {
   portugueseBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
   portugueseBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
   pharmacyBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
-  pharmacyBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41)
+  pharmacyBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
+  pharmacyBatchFourReviewed: Array.from({ length: 20 }, (_, index) => index + 61)
 };
 
 const report = validate(bank);

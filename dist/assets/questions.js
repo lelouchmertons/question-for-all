@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T21:57:20.971Z",
+  "generatedAt": "2026-10-28T22:38:43.983Z",
   "subjects": [
     {
       "id": "matematica",
@@ -7397,23 +7397,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "no estoque comum, desde que os produtos de maior risco permaneçam nas embalagens originais e sejam conferidos diariamente"
+          "text": "em setor separado da escrituração regular, mantendo apenas os registros específicos de entrada e saída."
         },
         {
           "letter": "B",
-          "text": "em área identificada e de acesso controlado, podendo compartilhar o espaço com saneantes quando existirem prateleiras separadas"
+          "text": "em área identificada e de acesso controlado, com produtos separados por tipo de controle sanitário."
         },
         {
           "letter": "C",
-          "text": "em local exclusivo, sob chave ou dispositivo de segurança e sob responsabilidade do farmacêutico, conforme a norma aplicável"
+          "text": "em local exclusivo, sob chave ou dispositivo de segurança e sob responsabilidade do farmacêutico, conforme a norma aplicável."
         },
         {
           "letter": "D",
-          "text": "em área acessível aos dispensadores, sem necessidade de restrição física quando houver controle informatizado de entradas e saídas"
+          "text": "em área destinada à dispensação, com acesso restrito aos colaboradores registrados no sistema informatizado."
         },
         {
           "letter": "E",
-          "text": "fora do estoque contábil regular, pois a escrituração específica substitui os registros de recebimento, lote, validade e inventário"
+          "text": "no estoque geral, com conferência diária e identificação reforçada das embalagens de maior risco."
         }
       ],
       "answer": "C",
@@ -7429,15 +7429,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "registrar somente perdas financeiras."
+          "text": "acompanhar receitas dispensadas, substituindo a necessidade de retenção e conferência documental."
         },
         {
           "letter": "B",
-          "text": "substituir a prescrição."
+          "text": "registrar perdas e devoluções, permitindo análise financeira do estoque sujeito a controle especial."
         },
         {
           "letter": "C",
-          "text": "dispensar inventários físicos."
+          "text": "consolidar saldos do sistema, dispensando a realização de inventários e verificações físicas periódicas."
         },
         {
           "letter": "D",
@@ -7445,7 +7445,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "permitir ajustes sem justificativa."
+          "text": "permitir adequação dos saldos após conferência do estoque, com registro simplificado da divergência encontrada."
         }
       ],
       "answer": "D",
@@ -7461,23 +7461,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "funciona como prescrição coletiva para pacientes cadastrados e autoriza dispensações sucessivas durante o período informado no balanço"
+          "text": "documento que substitui notas fiscais de aquisição e transferência após o lançamento das entradas no sistema adotado."
         },
         {
           "letter": "B",
-          "text": "é preenchido pelo paciente no momento da dispensação e permanece arquivado exclusivamente junto à respectiva receita de controle especial"
+          "text": "formulário preenchido pelo paciente na dispensação e arquivado junto à receita de controle especial correspondente."
         },
         {
           "letter": "C",
-          "text": "consolida a movimentação das substâncias e dos medicamentos sujeitos à exigência, sob responsabilidade do estabelecimento e do responsável técnico"
+          "text": "consolida a movimentação das substâncias e dos medicamentos sujeitos à exigência, sob responsabilidade do estabelecimento e do responsável técnico."
         },
         {
           "letter": "D",
-          "text": "substitui os documentos fiscais de aquisição e transferência, dispensando a conservação dos comprovantes que originaram cada lançamento"
+          "text": "registro coletivo de prescrições vinculadas a pacientes cadastrados, utilizado para dispensações sucessivas no período."
         },
         {
           "letter": "E",
-          "text": "elimina a responsabilidade do farmacêutico pelos registros individuais quando os totais de entrada e saída fecham sem diferença aparente"
+          "text": "relatório que consolida totais de entrada e saída, dispensando registros individuais quando não houver diferença de saldo."
         }
       ],
       "answer": "C",
@@ -7493,23 +7493,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente identificação e assinatura do prescritor, pois concentração, quantidade e posologia podem ser completadas na dispensação"
+          "text": "diagnóstico clínico e exames comprobatórios, priorizando a indicação terapêutica sobre forma e quantidade prescritas."
         },
         {
           "letter": "B",
-          "text": "existência do produto no estoque e compatibilidade com a padronização local, deixando a conferência dos dados formais para o registro posterior"
+          "text": "identificação e assinatura do prescritor, complementando concentração, quantidade e posologia durante a dispensação."
         },
         {
           "letter": "C",
-          "text": "assinatura do paciente e autorização administrativa prévia, sem necessidade de verificar data, concentração ou duração do tratamento"
+          "text": "disponibilidade do produto e compatibilidade com a padronização local, seguida de registro posterior dos dados formais."
         },
         {
           "letter": "D",
-          "text": "diagnóstico clínico completo e exames comprobatórios, dispensando a conferência da forma farmacêutica e da quantidade prescrita"
+          "text": "assinatura do paciente e autorização administrativa, com conferência de data e duração apenas em prescrições renovadas."
         },
         {
           "letter": "E",
-          "text": "legibilidade, identificação das partes, data, substância, concentração, forma, quantidade, posologia e requisitos próprios do receituário"
+          "text": "legibilidade, identificação das partes, data, substância, concentração, forma, quantidade, posologia e requisitos próprios do receituário."
         }
       ],
       "answer": "E",
@@ -7529,19 +7529,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "interpretar a palavra por semelhança gráfica."
+          "text": "interpretar a palavra conforme a apresentação mais utilizada pelo serviço, registrando a dúvida no atendimento."
         },
         {
           "letter": "C",
-          "text": "dispensar metade da embalagem."
+          "text": "selecionar a dose mais comum para a indicação descrita e informar o prescritor após a dispensação."
         },
         {
           "letter": "D",
-          "text": "pedir ao paciente que decida."
+          "text": "solicitar ao paciente que informe a dose habitualmente utilizada, confrontando a resposta com o medicamento prescrito."
         },
         {
           "letter": "E",
-          "text": "escolher a dose mais comum."
+          "text": "dispensar embalagem com concentração intermediária e orientar o paciente a confirmar a dose antes do primeiro uso."
         }
       ],
       "answer": "A",
@@ -7561,19 +7561,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "produzida industrialmente em larga escala sem prescrição individual."
+          "text": "produzida industrialmente em escala comercial, utilizando fórmula padronizada e apresentação definida pelo fabricante."
         },
         {
           "letter": "C",
-          "text": "necessariamente constante de compêndio oficial."
+          "text": "destinada a uso veterinário individualizado, com composição ajustada conforme a espécie e o peso do animal."
         },
         {
           "letter": "D",
-          "text": "dispensada sem rotulagem."
+          "text": "elaborada segundo formulário oficial, com possibilidade de dispensação a diferentes pacientes sem prescrição individual."
         },
         {
           "letter": "E",
-          "text": "destinada apenas a uso veterinário."
+          "text": "preparada a partir de fórmula interna da farmácia, com adaptação da apresentação após avaliação da equipe técnica."
         }
       ],
       "answer": "A",
@@ -7589,19 +7589,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "feita sem procedimento escrito."
+          "text": "manipulada a partir de procedimento interno elaborado pela farmácia, com atualização periódica da fórmula utilizada."
         },
         {
           "letter": "B",
-          "text": "isenta de controle de qualidade."
+          "text": "elaborada com denominação de marca, mantendo composição definida pelo prescritor para uso do paciente."
         },
         {
           "letter": "C",
-          "text": "produzida por qualquer estabelecimento não farmacêutico."
+          "text": "produzida em estabelecimento não farmacêutico, desde que acompanhada de laudo de qualidade do fornecedor."
         },
         {
           "letter": "D",
-          "text": "prescrita exclusivamente por nome de marca."
+          "text": "preparada segundo prescrição individual, utilizando formulação adaptada às necessidades do paciente atendido."
         },
         {
           "letter": "E",
@@ -7621,7 +7621,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "dispensar trituração e tamisação em qualquer caso."
+          "text": "realizar trituração e tamisação sucessivas, incorporando o diluente ao final após redução uniforme das partículas."
         },
         {
           "letter": "B",
@@ -7629,15 +7629,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "misturar apenas a superfície do recipiente."
+          "text": "adicionar o diluente de uma vez, promovendo mistura mecânica prolongada até reduzir diferenças visíveis de cor."
         },
         {
           "letter": "D",
-          "text": "adicionar todo o diluente de uma vez."
+          "text": "misturar o fármaco com a camada superficial do diluente e homogeneizar todo o volume ao término da manipulação."
         },
         {
           "letter": "E",
-          "text": "umedecer obrigatoriamente com água."
+          "text": "umedecer o pó com água purificada e incorporar o diluente gradualmente até formar massa uniforme e seca."
         }
       ],
       "answer": "B",
@@ -7653,11 +7653,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "garantir estabilidade química por si só."
+          "text": "preservar a estabilidade química durante o armazenamento, reduzindo reações de degradação do fármaco na preparação."
         },
         {
           "letter": "B",
-          "text": "aumentar a umidade deliberadamente."
+          "text": "aumentar a umidade da mistura para facilitar a formação de aglomerados e melhorar a fluidez do pó manipulado."
         },
         {
           "letter": "C",
@@ -7665,11 +7665,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "esterilizar o material."
+          "text": "promover esterilização do material por atrito mecânico, removendo contaminantes presentes na superfície das partículas."
         },
         {
           "letter": "E",
-          "text": "eliminar a necessidade de pesagem."
+          "text": "eliminar a necessidade de pesagem individual, pois partículas menores mantêm massa uniforme em qualquer volume separado."
         }
       ],
       "answer": "C",
@@ -7717,15 +7717,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "dispensar orientação de agitação."
+          "text": "manter partículas dispersas por tempo suficiente, reduzindo a necessidade de agitação antes da administração."
         },
         {
           "letter": "B",
-          "text": "impedir completamente qualquer sedimentação por tempo ilimitado."
+          "text": "apresentar partículas com densidade semelhante à do veículo, evitando alterações de concentração ao longo do uso."
         },
         {
           "letter": "C",
-          "text": "conter partículas que flutuem permanentemente."
+          "text": "formar sedimento leve, que permaneça estável no fundo do recipiente após a primeira homogeneização."
         },
         {
           "letter": "D",
@@ -7733,7 +7733,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "formar sedimento compacto e irreversível."
+          "text": "formar sedimento compacto após o repouso, permitindo retirar a porção superior antes da administração."
         }
       ],
       "answer": "D",
@@ -10790,6 +10790,28 @@ export const questionBank = {
       58,
       59,
       60
+    ],
+    "pharmacyBatchFourReviewed": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
     ]
   }
 };

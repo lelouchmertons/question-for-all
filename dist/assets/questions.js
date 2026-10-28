@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T18:12:48.833Z",
+  "generatedAt": "2026-10-28T18:15:25.434Z",
   "subjects": [
     {
       "id": "matematica",
@@ -4869,11 +4869,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O atendimento foi suspenso por falta de energia."
+          "text": "Os produtos vencidos foram separados dos demais itens durante a reorganização do estoque."
         },
         {
           "letter": "B",
-          "text": "A comissão analisou cuidadosamente todos os recursos."
+          "text": "O atendimento foi suspenso por falta de energia no prédio em que funcionava o serviço."
         },
         {
           "letter": "C",
@@ -4881,11 +4881,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "Os produtos vencidos foram separados dos demais."
+          "text": "A comissão analisou cuidadosamente todos os recursos encaminhados dentro do prazo previsto."
         },
         {
           "letter": "E",
-          "text": "A equipe atualizou os dados na manhã de segunda-feira."
+          "text": "A equipe atualizou os dados na manhã de segunda-feira, após receber os documentos necessários."
         }
       ],
       "answer": "C",
@@ -5285,19 +5285,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Tipo assim, os dados ficaram meio estranhos depois da mudança."
+          "text": "A equipe identificou um cenário inadequado e optou por examinar os documentos novamente antes da conclusão."
         },
         {
           "letter": "B",
-          "text": "Tava tudo certo, só que o sistema deu ruim no final."
+          "text": "Os dados apresentaram diferenças que, aparentemente, merecem revisão posterior pela equipe responsável."
         },
         {
           "letter": "C",
-          "text": "A gente viu que o negócio não estava legal e resolveu dar uma olhada."
+          "text": "Constataram-se falhas no preenchimento, atribuídas à desatenção dos envolvidos no procedimento analisado."
         },
         {
           "letter": "D",
-          "text": "O pessoal vacilou feio no preenchimento das informações."
+          "text": "Observou-se que o sistema apresentou problema no encerramento, exigindo avaliação complementar do setor."
         },
         {
           "letter": "E",
@@ -5349,11 +5349,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Latinismo é qualquer erro de tradução do latim."
+          "text": "Abreviação e sigla decorrem do mesmo processo e apresentam sempre a mesma estrutura gráfica."
         },
         {
           "letter": "B",
-          "text": "Neologismo é necessariamente uma palavra importada sem adaptação."
+          "text": "Estrangeirismo é forma antiga do idioma que deixou de ser frequente no uso dos falantes atuais."
         },
         {
           "letter": "C",
@@ -5361,11 +5361,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "Estrangeirismo é toda palavra antiga que deixou de ser usada."
+          "text": "Neologismo é palavra importada de outra língua antes de receber adaptação no português contemporâneo."
         },
         {
           "letter": "E",
-          "text": "Abreviação e sigla são processos absolutamente idênticos."
+          "text": "Latinismo é a designação de erro produzido pela tradução literal de construções originárias do latim."
         }
       ],
       "answer": "C",
@@ -5449,19 +5449,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "A substituição de “quando” por “portanto” preservaria a relação de sentido."
+          "text": "O pronome “ela” retoma a necessidade de conferir os registros mencionada na primeira oração."
         },
         {
           "letter": "C",
-          "text": "“Embora” introduz uma causa para a eliminação da conferência."
+          "text": "O texto sustenta que a digitalização eliminou a conferência, desde que o acesso aos registros seja rápido."
         },
         {
           "letter": "D",
-          "text": "O texto defende que a digitalização tornou a conferência desnecessária."
+          "text": "A substituição de “quando” por “portanto” manteria a relação entre erro de origem e rapidez do sistema."
         },
         {
           "letter": "E",
-          "text": "O pronome “ela” retoma “necessidade”."
+          "text": "“Embora” introduz a causa pela qual a conferência dos registros deixou de ser necessária no procedimento."
         }
       ],
       "answer": "A",
@@ -10724,6 +10724,28 @@ export const questionBank = {
       38,
       39,
       40
+    ],
+    "portugueseBatchThreeReviewed": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
     ]
   }
 };

@@ -1396,8 +1396,39 @@ const portuguesBatchTwoOverrides = {
   ], correct: 3 }
 };
 
+const portuguesBatchThreeOverrides = {
+  "portugues-042": { options: [
+    "O atendimento foi suspenso por falta de energia no prédio em que funcionava o serviço.",
+    "A comissão analisou cuidadosamente todos os recursos encaminhados dentro do prazo previsto.",
+    "O gerente informou ao farmacêutico que seu relatório estava incompleto.",
+    "Os produtos vencidos foram separados dos demais itens durante a reorganização do estoque.",
+    "A equipe atualizou os dados na manhã de segunda-feira, após receber os documentos necessários."
+  ], correct: 2 },
+  "portugues-055": { options: [
+    "Os dados apresentaram diferenças que, aparentemente, merecem revisão posterior pela equipe responsável.",
+    "Observou-se que o sistema apresentou problema no encerramento, exigindo avaliação complementar do setor.",
+    "A equipe identificou um cenário inadequado e optou por examinar os documentos novamente antes da conclusão.",
+    "Constataram-se falhas no preenchimento, atribuídas à desatenção dos envolvidos no procedimento analisado.",
+    "Verificou-se inconsistência entre os registros e os documentos comprobatórios."
+  ], correct: 4 },
+  "portugues-057": { options: [
+    "Latinismo é a designação de erro produzido pela tradução literal de construções originárias do latim.",
+    "Neologismo é palavra importada de outra língua antes de receber adaptação no português contemporâneo.",
+    "Arcaísmo é uma forma linguística cujo uso se tornou antigo ou pouco corrente.",
+    "Estrangeirismo é forma antiga do idioma que deixou de ser frequente no uso dos falantes atuais.",
+    "Abreviação e sigla decorrem do mesmo processo e apresentam sempre a mesma estrutura gráfica."
+  ], correct: 2 },
+  "portugues-060": { options: [
+    "A segunda frase explica por que a maior velocidade não dispensa o controle da qualidade dos dados.",
+    "A substituição de “quando” por “portanto” manteria a relação entre erro de origem e rapidez do sistema.",
+    "“Embora” introduz a causa pela qual a conferência dos registros deixou de ser necessária no procedimento.",
+    "O texto sustenta que a digitalização eliminou a conferência, desde que o acesso aos registros seja rápido.",
+    "O pronome “ela” retoma a necessidade de conferir os registros mencionada na primeira oração."
+  ], correct: 0 }
+};
+
 function applyManualOptionSet(question) {
-  const override = portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -1552,7 +1583,8 @@ bank.review = {
   mathBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
   mathBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
   portugueseBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
-  portugueseBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21)
+  portugueseBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
+  portugueseBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41)
 };
 
 const report = validate(bank);

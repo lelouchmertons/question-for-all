@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T22:38:43.983Z",
+  "generatedAt": "2026-10-28T22:45:39.011Z",
   "subjects": [
     {
       "id": "matematica",
@@ -8037,23 +8037,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "pomada com base hidrocarbonada."
+          "text": "pomada com base hidrocarbonada, que forma filme oclusivo e reduz a perda de água pela pele."
         },
         {
           "letter": "B",
-          "text": "suspensão oral."
+          "text": "gel hidrofílico, formado por rede polimérica que libera o fármaco em meio aquoso."
         },
         {
           "letter": "C",
-          "text": "solução tópica."
+          "text": "pasta com elevada proporção de sólidos, empregada quando se busca efeito protetor ou absorvente."
         },
         {
           "letter": "D",
-          "text": "loção aquosa."
+          "text": "loção aquosa com baixa viscosidade, adequada para áreas extensas ou pilosas."
         },
         {
           "letter": "E",
-          "text": "gel hidrofílico."
+          "text": "creme óleo em água, que se espalha facilmente e é removido com água após a aplicação."
         }
       ],
       "answer": "A",
@@ -8069,15 +8069,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "preencher visualmente cada cápsula com quantidades diferentes."
+          "text": "definir o tamanho das cápsulas conforme o volume estimado, dispensando avaliação da densidade aparente do pó."
         },
         {
           "letter": "B",
-          "text": "misturar o fármaco apenas ao final."
+          "text": "incorporar o fármaco ao diluente na etapa final, usando mistura mecânica após o enchimento das cápsulas."
         },
         {
           "letter": "C",
-          "text": "utilizar qualquer tamanho de cápsula sem avaliar densidade aparente."
+          "text": "selecionar cápsulas de tamanho compatível e distribuir a mistura após avaliação visual do volume ocupado."
         },
         {
           "letter": "D",
@@ -8085,7 +8085,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "dispensar a pesagem do diluente."
+          "text": "reduzir a massa de diluente quando a dose for baixa, priorizando o preenchimento completo de cada cápsula."
         }
       ],
       "answer": "D",
@@ -8101,23 +8101,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a esterilidade do comprimido."
+          "text": "a integridade microbiológica da forma farmacêutica durante o prazo de validade declarado."
         },
         {
           "letter": "B",
-          "text": "a quantidade ou velocidade com que o fármaco passa para a solução sob condições padronizadas."
+          "text": "a quantidade ou a velocidade com que o fármaco passa para a solução em condições padronizadas."
         },
         {
           "letter": "C",
-          "text": "o volume aparente do pó antes da compressão."
+          "text": "a identidade química do fármaco por comparação com uma substância de referência."
         },
         {
           "letter": "D",
-          "text": "a dureza mecânica isolada do comprimido."
+          "text": "a resistência mecânica do comprimido durante o manuseio, o revestimento e o acondicionamento."
         },
         {
           "letter": "E",
-          "text": "apenas a identidade do corante."
+          "text": "a massa média das unidades e a variação permitida entre os comprimidos do mesmo lote."
         }
       ],
       "answer": "B",
@@ -8133,15 +8133,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ausência de rotulagem."
+          "text": "características organolépticas adequadas, estabilidade visual e identificação completa do volume envasado."
         },
         {
           "letter": "B",
-          "text": "conservação obrigatória à temperatura ambiente."
+          "text": "conservação em temperatura ambiente, após comprovação de estabilidade físico-química e microbiológica do produto."
         },
         {
           "letter": "C",
-          "text": "manipulação sem controle ambiental."
+          "text": "manipulação em área limpa, com controle microbiológico compatível com o risco e a natureza da preparação."
         },
         {
           "letter": "D",
@@ -8149,7 +8149,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "apenas sabor agradável."
+          "text": "rotulagem completa, compatibilidade com a via, controle de partículas e avaliação de estabilidade durante o envase."
         }
       ],
       "answer": "D",
@@ -8169,19 +8169,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o anonimato do produto."
+          "text": "integridade da forma farmacêutica e orientação verbal, registrando a rastreabilidade apenas no estoque interno."
         },
         {
           "letter": "C",
-          "text": "somente a embalagem externa original."
+          "text": "embalagem externa original e informações de armazenamento, com substituição do lote pela data do fracionamento."
         },
         {
           "letter": "D",
-          "text": "apenas o preço unitário."
+          "text": "características visuais da forma farmacêutica e prazo de uso, sem necessidade de reproduzir dados do fabricante."
         },
         {
           "letter": "E",
-          "text": "exclusivamente a cor da forma farmacêutica."
+          "text": "identificação do produto e preço unitário, mantendo o código de barras para consulta posterior do estabelecimento."
         }
       ],
       "answer": "A",
@@ -8197,23 +8197,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a aceitabilidade de sabor."
+          "text": "a uniformidade de conteúdo entre unidades individuais de uma mesma apresentação farmacêutica."
         },
         {
           "letter": "B",
-          "text": "o prazo de validade por inspeção visual."
+          "text": "a ausência de microrganismos viáveis em produtos cuja especificação exige controle microbiológico."
         },
         {
           "letter": "C",
-          "text": "que a substância ou componente declarado está presente."
+          "text": "que a substância ou componente declarado está presente na amostra examinada."
         },
         {
           "letter": "D",
-          "text": "somente a quantidade total de produto."
+          "text": "a massa de princípio ativo contida na unidade, comparada ao valor especificado para o lote."
         },
         {
           "letter": "E",
-          "text": "apenas a ausência de microrganismos."
+          "text": "a estabilidade do produto ao longo do prazo de validade, observando possíveis produtos de degradação."
         }
       ],
       "answer": "C",
@@ -8229,23 +8229,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exato e preciso."
+          "text": "exato e impreciso, pois resultados dispersos permanecem distribuídos em torno do valor verdadeiro esperado."
         },
         {
           "letter": "B",
-          "text": "inexato e necessariamente inválido para qualquer correção."
+          "text": "impreciso e inexato, pois a presença de viés impede a repetição consistente de resultados semelhantes entre si."
         },
         {
           "letter": "C",
-          "text": "exato e impreciso."
+          "text": "exato e preciso, pois a proximidade entre os resultados confirma a proximidade com o valor verdadeiro e o valor de referência."
         },
         {
           "letter": "D",
-          "text": "sem precisão e sem viés."
+          "text": "impreciso e exato, pois o resultado médio permanece afastado do valor verdadeiro apesar da dispersão observada."
         },
         {
           "letter": "E",
-          "text": "preciso, mas inexato."
+          "text": "preciso, mas inexato, porque há baixa dispersão acompanhada de afastamento sistemático do valor verdadeiro."
         }
       ],
       "answer": "E",
@@ -8261,23 +8261,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "cem vezes menor que uma de pH 4."
+          "text": "duas vezes maior que uma solução de pH 4."
         },
         {
           "letter": "B",
-          "text": "dez vezes maior que uma de pH 4."
+          "text": "dez vezes maior que uma solução de pH 4."
         },
         {
           "letter": "C",
-          "text": "três vezes maior que uma de pH 4."
+          "text": "cem vezes menor que uma solução de pH 4."
         },
         {
           "letter": "D",
-          "text": "duas vezes maior que uma de pH 4."
+          "text": "três vezes maior que uma solução de pH 4."
         },
         {
           "letter": "E",
-          "text": "quatro vezes maior que uma de pH 4."
+          "text": "quatro vezes maior que uma solução de pH 4."
         }
       ],
       "answer": "B",
@@ -8293,15 +8293,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a quantidade de microrganismos viáveis apenas."
+          "text": "a identidade do princípio ativo, obtida por reação, espectro ou comparação com padrão de referência."
         },
         {
           "letter": "B",
-          "text": "exclusivamente a massa total da unidade."
+          "text": "a massa total da unidade farmacêutica, usada para verificar a regularidade do enchimento ou da compressão."
         },
         {
           "letter": "C",
-          "text": "somente a cor da embalagem."
+          "text": "a quantidade de microrganismos viáveis presente em uma amostra submetida ao controle microbiológico."
         },
         {
           "letter": "D",
@@ -8309,7 +8309,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "o tempo necessário para abrir o frasco."
+          "text": "a velocidade com que a forma farmacêutica libera o fármaco para o meio de dissolução."
         }
       ],
       "answer": "D",
@@ -8325,23 +8325,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente o número de lote."
+          "text": "a ligação a proteínas plasmáticas após a absorção, antes do contato com os fluidos biológicos."
         },
         {
           "letter": "B",
-          "text": "exclusivamente a validade administrativa da receita."
+          "text": "o volume aparente de distribuição calculado depois que o fármaco alcança a circulação sistêmica."
         },
         {
           "letter": "C",
-          "text": "apenas a densidade da embalagem secundária."
+          "text": "a permeabilidade intrínseca do fármaco através das membranas biológicas após a absorção."
         },
         {
           "letter": "D",
-          "text": "apenas a cor do rótulo."
+          "text": "a afinidade do fármaco pelo receptor, sem modificar a quantidade dissolvida no local de absorção."
         },
         {
           "letter": "E",
-          "text": "a velocidade de dissolução e, potencialmente, a biodisponibilidade."
+          "text": "a velocidade de dissolução e, conforme a etapa limitante do processo, a biodisponibilidade do fármaco."
         }
       ],
       "answer": "E",
@@ -8357,23 +8357,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exclusivamente à ligação do fármaco ao receptor."
+          "text": "a extensão da ligação a proteínas plasmáticas, independentemente da absorção e da via de administração."
         },
         {
           "letter": "B",
-          "text": "à fração do fármaco ligada a proteínas, somente."
+          "text": "a quantidade total de metabólitos eliminados na urina após a administração do medicamento."
         },
         {
           "letter": "C",
-          "text": "à velocidade e à extensão com que o fármaco alcança a circulação sistêmica na forma inalterada."
+          "text": "a velocidade e a extensão com que o fármaco alcança a circulação sistêmica na forma inalterada."
         },
         {
           "letter": "D",
-          "text": "ao tempo de desintegração da embalagem."
+          "text": "a afinidade do fármaco por receptores e a intensidade da resposta produzida no tecido-alvo."
         },
         {
           "letter": "E",
-          "text": "apenas ao volume urinário produzido."
+          "text": "o tempo necessário para a desintegração da forma farmacêutica antes do início da absorção."
         }
       ],
       "answer": "C",
@@ -8389,23 +8389,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "não atravessar membranas biológicas."
+          "text": "concentrar-se predominantemente no plasma, com distribuição limitada para compartimentos extravasculares."
         },
         {
           "letter": "B",
-          "text": "possuir absorção oral de 100%."
+          "text": "apresentar absorção oral completa, pois o volume de distribuição reflete a quantidade absorvida."
         },
         {
           "letter": "C",
-          "text": "permanecer exclusivamente no plasma."
+          "text": "ser eliminado sem metabolização, porque o volume de distribuição determina a via de excreção."
         },
         {
           "letter": "D",
-          "text": "distribuir-se extensamente para tecidos ou ligar-se fora do compartimento plasmático."
+          "text": "distribuir-se extensamente para tecidos ou ligar-se fora do compartimento plasmático, em relação ao plasma."
         },
         {
           "letter": "E",
-          "text": "ser necessariamente eliminado sem metabolização."
+          "text": "permanecer no compartimento vascular, com distribuição limitada pela barreira endotelial dos capilares."
         }
       ],
       "answer": "D",
@@ -8421,23 +8421,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o volume de plasma do qual o fármaco é completamente removido por unidade de tempo."
+          "text": "o volume de plasma do qual o fármaco seria completamente removido por unidade de tempo, de forma teórica."
         },
         {
           "letter": "B",
-          "text": "a fração ligada à albumina."
+          "text": "o volume aparente necessário para conter a quantidade total de fármaco na concentração plasmática medida."
         },
         {
           "letter": "C",
-          "text": "a quantidade total de fármaco no organismo."
+          "text": "a fração do fármaco que permanece ligada às proteínas plasmáticas durante a fase de distribuição."
         },
         {
           "letter": "D",
-          "text": "o tempo para absorção completa."
+          "text": "o tempo necessário para que a concentração plasmática alcance metade do valor inicialmente observado."
         },
         {
           "letter": "E",
-          "text": "a afinidade pelo receptor."
+          "text": "a quantidade total de fármaco eliminada em determinado intervalo, independentemente de sua concentração plasmática."
         }
       ],
       "answer": "A",
@@ -8453,23 +8453,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "absorver toda a dose administrada por via oral."
+          "text": "reduzir à metade a velocidade de absorção da forma farmacêutica após a administração."
         },
         {
           "letter": "B",
-          "text": "alcançar a concentração definida como tóxica."
+          "text": "eliminar uma quantidade fixa de fármaco por unidade de tempo, sem relação com a concentração."
         },
         {
           "letter": "C",
-          "text": "reduzir pela metade a quantidade ou concentração do fármaco no organismo."
+          "text": "reduzir pela metade a quantidade ou concentração do fármaco presente no organismo."
         },
         {
           "letter": "D",
-          "text": "eliminar uma quantidade fixa de fármaco por unidade de tempo."
+          "text": "absorver metade da dose administrada, antes do início da distribuição pelos tecidos."
         },
         {
           "letter": "E",
-          "text": "iniciar a desintegração de um comprimido."
+          "text": "atingir a concentração mínima eficaz após cada administração em um esquema de doses repetidas."
         }
       ],
       "answer": "C",
@@ -8485,23 +8485,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "dez minutos após administração oral."
+          "text": "uma meia-vida, pois a primeira dose já estabelece a concentração média do tratamento."
         },
         {
           "letter": "B",
-          "text": "quatro a cinco meias-vidas."
+          "text": "quatro a cinco meias-vidas, quando a concentração passa a oscilar em torno de um platô previsível."
         },
         {
           "letter": "C",
-          "text": "uma hora após o início da administração."
+          "text": "o momento em que ocorre a primeira concentração máxima após a administração inicial."
         },
         {
           "letter": "D",
-          "text": "uma única dose de ataque prevista no esquema terapêutico."
+          "text": "a interrupção do tratamento, quando não há novas doses contribuindo para o acúmulo."
         },
         {
           "letter": "E",
-          "text": "o momento de interrupção do tratamento."
+          "text": "a aplicação de uma dose de ataque, independentemente da meia-vida e do intervalo entre as doses."
         }
       ],
       "answer": "B",
@@ -8521,19 +8521,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "não há necessidade de efeito rápido."
+          "text": "o objetivo é reduzir a concentração inicial para evitar qualquer risco de acúmulo durante o tratamento."
         },
         {
           "letter": "C",
-          "text": "o fármaco não possui margem terapêutica."
+          "text": "a biodisponibilidade é completa e se pretende substituir permanentemente o esquema de manutenção."
         },
         {
           "letter": "D",
-          "text": "se deseja substituir todas as doses de manutenção."
+          "text": "o fármaco apresenta volume de distribuição baixo e se busca prolongar o tempo até o início do efeito."
         },
         {
           "letter": "E",
-          "text": "pretende-se reduzir imediatamente o volume de distribuição."
+          "text": "a eliminação é tão rápida que doses de manutenção deixam de ser necessárias após a primeira administração."
         }
       ],
       "answer": "A",
@@ -8549,23 +8549,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a meia-vida aumenta obrigatoriamente a cada dose."
+          "text": "a depuração deixa de participar da determinação da concentração plasmática ao longo do tratamento."
         },
         {
           "letter": "B",
-          "text": "elimina-se quantidade fixa por unidade de tempo."
+          "text": "a velocidade de eliminação se mantém constante, pois não depende da quantidade de fármaco presente."
         },
         {
           "letter": "C",
-          "text": "não existe relação com a concentração."
+          "text": "elimina-se uma quantidade fixa por unidade de tempo, mesmo quando a concentração plasmática se altera."
         },
         {
           "letter": "D",
-          "text": "a depuração é sempre zero."
+          "text": "a meia-vida aumenta em proporção direta à dose administrada em qualquer faixa de concentração."
         },
         {
           "letter": "E",
-          "text": "elimina-se uma fração constante da quantidade presente por unidade de tempo."
+          "text": "elimina-se uma fração constante da quantidade presente por unidade de tempo, proporcional à concentração."
         }
       ],
       "answer": "E",
@@ -8585,19 +8585,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "reduzir imediatamente a síntese das enzimas."
+          "text": "desaparecer imediatamente com a suspensão, sem relação com a renovação das enzimas formadas."
         },
         {
           "letter": "C",
-          "text": "agir sempre após uma única dose."
+          "text": "reduzir o metabolismo de substratos cuja eliminação dependa da isoenzima induzida."
         },
         {
           "letter": "D",
-          "text": "não apresentar efeito após ser suspenso."
+          "text": "produzir redução da exposição após uma única dose, antes que ocorra aumento da capacidade metabólica."
         },
         {
           "letter": "E",
-          "text": "aumentar a concentração de todo substrato."
+          "text": "reduzir a síntese das enzimas metabolizadoras, elevando rapidamente a exposição aos fármacos envolvidos."
         }
       ],
       "answer": "A",
@@ -8613,15 +8613,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "eliminar a possibilidade de toxicidade."
+          "text": "reduzir o risco de toxicidade por limitar a exposição sistêmica ao fármaco ativo durante o tratamento."
         },
         {
           "letter": "B",
-          "text": "reduzir sempre sua concentração."
+          "text": "reduzir a concentração do fármaco ativo ao diminuir sua permanência na circulação sistêmica após a administração."
         },
         {
           "letter": "C",
-          "text": "aumentar necessariamente sua excreção renal."
+          "text": "impedir a absorção intestinal, pois a inibição metabólica ocorre antes da entrada do fármaco na circulação sistêmica."
         },
         {
           "letter": "D",
@@ -8629,7 +8629,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "impedir qualquer absorção intestinal."
+          "text": "aumentar a excreção renal por elevar a fração metabolizada do fármaco ativo disponível na circulação."
         }
       ],
       "answer": "D",
@@ -8645,23 +8645,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a ligação não pode ser saturável."
+          "text": "a ligação não pode ser saturável, pois proteínas plasmáticas possuem capacidade fixa para cada fármaco circulante."
         },
         {
           "letter": "B",
-          "text": "albumina liga exclusivamente fármacos básicos."
+          "text": "a albumina liga exclusivamente fármacos básicos, enquanto outras proteínas transportam os compostos ácidos."
         },
         {
           "letter": "C",
-          "text": "todo deslocamento proteico produz toxicidade clinicamente relevante."
+          "text": "todo deslocamento proteico produz toxicidade clinicamente relevante, mesmo quando a eliminação compensa a fração livre."
         },
         {
           "letter": "D",
-          "text": "somente a fração livre está imediatamente disponível para distribuição, metabolismo, eliminação e interação com alvos."
+          "text": "a fração livre está imediatamente disponível para distribuição, metabolismo, eliminação e interação com alvos."
         },
         {
           "letter": "E",
-          "text": "a fração ligada atravessa membranas mais rapidamente."
+          "text": "a fração ligada atravessa membranas mais rapidamente, por apresentar maior estabilidade no compartimento plasmático."
         }
       ],
       "answer": "D",
@@ -10812,6 +10812,28 @@ export const questionBank = {
       78,
       79,
       80
+    ],
+    "pharmacyBatchFiveReviewed": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
     ]
   }
 };

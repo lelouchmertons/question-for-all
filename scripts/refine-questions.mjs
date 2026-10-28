@@ -1765,8 +1765,151 @@ const farmaciaBatchFourOverrides = {
   ], correct: 3 }
 };
 
+const farmaciaBatchFiveOverrides = {
+  "farmacia-081": { options: [
+    "pomada com base hidrocarbonada, que forma filme oclusivo e reduz a perda de água pela pele.",
+    "creme óleo em água, que se espalha facilmente e é removido com água após a aplicação.",
+    "gel hidrofílico, formado por rede polimérica que libera o fármaco em meio aquoso.",
+    "loção aquosa com baixa viscosidade, adequada para áreas extensas ou pilosas.",
+    "pasta com elevada proporção de sólidos, empregada quando se busca efeito protetor ou absorvente."
+  ], correct: 0 },
+  "farmacia-082": { options: [
+    "selecionar cápsulas de tamanho compatível e distribuir a mistura após avaliação visual do volume ocupado.",
+    "incorporar o fármaco ao diluente na etapa final, usando mistura mecânica após o enchimento das cápsulas.",
+    "definir o tamanho das cápsulas conforme o volume estimado, dispensando avaliação da densidade aparente do pó.",
+    "preparar mistura homogênea por diluição geométrica e controlar peso e uniformidade do processo.",
+    "reduzir a massa de diluente quando a dose for baixa, priorizando o preenchimento completo de cada cápsula."
+  ], correct: 3 },
+  "farmacia-083": { options: [
+    "a integridade microbiológica da forma farmacêutica durante o prazo de validade declarado.",
+    "a quantidade ou a velocidade com que o fármaco passa para a solução em condições padronizadas.",
+    "a resistência mecânica do comprimido durante o manuseio, o revestimento e o acondicionamento.",
+    "a massa média das unidades e a variação permitida entre os comprimidos do mesmo lote.",
+    "a identidade química do fármaco por comparação com uma substância de referência."
+  ], correct: 1 },
+  "farmacia-084": { options: [
+    "rotulagem completa, compatibilidade com a via, controle de partículas e avaliação de estabilidade durante o envase.",
+    "conservação em temperatura ambiente, após comprovação de estabilidade físico-química e microbiológica do produto.",
+    "manipulação em área limpa, com controle microbiológico compatível com o risco e a natureza da preparação.",
+    "esterilidade, controle de endotoxinas ou pirogênios conforme o produto, partículas e compatibilidade com a via de administração.",
+    "características organolépticas adequadas, estabilidade visual e identificação completa do volume envasado."
+  ], correct: 3 },
+  "farmacia-085": { options: [
+    "identificação, lote, validade, integridade, condições de conservação e rastreabilidade até a dispensação.",
+    "identificação do produto e preço unitário, mantendo o código de barras para consulta posterior do estabelecimento.",
+    "embalagem externa original e informações de armazenamento, com substituição do lote pela data do fracionamento.",
+    "integridade da forma farmacêutica e orientação verbal, registrando a rastreabilidade apenas no estoque interno.",
+    "características visuais da forma farmacêutica e prazo de uso, sem necessidade de reproduzir dados do fabricante."
+  ], correct: 0 },
+  "farmacia-086": { options: [
+    "a massa de princípio ativo contida na unidade, comparada ao valor especificado para o lote.",
+    "a estabilidade do produto ao longo do prazo de validade, observando possíveis produtos de degradação.",
+    "que a substância ou componente declarado está presente na amostra examinada.",
+    "a uniformidade de conteúdo entre unidades individuais de uma mesma apresentação farmacêutica.",
+    "a ausência de microrganismos viáveis em produtos cuja especificação exige controle microbiológico."
+  ], correct: 2 },
+  "farmacia-087": { options: [
+    "exato e preciso, pois a proximidade entre os resultados confirma a proximidade com o valor verdadeiro e o valor de referência.",
+    "impreciso e exato, pois o resultado médio permanece afastado do valor verdadeiro apesar da dispersão observada.",
+    "exato e impreciso, pois resultados dispersos permanecem distribuídos em torno do valor verdadeiro esperado.",
+    "impreciso e inexato, pois a presença de viés impede a repetição consistente de resultados semelhantes entre si.",
+    "preciso, mas inexato, porque há baixa dispersão acompanhada de afastamento sistemático do valor verdadeiro."
+  ], correct: 4 },
+  "farmacia-088": { options: [
+    "cem vezes menor que uma solução de pH 4.",
+    "dez vezes maior que uma solução de pH 4.",
+    "três vezes maior que uma solução de pH 4.",
+    "duas vezes maior que uma solução de pH 4.",
+    "quatro vezes maior que uma solução de pH 4."
+  ], correct: 1 },
+  "farmacia-089": { options: [
+    "a quantidade de microrganismos viáveis presente em uma amostra submetida ao controle microbiológico.",
+    "a massa total da unidade farmacêutica, usada para verificar a regularidade do enchimento ou da compressão.",
+    "a identidade do princípio ativo, obtida por reação, espectro ou comparação com padrão de referência.",
+    "a quantidade do princípio ativo em relação ao valor declarado ou especificado.",
+    "a velocidade com que a forma farmacêutica libera o fármaco para o meio de dissolução."
+  ], correct: 3 },
+  "farmacia-090": { options: [
+    "a permeabilidade intrínseca do fármaco através das membranas biológicas após a absorção.",
+    "a afinidade do fármaco pelo receptor, sem modificar a quantidade dissolvida no local de absorção.",
+    "o volume aparente de distribuição calculado depois que o fármaco alcança a circulação sistêmica.",
+    "a ligação a proteínas plasmáticas após a absorção, antes do contato com os fluidos biológicos.",
+    "a velocidade de dissolução e, conforme a etapa limitante do processo, a biodisponibilidade do fármaco."
+  ], correct: 4 },
+  "farmacia-091": { options: [
+    "a afinidade do fármaco por receptores e a intensidade da resposta produzida no tecido-alvo.",
+    "a extensão da ligação a proteínas plasmáticas, independentemente da absorção e da via de administração.",
+    "a velocidade e a extensão com que o fármaco alcança a circulação sistêmica na forma inalterada.",
+    "o tempo necessário para a desintegração da forma farmacêutica antes do início da absorção.",
+    "a quantidade total de metabólitos eliminados na urina após a administração do medicamento."
+  ], correct: 2 },
+  "farmacia-092": { options: [
+    "permanecer no compartimento vascular, com distribuição limitada pela barreira endotelial dos capilares.",
+    "apresentar absorção oral completa, pois o volume de distribuição reflete a quantidade absorvida.",
+    "concentrar-se predominantemente no plasma, com distribuição limitada para compartimentos extravasculares.",
+    "distribuir-se extensamente para tecidos ou ligar-se fora do compartimento plasmático, em relação ao plasma.",
+    "ser eliminado sem metabolização, porque o volume de distribuição determina a via de excreção."
+  ], correct: 3 },
+  "farmacia-093": { options: [
+    "o volume de plasma do qual o fármaco seria completamente removido por unidade de tempo, de forma teórica.",
+    "a quantidade total de fármaco eliminada em determinado intervalo, independentemente de sua concentração plasmática.",
+    "a fração do fármaco que permanece ligada às proteínas plasmáticas durante a fase de distribuição.",
+    "o tempo necessário para que a concentração plasmática alcance metade do valor inicialmente observado.",
+    "o volume aparente necessário para conter a quantidade total de fármaco na concentração plasmática medida."
+  ], correct: 0 },
+  "farmacia-094": { options: [
+    "absorver metade da dose administrada, antes do início da distribuição pelos tecidos.",
+    "atingir a concentração mínima eficaz após cada administração em um esquema de doses repetidas.",
+    "reduzir pela metade a quantidade ou concentração do fármaco presente no organismo.",
+    "eliminar uma quantidade fixa de fármaco por unidade de tempo, sem relação com a concentração.",
+    "reduzir à metade a velocidade de absorção da forma farmacêutica após a administração."
+  ], correct: 2 },
+  "farmacia-095": { options: [
+    "uma meia-vida, pois a primeira dose já estabelece a concentração média do tratamento.",
+    "quatro a cinco meias-vidas, quando a concentração passa a oscilar em torno de um platô previsível.",
+    "o momento em que ocorre a primeira concentração máxima após a administração inicial.",
+    "a aplicação de uma dose de ataque, independentemente da meia-vida e do intervalo entre as doses.",
+    "a interrupção do tratamento, quando não há novas doses contribuindo para o acúmulo."
+  ], correct: 1 },
+  "farmacia-096": { options: [
+    "deseja-se atingir rapidamente uma concentração-alvo de fármaco com meia-vida longa.",
+    "o objetivo é reduzir a concentração inicial para evitar qualquer risco de acúmulo durante o tratamento.",
+    "a eliminação é tão rápida que doses de manutenção deixam de ser necessárias após a primeira administração.",
+    "o fármaco apresenta volume de distribuição baixo e se busca prolongar o tempo até o início do efeito.",
+    "a biodisponibilidade é completa e se pretende substituir permanentemente o esquema de manutenção."
+  ], correct: 0 },
+  "farmacia-097": { options: [
+    "a meia-vida aumenta em proporção direta à dose administrada em qualquer faixa de concentração.",
+    "elimina-se uma quantidade fixa por unidade de tempo, mesmo quando a concentração plasmática se altera.",
+    "a velocidade de eliminação se mantém constante, pois não depende da quantidade de fármaco presente.",
+    "a depuração deixa de participar da determinação da concentração plasmática ao longo do tratamento.",
+    "elimina-se uma fração constante da quantidade presente por unidade de tempo, proporcional à concentração."
+  ], correct: 4 },
+  "farmacia-098": { options: [
+    "aumentar o metabolismo de determinados substratos, reduzindo sua exposição e possivelmente sua eficácia.",
+    "reduzir a síntese das enzimas metabolizadoras, elevando rapidamente a exposição aos fármacos envolvidos.",
+    "produzir redução da exposição após uma única dose, antes que ocorra aumento da capacidade metabólica.",
+    "desaparecer imediatamente com a suspensão, sem relação com a renovação das enzimas formadas.",
+    "reduzir o metabolismo de substratos cuja eliminação dependa da isoenzima induzida."
+  ], correct: 0 },
+  "farmacia-099": { options: [
+    "reduzir o risco de toxicidade por limitar a exposição sistêmica ao fármaco ativo durante o tratamento.",
+    "reduzir a concentração do fármaco ativo ao diminuir sua permanência na circulação sistêmica após a administração.",
+    "aumentar a excreção renal por elevar a fração metabolizada do fármaco ativo disponível na circulação.",
+    "elevar sua exposição e risco de eventos adversos, dependendo da via metabólica e da relevância clínica.",
+    "impedir a absorção intestinal, pois a inibição metabólica ocorre antes da entrada do fármaco na circulação sistêmica."
+  ], correct: 3 },
+  "farmacia-100": { options: [
+    "a ligação não pode ser saturável, pois proteínas plasmáticas possuem capacidade fixa para cada fármaco circulante.",
+    "a albumina liga exclusivamente fármacos básicos, enquanto outras proteínas transportam os compostos ácidos.",
+    "todo deslocamento proteico produz toxicidade clinicamente relevante, mesmo quando a eliminação compensa a fração livre.",
+    "a fração livre está imediatamente disponível para distribuição, metabolismo, eliminação e interação com alvos.",
+    "a fração ligada atravessa membranas mais rapidamente, por apresentar maior estabilidade no compartimento plasmático."
+  ], correct: 3 }
+};
+
 function applyManualOptionSet(question) {
-  const override = farmaciaBatchFourOverrides[question.id] || farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = farmaciaBatchFiveOverrides[question.id] || farmaciaBatchFourOverrides[question.id] || farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -1925,7 +2068,8 @@ bank.review = {
   portugueseBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
   pharmacyBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
   pharmacyBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
-  pharmacyBatchFourReviewed: Array.from({ length: 20 }, (_, index) => index + 61)
+  pharmacyBatchFourReviewed: Array.from({ length: 20 }, (_, index) => index + 61),
+  pharmacyBatchFiveReviewed: Array.from({ length: 20 }, (_, index) => index + 81)
 };
 
 const report = validate(bank);

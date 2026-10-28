@@ -1372,8 +1372,32 @@ const portuguesBatchOneOverrides = {
   ], correct: 4 }
 };
 
+const portuguesBatchTwoOverrides = {
+  "portugues-037": { options: [
+    "é opcional e mantém a relação restritiva entre apresentação da receita e atendimento.",
+    "faz de “usuários” objeto direto da oração e altera sua função sintática no período.",
+    "elimina o vínculo entre ter apresentado receita e ter sido atendido no enunciado.",
+    "indica que somente uma parcela dos usuários mencionados apresentou receita.",
+    "torna a oração explicativa e sugere que todos os usuários apresentaram receita."
+  ], correct: 4 },
+  "portugues-038": { options: [
+    "O relatório apontou três problemas: atraso, desperdício e subnotificação.",
+    "Foram analisados: os documentos encaminhados ontem pela equipe responsável.",
+    "Os servidores: participaram da capacitação obrigatória realizada no período.",
+    "A comissão decidiu: que o recurso apresentado era improcedente no processo.",
+    "A equipe verificou: e corrigiu todos os registros inconsistentes do setor."
+  ], correct: 0 },
+  "portugues-039": { options: [
+    "O servidor; que elaborou o relatório; pediu afastamento por motivos pessoais.",
+    "A comissão decidiu; porque o prazo previsto para manifestação havia terminado.",
+    "A unidade recebeu; os produtos solicitados para abastecimento do almoxarifado.",
+    "Foram convocados Ana, farmacêutica; Bruno, enfermeiro; e Carlos, médico.",
+    "Os dados; foram analisados cuidadosamente pela equipe responsável pelo relatório."
+  ], correct: 3 }
+};
+
 function applyManualOptionSet(question) {
-  const override = portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -1527,7 +1551,8 @@ bank.review = {
   mathBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
   mathBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
   mathBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
-  portugueseBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1)
+  portugueseBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
+  portugueseBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21)
 };
 
 const report = validate(bank);

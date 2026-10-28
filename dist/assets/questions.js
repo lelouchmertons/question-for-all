@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T18:10:06.260Z",
+  "generatedAt": "2026-10-28T18:12:48.833Z",
   "subjects": [
     {
       "id": "matematica",
@@ -4709,23 +4709,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "é facultativo e não interfere no sentido."
+          "text": "é opcional e mantém a relação restritiva entre apresentação da receita e atendimento."
         },
         {
           "letter": "B",
-          "text": "torna “usuários” objeto direto da oração."
+          "text": "faz de “usuários” objeto direto da oração e altera sua função sintática no período."
         },
         {
           "letter": "C",
-          "text": "elimina a relação entre apresentação da receita e atendimento."
+          "text": "indica que somente uma parcela dos usuários mencionados apresentou receita."
         },
         {
           "letter": "D",
-          "text": "indica que apenas parte dos usuários apresentou receita."
+          "text": "elimina o vínculo entre ter apresentado receita e ter sido atendido no enunciado."
         },
         {
           "letter": "E",
-          "text": "transforma a oração restritiva em explicativa e sugere que todos os usuários mencionados apresentaram receita."
+          "text": "torna a oração explicativa e sugere que todos os usuários apresentaram receita."
         }
       ],
       "answer": "E",
@@ -4745,19 +4745,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Foram analisados: os documentos encaminhados ontem."
+          "text": "Foram analisados: os documentos encaminhados ontem pela equipe responsável."
         },
         {
           "letter": "C",
-          "text": "Os servidores: participaram da capacitação obrigatória."
+          "text": "Os servidores: participaram da capacitação obrigatória realizada no período."
         },
         {
           "letter": "D",
-          "text": "A comissão decidiu: que o recurso era improcedente."
+          "text": "A comissão decidiu: que o recurso apresentado era improcedente no processo."
         },
         {
           "letter": "E",
-          "text": "A equipe verificou: e corrigiu todos os registros."
+          "text": "A equipe verificou: e corrigiu todos os registros inconsistentes do setor."
         }
       ],
       "answer": "A",
@@ -4773,15 +4773,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O servidor; que elaborou o relatório; pediu afastamento."
+          "text": "A unidade recebeu; os produtos solicitados para abastecimento do almoxarifado."
         },
         {
           "letter": "B",
-          "text": "A comissão decidiu; porque o prazo havia terminado."
+          "text": "Os dados; foram analisados cuidadosamente pela equipe responsável pelo relatório."
         },
         {
           "letter": "C",
-          "text": "A unidade recebeu; os produtos solicitados."
+          "text": "A comissão decidiu; porque o prazo previsto para manifestação havia terminado."
         },
         {
           "letter": "D",
@@ -4789,7 +4789,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "Os dados; foram analisados cuidadosamente pela equipe."
+          "text": "O servidor; que elaborou o relatório; pediu afastamento por motivos pessoais."
         }
       ],
       "answer": "D",
@@ -10702,6 +10702,28 @@ export const questionBank = {
       18,
       19,
       20
+    ],
+    "portugueseBatchTwoReviewed": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
     ]
   }
 };

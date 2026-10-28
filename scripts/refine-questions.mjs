@@ -139,6 +139,24 @@ const mathOverrides = {
 };
 
 const manualOptionSets = {
+  "farmacia-050": {
+    options: [
+      "manter produtos de aparência ou nomes semelhantes lado a lado, com identificação apenas no sistema informatizado.",
+      "atribuir a prevenção de erros à responsabilização individual, com apuração posterior do profissional envolvido.",
+      "usar a memória e a experiência dos profissionais como controle principal antes da dispensação.",
+      "reduzir rótulos auxiliares e sinais de alerta para simplificar a rotina do estoque.",
+      "separar medicamentos semelhantes, usar alertas e adotar conferência independente nos processos de maior risco."
+    ], correct: 4
+  },
+  "farmacia-051": {
+    options: [
+      "apresentam baixa estabilidade térmica e exigem condições específicas de conservação durante todo o armazenamento.",
+      "são destinados predominantemente ao ambiente hospitalar e requerem monitoramento intensivo durante a dispensação.",
+      "são medicamentos injetáveis de alto custo, relacionados a terapias de maior complexidade clínica.",
+      "têm retenção de receita e exigem controle especial desde a aquisição até a dispensação.",
+      "possuem nomes, grafias, pronúncias ou embalagens semelhantes, capazes de favorecer trocas e exigir diferenciação."
+    ], correct: 4
+  },
   "administracao-publica-019": {
     options: [
       "direito líquido e certo ameaçado ou violado por ilegalidade ou abuso de poder, quando não amparado por habeas corpus ou habeas data",
@@ -662,6 +680,74 @@ function applyManualOptionSet(question) {
   question.answer = "ABCDE"[override.correct];
 }
 
+// Padrão editorial para o banco: cada distrator pode indicar o trecho exato
+// que muda o conceito e uma justificativa curta. Novas questões devem receber
+// essa ficha junto com enunciado, gabarito e explicação principal.
+const diagnosticNotes = {
+  "farmacia-050": {
+    "manter produtos de aparência ou nomes semelhantes lado a lado, com identificação apenas no sistema informatizado.": {
+      focus: "lado a lado, com identificação apenas no sistema informatizado",
+      reason: "Produtos semelhantes precisam de separação física e sinais visuais de diferenciação. O sistema informatizado ajuda, mas não elimina o risco de troca no armazenamento ou na seleção."
+    },
+    "atribuir a prevenção de erros à responsabilização individual, com apuração posterior do profissional envolvido.": {
+      focus: "responsabilização individual",
+      reason: "Uma barreira sistêmica modifica o processo antes que o erro alcance a pessoa. A apuração individual acontece depois do evento e não substitui prevenção estrutural."
+    },
+    "usar a memória e a experiência dos profissionais como controle principal antes da dispensação.": {
+      focus: "memória e a experiência dos profissionais como controle principal",
+      reason: "Memória e experiência são importantes, mas são controles frágeis quando usados sozinhos. Alertas, separação e dupla conferência reduzem a dependência de atenção individual."
+    },
+    "reduzir rótulos auxiliares e sinais de alerta para simplificar a rotina do estoque.": {
+      focus: "reduzir rótulos auxiliares e sinais de alerta",
+      reason: "Rótulos e alertas funcionam justamente como barreiras de diferenciação. Retirá-los torna produtos parecidos mais fáceis de confundir."
+    }
+  },
+  "farmacia-051": {
+    "apresentam baixa estabilidade térmica e exigem condições específicas de conservação durante todo o armazenamento.": {
+      focus: "baixa estabilidade térmica",
+      reason: "Isso descreve um medicamento termolábil. LASA significa look-alike/sound-alike: o risco nasce da semelhança de nome, som, grafia ou apresentação."
+    },
+    "são destinados predominantemente ao ambiente hospitalar e requerem monitoramento intensivo durante a dispensação.": {
+      focus: "destinados predominantemente ao ambiente hospitalar",
+      reason: "O local de uso não define um medicamento LASA. Produtos ambulatoriais e hospitalares podem ser LASA quando apresentam semelhança capaz de induzir troca."
+    },
+    "são medicamentos injetáveis de alto custo, relacionados a terapias de maior complexidade clínica.": {
+      focus: "injetáveis de alto custo",
+      reason: "Via de administração e custo não definem LASA. O critério é o potencial de confusão causado pela aparência ou pelo nome do produto."
+    },
+    "têm retenção de receita e exigem controle especial desde a aquisição até a dispensação.": {
+      focus: "retenção de receita e exigem controle especial",
+      reason: "Controle especial é uma classificação sanitária diferente. Um medicamento LASA pode ou não exigir retenção de receita."
+    }
+  },
+  "farmacia-055": {
+    "imunossupressoras.": {
+      focus: "imunossupressoras",
+      reason: "As substâncias imunossupressoras pertencem à lista C3, não à lista A3."
+    },
+    "antirretrovirais.": {
+      focus: "antirretrovirais",
+      reason: "Os antirretrovirais são tratados na lista C4, não na A3."
+    },
+    "anabolizantes de uso veterinário apenas.": {
+      focus: "anabolizantes",
+      reason: "Anabolizantes integram a lista C5. A lista A3 corresponde a substâncias psicotrópicas."
+    },
+    "retinoicas de uso sistêmico.": {
+      focus: "retinoicas de uso sistêmico",
+      reason: "Substâncias retinoicas de uso sistêmico pertencem à lista C2, não à lista A3."
+    }
+  }
+};
+
+function applyDiagnosticNotes(question) {
+  const notes = diagnosticNotes[question.id] || {};
+  question.options = question.options.map((option) => ({
+    ...option,
+    diagnostic: option.letter === question.answer ? undefined : notes[option.text]
+  }));
+}
+
 function applyMathOverrides(question) {
   if (question.subjectId !== "matematica") return;
   const override = mathOverrides[question.number];
@@ -689,7 +775,7 @@ function reorderOptions(question, targetLetter) {
   for (let index = 0; index < 5; index += 1) {
     ordered.push(index === targetIndex ? correct : distractors[distractorIndex++]);
   }
-  question.options = ordered.map((option, index) => ({ letter: "ABCDE"[index], text: option.text }));
+  question.options = ordered.map((option, index) => ({ ...option, letter: "ABCDE"[index] }));
   question.answer = targetLetter;
 }
 
@@ -726,6 +812,7 @@ for (const question of bank.questions) {
   cleanImportedFooter(question);
   applyMathOverrides(question);
   applyManualOptionSet(question);
+  applyDiagnosticNotes(question);
 }
 
 for (const subject of bank.subjects) {

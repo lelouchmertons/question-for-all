@@ -1,4 +1,4 @@
-import { questionBank } from "./questions.js?v=4";
+import { questionBank } from "./questions.js?v=5";
 
 const STORAGE_KEY = "caderno330-progress-v1";
 const THEME_KEY = "caderno330-theme";
@@ -184,7 +184,7 @@ function diagnosticPhrase(text) {
 }
 
 function renderDiagnosticMarkup(text, phrase) {
-  const index = text.indexOf(phrase.replace(/…$/, ""));
+  const index = text.toLocaleLowerCase("pt-BR").indexOf(phrase.replace(/…$/, "").toLocaleLowerCase("pt-BR"));
   if (index < 0) return `<mark>${escapeHtml(text)}</mark>`;
   const end = index + phrase.replace(/…$/, "").length;
   return `${escapeHtml(text.slice(0, index))}<mark>${escapeHtml(text.slice(index, end))}</mark>${escapeHtml(text.slice(end))}`;
@@ -203,13 +203,15 @@ function showWrongDiagnostic(letter) {
   const question = session[cursor];
   const option = question.options.find(item => item.letter === letter);
   if (!option || option.letter === question.answer) return;
-  const phrase = diagnosticPhrase(option.text);
+  const phrase = option.diagnostic?.focus || diagnosticPhrase(option.text);
+  const reason = option.diagnostic?.reason || question.explanation;
   els["wrong-diagnostic-buttons"].querySelectorAll("button").forEach(button => {
     button.classList.toggle("active", button.dataset.diagnosticLetter === letter);
   });
   els["wrong-diagnostic-detail"].innerHTML = `
     <strong>Alternativa ${escapeHtml(letter)}</strong>
     <p>${renderDiagnosticMarkup(option.text, phrase)}</p>
+    <p class="diagnostic-reason"><b>Por que não é correta:</b> ${escapeHtml(reason)}</p>
   `;
 }
 

@@ -164,6 +164,8 @@ button:disabled { cursor: not-allowed; }
 .diagnostic-detail strong { color: var(--ink); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
 .diagnostic-detail p { margin: 8px 0 0; }
 .diagnostic-detail mark { padding: 0 .12em; background: color-mix(in srgb, var(--wrong) 24%, transparent); color: var(--ink); font-weight: 800; text-decoration: underline 2px var(--wrong); text-underline-offset: 3px; }
+.diagnostic-detail .diagnostic-reason { margin-top: 15px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); }
+.diagnostic-detail .diagnostic-reason b { color: var(--ink); }
 .explanation dl { margin: 36px 0 0; display: grid; grid-template-columns: 1fr 2fr; border-top: 1px solid var(--line); }
 .explanation dl div { padding: 18px 0; display: contents; }
 .explanation dt, .explanation dd { margin: 0; padding: 16px 0; border-bottom: 1px solid var(--line); }

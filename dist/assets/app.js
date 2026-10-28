@@ -1,4 +1,4 @@
-import { questionBank } from "./questions.js?v=6";
+import { questionBank } from "./questions.js?v=7";
 
 const STORAGE_KEY = "caderno330-progress-v1";
 const THEME_KEY = "caderno330-theme";
@@ -204,14 +204,14 @@ function showWrongDiagnostic(letter) {
   const option = question.options.find(item => item.letter === letter);
   if (!option || option.letter === question.answer) return;
   const phrase = option.diagnostic?.focus || diagnosticPhrase(option.text);
-  const reason = option.diagnostic?.reason || question.explanation;
+  const reason = option.diagnostic?.reason;
   els["wrong-diagnostic-buttons"].querySelectorAll("button").forEach(button => {
     button.classList.toggle("active", button.dataset.diagnosticLetter === letter);
   });
   els["wrong-diagnostic-detail"].innerHTML = `
     <strong>Alternativa ${escapeHtml(letter)}</strong>
     <p>${renderDiagnosticMarkup(option.text, phrase)}</p>
-    <p class="diagnostic-reason"><b>Por que não é correta:</b> ${escapeHtml(reason)}</p>
+    ${reason ? `<p class="diagnostic-reason"><b>Por que não é correta:</b> ${escapeHtml(reason)}</p>` : ""}
   `;
 }
 

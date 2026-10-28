@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T07:48:28.746Z",
+  "generatedAt": "2026-10-28T08:00:58.912Z",
   "subjects": [
     {
       "id": "matematica",
@@ -1957,23 +1957,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "No sentido subjetivo, corresponde apenas às pessoas jurídicas da administração indireta."
+          "text": "no sentido objetivo, designa os órgãos do Poder Executivo responsáveis pela prática direta dos atos administrativos."
         },
         {
           "letter": "B",
-          "text": "Os dois sentidos são equivalentes e designam somente os agentes públicos."
+          "text": "no sentido objetivo, reúne as funções legislativa e jurisdicional exercidas pelos Poderes, afastada a atividade administrativa."
         },
         {
           "letter": "C",
-          "text": "No sentido objetivo, compreende as funções legislativa e jurisdicional, mas exclui a atividade administrativa."
+          "text": "nos dois sentidos, designa o conjunto de agentes públicos que exercem atividades estatais em nome da coletividade."
         },
         {
           "letter": "D",
-          "text": "No sentido objetivo, designa exclusivamente os órgãos do Poder Executivo."
+          "text": "no sentido subjetivo, corresponde às entidades da administração indireta, excluídos os órgãos e os agentes públicos."
         },
         {
           "letter": "E",
-          "text": "No sentido subjetivo, designa os órgãos, agentes e entidades que exercem a função administrativa; no objetivo, designa a própria atividade administrativa."
+          "text": "no sentido subjetivo, designa órgãos, agentes e entidades; no objetivo, a atividade administrativa por eles exercida."
         }
       ],
       "answer": "E",
@@ -1989,23 +1989,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "pode agir sempre que não houver proibição expressa."
+          "text": "pode agir quando não houver proibição expressa, desde que a medida apresente resultado mais eficiente para a Administração."
         },
         {
           "letter": "B",
-          "text": "somente precisa de autorização quando houver despesa pública."
+          "text": "precisa de autorização normativa apenas quando o procedimento gerar despesa pública ou produzir efeito patrimonial direto."
         },
         {
           "letter": "C",
-          "text": "somente pode agir quando houver fundamento jurídico que autorize sua conduta."
+          "text": "somente pode agir quando houver fundamento jurídico que autorize sua conduta, inclusive se entender que outra medida seria mais eficiente."
         },
         {
           "letter": "D",
-          "text": "pode substituir a lei por sua convicção pessoal sobre o interesse público."
+          "text": "pode adotar o procedimento após obter concordância verbal da chefia e dos servidores diretamente envolvidos na execução."
         },
         {
           "letter": "E",
-          "text": "pode agir desde que obtenha concordância verbal de dois colegas."
+          "text": "pode substituir a exigência legal por justificativa técnica baseada em sua convicção sobre o interesse público envolvido."
         }
       ],
       "answer": "C",
@@ -2021,23 +2021,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "impessoalidade."
+          "text": "impessoalidade, pois a campanha institucional não pode servir à promoção pessoal de autoridades ou agentes públicos."
         },
         {
           "letter": "B",
-          "text": "especialidade."
+          "text": "especialidade, pois a campanha deveria ser conduzida exclusivamente pelo órgão técnico responsável pela informação divulgada."
         },
         {
           "letter": "C",
-          "text": "autotutela."
+          "text": "eficiência, pois a campanha deveria utilizar recursos de publicidade somente para ampliar o alcance da mensagem à população."
         },
         {
           "letter": "D",
-          "text": "continuidade."
+          "text": "continuidade, pois a divulgação de informações públicas não pode ser interrompida durante a transição entre gestões municipais."
         },
         {
           "letter": "E",
-          "text": "eficiência."
+          "text": "autotutela, pois a Administração deve rever seus atos apenas depois de provocação formal de outro Poder da República."
         }
       ],
       "answer": "A",
@@ -2053,23 +2053,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Impõe divulgação irrestrita de todo documento público, sem exceções."
+          "text": "a divulgação oficial torna eficaz todo ato administrativo, inclusive quando houver vício de competência, forma ou finalidade pública."
         },
         {
           "letter": "B",
-          "text": "Permite que a Administração mantenha qualquer ato em sigilo por conveniência."
+          "text": "a publicidade exige divulgação de todos os documentos administrativos, inclusive daqueles protegidos por sigilo constitucional ou legal."
         },
         {
           "letter": "C",
-          "text": "A divulgação oficial convalida automaticamente atos ilegais."
+          "text": "a publicidade alcança os atos do Poder Executivo federal, enquanto Estados e Municípios seguem regime próprio de divulgação."
         },
         {
           "letter": "D",
-          "text": "A transparência é a regra, mas o ordenamento admite sigilo em hipóteses constitucional e legalmente justificadas."
+          "text": "a transparência é a regra, mas o ordenamento admite sigilo em hipóteses constitucional e legalmente justificadas."
         },
         {
           "letter": "E",
-          "text": "Aplica-se apenas aos atos do Poder Executivo federal."
+          "text": "a Administração pode definir sigilo para atos de sua conveniência, desde que a decisão seja registrada no processo correspondente."
         }
       ],
       "answer": "D",
@@ -2085,11 +2085,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "priorização exclusiva da economia financeira."
+          "text": "atendimento prioritário aos usuários que gerem menor custo administrativo, para ampliar a produtividade global da unidade."
         },
         {
           "letter": "B",
-          "text": "substituição de todos os controles formais por metas de produtividade."
+          "text": "obtenção de resultados mensuráveis pela Administração por meios que se afastem dos limites jurídicos aplicáveis à atuação estatal."
         },
         {
           "letter": "C",
@@ -2097,11 +2097,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "atendimento apenas dos usuários que produzam menor custo administrativo."
+          "text": "priorização da economia financeira, com redução de custos que comprometa a qualidade e a continuidade do serviço prestado."
         },
         {
           "letter": "E",
-          "text": "obtenção de resultados a qualquer custo, mesmo contra a lei."
+          "text": "substituição dos controles de legalidade por metas de produtividade definidas pela chefia responsável pelo setor administrativo."
         }
       ],
       "answer": "C",
@@ -2117,7 +2117,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o parentesco elimina o conflito de interesses."
+          "text": "o dever ético surge apenas se a conduta estiver prevista como crime, improbidade ou infração disciplinar formalmente tipificada."
         },
         {
           "letter": "B",
@@ -2125,15 +2125,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "o dever ético somente existe quando há crime tipificado."
+          "text": "a informação produzida no exercício do cargo pode ser utilizada pelo servidor após ele avaliar a conveniência para seus familiares."
         },
         {
           "letter": "D",
-          "text": "a ética funcional se limita ao cumprimento do horário de trabalho."
+          "text": "a ética funcional se limita ao cumprimento da jornada de trabalho, das ordens superiores e dos procedimentos do setor."
         },
         {
           "letter": "E",
-          "text": "informações públicas pertencem livremente ao servidor que as produziu."
+          "text": "o parentesco afasta o conflito de interesses quando o servidor não recebe vantagem econômica direta pela informação utilizada."
         }
       ],
       "answer": "B",
@@ -2149,23 +2149,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exclusiva do agente, sem participação da pessoa jurídica."
+          "text": "exclusiva do agente que praticou o ato, cabendo à pessoa jurídica apenas acompanhar a apuração administrativa posterior."
         },
         {
           "letter": "B",
-          "text": "objetiva, assegurado o direito de regresso contra o agente nos casos de dolo ou culpa."
+          "text": "objetiva, cabendo à vítima demonstrar dano e nexo causal, assegurado o direito de regresso contra o agente nos casos de dolo ou culpa."
         },
         {
           "letter": "C",
-          "text": "inexistente quando o agente é servidor efetivo."
+          "text": "afastada quando o agente ocupa cargo efetivo, pois a estabilidade transfere ao servidor a responsabilidade integral pelo dano."
         },
         {
           "letter": "D",
-          "text": "subjetiva, exigindo sempre prova de dolo do agente."
+          "text": "subjetiva, dependendo sempre de prova de dolo ou culpa do agente para que a vítima obtenha indenização da pessoa jurídica."
         },
         {
           "letter": "E",
-          "text": "penal, e não civil."
+          "text": "penal por sua natureza, ficando a reparação civil condicionada à existência de condenação criminal definitiva contra o agente."
         }
       ],
       "answer": "B",
@@ -2181,23 +2181,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "podem cumular-se e são independentes, ressalvadas as repercussões legalmente previstas."
+          "text": "podem cumular-se e são independentes, embora decisões sobre fato ou autoria possam produzir repercussões legalmente previstas."
         },
         {
           "letter": "B",
-          "text": "não podem coexistir."
+          "text": "não podem coexistir, devendo a Administração aguardar a definição da esfera penal antes de instaurar procedimento disciplinar."
         },
         {
           "letter": "C",
-          "text": "dependem sempre de condenação penal prévia."
+          "text": "dependem de condenação penal prévia, porque a definição judicial sobre o fato impede apuração autônoma pelas demais instâncias."
         },
         {
           "letter": "D",
-          "text": "excluem o dever de reparar o dano."
+          "text": "limitam-se à responsabilidade administrativa, reservando as demais consequências aos fatos praticados fora do exercício do cargo."
         },
         {
           "letter": "E",
-          "text": "limitam-se à responsabilidade administrativa."
+          "text": "excluem o dever de reparar o dano, pois a aplicação de sanção administrativa já afasta a necessidade de indenização civil."
         }
       ],
       "answer": "A",
@@ -2213,23 +2213,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Prefeituras, câmaras municipais e empresas públicas."
+          "text": "Órgãos públicos, concessionárias de serviço público, cartórios extrajudiciais e fundações privadas conveniadas ao Estado."
         },
         {
           "letter": "B",
-          "text": "Ministérios, secretarias e autarquias."
+          "text": "Ministérios, secretarias, autarquias e departamentos administrativos responsáveis por atividades internas de cada Poder."
         },
         {
           "letter": "C",
-          "text": "Órgãos públicos, concessionárias e cartórios extrajudiciais."
+          "text": "Prefeituras, câmaras municipais, empresas públicas e sociedades de economia mista integrantes da estrutura local."
         },
         {
           "letter": "D",
-          "text": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista."
+          "text": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista, todas integrantes da administração indireta."
         },
         {
           "letter": "E",
-          "text": "Secretarias, departamentos e fundações privadas comuns."
+          "text": "Secretarias municipais, departamentos técnicos, fundações privadas comuns e conselhos de políticas públicas instituídos por lei."
         }
       ],
       "answer": "D",
@@ -2245,19 +2245,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "não integra a Federação."
+          "text": "exerce atribuições delegadas pela União, com autonomia limitada à execução de programas e repasses federais vigentes."
         },
         {
           "letter": "B",
-          "text": "possui soberania equivalente à da República Federativa do Brasil."
+          "text": "possui soberania equivalente à da República Federativa do Brasil, podendo celebrar compromissos internacionais de interesse municipal."
         },
         {
           "letter": "C",
-          "text": "pode afastar livremente leis federais e estaduais."
+          "text": "deixa de integrar a Federação e passa a exercer competências próprias definidas exclusivamente pela sua Lei Orgânica local."
         },
         {
           "letter": "D",
-          "text": "exerce apenas atribuições delegadas pela União."
+          "text": "pode afastar leis federais e estaduais quando entender que elas não atendem às necessidades administrativas do seu território."
         },
         {
           "letter": "E",
@@ -2277,23 +2277,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a erradicação da pobreza."
+          "text": "a erradicação da pobreza e da marginalização, prevista como objetivo fundamental da República no texto constitucional."
         },
         {
           "letter": "B",
-          "text": "a prevalência dos direitos humanos."
+          "text": "a garantia do desenvolvimento nacional, formulada como objetivo fundamental a ser promovido pelo Estado brasileiro."
         },
         {
           "letter": "C",
-          "text": "a defesa da paz."
+          "text": "a prevalência dos direitos humanos, adotada como princípio das relações internacionais da República Federativa do Brasil."
         },
         {
           "letter": "D",
-          "text": "o pluralismo político."
+          "text": "o pluralismo político, incluído entre os fundamentos que estruturam a República Federativa do Brasil no texto constitucional."
         },
         {
           "letter": "E",
-          "text": "a garantia do desenvolvimento nacional."
+          "text": "a defesa da paz, indicada como princípio para a atuação do Brasil perante os demais Estados e organismos internacionais."
         }
       ],
       "answer": "D",
@@ -2309,23 +2309,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "abolir a separação dos Poderes."
+          "text": "restringir a livre iniciativa nas atividades econômicas consideradas estratégicas para o desenvolvimento nacional do País."
         },
         {
           "letter": "B",
-          "text": "conceder soberania aos Municípios."
+          "text": "conceder soberania aos Municípios para que possam estabelecer relações diretas com outros Estados e organismos internacionais."
         },
         {
           "letter": "C",
-          "text": "adotar religião oficial."
+          "text": "abolir a separação dos Poderes para concentrar a direção política e administrativa em órgão único de coordenação nacional."
         },
         {
           "letter": "D",
-          "text": "restringir a livre iniciativa."
+          "text": "adotar religião oficial, garantindo ao mesmo tempo liberdade de culto às demais crenças reconhecidas pela legislação."
         },
         {
           "letter": "E",
-          "text": "erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais."
+          "text": "erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais, como objetivo fundamental da República."
         }
       ],
       "answer": "E",
@@ -2341,23 +2341,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "União, Estados e Municípios."
+          "text": "União, Estados e Municípios, como entes federativos que atuam de modo integrado na organização político-administrativa brasileira."
         },
         {
           "letter": "B",
-          "text": "Presidência, Congresso e Supremo Tribunal Federal, subordinados entre si."
+          "text": "Executivo, Ministério Público e Judiciário, atuando em conjunto na formulação, fiscalização e execução das políticas públicas."
         },
         {
           "letter": "C",
-          "text": "Legislativo, Tribunal de Contas e Executivo."
+          "text": "Legislativo, Tribunal de Contas e Executivo, com competências próprias e coordenação exercida pelo Poder Judiciário nacional."
         },
         {
           "letter": "D",
-          "text": "Legislativo, Executivo e Judiciário, independentes e harmônicos entre si."
+          "text": "Legislativo, Executivo e Judiciário, independentes e harmônicos entre si, com competências constitucionais próprias."
         },
         {
           "letter": "E",
-          "text": "Executivo, Ministério Público e Judiciário."
+          "text": "Presidência, Congresso e Supremo Tribunal Federal, estruturados em hierarquia para coordenar as funções do Estado brasileiro."
         }
       ],
       "answer": "D",
@@ -2373,23 +2373,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente brasileiros natos são iguais perante a lei."
+          "text": "brasileiros natos possuem igualdade plena perante a lei, enquanto os demais dependem das condições previstas em tratados internacionais."
         },
         {
           "letter": "B",
-          "text": "estrangeiros nunca são alcançados pelos direitos fundamentais."
+          "text": "a igualdade impede qualquer diferenciação jurídica, inclusive quando a Constituição admite ações destinadas a corrigir desigualdades concretas."
         },
         {
           "letter": "C",
-          "text": "todos são iguais perante a lei, sem distinção de qualquer natureza, nos termos constitucionais."
+          "text": "todos são iguais perante a lei, sem distinção de qualquer natureza, garantindo-se a brasileiros e estrangeiros residentes os direitos previstos na Constituição."
         },
         {
           "letter": "D",
-          "text": "a igualdade vale somente nas relações com o Poder Executivo."
+          "text": "estrangeiros são alcançados pelos direitos fundamentais apenas depois de obter residência permanente ou naturalização brasileira."
         },
         {
           "letter": "E",
-          "text": "a igualdade impede qualquer tratamento jurídico diferenciado."
+          "text": "a igualdade vincula principalmente o Poder Executivo, cabendo aos demais Poderes estabelecer critérios próprios para situações semelhantes."
         }
       ],
       "answer": "C",
@@ -2405,23 +2405,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "qualquer autoridade pode criar obrigação por ordem verbal."
+          "text": "servidores públicos submetem-se integralmente à lei, enquanto particulares seguem apenas as restrições previstas em regulamentos administrativos."
         },
         {
           "letter": "B",
-          "text": "a autonomia privada é ilimitada."
+          "text": "decretos podem substituir leis quando detalham procedimentos administrativos e recebem aprovação expressa da autoridade competente."
         },
         {
           "letter": "C",
-          "text": "somente servidores públicos estão sujeitos à lei."
+          "text": "a autonomia privada permite afastar exigências legais em relações particulares que não produzam efeito direto sobre terceiros."
         },
         {
           "letter": "D",
-          "text": "decretos sempre podem substituir leis."
+          "text": "a autoridade competente pode criar obrigações por ordem verbal quando a medida for necessária à continuidade do serviço público."
         },
         {
           "letter": "E",
-          "text": "ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei."
+          "text": "ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei, conforme a garantia constitucional de legalidade."
         }
       ],
       "answer": "E",

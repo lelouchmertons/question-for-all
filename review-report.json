@@ -20,8 +20,8 @@
       "D": 10,
       "E": 10
     },
-    "correctUniquelyLongest": 33,
-    "suspiciousLengthGap": 28
+    "correctUniquelyLongest": 24,
+    "suspiciousLengthGap": 16
   },
   "portugues": {
     "count": 60,

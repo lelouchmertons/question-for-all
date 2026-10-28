@@ -856,8 +856,146 @@ const farmaciaBatchOneOverrides = {
   }
 };
 
+const administracaoBatchOneOverrides = {
+  "administracao-publica-001": {
+    options: [
+      "no sentido subjetivo, corresponde às entidades da administração indireta, excluídos os órgãos e os agentes públicos.",
+      "nos dois sentidos, designa o conjunto de agentes públicos que exercem atividades estatais em nome da coletividade.",
+      "no sentido objetivo, reúne as funções legislativa e jurisdicional exercidas pelos Poderes, afastada a atividade administrativa.",
+      "no sentido objetivo, designa os órgãos do Poder Executivo responsáveis pela prática direta dos atos administrativos.",
+      "no sentido subjetivo, designa órgãos, agentes e entidades; no objetivo, a atividade administrativa por eles exercida."
+    ], correct: 4
+  },
+  "administracao-publica-002": {
+    options: [
+      "pode agir quando não houver proibição expressa, desde que a medida apresente resultado mais eficiente para a Administração.",
+      "precisa de autorização normativa apenas quando o procedimento gerar despesa pública ou produzir efeito patrimonial direto.",
+      "somente pode agir quando houver fundamento jurídico que autorize sua conduta, inclusive se entender que outra medida seria mais eficiente.",
+      "pode substituir a exigência legal por justificativa técnica baseada em sua convicção sobre o interesse público envolvido.",
+      "pode adotar o procedimento após obter concordância verbal da chefia e dos servidores diretamente envolvidos na execução."
+    ], correct: 2
+  },
+  "administracao-publica-003": {
+    options: [
+      "impessoalidade, pois a campanha institucional não pode servir à promoção pessoal de autoridades ou agentes públicos.",
+      "especialidade, pois a campanha deveria ser conduzida exclusivamente pelo órgão técnico responsável pela informação divulgada.",
+      "autotutela, pois a Administração deve rever seus atos apenas depois de provocação formal de outro Poder da República.",
+      "continuidade, pois a divulgação de informações públicas não pode ser interrompida durante a transição entre gestões municipais.",
+      "eficiência, pois a campanha deveria utilizar recursos de publicidade somente para ampliar o alcance da mensagem à população."
+    ], correct: 0
+  },
+  "administracao-publica-004": {
+    options: [
+      "a publicidade exige divulgação de todos os documentos administrativos, inclusive daqueles protegidos por sigilo constitucional ou legal.",
+      "a Administração pode definir sigilo para atos de sua conveniência, desde que a decisão seja registrada no processo correspondente.",
+      "a divulgação oficial torna eficaz todo ato administrativo, inclusive quando houver vício de competência, forma ou finalidade pública.",
+      "a transparência é a regra, mas o ordenamento admite sigilo em hipóteses constitucional e legalmente justificadas.",
+      "a publicidade alcança os atos do Poder Executivo federal, enquanto Estados e Municípios seguem regime próprio de divulgação."
+    ], correct: 3
+  },
+  "administracao-publica-005": {
+    options: [
+      "priorização da economia financeira, com redução de custos que comprometa a qualidade e a continuidade do serviço prestado.",
+      "substituição dos controles de legalidade por metas de produtividade definidas pela chefia responsável pelo setor administrativo.",
+      "atuação com qualidade, produtividade e bom uso dos recursos, respeitados os demais princípios jurídicos.",
+      "atendimento prioritário aos usuários que gerem menor custo administrativo, para ampliar a produtividade global da unidade.",
+      "obtenção de resultados mensuráveis pela Administração por meios que se afastem dos limites jurídicos aplicáveis à atuação estatal."
+    ], correct: 2
+  },
+  "administracao-publica-006": {
+    options: [
+      "o parentesco afasta o conflito de interesses quando o servidor não recebe vantagem econômica direta pela informação utilizada.",
+      "utiliza a posição pública para produzir favorecimento privado e rompe a imparcialidade esperada do agente.",
+      "o dever ético surge apenas se a conduta estiver prevista como crime, improbidade ou infração disciplinar formalmente tipificada.",
+      "a ética funcional se limita ao cumprimento da jornada de trabalho, das ordens superiores e dos procedimentos do setor.",
+      "a informação produzida no exercício do cargo pode ser utilizada pelo servidor após ele avaliar a conveniência para seus familiares."
+    ], correct: 1
+  },
+  "administracao-publica-007": {
+    options: [
+      "exclusiva do agente que praticou o ato, cabendo à pessoa jurídica apenas acompanhar a apuração administrativa posterior.",
+      "objetiva, cabendo à vítima demonstrar dano e nexo causal, assegurado o direito de regresso contra o agente nos casos de dolo ou culpa.",
+      "afastada quando o agente ocupa cargo efetivo, pois a estabilidade transfere ao servidor a responsabilidade integral pelo dano.",
+      "subjetiva, dependendo sempre de prova de dolo ou culpa do agente para que a vítima obtenha indenização da pessoa jurídica.",
+      "penal por sua natureza, ficando a reparação civil condicionada à existência de condenação criminal definitiva contra o agente."
+    ], correct: 1
+  },
+  "administracao-publica-008": {
+    options: [
+      "podem cumular-se e são independentes, embora decisões sobre fato ou autoria possam produzir repercussões legalmente previstas.",
+      "não podem coexistir, devendo a Administração aguardar a definição da esfera penal antes de instaurar procedimento disciplinar.",
+      "dependem de condenação penal prévia, porque a definição judicial sobre o fato impede apuração autônoma pelas demais instâncias.",
+      "excluem o dever de reparar o dano, pois a aplicação de sanção administrativa já afasta a necessidade de indenização civil.",
+      "limitam-se à responsabilidade administrativa, reservando as demais consequências aos fatos praticados fora do exercício do cargo."
+    ], correct: 0
+  },
+  "administracao-publica-009": {
+    options: [
+      "Prefeituras, câmaras municipais, empresas públicas e sociedades de economia mista integrantes da estrutura local.",
+      "Ministérios, secretarias, autarquias e departamentos administrativos responsáveis por atividades internas de cada Poder.",
+      "Órgãos públicos, concessionárias de serviço público, cartórios extrajudiciais e fundações privadas conveniadas ao Estado.",
+      "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista, todas integrantes da administração indireta.",
+      "Secretarias municipais, departamentos técnicos, fundações privadas comuns e conselhos de políticas públicas instituídos por lei."
+    ], correct: 3
+  },
+  "administracao-publica-010": {
+    options: [
+      "deixa de integrar a Federação e passa a exercer competências próprias definidas exclusivamente pela sua Lei Orgânica local.",
+      "possui soberania equivalente à da República Federativa do Brasil, podendo celebrar compromissos internacionais de interesse municipal.",
+      "pode afastar leis federais e estaduais quando entender que elas não atendem às necessidades administrativas do seu território.",
+      "exerce atribuições delegadas pela União, com autonomia limitada à execução de programas e repasses federais vigentes.",
+      "possui capacidades de auto-organização, autogoverno, autoadministração e autolegislação nos limites constitucionais."
+    ], correct: 4
+  },
+  "administracao-publica-011": {
+    options: [
+      "a erradicação da pobreza e da marginalização, prevista como objetivo fundamental da República no texto constitucional.",
+      "a prevalência dos direitos humanos, adotada como princípio das relações internacionais da República Federativa do Brasil.",
+      "a defesa da paz, indicada como princípio para a atuação do Brasil perante os demais Estados e organismos internacionais.",
+      "o pluralismo político, incluído entre os fundamentos que estruturam a República Federativa do Brasil no texto constitucional.",
+      "a garantia do desenvolvimento nacional, formulada como objetivo fundamental a ser promovido pelo Estado brasileiro."
+    ], correct: 3
+  },
+  "administracao-publica-012": {
+    options: [
+      "abolir a separação dos Poderes para concentrar a direção política e administrativa em órgão único de coordenação nacional.",
+      "conceder soberania aos Municípios para que possam estabelecer relações diretas com outros Estados e organismos internacionais.",
+      "adotar religião oficial, garantindo ao mesmo tempo liberdade de culto às demais crenças reconhecidas pela legislação.",
+      "restringir a livre iniciativa nas atividades econômicas consideradas estratégicas para o desenvolvimento nacional do País.",
+      "erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais, como objetivo fundamental da República."
+    ], correct: 4
+  },
+  "administracao-publica-013": {
+    options: [
+      "União, Estados e Municípios, como entes federativos que atuam de modo integrado na organização político-administrativa brasileira.",
+      "Presidência, Congresso e Supremo Tribunal Federal, estruturados em hierarquia para coordenar as funções do Estado brasileiro.",
+      "Legislativo, Tribunal de Contas e Executivo, com competências próprias e coordenação exercida pelo Poder Judiciário nacional.",
+      "Legislativo, Executivo e Judiciário, independentes e harmônicos entre si, com competências constitucionais próprias.",
+      "Executivo, Ministério Público e Judiciário, atuando em conjunto na formulação, fiscalização e execução das políticas públicas."
+    ], correct: 3
+  },
+  "administracao-publica-014": {
+    options: [
+      "brasileiros natos possuem igualdade plena perante a lei, enquanto os demais dependem das condições previstas em tratados internacionais.",
+      "estrangeiros são alcançados pelos direitos fundamentais apenas depois de obter residência permanente ou naturalização brasileira.",
+      "todos são iguais perante a lei, sem distinção de qualquer natureza, garantindo-se a brasileiros e estrangeiros residentes os direitos previstos na Constituição.",
+      "a igualdade vincula principalmente o Poder Executivo, cabendo aos demais Poderes estabelecer critérios próprios para situações semelhantes.",
+      "a igualdade impede qualquer diferenciação jurídica, inclusive quando a Constituição admite ações destinadas a corrigir desigualdades concretas."
+    ], correct: 2
+  },
+  "administracao-publica-015": {
+    options: [
+      "a autoridade competente pode criar obrigações por ordem verbal quando a medida for necessária à continuidade do serviço público.",
+      "a autonomia privada permite afastar exigências legais em relações particulares que não produzam efeito direto sobre terceiros.",
+      "servidores públicos submetem-se integralmente à lei, enquanto particulares seguem apenas as restrições previstas em regulamentos administrativos.",
+      "decretos podem substituir leis quando detalham procedimentos administrativos e recebem aprovação expressa da autoridade competente.",
+      "ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei, conforme a garantia constitucional de legalidade."
+    ], correct: 4
+  }
+};
+
 function applyManualOptionSet(question) {
-  const override = farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];

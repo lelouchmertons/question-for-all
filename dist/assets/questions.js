@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T18:03:44.711Z",
+  "generatedAt": "2026-10-28T18:06:49.505Z",
   "subjects": [
     {
       "id": "matematica",
@@ -1313,31 +1313,31 @@ export const questionBank = {
       "number": 41,
       "topic": "Geometria plana - retângulo",
       "area": "Geometria plana",
-      "stem": "Um terreno retangular tem lados na razão 3:2 e perímetro igual a 100 m. A área desse terreno é:",
+      "stem": "Um terreno retangular tem lados na razão 3:2 e perímetro igual a 100 m. A diagonal desse terreno mede:",
       "options": [
         {
           "letter": "A",
-          "text": "600 m²."
+          "text": "10√13 m."
         },
         {
           "letter": "B",
-          "text": "750 m²."
+          "text": "20√13 m."
         },
         {
           "letter": "C",
-          "text": "500 m²."
+          "text": "5√5 m."
         },
         {
           "letter": "D",
-          "text": "1.200 m²."
+          "text": "5√13 m."
         },
         {
           "letter": "E",
-          "text": "625 m²."
+          "text": "10√5 m."
         }
       ],
       "answer": "A",
-      "explanation": "Escrevendo os lados como 3k e 2k, o perímetro é 2(3k + 2k) = 10k. Assim, 10k = 100 e k = 10. Os lados medem 30 m e 20 m; portanto, a área é 30 · 20 = 600 m²."
+      "explanation": "Escrevendo os lados como 3k e 2k, o perímetro é 2(3k + 2k) = 10k. Logo, k = 10 e os lados medem 30 m e 20 m. Pela relação de Pitágoras, a diagonal é √(30² + 20²) = √1.300 = 10√13 m."
     },
     {
       "id": "matematica-042",
@@ -1793,31 +1793,31 @@ export const questionBank = {
       "number": 56,
       "topic": "Polinômios - fatoração e avaliação",
       "area": "Polinômios",
-      "stem": "Considere P(x) = x³ - 6x² + 11x - 6. Sabendo que P(x) = (x - 1)(x - 2)(x - 3), o valor de P(4) é:",
+      "stem": "Considere P(x) = x³ − 6x² + 11x − 6. O quociente da divisão de P(x) por x² − 5x + 6 é:",
       "options": [
         {
           "letter": "A",
-          "text": "24."
+          "text": "x − 3."
         },
         {
           "letter": "B",
-          "text": "18."
+          "text": "1."
         },
         {
           "letter": "C",
-          "text": "6."
+          "text": "x − 1."
         },
         {
           "letter": "D",
-          "text": "8."
+          "text": "0."
         },
         {
           "letter": "E",
-          "text": "12."
+          "text": "x − 2."
         }
       ],
       "answer": "C",
-      "explanation": "Utilizando a forma fatorada, P(4) = (4 - 1)(4 - 2)(4 - 3) = 3 · 2 · 1 = 6."
+      "explanation": "Temos P(x) = (x − 1)(x − 2)(x − 3), enquanto x² − 5x + 6 = (x − 2)(x − 3). Portanto, P(x) = (x − 1)(x² − 5x + 6): o quociente é x − 1 e o resto é 0."
     },
     {
       "id": "matematica-057",
@@ -1825,31 +1825,31 @@ export const questionBank = {
       "number": 57,
       "topic": "Álgebra - identidades algébricas",
       "area": "Álgebra",
-      "stem": "Se x é um número real não nulo e x + 1/x = 5, então o valor de x² + 1/x² é:",
+      "stem": "Se x é um número real não nulo e x + 1/x = 5, então o valor de x³ + 1/x³ é:",
       "options": [
         {
           "letter": "A",
-          "text": "29."
+          "text": "98."
         },
         {
           "letter": "B",
-          "text": "23."
+          "text": "110."
         },
         {
           "letter": "C",
-          "text": "27."
+          "text": "105."
         },
         {
           "letter": "D",
-          "text": "21."
+          "text": "100."
         },
         {
           "letter": "E",
-          "text": "25."
+          "text": "115."
         }
       ],
       "answer": "B",
-      "explanation": "Elevando a igualdade ao quadrado, (x + 1/x)² = x² + 2 + 1/x² = 25. Logo, x² + 1/x² = 25 - 2 = 23."
+      "explanation": "Elevando a igualdade ao cubo, (x + 1/x)³ = x³ + 1/x³ + 3(x + 1/x). Logo, 125 = x³ + 1/x³ + 15, de modo que x³ + 1/x³ = 110."
     },
     {
       "id": "matematica-058",
@@ -10610,7 +10610,10 @@ export const questionBank = {
       32,
       33,
       37,
-      38
+      38,
+      41,
+      56,
+      57
     ],
     "mathBatchOneReviewed": [
       1,
@@ -10655,6 +10658,28 @@ export const questionBank = {
       38,
       39,
       40
+    ],
+    "mathBatchThreeReviewed": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
     ]
   }
 };

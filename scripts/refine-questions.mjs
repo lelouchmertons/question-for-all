@@ -165,6 +165,24 @@ const mathOverrides = {
     options: ["a conclusão da análise será posterior à liberação.", "a ausência de conclusão não informa a situação da liberação.", "a liberação do lote não ocorreu antes da conclusão da análise.", "o lote foi liberado em caráter provisório.", "o lote foi liberado, mas a análise não foi concluída."],
     correct: "a liberação do lote não ocorreu antes da conclusão da análise.",
     explanation: "A proposição tem a forma “se L, então A”. Ao saber que A é falsa, conclui-se que L também é falsa. Esse raciocínio é o modus tollens; não depende de supor uma liberação provisória ou uma conclusão futura."
+  },
+  41: {
+    stem: "Um terreno retangular tem lados na razão 3:2 e perímetro igual a 100 m. A diagonal desse terreno mede:",
+    options: ["5√13 m.", "10√13 m.", "10√5 m.", "5√5 m.", "20√13 m."],
+    correct: "10√13 m.",
+    explanation: "Escrevendo os lados como 3k e 2k, o perímetro é 2(3k + 2k) = 10k. Logo, k = 10 e os lados medem 30 m e 20 m. Pela relação de Pitágoras, a diagonal é √(30² + 20²) = √1.300 = 10√13 m."
+  },
+  56: {
+    stem: "Considere P(x) = x³ − 6x² + 11x − 6. O quociente da divisão de P(x) por x² − 5x + 6 é:",
+    options: ["x − 1.", "x − 2.", "x − 3.", "1.", "0."],
+    correct: "x − 1.",
+    explanation: "Temos P(x) = (x − 1)(x − 2)(x − 3), enquanto x² − 5x + 6 = (x − 2)(x − 3). Portanto, P(x) = (x − 1)(x² − 5x + 6): o quociente é x − 1 e o resto é 0."
+  },
+  57: {
+    stem: "Se x é um número real não nulo e x + 1/x = 5, então o valor de x³ + 1/x³ é:",
+    options: ["98.", "100.", "105.", "110.", "115."],
+    correct: "110.",
+    explanation: "Elevando a igualdade ao cubo, (x + 1/x)³ = x³ + 1/x³ + 3(x + 1/x). Logo, 125 = x³ + 1/x³ + 15, de modo que x³ + 1/x³ = 110."
   }
 };
 
@@ -1455,7 +1473,8 @@ bank.review = {
   description: "Revisão editorial de gabaritos, pistas de extensão, rodapés importados e complexidade matemática.",
   mathQuestionsStrengthened: Object.keys(mathOverrides).map(Number),
   mathBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
-  mathBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21)
+  mathBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
+  mathBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41)
 };
 
 const report = validate(bank);

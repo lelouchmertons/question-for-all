@@ -2194,8 +2194,151 @@ const farmaciaBatchSevenOverrides = {
   ], correct: 2 }
 };
 
+const farmaciaBatchEightOverrides = {
+  "farmacia-141": { options: [
+    "considerar todo efeito gastrointestinal como anafilaxia, registrando o caso como contraindicação para todos os betalactâmicos.",
+    "assumir que toda reação apresenta o mesmo risco de reação cruzada, independentemente do medicamento e da manifestação relatada.",
+    "retirar o registro de alergia sem entrevistar o paciente, pois informações antigas não interferem na escolha do antimicrobiano.",
+    "caracterizar medicamento, manifestação, início, gravidade, tratamento e exposições posteriores, encaminhando quando indicado.",
+    "recomendar reexposição domiciliar sem avaliação, usando pequena dose para confirmar se a reação permanece presente."
+  ], correct: 3 },
+  "farmacia-142": { options: [
+    "hepatotoxicidade isolada e edema periférico, associados à retenção hidrossalina durante o uso do antimicrobiano.",
+    "síndrome serotoninérgica, por aumento de serotonina central e combinação com antidepressivos de diferentes classes.",
+    "constipação e retenção urinária, resultantes de antagonismo muscarínico periférico provocado pelos aminoglicosídeos.",
+    "hipoglicemia e tosse seca, decorrentes de alterações na secreção de insulina e no metabolismo da bradicinina.",
+    "nefrotoxicidade e ototoxicidade, com risco relacionado à exposição, à função renal e a fatores do paciente."
+  ], correct: 4 },
+  "farmacia-143": { options: [
+    "impedir qualquer metabolismo hepático, produzindo aumento idêntico da concentração de todos os medicamentos administrados.",
+    "produzir hipoglicemia por reposição de insulina, efeito que ocorre mesmo em pacientes sem tratamento antidiabético.",
+    "prolongar o intervalo QT e interagir por inibição enzimática, dependendo do agente e das associações utilizadas.",
+    "reduzir o intervalo QT e impedir arritmias, pois a classe estabiliza uniformemente a repolarização cardíaca.",
+    "antagonizar receptores opioides, promovendo reversão da depressão respiratória em intoxicação por analgésicos opioides."
+  ], correct: 2 },
+  "farmacia-144": { options: [
+    "reavaliar o tratamento e descalonar para o agente de menor espectro quando isso for clinicamente possível e seguro.",
+    "acrescentar outro antimicrobiano para ampliar a cobertura empírica, mantendo o agente de amplo espectro inicial.",
+    "manter a combinação inicial de amplo espectro até o fim do esquema, mesmo após identificação de sensibilidade específica.",
+    "suspender toda a terapia antimicrobiana e aguardar nova prescrição, sem considerar sítio da infecção e evolução clínica.",
+    "definir a escolha apenas pelo resultado microbiológico, sem integrar foco infeccioso, gravidade, alergias e resposta clínica."
+  ], correct: 0 },
+  "farmacia-145": { options: [
+    "broncodilatação e poliúria protetora, com redução do risco cardiovascular decorrente da inibição de prostaglandinas.",
+    "redução uniforme da pressão arterial, pois a retenção de sódio e água não ocorre durante o uso de anti-inflamatórios.",
+    "sonolência leve como única repercussão clínica relevante, sem interação com a função renal ou com o anticoagulante.",
+    "lesão renal, retenção hidrossalina, descompensação cardiovascular e sangramento, com agravamento de condições já presentes.",
+    "hipoglicemia por excesso de insulina, devido ao aumento previsível da secreção pancreática após uso de AINEs."
+  ], correct: 3 },
+  "farmacia-146": { options: [
+    "reação alérgica presente em todos os pacientes, com ativação imediata de mastócitos após a administração do medicamento.",
+    "acúmulo do metabólito reativo NAPQI quando as vias de conjugação e a glutationa se tornam insuficientes.",
+    "formação de cristais de cálcio nos túbulos renais, provocando obstrução e lesão hepática secundária ao processo.",
+    "inibição exclusiva da vitamina K, reduzindo a coagulação e causando necrose hepática proporcional ao INR do paciente.",
+    "bloqueio irreversível de receptores opioides, com redução da ventilação e isquemia hepática por hipóxia persistente."
+  ], correct: 1 },
+  "farmacia-147": { options: [
+    "depressão respiratória, frequentemente acompanhada de redução da consciência e miose, com risco de hipóxia grave.",
+    "hiperreflexia generalizada associada a clônus sustentado, como efeito agudo predominante da superdose de opioides.",
+    "hipertensão grave isolada, decorrente de aumento da descarga simpática e vasoconstrição periférica intensa.",
+    "midríase com agitação psicomotora, resposta esperada pela estimulação central promovida pelos receptores opioides.",
+    "diarreia intensa com cólicas abdominais, causada pela aceleração do trânsito intestinal após a superdose."
+  ], correct: 0 },
+  "farmacia-148": { options: [
+    "reduz a absorção gastrointestinal dos opioides e, por esse mecanismo, impede recorrência dos sintomas após a dose inicial.",
+    "repõe glutationa e limita lesão hepática decorrente de superdose aguda de paracetamol, atuando como precursor metabólico.",
+    "antagoniza receptores opioides e pode reverter depressão respiratória, mas exige vigilância porque seu efeito pode ser mais curto.",
+    "substitui o suporte ventilatório após a primeira resposta clínica, inclusive quando o opioide envolvido apresenta ação prolongada.",
+    "atua como agonista parcial e restabelece a ventilação sem risco de precipitar abstinência em pessoas dependentes de opioides."
+  ], correct: 2 },
+  "farmacia-149": { options: [
+    "enxaguar a boca e eliminar a água após o uso, além de revisar a técnica inalatória e a necessidade de espaçador.",
+    "suspender o medicamento controlador quando estiver assintomático, retomando-o apenas após o retorno de sintomas respiratórios.",
+    "ingerir antibiótico preventivamente após cada uso, para impedir proliferação de fungos na cavidade orofaríngea.",
+    "deitar-se imediatamente após a inalação, para aumentar a permanência do fármaco nas vias aéreas superiores.",
+    "aumentar a dose do broncodilatador por conta própria, reduzindo a necessidade de manter o corticosteroide inalatório."
+  ], correct: 0 },
+  "farmacia-150": { options: [
+    "controle excelente e ausência de risco, pois a necessidade frequente confirma resposta adequada ao broncodilatador de resgate.",
+    "cura da inflamação das vias aéreas, permitindo que o tratamento controlador seja reduzido sem nova avaliação clínica.",
+    "indicação de retirar o medicamento controlador, porque o uso repetido do broncodilatador já mantém as vias aéreas estáveis.",
+    "contraindicação absoluta ao corticosteroide inalatório, já que a necessidade de resgate demonstra intolerância à classe.",
+    "possível controle inadequado, necessidade de revisar adesão, técnica, desencadeantes e plano terapêutico."
+  ], correct: 4 },
+  "farmacia-151": { options: [
+    "dispensar investigação de sinais de alarme digestivo, pois a supressão ácida reduz a necessidade de nova avaliação clínica.",
+    "ser associado obrigatoriamente a dois antiácidos, para manter a neutralização contínua do ácido produzido pelo estômago.",
+    "ter indicação, dose e duração reavaliadas, reduzindo ou suspendendo quando clinicamente apropriado e seguro.",
+    "ser mantido indefinidamente, mesmo sem indicação atual, porque a interrupção necessariamente causa complicações graves.",
+    "ser interrompido abruptamente em todo paciente, sem considerar o motivo do uso, risco de recorrência e sintomas presentes."
+  ], correct: 2 },
+  "farmacia-152": { options: [
+    "avaliar gravidade, relação temporal, interações e causas alternativas, solicitando exames quando indicados e ajustando a estratégia.",
+    "suspender definitivamente todas as estatinas, sem ajuste de dose, mudança de fármaco ou investigação de fatores contribuintes.",
+    "manter o tratamento sem investigação quando a dor não impede atividades, pois sintomas leves não se relacionam às estatinas.",
+    "duplicar temporariamente a dose para verificar se o sintoma possui relação proporcional com a intensidade do efeito hipolipemiante.",
+    "recomendar exercício intenso antes da avaliação laboratorial, pois a persistência da dor durante esforço confirma toxicidade muscular."
+  ], correct: 0 },
+  "farmacia-153": { options: [
+    "hiporreflexia flácida como achado obrigatório, acompanhada de redução da atividade autonômica e sonolência progressiva.",
+    "alteração mental, hiperatividade autonômica e achados neuromusculares como clônus e hiperreflexia.",
+    "constipação crônica isolada, sem alterações de temperatura, estado mental ou atividade neuromuscular associada.",
+    "bradicinesia isolada de evolução anual, decorrente da perda gradual de neurônios dopaminérgicos nos gânglios da base.",
+    "ausência de febre em todos os casos, pois o excesso serotoninérgico não interfere na regulação autonômica da temperatura."
+  ], correct: 1 },
+  "farmacia-154": { options: [
+    "memória e atenção de modo sustentado, por redução da ansiedade e melhora direta da velocidade de processamento cognitivo.",
+    "densidade óssea e equilíbrio, pois o relaxamento muscular provocado pela classe previne quedas durante as atividades diárias.",
+    "função respiratória em associação com opioides, devido à diminuição da sedação central e ao aumento do reflexo ventilatório.",
+    "sedação, comprometimento cognitivo, quedas e fraturas, especialmente com outros depressores do sistema nervoso central.",
+    "velocidade de reação e coordenação motora, favorecendo a condução de veículos e atividades que exigem atenção contínua."
+  ], correct: 3 },
+  "farmacia-155": { options: [
+    "uso de solução salina sob indicação médica, pois a oferta de sódio reduz a excreção renal do lítio e aumenta sua retenção.",
+    "aumento controlado da ingestão hídrica, porque o maior volume de água necessariamente concentra o lítio no plasma.",
+    "redução isolada da dose de lítio, pois menor exposição provoca aumento compensatório de sua concentração sérica.",
+    "desidratação ou introdução de fármacos como tiazídicos, IECA ou alguns AINEs, que podem reduzir a eliminação renal.",
+    "administração de carvão ativado em dose terapêutica, pois esse agente aumenta a reabsorção renal do lítio."
+  ], correct: 3 },
+  "farmacia-156": { options: [
+    "variar amplamente o consumo a cada dia, para impedir adaptação do organismo ao efeito anticoagulante da varfarina.",
+    "dobrar a dose de varfarina quando consumir folhas verdes, para compensar imediatamente a presença de vitamina K na dieta.",
+    "manter ingestão relativamente consistente e comunicar mudanças relevantes, pois variações podem alterar o efeito anticoagulante.",
+    "ignorar dieta e medicamentos concomitantes, pois o efeito da varfarina depende apenas da dose prescrita em miligramas.",
+    "eliminar definitivamente todos os vegetais, pois qualquer fonte alimentar de vitamina K impede a anticoagulação adequada."
+  ], correct: 2 },
+  "farmacia-157": { options: [
+    "todos mantêm efeito por várias semanas após uma dose, permitindo compensar omissões sem alteração do risco trombótico.",
+    "não dependem de função renal, pois a eliminação ocorre exclusivamente por metabolismo hepático em todos os medicamentos da classe.",
+    "podem ser repostos em dose dupla por regra geral, pois o aumento transitório não influencia a exposição anticoagulante.",
+    "não existe risco trombótico quando uma dose é omitida, desde que o paciente retome o esquema na administração seguinte.",
+    "a duração relativamente curta do efeito de muitos agentes pode deixar o paciente sem proteção rapidamente."
+  ], correct: 4 },
+  "farmacia-158": { options: [
+    "vacina inativada administrada por via intramuscular, cuja resposta imunológica não interfere na absorção intestinal do hormônio.",
+    "oxigênio inalatório utilizado em suporte respiratório, pois a concentração inspirada não altera a dissolução do comprimido.",
+    "água em jejum, utilizada para a administração do medicamento e para favorecer absorção adequada da levotiroxina.",
+    "solução fisiológica tópica, pois sua utilização cutânea não modifica a disponibilidade oral do fármaco administrado.",
+    "ferro ou cálcio, que podem reduzir sua absorção intestinal e exigem separação dos horários de administração conforme a orientação."
+  ], correct: 4 },
+  "farmacia-159": { options: [
+    "ambos produzem memória imunológica duradoura, pois a administração de antígenos e anticorpos ativa o sistema imune da mesma forma.",
+    "o soro demora semanas para iniciar efeito, enquanto a vacina fornece anticorpos prontos imediatamente após a aplicação.",
+    "vacinas contêm necessariamente anticorpos prontos, produzindo proteção passiva antes que haja resposta imune do organismo.",
+    "a vacina induz resposta imune ativa e memória, enquanto o soro fornece anticorpos prontos com proteção passiva mais imediata e temporária.",
+    "soros não causam reações de hipersensibilidade, porque os anticorpos presentes não interagem com o sistema imune do receptor."
+  ], correct: 3 },
+  "farmacia-160": { options: [
+    "avaliar pressão, sintomas, doses, adesão e riscos; orientar contra alterações autônomas e articular revisão com o prescritor.",
+    "confirmar a dose dobrada sem avaliação, pois a retirada da anlodipino demonstra que o paciente já identificou a melhor alternativa.",
+    "recomendar diurético por conta própria, pois o edema periférico confirma a necessidade de compensar o excesso de volume.",
+    "reiniciar a anlodipino na dose máxima sem conversar com a equipe, para recuperar o controle pressórico o mais rápido possível.",
+    "repreender o paciente e encerrar o atendimento, evitando que novas dúvidas interfiram na adesão ao esquema prescrito."
+  ], correct: 0 }
+};
+
 function applyManualOptionSet(question) {
-  const override = farmaciaBatchSevenOverrides[question.id] || farmaciaBatchSixOverrides[question.id] || farmaciaBatchFiveOverrides[question.id] || farmaciaBatchFourOverrides[question.id] || farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = farmaciaBatchEightOverrides[question.id] || farmaciaBatchSevenOverrides[question.id] || farmaciaBatchSixOverrides[question.id] || farmaciaBatchFiveOverrides[question.id] || farmaciaBatchFourOverrides[question.id] || farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -2357,7 +2500,8 @@ bank.review = {
   pharmacyBatchFourReviewed: Array.from({ length: 20 }, (_, index) => index + 61),
   pharmacyBatchFiveReviewed: Array.from({ length: 20 }, (_, index) => index + 81),
   pharmacyBatchSixReviewed: Array.from({ length: 20 }, (_, index) => index + 101),
-  pharmacyBatchSevenReviewed: Array.from({ length: 20 }, (_, index) => index + 121)
+  pharmacyBatchSevenReviewed: Array.from({ length: 20 }, (_, index) => index + 121),
+  pharmacyBatchEightReviewed: Array.from({ length: 20 }, (_, index) => index + 141)
 };
 
 const report = validate(bank);

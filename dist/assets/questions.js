@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T23:35:40.164Z",
+  "generatedAt": "2026-10-28T23:50:36.941Z",
   "subjects": [
     {
       "id": "matematica",
@@ -9957,23 +9957,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "considerar todo efeito gastrointestinal como anafilaxia."
+          "text": "considerar todo efeito gastrointestinal como anafilaxia, registrando o caso como contraindicação para todos os betalactâmicos."
         },
         {
           "letter": "B",
-          "text": "assumir que toda reação possui o mesmo risco de reação cruzada."
+          "text": "recomendar reexposição domiciliar sem avaliação, usando pequena dose para confirmar se a reação permanece presente."
         },
         {
           "letter": "C",
-          "text": "retirar o registro sem entrevistar o paciente."
+          "text": "retirar o registro de alergia sem entrevistar o paciente, pois informações antigas não interferem na escolha do antimicrobiano."
         },
         {
           "letter": "D",
-          "text": "caracterizar medicamento, manifestação, tempo de início, gravidade, tratamento recebido e exposições posteriores, encaminhando para avaliação quando indicada."
+          "text": "caracterizar medicamento, manifestação, início, gravidade, tratamento e exposições posteriores, encaminhando quando indicado."
         },
         {
           "letter": "E",
-          "text": "recomendar reexposição domiciliar sem avaliação."
+          "text": "assumir que toda reação apresenta o mesmo risco de reação cruzada, independentemente do medicamento e da manifestação relatada."
         }
       ],
       "answer": "D",
@@ -9989,23 +9989,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "hepatotoxicidade isolada e edema periférico."
+          "text": "constipação e retenção urinária, resultantes de antagonismo muscarínico periférico provocado pelos aminoglicosídeos."
         },
         {
           "letter": "B",
-          "text": "síndrome serotoninérgica."
+          "text": "hepatotoxicidade isolada e edema periférico, associados à retenção hidrossalina durante o uso do antimicrobiano."
         },
         {
           "letter": "C",
-          "text": "constipação e retenção urinária."
+          "text": "hipoglicemia e tosse seca, decorrentes de alterações na secreção de insulina e no metabolismo da bradicinina."
         },
         {
           "letter": "D",
-          "text": "hipoglicemia e tosse."
+          "text": "síndrome serotoninérgica, por aumento de serotonina central e combinação com antidepressivos de diferentes classes."
         },
         {
           "letter": "E",
-          "text": "nefrotoxicidade e ototoxicidade, com risco relacionado à exposição e a fatores do paciente."
+          "text": "nefrotoxicidade e ototoxicidade, com risco relacionado à exposição, à função renal e a fatores do paciente."
         }
       ],
       "answer": "E",
@@ -10021,23 +10021,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "impedir qualquer metabolismo hepático."
+          "text": "reduzir o intervalo QT e impedir arritmias, pois a classe estabiliza uniformemente a repolarização cardíaca."
         },
         {
           "letter": "B",
-          "text": "produzir hipoglicemia por reposição de insulina."
+          "text": "impedir qualquer metabolismo hepático, produzindo aumento idêntico da concentração de todos os medicamentos administrados."
         },
         {
           "letter": "C",
-          "text": "prolongar o intervalo QT e interagir por inibição enzimática, dependendo do agente."
+          "text": "prolongar o intervalo QT e interagir por inibição enzimática, dependendo do agente e das associações utilizadas."
         },
         {
           "letter": "D",
-          "text": "reduzir o intervalo QT e impedir arritmias."
+          "text": "antagonizar receptores opioides, promovendo reversão da depressão respiratória em intoxicação por analgésicos opioides."
         },
         {
           "letter": "E",
-          "text": "antagonizar receptores opioides."
+          "text": "produzir hipoglicemia por reposição de insulina, efeito que ocorre mesmo em pacientes sem tratamento antidiabético."
         }
       ],
       "answer": "C",
@@ -10053,23 +10053,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "reavaliar e descalonar o tratamento quando clinicamente possível."
+          "text": "reavaliar o tratamento e descalonar para o agente de menor espectro quando isso for clinicamente possível e seguro."
         },
         {
           "letter": "B",
-          "text": "acrescentar outro antimicrobiano para ampliar a cobertura empírica."
+          "text": "manter a combinação inicial de amplo espectro até o fim do esquema, mesmo após identificação de sensibilidade específica."
         },
         {
           "letter": "C",
-          "text": "manter a combinação inicial de amplo espectro até o fim do esquema previsto."
+          "text": "definir a escolha apenas pelo resultado microbiológico, sem integrar foco infeccioso, gravidade, alergias e resposta clínica."
         },
         {
           "letter": "D",
-          "text": "suspender toda a terapia antimicrobiana e aguardar nova prescrição."
+          "text": "acrescentar outro antimicrobiano para ampliar a cobertura empírica, mantendo o agente de amplo espectro inicial."
         },
         {
           "letter": "E",
-          "text": "definir a escolha pelo resultado microbiológico sem integrar sítio de infecção e evolução clínica."
+          "text": "suspender toda a terapia antimicrobiana e aguardar nova prescrição, sem considerar sítio da infecção e evolução clínica."
         }
       ],
       "answer": "A",
@@ -10085,23 +10085,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "broncodilatação e poliúria protetora."
+          "text": "sonolência leve como única repercussão clínica relevante, sem interação com a função renal ou com o anticoagulante."
         },
         {
           "letter": "B",
-          "text": "redução universal da pressão arterial."
+          "text": "hipoglicemia por excesso de insulina, devido ao aumento previsível da secreção pancreática após uso de AINEs."
         },
         {
           "letter": "C",
-          "text": "apenas sonolência leve."
+          "text": "redução uniforme da pressão arterial, pois a retenção de sódio e água não ocorre durante o uso de anti-inflamatórios."
         },
         {
           "letter": "D",
-          "text": "lesão renal, retenção hidrossalina, descompensação cardiovascular e sangramento."
+          "text": "lesão renal, retenção hidrossalina, descompensação cardiovascular e sangramento, com agravamento de condições já presentes."
         },
         {
           "letter": "E",
-          "text": "hipoglicemia por excesso de insulina."
+          "text": "broncodilatação e poliúria protetora, com redução do risco cardiovascular decorrente da inibição de prostaglandinas."
         }
       ],
       "answer": "D",
@@ -10117,23 +10117,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "de reação alérgica em todos os pacientes."
+          "text": "inibição exclusiva da vitamina K, reduzindo a coagulação e causando necrose hepática proporcional ao INR do paciente."
         },
         {
           "letter": "B",
-          "text": "do acúmulo do metabólito reativo NAPQI quando as vias de conjugação e a glutationa se tornam insuficientes."
+          "text": "acúmulo do metabólito reativo NAPQI quando as vias de conjugação e a glutationa se tornam insuficientes."
         },
         {
           "letter": "C",
-          "text": "da formação de cristais de cálcio."
+          "text": "formação de cristais de cálcio nos túbulos renais, provocando obstrução e lesão hepática secundária ao processo."
         },
         {
           "letter": "D",
-          "text": "da inibição exclusiva da vitamina K."
+          "text": "bloqueio irreversível de receptores opioides, com redução da ventilação e isquemia hepática por hipóxia persistente."
         },
         {
           "letter": "E",
-          "text": "do bloqueio irreversível de receptores opioides."
+          "text": "reação alérgica presente em todos os pacientes, com ativação imediata de mastócitos após a administração do medicamento."
         }
       ],
       "answer": "B",
@@ -10149,23 +10149,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "depressão respiratória, frequentemente acompanhada de redução da consciência e miose."
+          "text": "depressão respiratória, frequentemente acompanhada de redução da consciência e miose, com risco de hipóxia grave."
         },
         {
           "letter": "B",
-          "text": "hiperreflexia generalizada."
+          "text": "hiperreflexia generalizada associada a clônus sustentado, como efeito agudo predominante da superdose de opioides."
         },
         {
           "letter": "C",
-          "text": "hipertensão grave isolada."
+          "text": "hipertensão grave isolada, decorrente de aumento da descarga simpática e vasoconstrição periférica intensa."
         },
         {
           "letter": "D",
-          "text": "midríase com agitação."
+          "text": "diarreia intensa com cólicas abdominais, causada pela aceleração do trânsito intestinal após a superdose."
         },
         {
           "letter": "E",
-          "text": "diarreia intensa."
+          "text": "midríase com agitação psicomotora, resposta esperada pela estimulação central promovida pelos receptores opioides."
         }
       ],
       "answer": "A",
@@ -10181,23 +10181,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "reduz a absorção gastrointestinal dos opioides e, por esse mecanismo, impede recorrência dos sintomas depois da dose inicial"
+          "text": "reduz a absorção gastrointestinal dos opioides e, por esse mecanismo, impede recorrência dos sintomas após a dose inicial."
         },
         {
           "letter": "B",
-          "text": "é o antídoto utilizado para repor glutationa e limitar lesão hepática decorrente de superdose aguda de paracetamol"
+          "text": "repõe glutationa e limita lesão hepática decorrente de superdose aguda de paracetamol, atuando como precursor metabólico."
         },
         {
           "letter": "C",
-          "text": "antagoniza receptores opioides e pode reverter depressão respiratória, mas exige vigilância porque seu efeito pode ser mais curto"
+          "text": "antagoniza receptores opioides e pode reverter depressão respiratória, mas exige vigilância porque seu efeito pode ser mais curto."
         },
         {
           "letter": "D",
-          "text": "substitui o suporte ventilatório após a primeira resposta clínica, mesmo quando o opioide envolvido apresenta ação prolongada"
+          "text": "atua como agonista parcial e restabelece a ventilação sem risco de precipitar abstinência em pessoas dependentes de opioides."
         },
         {
           "letter": "E",
-          "text": "atua como agonista parcial e restabelece a ventilação sem risco de precipitar abstinência em pessoas dependentes de opioides"
+          "text": "substitui o suporte ventilatório após a primeira resposta clínica, inclusive quando o opioide envolvido apresenta ação prolongada."
         }
       ],
       "answer": "C",
@@ -10213,23 +10213,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "enxaguar a boca e eliminar a água, além de revisar a técnica inalatória."
+          "text": "enxaguar a boca e eliminar a água após o uso, além de revisar a técnica inalatória e a necessidade de espaçador."
         },
         {
           "letter": "B",
-          "text": "suspender o controlador sempre que estiver assintomático."
+          "text": "deitar-se imediatamente após a inalação, para aumentar a permanência do fármaco nas vias aéreas superiores."
         },
         {
           "letter": "C",
-          "text": "ingerir antibiótico preventivamente."
+          "text": "aumentar a dose do broncodilatador por conta própria, reduzindo a necessidade de manter o corticosteroide inalatório."
         },
         {
           "letter": "D",
-          "text": "deitar-se imediatamente."
+          "text": "suspender o medicamento controlador quando estiver assintomático, retomando-o apenas após o retorno de sintomas respiratórios."
         },
         {
           "letter": "E",
-          "text": "aumentar a dose do broncodilatador por conta própria."
+          "text": "ingerir antibiótico preventivamente após cada uso, para impedir proliferação de fungos na cavidade orofaríngea."
         }
       ],
       "answer": "A",
@@ -10245,19 +10245,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "controle excelente e ausência de risco."
+          "text": "cura da inflamação das vias aéreas, permitindo que o tratamento controlador seja reduzido sem nova avaliação clínica."
         },
         {
           "letter": "B",
-          "text": "cura da inflamação das vias aéreas."
+          "text": "indicação de retirar o medicamento controlador, porque o uso repetido do broncodilatador já mantém as vias aéreas estáveis."
         },
         {
           "letter": "C",
-          "text": "que o medicamento controlador deve ser retirado."
+          "text": "controle excelente e ausência de risco, pois a necessidade frequente confirma resposta adequada ao broncodilatador de resgate."
         },
         {
           "letter": "D",
-          "text": "contraindicação absoluta a corticosteroide inalatório."
+          "text": "contraindicação absoluta ao corticosteroide inalatório, já que a necessidade de resgate demonstra intolerância à classe."
         },
         {
           "letter": "E",
@@ -10277,11 +10277,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "dispensar investigação de sinais de alarme digestivo."
+          "text": "ser associado obrigatoriamente a dois antiácidos, para manter a neutralização contínua do ácido produzido pelo estômago."
         },
         {
           "letter": "B",
-          "text": "ser associado obrigatoriamente a dois antiácidos."
+          "text": "ser interrompido abruptamente em todo paciente, sem considerar o motivo do uso, risco de recorrência e sintomas presentes."
         },
         {
           "letter": "C",
@@ -10289,11 +10289,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "ser mantido indefinidamente sem indicação."
+          "text": "ser mantido indefinidamente, mesmo sem indicação atual, porque a interrupção necessariamente causa complicações graves."
         },
         {
           "letter": "E",
-          "text": "ser interrompido abruptamente em todo paciente."
+          "text": "dispensar investigação de sinais de alarme digestivo, pois a supressão ácida reduz a necessidade de nova avaliação clínica."
         }
       ],
       "answer": "C",
@@ -10309,23 +10309,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "avaliar gravidade, relação temporal, interações e causas alternativas, solicitando exames quando indicados e ajustando a estratégia"
+          "text": "avaliar gravidade, relação temporal, interações e causas alternativas, solicitando exames quando indicados e ajustando a estratégia."
         },
         {
           "letter": "B",
-          "text": "suspender definitivamente todas as estatinas, sem tentativa de ajuste de dose, mudança de fármaco ou investigação de fatores contribuintes"
+          "text": "manter o tratamento sem investigação quando a dor não impede atividades, pois sintomas leves não se relacionam às estatinas."
         },
         {
           "letter": "C",
-          "text": "manter o tratamento sem investigação quando a dor não impede atividades, pois sintomas musculares leves não se relacionam às estatinas"
+          "text": "suspender definitivamente todas as estatinas, sem ajuste de dose, mudança de fármaco ou investigação de fatores contribuintes."
         },
         {
           "letter": "D",
-          "text": "duplicar temporariamente a dose para verificar se o sintoma possui relação proporcional com a intensidade do efeito hipolipemiante"
+          "text": "duplicar temporariamente a dose para verificar se o sintoma possui relação proporcional com a intensidade do efeito hipolipemiante."
         },
         {
           "letter": "E",
-          "text": "recomendar exercício intenso antes da avaliação laboratorial, pois a persistência da dor durante o esforço confirma toxicidade muscular"
+          "text": "recomendar exercício intenso antes da avaliação laboratorial, pois a persistência da dor durante esforço confirma toxicidade muscular."
         }
       ],
       "answer": "A",
@@ -10341,7 +10341,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "hiporreflexia flácida como achado obrigatório."
+          "text": "hiporreflexia flácida como achado obrigatório, acompanhada de redução da atividade autonômica e sonolência progressiva."
         },
         {
           "letter": "B",
@@ -10349,15 +10349,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "apenas constipação crônica."
+          "text": "ausência de febre em todos os casos, pois o excesso serotoninérgico não interfere na regulação autonômica da temperatura."
         },
         {
           "letter": "D",
-          "text": "bradicinesia isolada de evolução anual."
+          "text": "constipação crônica isolada, sem alterações de temperatura, estado mental ou atividade neuromuscular associada."
         },
         {
           "letter": "E",
-          "text": "ausência de febre em todos os casos."
+          "text": "bradicinesia isolada de evolução anual, decorrente da perda gradual de neurônios dopaminérgicos nos gânglios da base."
         }
       ],
       "answer": "B",
@@ -10373,15 +10373,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "memória e atenção de modo sustentado."
+          "text": "velocidade de reação e coordenação motora, favorecendo a condução de veículos e atividades que exigem atenção contínua."
         },
         {
           "letter": "B",
-          "text": "densidade óssea e equilíbrio."
+          "text": "memória e atenção de modo sustentado, por redução da ansiedade e melhora direta da velocidade de processamento cognitivo."
         },
         {
           "letter": "C",
-          "text": "função respiratória em associação com opioides."
+          "text": "densidade óssea e equilíbrio, pois o relaxamento muscular provocado pela classe previne quedas durante as atividades diárias."
         },
         {
           "letter": "D",
@@ -10389,7 +10389,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "velocidade de reação."
+          "text": "função respiratória em associação com opioides, devido à diminuição da sedação central e ao aumento do reflexo ventilatório."
         }
       ],
       "answer": "D",
@@ -10405,23 +10405,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "uso de solução salina sob indicação médica."
+          "text": "aumento controlado da ingestão hídrica, porque o maior volume de água necessariamente concentra o lítio no plasma."
         },
         {
           "letter": "B",
-          "text": "aumento controlado da ingestão hídrica."
+          "text": "uso de solução salina sob indicação médica, pois a oferta de sódio reduz a excreção renal do lítio e aumenta sua retenção."
         },
         {
           "letter": "C",
-          "text": "redução isolada da dose de lítio."
+          "text": "administração de carvão ativado em dose terapêutica, pois esse agente aumenta a reabsorção renal do lítio."
         },
         {
           "letter": "D",
-          "text": "desidratação ou introdução de fármacos como tiazídicos, IECA ou alguns AINEs."
+          "text": "desidratação ou introdução de fármacos como tiazídicos, IECA ou alguns AINEs, que podem reduzir a eliminação renal."
         },
         {
           "letter": "E",
-          "text": "administração de carvão ativado em dose terapêutica."
+          "text": "redução isolada da dose de lítio, pois menor exposição provoca aumento compensatório de sua concentração sérica."
         }
       ],
       "answer": "D",
@@ -10437,11 +10437,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "variar amplamente o consumo a cada dia."
+          "text": "ignorar dieta e medicamentos concomitantes, pois o efeito da varfarina depende apenas da dose prescrita em miligramas."
         },
         {
           "letter": "B",
-          "text": "dobrar a dose quando consumir folhas verdes."
+          "text": "dobrar a dose de varfarina quando consumir folhas verdes, para compensar imediatamente a presença de vitamina K na dieta."
         },
         {
           "letter": "C",
@@ -10449,11 +10449,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "ignorar dieta e medicamentos concomitantes."
+          "text": "eliminar definitivamente todos os vegetais, pois qualquer fonte alimentar de vitamina K impede a anticoagulação adequada."
         },
         {
           "letter": "E",
-          "text": "eliminar definitivamente todos os vegetais."
+          "text": "variar amplamente o consumo a cada dia, para impedir adaptação do organismo ao efeito anticoagulante da varfarina."
         }
       ],
       "answer": "C",
@@ -10469,19 +10469,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "todos possuem efeito por várias semanas após uma dose."
+          "text": "não dependem de função renal, pois a eliminação ocorre exclusivamente por metabolismo hepático em todos os medicamentos da classe."
         },
         {
           "letter": "B",
-          "text": "não dependem de função renal."
+          "text": "podem ser repostos em dose dupla por regra geral, pois o aumento transitório não influencia a exposição anticoagulante."
         },
         {
           "letter": "C",
-          "text": "podem ser repostos em dose dupla por regra geral."
+          "text": "todos mantêm efeito por várias semanas após uma dose, permitindo compensar omissões sem alteração do risco trombótico."
         },
         {
           "letter": "D",
-          "text": "não existe risco trombótico quando uma dose é omitida."
+          "text": "não existe risco trombótico quando uma dose é omitida, desde que o paciente retome o esquema na administração seguinte."
         },
         {
           "letter": "E",
@@ -10501,23 +10501,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "vacina inativada."
+          "text": "oxigênio inalatório utilizado em suporte respiratório, pois a concentração inspirada não altera a dissolução do comprimido."
         },
         {
           "letter": "B",
-          "text": "oxigênio inalatório."
+          "text": "água em jejum, utilizada para a administração do medicamento e para favorecer absorção adequada da levotiroxina."
         },
         {
           "letter": "C",
-          "text": "água em jejum."
+          "text": "vacina inativada administrada por via intramuscular, cuja resposta imunológica não interfere na absorção intestinal do hormônio."
         },
         {
           "letter": "D",
-          "text": "solução fisiológica tópica."
+          "text": "solução fisiológica tópica, pois sua utilização cutânea não modifica a disponibilidade oral do fármaco administrado."
         },
         {
           "letter": "E",
-          "text": "ferro ou cálcio, razão pela qual costuma ser necessário separar os horários."
+          "text": "ferro ou cálcio, que podem reduzir sua absorção intestinal e exigem separação dos horários de administração conforme a orientação."
         }
       ],
       "answer": "E",
@@ -10533,15 +10533,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ambos produzem sempre memória imunológica duradoura."
+          "text": "o soro demora semanas para iniciar efeito, enquanto a vacina fornece anticorpos prontos imediatamente após a aplicação."
         },
         {
           "letter": "B",
-          "text": "o soro demora semanas para iniciar efeito."
+          "text": "soros não causam reações de hipersensibilidade, porque os anticorpos presentes não interagem com o sistema imune do receptor."
         },
         {
           "letter": "C",
-          "text": "vacinas contêm necessariamente anticorpos prontos."
+          "text": "vacinas contêm necessariamente anticorpos prontos, produzindo proteção passiva antes que haja resposta imune do organismo."
         },
         {
           "letter": "D",
@@ -10549,7 +10549,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "soros nunca causam reações de hipersensibilidade."
+          "text": "ambos produzem memória imunológica duradoura, pois a administração de antígenos e anticorpos ativa o sistema imune da mesma forma."
         }
       ],
       "answer": "D",
@@ -10565,23 +10565,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "avaliar pressão, sintomas, doses, adesão e riscos; orientar contra alterações autônomas; registrar e articular revisão terapêutica com o prescritor."
+          "text": "avaliar pressão, sintomas, doses, adesão e riscos; orientar contra alterações autônomas e articular revisão com o prescritor."
         },
         {
           "letter": "B",
-          "text": "confirmar a dose dobrada sem avaliação."
+          "text": "recomendar diurético por conta própria, pois o edema periférico confirma a necessidade de compensar o excesso de volume."
         },
         {
           "letter": "C",
-          "text": "recomendar diurético por conta própria em qualquer situação."
+          "text": "confirmar a dose dobrada sem avaliação, pois a retirada da anlodipino demonstra que o paciente já identificou a melhor alternativa."
         },
         {
           "letter": "D",
-          "text": "reiniciar a anlodipino na dose máxima sem conversar com a equipe."
+          "text": "repreender o paciente e encerrar o atendimento, evitando que novas dúvidas interfiram na adesão ao esquema prescrito."
         },
         {
           "letter": "E",
-          "text": "repreender o paciente e encerrar o atendimento."
+          "text": "reiniciar a anlodipino na dose máxima sem conversar com a equipe, para recuperar o controle pressórico o mais rápido possível."
         }
       ],
       "answer": "A",
@@ -10878,6 +10878,28 @@ export const questionBank = {
       138,
       139,
       140
+    ],
+    "pharmacyBatchEightReviewed": [
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
     ]
   }
 };

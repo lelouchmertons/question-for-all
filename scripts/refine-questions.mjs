@@ -142,6 +142,12 @@ const mathOverrides = {
     correct: "A média diminui 5/9 de minuto e a mediana permanece 17.",
     explanation: "A redução de 20% em 25 minutos é de 5 minutos; distribuída pelos nove valores, diminui a média em 5/9 de minuto. O valor 25 passa a 20, e a ordem fica 12, 14, 15, 16, 17, 18, 19, 20, 21; a mediana continua sendo 17."
   },
+  32: {
+    stem: "Uma tabela apresenta o número de atendimentos de três unidades:\n\nUnidade A: janeiro 400; fevereiro 460. Unidade B: janeiro 250; fevereiro 300. Unidade C: janeiro 600; fevereiro 660.\n\nQual unidade apresentou o maior crescimento percentual?",
+    options: ["Unidade A, 15%.", "Unidade C, 10%.", "Unidade B, 20%.", "Unidades A e C, 15%.", "As três unidades, 15%."],
+    correct: "Unidade B, 20%.",
+    explanation: "A unidade A cresceu 60/400 = 15%; B cresceu 50/250 = 20%; e C cresceu 60/600 = 10%. O aumento absoluto não basta para comparar crescimento percentual, pois as bases iniciais são diferentes."
+  },
   33: {
     stem: "Uma urna contém 4 bolas vermelhas, 5 azuis e 3 verdes. Retira-se uma primeira bola e informa-se apenas que ela não era azul. Sem reposição, qual é a probabilidade de a segunda bola ser azul?",
     options: ["4/11.", "5/11.", "5/12.", "7/11.", "7/12."],
@@ -150,9 +156,15 @@ const mathOverrides = {
   },
   37: {
     stem: "A negação lógica de “Todos os relatórios foram revisados e aprovados” é:",
-    options: ["Nenhum relatório foi revisado e nenhum foi aprovado.", "Todos os relatórios deixaram de ser revisados ou aprovados.", "Existe relatório que não foi revisado ou não foi aprovado.", "Existe relatório que foi revisado, mas não foi aprovado.", "Algum relatório não foi revisado e também não foi aprovado."],
+    options: ["Existe relatório que não foi revisado e não foi aprovado.", "Todos os relatórios não foram revisados ou não foram aprovados.", "Existe relatório que não foi revisado ou não foi aprovado.", "Existe relatório revisado, mas não aprovado.", "Todos os relatórios foram revisados, mas não aprovados."],
     correct: "Existe relatório que não foi revisado ou não foi aprovado.",
     explanation: "A negação de uma afirmação universal exige ao menos um contraexemplo. Além disso, a negação de “revisado e aprovado” é “não revisado ou não aprovado”. Não é necessário que as duas falhas ocorram simultaneamente."
+  },
+  38: {
+    stem: "Considere a proposição: “Se o lote foi liberado, então a análise foi concluída.” Sabendo que a análise não foi concluída, conclui-se validamente que:",
+    options: ["a conclusão da análise será posterior à liberação.", "a ausência de conclusão não informa a situação da liberação.", "a liberação do lote não ocorreu antes da conclusão da análise.", "o lote foi liberado em caráter provisório.", "o lote foi liberado, mas a análise não foi concluída."],
+    correct: "a liberação do lote não ocorreu antes da conclusão da análise.",
+    explanation: "A proposição tem a forma “se L, então A”. Ao saber que A é falsa, conclui-se que L também é falsa. Esse raciocínio é o modus tollens; não depende de supor uma liberação provisória ou uma conclusão futura."
   }
 };
 
@@ -1442,7 +1454,8 @@ bank.review = {
   version: 2,
   description: "Revisão editorial de gabaritos, pistas de extensão, rodapés importados e complexidade matemática.",
   mathQuestionsStrengthened: Object.keys(mathOverrides).map(Number),
-  mathBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1)
+  mathBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
+  mathBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21)
 };
 
 const report = validate(bank);

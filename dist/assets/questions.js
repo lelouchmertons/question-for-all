@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T17:59:40.803Z",
+  "generatedAt": "2026-10-28T18:03:44.711Z",
   "subjects": [
     {
       "id": "matematica",
@@ -1029,27 +1029,27 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Unidade A, com 15%."
+          "text": "Unidade C, 10%."
         },
         {
           "letter": "B",
-          "text": "Unidade C, com 10%."
+          "text": "As três unidades, 15%."
         },
         {
           "letter": "C",
-          "text": "Unidade B, com 20%."
+          "text": "Unidade B, 20%."
         },
         {
           "letter": "D",
-          "text": "Unidades A e C, com 15%."
+          "text": "Unidade A, 15%."
         },
         {
           "letter": "E",
-          "text": "Todas apresentaram 60 atendimentos e, portanto, o mesmo percentual."
+          "text": "Unidades A e C, 15%."
         }
       ],
       "answer": "C",
-      "explanation": "A cresceu 60/400 = 15%; B, 50/250 = 20%; e C, 60/600 = 10%. A variação absoluta não determina, sozinha, a maior variação relativa."
+      "explanation": "A unidade A cresceu 60/400 = 15%; B cresceu 50/250 = 20%; e C cresceu 60/600 = 10%. O aumento absoluto não basta para comparar crescimento percentual, pois as bases iniciais são diferentes."
     },
     {
       "id": "matematica-033",
@@ -1189,11 +1189,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Nenhum relatório foi revisado e nenhum foi aprovado."
+          "text": "Existe relatório que não foi revisado e não foi aprovado."
         },
         {
           "letter": "B",
-          "text": "Algum relatório não foi revisado e também não foi aprovado."
+          "text": "Todos os relatórios foram revisados, mas não aprovados."
         },
         {
           "letter": "C",
@@ -1201,11 +1201,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "Existe relatório que foi revisado, mas não foi aprovado."
+          "text": "Existe relatório revisado, mas não aprovado."
         },
         {
           "letter": "E",
-          "text": "Todos os relatórios deixaram de ser revisados ou aprovados."
+          "text": "Todos os relatórios não foram revisados ou não foram aprovados."
         }
       ],
       "answer": "C",
@@ -1221,27 +1221,27 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a análise será concluída posteriormente."
+          "text": "o lote foi liberado, mas a análise não foi concluída."
         },
         {
           "letter": "B",
-          "text": "nada pode ser concluído sobre a liberação."
+          "text": "a conclusão da análise será posterior à liberação."
         },
         {
           "letter": "C",
-          "text": "o lote não foi liberado."
+          "text": "a liberação do lote não ocorreu antes da conclusão da análise."
         },
         {
           "letter": "D",
-          "text": "o lote foi parcialmente liberado."
+          "text": "a ausência de conclusão não informa a situação da liberação."
         },
         {
           "letter": "E",
-          "text": "o lote foi liberado."
+          "text": "o lote foi liberado em caráter provisório."
         }
       ],
       "answer": "C",
-      "explanation": "Trata-se de modus tollens: se P implica Q e Q é falso, então P é falso. Logo, o lote não foi liberado."
+      "explanation": "A proposição tem a forma “se L, então A”. Ao saber que A é falsa, conclui-se que L também é falsa. Esse raciocínio é o modus tollens; não depende de supor uma liberação provisória ou uma conclusão futura."
     },
     {
       "id": "matematica-039",
@@ -10607,8 +10607,10 @@ export const questionBank = {
       26,
       29,
       30,
+      32,
       33,
-      37
+      37,
+      38
     ],
     "mathBatchOneReviewed": [
       1,
@@ -10631,6 +10633,28 @@ export const questionBank = {
       18,
       19,
       20
+    ],
+    "mathBatchTwoReviewed": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
     ]
   }
 };

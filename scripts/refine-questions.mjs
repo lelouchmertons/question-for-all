@@ -673,8 +673,191 @@ const manualOptionSets = {
   }
 };
 
+const farmaciaBatchOneOverrides = {
+  "farmacia-001": {
+    options: [
+      "assegura acesso prioritário a pessoas incluídas em programas públicos conforme classificação de risco territorial.",
+      "vincula o uso regular dos serviços à contribuição prévia para a seguridade social ou ao vínculo formal de trabalho.",
+      "reserva o atendimento ordinário a cidadãos brasileiros, admitindo estrangeiros nas situações previstas em regulamento local.",
+      "garante a todas as pessoas acesso às ações e aos serviços de saúde, sem discriminação indevida.",
+      "concentra o acesso público em urgências, surtos e situações classificadas como de maior gravidade clínica."
+    ], correct: 3
+  },
+  "farmacia-002": {
+    options: [
+      "organização do cuidado a partir dos serviços hospitalares, com encaminhamento posterior às ações ambulatoriais disponíveis.",
+      "oferta de tecnologias solicitadas pelo usuário após avaliação de disponibilidade financeira e conveniência administrativa da unidade.",
+      "planejamento de prevenção, tratamento e reabilitação por setores autônomos, articulados apenas mediante referência formal.",
+      "conjunto articulado e contínuo de ações preventivas e curativas, individuais e coletivas, exigidas para cada caso nos diferentes níveis de complexidade.",
+      "prioridade das intervenções curativas dirigidas às condições já instaladas, com ações preventivas conduzidas em programação separada."
+    ], correct: 3
+  },
+  "farmacia-003": {
+    options: [
+      "universalidade, porque preserva o direito de acesso da população aos serviços existentes na rede pública.",
+      "integralidade, porque amplia o conjunto de recursos técnicos disponíveis para todos os usuários do território.",
+      "igualdade formal, porque utiliza o mesmo critério de distribuição de recursos para todas as regiões do Município.",
+      "descentralização, porque transfere a decisão sobre os recursos para cada unidade de saúde da rede local.",
+      "equidade, porque destina mais recursos às regiões com maior vulnerabilidade e piores indicadores de saúde."
+    ], correct: 4
+  },
+  "farmacia-004": {
+    options: [
+      "coordenação federal direta dos serviços locais, com execução municipal restrita às decisões previamente definidas.",
+      "organização da rede por unidades independentes, sem necessidade de regionalização, hierarquização ou integração assistencial.",
+      "financiamento dos atendimentos segundo contribuição do usuário, com gratuidade limitada às ações consideradas prioritárias.",
+      "gestão centralizada com comando único nacional, preservando aos Estados e Municípios apenas funções operacionais.",
+      "descentralização político-administrativa, com direção única em cada esfera de governo e atuação coordenada entre os entes federativos."
+    ], correct: 4
+  },
+  "farmacia-005": {
+    options: [
+      "órgão colegiado permanente e deliberativo, com participação de governo, prestadores, profissionais de saúde e usuários.",
+      "instância judicial destinada a anular decisões de gestores quando houver questionamento sobre políticas públicas de saúde.",
+      "colegiado de gestores responsável pela execução dos serviços, com participação social limitada à apresentação de demandas.",
+      "reunião periódica convocada pela gestão em situações de crise sanitária para orientar decisões emergenciais do Município.",
+      "entidade de apoio à administração, sem atribuição de acompanhar, formular ou controlar políticas públicas de saúde."
+    ], correct: 0
+  },
+  "farmacia-006": {
+    options: [
+      "a cada dois anos, para acompanhar a execução das metas definidas no plano de saúde vigente.",
+      "a cada três anos, com convocação obrigatória pelo gestor de saúde da respectiva esfera de governo.",
+      "a cada quatro anos, para avaliar a situação de saúde e propor diretrizes para as políticas públicas.",
+      "em convocação anual do Congresso Nacional, após a apresentação dos relatórios financeiros do sistema de saúde.",
+      "mensalmente, sempre que houver pauta relacionada ao planejamento das ações de saúde no território."
+    ], correct: 2
+  },
+  "farmacia-007": {
+    options: [
+      "gestão centralizada pela União, com execução estadual e municipal subordinada às decisões administrativas federais.",
+      "participação complementar vedada à iniciativa privada, inclusive nos casos de insuficiência da rede pública instalada.",
+      "atendimento integral com prioridade exclusiva para ações curativas e encaminhamento posterior das medidas preventivas.",
+      "participação da comunidade na formulação, no acompanhamento e no controle das ações e dos serviços de saúde.",
+      "cobrança direta do usuário como mecanismo ordinário para financiar o acesso aos serviços de maior complexidade."
+    ], correct: 3
+  },
+  "farmacia-008": {
+    options: [
+      "associada a cuidados ou procedimentos de saúde, manifestando-se durante ou após o atendimento em razão da assistência prestada.",
+      "identificada apenas em hospitais com terapia intensiva ou centro cirúrgico, por envolver procedimentos de maior complexidade.",
+      "presente antes da admissão e reconhecida durante a internação, desde que haja registro de alteração clínica no prontuário.",
+      "associada a bactéria multirresistente confirmada em cultura, com ocorrência registrada durante a internação hospitalar.",
+      "restrita à internação hospitalar, sem possibilidade de ocorrer em atendimento ambulatorial, domiciliar ou de menor porte."
+    ], correct: 0
+  },
+  "farmacia-009": {
+    options: [
+      "secar as mãos com papel descartável e aplicar preparação alcoólica antes de retomar o atendimento ao paciente.",
+      "higienizar as mãos com água e sabonete, removendo a sujidade visível antes de qualquer outra preparação.",
+      "friccionar preparação alcoólica e enxaguar em seguida, para retirar os resíduos orgânicos presentes nas mãos.",
+      "aplicar produto antisséptico perfumado, mantendo as luvas como barreira até o fim do procedimento em curso.",
+      "calçar luvas limpas sobre as mãos contaminadas e realizar a lavagem somente depois de finalizar o atendimento."
+    ], correct: 1
+  },
+  "farmacia-010": {
+    options: [
+      "no início do plantão, como preparação suficiente para todos os contatos previstos durante o período de trabalho.",
+      "antes de procedimentos invasivos, sem necessidade de higiene após contato com superfícies próximas ao paciente.",
+      "após tocar superfícies próximas ao paciente, mesmo sem contato direto com ele, antes de seguir para outra atividade assistencial.",
+      "ao término do turno, como medida que substitui as oportunidades de higiene durante a assistência prestada.",
+      "na presença de matéria orgânica visível, como único momento em que a higiene das mãos se torna necessária."
+    ], correct: 2
+  },
+  "farmacia-011": {
+    options: [
+      "orientação escrita padronizada, entregue ao usuário ao fim da consulta para que possa rever as informações em casa.",
+      "definição da conduta a partir da prescrição, deixando crenças, condições financeiras e rotina para avaliação posterior.",
+      "condução breve e objetiva da conversa, com foco nos dados técnicos necessários para registrar o atendimento realizado.",
+      "escuta ativa, linguagem compreensível e confirmação de que o usuário entendeu as orientações acordadas durante o atendimento.",
+      "uso de terminologia técnica uniforme, com explicações adicionais reservadas aos usuários que apresentem dúvidas específicas."
+    ], correct: 3
+  },
+  "farmacia-012": {
+    options: [
+      "devem ser protegidas e compartilhadas nas hipóteses autorizadas ou justificadas por necessidade assistencial e dever legal.",
+      "permanecem sob guarda exclusiva do profissional que realizou o atendimento, sem integração aos registros institucionais do serviço.",
+      "podem ser apresentadas em relato de caso educativo, desde que o nome do paciente seja abreviado na publicação.",
+      "podem circular entre os profissionais da unidade porque o atendimento ocorreu em serviço integrante do SUS.",
+      "perdem o caráter sigiloso quando são registradas em prontuário eletrônico acessado pela equipe de saúde responsável."
+    ], correct: 0
+  },
+  "farmacia-013": {
+    options: [
+      "priorizar preparações manipuladas para ampliar a individualização terapêutica, mesmo quando houver opção industrializada adequada.",
+      "concentrar as compras na esfera federal para padronizar a organização da assistência em todo o território.",
+      "estimular a automedicação como estratégia de acesso, acompanhada de materiais educativos sobre uso seguro dos produtos.",
+      "garantir segurança, eficácia e qualidade, promover o uso racional e assegurar acesso da população aos medicamentos essenciais.",
+      "organizar a assistência farmacêutica como atividade de abastecimento, separada das demais políticas de saúde."
+    ], correct: 3
+  },
+  "farmacia-014": {
+    options: [
+      "integram listas prioritárias para doenças raras, com seleção baseada na complexidade terapêutica dos tratamentos disponíveis.",
+      "dispensam demonstração de eficácia e segurança quando já figuram em listas elaboradas por órgãos públicos de saúde.",
+      "satisfazem as necessidades prioritárias de saúde da população e devem estar disponíveis em formas, quantidades e condições adequadas.",
+      "são necessariamente tecnologias novas e patenteadas, selecionadas para atualizar a oferta terapêutica do sistema.",
+      "são definidos pelo menor custo de aquisição, desde que a apresentação possa ser distribuída pela rede pública local."
+    ], correct: 2
+  },
+  "farmacia-015": {
+    options: [
+      "pela incorporação das apresentações mais recentes, priorizando inovações disponíveis no mercado farmacêutico nacional.",
+      "pela linha comercial do fornecedor vencedor da última licitação, para preservar padronização e escala de aquisição.",
+      "por decisão financeira isolada, priorizando produtos com menor impacto imediato no orçamento anual da administração.",
+      "por equipe ou comissão multiprofissional, com critérios epidemiológicos, clínicos, de eficácia, segurança, qualidade e custo-efetividade.",
+      "pela publicidade recebida pelos produtos e pelo reconhecimento de suas marcas entre profissionais e usuários."
+    ], correct: 3
+  },
+  "farmacia-016": {
+    options: [
+      "escolher a alternativa terapêutica mais segura para cada usuário, após avaliação clínica e definição individual da farmacoterapia.",
+      "redigir o edital de licitação e estabelecer requisitos jurídicos para contratação dos fornecedores de medicamentos do Município.",
+      "dispensar o medicamento e orientar o usuário sobre posologia, conservação e medidas de acompanhamento do tratamento.",
+      "estimar quantidades para período definido, compatibilizando necessidades, estoques, consumo, recursos e capacidade de armazenamento.",
+      "conferir os produtos recebidos, registrar divergências e providenciar as medidas relacionadas à aceitação da entrega."
+    ], correct: 3
+  },
+  "farmacia-017": {
+    options: [
+      "indicar a marca comercial como referência principal, complementando-a com especificação técnica quando houver mais de um fornecedor.",
+      "aceitar quantitativo diverso do contratado mediante compromisso formal de regularização do saldo na entrega subsequente.",
+      "especificar adequadamente o objeto e considerar qualidade, regularidade sanitária, prazo, condições de entrega e custo total, além do preço.",
+      "aceitar produto sem registro sanitário quando a documentação comercial demonstrar custo final inferior ao das opções regularizadas.",
+      "concentrar a análise no procedimento licitatório, utilizando o consumo histórico apenas como referência complementar de planejamento."
+    ], correct: 2
+  },
+  "farmacia-018": {
+    options: [
+      "preservar identidade, integridade, qualidade e rastreabilidade dos produtos durante sua permanência no estoque.",
+      "substituir o registro de lote e validade por inventários periódicos, mantendo apenas o controle quantitativo de entrada e saída.",
+      "ampliar o aproveitamento do espaço físico com contato direto das embalagens ao piso e às paredes do almoxarifado.",
+      "adotar uma faixa única de temperatura para simplificar o monitoramento operacional de todos os produtos armazenados.",
+      "priorizar prevenção de furtos e avarias físicas, deixando o controle de validade para a etapa de dispensação ao usuário."
+    ], correct: 0
+  },
+  "farmacia-019": {
+    options: [
+      "suprimento das unidades requisitantes em quantidades, qualidade e tempo adequados, com controle documental e logístico.",
+      "administração do medicamento ao paciente, com verificação da dose, via, horário, registro e resposta clínica observada.",
+      "prescrição farmacêutica individual, com definição da farmacoterapia após avaliação da necessidade e do risco do usuário.",
+      "segregação e descarte de produtos vencidos, avariados ou reprovados nas inspeções realizadas no almoxarifado.",
+      "seleção de medicamentos para a lista municipal, realizada antes da programação e da aquisição dos itens necessários."
+    ], correct: 0
+  },
+  "farmacia-020": {
+    options: [
+      "ato de fornecimento baseado na disponibilidade do produto, com análise da prescrição restrita às situações de dúvida administrativa.",
+      "etapa administrativa de entrega e registro, com orientação ao usuário prevista apenas para produtos de maior vigilância sanitária.",
+      "transferência física do medicamento com conferência de quantidade e validade, deixando informações de uso para a consulta posterior.",
+      "etapa logística integrada ao controle de estoque, com aconselhamento reservado a tratamentos novos ou considerados de maior risco.",
+      "ato profissional de fornecimento acompanhado da análise pertinente e de orientações necessárias ao uso seguro e efetivo."
+    ], correct: 4
+  }
+};
+
 function applyManualOptionSet(question) {
-  const override = manualOptionSets[question.id];
+  const override = farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];

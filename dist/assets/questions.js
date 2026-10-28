@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T07:39:29.692Z",
+  "generatedAt": "2026-10-28T07:48:28.746Z",
   "subjects": [
     {
       "id": "matematica",
@@ -5477,23 +5477,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o acesso público se restringe a emergências, surtos ou situações classificadas como graves"
+          "text": "concentra o acesso público em urgências, surtos e situações classificadas como de maior gravidade clínica."
         },
         {
           "letter": "B",
-          "text": "cada Município pode limitar o atendimento a grupos definidos segundo sua capacidade financeira local"
+          "text": "reserva o atendimento ordinário a cidadãos brasileiros, admitindo estrangeiros nas situações previstas em regulamento local."
         },
         {
           "letter": "C",
-          "text": "o atendimento é reservado a brasileiros natos inscritos em programas públicos de assistência"
+          "text": "assegura acesso prioritário a pessoas incluídas em programas públicos conforme classificação de risco territorial."
         },
         {
           "letter": "D",
-          "text": "todas as pessoas têm direito de acesso às ações e aos serviços de saúde, sem discriminação indevida"
+          "text": "garante a todas as pessoas acesso às ações e aos serviços de saúde, sem discriminação indevida."
         },
         {
           "letter": "E",
-          "text": "o uso dos serviços depende de contribuição prévia para a seguridade social ou de vínculo formal de trabalho"
+          "text": "vincula o uso regular dos serviços à contribuição prévia para a seguridade social ou ao vínculo formal de trabalho."
         }
       ],
       "answer": "D",
@@ -5509,23 +5509,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "os recursos devem ser concentrados em hospitais, que reúnem os procedimentos de maior complexidade do sistema"
+          "text": "organização do cuidado a partir dos serviços hospitalares, com encaminhamento posterior às ações ambulatoriais disponíveis."
         },
         {
           "letter": "B",
-          "text": "todo produto ou tecnologia solicitada pelo usuário deve ser fornecido sem avaliação técnica, clínica ou de incorporação"
+          "text": "planejamento de prevenção, tratamento e reabilitação por setores autônomos, articulados apenas mediante referência formal."
         },
         {
           "letter": "C",
-          "text": "a prevenção, o tratamento e a reabilitação devem funcionar como ações independentes, conforme o setor responsável"
+          "text": "oferta de tecnologias solicitadas pelo usuário após avaliação de disponibilidade financeira e conveniência administrativa da unidade."
         },
         {
           "letter": "D",
-          "text": "conjunto articulado e contínuo de ações preventivas e curativas, individuais e coletivas, exigidas para cada caso nos diferentes níveis de complexidade"
+          "text": "conjunto articulado e contínuo de ações preventivas e curativas, individuais e coletivas, exigidas para cada caso nos diferentes níveis de complexidade."
         },
         {
           "letter": "E",
-          "text": "a assistência deve priorizar exclusivamente intervenções curativas dirigidas a cada usuário já doente"
+          "text": "prioridade das intervenções curativas dirigidas às condições já instaladas, com ações preventivas conduzidas em programação separada."
         }
       ],
       "answer": "D",
@@ -5541,23 +5541,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "fragmentação da assistência."
+          "text": "integralidade, porque amplia o conjunto de recursos técnicos disponíveis para todos os usuários do território."
         },
         {
           "letter": "B",
-          "text": "privatização."
+          "text": "igualdade formal, porque utiliza o mesmo critério de distribuição de recursos para todas as regiões do Município."
         },
         {
           "letter": "C",
-          "text": "igualdade meramente formal."
+          "text": "universalidade, porque preserva o direito de acesso da população aos serviços existentes na rede pública."
         },
         {
           "letter": "D",
-          "text": "centralização."
+          "text": "descentralização, porque transfere a decisão sobre os recursos para cada unidade de saúde da rede local."
         },
         {
           "letter": "E",
-          "text": "equidade."
+          "text": "equidade, porque destina mais recursos às regiões com maior vulnerabilidade e piores indicadores de saúde."
         }
       ],
       "answer": "E",
@@ -5573,23 +5573,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a gestão local é proibida, cabendo aos Municípios apenas executar determinações federais previamente definidas"
+          "text": "gestão centralizada com comando único nacional, preservando aos Estados e Municípios apenas funções operacionais."
         },
         {
           "letter": "B",
-          "text": "a organização dos serviços dispensa regionalização, hierarquização e integração entre os diferentes níveis de cuidado"
+          "text": "coordenação federal direta dos serviços locais, com execução municipal restrita às decisões previamente definidas."
         },
         {
           "letter": "C",
-          "text": "o financiamento das ações é transferido integralmente aos usuários, de acordo com a capacidade de pagamento"
+          "text": "financiamento dos atendimentos segundo contribuição do usuário, com gratuidade limitada às ações consideradas prioritárias."
         },
         {
           "letter": "D",
-          "text": "todos os serviços locais são comandados diretamente pela União, inclusive na definição de prioridades municipais"
+          "text": "organização da rede por unidades independentes, sem necessidade de regionalização, hierarquização ou integração assistencial."
         },
         {
           "letter": "E",
-          "text": "descentralização político-administrativa, com direção única em cada esfera de governo"
+          "text": "descentralização político-administrativa, com direção única em cada esfera de governo e atuação coordenada entre os entes federativos."
         }
       ],
       "answer": "E",
@@ -5605,23 +5605,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "órgão colegiado permanente e deliberativo, com participação de governo, prestadores, profissionais de saúde e usuários"
+          "text": "órgão colegiado permanente e deliberativo, com participação de governo, prestadores, profissionais de saúde e usuários."
         },
         {
           "letter": "B",
-          "text": "órgão do Poder Judiciário encarregado de julgar gestores e anular decisões de política pública em saúde"
+          "text": "colegiado de gestores responsável pela execução dos serviços, com participação social limitada à apresentação de demandas."
         },
         {
           "letter": "C",
-          "text": "colegiado formado exclusivamente por gestores públicos responsáveis pela execução dos serviços"
+          "text": "reunião periódica convocada pela gestão em situações de crise sanitária para orientar decisões emergenciais do Município."
         },
         {
           "letter": "D",
-          "text": "reunião temporária convocada apenas durante epidemias ou quando a gestão municipal considere necessário"
+          "text": "instância judicial destinada a anular decisões de gestores quando houver questionamento sobre políticas públicas de saúde."
         },
         {
           "letter": "E",
-          "text": "entidade privada sem participação na formulação, no acompanhamento ou no controle das políticas de saúde"
+          "text": "entidade de apoio à administração, sem atribuição de acompanhar, formular ou controlar políticas públicas de saúde."
         }
       ],
       "answer": "A",
@@ -5637,23 +5637,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a cada dois anos."
+          "text": "em convocação anual do Congresso Nacional, após a apresentação dos relatórios financeiros do sistema de saúde."
         },
         {
           "letter": "B",
-          "text": "uma única vez em cada Município."
+          "text": "a cada dois anos, para acompanhar a execução das metas definidas no plano de saúde vigente."
         },
         {
           "letter": "C",
-          "text": "a cada quatro anos."
+          "text": "a cada quatro anos, para avaliar a situação de saúde e propor diretrizes para as políticas públicas."
         },
         {
           "letter": "D",
-          "text": "apenas quando convocada pelo Congresso Nacional."
+          "text": "a cada três anos, com convocação obrigatória pelo gestor de saúde da respectiva esfera de governo."
         },
         {
           "letter": "E",
-          "text": "mensalmente."
+          "text": "mensalmente, sempre que houver pauta relacionada ao planejamento das ações de saúde no território."
         }
       ],
       "answer": "C",
@@ -5669,23 +5669,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "gestão centralizada sem direção estadual ou municipal."
+          "text": "atendimento integral com prioridade exclusiva para ações curativas e encaminhamento posterior das medidas preventivas."
         },
         {
           "letter": "B",
-          "text": "exclusão da iniciativa privada de qualquer participação complementar."
+          "text": "cobrança direta do usuário como mecanismo ordinário para financiar o acesso aos serviços de maior complexidade."
         },
         {
           "letter": "C",
-          "text": "atendimento integral com prioridade exclusiva para ações curativas."
+          "text": "participação complementar vedada à iniciativa privada, inclusive nos casos de insuficiência da rede pública instalada."
         },
         {
           "letter": "D",
-          "text": "participação da comunidade."
+          "text": "participação da comunidade na formulação, no acompanhamento e no controle das ações e dos serviços de saúde."
         },
         {
           "letter": "E",
-          "text": "cobrança direta como regra de acesso."
+          "text": "gestão centralizada pela União, com execução estadual e municipal subordinada às decisões administrativas federais."
         }
       ],
       "answer": "D",
@@ -5701,23 +5701,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "adquirida em razão de cuidados ou procedimentos de saúde, podendo manifestar-se durante ou após o atendimento quando houver relação com a assistência"
+          "text": "associada a cuidados ou procedimentos de saúde, manifestando-se durante ou após o atendimento em razão da assistência prestada."
         },
         {
           "letter": "B",
-          "text": "restrita a hospitais de grande porte que mantenham unidade de terapia intensiva ou centro cirúrgico próprio"
+          "text": "identificada apenas em hospitais com terapia intensiva ou centro cirúrgico, por envolver procedimentos de maior complexidade."
         },
         {
           "letter": "C",
-          "text": "obrigatoriamente presente antes da admissão do paciente e apenas reconhecida durante a internação"
+          "text": "presente antes da admissão e reconhecida durante a internação, desde que haja registro de alteração clínica no prontuário."
         },
         {
           "letter": "D",
-          "text": "causada exclusivamente por bactérias multirresistentes identificadas em culturas microbiológicas"
+          "text": "associada a bactéria multirresistente confirmada em cultura, com ocorrência registrada durante a internação hospitalar."
         },
         {
           "letter": "E",
-          "text": "impossível em atendimentos ambulatoriais, domiciliares ou realizados em estabelecimentos de menor porte"
+          "text": "restrita à internação hospitalar, sem possibilidade de ocorrer em atendimento ambulatorial, domiciliar ou de menor porte."
         }
       ],
       "answer": "A",
@@ -5733,23 +5733,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "secá-las em tecido reutilizável sem lavagem."
+          "text": "friccionar preparação alcoólica e enxaguar em seguida, para retirar os resíduos orgânicos presentes nas mãos."
         },
         {
           "letter": "B",
-          "text": "higienizá-las com água e sabonete."
+          "text": "higienizar as mãos com água e sabonete, removendo a sujidade visível antes de qualquer outra preparação."
         },
         {
           "letter": "C",
-          "text": "friccionar álcool e imediatamente enxaguar com água."
+          "text": "secar as mãos com papel descartável e aplicar preparação alcoólica antes de retomar o atendimento ao paciente."
         },
         {
           "letter": "D",
-          "text": "aplicar perfume antisséptico."
+          "text": "aplicar produto antisséptico perfumado, mantendo as luvas como barreira até o fim do procedimento em curso."
         },
         {
           "letter": "E",
-          "text": "utilizar apenas luvas sobre as mãos sujas."
+          "text": "calçar luvas limpas sobre as mãos contaminadas e realizar a lavagem somente depois de finalizar o atendimento."
         }
       ],
       "answer": "B",
@@ -5765,23 +5765,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exclusivamente no início do plantão, antes de qualquer contato com pacientes, materiais ou superfícies"
+          "text": "ao término do turno, como medida que substitui as oportunidades de higiene durante a assistência prestada."
         },
         {
           "letter": "B",
-          "text": "antes de procedimentos cirúrgicos, pois os demais contatos não exigem preparação das mãos"
+          "text": "antes de procedimentos invasivos, sem necessidade de higiene após contato com superfícies próximas ao paciente."
         },
         {
           "letter": "C",
-          "text": "após tocar superfícies próximas ao paciente, mesmo sem contato direto com ele"
+          "text": "após tocar superfícies próximas ao paciente, mesmo sem contato direto com ele, antes de seguir para outra atividade assistencial."
         },
         {
           "letter": "D",
-          "text": "quando houver sangue ou outra matéria orgânica visível nas mãos do profissional"
+          "text": "no início do plantão, como preparação suficiente para todos os contatos previstos durante o período de trabalho."
         },
         {
           "letter": "E",
-          "text": "ao final de cada turno, como substituição às oportunidades de higiene ao longo da assistência"
+          "text": "na presença de matéria orgânica visível, como único momento em que a higiene das mãos se torna necessária."
         }
       ],
       "answer": "C",
@@ -5797,23 +5797,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "entrega de instruções exclusivamente por escrito, sem oportunidade de dúvidas ou confirmação de entendimento"
+          "text": "orientação escrita padronizada, entregue ao usuário ao fim da consulta para que possa rever as informações em casa."
         },
         {
           "letter": "B",
-          "text": "desconsideração de crenças, limitações financeiras e dificuldades práticas que interferem no uso do medicamento"
+          "text": "definição da conduta a partir da prescrição, deixando crenças, condições financeiras e rotina para avaliação posterior."
         },
         {
           "letter": "C",
-          "text": "interrupção precoce do relato para reduzir o tempo de atendimento e padronizar a consulta"
+          "text": "uso de terminologia técnica uniforme, com explicações adicionais reservadas aos usuários que apresentem dúvidas específicas."
         },
         {
           "letter": "D",
-          "text": "escuta ativa, linguagem compreensível e confirmação de que o usuário entendeu as orientações"
+          "text": "escuta ativa, linguagem compreensível e confirmação de que o usuário entendeu as orientações acordadas durante o atendimento."
         },
         {
           "letter": "E",
-          "text": "uso prioritário de terminologia técnica, com orientação centrada em protocolos padronizados para todos os usuários"
+          "text": "condução breve e objetiva da conversa, com foco nos dados técnicos necessários para registrar o atendimento realizado."
         }
       ],
       "answer": "D",
@@ -5829,23 +5829,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "devem ser protegidas, com compartilhamento limitado às hipóteses autorizadas pelo paciente ou justificadas por dever legal e necessidade assistencial"
+          "text": "devem ser protegidas e compartilhadas nas hipóteses autorizadas ou justificadas por necessidade assistencial e dever legal."
         },
         {
           "letter": "B",
-          "text": "pertencem exclusivamente ao profissional que realizou o atendimento e não podem compor registros institucionais"
+          "text": "perdem o caráter sigiloso quando são registradas em prontuário eletrônico acessado pela equipe de saúde responsável."
         },
         {
           "letter": "C",
-          "text": "podem ser divulgadas em redes sociais desde que o nome do paciente seja abreviado ou omitido na publicação"
+          "text": "permanecem sob guarda exclusiva do profissional que realizou o atendimento, sem integração aos registros institucionais do serviço."
         },
         {
           "letter": "D",
-          "text": "podem ser comunicadas livremente porque o atendimento foi realizado em unidade integrante do SUS"
+          "text": "podem circular entre os profissionais da unidade porque o atendimento ocorreu em serviço integrante do SUS."
         },
         {
           "letter": "E",
-          "text": "deixam de ser sigilosas quando passam a integrar prontuário eletrônico acessado pela equipe do serviço"
+          "text": "podem ser apresentadas em relato de caso educativo, desde que o nome do paciente seja abreviado na publicação."
         }
       ],
       "answer": "A",
@@ -5861,23 +5861,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "priorizar preparações manipuladas para ampliar a individualização terapêutica, mesmo quando houver opção industrializada adequada"
+          "text": "priorizar preparações manipuladas para ampliar a individualização terapêutica, mesmo quando houver opção industrializada adequada."
         },
         {
           "letter": "B",
-          "text": "concentrar todas as compras na esfera federal, sem participação dos Estados e Municípios na organização da assistência"
+          "text": "concentrar as compras na esfera federal para padronizar a organização da assistência em todo o território."
         },
         {
           "letter": "C",
-          "text": "estimular a automedicação como estratégia prioritária para reduzir a procura por serviços e consultas de saúde"
+          "text": "estimular a automedicação como estratégia de acesso, acompanhada de materiais educativos sobre uso seguro dos produtos."
         },
         {
           "letter": "D",
-          "text": "garantir segurança, eficácia e qualidade dos medicamentos, promover o uso racional e assegurar o acesso da população aos medicamentos essenciais"
+          "text": "garantir segurança, eficácia e qualidade, promover o uso racional e assegurar acesso da população aos medicamentos essenciais."
         },
         {
           "letter": "E",
-          "text": "retirar a assistência farmacêutica das políticas de saúde e limitá-la ao abastecimento administrativo de produtos"
+          "text": "organizar a assistência farmacêutica como atividade de abastecimento, separada das demais políticas de saúde."
         }
       ],
       "answer": "D",
@@ -5893,23 +5893,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "dispensam estudos de eficácia, segurança e qualidade por integrarem listas consideradas prioritárias"
+          "text": "são necessariamente tecnologias novas e patenteadas, selecionadas para atualizar a oferta terapêutica do sistema."
         },
         {
           "letter": "B",
-          "text": "são destinados prioritariamente a doenças raras por envolverem tecnologias de maior complexidade"
+          "text": "dispensam demonstração de eficácia e segurança quando já figuram em listas elaboradas por órgãos públicos de saúde."
         },
         {
           "letter": "C",
-          "text": "satisfazem as necessidades prioritárias de saúde da população e devem estar disponíveis em formas, quantidades e condições adequadas"
+          "text": "satisfazem as necessidades prioritárias de saúde da população e devem estar disponíveis em formas, quantidades e condições adequadas."
         },
         {
           "letter": "D",
-          "text": "são obrigatoriamente novos, patenteados e vinculados às tecnologias lançadas mais recentemente"
+          "text": "são definidos pelo menor custo de aquisição, desde que a apresentação possa ser distribuída pela rede pública local."
         },
         {
           "letter": "E",
-          "text": "são selecionados pelo menor custo de aquisição, desde que exista opção de efetividade semelhante"
+          "text": "integram listas prioritárias para doenças raras, com seleção baseada na complexidade terapêutica dos tratamentos disponíveis."
         }
       ],
       "answer": "C",
@@ -5925,23 +5925,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "pela ordem de lançamento dos produtos, priorizando automaticamente as apresentações mais recentes do mercado"
+          "text": "pela linha comercial do fornecedor vencedor da última licitação, para preservar padronização e escala de aquisição."
         },
         {
           "letter": "B",
-          "text": "pelo fornecedor vencedor da última licitação, que define os itens conforme sua linha comercial"
+          "text": "por decisão financeira isolada, priorizando produtos com menor impacto imediato no orçamento anual da administração."
         },
         {
           "letter": "C",
-          "text": "por decisão isolada do setor financeiro, considerando apenas o limite orçamentário disponível para a compra"
+          "text": "pela incorporação das apresentações mais recentes, priorizando inovações disponíveis no mercado farmacêutico nacional."
         },
         {
           "letter": "D",
-          "text": "por equipe ou comissão multiprofissional, com critérios epidemiológicos, clínicos, de eficácia, segurança, qualidade e custo-efetividade"
+          "text": "por equipe ou comissão multiprofissional, com critérios epidemiológicos, clínicos, de eficácia, segurança, qualidade e custo-efetividade."
         },
         {
           "letter": "E",
-          "text": "conforme a intensidade da publicidade recebida pelos produtos e o reconhecimento de suas marcas"
+          "text": "pela publicidade recebida pelos produtos e pelo reconhecimento de suas marcas entre profissionais e usuários."
         }
       ],
       "answer": "D",
@@ -5957,23 +5957,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "escolher a alternativa terapêutica mais segura para cada indivíduo durante a consulta farmacêutica"
+          "text": "redigir o edital de licitação e estabelecer requisitos jurídicos para contratação dos fornecedores de medicamentos do Município."
         },
         {
           "letter": "B",
-          "text": "redigir o edital de licitação e definir exclusivamente as regras jurídicas de contratação dos fornecedores"
+          "text": "escolher a alternativa terapêutica mais segura para cada usuário, após avaliação clínica e definição individual da farmacoterapia."
         },
         {
           "letter": "C",
-          "text": "entregar o medicamento ao usuário e prestar orientação individual após a conferência da prescrição"
+          "text": "conferir os produtos recebidos, registrar divergências e providenciar as medidas relacionadas à aceitação da entrega."
         },
         {
           "letter": "D",
-          "text": "estimar as quantidades necessárias para determinado período, compatibilizando necessidades, estoques, consumo, recursos e capacidade de armazenamento"
+          "text": "estimar quantidades para período definido, compatibilizando necessidades, estoques, consumo, recursos e capacidade de armazenamento."
         },
         {
           "letter": "E",
-          "text": "conferir fisicamente os produtos recebidos e registrar eventuais divergências de quantidade ou qualidade"
+          "text": "dispensar o medicamento e orientar o usuário sobre posologia, conservação e medidas de acompanhamento do tratamento."
         }
       ],
       "answer": "D",
@@ -5989,23 +5989,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "utilizar apenas a marca comercial do produto, sem necessidade de especificação técnica ou justificativa objetiva"
+          "text": "indicar a marca comercial como referência principal, complementando-a com especificação técnica quando houver mais de um fornecedor."
         },
         {
           "letter": "B",
-          "text": "receber quantitativo diferente do contratado, desde que o fornecedor prometa regularizar a diferença posteriormente"
+          "text": "concentrar a análise no procedimento licitatório, utilizando o consumo histórico apenas como referência complementar de planejamento."
         },
         {
           "letter": "C",
-          "text": "especificar adequadamente o objeto e considerar qualidade, regularidade sanitária, prazo, condições de entrega e custo total, além do preço"
+          "text": "especificar adequadamente o objeto e considerar qualidade, regularidade sanitária, prazo, condições de entrega e custo total, além do preço."
         },
         {
           "letter": "D",
-          "text": "aceitar produto sem registro sanitário quando oferecer valor menor do que as alternativas regularizadas"
+          "text": "aceitar produto sem registro sanitário quando a documentação comercial demonstrar custo final inferior ao das opções regularizadas."
         },
         {
           "letter": "E",
-          "text": "dispensar planejamento porque a licitação, por si só, corrige falhas de programação e previsão de demanda"
+          "text": "aceitar quantitativo diverso do contratado mediante compromisso formal de regularização do saldo na entrega subsequente."
         }
       ],
       "answer": "C",
@@ -6021,23 +6021,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "preservar identidade, integridade, qualidade e rastreabilidade dos produtos durante sua permanência no estoque"
+          "text": "preservar identidade, integridade, qualidade e rastreabilidade dos produtos durante sua permanência no estoque."
         },
         {
           "letter": "B",
-          "text": "dispensar registros de entrada, saída, lote e validade quando houver contagem física periódica do estoque"
+          "text": "priorizar prevenção de furtos e avarias físicas, deixando o controle de validade para a etapa de dispensação ao usuário."
         },
         {
           "letter": "C",
-          "text": "permitir o contato direto das embalagens com piso e paredes para aproveitar integralmente o espaço disponível"
+          "text": "ampliar o aproveitamento do espaço físico com contato direto das embalagens ao piso e às paredes do almoxarifado."
         },
         {
           "letter": "D",
-          "text": "adotar uma faixa de temperatura padronizada para todo o estoque, priorizando o controle operacional do almoxarifado"
+          "text": "substituir o registro de lote e validade por inventários periódicos, mantendo apenas o controle quantitativo de entrada e saída."
         },
         {
           "letter": "E",
-          "text": "concentrar o controle na prevenção de furtos, com inspeção periódica das embalagens e das datas de vencimento"
+          "text": "adotar uma faixa única de temperatura para simplificar o monitoramento operacional de todos os produtos armazenados."
         }
       ],
       "answer": "A",
@@ -6053,23 +6053,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "suprimento das unidades requisitantes em quantidades, qualidade e tempo adequados, com controle documental e logístico"
+          "text": "suprimento das unidades requisitantes em quantidades, qualidade e tempo adequados, com controle documental e logístico."
         },
         {
           "letter": "B",
-          "text": "administração do medicamento ao paciente, com verificação direta da dose, via e horário de uso"
+          "text": "seleção de medicamentos para a lista municipal, realizada antes da programação e da aquisição dos itens necessários."
         },
         {
           "letter": "C",
-          "text": "prescrição individual realizada pelo farmacêutico após avaliação clínica e definição da farmacoterapia"
+          "text": "prescrição farmacêutica individual, com definição da farmacoterapia após avaliação da necessidade e do risco do usuário."
         },
         {
           "letter": "D",
-          "text": "descarte de produtos vencidos, avariados ou reprovados durante inspeções realizadas no almoxarifado"
+          "text": "segregação e descarte de produtos vencidos, avariados ou reprovados nas inspeções realizadas no almoxarifado."
         },
         {
           "letter": "E",
-          "text": "seleção de medicamentos para a lista municipal, antes da programação e da aquisição dos itens necessários"
+          "text": "administração do medicamento ao paciente, com verificação da dose, via, horário, registro e resposta clínica observada."
         }
       ],
       "answer": "A",
@@ -6085,23 +6085,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ato que dispensa análise da prescrição, desde que o produto solicitado esteja disponível no estoque"
+          "text": "etapa logística integrada ao controle de estoque, com aconselhamento reservado a tratamentos novos ou considerados de maior risco."
         },
         {
           "letter": "B",
-          "text": "etapa administrativa com foco na entrega e no registro do produto ao usuário"
+          "text": "etapa administrativa de entrega e registro, com orientação ao usuário prevista apenas para produtos de maior vigilância sanitária."
         },
         {
           "letter": "C",
-          "text": "simples transferência física de uma caixa ao usuário, sem diálogo sobre indicação, dose ou modo de uso"
+          "text": "ato de fornecimento baseado na disponibilidade do produto, com análise da prescrição restrita às situações de dúvida administrativa."
         },
         {
           "letter": "D",
-          "text": "etapa logística integrada ao controle de estoque, com orientação ao usuário restrita aos medicamentos de maior risco"
+          "text": "transferência física do medicamento com conferência de quantidade e validade, deixando informações de uso para a consulta posterior."
         },
         {
           "letter": "E",
-          "text": "ato profissional de fornecimento acompanhado da análise pertinente e de orientações necessárias ao uso seguro e efetivo"
+          "text": "ato profissional de fornecimento acompanhado da análise pertinente e de orientações necessárias ao uso seguro e efetivo."
         }
       ],
       "answer": "E",

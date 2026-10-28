@@ -64,6 +64,18 @@ const mathOverrides = {
     correct: "R$ 1.200,00 e R$ 1.309,80.",
     explanation: "O preço original satisfaz 1,18P = 1.416, logo P = R$ 1.200,00. O desconto posterior incide sobre R$ 1.416,00: 1.416 × 0,925 = R$ 1.309,80. Os dois percentuais não podem ser somados porque atuam sobre bases diferentes."
   },
+  4: {
+    stem: "Um fornecedor elevou um preço em 25% e, posteriormente, concedeu desconto de 20% sobre o valor reajustado. Em comparação ao preço original, qual foi a variação percentual do valor final?",
+    options: ["0%.", "+1%.", "−10%.", "+5%.", "−5%."],
+    correct: "0%.",
+    explanation: "Os fatores são 1,25 e 0,80. Como 1,25 × 0,80 = 1, o preço retorna ao valor original. Percentuais inversos podem se anular quando seus fatores se compensam, embora 25 e 20 não sejam números iguais."
+  },
+  5: {
+    stem: "O consumo de determinado item aumentou 30% em um mês e diminuiu 30% no mês seguinte. Em relação ao consumo inicial, qual foi a variação percentual do consumo final?",
+    options: ["+30%.", "−9%.", "−3%.", "0%.", "−6%."],
+    correct: "−9%.",
+    explanation: "O fator acumulado é 1,30 × 0,70 = 0,91. O resultado corresponde a 91% do valor inicial, portanto houve redução de 9%."
+  },
   9: {
     stem: "Uma bomba transfere 1.350 litros em 45 minutos, com vazão constante. Ela inicia sozinha o esvaziamento de um reservatório com 3.300 litros. Após 20 minutos, uma segunda bomba, com vazão de 20 litros por minuto, passa a operar junto com a primeira. Quanto tempo decorre desde o início até o término da transferência?",
     options: ["64 minutos.", "70 minutos.", "72 minutos.", "74 minutos.", "78 minutos."],
@@ -93,6 +105,12 @@ const mathOverrides = {
     options: ["64 m².", "70 m².", "72 m².", "74 m².", "78 m²."],
     correct: "74 m².",
     explanation: "Se a largura é x, então x(x + 5) = 300, cuja raiz positiva é x = 15; o comprimento é 20. Com a faixa externa, as dimensões passam a 17 m e 22 m. A área da faixa é 17 × 22 − 300 = 74 m²."
+  },
+  16: {
+    stem: "O menor número natural maior que 18 que, ao ser dividido por 8, 12 e 18, deixa resto 5 em todos os casos é:",
+    options: ["293.", "221.", "77.", "149.", "72."],
+    correct: "77.",
+    explanation: "Se o número deixa resto 5, sua diferença para 5 deve ser múltipla comum de 8, 12 e 18. O MMC é 72. Assim, os números possíveis têm a forma 72k + 5; o menor que é maior que 18 é 77."
   },
   21: {
     stem: "Uma cultura começa com 500 unidades e dobra a cada 3 horas. Ao atingir 16.000 unidades, 25% do total é removido. Mantido o mesmo ritmo de crescimento por mais 6 horas, qual será a quantidade final e quanto tempo terá decorrido desde o início?",
@@ -1423,7 +1441,8 @@ bank.generatedAt = new Date().toISOString();
 bank.review = {
   version: 2,
   description: "Revisão editorial de gabaritos, pistas de extensão, rodapés importados e complexidade matemática.",
-  mathQuestionsStrengthened: Object.keys(mathOverrides).map(Number)
+  mathQuestionsStrengthened: Object.keys(mathOverrides).map(Number),
+  mathBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1)
 };
 
 const report = validate(bank);

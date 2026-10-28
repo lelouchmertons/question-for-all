@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T08:16:52.027Z",
+  "generatedAt": "2026-10-28T17:59:40.803Z",
   "subjects": [
     {
       "id": "matematica",
@@ -129,31 +129,31 @@ export const questionBank = {
       "number": 4,
       "topic": "Porcentagem - acréscimo e desconto",
       "area": "Porcentagem",
-      "stem": "Um fornecedor elevou um preço em 25% e, posteriormente, concedeu desconto de 20% sobre o valor reajustado. Em comparação ao preço original, o valor final:",
+      "stem": "Um fornecedor elevou um preço em 25% e, posteriormente, concedeu desconto de 20% sobre o valor reajustado. Em comparação ao preço original, qual foi a variação percentual do valor final?",
       "options": [
         {
           "letter": "A",
-          "text": "permaneceu igual."
+          "text": "0%."
         },
         {
           "letter": "B",
-          "text": "ficou 1% maior."
+          "text": "+1%."
         },
         {
           "letter": "C",
-          "text": "ficou 10% menor."
+          "text": "+5%."
         },
         {
           "letter": "D",
-          "text": "ficou 5% maior."
+          "text": "−5%."
         },
         {
           "letter": "E",
-          "text": "ficou 5% menor."
+          "text": "−10%."
         }
       ],
       "answer": "A",
-      "explanation": "Os fatores são 1,25 e 0,80. Como 1,25 x 0,80 = 1, o preço retorna ao valor original. Percentuais inversos podem se anular quando seus fatores se compensam, embora 25 e 20 não sejam números iguais."
+      "explanation": "Os fatores são 1,25 e 0,80. Como 1,25 × 0,80 = 1, o preço retorna ao valor original. Percentuais inversos podem se anular quando seus fatores se compensam, embora 25 e 20 não sejam números iguais."
     },
     {
       "id": "matematica-005",
@@ -161,31 +161,31 @@ export const questionBank = {
       "number": 5,
       "topic": "Porcentagem - variações sucessivas",
       "area": "Porcentagem",
-      "stem": "O consumo de determinado item aumentou 30% em um mês e diminuiu 30% no mês seguinte. Em relação ao consumo inicial, o consumo final ficou:",
+      "stem": "O consumo de determinado item aumentou 30% em um mês e diminuiu 30% no mês seguinte. Em relação ao consumo inicial, qual foi a variação percentual do consumo final?",
       "options": [
         {
           "letter": "A",
-          "text": "30% maior."
+          "text": "+30%."
         },
         {
           "letter": "B",
-          "text": "9% menor."
+          "text": "−9%."
         },
         {
           "letter": "C",
-          "text": "3% menor."
+          "text": "0%."
         },
         {
           "letter": "D",
-          "text": "inalterado."
+          "text": "−3%."
         },
         {
           "letter": "E",
-          "text": "6% menor."
+          "text": "−6%."
         }
       ],
       "answer": "B",
-      "explanation": "O fator acumulado é 1,30 x 0,70 = 0,91. O resultado corresponde a 91% do valor inicial, portanto houve redução de 9%."
+      "explanation": "O fator acumulado é 1,30 × 0,70 = 0,91. O resultado corresponde a 91% do valor inicial, portanto houve redução de 9%."
     },
     {
       "id": "matematica-006",
@@ -537,7 +537,7 @@ export const questionBank = {
         }
       ],
       "answer": "C",
-      "explanation": "Se o número deixa resto 5, sua diferença para 5 deve ser múltipla comum de 8, 12 e 18. O MMC é 72. O menor número maior que os divisores é 72 + 5 = 77."
+      "explanation": "Se o número deixa resto 5, sua diferença para 5 deve ser múltipla comum de 8, 12 e 18. O MMC é 72. Assim, os números possíveis têm a forma 72k + 5; o menor que é maior que 18 é 77."
     },
     {
       "id": "matematica-017",
@@ -10594,8 +10594,11 @@ export const questionBank = {
     "mathQuestionsStrengthened": [
       1,
       2,
+      4,
+      5,
       9,
       14,
+      16,
       17,
       18,
       20,
@@ -10606,6 +10609,28 @@ export const questionBank = {
       30,
       33,
       37
+    ],
+    "mathBatchOneReviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
     ]
   }
 };

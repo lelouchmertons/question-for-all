@@ -1427,8 +1427,151 @@ const portuguesBatchThreeOverrides = {
   ], correct: 0 }
 };
 
+const farmaciaBatchTwoOverrides = {
+  "farmacia-021": { options: [
+    "medicamento indicado para quadro semelhante, mantido em dose usual sem revisar indicação, duração ou possibilidade de alternativa mais segura.",
+    "tratamento escolhido por conveniência posológica e trocado por opção mais recente quando ela se torna disponível, sem reavaliar a indicação.",
+    "combinação de medicamentos com mecanismos distintos antes de avaliar resposta, segurança e adesão ao tratamento inicial indicado.",
+    "medicamento apropriado à necessidade clínica, na dose e duração adequadas, com informação e menor custo global compatível com qualidade.",
+    "medicamento de menor preço unitário constante da lista do serviço, mesmo quando dose, duração e monitoramento não estejam individualizados."
+  ], correct: 3 },
+  "farmacia-022": { options: [
+    "orienta a seleção e a organização do acesso a medicamentos no SUS, em consonância com responsabilidades e protocolos.",
+    "constitui referência para seleção no SUS, mas dispensa a avaliação das necessidades e dos protocolos aplicáveis.",
+    "define medicamentos prioritários, devendo substituir a avaliação clínica em situações assistenciais de rotina.",
+    "estabelece elenco obrigatório de todas as apresentações disponíveis no mercado para cada município brasileiro.",
+    "restringe sua aplicação aos medicamentos fornecidos em hospitais de alta complexidade do sistema público."
+  ], correct: 0 },
+  "farmacia-023": { options: [
+    "conjunto de atividades voltadas à aquisição e distribuição, articuladas ao cuidado após a entrega do medicamento.",
+    "conjunto de ações de promoção, proteção e recuperação da saúde que busca assegurar acesso e uso racional de medicamentos.",
+    "processo de produção e controle da qualidade realizado pela indústria, encerrado antes da entrega aos serviços de saúde.",
+    "serviço clínico individual centrado no acompanhamento da prescrição, sem incluir seleção e programação de medicamentos.",
+    "sistema de abastecimento que organiza medicamentos, deixando decisões terapêuticas fora de seu escopo de atuação."
+  ], correct: 1 },
+  "farmacia-024": { options: [
+    "estabelecer critérios baseados em evidências para diagnóstico, tratamento, monitoramento e acompanhamento dos resultados.",
+    "organizar decisões terapêuticas exclusivamente pelo custo de aquisição das tecnologias selecionadas pelo serviço.",
+    "permitir fornecimento de medicamentos sem confirmação dos critérios diagnósticos definidos no protocolo clínico.",
+    "fixar condutas sem previsão de atualização diante da incorporação de evidências científicas novas.",
+    "delimitar tratamento sem acompanhar efetividade, segurança ou desfechos clínicos dos usuários atendidos."
+  ], correct: 0 },
+  "farmacia-025": { options: [
+    "comparar preço unitário e frequência de uso, deixando contraindicações para avaliação posterior à seleção.",
+    "comparar segurança, qualidade, conveniência posológica e custo total do tratamento, e não apenas preço por unidade.",
+    "escolher a apresentação com maior disponibilidade comercial, sem incorporar o perfil epidemiológico da população.",
+    "utilizar dados promocionais como evidência principal quando os medicamentos tiverem indicação terapêutica semelhante.",
+    "priorizar o medicamento mais caro se ele oferecer embalagem mais elaborada ao usuário final."
+  ], correct: 1 },
+  "farmacia-026": { options: [
+    "usar média de consumo sem ajustar meses em que ocorreram campanhas sazonais ou mudanças de protocolo.",
+    "calcular necessidade pela população cadastrada, sem incorporar variações de cobertura e consumo observado no período.",
+    "considerar o histórico tal como registrado, inclusive nos períodos de faltas e desabastecimento do item.",
+    "repetir a programação anterior após atualizar a quantidade disponível no estoque físico atual.",
+    "ajustar o histórico por estoques, faltas, perdas, sazonalidade, mudanças de protocolo e tendência de demanda."
+  ], correct: 4 },
+  "farmacia-027": { options: [
+    "população, incidência ou prevalência, cobertura esperada e esquema terapêutico padronizado.",
+    "número de compras realizadas no período anterior e preferência da equipe responsável pela aquisição.",
+    "lançamentos terapêuticos recentes e tendência de propaganda dirigida aos profissionais prescritores.",
+    "capacidade física do almoxarifado e distribuição das prateleiras disponíveis para armazenamento.",
+    "menor preço registrado pelo fornecedor na última licitação realizada pelo município."
+  ], correct: 0 },
+  "farmacia-028": { options: [
+    "informar princípio ativo e apresentação, deixando concentração, forma farmacêutica e requisitos de qualidade para definição posterior do fornecedor.",
+    "indicar marca de referência como padrão, sem documentar justificativa técnica, equivalência e motivo da restrição de competitividade.",
+    "descrever produto, embalagem e condições de entrega, dispensando requisitos sanitários e evidências de regularidade técnica.",
+    "descrever de modo claro princípio ativo, concentração, forma, apresentação, requisitos de qualidade e demais características necessárias.",
+    "admitir substituição por item considerado equivalente pela contratada, sem avaliar forma, concentração e requisitos definidos."
+  ], correct: 3 },
+  "farmacia-029": { options: [
+    "conferir nota fiscal, valores, dados da entrega, lote e prazo de validade antes de integrar os produtos ao estoque disponível.",
+    "receber produtos com integridade aparente e registrar conferência detalhada de lotes, validade e documentos após a armazenagem.",
+    "aceitar embalagem violada quando quantidade e lote coincidirem com os documentos e o produto aparentar conservação adequada.",
+    "armazenar produtos na área liberada após confrontar quantidade, prazo de validade e os dados essenciais da nota fiscal.",
+    "verificar documentação, produto, quantidade, lote, validade, integridade e condições de transporte, registrando não conformidades."
+  ], correct: 4 },
+  "farmacia-030": { options: [
+    "condição de segregação reservada a produtos já reprovados, os quais seguem para descarte sem nova avaliação documental.",
+    "área temporária para itens de maior consumo que precisam de separação por giro, validade e frequência de dispensação.",
+    "etapa inicial de devolução ao fornecedor, usada quando o produto não foi dispensado e aguarda transporte de retorno.",
+    "estoque temporário destinado à dispensação urgente de produto recém-chegado antes da conferência final do recebimento.",
+    "condição de segregação física ou sistêmica enquanto o produto aguarda decisão de liberação, rejeição ou outra destinação."
+  ], correct: 4 },
+  "farmacia-031": { options: [
+    "produzir registros rastreáveis, permitir identificação de excursões e gerar investigação e ação quando os limites forem ultrapassados.",
+    "registrar leituras nos períodos de maior movimentação, priorizando o horário de funcionamento e a demanda do serviço.",
+    "utilizar termômetro operacional validado pelo uso rotineiro, sem manter verificação documentada de seu desempenho metrológico.",
+    "abrir investigação quando a equipe suspeitar de dano ao medicamento, com base na inspeção visual dos produtos armazenados.",
+    "comparar a leitura dos equipamentos com a percepção térmica da equipe, usando essa comparação como evidência principal do estoque."
+  ], correct: 0 },
+  "farmacia-032": { options: [
+    "recebidos há mais tempo, desde que a embalagem esteja íntegra para dispensação posterior.",
+    "com vencimento mais próximo, desde que estejam aptos ao uso.",
+    "com maior quantidade disponível, para liberar espaço e reduzir custo de armazenagem do setor.",
+    "adquiridos do fornecedor com contrato mais antigo, após conferência da nota fiscal correspondente.",
+    "com menor consumo mensal, para reduzir o risco de acúmulo de itens no almoxarifado."
+  ], correct: 1 },
+  "farmacia-033": { options: [
+    "registrar ajuste provisório e atribuir a diferença ao extravio após conferir o valor financeiro do item.",
+    "manter o saldo do sistema até o próximo inventário, caso a diferença não comprometa o atendimento.",
+    "recontar, revisar movimentações e documentos e investigar a causa antes de realizar ajuste autorizado e rastreável.",
+    "lançar entrada de compensação, registrando a divergência para análise no inventário seguinte.",
+    "corrigir o sistema conforme a contagem física e guardar os documentos da movimentação realizada."
+  ], correct: 2 },
+  "farmacia-034": { options: [
+    "grande número de itens que, somados, concentram a maior parcela do valor anual consumido.",
+    "itens clinicamente críticos, classificados assim mesmo quando o valor de consumo é reduzido.",
+    "poucos itens que representam parcela elevada do valor de consumo e exigem controle mais rigoroso.",
+    "produtos com validade curta, separados por maior risco de perda financeira durante o armazenamento.",
+    "medicamentos sujeitos a controle especial, mesmo quando valor e frequência de compra forem reduzidos."
+  ], correct: 2 },
+  "farmacia-035": { options: [
+    "a criticidade e o impacto da falta do item sobre a assistência.",
+    "o valor financeiro de compra e a participação percentual no custo anual do estoque.",
+    "o nome do princípio ativo e a forma farmacêutica registrada na lista de aquisição.",
+    "a origem do fornecedor e a regularidade do prazo de entrega contratado no processo.",
+    "o volume físico armazenado e a frequência com que o item ocupa espaço na dispensação."
+  ], correct: 0 },
+  "farmacia-036": { options: [
+    "o limite físico de armazenamento e a capacidade disponível na área de recebimento de produtos.",
+    "a quantidade do último pedido, corrigida pelo preço registrado na compra anterior do item.",
+    "o consumo esperado durante o tempo de reposição, acrescido do estoque de segurança quando aplicável.",
+    "o prazo de validade do lote mais antigo e o volume disponível na área de armazenamento.",
+    "o custo de aquisição e o valor total imobilizado no estoque no mês anterior."
+  ], correct: 2 },
+  "farmacia-037": { options: [
+    "o percentual de prescrições atendidas em relação às solicitações feitas no período.",
+    "a variação média de temperatura observada nas áreas de armazenamento durante o mês.",
+    "a quantidade de fornecedores ativos no cadastro e a regularidade das compras realizadas.",
+    "a proporção de lotes vencidos em relação ao total de lotes existentes no estoque.",
+    "quantas vezes o estoque médio é renovado pelo consumo ou saída em determinado período."
+  ], correct: 4 },
+  "farmacia-038": { options: [
+    "recalcular estoques de segurança por item, mantendo cobertura ampliada para todos os produtos.",
+    "concentrar itens próximos do vencimento em área separada até a ocorrência de nova demanda.",
+    "reclassificar lotes próximos ao vencimento como disponíveis para acelerar sua movimentação.",
+    "reduzir a frequência dos inventários para evitar bloqueio temporário das movimentações internas.",
+    "acompanhar lotes e validades, aplicar FEFO, redistribuir excedentes em tempo hábil e ajustar a programação."
+  ], correct: 4 },
+  "farmacia-039": { options: [
+    "preservar as condições especificadas pelo fabricante, controlar riscos e manter rastreabilidade durante todo o trajeto.",
+    "transportar termolábeis com embalagem térmica, dispensando registro de condições quando o trajeto for curto.",
+    "acomodar medicamentos junto a gelo reciclável, desde que a embalagem externa permaneça seca durante todo o percurso.",
+    "priorizar a limpeza do veículo de transporte de medicamentos estéreis, mantendo rotina simplificada para os demais produtos.",
+    "aceitar excursão de temperatura se não houver alteração visível na embalagem ou no aspecto externo do produto."
+  ], correct: 0 },
+  "farmacia-040": { options: [
+    "devolver produtos vencidos sem segregação prévia, desde que sejam encaminhados pela mesma rota de coleta dos demais materiais.",
+    "reunir resíduos de medicamentos e materiais recicláveis antes de definir a destinação final e o responsável pela coleta.",
+    "organizar o retorno e a destinação ambientalmente adequada de produtos e resíduos, com segregação e rastreabilidade aplicáveis.",
+    "reintegrar medicamentos devolvidos ao estoque após verificar que a embalagem não sofreu dano visível durante a devolução.",
+    "concentrar no usuário a responsabilidade pela guarda e pela destinação final do medicamento não utilizado no domicílio."
+  ], correct: 2 }
+};
+
 function applyManualOptionSet(question) {
-  const override = portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -1584,7 +1727,8 @@ bank.review = {
   mathBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
   portugueseBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
   portugueseBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
-  portugueseBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41)
+  portugueseBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
+  pharmacyBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21)
 };
 
 const report = validate(bank);

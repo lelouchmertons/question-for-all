@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T18:15:25.434Z",
+  "generatedAt": "2026-10-28T19:30:50.632Z",
   "subjects": [
     {
       "id": "matematica",
@@ -6117,23 +6117,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "medicamento habitual renovado sem reavaliação da necessidade clínica."
+          "text": "medicamento de menor preço unitário constante da lista do serviço, mesmo quando dose, duração e monitoramento não estejam individualizados."
         },
         {
           "letter": "B",
-          "text": "a tecnologia mais recente disponível quando acrescenta conveniência ao tratamento."
+          "text": "tratamento escolhido por conveniência posológica e trocado por opção mais recente quando ela se torna disponível, sem reavaliar a indicação."
         },
         {
           "letter": "C",
-          "text": "vários medicamentos para ampliar a chance de resposta terapêutica."
+          "text": "combinação de medicamentos com mecanismos distintos antes de avaliar resposta, segurança e adesão ao tratamento inicial indicado."
         },
         {
           "letter": "D",
-          "text": "medicamento apropriado à necessidade clínica, em dose e duração adequadas, com informação correta e ao menor custo global compatível com qualidade."
+          "text": "medicamento apropriado à necessidade clínica, na dose e duração adequadas, com informação e menor custo global compatível com qualidade."
         },
         {
           "letter": "E",
-          "text": "tratamento escolhido pelo menor preço unitário disponível."
+          "text": "medicamento indicado para quadro semelhante, mantido em dose usual sem revisar indicação, duração ou possibilidade de alternativa mais segura."
         }
       ],
       "answer": "D",
@@ -6149,23 +6149,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "orienta a seleção e a organização do acesso a medicamentos no SUS, articulada às responsabilidades e aos protocolos do sistema."
+          "text": "orienta a seleção e a organização do acesso a medicamentos no SUS, em consonância com responsabilidades e protocolos."
         },
         {
           "letter": "B",
-          "text": "é uma lista comercial de produtos mais vendidos."
+          "text": "define medicamentos prioritários, devendo substituir a avaliação clínica em situações assistenciais de rotina."
         },
         {
           "letter": "C",
-          "text": "substitui a avaliação clínica do paciente."
+          "text": "constitui referência para seleção no SUS, mas dispensa a avaliação das necessidades e dos protocolos aplicáveis."
         },
         {
           "letter": "D",
-          "text": "obriga todo Município a manter qualquer apresentação disponível no mercado."
+          "text": "estabelece elenco obrigatório de todas as apresentações disponíveis no mercado para cada município brasileiro."
         },
         {
           "letter": "E",
-          "text": "inclui somente medicamentos de uso hospitalar."
+          "text": "restringe sua aplicação aos medicamentos fornecidos em hospitais de alta complexidade do sistema público."
         }
       ],
       "answer": "A",
@@ -6181,23 +6181,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "conjunto de atividades administrativas destinado à aquisição e à distribuição, sem participação nas ações de cuidado ao usuário"
+          "text": "conjunto de atividades voltadas à aquisição e distribuição, articuladas ao cuidado após a entrega do medicamento."
         },
         {
           "letter": "B",
-          "text": "conjunto de ações de promoção, proteção e recuperação da saúde que busca assegurar acesso e uso racional de medicamentos"
+          "text": "conjunto de ações de promoção, proteção e recuperação da saúde que busca assegurar acesso e uso racional de medicamentos."
         },
         {
           "letter": "C",
-          "text": "atividade industrial de produção e controle de qualidade que se encerra quando o medicamento é entregue ao serviço de saúde"
+          "text": "serviço clínico individual centrado no acompanhamento da prescrição, sem incluir seleção e programação de medicamentos."
         },
         {
           "letter": "D",
-          "text": "serviço clínico individual realizado após a prescrição, sem abranger seleção, programação, aquisição ou armazenamento"
+          "text": "processo de produção e controle da qualidade realizado pela indústria, encerrado antes da entrega aos serviços de saúde."
         },
         {
           "letter": "E",
-          "text": "sistema logístico voltado ao abastecimento das unidades, com avaliação terapêutica reservada exclusivamente ao prescritor"
+          "text": "sistema de abastecimento que organiza medicamentos, deixando decisões terapêuticas fora de seu escopo de atuação."
         }
       ],
       "answer": "B",
@@ -6217,19 +6217,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "substituir o julgamento clínico por decisões financeiras automáticas."
+          "text": "fixar condutas sem previsão de atualização diante da incorporação de evidências científicas novas."
         },
         {
           "letter": "C",
-          "text": "liberar qualquer medicamento sem critérios diagnósticos."
+          "text": "organizar decisões terapêuticas exclusivamente pelo custo de aquisição das tecnologias selecionadas pelo serviço."
         },
         {
           "letter": "D",
-          "text": "eliminar a necessidade de atualização científica."
+          "text": "permitir fornecimento de medicamentos sem confirmação dos critérios diagnósticos definidos no protocolo clínico."
         },
         {
           "letter": "E",
-          "text": "impedir monitoramento de efetividade e segurança."
+          "text": "delimitar tratamento sem acompanhar efetividade, segurança ou desfechos clínicos dos usuários atendidos."
         }
       ],
       "answer": "A",
@@ -6245,7 +6245,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ignorar interações e contraindicações."
+          "text": "comparar preço unitário e frequência de uso, deixando contraindicações para avaliação posterior à seleção."
         },
         {
           "letter": "B",
@@ -6253,15 +6253,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "excluir dados epidemiológicos da decisão."
+          "text": "utilizar dados promocionais como evidência principal quando os medicamentos tiverem indicação terapêutica semelhante."
         },
         {
           "letter": "D",
-          "text": "utilizar propaganda como principal evidência."
+          "text": "priorizar o medicamento mais caro se ele oferecer embalagem mais elaborada ao usuário final."
         },
         {
           "letter": "E",
-          "text": "escolher obrigatoriamente o de maior preço."
+          "text": "escolher a apresentação com maior disponibilidade comercial, sem incorporar o perfil epidemiológico da população."
         }
       ],
       "answer": "B",
@@ -6277,19 +6277,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "excluir tendências sazonais."
+          "text": "usar média de consumo sem ajustar meses em que ocorreram campanhas sazonais ou mudanças de protocolo."
         },
         {
           "letter": "B",
-          "text": "considerar apenas a população cadastrada."
+          "text": "repetir a programação anterior após atualizar a quantidade disponível no estoque físico atual."
         },
         {
           "letter": "C",
-          "text": "desprezar períodos de desabastecimento."
+          "text": "considerar o histórico tal como registrado, inclusive nos períodos de faltas e desabastecimento do item."
         },
         {
           "letter": "D",
-          "text": "repetir mecanicamente o consumo anterior."
+          "text": "calcular necessidade pela população cadastrada, sem incorporar variações de cobertura e consumo observado no período."
         },
         {
           "letter": "E",
@@ -6313,19 +6313,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "preferência pessoal do comprador."
+          "text": "número de compras realizadas no período anterior e preferência da equipe responsável pela aquisição."
         },
         {
           "letter": "C",
-          "text": "propaganda de produtos recém-lançados."
+          "text": "capacidade física do almoxarifado e distribuição das prateleiras disponíveis para armazenamento."
         },
         {
           "letter": "D",
-          "text": "espaço livre no almoxarifado."
+          "text": "lançamentos terapêuticos recentes e tendência de propaganda dirigida aos profissionais prescritores."
         },
         {
           "letter": "E",
-          "text": "preço do último fornecedor."
+          "text": "menor preço registrado pelo fornecedor na última licitação realizada pelo município."
         }
       ],
       "answer": "A",
@@ -6341,15 +6341,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "omitir forma farmacêutica e concentração."
+          "text": "informar princípio ativo e apresentação, deixando concentração, forma farmacêutica e requisitos de qualidade para definição posterior do fornecedor."
         },
         {
           "letter": "B",
-          "text": "direcionar sem justificativa para uma marca."
+          "text": "indicar marca de referência como padrão, sem documentar justificativa técnica, equivalência e motivo da restrição de competitividade."
         },
         {
           "letter": "C",
-          "text": "dispensar exigências sanitárias."
+          "text": "descrever produto, embalagem e condições de entrega, dispensando requisitos sanitários e evidências de regularidade técnica."
         },
         {
           "letter": "D",
@@ -6357,7 +6357,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "permitir substituição unilateral por qualquer produto."
+          "text": "admitir substituição por item considerado equivalente pela contratada, sem avaliar forma, concentração e requisitos definidos."
         }
       ],
       "answer": "D",
@@ -6373,19 +6373,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "conferir somente o valor total da nota fiscal."
+          "text": "armazenar produtos na área liberada após confrontar quantidade, prazo de validade e os dados essenciais da nota fiscal."
         },
         {
           "letter": "B",
-          "text": "misturar imediatamente produtos não conferidos ao estoque liberado."
+          "text": "conferir nota fiscal, valores, dados da entrega, lote e prazo de validade antes de integrar os produtos ao estoque disponível."
         },
         {
           "letter": "C",
-          "text": "aceitar embalagens violadas se o número de unidades estiver correto."
+          "text": "receber produtos com integridade aparente e registrar conferência detalhada de lotes, validade e documentos após a armazenagem."
         },
         {
           "letter": "D",
-          "text": "armazenar tudo antes de conferir."
+          "text": "aceitar embalagem violada quando quantidade e lote coincidirem com os documentos e o produto aparentar conservação adequada."
         },
         {
           "letter": "E",
@@ -6405,23 +6405,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "ao descarte imediato de todo produto recebido."
+          "text": "área temporária para itens de maior consumo que precisam de separação por giro, validade e frequência de dispensação."
         },
         {
           "letter": "B",
-          "text": "à área de medicamentos de alto consumo."
+          "text": "estoque temporário destinado à dispensação urgente de produto recém-chegado antes da conferência final do recebimento."
         },
         {
           "letter": "C",
-          "text": "à devolução automática ao fornecedor."
+          "text": "condição de segregação reservada a produtos já reprovados, os quais seguem para descarte sem nova avaliação documental."
         },
         {
           "letter": "D",
-          "text": "ao estoque disponível para dispensação urgente."
+          "text": "etapa inicial de devolução ao fornecedor, usada quando o produto não foi dispensado e aguarda transporte de retorno."
         },
         {
           "letter": "E",
-          "text": "à condição de segregação física ou sistêmica enquanto o produto aguarda decisão de liberação, rejeição ou outra destinação."
+          "text": "condição de segregação física ou sistêmica enquanto o produto aguarda decisão de liberação, rejeição ou outra destinação."
         }
       ],
       "answer": "E",
@@ -6441,19 +6441,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "ignorar períodos noturnos e fins de semana."
+          "text": "abrir investigação quando a equipe suspeitar de dano ao medicamento, com base na inspeção visual dos produtos armazenados."
         },
         {
           "letter": "C",
-          "text": "utilizar equipamento sem calibração ou verificação."
+          "text": "comparar a leitura dos equipamentos com a percepção térmica da equipe, usando essa comparação como evidência principal do estoque."
         },
         {
           "letter": "D",
-          "text": "ocorrer somente quando houver reclamação."
+          "text": "utilizar termômetro operacional validado pelo uso rotineiro, sem manter verificação documentada de seu desempenho metrológico."
         },
         {
           "letter": "E",
-          "text": "ser substituído pela sensação térmica do funcionário."
+          "text": "registrar leituras nos períodos de maior movimentação, priorizando o horário de funcionamento e a demanda do serviço."
         }
       ],
       "answer": "A",
@@ -6469,7 +6469,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "adquiridos pelo maior preço."
+          "text": "recebidos há mais tempo, desde que a embalagem esteja íntegra para dispensação posterior."
         },
         {
           "letter": "B",
@@ -6477,15 +6477,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "com maior quantidade física."
+          "text": "adquiridos do fornecedor com contrato mais antigo, após conferência da nota fiscal correspondente."
         },
         {
           "letter": "D",
-          "text": "recebidos do fornecedor mais antigo, qualquer que seja a validade."
+          "text": "com maior quantidade disponível, para liberar espaço e reduzir custo de armazenagem do setor."
         },
         {
           "letter": "E",
-          "text": "de menor consumo mensal."
+          "text": "com menor consumo mensal, para reduzir o risco de acúmulo de itens no almoxarifado."
         }
       ],
       "answer": "B",
@@ -6501,11 +6501,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "atribuir automaticamente a diferença a furto."
+          "text": "lançar entrada de compensação, registrando a divergência para análise no inventário seguinte."
         },
         {
           "letter": "B",
-          "text": "ignorar a divergência se o item for barato."
+          "text": "manter o saldo do sistema até o próximo inventário, caso a diferença não comprometa o atendimento."
         },
         {
           "letter": "C",
@@ -6513,11 +6513,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "lançar entrada fictícia para igualar os saldos."
+          "text": "registrar ajuste provisório e atribuir a diferença ao extravio após conferir o valor financeiro do item."
         },
         {
           "letter": "E",
-          "text": "alterar o sistema sem registro."
+          "text": "corrigir o sistema conforme a contagem física e guardar os documentos da movimentação realizada."
         }
       ],
       "answer": "C",
@@ -6533,11 +6533,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "muitos itens de baixo valor acumulado."
+          "text": "itens clinicamente críticos, classificados assim mesmo quando o valor de consumo é reduzido."
         },
         {
           "letter": "B",
-          "text": "produtos necessariamente mais críticos clinicamente."
+          "text": "produtos com validade curta, separados por maior risco de perda financeira durante o armazenamento."
         },
         {
           "letter": "C",
@@ -6545,11 +6545,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "itens vencidos destinados ao descarte."
+          "text": "grande número de itens que, somados, concentram a maior parcela do valor anual consumido."
         },
         {
           "letter": "E",
-          "text": "exclusivamente medicamentos controlados."
+          "text": "medicamentos sujeitos a controle especial, mesmo quando valor e frequência de compra forem reduzidos."
         }
       ],
       "answer": "C",
@@ -6569,19 +6569,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o valor financeiro de aquisição."
+          "text": "o valor financeiro de compra e a participação percentual no custo anual do estoque."
         },
         {
           "letter": "C",
-          "text": "a ordem alfabética do princípio ativo."
+          "text": "o nome do princípio ativo e a forma farmacêutica registrada na lista de aquisição."
         },
         {
           "letter": "D",
-          "text": "a idade do fornecedor."
+          "text": "a origem do fornecedor e a regularidade do prazo de entrega contratado no processo."
         },
         {
           "letter": "E",
-          "text": "apenas o volume físico ocupado."
+          "text": "o volume físico armazenado e a frequência com que o item ocupa espaço na dispensação."
         }
       ],
       "answer": "A",
@@ -6597,11 +6597,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente o espaço disponível."
+          "text": "o custo de aquisição e o valor total imobilizado no estoque no mês anterior."
         },
         {
           "letter": "B",
-          "text": "apenas a quantidade do último pedido."
+          "text": "o prazo de validade do lote mais antigo e o volume disponível na área de armazenamento."
         },
         {
           "letter": "C",
@@ -6609,11 +6609,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "apenas a validade do lote mais antigo."
+          "text": "a quantidade do último pedido, corrigida pelo preço registrado na compra anterior do item."
         },
         {
           "letter": "E",
-          "text": "exclusivamente o preço de aquisição."
+          "text": "o limite físico de armazenamento e a capacidade disponível na área de recebimento de produtos."
         }
       ],
       "answer": "C",
@@ -6629,19 +6629,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o percentual de prescrições atendidas."
+          "text": "a proporção de lotes vencidos em relação ao total de lotes existentes no estoque."
         },
         {
           "letter": "B",
-          "text": "a temperatura média do almoxarifado."
+          "text": "o percentual de prescrições atendidas em relação às solicitações feitas no período."
         },
         {
           "letter": "C",
-          "text": "a quantidade de fornecedores cadastrados."
+          "text": "a quantidade de fornecedores ativos no cadastro e a regularidade das compras realizadas."
         },
         {
           "letter": "D",
-          "text": "apenas o número de lotes vencidos."
+          "text": "a variação média de temperatura observada nas áreas de armazenamento durante o mês."
         },
         {
           "letter": "E",
@@ -6661,19 +6661,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "aumentar todos os estoques de segurança."
+          "text": "reduzir a frequência dos inventários para evitar bloqueio temporário das movimentações internas."
         },
         {
           "letter": "B",
-          "text": "ocultar itens próximos do vencimento."
+          "text": "concentrar itens próximos do vencimento em área separada até a ocorrência de nova demanda."
         },
         {
           "letter": "C",
-          "text": "misturar itens vencidos aos utilizáveis."
+          "text": "reclassificar lotes próximos ao vencimento como disponíveis para acelerar sua movimentação."
         },
         {
           "letter": "D",
-          "text": "suspender inventários."
+          "text": "recalcular estoques de segurança por item, mantendo cobertura ampliada para todos os produtos."
         },
         {
           "letter": "E",
@@ -6697,19 +6697,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "transportar termolábeis sem monitoramento se o percurso for curto."
+          "text": "aceitar excursão de temperatura se não houver alteração visível na embalagem ou no aspecto externo do produto."
         },
         {
           "letter": "C",
-          "text": "colocar medicamentos diretamente em contato com gelo reciclável."
+          "text": "priorizar a limpeza do veículo de transporte de medicamentos estéreis, mantendo rotina simplificada para os demais produtos."
         },
         {
           "letter": "D",
-          "text": "dispensar avaliação de limpeza do veículo."
+          "text": "acomodar medicamentos junto a gelo reciclável, desde que a embalagem externa permaneça seca durante todo o percurso."
         },
         {
           "letter": "E",
-          "text": "aceitar qualquer excursão de temperatura sem investigação."
+          "text": "transportar termolábeis com embalagem térmica, dispensando registro de condições quando o trajeto for curto."
         }
       ],
       "answer": "A",
@@ -6725,11 +6725,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "descartar qualquer resíduo em lixo comum."
+          "text": "devolver produtos vencidos sem segregação prévia, desde que sejam encaminhados pela mesma rota de coleta dos demais materiais."
         },
         {
           "letter": "B",
-          "text": "misturar resíduos químicos com recicláveis."
+          "text": "concentrar no usuário a responsabilidade pela guarda e pela destinação final do medicamento não utilizado no domicílio."
         },
         {
           "letter": "C",
@@ -6737,11 +6737,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "recolocar medicamentos devolvidos diretamente no estoque dispensável."
+          "text": "reintegrar medicamentos devolvidos ao estoque após verificar que a embalagem não sofreu dano visível durante a devolução."
         },
         {
           "letter": "E",
-          "text": "transferir toda responsabilidade ao usuário."
+          "text": "reunir resíduos de medicamentos e materiais recicláveis antes de definir a destinação final e o responsável pela coleta."
         }
       ],
       "answer": "C",
@@ -10746,6 +10746,28 @@ export const questionBank = {
       58,
       59,
       60
+    ],
+    "pharmacyBatchTwoReviewed": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
     ]
   }
 };

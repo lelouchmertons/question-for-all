@@ -991,6 +991,141 @@ const administracaoBatchOneOverrides = {
       "decretos podem substituir leis quando detalham procedimentos administrativos e recebem aprovação expressa da autoridade competente.",
       "ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei, conforme a garantia constitucional de legalidade."
     ], correct: 4
+  },
+  "administracao-publica-016": {
+    options: [
+      "associações lícitas podem adotar organização paramilitar quando a finalidade declarada for proteção interna de seus filiados.",
+      "o Estado pode interferir no funcionamento das associações sempre que houver interesse administrativo na atividade exercida pelo grupo.",
+      "a criação de associações depende de autorização prévia do Poder Executivo, seguida de registro perante a autoridade competente.",
+      "a pessoa que aderiu regularmente à associação deve permanecer vinculada até a deliberação formal dos demais associados.",
+      "as associações só poderão ser compulsoriamente dissolvidas por decisão judicial transitada em julgado, nos casos previstos pela Constituição."
+    ], correct: 4
+  },
+  "administracao-publica-017": {
+    options: [
+      "a função social incide exclusivamente sobre imóveis urbanos, conforme a disciplina constitucional aplicável à política urbana municipal.",
+      "a desapropriação decorre da supremacia do interesse público e dispensa fundamento constitucional ou legal específico para sua realização.",
+      "a propriedade atenderá a sua função social, em conformidade com as limitações e finalidades previstas no ordenamento jurídico.",
+      "o exercício da propriedade não pode sofrer condicionamentos administrativos quando o bem estiver regularmente registrado em nome do titular.",
+      "o interesse coletivo não pode limitar o uso da propriedade, devendo o Poder Público atuar somente mediante acordo prévio com o proprietário."
+    ], correct: 2
+  },
+  "administracao-publica-018": {
+    options: [
+      "as informações requeridas por estrangeiros, salvo quando houver reciprocidade prevista em tratado internacional celebrado pelo Brasil.",
+      "as informações produzidas pelo Poder Executivo, que permanecem sujeitas a divulgação apenas após aprovação pelo Poder Legislativo.",
+      "as informações capazes de revelar erro administrativo, para preservar a estabilidade e a continuidade dos serviços públicos envolvidos.",
+      "aquelas cujo sigilo seja imprescindível à segurança da sociedade e do Estado, conforme as hipóteses constitucionalmente protegidas.",
+      "as informações relativas a despesas públicas, que dependem de autorização da autoridade responsável pelo respectivo órgão."
+    ], correct: 3
+  },
+  "administracao-publica-019": {
+    options: [
+      "direito líquido e certo ameaçado ou violado por ilegalidade ou abuso de poder, quando não amparado por habeas corpus ou habeas data.",
+      "acesso ou retificação de dados pessoais mantidos em registros governamentais ou em bancos de dados de caráter público.",
+      "patrimônio público, moralidade administrativa, meio ambiente ou patrimônio cultural lesados por ato praticado por agente público.",
+      "falta de norma regulamentadora que inviabilize o exercício de direito constitucional ou prerrogativa ligada à cidadania.",
+      "liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder praticado por autoridade pública."
+    ], correct: 0
+  },
+  "administracao-publica-020": {
+    options: [
+      "invalidar ato lesivo ao patrimônio público, à moralidade administrativa, ao meio ambiente ou ao patrimônio cultural protegido.",
+      "proteger liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder praticado por autoridade pública.",
+      "proteger direito líquido e certo demonstrado por prova pré-constituída quando não couber habeas corpus ou habeas data.",
+      "suprir falta de norma regulamentadora que inviabilize direito constitucional ou prerrogativa ligada à cidadania.",
+      "assegurar conhecimento ou retificação de dados do impetrante mantidos em registros governamentais ou de caráter público."
+    ], correct: 4
+  },
+  "administracao-publica-021": {
+    options: [
+      "a prisão civil por dívida comum, admitida como mecanismo de proteção ao cumprimento das obrigações patrimoniais privadas.",
+      "a censura prévia, prevista como controle estatal para impedir divulgação de conteúdo contrário ao interesse coletivo.",
+      "a saúde, incluída entre os direitos sociais assegurados pelo art. 6º da Constituição Federal e pelas normas de proteção social.",
+      "o anonimato, reconhecido como forma de proteger a livre manifestação de pensamento em espaços públicos e digitais.",
+      "a intervenção federal permanente, prevista como garantia de proteção social em situações de desigualdade econômica regional."
+    ], correct: 2
+  },
+  "administracao-publica-022": {
+    options: [
+      "o estrangeiro que obtenha naturalização ordinária depois de cumprir o período de residência exigido pela legislação brasileira.",
+      "o nascido no estrangeiro de pai ou mãe brasileira que seja registrado em repartição brasileira competente.",
+      "o nascido no Brasil de pais estrangeiros que estejam no País em missão oficial de seu Estado de origem.",
+      "o cidadão originário de país de língua portuguesa que resida no Brasil e requeira igualdade de direitos políticos.",
+      "o estrangeiro casado com pessoa brasileira, desde que mantenha residência permanente e vínculo familiar reconhecido no território nacional."
+    ], correct: 1
+  },
+  "administracao-publica-023": {
+    options: [
+      "analfabetos, maiores de 70 anos e maiores de 16 e menores de 18 anos, nas condições previstas pela Constituição Federal.",
+      "conscritos durante o serviço militar obrigatório, aos quais é assegurado alistamento e voto facultativos durante a incorporação.",
+      "estrangeiros residentes no Brasil, desde que possuam domicílio eleitoral reconhecido pela Justiça Eleitoral competente.",
+      "todos os maiores de 18 anos, salvo aqueles que apresentem impedimento temporário justificado perante a autoridade eleitoral.",
+      "somente maiores de 70 anos, com exclusão dos analfabetos e dos jovens entre 16 e 18 anos do exercício facultativo."
+    ], correct: 0
+  },
+  "administracao-publica-024": {
+    options: [
+      "podem adotar organização paramilitar voltada à segurança interna de seus filiados, desde que registrada perante a Justiça Eleitoral.",
+      "ficam dispensados de prestar contas à Justiça Eleitoral quando não recebem recursos provenientes do Fundo Partidário.",
+      "podem receber recursos de governo estrangeiro após autorização do Congresso Nacional e registro da transferência financeira.",
+      "têm criação, fusão, incorporação e extinção livres, respeitados soberania nacional, regime democrático, pluripartidarismo e direitos fundamentais.",
+      "devem possuir caráter estadual, sendo facultativa a organização de diretório nacional para participação nas eleições gerais."
+    ], correct: 3
+  },
+  "administracao-publica-025": {
+    options: [
+      "União, Estados e Territórios, com Municípios organizados como divisões administrativas internas de cada Estado-membro.",
+      "somente União e Estados, cabendo aos Municípios executar competências locais delegadas pelos respectivos governos estaduais.",
+      "União e Municípios, com Distrito Federal submetido à administração direta da União em matérias de interesse nacional.",
+      "Estados, Municípios e comarcas, todos dotados de autonomia política para organizar os serviços públicos de sua competência.",
+      "União, Estados, Distrito Federal e Municípios, todos autônomos nos termos da Constituição e integrantes da Federação brasileira."
+    ], correct: 4
+  },
+  "administracao-publica-026": {
+    options: [
+      "editada unilateralmente pelo prefeito, com posterior apreciação da Câmara Municipal para ratificação das regras de organização local.",
+      "votada em dois turnos, com interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal.",
+      "submetida à sanção do governador, porque a Lei Orgânica deve respeitar a estrutura constitucional estabelecida pelo Estado-membro.",
+      "aprovada pelo Congresso Nacional, após proposta da Câmara Municipal e manifestação do Poder Executivo local sobre o texto final.",
+      "aprovada por maioria simples em turno único, com promulgação pelo prefeito e divulgação oficial no Diário do Município."
+    ], correct: 1
+  },
+  "administracao-publica-027": {
+    options: [
+      "declarar guerra e celebrar a paz, mediante autorização da Câmara Municipal e coordenação com os demais entes da Federação.",
+      "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber, observados os limites constitucionais.",
+      "legislar privativamente sobre direito penal, processual e eleitoral para adequar as normas às necessidades locais do Município.",
+      "manter relações diretas com Estados estrangeiros para celebrar acordos administrativos e comerciais de interesse do território municipal.",
+      "emitir moeda de circulação municipal, observadas as diretrizes de política econômica definidas pela União e pelo Banco Central."
+    ], correct: 1
+  },
+  "administracao-publica-028": {
+    options: [
+      "legitimidade, pessoalidade, moralidade, sigilo e economicidade, aplicáveis à administração direta e indireta de cada ente federativo.",
+      "legalidade, informalidade, pessoalidade, publicidade e eficácia, como parâmetros de atuação administrativa previstos no caput do art. 37.",
+      "proporcionalidade, publicidade, supremacia, eficiência e especialidade, princípios gerais que substituem a enumeração constitucional expressa.",
+      "legalidade, hierarquia, autotutela, continuidade e eficiência, valores que estruturam a atuação dos órgãos e dos agentes públicos.",
+      "legalidade, impessoalidade, moralidade, publicidade e eficiência, princípios expressos que vinculam a Administração Pública."
+    ], correct: 4
+  },
+  "administracao-publica-029": {
+    options: [
+      "as nomeações para qualquer emprego de empresa pública, sem distinção entre funções permanentes e cargos de confiança da entidade.",
+      "as nomeações para cargo em comissão declarado em lei de livre nomeação e exoneração, destinado às atribuições de direção, chefia e assessoramento.",
+      "as nomeações de parentes de agentes políticos, desde que haja vínculo de confiança e compatibilidade com a natureza da função exercida.",
+      "todas as contratações realizadas pelo prefeito, desde que estejam previstas no orçamento e atendam à necessidade temporária do serviço.",
+      "as funções permanentes de natureza técnica, quando forem preenchidas por profissionais com experiência comprovada na área de atuação."
+    ], correct: 1
+  },
+  "administracao-publica-030": {
+    options: [
+      "definido livremente após a homologação, conforme a disponibilidade financeira e a necessidade de provimento da Administração.",
+      "de até dois anos, prorrogável uma vez por igual período, conforme a previsão estabelecida no edital do certame.",
+      "obrigatoriamente de quatro anos, considerando o prazo máximo de gestão e a continuidade do serviço público prestado.",
+      "de um ano, sem possibilidade de prorrogação, para garantir renovação periódica dos candidatos inscritos no certame público.",
+      "ilimitado até o preenchimento de todas as vagas, salvo decisão administrativa fundamentada que encerre a validade do concurso."
+    ], correct: 1
   }
 };
 
@@ -1133,7 +1268,6 @@ for (const question of bank.questions) {
   cleanImportedFooter(question);
   applyMathOverrides(question);
   applyManualOptionSet(question);
-  applyDiagnosticNotes(question);
 }
 
 for (const subject of bank.subjects) {

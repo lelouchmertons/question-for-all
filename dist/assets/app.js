@@ -1,4 +1,4 @@
-import { questionBank } from "./questions.js?v=7";
+import { questionBank } from "./questions.js?v=8";
 
 const STORAGE_KEY = "caderno330-progress-v1";
 const THEME_KEY = "caderno330-theme";
@@ -11,8 +11,7 @@ const els = Object.fromEntries([
   "question-display-number", "question-topic", "question-stem", "alternatives",
   "confirm-answer", "answer-hint", "feedback", "feedback-result",
   "feedback-explanation", "correct-answer", "feedback-topic", "previous-question",
-  "next-question", "theme-toggle", "wrong-diagnostics", "wrong-diagnostic-buttons",
-  "wrong-diagnostic-detail",
+  "next-question", "theme-toggle",
 ].map(id => [id, document.getElementById(id)]));
 
 let progress = loadProgress();
@@ -164,55 +163,9 @@ function renderQuestion() {
   els["confirm-answer"].hidden = false;
   els["answer-hint"].textContent = "Selecione uma alternativa para continuar.";
   els.feedback.hidden = true;
-  els["wrong-diagnostics"].hidden = true;
-  els["wrong-diagnostic-buttons"].innerHTML = "";
-  els["wrong-diagnostic-detail"].innerHTML = "";
   els["previous-question"].disabled = cursor === 0;
   els["next-question"].disabled = cursor === session.length - 1;
   renderQuestionStrip();
-}
-
-function diagnosticPhrase(text) {
-  const clean = String(text).trim().replace(/[.]$/, "");
-  const separators = [...clean.matchAll(/,\s+|\s+(?:e|mas|pois|porque|quando|enquanto)\s+/gi)]
-    .map(match => match.index)
-    .filter(index => index > 18);
-  if (separators.length) return clean.slice(0, separators[0]);
-  if (clean.length <= 150) return clean;
-  const wordBoundary = clean.lastIndexOf(" ", 138);
-  return `${clean.slice(0, wordBoundary > 40 ? wordBoundary : 138)}…`;
-}
-
-function renderDiagnosticMarkup(text, phrase) {
-  const index = text.toLocaleLowerCase("pt-BR").indexOf(phrase.replace(/…$/, "").toLocaleLowerCase("pt-BR"));
-  if (index < 0) return `<mark>${escapeHtml(text)}</mark>`;
-  const end = index + phrase.replace(/…$/, "").length;
-  return `${escapeHtml(text.slice(0, index))}<mark>${escapeHtml(text.slice(index, end))}</mark>${escapeHtml(text.slice(end))}`;
-}
-
-function renderWrongDiagnostics(question) {
-  const wrongOptions = question.options.filter(option => option.letter !== question.answer);
-  els["wrong-diagnostics"].hidden = false;
-  els["wrong-diagnostic-buttons"].innerHTML = wrongOptions.map(option => `
-    <button type="button" data-diagnostic-letter="${option.letter}" aria-label="Ver ponto a revisar na alternativa ${option.letter}">${option.letter}</button>
-  `).join("");
-  els["wrong-diagnostic-detail"].innerHTML = "Selecione uma letra para ver o trecho a revisar.";
-}
-
-function showWrongDiagnostic(letter) {
-  const question = session[cursor];
-  const option = question.options.find(item => item.letter === letter);
-  if (!option || option.letter === question.answer) return;
-  const phrase = option.diagnostic?.focus || diagnosticPhrase(option.text);
-  const reason = option.diagnostic?.reason;
-  els["wrong-diagnostic-buttons"].querySelectorAll("button").forEach(button => {
-    button.classList.toggle("active", button.dataset.diagnosticLetter === letter);
-  });
-  els["wrong-diagnostic-detail"].innerHTML = `
-    <strong>Alternativa ${escapeHtml(letter)}</strong>
-    <p>${renderDiagnosticMarkup(option.text, phrase)}</p>
-    ${reason ? `<p class="diagnostic-reason"><b>Por que não é correta:</b> ${escapeHtml(reason)}</p>` : ""}
-  `;
 }
 
 function confirmAnswer() {
@@ -244,7 +197,6 @@ function confirmAnswer() {
     ? `Resposta correta. Você marcou a alternativa ${selectedAnswer}.`
     : `Resposta incorreta. Você marcou ${selectedAnswer}; a resposta correta é ${question.answer}.`;
   els["feedback-explanation"].textContent = question.explanation;
-  renderWrongDiagnostics(question);
   const correctOption = question.options.find(option => option.letter === question.answer);
   els["correct-answer"].textContent = `${question.answer}) ${correctOption.text}`;
   els["feedback-topic"].textContent = question.topic;
@@ -298,11 +250,6 @@ els["question-strip"].addEventListener("click", event => {
   if (!button) return;
   cursor = Number(button.dataset.index);
   renderQuestion();
-});
-els["wrong-diagnostic-buttons"].addEventListener("click", event => {
-  const button = event.target.closest("button[data-diagnostic-letter]");
-  if (!button) return;
-  showWrongDiagnostic(button.dataset.diagnosticLetter);
 });
 els["reset-progress"].addEventListener("click", () => els["reset-dialog"].showModal());
 els["reset-dialog"].addEventListener("close", () => {

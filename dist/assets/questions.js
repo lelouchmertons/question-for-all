@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T08:00:58.912Z",
+  "generatedAt": "2026-10-28T08:09:22.112Z",
   "subjects": [
     {
       "id": "matematica",
@@ -2437,23 +2437,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Associações lícitas de caráter paramilitar são expressamente permitidas."
+          "text": "a pessoa que aderiu regularmente à associação deve permanecer vinculada até a deliberação formal dos demais associados."
         },
         {
           "letter": "B",
-          "text": "O Estado pode interferir livremente no funcionamento das associações."
+          "text": "o Estado pode interferir no funcionamento das associações sempre que houver interesse administrativo na atividade exercida pelo grupo."
         },
         {
           "letter": "C",
-          "text": "A criação de associações depende de autorização prévia do Poder Executivo."
+          "text": "a criação de associações depende de autorização prévia do Poder Executivo, seguida de registro perante a autoridade competente."
         },
         {
           "letter": "D",
-          "text": "Toda pessoa é obrigada a permanecer associada após sua filiação."
+          "text": "associações lícitas podem adotar organização paramilitar quando a finalidade declarada for proteção interna de seus filiados."
         },
         {
           "letter": "E",
-          "text": "As associações só poderão ser compulsoriamente dissolvidas por decisão judicial transitada em julgado."
+          "text": "as associações só poderão ser compulsoriamente dissolvidas por decisão judicial transitada em julgado, nos casos previstos pela Constituição."
         }
       ],
       "answer": "E",
@@ -2469,23 +2469,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "apenas imóveis urbanos possuem função social."
+          "text": "o exercício da propriedade não pode sofrer condicionamentos administrativos quando o bem estiver regularmente registrado em nome do titular."
         },
         {
           "letter": "B",
-          "text": "a desapropriação dispensa fundamento constitucional ou legal."
+          "text": "a função social incide exclusivamente sobre imóveis urbanos, conforme a disciplina constitucional aplicável à política urbana municipal."
         },
         {
           "letter": "C",
-          "text": "a propriedade atenderá a sua função social."
+          "text": "a propriedade atenderá a sua função social, em conformidade com as limitações e finalidades previstas no ordenamento jurídico."
         },
         {
           "letter": "D",
-          "text": "seu exercício nunca poderá sofrer condicionamentos."
+          "text": "o interesse coletivo não pode limitar o uso da propriedade, devendo o Poder Público atuar somente mediante acordo prévio com o proprietário."
         },
         {
           "letter": "E",
-          "text": "o interesse coletivo jamais poderá limitar o uso da propriedade."
+          "text": "a desapropriação decorre da supremacia do interesse público e dispensa fundamento constitucional ou legal específico para sua realização."
         }
       ],
       "answer": "C",
@@ -2501,23 +2501,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "apenas as informações solicitadas por estrangeiros."
+          "text": "as informações capazes de revelar erro administrativo, para preservar a estabilidade e a continuidade dos serviços públicos envolvidos."
         },
         {
           "letter": "B",
-          "text": "todas as informações produzidas pelo Poder Executivo."
+          "text": "as informações relativas a despesas públicas, que dependem de autorização da autoridade responsável pelo respectivo órgão."
         },
         {
           "letter": "C",
-          "text": "as informações que possam revelar erro administrativo."
+          "text": "as informações requeridas por estrangeiros, salvo quando houver reciprocidade prevista em tratado internacional celebrado pelo Brasil."
         },
         {
           "letter": "D",
-          "text": "aquelas cujo sigilo seja imprescindível à segurança da sociedade e do Estado."
+          "text": "aquelas cujo sigilo seja imprescindível à segurança da sociedade e do Estado, conforme as hipóteses constitucionalmente protegidas."
         },
         {
           "letter": "E",
-          "text": "todas as informações relativas a despesas públicas."
+          "text": "as informações produzidas pelo Poder Executivo, que permanecem sujeitas a divulgação apenas após aprovação pelo Poder Legislativo."
         }
       ],
       "answer": "D",
@@ -2533,23 +2533,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "direito líquido e certo ameaçado ou violado por ilegalidade ou abuso de poder, quando não amparado por habeas corpus ou habeas data"
+          "text": "direito líquido e certo ameaçado ou violado por ilegalidade ou abuso de poder, quando não amparado por habeas corpus ou habeas data."
         },
         {
           "letter": "B",
-          "text": "acesso ou correção de informações pessoais mantidas em registros de entidades governamentais ou de caráter público"
+          "text": "falta de norma regulamentadora que inviabilize o exercício de direito constitucional ou prerrogativa ligada à cidadania."
         },
         {
           "letter": "C",
-          "text": "patrimônio público, moralidade administrativa, meio ambiente ou patrimônio histórico e cultural lesados por ato administrativo"
+          "text": "patrimônio público, moralidade administrativa, meio ambiente ou patrimônio cultural lesados por ato praticado por agente público."
         },
         {
           "letter": "D",
-          "text": "falta de norma regulamentadora que inviabilize o exercício de direito constitucional ou de prerrogativa ligada à cidadania"
+          "text": "liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder praticado por autoridade pública."
         },
         {
           "letter": "E",
-          "text": "liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder"
+          "text": "acesso ou retificação de dados pessoais mantidos em registros governamentais ou em bancos de dados de caráter público."
         }
       ],
       "answer": "A",
@@ -2565,23 +2565,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "invalidar ato lesivo ao patrimônio público, à moralidade administrativa, ao meio ambiente ou ao patrimônio cultural"
+          "text": "invalidar ato lesivo ao patrimônio público, à moralidade administrativa, ao meio ambiente ou ao patrimônio cultural protegido."
         },
         {
           "letter": "B",
-          "text": "proteger liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder praticado por autoridade pública"
+          "text": "suprir falta de norma regulamentadora que inviabilize direito constitucional ou prerrogativa ligada à cidadania."
         },
         {
           "letter": "C",
-          "text": "proteger direito líquido e certo demonstrado por prova pré-constituída quando não couber habeas corpus ou habeas data"
+          "text": "proteger liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder praticado por autoridade pública."
         },
         {
           "letter": "D",
-          "text": "suprir falta de norma regulamentadora que inviabilize direito constitucional ou prerrogativa ligada à cidadania"
+          "text": "proteger direito líquido e certo demonstrado por prova pré-constituída quando não couber habeas corpus ou habeas data."
         },
         {
           "letter": "E",
-          "text": "assegurar conhecimento ou retificação de dados do impetrante mantidos em registros governamentais ou de caráter público"
+          "text": "assegurar conhecimento ou retificação de dados do impetrante mantidos em registros governamentais ou de caráter público."
         }
       ],
       "answer": "E",
@@ -2597,23 +2597,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a prisão civil por dívida comum."
+          "text": "a prisão civil por dívida comum, admitida como mecanismo de proteção ao cumprimento das obrigações patrimoniais privadas."
         },
         {
           "letter": "B",
-          "text": "a censura prévia."
+          "text": "a intervenção federal permanente, prevista como garantia de proteção social em situações de desigualdade econômica regional."
         },
         {
           "letter": "C",
-          "text": "a saúde."
+          "text": "a saúde, incluída entre os direitos sociais assegurados pelo art. 6º da Constituição Federal e pelas normas de proteção social."
         },
         {
           "letter": "D",
-          "text": "o anonimato."
+          "text": "a censura prévia, prevista como controle estatal para impedir divulgação de conteúdo contrário ao interesse coletivo."
         },
         {
           "letter": "E",
-          "text": "a intervenção federal permanente."
+          "text": "o anonimato, reconhecido como forma de proteger a livre manifestação de pensamento em espaços públicos e digitais."
         }
       ],
       "answer": "C",
@@ -2629,23 +2629,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o estrangeiro que obtenha naturalização ordinária após cumprir o período de residência exigido pela legislação"
+          "text": "o estrangeiro que obtenha naturalização ordinária depois de cumprir o período de residência exigido pela legislação brasileira."
         },
         {
           "letter": "B",
-          "text": "o nascido no estrangeiro de pai ou mãe brasileira que seja registrado em repartição brasileira competente"
+          "text": "o nascido no estrangeiro de pai ou mãe brasileira que seja registrado em repartição brasileira competente."
         },
         {
           "letter": "C",
-          "text": "o nascido no Brasil de pais estrangeiros que estejam no País em missão oficial de seu Estado de origem"
+          "text": "o estrangeiro casado com pessoa brasileira, desde que mantenha residência permanente e vínculo familiar reconhecido no território nacional."
         },
         {
           "letter": "D",
-          "text": "o cidadão originário de país de língua portuguesa que resida no Brasil e requeira igualdade de direitos"
+          "text": "o cidadão originário de país de língua portuguesa que resida no Brasil e requeira igualdade de direitos políticos."
         },
         {
           "letter": "E",
-          "text": "o estrangeiro casado com pessoa brasileira, desde que mantenha residência permanente no território nacional"
+          "text": "o nascido no Brasil de pais estrangeiros que estejam no País em missão oficial de seu Estado de origem."
         }
       ],
       "answer": "B",
@@ -2661,23 +2661,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "analfabetos, maiores de 70 anos e maiores de 16 e menores de 18 anos."
+          "text": "analfabetos, maiores de 70 anos e maiores de 16 e menores de 18 anos, nas condições previstas pela Constituição Federal."
         },
         {
           "letter": "B",
-          "text": "conscritos durante o serviço militar obrigatório, que podem alistar-se facultativamente."
+          "text": "estrangeiros residentes no Brasil, desde que possuam domicílio eleitoral reconhecido pela Justiça Eleitoral competente."
         },
         {
           "letter": "C",
-          "text": "estrangeiros residentes no Brasil."
+          "text": "todos os maiores de 18 anos, salvo aqueles que apresentem impedimento temporário justificado perante a autoridade eleitoral."
         },
         {
           "letter": "D",
-          "text": "todos os maiores de 18 anos."
+          "text": "conscritos durante o serviço militar obrigatório, aos quais é assegurado alistamento e voto facultativos durante a incorporação."
         },
         {
           "letter": "E",
-          "text": "apenas maiores de 70 anos."
+          "text": "somente maiores de 70 anos, com exclusão dos analfabetos e dos jovens entre 16 e 18 anos do exercício facultativo."
         }
       ],
       "answer": "A",
@@ -2693,23 +2693,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "podem adotar organização paramilitar quando destinada exclusivamente à segurança interna de seus filiados e dirigentes"
+          "text": "podem receber recursos de governo estrangeiro após autorização do Congresso Nacional e registro da transferência financeira."
         },
         {
           "letter": "B",
-          "text": "ficam dispensados de prestar contas à Justiça Eleitoral quando não recebem recursos provenientes do Fundo Partidário"
+          "text": "ficam dispensados de prestar contas à Justiça Eleitoral quando não recebem recursos provenientes do Fundo Partidário."
         },
         {
           "letter": "C",
-          "text": "podem receber recursos financeiros de governo estrangeiro se a transferência for previamente autorizada pelo Congresso Nacional"
+          "text": "devem possuir caráter estadual, sendo facultativa a organização de diretório nacional para participação nas eleições gerais."
         },
         {
           "letter": "D",
-          "text": "têm criação, fusão, incorporação e extinção livres, respeitados soberania nacional, regime democrático, pluripartidarismo e direitos fundamentais"
+          "text": "têm criação, fusão, incorporação e extinção livres, respeitados soberania nacional, regime democrático, pluripartidarismo e direitos fundamentais."
         },
         {
           "letter": "E",
-          "text": "devem possuir caráter estadual, sendo facultativa a constituição de diretório nacional para participação nas eleições gerais"
+          "text": "podem adotar organização paramilitar voltada à segurança interna de seus filiados, desde que registrada perante a Justiça Eleitoral."
         }
       ],
       "answer": "D",
@@ -2725,23 +2725,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "União, Estados e Territórios, excluídos os Municípios."
+          "text": "somente União e Estados, cabendo aos Municípios executar competências locais delegadas pelos respectivos governos estaduais."
         },
         {
           "letter": "B",
-          "text": "somente União e Estados."
+          "text": "Estados, Municípios e comarcas, todos dotados de autonomia política para organizar os serviços públicos de sua competência."
         },
         {
           "letter": "C",
-          "text": "União e Municípios, excluído o Distrito Federal."
+          "text": "União e Municípios, com Distrito Federal submetido à administração direta da União em matérias de interesse nacional."
         },
         {
           "letter": "D",
-          "text": "Estados, Municípios e comarcas."
+          "text": "União, Estados e Territórios, com Municípios organizados como divisões administrativas internas de cada Estado-membro."
         },
         {
           "letter": "E",
-          "text": "União, Estados, Distrito Federal e Municípios, todos autônomos nos termos da Constituição."
+          "text": "União, Estados, Distrito Federal e Municípios, todos autônomos nos termos da Constituição e integrantes da Federação brasileira."
         }
       ],
       "answer": "E",
@@ -2757,7 +2757,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "editada unilateralmente pelo prefeito."
+          "text": "submetida à sanção do governador, porque a Lei Orgânica deve respeitar a estrutura constitucional estabelecida pelo Estado-membro."
         },
         {
           "letter": "B",
@@ -2765,15 +2765,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "sujeita à sanção do governador."
+          "text": "aprovada pelo Congresso Nacional, após proposta da Câmara Municipal e manifestação do Poder Executivo local sobre o texto final."
         },
         {
           "letter": "D",
-          "text": "aprovada pelo Congresso Nacional."
+          "text": "aprovada por maioria simples em turno único, com promulgação pelo prefeito e divulgação oficial no Diário do Município."
         },
         {
           "letter": "E",
-          "text": "aprovada por maioria simples em turno único."
+          "text": "editada unilateralmente pelo prefeito, com posterior apreciação da Câmara Municipal para ratificação das regras de organização local."
         }
       ],
       "answer": "B",
@@ -2789,23 +2789,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "declarar guerra e celebrar a paz."
+          "text": "manter relações diretas com Estados estrangeiros para celebrar acordos administrativos e comerciais de interesse do território municipal."
         },
         {
           "letter": "B",
-          "text": "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber."
+          "text": "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber, observados os limites constitucionais."
         },
         {
           "letter": "C",
-          "text": "legislar privativamente sobre direito penal."
+          "text": "legislar privativamente sobre direito penal, processual e eleitoral para adequar as normas às necessidades locais do Município."
         },
         {
           "letter": "D",
-          "text": "manter relações com Estados estrangeiros."
+          "text": "emitir moeda de circulação municipal, observadas as diretrizes de política econômica definidas pela União e pelo Banco Central."
         },
         {
           "letter": "E",
-          "text": "emitir moeda."
+          "text": "declarar guerra e celebrar a paz, mediante autorização da Câmara Municipal e coordenação com os demais entes da Federação."
         }
       ],
       "answer": "B",
@@ -2821,23 +2821,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "legitimidade, pessoalidade, moralidade, sigilo e economicidade."
+          "text": "legalidade, informalidade, pessoalidade, publicidade e eficácia, como parâmetros de atuação administrativa previstos no caput do art. 37."
         },
         {
           "letter": "B",
-          "text": "legalidade, informalidade, pessoalidade, publicidade e eficácia."
+          "text": "legalidade, hierarquia, autotutela, continuidade e eficiência, valores que estruturam a atuação dos órgãos e dos agentes públicos."
         },
         {
           "letter": "C",
-          "text": "proporcionalidade, publicidade, supremacia, eficiência e especialidade."
+          "text": "proporcionalidade, publicidade, supremacia, eficiência e especialidade, princípios gerais que substituem a enumeração constitucional expressa."
         },
         {
           "letter": "D",
-          "text": "legalidade, hierarquia, autotutela, continuidade e eficiência."
+          "text": "legitimidade, pessoalidade, moralidade, sigilo e economicidade, aplicáveis à administração direta e indireta de cada ente federativo."
         },
         {
           "letter": "E",
-          "text": "legalidade, impessoalidade, moralidade, publicidade e eficiência."
+          "text": "legalidade, impessoalidade, moralidade, publicidade e eficiência, princípios expressos que vinculam a Administração Pública."
         }
       ],
       "answer": "E",
@@ -2853,23 +2853,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "as nomeações para qualquer emprego de empresa pública."
+          "text": "as nomeações para qualquer emprego de empresa pública, sem distinção entre funções permanentes e cargos de confiança da entidade."
         },
         {
           "letter": "B",
-          "text": "as nomeações para cargo em comissão declarado em lei de livre nomeação e exoneração."
+          "text": "as nomeações para cargo em comissão declarado em lei de livre nomeação e exoneração, destinado às atribuições de direção, chefia e assessoramento."
         },
         {
           "letter": "C",
-          "text": "as nomeações de parentes de agentes políticos."
+          "text": "as nomeações de parentes de agentes políticos, desde que haja vínculo de confiança e compatibilidade com a natureza da função exercida."
         },
         {
           "letter": "D",
-          "text": "todas as contratações realizadas pelo prefeito."
+          "text": "as funções permanentes de natureza técnica, quando forem preenchidas por profissionais com experiência comprovada na área de atuação."
         },
         {
           "letter": "E",
-          "text": "as funções permanentes de natureza técnica."
+          "text": "todas as contratações realizadas pelo prefeito, desde que estejam previstas no orçamento e atendam à necessidade temporária do serviço."
         }
       ],
       "answer": "B",
@@ -2885,23 +2885,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "definido livremente após a homologação, sem previsão no edital."
+          "text": "ilimitado até o preenchimento de todas as vagas, salvo decisão administrativa fundamentada que encerre a validade do concurso."
         },
         {
           "letter": "B",
-          "text": "de até dois anos, prorrogável uma vez por igual período."
+          "text": "de até dois anos, prorrogável uma vez por igual período, conforme a previsão estabelecida no edital do certame."
         },
         {
           "letter": "C",
-          "text": "obrigatoriamente de quatro anos."
+          "text": "de um ano, sem possibilidade de prorrogação, para garantir renovação periódica dos candidatos inscritos no certame público."
         },
         {
           "letter": "D",
-          "text": "de um ano, sem possibilidade de prorrogação."
+          "text": "definido livremente após a homologação, conforme a disponibilidade financeira e a necessidade de provimento da Administração."
         },
         {
           "letter": "E",
-          "text": "ilimitado até o preenchimento de todas as vagas."
+          "text": "obrigatoriamente de quatro anos, considerando o prazo máximo de gestão e a continuidade do serviço público prestado."
         }
       ],
       "answer": "B",
@@ -7045,35 +7045,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "atribuir a prevenção de erros à responsabilização individual, com apuração posterior do profissional envolvido.",
-          "diagnostic": {
-            "focus": "responsabilização individual",
-            "reason": "Uma barreira sistêmica modifica o processo antes que o erro alcance a pessoa. A apuração individual acontece depois do evento e não substitui prevenção estrutural."
-          }
+          "text": "atribuir a prevenção de erros à responsabilização individual, com apuração posterior do profissional envolvido."
         },
         {
           "letter": "B",
-          "text": "usar a memória e a experiência dos profissionais como controle principal antes da dispensação.",
-          "diagnostic": {
-            "focus": "memória e a experiência dos profissionais como controle principal",
-            "reason": "Memória e experiência são importantes, mas são controles frágeis quando usados sozinhos. Alertas, separação e dupla conferência reduzem a dependência de atenção individual."
-          }
+          "text": "usar a memória e a experiência dos profissionais como controle principal antes da dispensação."
         },
         {
           "letter": "C",
-          "text": "reduzir rótulos auxiliares e sinais de alerta para simplificar a rotina do estoque.",
-          "diagnostic": {
-            "focus": "reduzir rótulos auxiliares e sinais de alerta",
-            "reason": "Rótulos e alertas funcionam justamente como barreiras de diferenciação. Retirá-los torna produtos parecidos mais fáceis de confundir."
-          }
+          "text": "reduzir rótulos auxiliares e sinais de alerta para simplificar a rotina do estoque."
         },
         {
           "letter": "D",
-          "text": "manter produtos de aparência ou nomes semelhantes lado a lado, com identificação apenas no sistema informatizado.",
-          "diagnostic": {
-            "focus": "lado a lado, com identificação apenas no sistema informatizado",
-            "reason": "Produtos semelhantes precisam de separação física e sinais visuais de diferenciação. O sistema informatizado ajuda, mas não elimina o risco de troca no armazenamento ou na seleção."
-          }
+          "text": "manter produtos de aparência ou nomes semelhantes lado a lado, com identificação apenas no sistema informatizado."
         },
         {
           "letter": "E",
@@ -7093,35 +7077,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "são destinados predominantemente ao ambiente hospitalar e requerem monitoramento intensivo durante a dispensação.",
-          "diagnostic": {
-            "focus": "destinados predominantemente ao ambiente hospitalar",
-            "reason": "O local de uso não define um medicamento LASA. Produtos ambulatoriais e hospitalares podem ser LASA quando apresentam semelhança capaz de induzir troca."
-          }
+          "text": "são destinados predominantemente ao ambiente hospitalar e requerem monitoramento intensivo durante a dispensação."
         },
         {
           "letter": "B",
-          "text": "são medicamentos injetáveis de alto custo, relacionados a terapias de maior complexidade clínica.",
-          "diagnostic": {
-            "focus": "injetáveis de alto custo",
-            "reason": "Via de administração e custo não definem LASA. O critério é o potencial de confusão causado pela aparência ou pelo nome do produto."
-          }
+          "text": "são medicamentos injetáveis de alto custo, relacionados a terapias de maior complexidade clínica."
         },
         {
           "letter": "C",
-          "text": "têm retenção de receita e exigem controle especial desde a aquisição até a dispensação.",
-          "diagnostic": {
-            "focus": "retenção de receita e exigem controle especial",
-            "reason": "Controle especial é uma classificação sanitária diferente. Um medicamento LASA pode ou não exigir retenção de receita."
-          }
+          "text": "têm retenção de receita e exigem controle especial desde a aquisição até a dispensação."
         },
         {
           "letter": "D",
-          "text": "apresentam baixa estabilidade térmica e exigem condições específicas de conservação durante todo o armazenamento.",
-          "diagnostic": {
-            "focus": "baixa estabilidade térmica",
-            "reason": "Isso descreve um medicamento termolábil. LASA significa look-alike/sound-alike: o risco nasce da semelhança de nome, som, grafia ou apresentação."
-          }
+          "text": "apresentam baixa estabilidade térmica e exigem condições específicas de conservação durante todo o armazenamento."
         },
         {
           "letter": "E",
@@ -7241,35 +7209,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "imunossupressoras.",
-          "diagnostic": {
-            "focus": "imunossupressoras",
-            "reason": "As substâncias imunossupressoras pertencem à lista C3, não à lista A3."
-          }
+          "text": "imunossupressoras."
         },
         {
           "letter": "C",
-          "text": "antirretrovirais.",
-          "diagnostic": {
-            "focus": "antirretrovirais",
-            "reason": "Os antirretrovirais são tratados na lista C4, não na A3."
-          }
+          "text": "antirretrovirais."
         },
         {
           "letter": "D",
-          "text": "anabolizantes de uso veterinário apenas.",
-          "diagnostic": {
-            "focus": "anabolizantes",
-            "reason": "Anabolizantes integram a lista C5. A lista A3 corresponde a substâncias psicotrópicas."
-          }
+          "text": "anabolizantes de uso veterinário apenas."
         },
         {
           "letter": "E",
-          "text": "retinoicas de uso sistêmico.",
-          "diagnostic": {
-            "focus": "retinoicas de uso sistêmico",
-            "reason": "Substâncias retinoicas de uso sistêmico pertencem à lista C2, não à lista A3."
-          }
+          "text": "retinoicas de uso sistêmico."
         }
       ],
       "answer": "A",

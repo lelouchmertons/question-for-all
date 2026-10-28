@@ -1,4 +1,4 @@
-import { questionBank } from "./questions.js?v=12";
+import { questionBank } from "./questions.js?v=13";
 
 const STORAGE_KEY = "caderno330-progress-v1";
 const THEME_KEY = "caderno330-theme";

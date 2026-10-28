@@ -1320,8 +1320,60 @@ const administracaoBatchTwoOverrides = {
   ], correct: 2 }
 };
 
+const portuguesBatchOneOverrides = {
+  "portugues-001": { options: [
+    "A orientação técnica deve priorizar a adaptação à realidade do paciente, mesmo que reduza a precisão das informações.",
+    "O domínio técnico basta para orientar o paciente, desde que a informação seja apresentada de maneira completa.",
+    "A comunicação deve privilegiar explicações simplificadas, mesmo quando elas alteram o conteúdo científico transmitido.",
+    "A comunicação eficaz combina precisão técnica, adaptação da linguagem e verificação da compreensão.",
+    "A transmissão de dados corretos garante adesão quando o profissional utiliza uma linguagem objetiva e direta."
+  ], correct: 3 },
+  "portugues-002": { options: [
+    "A falta de medicamentos revela que o recurso financeiro previsto foi insuficiente para cobrir todas as necessidades.",
+    "O controle financeiro, isoladamente, não assegurou uma gestão eficiente do estoque.",
+    "O vencimento de produtos demonstra que os medicamentos essenciais adquiridos não eram necessários à unidade.",
+    "As perdas por vencimento fizeram o estoque ultrapassar o limite financeiro definido para o período analisado.",
+    "O acompanhamento do limite financeiro reduziu a necessidade de controlar consumo, validade e reposição dos produtos."
+  ], correct: 1 },
+  "portugues-005": { options: [
+    "Avaliações só são confiáveis quando ignoram os indicadores numéricos e as diferenças entre as unidades avaliadas.",
+    "Indicadores exigem contexto; número de procedimentos não revela, por si só, o benefício clínico produzido.",
+    "Maior número de procedimentos comprova benefício clínico, pois casos complexos têm peso reduzido na comparação.",
+    "Casos complexos devem ser separados das avaliações, para não alterar os índices de produtividade registrados.",
+    "Comparar unidades é inviável, porque produtividade e benefício clínico não podem ser mensurados de forma alguma."
+  ], correct: 1 },
+  "portugues-009": { options: [
+    "da ironia criada entre o elogio aparentemente positivo e a demora efetivamente enfrentada pelo usuário.",
+    "da comparação implícita entre a pontualidade esperada e a qualidade de outro serviço disponível ao usuário.",
+    "do emprego literal de um elogio dirigido à organização do atendimento que havia sido marcado previamente.",
+    "da ausência de avaliação sobre a espera, já que o comentário descreve apenas um horário de atendimento.",
+    "de uma orientação indireta para que os responsáveis definam novo horário para o atendimento solicitado."
+  ], correct: 0 },
+  "portugues-013": { options: [
+    "intertextualidade por alusão, com transformação de uma estrutura reconhecível de texto anterior.",
+    "estrangeirismo, pois incorpora ao enunciado uma formulação que não pertence ao repertório da língua portuguesa.",
+    "discurso indireto livre, pois reproduz a voz do poeta sem marcas de citação no enunciado atual.",
+    "ambiguidade lexical, pois o sentido de “interação” permite interpretações incompatíveis no contexto apresentado.",
+    "descrição objetiva, pois apresenta elementos do caminho sem produzir relação com outro texto conhecido."
+  ], correct: 0 },
+  "portugues-014": { options: [
+    "elimina a responsabilidade do autor, pois transfere a conclusão a uma fonte externa não identificada.",
+    "apresenta conclusão definitiva, pois a combinação de fatores foi comprovada pelos resultados observados.",
+    "transforma a afirmação em pergunta indireta sobre a origem dos resultados mencionados no período.",
+    "marca uma ordem ao leitor para que aceite a explicação apresentada pelo enunciador do texto.",
+    "indica que o enunciador apresenta a conclusão como possibilidade, e não como certeza absoluta."
+  ], correct: 4 },
+  "portugues-020": { options: [
+    "Em II, a oração entre vírgulas limita o grupo de servidores que pode receber certificados.",
+    "A retirada das vírgulas altera a pronúncia, mas preserva a delimitação do grupo de servidores.",
+    "Em I, todos os servidores participaram, e a oração apenas acrescenta uma informação explicativa.",
+    "As duas frases têm o mesmo sentido, porque a posição das vírgulas não interfere na referência.",
+    "Em I, somente os servidores que participaram recebem certificado; em II, a oração sugere participação geral."
+  ], correct: 4 }
+};
+
 function applyManualOptionSet(question) {
-  const override = administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -1474,7 +1526,8 @@ bank.review = {
   mathQuestionsStrengthened: Object.keys(mathOverrides).map(Number),
   mathBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
   mathBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
-  mathBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41)
+  mathBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
+  portugueseBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1)
 };
 
 const report = validate(bank);

@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T18:06:49.505Z",
+  "generatedAt": "2026-10-28T18:10:06.260Z",
   "subjects": [
     {
       "id": "matematica",
@@ -3557,15 +3557,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "As condições de vida do paciente tornam desnecessária a orientação técnica."
+          "text": "A transmissão de dados corretos garante adesão quando o profissional utiliza uma linguagem objetiva e direta."
         },
         {
           "letter": "B",
-          "text": "A comunicação em saúde depende exclusivamente do conhecimento técnico."
+          "text": "A orientação técnica deve priorizar a adaptação à realidade do paciente, mesmo que reduza a precisão das informações."
         },
         {
           "letter": "C",
-          "text": "O conteúdo científico deve ser substituído por explicações informais."
+          "text": "A comunicação deve privilegiar explicações simplificadas, mesmo quando elas alteram o conteúdo científico transmitido."
         },
         {
           "letter": "D",
@@ -3573,7 +3573,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "Transmitir dados corretos é suficiente para garantir a adesão do paciente."
+          "text": "O domínio técnico basta para orientar o paciente, desde que a informação seja apresentada de maneira completa."
         }
       ],
       "answer": "D",
@@ -3589,7 +3589,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "A falta dos medicamentos ocorreu necessariamente por insuficiência de verba."
+          "text": "O acompanhamento do limite financeiro reduziu a necessidade de controlar consumo, validade e reposição dos produtos."
         },
         {
           "letter": "B",
@@ -3597,15 +3597,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "Todos os produtos adquiridos eram desnecessários."
+          "text": "A falta de medicamentos revela que o recurso financeiro previsto foi insuficiente para cobrir todas as necessidades."
         },
         {
           "letter": "D",
-          "text": "O limite financeiro foi ultrapassado pela perda dos produtos vencidos."
+          "text": "O vencimento de produtos demonstra que os medicamentos essenciais adquiridos não eram necessários à unidade."
         },
         {
           "letter": "E",
-          "text": "A unidade não realizou qualquer controle de estoque."
+          "text": "As perdas por vencimento fizeram o estoque ultrapassar o limite financeiro definido para o período analisado."
         }
       ],
       "answer": "B",
@@ -3685,23 +3685,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Avaliações são sempre injustas; os indicadores não contêm dados numéricos."
+          "text": "Avaliações só são confiáveis quando ignoram os indicadores numéricos e as diferenças entre as unidades avaliadas."
         },
         {
           "letter": "B",
-          "text": "Indicadores exigem contextualização; quantidade de procedimentos não traduz necessariamente o benefício produzido."
+          "text": "Indicadores exigem contexto; número de procedimentos não revela, por si só, o benefício clínico produzido."
         },
         {
           "letter": "C",
-          "text": "Procedimentos numerosos geram maior benefício; casos complexos são raros."
+          "text": "Comparar unidades é inviável, porque produtividade e benefício clínico não podem ser mensurados de forma alguma."
         },
         {
           "letter": "D",
-          "text": "Casos complexos devem ser recusados; eles reduzem a produtividade registrada."
+          "text": "Maior número de procedimentos comprova benefício clínico, pois casos complexos têm peso reduzido na comparação."
         },
         {
           "letter": "E",
-          "text": "Indicadores são inúteis; toda comparação entre unidades deve ser abolida."
+          "text": "Casos complexos devem ser separados das avaliações, para não alterar os índices de produtividade registrados."
         }
       ],
       "answer": "B",
@@ -3813,23 +3813,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "da ironia produzida pela oposição entre o elogio e a situação vivida."
+          "text": "da ironia criada entre o elogio aparentemente positivo e a demora efetivamente enfrentada pelo usuário."
         },
         {
           "letter": "B",
-          "text": "de uma comparação explícita entre dois serviços."
+          "text": "de uma orientação indireta para que os responsáveis definam novo horário para o atendimento solicitado."
         },
         {
           "letter": "C",
-          "text": "do emprego literal do adjetivo “exemplar”."
+          "text": "da ausência de avaliação sobre a espera, já que o comentário descreve apenas um horário de atendimento."
         },
         {
           "letter": "D",
-          "text": "da ausência de qualquer avaliação sobre o atendimento."
+          "text": "da comparação implícita entre a pontualidade esperada e a qualidade de outro serviço disponível ao usuário."
         },
         {
           "letter": "E",
-          "text": "de uma ordem dirigida aos responsáveis pelo serviço."
+          "text": "do emprego literal de um elogio dirigido à organização do atendimento que havia sido marcado previamente."
         }
       ],
       "answer": "A",
@@ -3941,23 +3941,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "intertextualidade por alusão e transformação de texto anterior."
+          "text": "intertextualidade por alusão, com transformação de uma estrutura reconhecível de texto anterior."
         },
         {
           "letter": "B",
-          "text": "estrangeirismo sem adaptação."
+          "text": "estrangeirismo, pois incorpora ao enunciado uma formulação que não pertence ao repertório da língua portuguesa."
         },
         {
           "letter": "C",
-          "text": "discurso indireto livre."
+          "text": "descrição objetiva, pois apresenta elementos do caminho sem produzir relação com outro texto conhecido."
         },
         {
           "letter": "D",
-          "text": "ambiguidade exclusivamente lexical."
+          "text": "discurso indireto livre, pois reproduz a voz do poeta sem marcas de citação no enunciado atual."
         },
         {
           "letter": "E",
-          "text": "descrição objetiva de uma paisagem."
+          "text": "ambiguidade lexical, pois o sentido de “interação” permite interpretações incompatíveis no contexto apresentado."
         }
       ],
       "answer": "A",
@@ -3973,23 +3973,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "elimina a responsabilidade do autor pela afirmação."
+          "text": "elimina a responsabilidade do autor, pois transfere a conclusão a uma fonte externa não identificada."
         },
         {
           "letter": "B",
-          "text": "apresenta a conclusão como certeza absoluta."
+          "text": "transforma a afirmação em pergunta indireta sobre a origem dos resultados mencionados no período."
         },
         {
           "letter": "C",
-          "text": "transforma o período em pergunta indireta."
+          "text": "marca uma ordem ao leitor para que aceite a explicação apresentada pelo enunciador do texto."
         },
         {
           "letter": "D",
-          "text": "marca uma ordem dirigida ao leitor."
+          "text": "apresenta conclusão definitiva, pois a combinação de fatores foi comprovada pelos resultados observados."
         },
         {
           "letter": "E",
-          "text": "indica avaliação de possibilidade por parte do enunciador."
+          "text": "indica que o enunciador apresenta a conclusão como possibilidade, e não como certeza absoluta."
         }
       ],
       "answer": "E",
@@ -4165,23 +4165,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Em II, a oração entre vírgulas restringe o grupo de servidores."
+          "text": "A retirada das vírgulas altera a pronúncia, mas preserva a delimitação do grupo de servidores."
         },
         {
           "letter": "B",
-          "text": "A retirada das vírgulas altera apenas a pronúncia, não a informação."
+          "text": "Em II, a oração entre vírgulas limita o grupo de servidores que pode receber certificados."
         },
         {
           "letter": "C",
-          "text": "Em I, afirma-se que todos os servidores participaram do treinamento."
+          "text": "Em I, todos os servidores participaram, e a oração apenas acrescenta uma informação explicativa."
         },
         {
           "letter": "D",
-          "text": "As duas frases possuem necessariamente o mesmo sentido."
+          "text": "As duas frases têm o mesmo sentido, porque a posição das vírgulas não interfere na referência."
         },
         {
           "letter": "E",
-          "text": "Em I, apenas o subconjunto que participou é apresentado como destinatário dos certificados; em II, a oração sugere que todos participaram."
+          "text": "Em I, somente os servidores que participaram recebem certificado; em II, a oração sugere participação geral."
         }
       ],
       "answer": "E",
@@ -10680,6 +10680,28 @@ export const questionBank = {
       58,
       59,
       60
+    ],
+    "portugueseBatchOneReviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
     ]
   }
 };

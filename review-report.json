@@ -32,8 +32,8 @@
       "D": 12,
       "E": 12
     },
-    "correctUniquelyLongest": 29,
-    "suspiciousLengthGap": 6
+    "correctUniquelyLongest": 23,
+    "suspiciousLengthGap": 2
   },
   "farmacia": {
     "count": 160,

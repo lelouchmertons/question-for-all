@@ -1908,8 +1908,151 @@ const farmaciaBatchFiveOverrides = {
   ], correct: 3 }
 };
 
+const farmaciaBatchSixOverrides = {
+  "farmacia-101": { options: [
+    "desprovido de afinidade, pois a menor concentração necessária exclui interação relevante com o receptor.",
+    "mais eficaz e menos potente, pois o efeito máximo alcançado determina a concentração necessária para resposta.",
+    "antagonista de Y, pois dois agonistas que alcançam o mesmo efeito máximo não podem atuar pelo mesmo mecanismo.",
+    "necessariamente mais seguro, porque menor concentração produzida no organismo implica menor risco de toxicidade.",
+    "mais potente, embora não necessariamente mais eficaz, pois ambos alcançam o mesmo efeito máximo."
+  ], correct: 4 },
+  "farmacia-102": { options: [
+    "manter-se inalterada, pois o antagonista competitivo não interfere na ligação do agonista ao receptor.",
+    "deslocar-se para a esquerda, indicando que menor concentração de agonista supera o bloqueio competitivo.",
+    "reduzir o efeito máximo de modo irreversível, ainda que se aumente a concentração de agonista disponível.",
+    "elevar o efeito máximo do agonista, pois o receptor ocupado pelo antagonista passa a responder ao estímulo.",
+    "deslocar-se para a direita, podendo o efeito máximo ser alcançado com maior concentração de agonista."
+  ], correct: 4 },
+  "farmacia-103": { options: [
+    "a administração oral se torna ineficaz, pois a absorção não consegue produzir concentrações terapêuticas estáveis.",
+    "pequenas variações de exposição podem separar efeito terapêutico de toxicidade, pela margem reduzida entre esses resultados.",
+    "a potência é necessariamente baixa, exigindo doses elevadas para produzir resposta clínica relevante.",
+    "o monitoramento clínico e laboratorial deixa de acrescentar informação para o ajuste individual do tratamento.",
+    "as interações medicamentosas deixam de ter relevância, pois o efeito depende apenas da dose prescrita."
+  ], correct: 1 },
+  "farmacia-104": { options: [
+    "suspensão de todos os medicamentos em uso, até que a função renal retorne ao valor previamente observado.",
+    "alteração da forma farmacêutica, para que a eliminação passe a ocorrer predominantemente por via hepática.",
+    "manutenção do esquema habitual, pois a depuração renal não interfere na exposição a fármacos inalterados.",
+    "aumento automático das doses de ataque e manutenção, para compensar a menor eliminação pela urina.",
+    "redução da dose de manutenção ou aumento do intervalo, conforme depuração e objetivo terapêutico."
+  ], correct: 4 },
+  "farmacia-105": { options: [
+    "neutralizar os efeitos hemostáticos de ambos, pois o anti-inflamatório reduz a ação sistêmica do anticoagulante oral.",
+    "aumentar o risco de sangramento por efeitos farmacodinâmicos e, em alguns casos, farmacocinéticos somados.",
+    "reduzir o risco hemorrágico por inibir mediadores inflamatórios e aumentar a proteção da mucosa gastrointestinal.",
+    "proteger contra lesão gastrointestinal, desde que o anticoagulante seja administrado após a refeição principal.",
+    "dispensar monitoramento, pois o efeito do anti-inflamatório se restringe à analgesia e não altera a hemostasia."
+  ], correct: 1 },
+  "farmacia-106": { options: [
+    "hipoglicemia relacionada à supressão direta da produção hepática de glicose durante o tratamento inicial.",
+    "hipocalemia intensa decorrente de aumento da excreção renal de potássio induzido pelo medicamento.",
+    "elevação do potássio e alteração da função renal em pacientes com fatores de risco associados.",
+    "glaucoma agudo por aumento da produção de humor aquoso no início da inibição da enzima conversora.",
+    "supressão medular progressiva provocada pela inibição da formação de angiotensina II nos tecidos."
+  ], correct: 2 },
+  "farmacia-107": { options: [
+    "hiperpotassemia como efeito predominante, acompanhada de redução da excreção renal de sódio e água.",
+    "broncodilatação direta, devido ao bloqueio da reabsorção de sódio no túbulo distal do néfron.",
+    "redução irreversível da secreção de insulina, independentemente da dose e do estado metabólico do paciente.",
+    "hiponatremia, hipocalemia e aumento do ácido úrico, além de alteração metabólica em pacientes suscetíveis.",
+    "hipercalemia persistente, devido à retenção de potássio que acompanha a ação diurética tiazídica."
+  ], correct: 3 },
+  "farmacia-108": { options: [
+    "hipoglicemia grave, causada pelo aumento da secreção pancreática de insulina após a vasodilatação.",
+    "broncoespasmo por bloqueio de receptores beta-2 presentes na musculatura lisa das vias aéreas.",
+    "tosse associada ao aumento de bradicinina, decorrente da inibição da enzima conversora de angiotensina.",
+    "agranulocitose relacionada à redução da produção de neutrófilos durante a terapia vasodilatadora.",
+    "edema periférico relacionado à vasodilatação arteriolar, em especial em membros inferiores durante o tratamento."
+  ], correct: 4 },
+  "farmacia-109": { options: [
+    "losartana, pelo bloqueio direto de receptores beta-2 bronquiais responsáveis pela manutenção da broncodilatação.",
+    "betabloqueador não seletivo, pelo risco de broncoconstrição mediada por bloqueio beta-2 em pessoas suscetíveis.",
+    "enalapril, exclusivamente por bloqueio beta-2, mecanismo que reduz a resposta aos broncodilatadores inalatórios.",
+    "anlodipino, pois o bloqueio de canais de cálcio provoca aumento sustentado da resistência das vias aéreas.",
+    "hidroclorotiazida, devido ao bloqueio competitivo da ação da adrenalina nos receptores beta-2 bronquiais."
+  ], correct: 1 },
+  "farmacia-110": { options: [
+    "aumentar a absorção intestinal de glicose, reduzindo a disponibilidade de carboidratos para o metabolismo periférico.",
+    "bloquear de forma irreversível os receptores de insulina, reduzindo a resposta dos tecidos à glicose circulante.",
+    "reduzir a produção hepática de glicose e melhorar a sensibilidade à insulina, com baixo risco de hipoglicemia quando usada isoladamente.",
+    "estimular diretamente a secreção basal de insulina, independentemente da glicemia e da função residual das células beta.",
+    "reduzir a reserva funcional das células beta pancreáticas, limitando a quantidade de insulina disponível após as refeições."
+  ], correct: 2 },
+  "farmacia-111": { options: [
+    "síndrome de abstinência associada à redução da estimulação de receptores opioides após o início do tratamento.",
+    "hipoglicemia, especialmente em idosos, jejum, função renal reduzida ou uso de agentes de ação prolongada.",
+    "broncodilatação excessiva por estimulação de receptores beta-adrenérgicos nas vias aéreas superiores.",
+    "hiperpotassemia por antagonismo competitivo da aldosterona nos túbulos distais do néfron.",
+    "tosse seca decorrente do acúmulo de bradicinina durante a inibição da enzima conversora de angiotensina."
+  ], correct: 1 },
+  "farmacia-112": { options: [
+    "misturar as apresentações disponíveis, desde que os frascos tenham concentrações semelhantes e o volume seja conferido.",
+    "conferir tipo, concentração, dose, dispositivo e paciente e orientar técnica, rodízio de locais e reconhecimento de hipoglicemia.",
+    "armazenar canetas de pessoas diferentes no mesmo compartimento, desde que cada paciente conheça o horário de aplicação.",
+    "registrar unidades pela abreviação U, porque a padronização reduz a possibilidade de erro de interpretação na prescrição.",
+    "reutilizar agulhas entre pacientes após limpeza externa, pois a caneta individual impede a contaminação cruzada."
+  ], correct: 1 },
+  "farmacia-113": { options: [
+    "dose adicional de insulina de ação rápida, para corrigir a variação glicêmica e impedir nova oscilação pós-prandial.",
+    "líquidos sem açúcar e observação clínica, com nova medida de glicemia apenas após desaparecimento completo dos sintomas.",
+    "carboidrato de absorção rápida, com reavaliação da glicemia e repetição ou complementação conforme resposta e plano assistencial.",
+    "alimento predominantemente rico em gordura, pois seu esvaziamento gástrico lento produz elevação sustentada da glicemia.",
+    "restrição de ingestão oral até normalização espontânea, evitando que a administração de carboidrato eleve demais a glicemia."
+  ], correct: 2 },
+  "farmacia-114": { options: [
+    "confirmar hipoglicemia aguda em tempo real, pois seu resultado acompanha a concentração capilar daquele momento.",
+    "medir a glicemia apenas no instante da coleta, sem refletir exposições ocorridas nos dias ou semanas anteriores.",
+    "avaliar exclusivamente a função renal, usando a glicação da hemoglobina como marcador de filtração glomerular.",
+    "estimar a exposição glicêmica média dos últimos meses, com maior peso das semanas mais recentes.",
+    "substituir toda automonitorização, inclusive em situações de sintomas, ajustes de tratamento ou risco de hipoglicemia."
+  ], correct: 3 },
+  "farmacia-115": { options: [
+    "escolher antimicrobiano de espectro mais amplo no início de todo quadro infeccioso, sem necessidade de reavaliação posterior.",
+    "utilizar sobras de tratamentos anteriores em pessoas com sintomas semelhantes, ajustando a dose conforme a melhora clínica.",
+    "utilizar antimicrobiano quando indicado, com agente, dose, via e duração adequados e reavaliar conforme dados clínicos e microbiológicos.",
+    "iniciar antibiótico diante de toda infecção viral, para reduzir a probabilidade de complicações bacterianas posteriores.",
+    "interromper o tratamento na primeira melhora clínica, pois a permanência do medicamento aumenta a resistência em qualquer esquema."
+  ], correct: 2 },
+  "farmacia-116": { options: [
+    "atribuir ao paciente a responsabilidade exclusiva pela falha terapêutica e reforçar a necessidade de seguir a prescrição recebida.",
+    "identificar barreiras com o paciente e pactuar soluções factíveis, simplificando o regime quando possível e verificando compreensão.",
+    "fornecer orientação padronizada sem investigar dificuldades, pois o conteúdo técnico deve ser igual para todas as pessoas em tratamento.",
+    "ocultar possíveis efeitos adversos, evitando que a expectativa de desconforto diminua a confiança no medicamento prescrito.",
+    "aumentar o número de tomadas diárias, para que a rotina de administração se torne mais visível durante o acompanhamento."
+  ], correct: 1 },
+  "farmacia-117": { options: [
+    "obter a melhor história possível de uso, comparar com as prescrições nas transições e resolver discrepâncias não intencionais.",
+    "suspender todos os medicamentos na admissão, retomando o tratamento apenas depois de uma nova prescrição completa.",
+    "substituir toda prescrição por produtos disponíveis no estoque, ainda que isso altere a indicação e o esquema do paciente.",
+    "copiar uma lista antiga sem confirmação, pois prescrições prévias refletem o tratamento que vinha sendo utilizado no domicílio.",
+    "conferir medicamentos sujeitos a controle especial, deixando os demais itens para avaliação após a alta do paciente."
+  ], correct: 0 },
+  "farmacia-118": { options: [
+    "substituir o diagnóstico e as decisões dos demais profissionais, concentrando no farmacêutico todas as mudanças da farmacoterapia.",
+    "definir problemas, objetivos, intervenções, parâmetros de monitoramento e prazos de reavaliação pactuados com paciente e equipe quando necessário.",
+    "registrar os medicamentos utilizados, deixando objetivos e prazos para definição apenas quando ocorrer falha terapêutica evidente.",
+    "reproduzir a prescrição médica e limitar o acompanhamento à confirmação de que os itens foram dispensados na quantidade indicada.",
+    "ser elaborado sem participação do paciente, evitando que preferências individuais modifiquem os objetivos técnicos do cuidado."
+  ], correct: 1 },
+  "farmacia-119": { options: [
+    "substituir plantas entre si quando possuem nomes populares semelhantes, desde que a indicação terapêutica seja parecida.",
+    "considerar identificação botânica, evidência, qualidade, segurança, interações, cultivo ou obtenção e educação da comunidade.",
+    "dispensar controle de qualidade do material vegetal, pois a origem natural garante composição estável da preparação.",
+    "tratar a designação natural como indicativo de ausência de risco, independentemente da dose e das condições de uso.",
+    "desconsiderar possíveis interações com medicamentos convencionais, pois fitoterápicos atuam apenas de forma complementar."
+  ], correct: 1 },
+  "farmacia-120": { options: [
+    "identidade, teor ou marcadores, umidade, contaminantes e adulterações, conforme a especificação do insumo.",
+    "nome popular atribuído ao material vegetal, pois a denominação usada pela comunidade confirma a espécie fornecida.",
+    "aparência externa da embalagem, desde que o produto tenha sido entregue com lacre e identificação do fornecedor.",
+    "data de emissão da nota fiscal, usando o documento comercial como critério de conformidade da matéria-prima recebida.",
+    "preço de compra do insumo, pois materiais de maior valor tendem a apresentar menor risco de mistura ou adulteração."
+  ], correct: 0 }
+};
+
 function applyManualOptionSet(question) {
-  const override = farmaciaBatchFiveOverrides[question.id] || farmaciaBatchFourOverrides[question.id] || farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = farmaciaBatchSixOverrides[question.id] || farmaciaBatchFiveOverrides[question.id] || farmaciaBatchFourOverrides[question.id] || farmaciaBatchThreeOverrides[question.id] || farmaciaBatchTwoOverrides[question.id] || portuguesBatchThreeOverrides[question.id] || portuguesBatchTwoOverrides[question.id] || portuguesBatchOneOverrides[question.id] || administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];
@@ -2069,7 +2212,8 @@ bank.review = {
   pharmacyBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
   pharmacyBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
   pharmacyBatchFourReviewed: Array.from({ length: 20 }, (_, index) => index + 61),
-  pharmacyBatchFiveReviewed: Array.from({ length: 20 }, (_, index) => index + 81)
+  pharmacyBatchFiveReviewed: Array.from({ length: 20 }, (_, index) => index + 81),
+  pharmacyBatchSixReviewed: Array.from({ length: 20 }, (_, index) => index + 101)
 };
 
 const report = validate(bank);

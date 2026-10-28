@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T22:45:39.011Z",
+  "generatedAt": "2026-10-28T23:22:27.362Z",
   "subjects": [
     {
       "id": "matematica",
@@ -8677,23 +8677,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "desprovido de afinidade."
+          "text": "antagonista de Y, pois dois agonistas que alcançam o mesmo efeito máximo não podem atuar pelo mesmo mecanismo."
         },
         {
           "letter": "B",
-          "text": "mais eficaz e menos potente."
+          "text": "mais eficaz e menos potente, pois o efeito máximo alcançado determina a concentração necessária para resposta."
         },
         {
           "letter": "C",
-          "text": "antagonista de Y."
+          "text": "necessariamente mais seguro, porque menor concentração produzida no organismo implica menor risco de toxicidade."
         },
         {
           "letter": "D",
-          "text": "necessariamente mais seguro."
+          "text": "desprovido de afinidade, pois a menor concentração necessária exclui interação relevante com o receptor."
         },
         {
           "letter": "E",
-          "text": "mais potente, embora não necessariamente mais eficaz."
+          "text": "mais potente, embora não necessariamente mais eficaz, pois ambos alcançam o mesmo efeito máximo."
         }
       ],
       "answer": "E",
@@ -8709,19 +8709,19 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "não sofrer qualquer alteração."
+          "text": "elevar o efeito máximo do agonista, pois o receptor ocupado pelo antagonista passa a responder ao estímulo."
         },
         {
           "letter": "B",
-          "text": "deslocar-se para a esquerda com maior potência."
+          "text": "reduzir o efeito máximo de modo irreversível, ainda que se aumente a concentração de agonista disponível."
         },
         {
           "letter": "C",
-          "text": "desaparecer irreversivelmente."
+          "text": "deslocar-se para a esquerda, indicando que menor concentração de agonista supera o bloqueio competitivo."
         },
         {
           "letter": "D",
-          "text": "apresentar sempre maior efeito máximo."
+          "text": "manter-se inalterada, pois o antagonista competitivo não interfere na ligação do agonista ao receptor."
         },
         {
           "letter": "E",
@@ -8741,23 +8741,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "são necessariamente ineficazes por via oral."
+          "text": "a potência é necessariamente baixa, exigindo doses elevadas para produzir resposta clínica relevante."
         },
         {
           "letter": "B",
-          "text": "pequenas variações de exposição podem separar efeito terapêutico de toxicidade."
+          "text": "pequenas variações de exposição podem separar efeito terapêutico de toxicidade, pela margem reduzida entre esses resultados."
         },
         {
           "letter": "C",
-          "text": "possuem sempre baixa potência."
+          "text": "a administração oral se torna ineficaz, pois a absorção não consegue produzir concentrações terapêuticas estáveis."
         },
         {
           "letter": "D",
-          "text": "dispensam monitoramento."
+          "text": "as interações medicamentosas deixam de ter relevância, pois o efeito depende apenas da dose prescrita."
         },
         {
           "letter": "E",
-          "text": "não produzem interações."
+          "text": "o monitoramento clínico e laboratorial deixa de acrescentar informação para o ajuste individual do tratamento."
         }
       ],
       "answer": "B",
@@ -8773,23 +8773,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "suspensão de todos os medicamentos."
+          "text": "alteração da forma farmacêutica, para que a eliminação passe a ocorrer predominantemente por via hepática."
         },
         {
           "letter": "B",
-          "text": "apenas mudança da cor da apresentação."
+          "text": "aumento automático das doses de ataque e manutenção, para compensar a menor eliminação pela urina."
         },
         {
           "letter": "C",
-          "text": "nenhuma alteração em qualquer hipótese."
+          "text": "manutenção do esquema habitual, pois a depuração renal não interfere na exposição a fármacos inalterados."
         },
         {
           "letter": "D",
-          "text": "aumento automático da dose de ataque e manutenção."
+          "text": "suspensão de todos os medicamentos em uso, até que a função renal retorne ao valor previamente observado."
         },
         {
           "letter": "E",
-          "text": "redução da dose de manutenção ou aumento do intervalo, conforme depuração, objetivo terapêutico e características do fármaco."
+          "text": "redução da dose de manutenção ou aumento do intervalo, conforme depuração e objetivo terapêutico."
         }
       ],
       "answer": "E",
@@ -8805,7 +8805,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "neutralizar o efeito de ambos."
+          "text": "dispensar monitoramento, pois o efeito do anti-inflamatório se restringe à analgesia e não altera a hemostasia."
         },
         {
           "letter": "B",
@@ -8813,15 +8813,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "reduzir obrigatoriamente o risco hemorrágico."
+          "text": "proteger contra lesão gastrointestinal, desde que o anticoagulante seja administrado após a refeição principal."
         },
         {
           "letter": "D",
-          "text": "impedir lesão gastrointestinal."
+          "text": "reduzir o risco hemorrágico por inibir mediadores inflamatórios e aumentar a proteção da mucosa gastrointestinal."
         },
         {
           "letter": "E",
-          "text": "eliminar a necessidade de monitoramento."
+          "text": "neutralizar os efeitos hemostáticos de ambos, pois o anti-inflamatório reduz a ação sistêmica do anticoagulante oral."
         }
       ],
       "answer": "B",
@@ -8837,23 +8837,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "hipoglicemia obrigatória."
+          "text": "hipoglicemia relacionada à supressão direta da produção hepática de glicose durante o tratamento inicial."
         },
         {
           "letter": "B",
-          "text": "hipocalemia intensa como regra."
+          "text": "hipocalemia intensa decorrente de aumento da excreção renal de potássio induzido pelo medicamento."
         },
         {
           "letter": "C",
-          "text": "elevação do potássio e alteração da função renal em pacientes suscetíveis."
+          "text": "elevação do potássio e alteração da função renal em pacientes com fatores de risco associados."
         },
         {
           "letter": "D",
-          "text": "glaucoma agudo previsível."
+          "text": "supressão medular progressiva provocada pela inibição da formação de angiotensina II nos tecidos."
         },
         {
           "letter": "E",
-          "text": "supressão medular universal."
+          "text": "glaucoma agudo por aumento da produção de humor aquoso no início da inibição da enzima conversora."
         }
       ],
       "answer": "C",
@@ -8869,23 +8869,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "hiperpotassemia como efeito predominante."
+          "text": "hiperpotassemia como efeito predominante, acompanhada de redução da excreção renal de sódio e água."
         },
         {
           "letter": "B",
-          "text": "broncodilatação direta."
+          "text": "redução irreversível da secreção de insulina, independentemente da dose e do estado metabólico do paciente."
         },
         {
           "letter": "C",
-          "text": "supressão irreversível de insulina em todos os usuários."
+          "text": "broncodilatação direta, devido ao bloqueio da reabsorção de sódio no túbulo distal do néfron."
         },
         {
           "letter": "D",
-          "text": "hiponatremia, hipocalemia e aumento do ácido úrico em pacientes suscetíveis."
+          "text": "hiponatremia, hipocalemia e aumento do ácido úrico, além de alteração metabólica em pacientes suscetíveis."
         },
         {
           "letter": "E",
-          "text": "hipercalemia obrigatória."
+          "text": "hipercalemia persistente, devido à retenção de potássio que acompanha a ação diurética tiazídica."
         }
       ],
       "answer": "D",
@@ -8901,23 +8901,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "hipoglicemia grave."
+          "text": "agranulocitose relacionada à redução da produção de neutrófilos durante a terapia vasodilatadora."
         },
         {
           "letter": "B",
-          "text": "broncoespasmo por bloqueio beta-2."
+          "text": "broncoespasmo por bloqueio de receptores beta-2 presentes na musculatura lisa das vias aéreas."
         },
         {
           "letter": "C",
-          "text": "tosse por aumento de bradicinina."
+          "text": "hipoglicemia grave, causada pelo aumento da secreção pancreática de insulina após a vasodilatação."
         },
         {
           "letter": "D",
-          "text": "agranulocitose inevitável."
+          "text": "tosse associada ao aumento de bradicinina, decorrente da inibição da enzima conversora de angiotensina."
         },
         {
           "letter": "E",
-          "text": "edema periférico relacionado à vasodilatação arteriolar."
+          "text": "edema periférico relacionado à vasodilatação arteriolar, em especial em membros inferiores durante o tratamento."
         }
       ],
       "answer": "E",
@@ -8933,23 +8933,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "losartana."
+          "text": "losartana, pelo bloqueio direto de receptores beta-2 bronquiais responsáveis pela manutenção da broncodilatação."
         },
         {
           "letter": "B",
-          "text": "betabloqueador não seletivo, pelo risco de broncoconstrição mediada por bloqueio beta-2."
+          "text": "betabloqueador não seletivo, pelo risco de broncoconstrição mediada por bloqueio beta-2 em pessoas suscetíveis."
         },
         {
           "letter": "C",
-          "text": "enalapril exclusivamente por bloqueio beta-2."
+          "text": "enalapril, exclusivamente por bloqueio beta-2, mecanismo que reduz a resposta aos broncodilatadores inalatórios."
         },
         {
           "letter": "D",
-          "text": "anlodipino."
+          "text": "anlodipino, pois o bloqueio de canais de cálcio provoca aumento sustentado da resistência das vias aéreas."
         },
         {
           "letter": "E",
-          "text": "hidroclorotiazida."
+          "text": "hidroclorotiazida, devido ao bloqueio competitivo da ação da adrenalina nos receptores beta-2 bronquiais."
         }
       ],
       "answer": "B",
@@ -8965,11 +8965,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "aumentar a absorção intestinal de glicose."
+          "text": "aumentar a absorção intestinal de glicose, reduzindo a disponibilidade de carboidratos para o metabolismo periférico."
         },
         {
           "letter": "B",
-          "text": "bloquear de forma irreversível os receptores de insulina."
+          "text": "bloquear de forma irreversível os receptores de insulina, reduzindo a resposta dos tecidos à glicose circulante."
         },
         {
           "letter": "C",
@@ -8977,11 +8977,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "estimular a secreção basal de insulina e reduzir a produção hepática de glicose."
+          "text": "estimular diretamente a secreção basal de insulina, independentemente da glicemia e da função residual das células beta."
         },
         {
           "letter": "E",
-          "text": "reduzir a reserva funcional das células beta pancreáticas."
+          "text": "reduzir a reserva funcional das células beta pancreáticas, limitando a quantidade de insulina disponível após as refeições."
         }
       ],
       "answer": "C",
@@ -8997,7 +8997,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "síndrome de abstinência opioide."
+          "text": "hiperpotassemia por antagonismo competitivo da aldosterona nos túbulos distais do néfron."
         },
         {
           "letter": "B",
@@ -9005,15 +9005,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "broncodilatação excessiva."
+          "text": "síndrome de abstinência associada à redução da estimulação de receptores opioides após o início do tratamento."
         },
         {
           "letter": "D",
-          "text": "hiperpotassemia por antagonismo da aldosterona."
+          "text": "broncodilatação excessiva por estimulação de receptores beta-adrenérgicos nas vias aéreas superiores."
         },
         {
           "letter": "E",
-          "text": "tosse seca."
+          "text": "tosse seca decorrente do acúmulo de bradicinina durante a inibição da enzima conversora de angiotensina."
         }
       ],
       "answer": "B",
@@ -9029,7 +9029,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "misturar qualquer insulina sem verificar compatibilidade."
+          "text": "misturar as apresentações disponíveis, desde que os frascos tenham concentrações semelhantes e o volume seja conferido."
         },
         {
           "letter": "B",
@@ -9037,15 +9037,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "armazenar canetas de pacientes diferentes juntas sem identificação."
+          "text": "registrar unidades pela abreviação U, porque a padronização reduz a possibilidade de erro de interpretação na prescrição."
         },
         {
           "letter": "D",
-          "text": "escrever “U” para unidades em qualquer situação."
+          "text": "armazenar canetas de pessoas diferentes no mesmo compartimento, desde que cada paciente conheça o horário de aplicação."
         },
         {
           "letter": "E",
-          "text": "reutilizar agulhas entre pacientes."
+          "text": "reutilizar agulhas entre pacientes após limpeza externa, pois a caneta individual impede a contaminação cruzada."
         }
       ],
       "answer": "B",
@@ -9061,11 +9061,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "dose adicional de insulina."
+          "text": "dose adicional de insulina de ação rápida, para corrigir a variação glicêmica e impedir nova oscilação pós-prandial."
         },
         {
           "letter": "B",
-          "text": "apenas água."
+          "text": "alimento predominantemente rico em gordura, pois seu esvaziamento gástrico lento produz elevação sustentada da glicemia."
         },
         {
           "letter": "C",
@@ -9073,11 +9073,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "alimento exclusivamente rico em gordura."
+          "text": "líquidos sem açúcar e observação clínica, com nova medida de glicemia apenas após desaparecimento completo dos sintomas."
         },
         {
           "letter": "E",
-          "text": "jejum até normalização espontânea."
+          "text": "restrição de ingestão oral até normalização espontânea, evitando que a administração de carboidrato eleve demais a glicemia."
         }
       ],
       "answer": "C",
@@ -9093,15 +9093,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "diagnosticar hipoglicemia aguda em tempo real."
+          "text": "medir a glicemia apenas no instante da coleta, sem refletir exposições ocorridas nos dias ou semanas anteriores."
         },
         {
           "letter": "B",
-          "text": "medir glicemia apenas no instante da coleta."
+          "text": "substituir toda automonitorização, inclusive em situações de sintomas, ajustes de tratamento ou risco de hipoglicemia."
         },
         {
           "letter": "C",
-          "text": "avaliar exclusivamente função renal."
+          "text": "avaliar exclusivamente a função renal, usando a glicação da hemoglobina como marcador de filtração glomerular."
         },
         {
           "letter": "D",
@@ -9109,7 +9109,7 @@ export const questionBank = {
         },
         {
           "letter": "E",
-          "text": "substituir toda automonitorização."
+          "text": "confirmar hipoglicemia aguda em tempo real, pois seu resultado acompanha a concentração capilar daquele momento."
         }
       ],
       "answer": "D",
@@ -9125,23 +9125,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "escolher sempre o antimicrobiano de espectro mais amplo."
+          "text": "escolher antimicrobiano de espectro mais amplo no início de todo quadro infeccioso, sem necessidade de reavaliação posterior."
         },
         {
           "letter": "B",
-          "text": "compartilhar sobras com familiares."
+          "text": "utilizar sobras de tratamentos anteriores em pessoas com sintomas semelhantes, ajustando a dose conforme a melhora clínica."
         },
         {
           "letter": "C",
-          "text": "utilizar antimicrobiano somente quando indicado, com agente, dose, via e duração adequados e reavaliar conforme dados clínicos e microbiológicos."
+          "text": "utilizar antimicrobiano quando indicado, com agente, dose, via e duração adequados e reavaliar conforme dados clínicos e microbiológicos."
         },
         {
           "letter": "D",
-          "text": "usar antibiótico em toda infecção viral."
+          "text": "iniciar antibiótico diante de toda infecção viral, para reduzir a probabilidade de complicações bacterianas posteriores."
         },
         {
           "letter": "E",
-          "text": "interromper tratamento assim que houver primeira melhora, em qualquer esquema."
+          "text": "interromper o tratamento na primeira melhora clínica, pois a permanência do medicamento aumenta a resistência em qualquer esquema."
         }
       ],
       "answer": "C",
@@ -9157,7 +9157,7 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "culpar o paciente por qualquer falha."
+          "text": "aumentar o número de tomadas diárias, para que a rotina de administração se torne mais visível durante o acompanhamento."
         },
         {
           "letter": "B",
@@ -9165,15 +9165,15 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "fornecer orientação padronizada sem perguntar dificuldades."
+          "text": "fornecer orientação padronizada sem investigar dificuldades, pois o conteúdo técnico deve ser igual para todas as pessoas em tratamento."
         },
         {
           "letter": "D",
-          "text": "ocultar possíveis efeitos adversos."
+          "text": "atribuir ao paciente a responsabilidade exclusiva pela falha terapêutica e reforçar a necessidade de seguir a prescrição recebida."
         },
         {
           "letter": "E",
-          "text": "aumentar a complexidade do regime."
+          "text": "ocultar possíveis efeitos adversos, evitando que a expectativa de desconforto diminua a confiança no medicamento prescrito."
         }
       ],
       "answer": "B",
@@ -9193,19 +9193,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "suspender todos os medicamentos na admissão."
+          "text": "conferir medicamentos sujeitos a controle especial, deixando os demais itens para avaliação após a alta do paciente."
         },
         {
           "letter": "C",
-          "text": "substituir toda prescrição por medicamentos disponíveis no estoque."
+          "text": "substituir toda prescrição por produtos disponíveis no estoque, ainda que isso altere a indicação e o esquema do paciente."
         },
         {
           "letter": "D",
-          "text": "copiar uma lista antiga sem confirmar com o paciente."
+          "text": "copiar uma lista antiga sem confirmação, pois prescrições prévias refletem o tratamento que vinha sendo utilizado no domicílio."
         },
         {
           "letter": "E",
-          "text": "conferir apenas medicamentos sujeitos a controle especial."
+          "text": "suspender todos os medicamentos na admissão, retomando o tratamento apenas depois de uma nova prescrição completa."
         }
       ],
       "answer": "A",
@@ -9221,23 +9221,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "substituir o diagnóstico e as decisões dos demais profissionais, concentrando no farmacêutico todas as mudanças da farmacoterapia"
+          "text": "substituir o diagnóstico e as decisões dos demais profissionais, concentrando no farmacêutico todas as mudanças da farmacoterapia."
         },
         {
           "letter": "B",
-          "text": "definir problemas, objetivos, intervenções, parâmetros de monitoramento e prazos de reavaliação pactuados com paciente e equipe quando necessário"
+          "text": "definir problemas, objetivos, intervenções, parâmetros de monitoramento e prazos de reavaliação pactuados com paciente e equipe quando necessário."
         },
         {
           "letter": "C",
-          "text": "registrar exclusivamente os medicamentos utilizados, deixando objetivos e prazos para definição apenas quando ocorrer falha terapêutica"
+          "text": "reproduzir a prescrição médica e limitar o acompanhamento à confirmação de que os itens foram dispensados na quantidade indicada."
         },
         {
           "letter": "D",
-          "text": "reproduzir a prescrição médica e limitar o acompanhamento à confirmação de que todos os itens foram dispensados na quantidade indicada"
+          "text": "registrar os medicamentos utilizados, deixando objetivos e prazos para definição apenas quando ocorrer falha terapêutica evidente."
         },
         {
           "letter": "E",
-          "text": "ser elaborado pelo profissional sem participação do paciente, evitando que preferências individuais modifiquem os objetivos técnicos do cuidado"
+          "text": "ser elaborado sem participação do paciente, evitando que preferências individuais modifiquem os objetivos técnicos do cuidado."
         }
       ],
       "answer": "B",
@@ -9253,23 +9253,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "toda planta pode ser substituída por outra de nome popular semelhante."
+          "text": "substituir plantas entre si quando possuem nomes populares semelhantes, desde que a indicação terapêutica seja parecida."
         },
         {
           "letter": "B",
-          "text": "projetos devem considerar identificação botânica, evidência, qualidade, segurança, interações, cultivo ou obtenção e educação da comunidade."
+          "text": "considerar identificação botânica, evidência, qualidade, segurança, interações, cultivo ou obtenção e educação da comunidade."
         },
         {
           "letter": "C",
-          "text": "controle de qualidade é desnecessário para material vegetal."
+          "text": "desconsiderar possíveis interações com medicamentos convencionais, pois fitoterápicos atuam apenas de forma complementar."
         },
         {
           "letter": "D",
-          "text": "“Natural” significa ausência de risco."
+          "text": "dispensar controle de qualidade do material vegetal, pois a origem natural garante composição estável da preparação."
         },
         {
           "letter": "E",
-          "text": "fitoterápicos não interagem com medicamentos."
+          "text": "tratar a designação natural como indicativo de ausência de risco, independentemente da dose e das condições de uso."
         }
       ],
       "answer": "B",
@@ -9285,23 +9285,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "identidade, teor ou marcadores, umidade, matérias estranhas, contaminantes e adulterações conforme a natureza e a especificação do insumo."
+          "text": "identidade, teor ou marcadores, umidade, contaminantes e adulterações, conforme a especificação do insumo."
         },
         {
           "letter": "B",
-          "text": "exclusivamente o nome popular."
+          "text": "nome popular atribuído ao material vegetal, pois a denominação usada pela comunidade confirma a espécie fornecida."
         },
         {
           "letter": "C",
-          "text": "apenas a aparência externa da embalagem."
+          "text": "aparência externa da embalagem, desde que o produto tenha sido entregue com lacre e identificação do fornecedor."
         },
         {
           "letter": "D",
-          "text": "apenas a data de emissão da nota fiscal."
+          "text": "preço de compra do insumo, pois materiais de maior valor tendem a apresentar menor risco de mistura ou adulteração."
         },
         {
           "letter": "E",
-          "text": "somente o preço de compra."
+          "text": "data de emissão da nota fiscal, usando o documento comercial como critério de conformidade da matéria-prima recebida."
         }
       ],
       "answer": "A",
@@ -10834,6 +10834,28 @@ export const questionBank = {
       98,
       99,
       100
+    ],
+    "pharmacyBatchSixReviewed": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120
     ]
   }
 };

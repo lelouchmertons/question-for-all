@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T08:09:22.112Z",
+  "generatedAt": "2026-10-28T08:16:52.027Z",
   "subjects": [
     {
       "id": "matematica",
@@ -2917,23 +2917,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "funções de confiança e cargos em comissão dependem de concurso específico, seguido de livre designação pela autoridade competente"
+          "text": "cargos em comissão são ocupados preferencialmente por pessoas sem vínculo efetivo, vedada reserva a servidores de carreira."
         },
         {
           "letter": "B",
-          "text": "cargos em comissão são sempre ocupados por pessoas sem vínculo efetivo, vedada a reserva de percentual a servidores de carreira"
+          "text": "funções de confiança e cargos em comissão podem abranger atividades técnicas permanentes, mediante motivação da autoridade competente."
         },
         {
           "letter": "C",
-          "text": "funções de confiança podem ser atribuídas a qualquer particular, enquanto cargos em comissão são exclusivos de servidores efetivos"
+          "text": "funções de confiança e cargos em comissão dependem de concurso específico, seguido de livre designação pela autoridade competente."
         },
         {
           "letter": "D",
-          "text": "funções de confiança são exclusivas de servidores efetivos, e ambas as figuras se destinam a direção, chefia e assessoramento"
+          "text": "funções de confiança são exclusivas de servidores efetivos, e ambas as figuras se destinam a direção, chefia e assessoramento."
         },
         {
           "letter": "E",
-          "text": "funções de confiança e cargos em comissão podem abranger atividades técnicas permanentes, desde que a autoridade motive a escolha"
+          "text": "funções de confiança podem ser atribuídas a particulares, enquanto cargos em comissão são exclusivos de servidores efetivos."
         }
       ],
       "answer": "D",
@@ -2949,23 +2949,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Executivo e Ministério Público."
+          "text": "Prefeitura, Câmara e Tribunal de Contas municipal, com competências próprias para deliberar e executar atos locais."
         },
         {
           "letter": "B",
-          "text": "Executivo, Judiciário e Ministério Público."
+          "text": "Legislativo, Executivo e Judiciário, com atribuições próprias previstas para a estrutura institucional do Município."
         },
         {
           "letter": "C",
-          "text": "Legislativo, Executivo e Judiciário."
+          "text": "Executivo e Ministério Público, responsáveis pelas funções políticas e administrativas previstas na Lei Orgânica municipal."
         },
         {
           "letter": "D",
-          "text": "Legislativo e Executivo."
+          "text": "Legislativo e Executivo, independentes e harmônicos entre si, conforme a Lei Orgânica do Município."
         },
         {
           "letter": "E",
-          "text": "Prefeitura, Câmara e Tribunal de Contas municipal."
+          "text": "Executivo, Judiciário e Ministério Público, organizados como Poderes locais independentes e harmônicos entre si."
         }
       ],
       "answer": "D",
@@ -2981,23 +2981,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "13 vereadores."
+          "text": "8 vereadores, com distribuição de mandatos definida pela Justiça Eleitoral para a representação local."
         },
         {
           "letter": "B",
-          "text": "7 vereadores."
+          "text": "11 vereadores, quantidade prevista para a composição ordinária da Câmara Municipal em cada legislatura."
         },
         {
           "letter": "C",
-          "text": "9 vereadores."
+          "text": "9 vereadores, conforme a redação vigente do art. 13 da Lei Orgânica de Massaranduba."
         },
         {
           "letter": "D",
-          "text": "11 vereadores."
+          "text": "7 vereadores, número estabelecido para a representação legislativa municipal na redação vigente da Lei Orgânica."
         },
         {
           "letter": "E",
-          "text": "8 vereadores."
+          "text": "13 vereadores, considerando o limite demográfico adotado pela Lei Orgânica para a composição da Câmara Municipal."
         }
       ],
       "answer": "C",
@@ -3017,19 +3017,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "maioria absoluta, em dois turnos consecutivos no mesmo dia."
+          "text": "unanimidade dos vereadores presentes, seguida de sanção do prefeito e publicação do texto aprovado em diário oficial."
         },
         {
           "letter": "C",
-          "text": "unanimidade, com sanção do prefeito."
+          "text": "maioria absoluta dos membros da Câmara, em dois turnos consecutivos realizados na mesma sessão legislativa."
         },
         {
           "letter": "D",
-          "text": "voto favorável de três quintos, em três turnos."
+          "text": "maioria simples dos vereadores presentes, em turno único convocado especificamente para votar a proposta de emenda."
         },
         {
           "letter": "E",
-          "text": "maioria simples, em turno único."
+          "text": "voto favorável de três quintos dos membros da Câmara, em três turnos de discussão e deliberação legislativa."
         }
       ],
       "answer": "A",
@@ -3045,23 +3045,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "3% dos moradores maiores de 16 anos."
+          "text": "3% dos moradores maiores de 16 anos, identificados conforme cadastro municipal de participação popular e eleitoral."
         },
         {
           "letter": "B",
-          "text": "5% do eleitorado do Município, devidamente identificado na forma da Lei Orgânica."
+          "text": "5% do eleitorado do Município, devidamente identificado na forma da Lei Orgânica, com apresentação do projeto à Câmara Municipal."
         },
         {
           "letter": "C",
-          "text": "1% da população total."
+          "text": "1% da população total do Município, incluídos residentes sem inscrição eleitoral e menores de idade interessados."
         },
         {
           "letter": "D",
-          "text": "2% dos servidores municipais."
+          "text": "2% dos servidores municipais em exercício, representados por entidade sindical ou associação funcional regularmente constituída."
         },
         {
           "letter": "E",
-          "text": "10% dos vereadores."
+          "text": "10% dos vereadores em exercício, mediante subscrição formal acompanhada de justificativa sobre a matéria legislativa."
         }
       ],
       "answer": "B",
@@ -3077,23 +3077,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "toda pessoa contratada por empresa terceirizada."
+          "text": "o ocupante de cargo em comissão, por exercer função de confiança e livre nomeação no âmbito administrativo."
         },
         {
           "letter": "B",
-          "text": "a pessoa legalmente investida em cargo público."
+          "text": "a pessoa legalmente investida em cargo público, após nomeação e posse segundo as exigências previstas no Estatuto municipal."
         },
         {
           "letter": "C",
-          "text": "qualquer pessoa que preste serviço eventual ao Município."
+          "text": "a pessoa designada para serviço eventual ao Município, vinculada a contratação temporária ou a parceria administrativa específica."
         },
         {
           "letter": "D",
-          "text": "exclusivamente o agente político eleito."
+          "text": "exclusivamente o agente político eleito para mandato municipal, durante o período de exercício de suas atribuições públicas."
         },
         {
           "letter": "E",
-          "text": "somente o ocupante de cargo em comissão."
+          "text": "toda pessoa contratada por empresa terceirizada para prestar serviço contínuo ou eventual em repartição municipal."
         }
       ],
       "answer": "B",
@@ -3109,23 +3109,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Nomeação."
+          "text": "reversão, correspondente ao retorno à atividade nas hipóteses estatutariamente previstas para servidor aposentado."
         },
         {
           "letter": "B",
-          "text": "Readaptação."
+          "text": "recondução, associada ao retorno do servidor estável nas situações previstas pela norma estatutária municipal."
         },
         {
           "letter": "C",
-          "text": "Transferência."
+          "text": "transferência, como forma de provimento enumerada no art. 13 do Estatuto dos Servidores de Massaranduba."
         },
         {
           "letter": "D",
-          "text": "Reversão."
+          "text": "readaptação, quando há investidura em cargo compatível com limitação física ou mental verificada em inspeção médica."
         },
         {
           "letter": "E",
-          "text": "Recondução."
+          "text": "nomeação, como ato inicial de provimento em cargo público previsto na relação estatutária aplicável aos servidores."
         }
       ],
       "answer": "C",
@@ -3141,23 +3141,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a posse."
+          "text": "a posse, momento em que o nomeado aceita formalmente as atribuições, os deveres e as responsabilidades do cargo público."
         },
         {
           "letter": "B",
-          "text": "o primeiro pagamento."
+          "text": "a homologação do resultado, ato que encerra o concurso e autoriza posteriormente as nomeações dos candidatos aprovados."
         },
         {
           "letter": "C",
-          "text": "o término do estágio probatório."
+          "text": "a inscrição no concurso, mediante apresentação de documentos e confirmação de participação no processo seletivo público."
         },
         {
           "letter": "D",
-          "text": "a inscrição no concurso."
+          "text": "o primeiro pagamento, quando o servidor passa a integrar a folha financeira do Município e recebe a remuneração inicial."
         },
         {
           "letter": "E",
-          "text": "a homologação do resultado."
+          "text": "o término do estágio probatório, após confirmação da aptidão funcional e avaliação do desempenho no cargo ocupado."
         }
       ],
       "answer": "A",
@@ -3173,11 +3173,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "45 dias da publicação, automaticamente prorrogados."
+          "text": "5 dias da homologação do concurso, sem prorrogação, para assegurar que a nomeação ocorra no início do exercício financeiro."
         },
         {
           "letter": "B",
-          "text": "30 dias da nomeação, sem prorrogação."
+          "text": "10 dias da convocação, prorrogáveis por 5 dias, mediante simples comunicação do candidato à unidade de recursos humanos."
         },
         {
           "letter": "C",
@@ -3185,11 +3185,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "5 dias da homologação, sem prorrogação."
+          "text": "45 dias da publicação, automaticamente prorrogados por igual período quando o nomeado ainda não tiver apresentado documentos completos."
         },
         {
           "letter": "E",
-          "text": "10 dias da convocação, prorrogáveis por 5 dias."
+          "text": "30 dias da nomeação, sem prorrogação, salvo decisão administrativa excepcional fundamentada pela autoridade competente."
         }
       ],
       "answer": "C",
@@ -3205,23 +3205,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "2 dias."
+          "text": "10 dias da convocação, prorrogáveis por igual período quando o servidor apresentar justificativa aceita pela chefia imediata."
         },
         {
           "letter": "B",
-          "text": "5 dias."
+          "text": "5 dias da posse, contados da investidura formal no cargo, salvo situação de exercício em outra localidade prevista no Estatuto."
         },
         {
           "letter": "C",
-          "text": "15 dias."
+          "text": "15 dias da posse, prazo aplicável à apresentação inicial do servidor e à definição da unidade de lotação correspondente."
         },
         {
           "letter": "D",
-          "text": "3 dias."
+          "text": "2 dias da posse, contados em dias úteis, para que o servidor compareça à unidade e inicie suas atividades funcionais."
         },
         {
           "letter": "E",
-          "text": "10 dias."
+          "text": "3 dias da nomeação, antes da posse, para que o candidato indique à Administração a intenção de entrar em exercício."
         }
       ],
       "answer": "B",
@@ -3241,19 +3241,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o retorno do aposentado por invalidez à atividade."
+          "text": "a reinvestidura do servidor no cargo anteriormente ocupado, depois de invalidada sua demissão por decisão administrativa ou judicial."
         },
         {
           "letter": "C",
-          "text": "a reinvestidura após invalidação da demissão."
+          "text": "o retorno do aposentado por invalidez à atividade, após declaração de que não subsistem os motivos da aposentadoria concedida."
         },
         {
           "letter": "D",
-          "text": "o retorno do servidor estável ao cargo anteriormente ocupado."
+          "text": "a promoção automática do servidor para cargo de maior vencimento, após reconhecimento de limitação que impeça atribuições anteriores."
         },
         {
           "letter": "E",
-          "text": "a promoção automática para cargo de maior vencimento."
+          "text": "o retorno do servidor estável ao cargo anteriormente ocupado, em razão de inabilitação em estágio probatório de outro cargo."
         }
       ],
       "answer": "A",
@@ -3273,19 +3273,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o retorno ao cargo anterior por reprovação em estágio probatório de outro cargo."
+          "text": "a disponibilidade remunerada decorrente da extinção do cargo, com aproveitamento posterior em função compatível na administração."
         },
         {
           "letter": "C",
-          "text": "a disponibilidade remunerada por extinção do cargo."
+          "text": "o retorno ao cargo anterior por reprovação em estágio probatório de outro cargo, assegurada ao servidor estável a recondução."
         },
         {
           "letter": "D",
-          "text": "o deslocamento do servidor entre repartições."
+          "text": "o deslocamento do servidor entre repartições, com alteração de lotação e preservação das atribuições originalmente previstas."
         },
         {
           "letter": "E",
-          "text": "a volta do servidor demitido após invalidação da demissão."
+          "text": "a volta do servidor demitido após invalidação da demissão, com ressarcimento das vantagens devidas no período afastado."
         }
       ],
       "answer": "A",
@@ -3301,23 +3301,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "aquisição de nova escolaridade."
+          "text": "licença para interesse particular, com possibilidade de reassunção do cargo após o término do período autorizado pela chefia."
         },
         {
           "letter": "B",
-          "text": "licença para interesse particular."
+          "text": "aposentadoria voluntária do servidor, seguida de retorno à atividade quando houver interesse da Administração e vaga disponível."
         },
         {
           "letter": "C",
-          "text": "promoção por merecimento."
+          "text": "promoção por merecimento, seguida de retorno à classe anterior quando houver necessidade de reorganização do quadro funcional."
         },
         {
           "letter": "D",
-          "text": "inabilitação em estágio probatório relativo a outro cargo."
+          "text": "inabilitação em estágio probatório relativo a outro cargo, assegurado retorno do servidor estável à situação funcional anterior."
         },
         {
           "letter": "E",
-          "text": "aposentadoria voluntária."
+          "text": "aquisição de nova escolaridade reconhecida pela Administração, com retorno do servidor ao cargo anteriormente ocupado na carreira."
         }
       ],
       "answer": "D",
@@ -3333,23 +3333,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "suspensão."
+          "text": "advertência verbal ou escrita, utilizada para faltas de menor gravidade definidas no regime disciplinar estatutário."
         },
         {
           "letter": "B",
-          "text": "destituição de função de confiança."
+          "text": "suspensão, aplicada nas hipóteses previstas para infrações de gravidade superior à advertência e inferior à demissão."
         },
         {
           "letter": "C",
-          "text": "advertência verbal ou escrita."
+          "text": "demissão, aplicada nas situações mais graves previstas no Estatuto dos Servidores Públicos Municipais de Massaranduba."
         },
         {
           "letter": "D",
-          "text": "demissão."
+          "text": "destituição de função de confiança, aplicável ao servidor que deixa de atender aos deveres ligados à função exercida."
         },
         {
           "letter": "E",
-          "text": "redução definitiva de vencimento como penalidade autônoma."
+          "text": "redução definitiva de vencimento como penalidade autônoma, aplicada após processo administrativo disciplinar regularmente instaurado."
         }
       ],
       "answer": "E",
@@ -3365,23 +3365,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "15 dias."
+          "text": "30 dias, período máximo de suspensão estabelecido para as infrações que exigem afastamento temporário do exercício funcional."
         },
         {
           "letter": "B",
-          "text": "20 dias."
+          "text": "20 dias, prazo máximo de afastamento disciplinar adotado para servidores do quadro efetivo municipal."
         },
         {
           "letter": "C",
-          "text": "45 dias."
+          "text": "15 dias, limite aplicável à suspensão disciplinar ordinária prevista para infrações de menor gravidade no Estatuto municipal."
         },
         {
           "letter": "D",
-          "text": "30 dias."
+          "text": "45 dias, limite definido para suspensão aplicada após reincidência em falta funcional que não imponha demissão do servidor."
         },
         {
           "letter": "E",
-          "text": "60 dias."
+          "text": "60 dias, limite máximo de suspensão disciplinar nas hipóteses previstas no Estatuto de Massaranduba."
         }
       ],
       "answer": "E",
@@ -3401,19 +3401,19 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "apenas as contratações terceirizadas do Município."
+          "text": "o regime eleitoral municipal, disciplinando candidaturas, propaganda, votação e apuração dos resultados das eleições locais."
         },
         {
           "letter": "C",
-          "text": "exclusivamente o regime disciplinar dos vereadores."
+          "text": "as contratações terceirizadas do Município, abrangendo seleção de prestadores, fiscalização contratual e substituição de postos de trabalho."
         },
         {
           "letter": "D",
-          "text": "o regime eleitoral municipal."
+          "text": "o regime disciplinar dos vereadores, incluindo deveres parlamentares, sanções por quebra de decoro e regras de funcionamento da Câmara."
         },
         {
           "letter": "E",
-          "text": "a criação do Poder Judiciário municipal."
+          "text": "a criação do Poder Judiciário municipal, com definição de varas, competências e formas de provimento dos respectivos cargos."
         }
       ],
       "answer": "A",
@@ -3429,23 +3429,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "julgar crimes praticados por servidores."
+          "text": "nomear livremente servidores para cargos efetivos, observando necessidade administrativa e disponibilidade de vagas no quadro municipal."
         },
         {
           "letter": "B",
-          "text": "substituir integralmente o setor de recursos humanos."
+          "text": "elaborar a Lei Orgânica do Município, propondo alterações na estrutura dos Poderes e na organização político-administrativa local."
         },
         {
           "letter": "C",
-          "text": "nomear livremente servidores para cargos efetivos."
+          "text": "julgar crimes praticados por servidores, com competência para aplicar penas administrativas e encaminhar decisões ao Poder Judiciário."
         },
         {
           "letter": "D",
-          "text": "desenvolver e acompanhar a ascensão profissional dos servidores efetivos do Poder Executivo municipal."
+          "text": "desenvolver e acompanhar a ascensão profissional dos servidores efetivos do Poder Executivo municipal, conforme as regras do plano de carreira."
         },
         {
           "letter": "E",
-          "text": "elaborar a Lei Orgânica do Município."
+          "text": "substituir integralmente o setor de recursos humanos na gestão de folha, registros funcionais e rotinas de admissão de pessoal."
         }
       ],
       "answer": "D",
@@ -3461,11 +3461,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "sem relação com requisitos ou atribuições dos cargos."
+          "text": "sem relação com requisitos ou atribuições dos cargos, ficando a distribuição funcional sujeita à decisão de cada chefia imediata."
         },
         {
           "letter": "B",
-          "text": "exclusivamente por decisões verbais de cada chefia."
+          "text": "exclusivamente por decisões verbais de cada chefia, conforme a necessidade de serviço identificada em cada unidade administrativa."
         },
         {
           "letter": "C",
@@ -3473,11 +3473,11 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "como cargos políticos eletivos."
+          "text": "como cargos políticos eletivos, com mandatos definidos conforme a estrutura administrativa prevista para o Poder Executivo municipal."
         },
         {
           "letter": "E",
-          "text": "sem denominação ou referência remuneratória definida."
+          "text": "sem denominação ou referência remuneratória definida, para permitir adequação anual conforme a disponibilidade financeira do Município."
         }
       ],
       "answer": "C",
@@ -3493,23 +3493,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Organização do quadro efetivo e do desenvolvimento funcional de servidores do Poder Executivo de Massaranduba."
+          "text": "organização do quadro efetivo e do desenvolvimento funcional de servidores do Poder Executivo de Massaranduba."
         },
         {
           "letter": "B",
-          "text": "Estruturação da carreira de magistrados estaduais."
+          "text": "organização dos partidos políticos, com definição de regras sobre filiação, prestação de contas e participação eleitoral no Município."
         },
         {
           "letter": "C",
-          "text": "Regulamentação de associações privadas."
+          "text": "definição das penas aplicáveis a crimes federais, com estabelecimento de tipos penais e procedimentos processuais correspondentes."
         },
         {
           "letter": "D",
-          "text": "Organização dos partidos políticos."
+          "text": "estruturação da carreira de magistrados estaduais, com regras de promoção, vencimentos e garantias funcionais no âmbito do Judiciário."
         },
         {
           "letter": "E",
-          "text": "Definição das penas aplicáveis a crimes federais."
+          "text": "regulamentação de associações privadas, incluindo requisitos de constituição, funcionamento e fiscalização pelo Poder Público municipal."
         }
       ],
       "answer": "A",
@@ -3525,23 +3525,23 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "a LC nº 190/2023 substituiu integralmente o Estatuto e passou a reunir também deveres, proibições e sanções disciplinares"
+          "text": "a LC nº 190/2023 corresponde à Lei Orgânica municipal, cabendo à LC nº 12/2005 organizar os Poderes Executivo e Legislativo."
         },
         {
           "letter": "B",
-          "text": "as duas leis possuem o mesmo objeto e diferem apenas quanto aos valores remuneratórios atualizados em seus respectivos anexos"
+          "text": "a LC nº 12/2005 trata somente de remuneração, enquanto a LC nº 190/2023 disciplina provimento e responsabilidade funcional."
         },
         {
           "letter": "C",
-          "text": "a LC nº 12/2005 estabelece o regime estatutário, e a LC nº 190/2023 organiza cargos, carreira e remuneração do quadro efetivo"
+          "text": "a LC nº 12/2005 estabelece o regime estatutário, e a LC nº 190/2023 organiza cargos, carreira e remuneração do quadro efetivo."
         },
         {
           "letter": "D",
-          "text": "a LC nº 12/2005 trata somente de remuneração, enquanto a LC nº 190/2023 disciplina provimento e responsabilidade funcional"
+          "text": "a LC nº 190/2023 substituiu integralmente o Estatuto e passou a reunir deveres, proibições e sanções disciplinares dos servidores."
         },
         {
           "letter": "E",
-          "text": "a LC nº 190/2023 corresponde à Lei Orgânica municipal, cabendo à LC nº 12/2005 organizar os Poderes Executivo e Legislativo"
+          "text": "as duas leis possuem o mesmo objeto e diferem apenas quanto aos valores remuneratórios atualizados em seus respectivos anexos."
         }
       ],
       "answer": "C",

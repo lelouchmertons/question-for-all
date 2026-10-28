@@ -1129,8 +1129,151 @@ const administracaoBatchOneOverrides = {
   }
 };
 
+const administracaoBatchTwoOverrides = {
+  "administracao-publica-031": { options: [
+    "funções de confiança e cargos em comissão dependem de concurso específico, seguido de livre designação pela autoridade competente.",
+    "cargos em comissão são ocupados preferencialmente por pessoas sem vínculo efetivo, vedada reserva a servidores de carreira.",
+    "funções de confiança podem ser atribuídas a particulares, enquanto cargos em comissão são exclusivos de servidores efetivos.",
+    "funções de confiança são exclusivas de servidores efetivos, e ambas as figuras se destinam a direção, chefia e assessoramento.",
+    "funções de confiança e cargos em comissão podem abranger atividades técnicas permanentes, mediante motivação da autoridade competente."
+  ], correct: 3 },
+  "administracao-publica-032": { options: [
+    "Executivo e Ministério Público, responsáveis pelas funções políticas e administrativas previstas na Lei Orgânica municipal.",
+    "Executivo, Judiciário e Ministério Público, organizados como Poderes locais independentes e harmônicos entre si.",
+    "Legislativo, Executivo e Judiciário, com atribuições próprias previstas para a estrutura institucional do Município.",
+    "Legislativo e Executivo, independentes e harmônicos entre si, conforme a Lei Orgânica do Município.",
+    "Prefeitura, Câmara e Tribunal de Contas municipal, com competências próprias para deliberar e executar atos locais."
+  ], correct: 3 },
+  "administracao-publica-033": { options: [
+    "13 vereadores, considerando o limite demográfico adotado pela Lei Orgânica para a composição da Câmara Municipal.",
+    "7 vereadores, número estabelecido para a representação legislativa municipal na redação vigente da Lei Orgânica.",
+    "9 vereadores, conforme a redação vigente do art. 13 da Lei Orgânica de Massaranduba.",
+    "11 vereadores, quantidade prevista para a composição ordinária da Câmara Municipal em cada legislatura.",
+    "8 vereadores, com distribuição de mandatos definida pela Justiça Eleitoral para a representação local."
+  ], correct: 2 },
+  "administracao-publica-034": { options: [
+    "voto favorável de dois terços dos membros da Câmara em dois turnos, observado interstício mínimo de dez dias entre as votações.",
+    "maioria absoluta dos membros da Câmara, em dois turnos consecutivos realizados na mesma sessão legislativa.",
+    "unanimidade dos vereadores presentes, seguida de sanção do prefeito e publicação do texto aprovado em diário oficial.",
+    "voto favorável de três quintos dos membros da Câmara, em três turnos de discussão e deliberação legislativa.",
+    "maioria simples dos vereadores presentes, em turno único convocado especificamente para votar a proposta de emenda."
+  ], correct: 0 },
+  "administracao-publica-035": { options: [
+    "3% dos moradores maiores de 16 anos, identificados conforme cadastro municipal de participação popular e eleitoral.",
+    "5% do eleitorado do Município, devidamente identificado na forma da Lei Orgânica, com apresentação do projeto à Câmara Municipal.",
+    "1% da população total do Município, incluídos residentes sem inscrição eleitoral e menores de idade interessados.",
+    "2% dos servidores municipais em exercício, representados por entidade sindical ou associação funcional regularmente constituída.",
+    "10% dos vereadores em exercício, mediante subscrição formal acompanhada de justificativa sobre a matéria legislativa."
+  ], correct: 1 },
+  "administracao-publica-036": { options: [
+    "toda pessoa contratada por empresa terceirizada para prestar serviço contínuo ou eventual em repartição municipal.",
+    "a pessoa legalmente investida em cargo público, após nomeação e posse segundo as exigências previstas no Estatuto municipal.",
+    "a pessoa designada para serviço eventual ao Município, vinculada a contratação temporária ou a parceria administrativa específica.",
+    "exclusivamente o agente político eleito para mandato municipal, durante o período de exercício de suas atribuições públicas.",
+    "o ocupante de cargo em comissão, por exercer função de confiança e livre nomeação no âmbito administrativo."
+  ], correct: 1 },
+  "administracao-publica-037": { options: [
+    "nomeação, como ato inicial de provimento em cargo público previsto na relação estatutária aplicável aos servidores.",
+    "readaptação, quando há investidura em cargo compatível com limitação física ou mental verificada em inspeção médica.",
+    "transferência, como forma de provimento enumerada no art. 13 do Estatuto dos Servidores de Massaranduba.",
+    "reversão, correspondente ao retorno à atividade nas hipóteses estatutariamente previstas para servidor aposentado.",
+    "recondução, associada ao retorno do servidor estável nas situações previstas pela norma estatutária municipal."
+  ], correct: 2 },
+  "administracao-publica-038": { options: [
+    "a posse, momento em que o nomeado aceita formalmente as atribuições, os deveres e as responsabilidades do cargo público.",
+    "o primeiro pagamento, quando o servidor passa a integrar a folha financeira do Município e recebe a remuneração inicial.",
+    "o término do estágio probatório, após confirmação da aptidão funcional e avaliação do desempenho no cargo ocupado.",
+    "a inscrição no concurso, mediante apresentação de documentos e confirmação de participação no processo seletivo público.",
+    "a homologação do resultado, ato que encerra o concurso e autoriza posteriormente as nomeações dos candidatos aprovados."
+  ], correct: 0 },
+  "administracao-publica-039": { options: [
+    "45 dias da publicação, automaticamente prorrogados por igual período quando o nomeado ainda não tiver apresentado documentos completos.",
+    "30 dias da nomeação, sem prorrogação, salvo decisão administrativa excepcional fundamentada pela autoridade competente.",
+    "15 dias da publicação do ato de nomeação, permitida prorrogação por igual prazo a requerimento do nomeado.",
+    "5 dias da homologação do concurso, sem prorrogação, para assegurar que a nomeação ocorra no início do exercício financeiro.",
+    "10 dias da convocação, prorrogáveis por 5 dias, mediante simples comunicação do candidato à unidade de recursos humanos."
+  ], correct: 2 },
+  "administracao-publica-040": { options: [
+    "2 dias da posse, contados em dias úteis, para que o servidor compareça à unidade e inicie suas atividades funcionais.",
+    "5 dias da posse, contados da investidura formal no cargo, salvo situação de exercício em outra localidade prevista no Estatuto.",
+    "15 dias da posse, prazo aplicável à apresentação inicial do servidor e à definição da unidade de lotação correspondente.",
+    "3 dias da nomeação, antes da posse, para que o candidato indique à Administração a intenção de entrar em exercício.",
+    "10 dias da convocação, prorrogáveis por igual período quando o servidor apresentar justificativa aceita pela chefia imediata."
+  ], correct: 1 },
+  "administracao-publica-041": { options: [
+    "a investidura do servidor em cargo de atribuições e responsabilidades compatíveis com limitação física ou mental verificada em inspeção médica.",
+    "o retorno do aposentado por invalidez à atividade, após declaração de que não subsistem os motivos da aposentadoria concedida.",
+    "a reinvestidura do servidor no cargo anteriormente ocupado, depois de invalidada sua demissão por decisão administrativa ou judicial.",
+    "o retorno do servidor estável ao cargo anteriormente ocupado, em razão de inabilitação em estágio probatório de outro cargo.",
+    "a promoção automática do servidor para cargo de maior vencimento, após reconhecimento de limitação que impeça atribuições anteriores."
+  ], correct: 0 },
+  "administracao-publica-042": { options: [
+    "o retorno à atividade do servidor aposentado por invalidez quando declarados insubsistentes os motivos da aposentadoria.",
+    "o retorno ao cargo anterior por reprovação em estágio probatório de outro cargo, assegurada ao servidor estável a recondução.",
+    "a disponibilidade remunerada decorrente da extinção do cargo, com aproveitamento posterior em função compatível na administração.",
+    "o deslocamento do servidor entre repartições, com alteração de lotação e preservação das atribuições originalmente previstas.",
+    "a volta do servidor demitido após invalidação da demissão, com ressarcimento das vantagens devidas no período afastado."
+  ], correct: 0 },
+  "administracao-publica-043": { options: [
+    "aquisição de nova escolaridade reconhecida pela Administração, com retorno do servidor ao cargo anteriormente ocupado na carreira.",
+    "licença para interesse particular, com possibilidade de reassunção do cargo após o término do período autorizado pela chefia.",
+    "promoção por merecimento, seguida de retorno à classe anterior quando houver necessidade de reorganização do quadro funcional.",
+    "inabilitação em estágio probatório relativo a outro cargo, assegurado retorno do servidor estável à situação funcional anterior.",
+    "aposentadoria voluntária do servidor, seguida de retorno à atividade quando houver interesse da Administração e vaga disponível."
+  ], correct: 3 },
+  "administracao-publica-044": { options: [
+    "suspensão, aplicada nas hipóteses previstas para infrações de gravidade superior à advertência e inferior à demissão.",
+    "destituição de função de confiança, aplicável ao servidor que deixa de atender aos deveres ligados à função exercida.",
+    "advertência verbal ou escrita, utilizada para faltas de menor gravidade definidas no regime disciplinar estatutário.",
+    "demissão, aplicada nas situações mais graves previstas no Estatuto dos Servidores Públicos Municipais de Massaranduba.",
+    "redução definitiva de vencimento como penalidade autônoma, aplicada após processo administrativo disciplinar regularmente instaurado."
+  ], correct: 4 },
+  "administracao-publica-045": { options: [
+    "15 dias, limite aplicável à suspensão disciplinar ordinária prevista para infrações de menor gravidade no Estatuto municipal.",
+    "20 dias, prazo máximo de afastamento disciplinar adotado para servidores do quadro efetivo municipal.",
+    "45 dias, limite definido para suspensão aplicada após reincidência em falta funcional que não imponha demissão do servidor.",
+    "30 dias, período máximo de suspensão estabelecido para as infrações que exigem afastamento temporário do exercício funcional.",
+    "60 dias, limite máximo de suspensão disciplinar nas hipóteses previstas no Estatuto de Massaranduba."
+  ], correct: 4 },
+  "administracao-publica-046": { options: [
+    "o quadro de cargos, os planos de carreira e a remuneração dos servidores do quadro efetivo do Poder Executivo de Massaranduba.",
+    "as contratações terceirizadas do Município, abrangendo seleção de prestadores, fiscalização contratual e substituição de postos de trabalho.",
+    "o regime disciplinar dos vereadores, incluindo deveres parlamentares, sanções por quebra de decoro e regras de funcionamento da Câmara.",
+    "o regime eleitoral municipal, disciplinando candidaturas, propaganda, votação e apuração dos resultados das eleições locais.",
+    "a criação do Poder Judiciário municipal, com definição de varas, competências e formas de provimento dos respectivos cargos."
+  ], correct: 0 },
+  "administracao-publica-047": { options: [
+    "julgar crimes praticados por servidores, com competência para aplicar penas administrativas e encaminhar decisões ao Poder Judiciário.",
+    "substituir integralmente o setor de recursos humanos na gestão de folha, registros funcionais e rotinas de admissão de pessoal.",
+    "nomear livremente servidores para cargos efetivos, observando necessidade administrativa e disponibilidade de vagas no quadro municipal.",
+    "desenvolver e acompanhar a ascensão profissional dos servidores efetivos do Poder Executivo municipal, conforme as regras do plano de carreira.",
+    "elaborar a Lei Orgânica do Município, propondo alterações na estrutura dos Poderes e na organização político-administrativa local."
+  ], correct: 3 },
+  "administracao-publica-048": { options: [
+    "sem relação com requisitos ou atribuições dos cargos, ficando a distribuição funcional sujeita à decisão de cada chefia imediata.",
+    "exclusivamente por decisões verbais de cada chefia, conforme a necessidade de serviço identificada em cada unidade administrativa.",
+    "em classes, com definição legal de elementos como quantidade de cargos, denominação e padrões referenciais de vencimento.",
+    "como cargos políticos eletivos, com mandatos definidos conforme a estrutura administrativa prevista para o Poder Executivo municipal.",
+    "sem denominação ou referência remuneratória definida, para permitir adequação anual conforme a disponibilidade financeira do Município."
+  ], correct: 2 },
+  "administracao-publica-049": { options: [
+    "organização do quadro efetivo e do desenvolvimento funcional de servidores do Poder Executivo de Massaranduba.",
+    "estruturação da carreira de magistrados estaduais, com regras de promoção, vencimentos e garantias funcionais no âmbito do Judiciário.",
+    "regulamentação de associações privadas, incluindo requisitos de constituição, funcionamento e fiscalização pelo Poder Público municipal.",
+    "organização dos partidos políticos, com definição de regras sobre filiação, prestação de contas e participação eleitoral no Município.",
+    "definição das penas aplicáveis a crimes federais, com estabelecimento de tipos penais e procedimentos processuais correspondentes."
+  ], correct: 0 },
+  "administracao-publica-050": { options: [
+    "a LC nº 190/2023 substituiu integralmente o Estatuto e passou a reunir deveres, proibições e sanções disciplinares dos servidores.",
+    "as duas leis possuem o mesmo objeto e diferem apenas quanto aos valores remuneratórios atualizados em seus respectivos anexos.",
+    "a LC nº 12/2005 estabelece o regime estatutário, e a LC nº 190/2023 organiza cargos, carreira e remuneração do quadro efetivo.",
+    "a LC nº 12/2005 trata somente de remuneração, enquanto a LC nº 190/2023 disciplina provimento e responsabilidade funcional.",
+    "a LC nº 190/2023 corresponde à Lei Orgânica municipal, cabendo à LC nº 12/2005 organizar os Poderes Executivo e Legislativo."
+  ], correct: 2 }
+};
+
 function applyManualOptionSet(question) {
-  const override = administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
+  const override = administracaoBatchTwoOverrides[question.id] || administracaoBatchOneOverrides[question.id] || farmaciaBatchOneOverrides[question.id] || manualOptionSets[question.id];
   if (!override) return;
   question.options = override.options.map((text, index) => ({ letter: "ABCDE"[index], text }));
   question.answer = "ABCDE"[override.correct];

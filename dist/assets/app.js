@@ -1,12 +1,12 @@
-import { questionBank } from "./questions.js?v=22";
+import { questionBank } from "./questions.js?v=23";
 
 const STORAGE_KEY = "caderno330-progress-v1";
 const THEME_KEY = "caderno330-theme";
 
 const els = Object.fromEntries([
   "subject-filter", "topic-filter", "order-filter", "question-number", "setup-message",
-  "start-study", "answered-count", "correct-count", "wrong-count", "accuracy-rate",
-  "progress-fill", "reset-progress", "reset-dialog", "estudo", "back-home",
+  "start-study", "answered-count", "answered-total", "correct-count", "wrong-count", "accuracy-rate",
+  "progress-fill", "progress-subject-filter", "reset-progress", "reset-dialog", "estudo", "back-home",
   "session-position", "session-label", "question-strip", "question-subject",
   "question-display-number", "question-topic", "question-stem", "alternatives",
   "confirm-answer", "answer-hint", "feedback", "feedback-result",
@@ -60,6 +60,13 @@ function initTheme() {
 function renderSubjectOptions() {
   els["subject-filter"].innerHTML = [
     '<option value="all">Todas as matérias (330)</option>',
+    ...questionBank.subjects.map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`),
+  ].join("");
+}
+
+function renderProgressSubjectOptions() {
+  els["progress-subject-filter"].innerHTML = [
+    `<option value="all">Todas as matérias (${questionBank.questions.length})</option>`,
     ...questionBank.subjects.map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`),
   ].join("");
 }
@@ -213,7 +220,12 @@ function moveQuestion(step) {
 }
 
 function renderProgress() {
-  const records = Object.values(progress);
+  const subjectId = els["progress-subject-filter"].value || "all";
+  const availableQuestions = questionBank.questions.filter(question => subjectId === "all" || question.subjectId === subjectId);
+  const questionIds = new Set(availableQuestions.map(question => question.id));
+  const records = Object.entries(progress)
+    .filter(([questionId]) => questionIds.has(questionId))
+    .map(([, record]) => record);
   const correct = records.filter(record => record.status === "correct").length;
   const wrong = records.filter(record => record.status === "wrong").length;
   const answered = correct + wrong;
@@ -221,7 +233,8 @@ function renderProgress() {
   els["correct-count"].textContent = correct;
   els["wrong-count"].textContent = wrong;
   els["accuracy-rate"].textContent = `${answered ? Math.round(correct / answered * 100) : 0}% de aproveitamento`;
-  els["progress-fill"].style.width = `${answered / questionBank.questions.length * 100}%`;
+  els["progress-fill"].style.width = `${availableQuestions.length ? answered / availableQuestions.length * 100 : 0}%`;
+  els["answered-total"].textContent = `de ${availableQuestions.length} questões`;
 }
 
 function backToFilters() {
@@ -234,6 +247,7 @@ function backToFilters() {
 
 els["theme-toggle"].addEventListener("click", () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"));
 els["subject-filter"].addEventListener("change", renderTopicOptions);
+els["progress-subject-filter"].addEventListener("change", renderProgress);
 els["start-study"].addEventListener("click", startStudy);
 els["back-home"].addEventListener("click", backToFilters);
 els.alternatives.addEventListener("change", event => {
@@ -261,6 +275,7 @@ els["reset-dialog"].addEventListener("close", () => {
 
 initTheme();
 renderSubjectOptions();
+renderProgressSubjectOptions();
 renderTopicOptions();
 renderProgress();
 

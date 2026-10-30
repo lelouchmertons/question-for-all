@@ -1,12 +1,12 @@
-const CACHE = "caderno330-v22";
+const CACHE = "caderno330-v23";
 const ASSETS = [
   "./",
   "index.html",
   "manifest.webmanifest",
   "assets/icon.svg",
   "assets/styles.css?v=1",
-  "assets/app.js?v=22",
-  "assets/questions.js?v=22"
+  "assets/app.js?v=23",
+  "assets/questions.js?v=23"
 ];
 
 self.addEventListener("install", event => {

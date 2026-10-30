@@ -87,9 +87,13 @@
         <p class="eyebrow">SEU RITMO NESTE APARELHO</p>
         <h2 id="progress-title">Progresso de estudo</h2>
         <p>Os resultados ficam salvos localmente e continuam disponíveis mesmo sem internet.</p>
+        <label class="progress-filter" for="progress-subject-filter">
+          <span>FILTRAR ESTATÍSTICAS POR MATÉRIA</span>
+          <select id="progress-subject-filter" aria-label="Filtrar progresso por matéria"></select>
+        </label>
       </div>
       <div class="progress-cards">
-        <article><span>RESPONDIDAS</span><strong id="answered-count">0</strong><small>de 330 questões</small></article>
+        <article><span>RESPONDIDAS</span><strong id="answered-count">0</strong><small id="answered-total">de 330 questões</small></article>
         <article class="correct-card"><span>ACERTOS</span><strong id="correct-count">0</strong><small id="accuracy-rate">0% de aproveitamento</small></article>
         <article class="wrong-card"><span>PARA REVISAR</span><strong id="wrong-count">0</strong><small>questões erradas</small></article>
       </div>
@@ -173,6 +177,6 @@
     </form>
   </dialog>
 
-  <script type="module" src="assets/app.js?v=22"></script>
+  <script type="module" src="assets/app.js?v=23"></script>
 </body>
 </html>

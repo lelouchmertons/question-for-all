@@ -8,7 +8,7 @@
   <title>Caderno 460 — Questões de Concurso</title>
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="assets/styles.css?v=1">
+  <link rel="stylesheet" href="assets/styles.css?v=2">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -36,7 +36,7 @@
         <p class="lede">Escolha a matéria, filtre o assunto e responda no seu ritmo. O gabarito só aparece depois da confirmação, acompanhado de uma explicação completa.</p>
         <div class="bank-summary" aria-label="Resumo do banco">
           <span><b id="total-count">460</b> questões</span>
-          <span><b>4</b> matérias</span>
+          <span><b>5</b> matérias</span>
           <span><b>100%</b> comentadas</span>
         </div>
       </div>
@@ -77,8 +77,51 @@
         <p class="setup-message" id="setup-message" role="status"></p>
         <div class="setup-actions">
           <button class="primary-button" id="start-study" type="button">COMEÇAR A ESTUDAR <span>→</span></button>
-          <button class="secondary-button" type="button" disabled title="Recurso planejado para uma próxima versão">SIMULADO <span>EM BREVE</span></button>
+          <button class="secondary-button" id="open-simulator" type="button">MODO SIMULADO <span>PERSONALIZADO</span></button>
         </div>
+      </section>
+    </section>
+
+    <section class="simulator-view" id="simulador" hidden aria-labelledby="simulator-title">
+      <header class="simulator-heading">
+        <button class="back-button" id="back-from-simulator" type="button">← VOLTAR AO ESTUDO</button>
+        <p class="eyebrow">MODO SIMULADO · RESULTADO APENAS NO FINAL</p>
+        <h2 id="simulator-title">Monte sua prova.</h2>
+        <p>Escolha as matérias, a distribuição das questões e os assuntos que quer treinar. As respostas ficam ocultas até o encerramento.</p>
+      </header>
+
+      <section class="simulator-config" id="simulator-config" aria-labelledby="simulator-config-title">
+        <div class="simulator-total">
+          <div>
+            <p class="eyebrow">CONFIGURAÇÃO</p>
+            <h3 id="simulator-config-title">Quantas questões terá o simulado?</h3>
+          </div>
+          <label class="sim-total-field"><span>TOTAL</span><input id="sim-total" type="number" min="1" max="460" value="20" inputmode="numeric"></label>
+        </div>
+        <p class="sim-help">Defina a quantidade por matéria. Quando houver mais assuntos selecionados do que questões, cada questão sairá de um assunto diferente. Quando houver menos assuntos, o restante será sorteado sem repetir questões.</p>
+        <div class="sim-subjects" id="sim-subjects"></div>
+        <p class="setup-message" id="sim-message" role="status"></p>
+        <div class="simulator-actions">
+          <button class="primary-button" id="start-simulation" type="button">INICIAR SIMULADO <span>→</span></button>
+        </div>
+      </section>
+
+      <section class="simulation-results" id="simulation-results" hidden aria-labelledby="simulation-results-title">
+        <p class="eyebrow">SIMULADO ENCERRADO</p>
+        <h3 id="simulation-results-title">Seu resultado</h3>
+        <div class="result-summary" id="simulation-summary"></div>
+        <div class="result-by-subject" id="simulation-subject-results"></div>
+        <div class="simulator-actions">
+          <button class="primary-button" id="save-simulation" type="button">SALVAR RESULTADO NESTE APARELHO</button>
+          <button class="secondary-button" id="review-simulation-errors" type="button">REVISAR QUESTÕES ERRADAS</button>
+          <button class="text-button" id="new-simulation" type="button">Montar outro simulado</button>
+        </div>
+      </section>
+
+      <section class="simulation-history" aria-labelledby="simulation-history-title">
+        <p class="eyebrow">NESTE APARELHO</p>
+        <h3 id="simulation-history-title">Histórico de simulados</h3>
+        <div id="simulation-history-list"></div>
       </section>
     </section>
 
@@ -108,6 +151,7 @@
           <strong id="session-position">Questão 1 de 60</strong>
           <span id="session-label">Matemática · ordem sequencial</span>
         </div>
+        <button class="secondary-button end-simulation" id="end-simulation" type="button" hidden>ENCERRAR SIMULADO</button>
       </header>
 
       <nav class="question-navigator" aria-label="Navegação pelas questões">
@@ -177,6 +221,6 @@
     </form>
   </dialog>
 
-  <script type="module" src="assets/app.js?v=28"></script>
+  <script type="module" src="assets/app.js?v=29"></script>
 </body>
 </html>

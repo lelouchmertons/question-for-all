@@ -1,0 +1,219 @@
+PLANO DE EXPANSÃO DO BANCO NACIONAL DE QUESTÕES
+Português, Matemática e Raciocínio Lógico, Direito Constitucional e Direito Administrativo
+Elaborado a partir do banco atual, do relatório de prioridades de Massaranduba e do edital de perícia criminal analisado em 02/11/2026.
+
+STATUS DESTE DOCUMENTO
+
+Este é um relatório de planejamento. Ele não adiciona nem altera questões no site.
+Os quantitativos abaixo são metas de composição para a próxima etapa do banco.
+
+ESTRUTURA FINAL PREVISTA NESTA FASE
+
+Língua Portuguesa:                60 atuais + 40 novas = 100 questões
+Matemática e Raciocínio Lógico:   60 atuais + 40 novas = 100 questões
+Direito Constitucional:           22 reaproveitadas + 28 novas = 50 questões
+Direito Administrativo:            9 reaproveitadas + 41 novas = 50 questões
+
+Total desta expansão: 149 novas questões.
+
+Os conteúdos de Direito serão separados em filtros próprios. Não haverá mais um filtro amplo chamado apenas “Administração Pública”, pois ele mistura dois ramos diferentes:
+
+- Direito Constitucional: Constituição, direitos e garantias, organização do Estado, competências, segurança pública e regras constitucionais sobre Administração e servidores.
+- Direito Administrativo: organização administrativa, princípios, agentes, atos, poderes, processo, controles, responsabilidade estatal, improbidade e licitações.
+
+As questões existentes serão apenas redistribuídas quando a alteração do site for autorizada:
+
+- Direito Administrativo: atuais questões 1 a 9 de Administração Pública.
+- Direito Constitucional: atuais questões 10 a 31 de Administração Pública.
+
+PORTUGUÊS — META DE 100 QUESTÕES
+
+O banco atual já possui boa base geral. As 40 novas questões devem reforçar exatamente os temas expressamente detalhados pelo edital de perícia, sem abandonar os conteúdos já úteis para concursos em geral.
+
+1. Compreensão, interpretação, coesão, coerência, reescrita e gêneros textuais
+   Meta final: 30 | Já existentes: 22 | Novas: 8
+   Prioridade: muito alta.
+   Abranger ideia central, inferência, pressuposto, intenção, efeito de sentido, progressão temática, conectivos, referentes, reescrita com preservação de sentido, relações entre textos e leitura de textos técnicos, informativos e normativos.
+
+2. Sintaxe da oração e do período
+   Meta final: 18 | Já existentes: 8 | Novas: 10
+   Prioridade: muito alta.
+   Abranger termos da oração, tipos de sujeito, predicação, complementos, adjuntos, aposto, vocativo, voz verbal, coordenação, subordinação e relações semânticas entre orações.
+
+3. Classes de palavras e flexões nominais e verbais
+   Meta final: 10 | Já existentes: 6 | Novas: 4
+   Prioridade: alta.
+   Incluir flexão de gênero, número, grau, pessoa, tempo, modo e voz; emprego contextual de pronomes, artigos, conjunções, advérbios e verbos.
+
+4. Concordância, regência e colocação pronominal
+   Meta final: 13 | Já existentes: 7 | Novas: 6
+   Prioridade: alta.
+   Incluir concordância ideológica ou silepse, casos com porcentagens e coletivos, regência verbal e nominal, e próclise, mesóclise e ênclise em situações reais de frase.
+
+5. Pontuação e efeitos de sentido
+   Meta final: 9 | Já existentes: 6 | Novas: 3
+   Prioridade: alta.
+   Incluir vírgula, ponto e vírgula, dois-pontos, ponto final, interrogação, exclamação, travessão, parênteses e mudança de sentido causada pela pontuação.
+
+6. Semântica, significação e figuras de linguagem
+   Meta final: 9 | Já existentes: 4 | Novas: 5
+   Prioridade: alta.
+   Incluir homônimos, parônimos, sinônimos, antônimos, denotação, conotação, metáfora, metonímia, prosopopeia, antítese e pleonasmo.
+
+7. Crase
+   Meta final: 4 | Já existentes: 4 | Novas: 0
+   Prioridade: alta.
+   O núcleo atual já abrange emprego obrigatório, proibido e facultativo. Novas questões só serão criadas se uma futura análise apontar lacuna concreta.
+
+8. Ortografia e acentuação
+   Meta final: 3 | Já existentes: 3 | Novas: 0
+   Prioridade: intermediária.
+   Permanecem no banco como base. Expansão futura pode incluir hífen, grafias concorrentes e emprego de porquê/porque/por que/porquê, se o edital seguinte pedir.
+
+9. Redação oficial
+   Meta final: 4 | Já existentes: 0 | Novas: 4
+   Prioridade: alta para o edital de perícia.
+   Abranger formas de tratamento, pronomes de tratamento, finalidade e linguagem de comunicações oficiais, objetividade, clareza, impessoalidade e adequação de correspondência oficial.
+
+MATEMÁTICA E RACIOCÍNIO LÓGICO — META DE 100 QUESTÕES
+
+O novo edital eleva bastante o nível lógico-formal. O acréscimo deve priorizar lógica proposicional, conjuntos, argumentos e predicados, mantendo a matemática aplicada que já sustenta concursos de vários cargos.
+
+1. Lógica proposicional, argumentação e estruturas lógicas
+   Meta final: 20 | Já existentes: 4 | Novas: 16
+   Prioridade: muito alta.
+   Abranger proposições simples e compostas, conectivos, negação, equivalência, implicação, contraposição, tabela-verdade, tautologia, contradição, contingência, condições necessárias e suficientes, validade de argumentos e diagramas lógicos.
+
+2. Teoria dos conjuntos e diagramas
+   Meta final: 10 | Já existentes: 2 | Novas: 8
+   Prioridade: muito alta.
+   Abranger notação, representação, pertinência, inclusão, tipos de conjuntos, operações, propriedades, diagramas e conexões entre conjuntos e lógica.
+
+3. Aritmética, conjuntos numéricos, razão, proporção e porcentagem
+   Meta final: 19 | Já existentes: 17 | Novas: 2
+   Prioridade: muito alta.
+   Manter foco em operações com inteiros, racionais e reais, frações, decimais, divisibilidade, razão, regra de três, grandezas proporcionais, divisão proporcional e variações percentuais.
+
+4. Álgebra, equações, funções, sistemas e progressões
+   Meta final: 16 | Já existentes: 13 | Novas: 3
+   Prioridade: alta.
+   Reforçar equações, inequações quando pertinentes, sistemas lineares, funções, produtos notáveis, fatoração, progressões e tradução de problemas para linguagem algébrica.
+
+5. Geometria, medidas, trigonometria e raciocínio espacial
+   Meta final: 14 | Já existentes: 11 | Novas: 3
+   Prioridade: alta.
+   Incluir geometria plana e espacial, relações métricas, trigonometria básica, conversões e situações de orientação espacial e temporal.
+
+6. Estatística, probabilidade e análise combinatória
+   Meta final: 10 | Já existentes: 8 | Novas: 2
+   Prioridade: alta.
+   Diferenciar arranjo, combinação e permutação; reforçar probabilidade condicional simples, eventos sucessivos, tabelas, gráficos e leitura crítica de dados.
+
+7. Matemática financeira
+   Meta final: 5 | Já existentes: 4 | Novas: 1
+   Prioridade: intermediária.
+   Manter juros simples, compostos, taxas e interpretação de resultados, sempre com alternativas exclusivamente numéricas nas questões de cálculo.
+
+8. Matrizes, determinantes e números complexos
+   Meta final: 6 | Já existentes: 1 | Novas: 5
+   Prioridade: alta para o edital de perícia.
+   Incluir operações com matrizes, determinantes de baixa ordem, sistemas lineares associados e operações fundamentais com números complexos.
+
+DIREITO CONSTITUCIONAL — META DE 50 QUESTÕES
+
+As 22 questões já existentes devem formar o núcleo inicial. As 28 novas completam os pontos exigidos pelo edital de perícia e deixam o filtro reutilizável para concursos de nível superior.
+
+1. Princípios fundamentais e organização dos Poderes
+   Meta final: 4 | Já existentes: 3 | Novas: 1
+   Fundamentos, objetivos, princípios das relações internacionais e separação dos Poderes.
+
+2. Direitos e garantias fundamentais
+   Meta final: 16 | Já existentes: 8 | Novas: 8
+   Direitos individuais e coletivos, remédios constitucionais, direitos sociais, liberdade, igualdade, intimidade, propriedade, acesso à informação e limites constitucionais.
+
+3. Nacionalidade, direitos políticos e partidos políticos
+   Meta final: 7 | Já existentes: 3 | Novas: 4
+   Nacionalidade originária e derivada, perda e reaquisição quando cabível, alistamento, elegibilidade, inelegibilidade, voto e regras constitucionais dos partidos.
+
+4. Organização do Estado e competências
+   Meta final: 10 | Já existentes: 4 | Novas: 6
+   União, Estados, Distrito Federal e Municípios; autonomia; repartição de competências; intervenção e organização constitucional dos entes.
+
+5. Administração Pública e servidores na Constituição
+   Meta final: 10 | Já existentes: 4 | Novas: 6
+   Arts. 37 a 41: concurso, cargos, empregos, funções de confiança, acumulação, remuneração, estabilidade, perda do cargo e princípios constitucionais da Administração.
+
+6. Segurança pública
+   Meta final: 3 | Já existentes: 0 | Novas: 3
+   Estrutura constitucional da segurança pública, órgãos previstos no art. 144 e atribuições constitucionais gerais, sem antecipar conteúdo de Direito Penal ou Processual Penal.
+
+DIREITO ADMINISTRATIVO — META DE 50 QUESTÕES
+
+As 9 questões atuais compõem uma introdução útil, mas o maior crescimento deve ocorrer aqui, pois o edital de perícia pede explicitamente atos, poderes, processo, controle, improbidade e licitações.
+
+1. Organização administrativa, administração direta e indireta, centralização, descentralização e desconcentração
+   Meta final: 9 | Já existentes: 2 | Novas: 7
+   Entidades, órgãos, personalidade jurídica, autarquias, fundações públicas, empresas públicas, sociedades de economia mista e formas de distribuição de competências.
+
+2. Princípios da Administração Pública
+   Meta final: 8 | Já existentes: 4 | Novas: 4
+   Legalidade, impessoalidade, moralidade, publicidade, eficiência e princípios implícitos relevantes, aplicados a situações concretas.
+
+3. Agentes públicos e ética pública
+   Meta final: 4 | Já existentes: 2 | Novas: 2
+   Classificação básica dos agentes, deveres, responsabilidades e conflitos entre interesse público e interesse privado.
+
+4. Atos administrativos
+   Meta final: 8 | Já existentes: 0 | Novas: 8
+   Elementos, atributos, espécies, validade, anulação, revogação, convalidação, motivação e efeitos dos atos.
+
+5. Poderes administrativos
+   Meta final: 5 | Já existentes: 0 | Novas: 5
+   Poder vinculado, discricionário, hierárquico, disciplinar, regulamentar e poder de polícia, com distinção entre competência legítima e abuso de poder.
+
+6. Processo administrativo
+   Meta final: 2 | Já existentes: 0 | Novas: 2
+   Finalidade, contraditório, ampla defesa, motivação, razoabilidade, formalismo moderado e decisões administrativas.
+
+7. Controle da Administração
+   Meta final: 3 | Já existentes: 0 | Novas: 3
+   Controle administrativo, legislativo e judicial; autotutela; limites da revisão pelo Judiciário.
+
+8. Responsabilidade civil do Estado
+   Meta final: 3 | Já existentes: 1 | Novas: 2
+   Responsabilidade objetiva, nexo causal, excludentes, omissão estatal e ação regressiva contra o agente.
+
+9. Improbidade administrativa
+   Meta final: 2 | Já existentes: 0 | Novas: 2
+   Noções atualizadas de atos ímprobos, elemento subjetivo, sanções e distinção entre ilegalidade comum e improbidade.
+
+10. Licitações e contratos administrativos — Lei nº 14.133/2021
+    Meta final: 4 | Já existentes: 0 | Novas: 4
+    Princípios, fases, modalidades, contratação direta, agentes, planejamento e fiscalização contratual, sem ainda entrar em exceções excessivamente específicas.
+
+11. Serviço público e gestão administrativa
+    Meta final: 2 | Já existentes: 0 | Novas: 2
+    Continuidade, delegação, usuários do serviço, eficiência e deveres mínimos de gestão pública.
+
+PADRÃO OBRIGATÓRIO PARA TODAS AS NOVAS QUESTÕES
+
+1. Cinco alternativas, de A a E.
+2. Alternativas visualmente equilibradas: a correta não deve ser a única longa, curta, técnica ou detalhada.
+3. Distratores plausíveis: cada alternativa incorreta deve se aproximar do tema e errar por elemento jurídico, lógico, numérico, temporal, conceitual ou de abrangência claramente identificável na explicação.
+4. Evitar palavras que denunciem erro sem exigir conhecimento, como “sempre”, “nunca”, “somente”, “exclusivamente”, “ainda que” e construções de negligência óbvia, salvo quando a própria regra realmente exigir esse grau de precisão.
+5. Em cálculos, as alternativas devem conter apenas resultados numéricos, unidades ou valores monetários; a explicação fica exclusivamente após a confirmação.
+6. Gabaritos balanceados por lote, sem sequência artificial de letras repetidas e sem ciclos previsíveis.
+7. Explicação completa da resposta certa depois da confirmação, em linguagem clara e suficiente para estudo autônomo.
+8. Todo conteúdo jurídico deve ser baseado em texto constitucional, legislação vigente e fonte oficial antes de entrar no banco.
+9. Uma questão deve avaliar uma habilidade principal, mesmo que exija conhecimentos auxiliares. Não transformar uma alternativa em miniaula nem criar enunciados artificialmente longos.
+10. Em revisão editorial, comparar tamanho, tom e densidade das cinco alternativas antes de publicar.
+
+ORDEM RECOMENDADA DE PRODUÇÃO
+
+1. Separar no site os dois filtros jurídicos, reutilizando as 31 questões atuais conforme a divisão acima.
+2. Criar as 28 novas de Direito Constitucional e as 41 novas de Direito Administrativo em lotes de 20, com validação jurídica por bloco.
+3. Criar 40 novas de Matemática e Raciocínio Lógico, priorizando lógica proposicional e conjuntos.
+4. Criar 40 novas de Português, priorizando sintaxe, redação oficial e semântica/figuras.
+5. Depois iniciar os novos filtros: Direito Penal, Direito Processual Penal e Criminalística, sempre separados.
+
+FIM DO RELATÓRIO

@@ -2445,6 +2445,475 @@ function removeLocalMunicipalContent(bank) {
   }
 }
 
+const constitutionalBatch = [
+  [
+    23,
+    "Princípios fundamentais - relações internacionais",
+    "Princípios fundamentais",
+    "Constitui princípio que rege as relações internacionais da República Federativa do Brasil:",
+    [
+      "a intervenção obrigatória em Estados que restrinjam direitos de nacionais brasileiros.",
+      "a subordinação dos tratados internacionais à aprovação de governos estrangeiros.",
+      "a defesa permanente de interesses econômicos nacionais acima dos direitos humanos.",
+      "a prevalência dos direitos humanos, ao lado da defesa da paz e da solução pacífica dos conflitos.",
+      "a admissão de organizações paramilitares estrangeiras em território nacional mediante acordo diplomático."
+    ],
+    3,
+    "O art. 4º estabelece, entre os princípios das relações internacionais brasileiras, a prevalência dos direitos humanos, a defesa da paz e a solução pacífica dos conflitos. Esses princípios não autorizam intervenção obrigatória nem relativizam a soberania dos Estados."
+  ],
+  [
+    24,
+    "Direitos fundamentais - reunião",
+    "Direitos e garantias fundamentais",
+    "Uma associação pretende realizar manifestação pacífica em praça pública, sem armas, no mesmo horário de outro ato já comunicado para o local. À luz da Constituição, a reunião:",
+    [
+      "depende de autorização prévia da autoridade administrativa responsável pela segurança do local.",
+      "é livre em qualquer situação, inclusive quando frustra outra reunião anteriormente convocada para o mesmo local.",
+      "pode ocorrer apenas se todos os participantes estiverem vinculados a associação regularmente constituída.",
+      "é proibida em espaços públicos quando houver necessidade de prévio aviso à autoridade competente.",
+      "independe de autorização, requer prévio aviso e não pode frustrar outra reunião anteriormente convocada para o mesmo local."
+    ],
+    4,
+    "O art. 5º, XVI, assegura a reunião pacífica, sem armas, em locais abertos ao público, independentemente de autorização. A Constituição exige prévio aviso à autoridade competente e veda que uma reunião frustre outra anteriormente convocada para o mesmo local."
+  ],
+  [
+    25,
+    "Direitos fundamentais - inviolabilidade do domicílio",
+    "Direitos e garantias fundamentais",
+    "Sem consentimento do morador, alguém pode ingressar em residência alheia, nos termos constitucionais:",
+    [
+      "por determinação judicial em qualquer horário, desde que a ordem seja escrita e fundamentada.",
+      "em caso de flagrante delito, desastre, para prestar socorro ou, durante o dia, por determinação judicial.",
+      "por decisão administrativa motivada, quando houver suspeita de infração de natureza tributária.",
+      "durante o dia ou a noite por ordem verbal de autoridade policial responsável pela investigação.",
+      "após comunicação ao Ministério Público, sempre que a diligência tiver finalidade de produção de prova."
+    ],
+    1,
+    "A casa é asilo inviolável, segundo o art. 5º, XI. As exceções constitucionais são flagrante delito, desastre, prestação de socorro e determinação judicial durante o dia."
+  ],
+  [
+    26,
+    "Direitos fundamentais - devido processo legal",
+    "Direitos e garantias fundamentais",
+    "Em processo administrativo que possa resultar em sanção funcional, a Constituição assegura ao interessado:",
+    [
+      "contraditório e ampla defesa, com os meios e recursos a ela inerentes.",
+      "apenas acesso posterior à decisão, pois a defesa prévia é exclusiva do processo judicial.",
+      "defesa técnica obrigatória por advogado em toda apuração administrativa, sob pena de nulidade automática.",
+      "sigilo absoluto do processo até o término da fase recursal, ainda que o interessado necessite consultar os autos.",
+      "possibilidade de afastar a autoridade competente sempre que discordar do mérito da decisão administrativa."
+    ],
+    0,
+    "O art. 5º, LV, assegura contraditório e ampla defesa aos litigantes, em processo judicial ou administrativo, e aos acusados em geral. A garantia não transforma toda discordância em impedimento da autoridade nem impõe, por si só, defesa técnica obrigatória em toda hipótese."
+  ],
+  [
+    27,
+    "Direitos fundamentais - presunção de inocência",
+    "Direitos e garantias fundamentais",
+    "A garantia constitucional da presunção de inocência estabelece que:",
+    [
+      "a prisão cautelar é incompatível com a Constituição antes de sentença penal condenatória definitiva.",
+      "ninguém pode ser submetido a investigação criminal enquanto não houver prova documental completa do fato.",
+      "ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória.",
+      "a condenação em segunda instância elimina todas as garantias constitucionais relacionadas ao processo penal.",
+      "a presunção de inocência impede a Administração de instaurar procedimento disciplinar baseado nos mesmos fatos investigados na esfera penal."
+    ],
+    2,
+    "O art. 5º, LVII, prevê que ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória. Isso não impede, por si só, medidas cautelares legalmente cabíveis nem a apuração administrativa independente."
+  ],
+  [
+    28,
+    "Direitos fundamentais - liberdade de expressão",
+    "Direitos e garantias fundamentais",
+    "A liberdade de manifestação do pensamento, nos termos da Constituição, é assegurada:",
+    [
+      "com autorização prévia do Poder Público quando a manifestação for divulgada em meio digital.",
+      "mediante identificação do autor, sendo vedado o anonimato.",
+      "somente a brasileiros natos, por se tratar de direito ligado à cidadania política.",
+      "desde que o conteúdo não critique agentes públicos ou instituições estatais.",
+      "apenas em espaços destinados à imprensa profissional e a veículos de comunicação registrados."
+    ],
+    1,
+    "O art. 5º, IV, garante a livre manifestação do pensamento e veda o anonimato. A liberdade de expressão não depende de autorização prévia e não se restringe a profissionais da imprensa."
+  ],
+  [
+    29,
+    "Direitos fundamentais - liberdade religiosa",
+    "Direitos e garantias fundamentais",
+    "Sobre a liberdade religiosa, assinale a alternativa compatível com a Constituição:",
+    [
+      "O Estado pode estabelecer religião oficial desde que garanta cultos privados às demais crenças.",
+      "A proteção constitucional alcança apenas religiões com representação nacional e registro civil próprio.",
+      "A assistência religiosa em entidades civis e militares de internação coletiva depende de autorização do dirigente da instituição.",
+      "A liberdade de crença não alcança a proteção aos locais de culto e às suas liturgias.",
+      "A liberdade de consciência e de crença é inviolável; cultos, locais de culto e liturgias recebem proteção constitucional."
+    ],
+    4,
+    "O art. 5º, VI, protege a liberdade de consciência e de crença, o livre exercício dos cultos e os locais de culto e suas liturgias. A Constituição também assegura assistência religiosa nas entidades civis e militares de internação coletiva, nos termos da lei."
+  ],
+  [
+    30,
+    "Direitos fundamentais - proteção de dados pessoais",
+    "Direitos e garantias fundamentais",
+    "A Constituição Federal passou a prever expressamente, entre os direitos e garantias fundamentais:",
+    [
+      "a proteção de dados pessoais, inclusive nos meios digitais, nos termos da lei.",
+      "o sigilo absoluto de toda informação mantida por órgãos públicos, independentemente de finalidade ou prazo.",
+      "a eliminação automática de registros públicos sempre que solicitada pelo titular dos dados.",
+      "a exclusividade da União para coletar qualquer dado pessoal necessário à prestação de serviços públicos.",
+      "a proibição de tratamento de dados pessoais por entidades privadas, ainda que haja base legal ou consentimento."
+    ],
+    0,
+    "O art. 5º, LXXIX, assegura o direito à proteção dos dados pessoais, inclusive nos meios digitais, nos termos da lei. O direito não cria sigilo absoluto nem impede todo tratamento legítimo de dados."
+  ],
+  [
+    31,
+    "Direitos fundamentais - direitos sociais",
+    "Direitos e garantias fundamentais",
+    "Integra o rol de direitos sociais expressamente previsto no art. 6º da Constituição:",
+    [
+      "o direito de propriedade, regulado exclusivamente como direito social.",
+      "a extradição, quando autorizada por tratado internacional.",
+      "a saúde, a educação, o trabalho, a moradia, o transporte e a segurança.",
+      "a livre iniciativa, indicada como único direito social ligado à atividade econômica.",
+      "a soberania nacional, aplicável somente às relações internacionais brasileiras."
+    ],
+    2,
+    "O art. 6º enumera direitos sociais como educação, saúde, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância e assistência aos desamparados."
+  ],
+  [
+    32,
+    "Nacionalidade - brasileiro nato",
+    "Nacionalidade",
+    "É brasileiro nato, nos termos da Constituição, o indivíduo nascido no estrangeiro de pai brasileiro ou mãe brasileira que esteja a serviço da República Federativa do Brasil:",
+    [
+      "somente se optar formalmente pela nacionalidade brasileira depois de atingir a maioridade.",
+      "desde que obtenha naturalização extraordinária após residência ininterrupta no País.",
+      "apenas se também possuir cidadania do país em que ocorreu o nascimento.",
+      "independentemente de registro em repartição brasileira ou de opção posterior.",
+      "desde que seja filho de brasileiro naturalizado há pelo menos quinze anos."
+    ],
+    3,
+    "O art. 12, I, b, considera brasileiros natos os nascidos no estrangeiro de pai brasileiro ou mãe brasileira, desde que qualquer deles esteja a serviço da República Federativa do Brasil. Nessa hipótese, não se exige opção posterior."
+  ],
+  [
+    33,
+    "Nacionalidade - cargos privativos de brasileiro nato",
+    "Nacionalidade",
+    "É cargo privativo de brasileiro nato, conforme a Constituição:",
+    [
+      "Ministro do Supremo Tribunal Federal.",
+      "Prefeito municipal.",
+      "Deputado federal.",
+      "Ministro de Estado, independentemente da pasta.",
+      "Governador de Estado ou do Distrito Federal."
+    ],
+    0,
+    "O art. 12, § 3º, reserva a brasileiros natos, entre outros, os cargos de Presidente e Vice-Presidente da República, Presidentes da Câmara e do Senado, Ministro do STF, carreira diplomática, oficial das Forças Armadas e Ministro de Estado da Defesa."
+  ],
+  [
+    34,
+    "Direitos políticos - alistamento e voto",
+    "Direitos políticos",
+    "O alistamento eleitoral e o voto são facultativos para:",
+    [
+      "os maiores de dezoito anos e os servidores públicos em exercício.",
+      "os analfabetos, os maiores de setenta anos e os maiores de dezesseis e menores de dezoito anos.",
+      "todos os brasileiros naturalizados durante os primeiros cinco anos após a naturalização.",
+      "os maiores de sessenta anos e os integrantes das Forças Armadas em serviço ativo.",
+      "os eleitores que residam em Município diferente daquele em que exercem atividade profissional."
+    ],
+    1,
+    "Nos termos do art. 14, § 1º, o alistamento eleitoral e o voto são facultativos para analfabetos, maiores de setenta anos e maiores de dezesseis e menores de dezoito anos."
+  ],
+  [
+    35,
+    "Partidos políticos - autonomia e limites",
+    "Partidos políticos",
+    "A liberdade de criação, fusão, incorporação e extinção de partidos políticos observa, entre outros requisitos constitucionais:",
+    [
+      "a subordinação a governo estrangeiro quando houver cooperação ideológica formalizada.",
+      "a possibilidade de manter organização paramilitar para proteção de dirigentes e sedes partidárias.",
+      "a dispensa de prestação de contas à Justiça Eleitoral para partidos sem representação parlamentar.",
+      "o caráter nacional, a proibição de recursos estrangeiros e a prestação de contas à Justiça Eleitoral.",
+      "a obrigatoriedade de filiação única de todos os candidatos por período mínimo de dez anos."
+    ],
+    3,
+    "O art. 17 assegura autonomia partidária, mas exige caráter nacional, veda recebimento de recursos de entidade ou governo estrangeiros e organização paramilitar, além de exigir prestação de contas à Justiça Eleitoral."
+  ],
+  [
+    36,
+    "Organização do Estado - competência privativa da União",
+    "Organização do Estado",
+    "Constitui competência privativa da União prevista na Constituição:",
+    [
+      "emitir moeda e administrar as reservas cambiais do País.",
+      "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber.",
+      "instituir regiões metropolitanas por decreto municipal, conforme a necessidade local.",
+      "explorar diretamente todo serviço público local, vedada qualquer forma de delegação.",
+      "organizar e manter serviços públicos de interesse comum a todos os Municípios de um Estado."
+    ],
+    0,
+    "O art. 21 atribui à União, entre outras competências, emitir moeda e administrar as reservas cambiais do País. Competências de interesse local pertencem aos Municípios, e a organização regional cabe aos Estados nas hipóteses constitucionais."
+  ],
+  [
+    37,
+    "Organização do Estado - competência comum",
+    "Organização do Estado",
+    "É competência comum da União, dos Estados, do Distrito Federal e dos Municípios:",
+    [
+      "legislar privativamente sobre direito penal e processual.",
+      "declarar guerra e celebrar a paz, mediante aprovação do Congresso Nacional.",
+      "cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência.",
+      "emitir moeda e fixar normas gerais sobre o sistema monetário nacional.",
+      "manter relações com Estados estrangeiros e participar de organizações internacionais."
+    ],
+    2,
+    "O art. 23 prevê competências administrativas comuns dos entes federativos, entre elas cuidar da saúde e assistência pública e proteger e garantir as pessoas com deficiência. As demais alternativas descrevem competências predominantemente federais."
+  ],
+  [
+    38,
+    "Organização do Estado - competência legislativa concorrente",
+    "Organização do Estado",
+    "Na competência legislativa concorrente prevista no art. 24 da Constituição:",
+    [
+      "a União, os Estados, o Distrito Federal e os Municípios podem editar normas gerais e específicas com a mesma hierarquia.",
+      "a União limita-se a editar normas específicas, enquanto os Estados elaboram exclusivamente normas gerais.",
+      "os Municípios exercem competência concorrente plena sempre que houver interesse local na matéria.",
+      "a superveniência de lei federal sobre normas gerais suspende integralmente toda lei estadual anterior, ainda que compatível.",
+      "a União estabelece normas gerais, e os Estados e o Distrito Federal exercem competência suplementar."
+    ],
+    4,
+    "No art. 24, a União limita-se a estabelecer normas gerais, cabendo aos Estados e ao Distrito Federal a competência suplementar. A superveniência de lei federal suspende a eficácia da lei estadual no que lhe for contrário, e os Municípios não integram formalmente esse rol de competência concorrente."
+  ],
+  [
+    39,
+    "Organização do Estado - Distrito Federal",
+    "Organização do Estado",
+    "O Distrito Federal, segundo a Constituição:",
+    [
+      "pode ser dividido em Municípios, desde que haja aprovação em plebiscito local.",
+      "rege-se por Constituição estadual própria, aprovada pela Assembleia Legislativa local.",
+      "acumula as competências legislativas reservadas aos Estados e aos Municípios.",
+      "integra a União e não possui autonomia política, administrativa ou financeira.",
+      "possui apenas competências administrativas, sendo a função legislativa exercida exclusivamente pelo Congresso Nacional."
+    ],
+    2,
+    "O art. 32 dispõe que o Distrito Federal é vedado de dividir-se em Municípios e atribui a ele as competências legislativas reservadas aos Estados e Municípios."
+  ],
+  [
+    40,
+    "Organização do Estado - intervenção federal",
+    "Organização do Estado",
+    "A União não intervirá nos Estados nem no Distrito Federal, exceto nas hipóteses expressamente previstas na Constituição. Entre elas, encontra-se:",
+    [
+      "a necessidade de alterar a política tributária estadual sem aprovação legislativa local.",
+      "o simples desacordo político entre o Governador e a maioria da Assembleia Legislativa.",
+      "a conveniência administrativa de substituir temporariamente os dirigentes eleitos do Estado.",
+      "a manutenção da integridade nacional.",
+      "a inexistência de maioria parlamentar para aprovação de projeto de lei de iniciativa do Executivo estadual."
+    ],
+    3,
+    "O art. 34 prevê hipóteses taxativas de intervenção federal, entre elas manter a integridade nacional. Divergências políticas comuns ou conveniência administrativa não autorizam intervenção."
+  ],
+  [
+    41,
+    "Organização do Estado - serviços públicos locais",
+    "Organização do Estado",
+    "Entre as competências constitucionais dos Municípios está:",
+    [
+      "organizar e prestar, diretamente ou por concessão ou permissão, serviços de interesse local, incluído o transporte coletivo.",
+      "legislar privativamente sobre direito civil, penal, processual, eleitoral e do trabalho.",
+      "manter relações com Estados estrangeiros e participar de organizações internacionais em nome da Federação.",
+      "emitir moeda local para custear serviços de interesse municipal, observadas as diretrizes do Banco Central.",
+      "declarar estado de sítio e restringir temporariamente garantias constitucionais no território municipal."
+    ],
+    0,
+    "O art. 30, V, atribui ao Município a organização e prestação de serviços públicos de interesse local, diretamente ou por concessão ou permissão, incluído o transporte coletivo, de caráter essencial."
+  ],
+  [
+    42,
+    "Administração Pública na Constituição - alcance do art. 37",
+    "Administração Pública e servidores",
+    "Os princípios expressos do caput do art. 37 da Constituição aplicam-se:",
+    [
+      "somente à administração direta do Poder Executivo da União e às atividades previstas em lei federal.",
+      "apenas aos órgãos de atividade-fim, sem alcançar entidades da administração indireta ou demais Poderes.",
+      "à administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios.",
+      "exclusivamente aos agentes ocupantes de cargo efetivo, sem alcançar agentes políticos ou empregados públicos.",
+      "somente quando a atividade administrativa envolver despesa pública, contratação de terceiros ou execução direta de serviço."
+    ],
+    2,
+    "O caput do art. 37 alcança a administração pública direta e indireta de qualquer dos Poderes de todos os entes federativos. Os princípios constitucionais não se limitam ao Executivo federal nem dependem de haver gasto público."
+  ],
+  [
+    43,
+    "Servidores públicos - acumulação remunerada de cargos",
+    "Administração Pública e servidores",
+    "Havendo compatibilidade de horários, a Constituição admite a acumulação remunerada de:",
+    [
+      "dois cargos técnicos ou científicos, independentemente da formação exigida para cada cargo.",
+      "um cargo de professor com outro técnico ou científico, ou dois cargos privativos de profissionais de saúde regulamentados.",
+      "qualquer cargo efetivo com cargo em comissão, desde que o servidor renuncie à remuneração do cargo de menor valor.",
+      "três cargos de professor em instituições públicas distintas, se não houver sobreposição de horários.",
+      "dois cargos em comissão destinados a direção e assessoramento, quando exercidos no mesmo ente federativo."
+    ],
+    1,
+    "O art. 37, XVI, admite, com compatibilidade de horários, dois cargos de professor; um cargo de professor com outro técnico ou científico; e dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas."
+  ],
+  [
+    44,
+    "Servidores públicos - teto remuneratório",
+    "Administração Pública e servidores",
+    "O teto remuneratório geral do serviço público brasileiro corresponde ao subsídio mensal, em espécie, dos:",
+    [
+      "Ministros do Supremo Tribunal Federal.",
+      "Ministros de Estado, independentemente do Poder ou ente federativo.",
+      "Presidentes dos Tribunais de Justiça estaduais.",
+      "Governadores dos Estados e do Distrito Federal.",
+      "Presidentes das Casas do Congresso Nacional."
+    ],
+    0,
+    "O art. 37, XI, adota como teto geral o subsídio mensal, em espécie, dos Ministros do Supremo Tribunal Federal, sem prejuízo dos subtetos previstos para determinados âmbitos e Poderes."
+  ],
+  [
+    45,
+    "Servidores públicos - estabilidade",
+    "Administração Pública e servidores",
+    "São estáveis, após três anos de efetivo exercício, os servidores:",
+    [
+      "ocupantes de qualquer emprego público, ainda que contratados sem concurso para necessidade temporária.",
+      "nomeados para cargo de provimento efetivo em virtude de concurso público.",
+      "designados para função de confiança, desde que tenham exercido atribuições de chefia durante o estágio probatório.",
+      "ocupantes exclusivamente de cargo em comissão, após avaliação especial de desempenho.",
+      "contratados por prazo determinado para atender necessidade temporária de excepcional interesse público."
+    ],
+    1,
+    "O art. 41 confere estabilidade, após três anos de efetivo exercício, aos servidores nomeados para cargo de provimento efetivo em virtude de concurso público. Cargos em comissão e contratações temporárias não geram essa estabilidade constitucional."
+  ],
+  [
+    46,
+    "Servidores públicos - perda do cargo estável",
+    "Administração Pública e servidores",
+    "O servidor público estável poderá perder o cargo, entre outras hipóteses:",
+    [
+      "por decisão da chefia imediata baseada exclusivamente em discordância sobre a forma de execução do serviço.",
+      "por decreto do chefe do Poder Executivo, independentemente de processo ou decisão judicial.",
+      "por decisão administrativa imotivada sempre que houver necessidade de redução de despesas de pessoal.",
+      "por sentença judicial transitada em julgado ou por processo administrativo com ampla defesa.",
+      "por avaliação de desempenho informal, comunicada verbalmente ao servidor ao final do exercício financeiro."
+    ],
+    3,
+    "O art. 41, § 1º, admite a perda do cargo do servidor estável por sentença judicial transitada em julgado, processo administrativo com ampla defesa ou procedimento de avaliação periódica de desempenho na forma de lei complementar, assegurada ampla defesa."
+  ],
+  [
+    47,
+    "Administração Pública - contratação temporária",
+    "Administração Pública e servidores",
+    "A Constituição admite contratação por tempo determinado pela Administração Pública:",
+    [
+      "para substituir de modo permanente os cargos efetivos ainda não providos por concurso público.",
+      "para qualquer função de confiança, dispensada a previsão legal da hipótese de contratação.",
+      "nos casos estabelecidos em lei, para atender necessidade temporária de excepcional interesse público.",
+      "exclusivamente por decisão judicial, quando houver risco de interrupção de serviço essencial.",
+      "somente para atividade de direção, chefia e assessoramento em órgãos da administração direta."
+    ],
+    2,
+    "O art. 37, IX, permite contratação por tempo determinado para atender necessidade temporária de excepcional interesse público, nos casos estabelecidos em lei. A regra não autoriza substituição permanente do concurso público."
+  ],
+  [
+    48,
+    "Segurança pública - conceito constitucional",
+    "Segurança pública",
+    "Segundo o art. 144 da Constituição, a segurança pública é:",
+    [
+      "atividade exclusiva das polícias civis, responsáveis por toda prevenção e investigação de infrações penais.",
+      "dever do Estado, direito e responsabilidade de todos, voltada à ordem pública e à incolumidade das pessoas e do patrimônio.",
+      "atribuição privativa da União, cabendo aos Estados somente executar determinações federais no território local.",
+      "serviço facultativo prestado pelos entes federativos de acordo com sua disponibilidade orçamentária anual.",
+      "função militar destinada prioritariamente à defesa externa do País e à proteção de fronteiras."
+    ],
+    1,
+    "O art. 144 define a segurança pública como dever do Estado, direito e responsabilidade de todos, exercida para preservar a ordem pública e a incolumidade das pessoas e do patrimônio."
+  ],
+  [
+    49,
+    "Segurança pública - Polícia Federal",
+    "Segurança pública",
+    "Entre as atribuições constitucionais da Polícia Federal está:",
+    [
+      "apurar infrações contra bens, serviços e interesses da União e exercer as funções de polícia marítima, aeroportuária e de fronteiras.",
+      "realizar o policiamento ostensivo e a preservação da ordem pública em todos os Estados e no Distrito Federal.",
+      "apurar exclusivamente infrações penais militares, ainda que praticadas por civis fora de área sob administração militar.",
+      "exercer a polícia judiciária dos Estados e investigar toda infração penal comum ocorrida em território estadual.",
+      "proteger bens, serviços e instalações municipais, substituindo as guardas municipais nas cidades que não possuam efetivo próprio."
+    ],
+    0,
+    "O art. 144, § 1º, atribui à Polícia Federal, entre outras funções, a apuração de infrações de interesse da União e as funções de polícia marítima, aeroportuária e de fronteiras. O policiamento ostensivo é atribuição das polícias militares, e a polícia judiciária estadual é exercida pelas polícias civis."
+  ],
+  [
+    50,
+    "Segurança pública - guardas municipais",
+    "Segurança pública",
+    "Os Municípios podem constituir guardas municipais destinadas a:",
+    [
+      "exercer com exclusividade a polícia judiciária e investigar crimes de competência da Justiça estadual.",
+      "substituir as polícias militares na preservação da ordem pública em todo o território estadual.",
+      "proteger seus bens, serviços e instalações, conforme dispuser a lei.",
+      "julgar infrações de menor potencial ofensivo e aplicar penas restritivas de direitos no âmbito municipal.",
+      "controlar as fronteiras nacionais e fiscalizar o ingresso de estrangeiros no País."
+    ],
+    2,
+    "O art. 144, § 8º, faculta aos Municípios constituir guardas municipais destinadas à proteção de seus bens, serviços e instalações, conforme dispuser a lei. A Constituição não lhes atribui polícia judiciária estadual, julgamento de infrações ou controle de fronteiras."
+  ]
+];
+
+function prepareConstitutionalSubject(bank) {
+  const legacyConstitutional = bank.questions.filter(question => (
+    question.subjectId === "administracao-publica" && question.number >= 10 && question.number <= 31
+  ));
+
+  for (const question of legacyConstitutional) {
+    question.subjectId = "direito-constitucional";
+    question.number -= 9;
+  }
+
+  bank.questions = bank.questions.filter(question => !question.id.startsWith("direito-constitucional-"));
+  bank.questions.push(...constitutionalBatch.map(([number, topic, area, stem, options, answerIndex, explanation]) => ({
+    id: `direito-constitucional-${String(number).padStart(3, "0")}`,
+    subjectId: "direito-constitucional",
+    number,
+    topic,
+    area,
+    stem,
+    options: options.map((text, index) => ({ letter: "ABCDE"[index], text })),
+    answer: "ABCDE"[answerIndex],
+    explanation
+  })));
+
+  const administration = bank.subjects.find(subject => subject.id === "administracao-publica");
+  if (administration) {
+    administration.label = "Direito Administrativo";
+    administration.short = "Direito Administrativo";
+  }
+
+  let constitutional = bank.subjects.find(subject => subject.id === "direito-constitucional");
+  if (!constitutional) {
+    constitutional = {
+      id: "direito-constitucional",
+      label: "Direito Constitucional",
+      short: "Direito Constitucional",
+      count: 0
+    };
+    const administrationIndex = bank.subjects.findIndex(subject => subject.id === "administracao-publica");
+    bank.subjects.splice(administrationIndex, 0, constitutional);
+  }
+
+  for (const subject of bank.subjects) {
+    subject.count = bank.questions.filter(question => question.subjectId === subject.id).length;
+  }
+}
+
 function reorderOptions(question, targetLetter) {
   const correct = question.options.find((option) => option.letter === question.answer);
   const distractors = question.options
@@ -2490,6 +2959,7 @@ function validate(bank) {
 
 const bank = loadBank();
 removeLocalMunicipalContent(bank);
+prepareConstitutionalSubject(bank);
 for (const question of bank.questions) {
   cleanImportedFooter(question);
   applyMathOverrides(question);
@@ -2504,7 +2974,7 @@ for (const subject of bank.subjects) {
 
 bank.generatedAt = new Date().toISOString();
 bank.review = {
-  version: 2,
+  version: 3,
   description: "Revisão editorial de gabaritos, pistas de extensão, rodapés importados e complexidade matemática.",
   mathQuestionsStrengthened: Object.keys(mathOverrides).map(Number),
   mathBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
@@ -2519,7 +2989,8 @@ bank.review = {
   pharmacyBatchFiveReviewed: Array.from({ length: 20 }, (_, index) => index + 81),
   pharmacyBatchSixReviewed: Array.from({ length: 20 }, (_, index) => index + 101),
   pharmacyBatchSevenReviewed: Array.from({ length: 20 }, (_, index) => index + 121),
-  pharmacyBatchEightReviewed: Array.from({ length: 20 }, (_, index) => index + 141)
+  pharmacyBatchEightReviewed: Array.from({ length: 20 }, (_, index) => index + 141),
+  constitutionalExpansionReviewed: Array.from({ length: 28 }, (_, index) => index + 23)
 };
 
 const report = validate(bank);

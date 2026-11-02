@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-11-02T06:45:39.850Z",
+  "generatedAt": "2026-11-02T21:36:21.567Z",
   "subjects": [
     {
       "id": "matematica",
@@ -8,10 +8,16 @@ export const questionBank = {
       "count": 60
     },
     {
+      "id": "direito-constitucional",
+      "label": "Direito Constitucional",
+      "short": "Direito Constitucional",
+      "count": 50
+    },
+    {
       "id": "administracao-publica",
-      "label": "Administração Pública",
-      "short": "Administração Pública",
-      "count": 31
+      "label": "Direito Administrativo",
+      "short": "Direito Administrativo",
+      "count": 9
     },
     {
       "id": "portugues",
@@ -1961,22 +1967,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "no sentido subjetivo, designa órgãos, agentes e entidades; no objetivo, a atividade administrativa por eles exercida."
-        },
-        {
-          "letter": "C",
           "text": "no sentido objetivo, reúne as funções legislativa e jurisdicional exercidas pelos Poderes, afastada a atividade administrativa."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "nos dois sentidos, designa o conjunto de agentes públicos que exercem atividades estatais em nome da coletividade."
+        },
+        {
+          "letter": "D",
+          "text": "no sentido subjetivo, designa órgãos, agentes e entidades; no objetivo, a atividade administrativa por eles exercida."
         },
         {
           "letter": "E",
           "text": "no sentido subjetivo, corresponde às entidades da administração indireta, excluídos os órgãos e os agentes públicos."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "explanation": "O sentido subjetivo, orgânico ou formal identifica quem administra: órgãos, entidades e agentes. O sentido objetivo, material ou funcional identifica o que é exercido: a atividade administrativa destinada à satisfação do interesse público."
     },
     {
@@ -1989,26 +1995,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "pode agir quando não houver proibição expressa, desde que a medida apresente resultado mais eficiente para a Administração."
+          "text": "somente pode agir quando houver fundamento jurídico que autorize sua conduta, inclusive se entender que outra medida seria mais eficiente."
         },
         {
           "letter": "B",
-          "text": "precisa de autorização normativa apenas quando o procedimento gerar despesa pública ou produzir efeito patrimonial direto."
+          "text": "pode agir quando não houver proibição expressa, desde que a medida apresente resultado mais eficiente para a Administração."
         },
         {
           "letter": "C",
-          "text": "pode adotar o procedimento após obter concordância verbal da chefia e dos servidores diretamente envolvidos na execução."
+          "text": "precisa de autorização normativa apenas quando o procedimento gerar despesa pública ou produzir efeito patrimonial direto."
         },
         {
           "letter": "D",
-          "text": "pode substituir a exigência legal por justificativa técnica baseada em sua convicção sobre o interesse público envolvido."
+          "text": "pode adotar o procedimento após obter concordância verbal da chefia e dos servidores diretamente envolvidos na execução."
         },
         {
           "letter": "E",
-          "text": "somente pode agir quando houver fundamento jurídico que autorize sua conduta, inclusive se entender que outra medida seria mais eficiente."
+          "text": "pode substituir a exigência legal por justificativa técnica baseada em sua convicção sobre o interesse público envolvido."
         }
       ],
-      "answer": "E",
+      "answer": "A",
       "explanation": "Para o particular, em regra, é permitido fazer o que a lei não proíbe. O agente público, porém, está sujeito à legalidade administrativa: sua atuação deve possuir fundamento no ordenamento jurídico. Eficiência não autoriza afastar a legalidade."
     },
     {
@@ -2025,11 +2031,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "impessoalidade, pois a campanha institucional não pode servir à promoção pessoal de autoridades ou agentes públicos."
+          "text": "eficiência, pois a campanha deveria utilizar recursos de publicidade somente para ampliar o alcance da mensagem à população."
         },
         {
           "letter": "C",
-          "text": "eficiência, pois a campanha deveria utilizar recursos de publicidade somente para ampliar o alcance da mensagem à população."
+          "text": "impessoalidade, pois a campanha institucional não pode servir à promoção pessoal de autoridades ou agentes públicos."
         },
         {
           "letter": "D",
@@ -2040,7 +2046,7 @@ export const questionBank = {
           "text": "autotutela, pois a Administração deve rever seus atos apenas depois de provocação formal de outro Poder da República."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation": "A publicidade oficial deve possuir caráter educativo, informativo ou de orientação social e não pode servir à promoção pessoal de autoridades ou servidores. A vedação concretiza especialmente a impessoalidade, sem prejuízo de possível ofensa à moralidade."
     },
     {
@@ -2061,18 +2067,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "a transparência é a regra, mas o ordenamento admite sigilo em hipóteses constitucional e legalmente justificadas."
-        },
-        {
-          "letter": "D",
           "text": "a publicidade alcança os atos do Poder Executivo federal, enquanto Estados e Municípios seguem regime próprio de divulgação."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "a Administração pode definir sigilo para atos de sua conveniência, desde que a decisão seja registrada no processo correspondente."
+        },
+        {
+          "letter": "E",
+          "text": "a transparência é a regra, mas o ordenamento admite sigilo em hipóteses constitucional e legalmente justificadas."
         }
       ],
-      "answer": "C",
+      "answer": "E",
       "explanation": "Publicidade e transparência constituem a regra, mas não são absolutas. Admitem-se restrições, por exemplo, para proteger a intimidade ou informações cujo sigilo seja imprescindível à segurança da sociedade e do Estado. Publicar um ato ilegal não elimina seu vício."
     },
     {
@@ -2085,15 +2091,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "atuação com qualidade, produtividade e bom uso dos recursos, respeitados os demais princípios jurídicos."
-        },
-        {
-          "letter": "B",
           "text": "atendimento prioritário aos usuários que gerem menor custo administrativo, para ampliar a produtividade global da unidade."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "obtenção de resultados mensuráveis pela Administração por meios que se afastem dos limites jurídicos aplicáveis à atuação estatal."
+        },
+        {
+          "letter": "C",
+          "text": "atuação com qualidade, produtividade e bom uso dos recursos, respeitados os demais princípios jurídicos."
         },
         {
           "letter": "D",
@@ -2104,7 +2110,7 @@ export const questionBank = {
           "text": "substituição dos controles de legalidade por metas de produtividade definidas pela chefia responsável pelo setor administrativo."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "explanation": "Eficiência envolve boa gestão, qualidade, produtividade e resultados, mas deve coexistir com legalidade, impessoalidade, moralidade e publicidade. Não há autorização para atingir resultados por meios ilegais ou discriminatórios."
     },
     {
@@ -2117,11 +2123,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "utiliza a posição pública para produzir favorecimento privado e rompe a imparcialidade esperada do agente."
+          "text": "o dever ético surge apenas se a conduta estiver prevista como crime, improbidade ou infração disciplinar formalmente tipificada."
         },
         {
           "letter": "B",
-          "text": "o dever ético surge apenas se a conduta estiver prevista como crime, improbidade ou infração disciplinar formalmente tipificada."
+          "text": "utiliza a posição pública para produzir favorecimento privado e rompe a imparcialidade esperada do agente."
         },
         {
           "letter": "C",
@@ -2136,7 +2142,7 @@ export const questionBank = {
           "text": "o parentesco afasta o conflito de interesses quando o servidor não recebe vantagem econômica direta pela informação utilizada."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "explanation": "A ética pública exige honestidade, lealdade institucional, imparcialidade e orientação ao interesse coletivo. A ausência de ganho direto ou de condenação criminal não torna eticamente legítimo o uso do cargo para favorecer interesse privado."
     },
     {
@@ -2149,15 +2155,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exclusiva do agente que praticou o ato, cabendo à pessoa jurídica apenas acompanhar a apuração administrativa posterior."
+          "text": "objetiva, cabendo à vítima demonstrar dano e nexo causal, assegurado o direito de regresso contra o agente nos casos de dolo ou culpa."
         },
         {
           "letter": "B",
-          "text": "afastada quando o agente ocupa cargo efetivo, pois a estabilidade transfere ao servidor a responsabilidade integral pelo dano."
+          "text": "exclusiva do agente que praticou o ato, cabendo à pessoa jurídica apenas acompanhar a apuração administrativa posterior."
         },
         {
           "letter": "C",
-          "text": "objetiva, cabendo à vítima demonstrar dano e nexo causal, assegurado o direito de regresso contra o agente nos casos de dolo ou culpa."
+          "text": "afastada quando o agente ocupa cargo efetivo, pois a estabilidade transfere ao servidor a responsabilidade integral pelo dano."
         },
         {
           "letter": "D",
@@ -2168,7 +2174,7 @@ export const questionBank = {
           "text": "penal por sua natureza, ficando a reparação civil condicionada à existência de condenação criminal definitiva contra o agente."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "A vítima deve demonstrar, em regra, conduta administrativa, dano e nexo causal, sem precisar provar dolo ou culpa do agente. A pessoa jurídica pode buscar regressivamente o ressarcimento do agente quando houver dolo ou culpa."
     },
     {
@@ -2213,11 +2219,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista, todas integrantes da administração indireta."
+          "text": "Órgãos públicos, concessionárias de serviço público, cartórios extrajudiciais e fundações privadas conveniadas ao Estado."
         },
         {
           "letter": "B",
-          "text": "Órgãos públicos, concessionárias de serviço público, cartórios extrajudiciais e fundações privadas conveniadas ao Estado."
+          "text": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista, todas integrantes da administração indireta."
         },
         {
           "letter": "C",
@@ -2232,13 +2238,13 @@ export const questionBank = {
           "text": "Secretarias municipais, departamentos técnicos, fundações privadas comuns e conselhos de políticas públicas instituídos por lei."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "explanation": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista são entidades dotadas de personalidade jurídica própria. Ministérios, secretarias e departamentos são órgãos da administração direta, não entidades."
     },
     {
       "id": "administracao-publica-010",
-      "subjectId": "administracao-publica",
-      "number": 10,
+      "subjectId": "direito-constitucional",
+      "number": 1,
       "topic": "Administração Pública Municipal - autonomia",
       "area": "Administração Pública Municipal",
       "stem": "A autonomia municipal assegurada constitucionalmente significa que o Município:",
@@ -2257,31 +2263,31 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "possui capacidades de auto-organização, autogoverno, autoadministração e autolegislação nos limites constitucionais."
+          "text": "pode afastar leis federais e estaduais quando entender que elas não atendem às necessidades administrativas do seu território."
         },
         {
           "letter": "E",
-          "text": "pode afastar leis federais e estaduais quando entender que elas não atendem às necessidades administrativas do seu território."
+          "text": "possui capacidades de auto-organização, autogoverno, autoadministração e autolegislação nos limites constitucionais."
         }
       ],
-      "answer": "D",
+      "answer": "E",
       "explanation": "O Município é ente federativo autônomo, mas não soberano. Sua autonomia abrange organização, governo, administração e legislação sobre matérias de sua competência, sempre dentro da Constituição."
     },
     {
       "id": "administracao-publica-011",
-      "subjectId": "administracao-publica",
-      "number": 11,
+      "subjectId": "direito-constitucional",
+      "number": 2,
       "topic": "Constituição Federal - fundamentos da República",
       "area": "Constituição Federal",
       "stem": "Constitui fundamento da República Federativa do Brasil previsto no art. 1º da Constituição Federal:",
       "options": [
         {
           "letter": "A",
-          "text": "a erradicação da pobreza e da marginalização, prevista como objetivo fundamental da República no texto constitucional."
+          "text": "o pluralismo político, incluído entre os fundamentos que estruturam a República Federativa do Brasil no texto constitucional."
         },
         {
           "letter": "B",
-          "text": "o pluralismo político, incluído entre os fundamentos que estruturam a República Federativa do Brasil no texto constitucional."
+          "text": "a erradicação da pobreza e da marginalização, prevista como objetivo fundamental da República no texto constitucional."
         },
         {
           "letter": "C",
@@ -2296,13 +2302,13 @@ export const questionBank = {
           "text": "a defesa da paz, indicada como princípio para a atuação do Brasil perante os demais Estados e organismos internacionais."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "explanation": "São fundamentos: soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa e pluralismo político. As demais alternativas trazem objetivos fundamentais ou princípios das relações internacionais."
     },
     {
       "id": "administracao-publica-012",
-      "subjectId": "administracao-publica",
-      "number": 12,
+      "subjectId": "direito-constitucional",
+      "number": 3,
       "topic": "Constituição Federal - objetivos fundamentais",
       "area": "Constituição Federal",
       "stem": "Nos termos do art. 3º da Constituição Federal, é objetivo fundamental da República Federativa do Brasil:",
@@ -2333,8 +2339,8 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica-013",
-      "subjectId": "administracao-publica",
-      "number": 13,
+      "subjectId": "direito-constitucional",
+      "number": 4,
       "topic": "Constituição Federal - separação dos Poderes",
       "area": "Constituição Federal",
       "stem": "De acordo com o art. 2º da Constituição Federal, são Poderes da União:",
@@ -2349,24 +2355,24 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "Legislativo, Executivo e Judiciário, independentes e harmônicos entre si, com competências constitucionais próprias."
+          "text": "Legislativo, Tribunal de Contas e Executivo, com competências próprias e coordenação exercida pelo Poder Judiciário nacional."
         },
         {
           "letter": "D",
-          "text": "Legislativo, Tribunal de Contas e Executivo, com competências próprias e coordenação exercida pelo Poder Judiciário nacional."
+          "text": "Legislativo, Executivo e Judiciário, independentes e harmônicos entre si, com competências constitucionais próprias."
         },
         {
           "letter": "E",
           "text": "Presidência, Congresso e Supremo Tribunal Federal, estruturados em hierarquia para coordenar as funções do Estado brasileiro."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "explanation": "A Constituição consagra Legislativo, Executivo e Judiciário como Poderes independentes e harmônicos. Não há subordinação geral entre eles, embora existam controles recíprocos."
     },
     {
       "id": "administracao-publica-014",
-      "subjectId": "administracao-publica",
-      "number": 14,
+      "subjectId": "direito-constitucional",
+      "number": 5,
       "topic": "Constituição Federal - igualdade",
       "area": "Constituição Federal",
       "stem": "O caput do art. 5º da Constituição Federal estabelece que:",
@@ -2377,11 +2383,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "a igualdade impede qualquer diferenciação jurídica, inclusive quando a Constituição admite ações destinadas a corrigir desigualdades concretas."
+          "text": "todos são iguais perante a lei, sem distinção de qualquer natureza, garantindo-se a brasileiros e estrangeiros residentes os direitos previstos na Constituição."
         },
         {
           "letter": "C",
-          "text": "todos são iguais perante a lei, sem distinção de qualquer natureza, garantindo-se a brasileiros e estrangeiros residentes os direitos previstos na Constituição."
+          "text": "a igualdade impede qualquer diferenciação jurídica, inclusive quando a Constituição admite ações destinadas a corrigir desigualdades concretas."
         },
         {
           "letter": "D",
@@ -2392,13 +2398,13 @@ export const questionBank = {
           "text": "a igualdade vincula principalmente o Poder Executivo, cabendo aos demais Poderes estabelecer critérios próprios para situações semelhantes."
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "explanation": "A igualdade constitucional protege contra discriminações arbitrárias. Ela não impede diferenciações justificadas e proporcionais destinadas, inclusive, a corrigir desigualdades concretas."
     },
     {
       "id": "administracao-publica-015",
-      "subjectId": "administracao-publica",
-      "number": 15,
+      "subjectId": "direito-constitucional",
+      "number": 6,
       "topic": "Constituição Federal - princípio da legalidade geral",
       "area": "Constituição Federal",
       "stem": "Nos termos do art. 5º, II, da Constituição Federal:",
@@ -2409,28 +2415,28 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "decretos podem substituir leis quando detalham procedimentos administrativos e recebem aprovação expressa da autoridade competente."
+          "text": "ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei, conforme a garantia constitucional de legalidade."
         },
         {
           "letter": "C",
-          "text": "a autonomia privada permite afastar exigências legais em relações particulares que não produzam efeito direto sobre terceiros."
+          "text": "decretos podem substituir leis quando detalham procedimentos administrativos e recebem aprovação expressa da autoridade competente."
         },
         {
           "letter": "D",
-          "text": "a autoridade competente pode criar obrigações por ordem verbal quando a medida for necessária à continuidade do serviço público."
+          "text": "a autonomia privada permite afastar exigências legais em relações particulares que não produzam efeito direto sobre terceiros."
         },
         {
           "letter": "E",
-          "text": "ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei, conforme a garantia constitucional de legalidade."
+          "text": "a autoridade competente pode criar obrigações por ordem verbal quando a medida for necessária à continuidade do serviço público."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "A regra protege a liberdade individual contra imposições sem base legal. Ela se relaciona, mas não se confunde, com a legalidade administrativa, que vincula positivamente a atuação do agente público."
     },
     {
       "id": "administracao-publica-016",
-      "subjectId": "administracao-publica",
-      "number": 16,
+      "subjectId": "direito-constitucional",
+      "number": 7,
       "topic": "Constituição Federal - liberdade de associação",
       "area": "Constituição Federal",
       "stem": "Sobre a liberdade de associação, assinale a alternativa correta conforme o art. 5º da Constituição Federal.",
@@ -2441,11 +2447,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "as associações só poderão ser compulsoriamente dissolvidas por decisão judicial transitada em julgado, nos casos previstos pela Constituição."
+          "text": "o Estado pode interferir no funcionamento das associações sempre que houver interesse administrativo na atividade exercida pelo grupo."
         },
         {
           "letter": "C",
-          "text": "o Estado pode interferir no funcionamento das associações sempre que houver interesse administrativo na atividade exercida pelo grupo."
+          "text": "as associações só poderão ser compulsoriamente dissolvidas por decisão judicial transitada em julgado, nos casos previstos pela Constituição."
         },
         {
           "letter": "D",
@@ -2456,45 +2462,45 @@ export const questionBank = {
           "text": "associações lícitas podem adotar organização paramilitar quando a finalidade declarada for proteção interna de seus filiados."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation": "A criação de associações independe de autorização, é vedada a interferência estatal em seu funcionamento e ninguém pode ser obrigado a associar-se ou permanecer associado. A dissolução compulsória exige decisão judicial transitada em julgado; para suspensão das atividades, basta decisão judicial."
     },
     {
       "id": "administracao-publica-017",
-      "subjectId": "administracao-publica",
-      "number": 17,
+      "subjectId": "direito-constitucional",
+      "number": 8,
       "topic": "Constituição Federal - direito de propriedade",
       "area": "Constituição Federal",
       "stem": "A Constituição Federal garante o direito de propriedade e determina que:",
       "options": [
         {
           "letter": "A",
-          "text": "a propriedade atenderá a sua função social, em conformidade com as limitações e finalidades previstas no ordenamento jurídico."
-        },
-        {
-          "letter": "B",
           "text": "o exercício da propriedade não pode sofrer condicionamentos administrativos quando o bem estiver regularmente registrado em nome do titular."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "a função social incide exclusivamente sobre imóveis urbanos, conforme a disciplina constitucional aplicável à política urbana municipal."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "o interesse coletivo não pode limitar o uso da propriedade, devendo o Poder Público atuar somente mediante acordo prévio com o proprietário."
+        },
+        {
+          "letter": "D",
+          "text": "a propriedade atenderá a sua função social, em conformidade com as limitações e finalidades previstas no ordenamento jurídico."
         },
         {
           "letter": "E",
           "text": "a desapropriação decorre da supremacia do interesse público e dispensa fundamento constitucional ou legal específico para sua realização."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "O art. 5º assegura a propriedade e, simultaneamente, exige o cumprimento de sua função social. Portanto, o direito não é absoluto e deve ser exercido em compatibilidade com os parâmetros constitucionais."
     },
     {
       "id": "administracao-publica-018",
-      "subjectId": "administracao-publica",
-      "number": 18,
+      "subjectId": "direito-constitucional",
+      "number": 9,
       "topic": "Constituição Federal - acesso à informação",
       "area": "Constituição Federal",
       "stem": "Nos termos do art. 5º, XXXIII, todos têm direito a receber dos órgãos públicos informações de interesse particular, coletivo ou geral, ressalvadas:",
@@ -2505,28 +2511,28 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "aquelas cujo sigilo seja imprescindível à segurança da sociedade e do Estado, conforme as hipóteses constitucionalmente protegidas."
-        },
-        {
-          "letter": "C",
           "text": "as informações relativas a despesas públicas, que dependem de autorização da autoridade responsável pelo respectivo órgão."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "as informações requeridas por estrangeiros, salvo quando houver reciprocidade prevista em tratado internacional celebrado pelo Brasil."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "as informações produzidas pelo Poder Executivo, que permanecem sujeitas a divulgação apenas após aprovação pelo Poder Legislativo."
+        },
+        {
+          "letter": "E",
+          "text": "aquelas cujo sigilo seja imprescindível à segurança da sociedade e do Estado, conforme as hipóteses constitucionalmente protegidas."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "A transparência é a regra. A própria Constituição admite a ressalva do sigilo quando imprescindível à segurança da sociedade e do Estado, sem criar uma autorização genérica para ocultar erros ou despesas públicas."
     },
     {
       "id": "administracao-publica-019",
-      "subjectId": "administracao-publica",
-      "number": 19,
+      "subjectId": "direito-constitucional",
+      "number": 10,
       "topic": "Constituição Federal - mandado de segurança",
       "area": "Constituição Federal",
       "stem": "O mandado de segurança destina-se a proteger:",
@@ -2557,8 +2563,8 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica-020",
-      "subjectId": "administracao-publica",
-      "number": 20,
+      "subjectId": "direito-constitucional",
+      "number": 11,
       "topic": "Constituição Federal - habeas data",
       "area": "Constituição Federal",
       "stem": "O habeas data é cabível, nos termos constitucionais, para:",
@@ -2589,8 +2595,8 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica-021",
-      "subjectId": "administracao-publica",
-      "number": 21,
+      "subjectId": "direito-constitucional",
+      "number": 12,
       "topic": "Constituição Federal - direitos sociais",
       "area": "Constituição Federal",
       "stem": "É direito social expressamente previsto no art. 6º da Constituição Federal:",
@@ -2609,20 +2615,20 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "a saúde, incluída entre os direitos sociais assegurados pelo art. 6º da Constituição Federal e pelas normas de proteção social."
+          "text": "o anonimato, reconhecido como forma de proteger a livre manifestação de pensamento em espaços públicos e digitais."
         },
         {
           "letter": "E",
-          "text": "o anonimato, reconhecido como forma de proteger a livre manifestação de pensamento em espaços públicos e digitais."
+          "text": "a saúde, incluída entre os direitos sociais assegurados pelo art. 6º da Constituição Federal e pelas normas de proteção social."
         }
       ],
-      "answer": "D",
+      "answer": "E",
       "explanation": "Entre os direitos sociais do art. 6º estão educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância e assistência aos desamparados."
     },
     {
       "id": "administracao-publica-022",
-      "subjectId": "administracao-publica",
-      "number": 22,
+      "subjectId": "direito-constitucional",
+      "number": 13,
       "topic": "Constituição Federal - nacionalidade",
       "area": "Constituição Federal",
       "stem": "É brasileiro nato:",
@@ -2633,11 +2639,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o estrangeiro casado com pessoa brasileira, desde que mantenha residência permanente e vínculo familiar reconhecido no território nacional."
+          "text": "o nascido no estrangeiro de pai ou mãe brasileira que seja registrado em repartição brasileira competente."
         },
         {
           "letter": "C",
-          "text": "o nascido no estrangeiro de pai ou mãe brasileira que seja registrado em repartição brasileira competente."
+          "text": "o estrangeiro casado com pessoa brasileira, desde que mantenha residência permanente e vínculo familiar reconhecido no território nacional."
         },
         {
           "letter": "D",
@@ -2648,13 +2654,13 @@ export const questionBank = {
           "text": "o nascido no Brasil de pais estrangeiros que estejam no País em missão oficial de seu Estado de origem."
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "explanation": "A Constituição prevê hipóteses de nacionalidade originária por critérios territorial e sanguíneo. O registro em repartição competente é uma das formas pelas quais o filho de brasileiro nascido no exterior pode ser brasileiro nato."
     },
     {
       "id": "administracao-publica-023",
-      "subjectId": "administracao-publica",
-      "number": 23,
+      "subjectId": "direito-constitucional",
+      "number": 14,
       "topic": "Constituição Federal - direitos políticos",
       "area": "Constituição Federal",
       "stem": "O alistamento eleitoral e o voto são facultativos para:",
@@ -2665,28 +2671,28 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "todos os maiores de 18 anos, salvo aqueles que apresentem impedimento temporário justificado perante a autoridade eleitoral."
+          "text": "analfabetos, maiores de 70 anos e maiores de 16 e menores de 18 anos, nas condições previstas pela Constituição Federal."
         },
         {
           "letter": "C",
-          "text": "conscritos durante o serviço militar obrigatório, aos quais é assegurado alistamento e voto facultativos durante a incorporação."
+          "text": "todos os maiores de 18 anos, salvo aqueles que apresentem impedimento temporário justificado perante a autoridade eleitoral."
         },
         {
           "letter": "D",
-          "text": "somente maiores de 70 anos, com exclusão dos analfabetos e dos jovens entre 16 e 18 anos do exercício facultativo."
+          "text": "conscritos durante o serviço militar obrigatório, aos quais é assegurado alistamento e voto facultativos durante a incorporação."
         },
         {
           "letter": "E",
-          "text": "analfabetos, maiores de 70 anos e maiores de 16 e menores de 18 anos, nas condições previstas pela Constituição Federal."
+          "text": "somente maiores de 70 anos, com exclusão dos analfabetos e dos jovens entre 16 e 18 anos do exercício facultativo."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "O voto é obrigatório para alfabetizados entre 18 e 70 anos e facultativo para analfabetos, maiores de 70 e jovens de 16 e 17 anos. Estrangeiros e conscritos, durante o serviço militar obrigatório, não podem alistar-se."
     },
     {
       "id": "administracao-publica-024",
-      "subjectId": "administracao-publica",
-      "number": 24,
+      "subjectId": "direito-constitucional",
+      "number": 15,
       "topic": "Constituição Federal - partidos políticos",
       "area": "Constituição Federal",
       "stem": "Sobre os partidos políticos, a Constituição Federal estabelece que:",
@@ -2717,51 +2723,51 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica-025",
-      "subjectId": "administracao-publica",
-      "number": 25,
+      "subjectId": "direito-constitucional",
+      "number": 16,
       "topic": "Constituição Federal - organização do Estado",
       "area": "Constituição Federal",
       "stem": "A organização político-administrativa da República Federativa do Brasil compreende:",
       "options": [
         {
           "letter": "A",
-          "text": "somente União e Estados, cabendo aos Municípios executar competências locais delegadas pelos respectivos governos estaduais."
+          "text": "União, Estados, Distrito Federal e Municípios, todos autônomos nos termos da Constituição e integrantes da Federação brasileira."
         },
         {
           "letter": "B",
-          "text": "Estados, Municípios e comarcas, todos dotados de autonomia política para organizar os serviços públicos de sua competência."
+          "text": "somente União e Estados, cabendo aos Municípios executar competências locais delegadas pelos respectivos governos estaduais."
         },
         {
           "letter": "C",
-          "text": "União e Municípios, com Distrito Federal submetido à administração direta da União em matérias de interesse nacional."
+          "text": "Estados, Municípios e comarcas, todos dotados de autonomia política para organizar os serviços públicos de sua competência."
         },
         {
           "letter": "D",
-          "text": "União, Estados e Territórios, com Municípios organizados como divisões administrativas internas de cada Estado-membro."
+          "text": "União e Municípios, com Distrito Federal submetido à administração direta da União em matérias de interesse nacional."
         },
         {
           "letter": "E",
-          "text": "União, Estados, Distrito Federal e Municípios, todos autônomos nos termos da Constituição e integrantes da Federação brasileira."
+          "text": "União, Estados e Territórios, com Municípios organizados como divisões administrativas internas de cada Estado-membro."
         }
       ],
-      "answer": "E",
+      "answer": "A",
       "explanation": "O art. 18 enumera União, Estados, Distrito Federal e Municípios como componentes autônomos da organização político-administrativa. Territórios federais integram a União e não são entes federativos autônomos."
     },
     {
       "id": "administracao-publica-026",
-      "subjectId": "administracao-publica",
-      "number": 26,
+      "subjectId": "direito-constitucional",
+      "number": 17,
       "topic": "Constituição Federal - organização municipal",
       "area": "Constituição Federal",
       "stem": "O Município rege-se por lei orgânica:",
       "options": [
         {
           "letter": "A",
-          "text": "votada em dois turnos, com interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal."
+          "text": "submetida à sanção do governador, porque a Lei Orgânica deve respeitar a estrutura constitucional estabelecida pelo Estado-membro."
         },
         {
           "letter": "B",
-          "text": "submetida à sanção do governador, porque a Lei Orgânica deve respeitar a estrutura constitucional estabelecida pelo Estado-membro."
+          "text": "votada em dois turnos, com interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal."
         },
         {
           "letter": "C",
@@ -2776,13 +2782,13 @@ export const questionBank = {
           "text": "editada unilateralmente pelo prefeito, com posterior apreciação da Câmara Municipal para ratificação das regras de organização local."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "explanation": "O art. 29 da Constituição prevê votação em dois turnos, interstício mínimo de dez dias e aprovação por dois terços da Câmara Municipal. A lei orgânica é promulgada pela própria Câmara."
     },
     {
       "id": "administracao-publica-027",
-      "subjectId": "administracao-publica",
-      "number": 27,
+      "subjectId": "direito-constitucional",
+      "number": 18,
       "topic": "Constituição Federal - competência municipal",
       "area": "Constituição Federal",
       "stem": "É competência constitucional do Município:",
@@ -2793,28 +2799,28 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "legislar privativamente sobre direito penal, processual e eleitoral para adequar as normas às necessidades locais do Município."
+          "text": "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber, observados os limites constitucionais."
         },
         {
           "letter": "C",
-          "text": "emitir moeda de circulação municipal, observadas as diretrizes de política econômica definidas pela União e pelo Banco Central."
+          "text": "legislar privativamente sobre direito penal, processual e eleitoral para adequar as normas às necessidades locais do Município."
         },
         {
           "letter": "D",
-          "text": "declarar guerra e celebrar a paz, mediante autorização da Câmara Municipal e coordenação com os demais entes da Federação."
+          "text": "emitir moeda de circulação municipal, observadas as diretrizes de política econômica definidas pela União e pelo Banco Central."
         },
         {
           "letter": "E",
-          "text": "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber, observados os limites constitucionais."
+          "text": "declarar guerra e celebrar a paz, mediante autorização da Câmara Municipal e coordenação com os demais entes da Federação."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "O art. 30 atribui aos Municípios a legislação sobre interesse local e a suplementação das normas federais e estaduais quando cabível. As demais matérias indicadas pertencem à esfera federal."
     },
     {
       "id": "administracao-publica-028",
-      "subjectId": "administracao-publica",
-      "number": 28,
+      "subjectId": "direito-constitucional",
+      "number": 19,
       "topic": "Constituição Federal - princípios do art. 37",
       "area": "Constituição Federal",
       "stem": "O conjunto que reproduz os princípios expressos no caput do art. 37 da Constituição Federal é:",
@@ -2833,20 +2839,20 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "legalidade, impessoalidade, moralidade, publicidade e eficiência, princípios expressos que vinculam a Administração Pública."
+          "text": "legitimidade, pessoalidade, moralidade, sigilo e economicidade, aplicáveis à administração direta e indireta de cada ente federativo."
         },
         {
           "letter": "E",
-          "text": "legitimidade, pessoalidade, moralidade, sigilo e economicidade, aplicáveis à administração direta e indireta de cada ente federativo."
+          "text": "legalidade, impessoalidade, moralidade, publicidade e eficiência, princípios expressos que vinculam a Administração Pública."
         }
       ],
-      "answer": "D",
+      "answer": "E",
       "explanation": "O conhecido conjunto “LIMPE” corresponde a legalidade, impessoalidade, moralidade, publicidade e eficiência. Outros princípios também orientam a Administração, mas não integram essa enumeração expressa."
     },
     {
       "id": "administracao-publica-029",
-      "subjectId": "administracao-publica",
-      "number": 29,
+      "subjectId": "direito-constitucional",
+      "number": 20,
       "topic": "Constituição Federal - concurso público",
       "area": "Constituição Federal",
       "stem": "Conforme o art. 37, II, a investidura em cargo ou emprego público depende de aprovação prévia em concurso público, ressalvadas:",
@@ -2877,8 +2883,8 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica-030",
-      "subjectId": "administracao-publica",
-      "number": 30,
+      "subjectId": "direito-constitucional",
+      "number": 21,
       "topic": "Constituição Federal - validade do concurso",
       "area": "Constituição Federal",
       "stem": "O prazo de validade do concurso público será:",
@@ -2909,23 +2915,23 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica-031",
-      "subjectId": "administracao-publica",
-      "number": 31,
+      "subjectId": "direito-constitucional",
+      "number": 22,
       "topic": "Constituição Federal - funções de confiança e cargos em comissão",
       "area": "Constituição Federal",
       "stem": "Nos termos do art. 37, V, da Constituição Federal:",
       "options": [
         {
           "letter": "A",
-          "text": "cargos em comissão são ocupados preferencialmente por pessoas sem vínculo efetivo, vedada reserva a servidores de carreira."
+          "text": "funções de confiança são exclusivas de servidores efetivos, e ambas as figuras se destinam a direção, chefia e assessoramento."
         },
         {
           "letter": "B",
-          "text": "funções de confiança e cargos em comissão podem abranger atividades técnicas permanentes, mediante motivação da autoridade competente."
+          "text": "cargos em comissão são ocupados preferencialmente por pessoas sem vínculo efetivo, vedada reserva a servidores de carreira."
         },
         {
           "letter": "C",
-          "text": "funções de confiança são exclusivas de servidores efetivos, e ambas as figuras se destinam a direção, chefia e assessoramento."
+          "text": "funções de confiança e cargos em comissão podem abranger atividades técnicas permanentes, mediante motivação da autoridade competente."
         },
         {
           "letter": "D",
@@ -2936,7 +2942,7 @@ export const questionBank = {
           "text": "funções de confiança podem ser atribuídas a particulares, enquanto cargos em comissão são exclusivos de servidores efetivos."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "Função de confiança é exclusiva de servidor efetivo. Os cargos em comissão serão preenchidos por servidores de carreira nos casos, condições e percentuais mínimos previstos em lei. Ambos se limitam a direção, chefia e assessoramento."
     },
     {
@@ -9978,10 +9984,906 @@ export const questionBank = {
       ],
       "answer": "A",
       "explanation": "Há problema de segurança, adesão e efetividade. A intervenção deve ser centrada no paciente, avaliar urgência, prevenir dano, esclarecer o edema e buscar ajuste compartilhado, não impor ou improvisar tratamento."
+    },
+    {
+      "id": "direito-constitucional-023",
+      "subjectId": "direito-constitucional",
+      "number": 23,
+      "topic": "Princípios fundamentais - relações internacionais",
+      "area": "Princípios fundamentais",
+      "stem": "Constitui princípio que rege as relações internacionais da República Federativa do Brasil:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a subordinação dos tratados internacionais à aprovação de governos estrangeiros."
+        },
+        {
+          "letter": "B",
+          "text": "a prevalência dos direitos humanos, ao lado da defesa da paz e da solução pacífica dos conflitos."
+        },
+        {
+          "letter": "C",
+          "text": "a intervenção obrigatória em Estados que restrinjam direitos de nacionais brasileiros."
+        },
+        {
+          "letter": "D",
+          "text": "a admissão de organizações paramilitares estrangeiras em território nacional mediante acordo diplomático."
+        },
+        {
+          "letter": "E",
+          "text": "a defesa permanente de interesses econômicos nacionais acima dos direitos humanos."
+        }
+      ],
+      "answer": "B",
+      "explanation": "O art. 4º estabelece, entre os princípios das relações internacionais brasileiras, a prevalência dos direitos humanos, a defesa da paz e a solução pacífica dos conflitos. Esses princípios não autorizam intervenção obrigatória nem relativizam a soberania dos Estados."
+    },
+    {
+      "id": "direito-constitucional-024",
+      "subjectId": "direito-constitucional",
+      "number": 24,
+      "topic": "Direitos fundamentais - reunião",
+      "area": "Direitos e garantias fundamentais",
+      "stem": "Uma associação pretende realizar manifestação pacífica em praça pública, sem armas, no mesmo horário de outro ato já comunicado para o local. À luz da Constituição, a reunião:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pode ocorrer apenas se todos os participantes estiverem vinculados a associação regularmente constituída."
+        },
+        {
+          "letter": "B",
+          "text": "é proibida em espaços públicos quando houver necessidade de prévio aviso à autoridade competente."
+        },
+        {
+          "letter": "C",
+          "text": "é livre em qualquer situação, inclusive quando frustra outra reunião anteriormente convocada para o mesmo local."
+        },
+        {
+          "letter": "D",
+          "text": "depende de autorização prévia da autoridade administrativa responsável pela segurança do local."
+        },
+        {
+          "letter": "E",
+          "text": "independe de autorização, requer prévio aviso e não pode frustrar outra reunião anteriormente convocada para o mesmo local."
+        }
+      ],
+      "answer": "E",
+      "explanation": "O art. 5º, XVI, assegura a reunião pacífica, sem armas, em locais abertos ao público, independentemente de autorização. A Constituição exige prévio aviso à autoridade competente e veda que uma reunião frustre outra anteriormente convocada para o mesmo local."
+    },
+    {
+      "id": "direito-constitucional-025",
+      "subjectId": "direito-constitucional",
+      "number": 25,
+      "topic": "Direitos fundamentais - inviolabilidade do domicílio",
+      "area": "Direitos e garantias fundamentais",
+      "stem": "Sem consentimento do morador, alguém pode ingressar em residência alheia, nos termos constitucionais:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "após comunicação ao Ministério Público, sempre que a diligência tiver finalidade de produção de prova."
+        },
+        {
+          "letter": "B",
+          "text": "por determinação judicial em qualquer horário, desde que a ordem seja escrita e fundamentada."
+        },
+        {
+          "letter": "C",
+          "text": "durante o dia ou a noite por ordem verbal de autoridade policial responsável pela investigação."
+        },
+        {
+          "letter": "D",
+          "text": "em caso de flagrante delito, desastre, para prestar socorro ou, durante o dia, por determinação judicial."
+        },
+        {
+          "letter": "E",
+          "text": "por decisão administrativa motivada, quando houver suspeita de infração de natureza tributária."
+        }
+      ],
+      "answer": "D",
+      "explanation": "A casa é asilo inviolável, segundo o art. 5º, XI. As exceções constitucionais são flagrante delito, desastre, prestação de socorro e determinação judicial durante o dia."
+    },
+    {
+      "id": "direito-constitucional-026",
+      "subjectId": "direito-constitucional",
+      "number": 26,
+      "topic": "Direitos fundamentais - devido processo legal",
+      "area": "Direitos e garantias fundamentais",
+      "stem": "Em processo administrativo que possa resultar em sanção funcional, a Constituição assegura ao interessado:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "contraditório e ampla defesa, com os meios e recursos a ela inerentes."
+        },
+        {
+          "letter": "B",
+          "text": "sigilo absoluto do processo até o término da fase recursal, ainda que o interessado necessite consultar os autos."
+        },
+        {
+          "letter": "C",
+          "text": "apenas acesso posterior à decisão, pois a defesa prévia é exclusiva do processo judicial."
+        },
+        {
+          "letter": "D",
+          "text": "defesa técnica obrigatória por advogado em toda apuração administrativa, sob pena de nulidade automática."
+        },
+        {
+          "letter": "E",
+          "text": "possibilidade de afastar a autoridade competente sempre que discordar do mérito da decisão administrativa."
+        }
+      ],
+      "answer": "A",
+      "explanation": "O art. 5º, LV, assegura contraditório e ampla defesa aos litigantes, em processo judicial ou administrativo, e aos acusados em geral. A garantia não transforma toda discordância em impedimento da autoridade nem impõe, por si só, defesa técnica obrigatória em toda hipótese."
+    },
+    {
+      "id": "direito-constitucional-027",
+      "subjectId": "direito-constitucional",
+      "number": 27,
+      "topic": "Direitos fundamentais - presunção de inocência",
+      "area": "Direitos e garantias fundamentais",
+      "stem": "A garantia constitucional da presunção de inocência estabelece que:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ninguém pode ser submetido a investigação criminal enquanto não houver prova documental completa do fato."
+        },
+        {
+          "letter": "B",
+          "text": "ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória."
+        },
+        {
+          "letter": "C",
+          "text": "a condenação em segunda instância elimina todas as garantias constitucionais relacionadas ao processo penal."
+        },
+        {
+          "letter": "D",
+          "text": "a prisão cautelar é incompatível com a Constituição antes de sentença penal condenatória definitiva."
+        },
+        {
+          "letter": "E",
+          "text": "a presunção de inocência impede a Administração de instaurar procedimento disciplinar baseado nos mesmos fatos investigados na esfera penal."
+        }
+      ],
+      "answer": "B",
+      "explanation": "O art. 5º, LVII, prevê que ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória. Isso não impede, por si só, medidas cautelares legalmente cabíveis nem a apuração administrativa independente."
+    },
+    {
+      "id": "direito-constitucional-028",
+      "subjectId": "direito-constitucional",
+      "number": 28,
+      "topic": "Direitos fundamentais - liberdade de expressão",
+      "area": "Direitos e garantias fundamentais",
+      "stem": "A liberdade de manifestação do pensamento, nos termos da Constituição, é assegurada:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "desde que o conteúdo não critique agentes públicos ou instituições estatais."
+        },
+        {
+          "letter": "B",
+          "text": "apenas em espaços destinados à imprensa profissional e a veículos de comunicação registrados."
+        },
+        {
+          "letter": "C",
+          "text": "somente a brasileiros natos, por se tratar de direito ligado à cidadania política."
+        },
+        {
+          "letter": "D",
+          "text": "mediante identificação do autor, sendo vedado o anonimato."
+        },
+        {
+          "letter": "E",
+          "text": "com autorização prévia do Poder Público quando a manifestação for divulgada em meio digital."
+        }
+      ],
+      "answer": "D",
+      "explanation": "O art. 5º, IV, garante a livre manifestação do pensamento e veda o anonimato. A liberdade de expressão não depende de autorização prévia e não se restringe a profissionais da imprensa."
+    },
+    {
+      "id": "direito-constitucional-029",
+      "subjectId": "direito-constitucional",
+      "number": 29,
+      "topic": "Direitos fundamentais - liberdade religiosa",
+      "area": "Direitos e garantias fundamentais",
+      "stem": "Sobre a liberdade religiosa, assinale a alternativa compatível com a Constituição:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A proteção constitucional alcança apenas religiões com representação nacional e registro civil próprio."
+        },
+        {
+          "letter": "B",
+          "text": "A liberdade de crença não alcança a proteção aos locais de culto e às suas liturgias."
+        },
+        {
+          "letter": "C",
+          "text": "A liberdade de consciência e de crença é inviolável; cultos, locais de culto e liturgias recebem proteção constitucional."
+        },
+        {
+          "letter": "D",
+          "text": "A assistência religiosa em entidades civis e militares de internação coletiva depende de autorização do dirigente da instituição."
+        },
+        {
+          "letter": "E",
+          "text": "O Estado pode estabelecer religião oficial desde que garanta cultos privados às demais crenças."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O art. 5º, VI, protege a liberdade de consciência e de crença, o livre exercício dos cultos e os locais de culto e suas liturgias. A Constituição também assegura assistência religiosa nas entidades civis e militares de internação coletiva, nos termos da lei."
+    },
+    {
+      "id": "direito-constitucional-030",
+      "subjectId": "direito-constitucional",
+      "number": 30,
+      "topic": "Direitos fundamentais - proteção de dados pessoais",
+      "area": "Direitos e garantias fundamentais",
+      "stem": "A Constituição Federal passou a prever expressamente, entre os direitos e garantias fundamentais:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a exclusividade da União para coletar qualquer dado pessoal necessário à prestação de serviços públicos."
+        },
+        {
+          "letter": "B",
+          "text": "a eliminação automática de registros públicos sempre que solicitada pelo titular dos dados."
+        },
+        {
+          "letter": "C",
+          "text": "a proteção de dados pessoais, inclusive nos meios digitais, nos termos da lei."
+        },
+        {
+          "letter": "D",
+          "text": "a proibição de tratamento de dados pessoais por entidades privadas, ainda que haja base legal ou consentimento."
+        },
+        {
+          "letter": "E",
+          "text": "o sigilo absoluto de toda informação mantida por órgãos públicos, independentemente de finalidade ou prazo."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O art. 5º, LXXIX, assegura o direito à proteção dos dados pessoais, inclusive nos meios digitais, nos termos da lei. O direito não cria sigilo absoluto nem impede todo tratamento legítimo de dados."
+    },
+    {
+      "id": "direito-constitucional-031",
+      "subjectId": "direito-constitucional",
+      "number": 31,
+      "topic": "Direitos fundamentais - direitos sociais",
+      "area": "Direitos e garantias fundamentais",
+      "stem": "Integra o rol de direitos sociais expressamente previsto no art. 6º da Constituição:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a livre iniciativa, indicada como único direito social ligado à atividade econômica."
+        },
+        {
+          "letter": "B",
+          "text": "a saúde, a educação, o trabalho, a moradia, o transporte e a segurança."
+        },
+        {
+          "letter": "C",
+          "text": "o direito de propriedade, regulado exclusivamente como direito social."
+        },
+        {
+          "letter": "D",
+          "text": "a extradição, quando autorizada por tratado internacional."
+        },
+        {
+          "letter": "E",
+          "text": "a soberania nacional, aplicável somente às relações internacionais brasileiras."
+        }
+      ],
+      "answer": "B",
+      "explanation": "O art. 6º enumera direitos sociais como educação, saúde, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância e assistência aos desamparados."
+    },
+    {
+      "id": "direito-constitucional-032",
+      "subjectId": "direito-constitucional",
+      "number": 32,
+      "topic": "Nacionalidade - brasileiro nato",
+      "area": "Nacionalidade",
+      "stem": "É brasileiro nato, nos termos da Constituição, o indivíduo nascido no estrangeiro de pai brasileiro ou mãe brasileira que esteja a serviço da República Federativa do Brasil:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "desde que obtenha naturalização extraordinária após residência ininterrupta no País."
+        },
+        {
+          "letter": "B",
+          "text": "apenas se também possuir cidadania do país em que ocorreu o nascimento."
+        },
+        {
+          "letter": "C",
+          "text": "independentemente de registro em repartição brasileira ou de opção posterior."
+        },
+        {
+          "letter": "D",
+          "text": "desde que seja filho de brasileiro naturalizado há pelo menos quinze anos."
+        },
+        {
+          "letter": "E",
+          "text": "somente se optar formalmente pela nacionalidade brasileira depois de atingir a maioridade."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O art. 12, I, b, considera brasileiros natos os nascidos no estrangeiro de pai brasileiro ou mãe brasileira, desde que qualquer deles esteja a serviço da República Federativa do Brasil. Nessa hipótese, não se exige opção posterior."
+    },
+    {
+      "id": "direito-constitucional-033",
+      "subjectId": "direito-constitucional",
+      "number": 33,
+      "topic": "Nacionalidade - cargos privativos de brasileiro nato",
+      "area": "Nacionalidade",
+      "stem": "É cargo privativo de brasileiro nato, conforme a Constituição:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Governador de Estado ou do Distrito Federal."
+        },
+        {
+          "letter": "B",
+          "text": "Deputado federal."
+        },
+        {
+          "letter": "C",
+          "text": "Prefeito municipal."
+        },
+        {
+          "letter": "D",
+          "text": "Ministro de Estado, independentemente da pasta."
+        },
+        {
+          "letter": "E",
+          "text": "Ministro do Supremo Tribunal Federal."
+        }
+      ],
+      "answer": "E",
+      "explanation": "O art. 12, § 3º, reserva a brasileiros natos, entre outros, os cargos de Presidente e Vice-Presidente da República, Presidentes da Câmara e do Senado, Ministro do STF, carreira diplomática, oficial das Forças Armadas e Ministro de Estado da Defesa."
+    },
+    {
+      "id": "direito-constitucional-034",
+      "subjectId": "direito-constitucional",
+      "number": 34,
+      "topic": "Direitos políticos - alistamento e voto",
+      "area": "Direitos políticos",
+      "stem": "O alistamento eleitoral e o voto são facultativos para:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "os eleitores que residam em Município diferente daquele em que exercem atividade profissional."
+        },
+        {
+          "letter": "B",
+          "text": "os maiores de sessenta anos e os integrantes das Forças Armadas em serviço ativo."
+        },
+        {
+          "letter": "C",
+          "text": "os analfabetos, os maiores de setenta anos e os maiores de dezesseis e menores de dezoito anos."
+        },
+        {
+          "letter": "D",
+          "text": "os maiores de dezoito anos e os servidores públicos em exercício."
+        },
+        {
+          "letter": "E",
+          "text": "todos os brasileiros naturalizados durante os primeiros cinco anos após a naturalização."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Nos termos do art. 14, § 1º, o alistamento eleitoral e o voto são facultativos para analfabetos, maiores de setenta anos e maiores de dezesseis e menores de dezoito anos."
+    },
+    {
+      "id": "direito-constitucional-035",
+      "subjectId": "direito-constitucional",
+      "number": 35,
+      "topic": "Partidos políticos - autonomia e limites",
+      "area": "Partidos políticos",
+      "stem": "A liberdade de criação, fusão, incorporação e extinção de partidos políticos observa, entre outros requisitos constitucionais:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a obrigatoriedade de filiação única de todos os candidatos por período mínimo de dez anos."
+        },
+        {
+          "letter": "B",
+          "text": "a subordinação a governo estrangeiro quando houver cooperação ideológica formalizada."
+        },
+        {
+          "letter": "C",
+          "text": "o caráter nacional, a proibição de recursos estrangeiros e a prestação de contas à Justiça Eleitoral."
+        },
+        {
+          "letter": "D",
+          "text": "a possibilidade de manter organização paramilitar para proteção de dirigentes e sedes partidárias."
+        },
+        {
+          "letter": "E",
+          "text": "a dispensa de prestação de contas à Justiça Eleitoral para partidos sem representação parlamentar."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O art. 17 assegura autonomia partidária, mas exige caráter nacional, veda recebimento de recursos de entidade ou governo estrangeiros e organização paramilitar, além de exigir prestação de contas à Justiça Eleitoral."
+    },
+    {
+      "id": "direito-constitucional-036",
+      "subjectId": "direito-constitucional",
+      "number": 36,
+      "topic": "Organização do Estado - competência privativa da União",
+      "area": "Organização do Estado",
+      "stem": "Constitui competência privativa da União prevista na Constituição:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "emitir moeda e administrar as reservas cambiais do País."
+        },
+        {
+          "letter": "B",
+          "text": "explorar diretamente todo serviço público local, vedada qualquer forma de delegação."
+        },
+        {
+          "letter": "C",
+          "text": "instituir regiões metropolitanas por decreto municipal, conforme a necessidade local."
+        },
+        {
+          "letter": "D",
+          "text": "organizar e manter serviços públicos de interesse comum a todos os Municípios de um Estado."
+        },
+        {
+          "letter": "E",
+          "text": "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber."
+        }
+      ],
+      "answer": "A",
+      "explanation": "O art. 21 atribui à União, entre outras competências, emitir moeda e administrar as reservas cambiais do País. Competências de interesse local pertencem aos Municípios, e a organização regional cabe aos Estados nas hipóteses constitucionais."
+    },
+    {
+      "id": "direito-constitucional-037",
+      "subjectId": "direito-constitucional",
+      "number": 37,
+      "topic": "Organização do Estado - competência comum",
+      "area": "Organização do Estado",
+      "stem": "É competência comum da União, dos Estados, do Distrito Federal e dos Municípios:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "manter relações com Estados estrangeiros e participar de organizações internacionais."
+        },
+        {
+          "letter": "B",
+          "text": "legislar privativamente sobre direito penal e processual."
+        },
+        {
+          "letter": "C",
+          "text": "emitir moeda e fixar normas gerais sobre o sistema monetário nacional."
+        },
+        {
+          "letter": "D",
+          "text": "cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência."
+        },
+        {
+          "letter": "E",
+          "text": "declarar guerra e celebrar a paz, mediante aprovação do Congresso Nacional."
+        }
+      ],
+      "answer": "D",
+      "explanation": "O art. 23 prevê competências administrativas comuns dos entes federativos, entre elas cuidar da saúde e assistência pública e proteger e garantir as pessoas com deficiência. As demais alternativas descrevem competências predominantemente federais."
+    },
+    {
+      "id": "direito-constitucional-038",
+      "subjectId": "direito-constitucional",
+      "number": 38,
+      "topic": "Organização do Estado - competência legislativa concorrente",
+      "area": "Organização do Estado",
+      "stem": "Na competência legislativa concorrente prevista no art. 24 da Constituição:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a superveniência de lei federal sobre normas gerais suspende integralmente toda lei estadual anterior, ainda que compatível."
+        },
+        {
+          "letter": "B",
+          "text": "a União, os Estados, o Distrito Federal e os Municípios podem editar normas gerais e específicas com a mesma hierarquia."
+        },
+        {
+          "letter": "C",
+          "text": "a União estabelece normas gerais, e os Estados e o Distrito Federal exercem competência suplementar."
+        },
+        {
+          "letter": "D",
+          "text": "os Municípios exercem competência concorrente plena sempre que houver interesse local na matéria."
+        },
+        {
+          "letter": "E",
+          "text": "a União limita-se a editar normas específicas, enquanto os Estados elaboram exclusivamente normas gerais."
+        }
+      ],
+      "answer": "C",
+      "explanation": "No art. 24, a União limita-se a estabelecer normas gerais, cabendo aos Estados e ao Distrito Federal a competência suplementar. A superveniência de lei federal suspende a eficácia da lei estadual no que lhe for contrário, e os Municípios não integram formalmente esse rol de competência concorrente."
+    },
+    {
+      "id": "direito-constitucional-039",
+      "subjectId": "direito-constitucional",
+      "number": 39,
+      "topic": "Organização do Estado - Distrito Federal",
+      "area": "Organização do Estado",
+      "stem": "O Distrito Federal, segundo a Constituição:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pode ser dividido em Municípios, desde que haja aprovação em plebiscito local."
+        },
+        {
+          "letter": "B",
+          "text": "integra a União e não possui autonomia política, administrativa ou financeira."
+        },
+        {
+          "letter": "C",
+          "text": "rege-se por Constituição estadual própria, aprovada pela Assembleia Legislativa local."
+        },
+        {
+          "letter": "D",
+          "text": "acumula as competências legislativas reservadas aos Estados e aos Municípios."
+        },
+        {
+          "letter": "E",
+          "text": "possui apenas competências administrativas, sendo a função legislativa exercida exclusivamente pelo Congresso Nacional."
+        }
+      ],
+      "answer": "D",
+      "explanation": "O art. 32 dispõe que o Distrito Federal é vedado de dividir-se em Municípios e atribui a ele as competências legislativas reservadas aos Estados e Municípios."
+    },
+    {
+      "id": "direito-constitucional-040",
+      "subjectId": "direito-constitucional",
+      "number": 40,
+      "topic": "Organização do Estado - intervenção federal",
+      "area": "Organização do Estado",
+      "stem": "A União não intervirá nos Estados nem no Distrito Federal, exceto nas hipóteses expressamente previstas na Constituição. Entre elas, encontra-se:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a necessidade de alterar a política tributária estadual sem aprovação legislativa local."
+        },
+        {
+          "letter": "B",
+          "text": "o simples desacordo político entre o Governador e a maioria da Assembleia Legislativa."
+        },
+        {
+          "letter": "C",
+          "text": "a conveniência administrativa de substituir temporariamente os dirigentes eleitos do Estado."
+        },
+        {
+          "letter": "D",
+          "text": "a manutenção da integridade nacional."
+        },
+        {
+          "letter": "E",
+          "text": "a inexistência de maioria parlamentar para aprovação de projeto de lei de iniciativa do Executivo estadual."
+        }
+      ],
+      "answer": "D",
+      "explanation": "O art. 34 prevê hipóteses taxativas de intervenção federal, entre elas manter a integridade nacional. Divergências políticas comuns ou conveniência administrativa não autorizam intervenção."
+    },
+    {
+      "id": "direito-constitucional-041",
+      "subjectId": "direito-constitucional",
+      "number": 41,
+      "topic": "Organização do Estado - serviços públicos locais",
+      "area": "Organização do Estado",
+      "stem": "Entre as competências constitucionais dos Municípios está:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "legislar privativamente sobre direito civil, penal, processual, eleitoral e do trabalho."
+        },
+        {
+          "letter": "B",
+          "text": "manter relações com Estados estrangeiros e participar de organizações internacionais em nome da Federação."
+        },
+        {
+          "letter": "C",
+          "text": "organizar e prestar, diretamente ou por concessão ou permissão, serviços de interesse local, incluído o transporte coletivo."
+        },
+        {
+          "letter": "D",
+          "text": "declarar estado de sítio e restringir temporariamente garantias constitucionais no território municipal."
+        },
+        {
+          "letter": "E",
+          "text": "emitir moeda local para custear serviços de interesse municipal, observadas as diretrizes do Banco Central."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O art. 30, V, atribui ao Município a organização e prestação de serviços públicos de interesse local, diretamente ou por concessão ou permissão, incluído o transporte coletivo, de caráter essencial."
+    },
+    {
+      "id": "direito-constitucional-042",
+      "subjectId": "direito-constitucional",
+      "number": 42,
+      "topic": "Administração Pública na Constituição - alcance do art. 37",
+      "area": "Administração Pública e servidores",
+      "stem": "Os princípios expressos do caput do art. 37 da Constituição aplicam-se:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "somente à administração direta do Poder Executivo da União e às atividades previstas em lei federal."
+        },
+        {
+          "letter": "B",
+          "text": "somente quando a atividade administrativa envolver despesa pública, contratação de terceiros ou execução direta de serviço."
+        },
+        {
+          "letter": "C",
+          "text": "à administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios."
+        },
+        {
+          "letter": "D",
+          "text": "exclusivamente aos agentes ocupantes de cargo efetivo, sem alcançar agentes políticos ou empregados públicos."
+        },
+        {
+          "letter": "E",
+          "text": "apenas aos órgãos de atividade-fim, sem alcançar entidades da administração indireta ou demais Poderes."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O caput do art. 37 alcança a administração pública direta e indireta de qualquer dos Poderes de todos os entes federativos. Os princípios constitucionais não se limitam ao Executivo federal nem dependem de haver gasto público."
+    },
+    {
+      "id": "direito-constitucional-043",
+      "subjectId": "direito-constitucional",
+      "number": 43,
+      "topic": "Servidores públicos - acumulação remunerada de cargos",
+      "area": "Administração Pública e servidores",
+      "stem": "Havendo compatibilidade de horários, a Constituição admite a acumulação remunerada de:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dois cargos técnicos ou científicos, independentemente da formação exigida para cada cargo."
+        },
+        {
+          "letter": "B",
+          "text": "três cargos de professor em instituições públicas distintas, se não houver sobreposição de horários."
+        },
+        {
+          "letter": "C",
+          "text": "qualquer cargo efetivo com cargo em comissão, desde que o servidor renuncie à remuneração do cargo de menor valor."
+        },
+        {
+          "letter": "D",
+          "text": "dois cargos em comissão destinados a direção e assessoramento, quando exercidos no mesmo ente federativo."
+        },
+        {
+          "letter": "E",
+          "text": "um cargo de professor com outro técnico ou científico, ou dois cargos privativos de profissionais de saúde regulamentados."
+        }
+      ],
+      "answer": "E",
+      "explanation": "O art. 37, XVI, admite, com compatibilidade de horários, dois cargos de professor; um cargo de professor com outro técnico ou científico; e dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas."
+    },
+    {
+      "id": "direito-constitucional-044",
+      "subjectId": "direito-constitucional",
+      "number": 44,
+      "topic": "Servidores públicos - teto remuneratório",
+      "area": "Administração Pública e servidores",
+      "stem": "O teto remuneratório geral do serviço público brasileiro corresponde ao subsídio mensal, em espécie, dos:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ministros do Supremo Tribunal Federal."
+        },
+        {
+          "letter": "B",
+          "text": "Governadores dos Estados e do Distrito Federal."
+        },
+        {
+          "letter": "C",
+          "text": "Presidentes dos Tribunais de Justiça estaduais."
+        },
+        {
+          "letter": "D",
+          "text": "Ministros de Estado, independentemente do Poder ou ente federativo."
+        },
+        {
+          "letter": "E",
+          "text": "Presidentes das Casas do Congresso Nacional."
+        }
+      ],
+      "answer": "A",
+      "explanation": "O art. 37, XI, adota como teto geral o subsídio mensal, em espécie, dos Ministros do Supremo Tribunal Federal, sem prejuízo dos subtetos previstos para determinados âmbitos e Poderes."
+    },
+    {
+      "id": "direito-constitucional-045",
+      "subjectId": "direito-constitucional",
+      "number": 45,
+      "topic": "Servidores públicos - estabilidade",
+      "area": "Administração Pública e servidores",
+      "stem": "São estáveis, após três anos de efetivo exercício, os servidores:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ocupantes exclusivamente de cargo em comissão, após avaliação especial de desempenho."
+        },
+        {
+          "letter": "B",
+          "text": "designados para função de confiança, desde que tenham exercido atribuições de chefia durante o estágio probatório."
+        },
+        {
+          "letter": "C",
+          "text": "contratados por prazo determinado para atender necessidade temporária de excepcional interesse público."
+        },
+        {
+          "letter": "D",
+          "text": "nomeados para cargo de provimento efetivo em virtude de concurso público."
+        },
+        {
+          "letter": "E",
+          "text": "ocupantes de qualquer emprego público, ainda que contratados sem concurso para necessidade temporária."
+        }
+      ],
+      "answer": "D",
+      "explanation": "O art. 41 confere estabilidade, após três anos de efetivo exercício, aos servidores nomeados para cargo de provimento efetivo em virtude de concurso público. Cargos em comissão e contratações temporárias não geram essa estabilidade constitucional."
+    },
+    {
+      "id": "direito-constitucional-046",
+      "subjectId": "direito-constitucional",
+      "number": 46,
+      "topic": "Servidores públicos - perda do cargo estável",
+      "area": "Administração Pública e servidores",
+      "stem": "O servidor público estável poderá perder o cargo, entre outras hipóteses:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "por avaliação de desempenho informal, comunicada verbalmente ao servidor ao final do exercício financeiro."
+        },
+        {
+          "letter": "B",
+          "text": "por decisão administrativa imotivada sempre que houver necessidade de redução de despesas de pessoal."
+        },
+        {
+          "letter": "C",
+          "text": "por sentença judicial transitada em julgado ou por processo administrativo com ampla defesa."
+        },
+        {
+          "letter": "D",
+          "text": "por decreto do chefe do Poder Executivo, independentemente de processo ou decisão judicial."
+        },
+        {
+          "letter": "E",
+          "text": "por decisão da chefia imediata baseada exclusivamente em discordância sobre a forma de execução do serviço."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O art. 41, § 1º, admite a perda do cargo do servidor estável por sentença judicial transitada em julgado, processo administrativo com ampla defesa ou procedimento de avaliação periódica de desempenho na forma de lei complementar, assegurada ampla defesa."
+    },
+    {
+      "id": "direito-constitucional-047",
+      "subjectId": "direito-constitucional",
+      "number": 47,
+      "topic": "Administração Pública - contratação temporária",
+      "area": "Administração Pública e servidores",
+      "stem": "A Constituição admite contratação por tempo determinado pela Administração Pública:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "exclusivamente por decisão judicial, quando houver risco de interrupção de serviço essencial."
+        },
+        {
+          "letter": "B",
+          "text": "somente para atividade de direção, chefia e assessoramento em órgãos da administração direta."
+        },
+        {
+          "letter": "C",
+          "text": "para substituir de modo permanente os cargos efetivos ainda não providos por concurso público."
+        },
+        {
+          "letter": "D",
+          "text": "para qualquer função de confiança, dispensada a previsão legal da hipótese de contratação."
+        },
+        {
+          "letter": "E",
+          "text": "nos casos estabelecidos em lei, para atender necessidade temporária de excepcional interesse público."
+        }
+      ],
+      "answer": "E",
+      "explanation": "O art. 37, IX, permite contratação por tempo determinado para atender necessidade temporária de excepcional interesse público, nos casos estabelecidos em lei. A regra não autoriza substituição permanente do concurso público."
+    },
+    {
+      "id": "direito-constitucional-048",
+      "subjectId": "direito-constitucional",
+      "number": 48,
+      "topic": "Segurança pública - conceito constitucional",
+      "area": "Segurança pública",
+      "stem": "Segundo o art. 144 da Constituição, a segurança pública é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "atividade exclusiva das polícias civis, responsáveis por toda prevenção e investigação de infrações penais."
+        },
+        {
+          "letter": "B",
+          "text": "serviço facultativo prestado pelos entes federativos de acordo com sua disponibilidade orçamentária anual."
+        },
+        {
+          "letter": "C",
+          "text": "função militar destinada prioritariamente à defesa externa do País e à proteção de fronteiras."
+        },
+        {
+          "letter": "D",
+          "text": "atribuição privativa da União, cabendo aos Estados somente executar determinações federais no território local."
+        },
+        {
+          "letter": "E",
+          "text": "dever do Estado, direito e responsabilidade de todos, voltada à ordem pública e à incolumidade das pessoas e do patrimônio."
+        }
+      ],
+      "answer": "E",
+      "explanation": "O art. 144 define a segurança pública como dever do Estado, direito e responsabilidade de todos, exercida para preservar a ordem pública e a incolumidade das pessoas e do patrimônio."
+    },
+    {
+      "id": "direito-constitucional-049",
+      "subjectId": "direito-constitucional",
+      "number": 49,
+      "topic": "Segurança pública - Polícia Federal",
+      "area": "Segurança pública",
+      "stem": "Entre as atribuições constitucionais da Polícia Federal está:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "apurar infrações contra bens, serviços e interesses da União e exercer as funções de polícia marítima, aeroportuária e de fronteiras."
+        },
+        {
+          "letter": "B",
+          "text": "exercer a polícia judiciária dos Estados e investigar toda infração penal comum ocorrida em território estadual."
+        },
+        {
+          "letter": "C",
+          "text": "proteger bens, serviços e instalações municipais, substituindo as guardas municipais nas cidades que não possuam efetivo próprio."
+        },
+        {
+          "letter": "D",
+          "text": "realizar o policiamento ostensivo e a preservação da ordem pública em todos os Estados e no Distrito Federal."
+        },
+        {
+          "letter": "E",
+          "text": "apurar exclusivamente infrações penais militares, ainda que praticadas por civis fora de área sob administração militar."
+        }
+      ],
+      "answer": "A",
+      "explanation": "O art. 144, § 1º, atribui à Polícia Federal, entre outras funções, a apuração de infrações de interesse da União e as funções de polícia marítima, aeroportuária e de fronteiras. O policiamento ostensivo é atribuição das polícias militares, e a polícia judiciária estadual é exercida pelas polícias civis."
+    },
+    {
+      "id": "direito-constitucional-050",
+      "subjectId": "direito-constitucional",
+      "number": 50,
+      "topic": "Segurança pública - guardas municipais",
+      "area": "Segurança pública",
+      "stem": "Os Municípios podem constituir guardas municipais destinadas a:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "proteger seus bens, serviços e instalações, conforme dispuser a lei."
+        },
+        {
+          "letter": "B",
+          "text": "substituir as polícias militares na preservação da ordem pública em todo o território estadual."
+        },
+        {
+          "letter": "C",
+          "text": "controlar as fronteiras nacionais e fiscalizar o ingresso de estrangeiros no País."
+        },
+        {
+          "letter": "D",
+          "text": "julgar infrações de menor potencial ofensivo e aplicar penas restritivas de direitos no âmbito municipal."
+        },
+        {
+          "letter": "E",
+          "text": "exercer com exclusividade a polícia judiciária e investigar crimes de competência da Justiça estadual."
+        }
+      ],
+      "answer": "A",
+      "explanation": "O art. 144, § 8º, faculta aos Municípios constituir guardas municipais destinadas à proteção de seus bens, serviços e instalações, conforme dispuser a lei. A Constituição não lhes atribui polícia judiciária estadual, julgamento de infrações ou controle de fronteiras."
     }
   ],
   "review": {
-    "version": 2,
+    "version": 3,
     "description": "Revisão editorial de gabaritos, pistas de extensão, rodapés importados e complexidade matemática.",
     "mathQuestionsStrengthened": [
       1,
@@ -10292,6 +11194,36 @@ export const questionBank = {
       158,
       159,
       160
+    ],
+    "constitutionalExpansionReviewed": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
     ]
   }
 };

@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-11-02T22:46:21.367Z",
+  "generatedAt": "2026-11-02T22:51:36.177Z",
   "subjects": [
     {
       "id": "matematica",
@@ -23,7 +23,7 @@ export const questionBank = {
       "id": "portugues",
       "label": "Língua Portuguesa",
       "short": "Português",
-      "count": 60
+      "count": 100
     },
     {
       "id": "farmacia",
@@ -2959,22 +2959,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "A orientação técnica deve priorizar a adaptação à realidade do paciente, mesmo que reduza a precisão das informações."
+          "text": "A comunicação eficaz combina precisão técnica, adaptação da linguagem e verificação da compreensão."
         },
         {
           "letter": "C",
-          "text": "A comunicação deve privilegiar explicações simplificadas, mesmo quando elas alteram o conteúdo científico transmitido."
+          "text": "A orientação técnica deve priorizar a adaptação à realidade do paciente, mesmo que reduza a precisão das informações."
         },
         {
           "letter": "D",
-          "text": "A comunicação eficaz combina precisão técnica, adaptação da linguagem e verificação da compreensão."
+          "text": "A comunicação deve privilegiar explicações simplificadas, mesmo quando elas alteram o conteúdo científico transmitido."
         },
         {
           "letter": "E",
           "text": "O domínio técnico basta para orientar o paciente, desde que a informação seja apresentada de maneira completa."
         }
       ],
-      "answer": "D",
+      "answer": "B",
       "explanation": "O texto distingue a simples transmissão de informações da comunicação efetiva. Esta preserva a precisão científica, mas considera o interlocutor e confirma a compreensão. As demais alternativas reduzem ou contradizem essa tese."
     },
     {
@@ -2987,11 +2987,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O acompanhamento do limite financeiro reduziu a necessidade de controlar consumo, validade e reposição dos produtos."
+          "text": "O controle financeiro, isoladamente, não assegurou uma gestão eficiente do estoque."
         },
         {
           "letter": "B",
-          "text": "O controle financeiro, isoladamente, não assegurou uma gestão eficiente do estoque."
+          "text": "O acompanhamento do limite financeiro reduziu a necessidade de controlar consumo, validade e reposição dos produtos."
         },
         {
           "letter": "C",
@@ -3006,7 +3006,7 @@ export const questionBank = {
           "text": "As perdas por vencimento fizeram o estoque ultrapassar o limite financeiro definido para o período analisado."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "explanation": "O texto mostra simultaneamente desabastecimento e vencimento, apesar do respeito ao orçamento. Isso permite concluir que o controle financeiro não bastou. As causas específicas não são informadas; por isso, B, C, D e E fazem afirmações que excedem o fragmento."
     },
     {
@@ -3055,11 +3055,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o relatório apresentou uma explicação multifatorial e cautelosa."
+          "text": "a sazonalidade foi descartada por falta de evidências."
         },
         {
           "letter": "C",
-          "text": "a sazonalidade foi descartada por falta de evidências."
+          "text": "o relatório apresentou uma explicação multifatorial e cautelosa."
         },
         {
           "letter": "D",
@@ -3070,7 +3070,7 @@ export const questionBank = {
           "text": "o relatório concluiu que não existia explicação possível."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation": "O relatório reúne vários fatores e emprega “podem explicar”, marca de cautela. A, B, D e E contradizem informações expressas no fragmento."
     },
     {
@@ -3087,22 +3087,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Indicadores exigem contexto; número de procedimentos não revela, por si só, o benefício clínico produzido."
-        },
-        {
-          "letter": "C",
           "text": "Comparar unidades é inviável, porque produtividade e benefício clínico não podem ser mensurados de forma alguma."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "Maior número de procedimentos comprova benefício clínico, pois casos complexos têm peso reduzido na comparação."
+        },
+        {
+          "letter": "D",
+          "text": "Indicadores exigem contexto; número de procedimentos não revela, por si só, o benefício clínico produzido."
         },
         {
           "letter": "E",
           "text": "Casos complexos devem ser separados das avaliações, para não alterar os índices de produtividade registrados."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "explanation": "A primeira frase estabelece a tese: indicadores são úteis, porém precisam de contexto. O exemplo da unidade com casos complexos demonstra que quantidade e benefício não são equivalentes. As demais alternativas deformam o argumento."
     },
     {
@@ -3123,18 +3123,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "pontos de dificuldade ou limitação do processo."
-        },
-        {
-          "letter": "D",
           "text": "agentes responsáveis pela publicação oficial."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "dispositivos que ampliam automaticamente a eficiência."
+        },
+        {
+          "letter": "E",
+          "text": "pontos de dificuldade ou limitação do processo."
         }
       ],
-      "answer": "C",
+      "answer": "E",
       "explanation": "“Gargalo” é empregado metaforicamente para indicar um obstáculo ou ponto que restringe o fluxo de um processo. O contexto contrapõe publicação e dificuldade de aplicação."
     },
     {
@@ -3159,14 +3159,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "comprova que todos os eventos anteriores foram omitidos intencionalmente."
+          "text": "relativiza uma interpretação negativa imediata do aumento observado."
         },
         {
           "letter": "E",
-          "text": "relativiza uma interpretação negativa imediata do aumento observado."
+          "text": "comprova que todos os eventos anteriores foram omitidos intencionalmente."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "A segunda frase oferece outra explicação possível para o aumento das notificações. Ela não nega o dado nem comprova uma causa; apenas impede a conclusão automática de que houve piora."
     },
     {
@@ -3183,11 +3183,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "divulgar comercialmente determinado produto."
+          "text": "instruir o leitor acerca de uma sequência de condutas."
         },
         {
           "letter": "C",
-          "text": "instruir o leitor acerca de uma sequência de condutas."
+          "text": "divulgar comercialmente determinado produto."
         },
         {
           "letter": "D",
@@ -3198,7 +3198,7 @@ export const questionBank = {
           "text": "narrar um incidente ocorrido durante a administração."
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "explanation": "Os verbos no imperativo — “confira”, “interrompa” e “comunique” — orientam ações. Trata-se de finalidade injuntiva, voltada à execução de uma conduta."
     },
     {
@@ -3211,11 +3211,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "da ironia criada entre o elogio aparentemente positivo e a demora efetivamente enfrentada pelo usuário."
+          "text": "de uma orientação indireta para que os responsáveis definam novo horário para o atendimento solicitado."
         },
         {
           "letter": "B",
-          "text": "de uma orientação indireta para que os responsáveis definam novo horário para o atendimento solicitado."
+          "text": "da ironia criada entre o elogio aparentemente positivo e a demora efetivamente enfrentada pelo usuário."
         },
         {
           "letter": "C",
@@ -3230,7 +3230,7 @@ export const questionBank = {
           "text": "do emprego literal de um elogio dirigido à organização do atendimento que havia sido marcado previamente."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "explanation": "O enunciado elogia a pontualidade em uma situação marcada por longo atraso. A incompatibilidade entre o sentido literal e o contexto produz ironia."
     },
     {
@@ -3307,15 +3307,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Embora o relatório tenha sido concluído, por isso a equipe ainda o redigirá."
+          "text": "A demanda aumentou, razão pela qual foi necessário rever a programação de compras."
         },
         {
           "letter": "B",
-          "text": "O estoque acabou antes do previsto, portanto permaneceu disponível durante todo o período."
+          "text": "Embora o relatório tenha sido concluído, por isso a equipe ainda o redigirá."
         },
         {
           "letter": "C",
-          "text": "A demanda aumentou, razão pela qual foi necessário rever a programação de compras."
+          "text": "O estoque acabou antes do previsto, portanto permaneceu disponível durante todo o período."
         },
         {
           "letter": "D",
@@ -3326,7 +3326,7 @@ export const questionBank = {
           "text": "A capacitação foi cancelada, apesar de não ter sido realizada por causa do cancelamento."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "O aumento da demanda pode justificar a revisão da programação, e o conectivo causal-conclusivo está bem empregado. Em B, “entretanto” introduz uma ideia equivalente, não oposta. As demais apresentam contradições ou conexão sintática inadequada."
     },
     {
@@ -3339,15 +3339,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "intertextualidade por alusão, com transformação de uma estrutura reconhecível de texto anterior."
-        },
-        {
-          "letter": "B",
           "text": "estrangeirismo, pois incorpora ao enunciado uma formulação que não pertence ao repertório da língua portuguesa."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "descrição objetiva, pois apresenta elementos do caminho sem produzir relação com outro texto conhecido."
+        },
+        {
+          "letter": "C",
+          "text": "intertextualidade por alusão, com transformação de uma estrutura reconhecível de texto anterior."
         },
         {
           "letter": "D",
@@ -3358,7 +3358,7 @@ export const questionBank = {
           "text": "ambiguidade lexical, pois o sentido de “interação” permite interpretações incompatíveis no contexto apresentado."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "explanation": "A campanha recupera uma construção reconhecível de outro texto e a transforma para produzir novo sentido. Isso caracteriza intertextualidade."
     },
     {
@@ -3375,22 +3375,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "transforma a afirmação em pergunta indireta sobre a origem dos resultados mencionados no período."
+          "text": "indica que o enunciador apresenta a conclusão como possibilidade, e não como certeza absoluta."
         },
         {
           "letter": "C",
-          "text": "marca uma ordem ao leitor para que aceite a explicação apresentada pelo enunciador do texto."
+          "text": "transforma a afirmação em pergunta indireta sobre a origem dos resultados mencionados no período."
         },
         {
           "letter": "D",
-          "text": "apresenta conclusão definitiva, pois a combinação de fatores foi comprovada pelos resultados observados."
+          "text": "marca uma ordem ao leitor para que aceite a explicação apresentada pelo enunciador do texto."
         },
         {
           "letter": "E",
-          "text": "indica que o enunciador apresenta a conclusão como possibilidade, e não como certeza absoluta."
+          "text": "apresenta conclusão definitiva, pois a combinação de fatores foi comprovada pelos resultados observados."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "O advérbio modalizador reduz o grau de certeza e apresenta a explicação como provável, não definitiva."
     },
     {
@@ -3407,22 +3407,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "“Chegaram ontem os novos lotes.” — sujeito: “os novos lotes”."
-        },
-        {
-          "letter": "C",
           "text": "“Faz dois meses que o sistema mudou.” — sujeito: “dois meses”."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "“Houve reclamações durante a semana.” — sujeito: “reclamações”."
+        },
+        {
+          "letter": "D",
+          "text": "“Chegaram ontem os novos lotes.” — sujeito: “os novos lotes”."
         },
         {
           "letter": "E",
           "text": "“Precisa-se de profissionais experientes.” — sujeito: “profissionais experientes”."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "explanation": "Em C, “os novos lotes” é sujeito posposto, com o qual o verbo concorda. “Haver” no sentido de existir e “fazer” indicando tempo são impessoais. Em “precisa-se de”, o “se” indetermina o sujeito; “de profissionais” é complemento. Em A, “medicamentos” é o sujeito."
     },
     {
@@ -3443,18 +3443,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "objeto direto e predicativo do objeto."
+          "text": "objeto indireto e adjunto adnominal."
         },
         {
           "letter": "D",
-          "text": "objeto indireto e adjunto adnominal."
+          "text": "objeto direto e predicativo do objeto."
         },
         {
           "letter": "E",
           "text": "agente da passiva e objeto direto."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "explanation": "Quem considera, considera algo: “a proposta” é objeto direto. “Inadequada” atribui uma característica ao objeto durante o julgamento, sendo predicativo do objeto."
     },
     {
@@ -3471,22 +3471,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "A orientação **aos pacientes** deve ser clara."
-        },
-        {
-          "letter": "C",
           "text": "A análise **do farmacêutico** foi entregue ontem."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "O parecer **da comissão** foi favorável."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "O estoque **da unidade** foi conferido."
+        },
+        {
+          "letter": "E",
+          "text": "A orientação **aos pacientes** deve ser clara."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "“Aos pacientes” completa o sentido do nome abstrato “orientação” e designa o alvo da ação de orientar. Nos demais casos, os termos destacados têm valor de agente, possuidor ou especificação e funcionam como adjuntos adnominais."
     },
     {
@@ -3499,26 +3499,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Os eventos adversos foram registrados pela equipe."
-        },
-        {
-          "letter": "B",
           "text": "Registraram-se a equipe e os eventos adversos."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "Registrou-se os eventos adversos pela equipe."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "A equipe foi registrada pelos eventos adversos."
+        },
+        {
+          "letter": "D",
+          "text": "Os eventos adversos foram registrados pela equipe."
         },
         {
           "letter": "E",
           "text": "Os eventos adversos haviam registrado a equipe."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "O objeto direto da ativa torna-se sujeito paciente; o verbo assume “ser + particípio”, e o sujeito da ativa torna-se agente da passiva. Mantém-se o pretérito perfeito: “registrou” → “foram registrados”."
     },
     {
@@ -3531,26 +3531,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "causa."
+          "text": "concessão."
         },
         {
           "letter": "B",
-          "text": "finalidade."
+          "text": "causa."
         },
         {
           "letter": "C",
-          "text": "condição."
+          "text": "finalidade."
         },
         {
           "letter": "D",
-          "text": "consequência."
+          "text": "condição."
         },
         {
           "letter": "E",
-          "text": "concessão."
+          "text": "consequência."
         }
       ],
-      "answer": "E",
+      "answer": "A",
       "explanation": "A regularidade do estoque poderia levar à redução do monitoramento, mas isso não ocorreu. “Embora” introduz circunstância concessiva."
     },
     {
@@ -3571,18 +3571,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "Em I, todos os servidores participaram, e a oração apenas acrescenta uma informação explicativa."
+          "text": "Em I, somente os servidores que participaram recebem certificado; em II, a oração sugere participação geral."
         },
         {
           "letter": "D",
-          "text": "As duas frases têm o mesmo sentido, porque a posição das vírgulas não interfere na referência."
+          "text": "Em I, todos os servidores participaram, e a oração apenas acrescenta uma informação explicativa."
         },
         {
           "letter": "E",
-          "text": "Em I, somente os servidores que participaram recebem certificado; em II, a oração sugere participação geral."
+          "text": "As duas frases têm o mesmo sentido, porque a posição das vírgulas não interfere na referência."
         }
       ],
-      "answer": "E",
+      "answer": "C",
       "explanation": "Sem vírgulas, a oração é adjetiva restritiva e delimita o grupo. Com vírgulas, é explicativa e apresenta a participação como característica do conjunto já identificado."
     },
     {
@@ -3599,22 +3599,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "conclusão."
+          "text": "oposição."
         },
         {
           "letter": "C",
-          "text": "alternância."
+          "text": "conclusão."
         },
         {
           "letter": "D",
-          "text": "oposição."
+          "text": "alternância."
         },
         {
           "letter": "E",
           "text": "adição."
         }
       ],
-      "answer": "D",
+      "answer": "B",
       "explanation": "“Mas” é conjunção coordenativa adversativa. Contrapõe a revisão do protocolo à ausência de alteração do procedimento."
     },
     {
@@ -3631,22 +3631,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Se a equipe conferir o lote, evitaria o erro."
+          "text": "Se a equipe tivesse conferido o lote, teria evitado o erro."
         },
         {
           "letter": "C",
-          "text": "Caso a equipe conferiu o lote, evitaria o erro."
+          "text": "Se a equipe conferir o lote, evitaria o erro."
         },
         {
           "letter": "D",
-          "text": "Se a equipe conferisse o lote, evitará o erro."
+          "text": "Caso a equipe conferiu o lote, evitaria o erro."
         },
         {
           "letter": "E",
-          "text": "Se a equipe tivesse conferido o lote, teria evitado o erro."
+          "text": "Se a equipe conferisse o lote, evitará o erro."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "A condição passada não realizada é expressa pelo pretérito mais-que-perfeito composto do subjuntivo, correlacionado ao futuro do pretérito composto: “tivesse conferido” / “teria evitado”."
     },
     {
@@ -3659,26 +3659,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O setor que confio encaminhou o relatório."
+          "text": "O medicamento de que o paciente necessita está disponível."
         },
         {
           "letter": "B",
-          "text": "A norma cuja a publicação ocorreu ontem já está vigente."
+          "text": "O setor que confio encaminhou o relatório."
         },
         {
           "letter": "C",
-          "text": "Este é o protocolo onde a equipe discordou."
+          "text": "A norma cuja a publicação ocorreu ontem já está vigente."
         },
         {
           "letter": "D",
-          "text": "O medicamento de que o paciente necessita está disponível."
+          "text": "Este é o protocolo onde a equipe discordou."
         },
         {
           "letter": "E",
           "text": "A profissional onde elaborou o parecer não compareceu."
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "explanation": "O verbo “necessitar” rege a preposição “de”, preservada antes do relativo: “de que”. Em A e E, “onde” foi usado sem referência a lugar. Em B, “cujo” não admite artigo depois dele. Em D, “confiar” exige “em”: setor em que confio."
     },
     {
@@ -3691,26 +3691,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "causa."
-        },
-        {
-          "letter": "B",
           "text": "consequência."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "comparação."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "conformidade."
+        },
+        {
+          "letter": "D",
+          "text": "causa."
         },
         {
           "letter": "E",
           "text": "condição."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "Anteposto à oração principal e equivalente a “porque”, “como” tem valor causal: os registros manuais decorreram da indisponibilidade do sistema."
     },
     {
@@ -3723,26 +3723,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "advérbio de intensidade e advérbio de modo."
-        },
-        {
-          "letter": "B",
           "text": "substantivo e pronome relativo."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "pronome indefinido e adjetivo."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "adjetivo e substantivo."
+        },
+        {
+          "letter": "D",
+          "text": "advérbio de intensidade e advérbio de modo."
         },
         {
           "letter": "E",
           "text": "numeral e advérbio de tempo."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "“Rapidamente” modifica o verbo “respondeu” e indica modo. “Bastante” intensifica outro advérbio e, por isso, é também advérbio, invariável."
     },
     {
@@ -3759,22 +3759,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "partícula apassivadora."
-        },
-        {
-          "letter": "C",
           "text": "partícula expletiva sem função sintática."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "índice de indeterminação do sujeito."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "pronome reflexivo."
+        },
+        {
+          "letter": "E",
+          "text": "partícula apassivadora."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "O verbo transitivo direto admite voz passiva sintética: “os resultados definitivos foram publicados”. O termo nominal é sujeito paciente, razão pela qual o verbo concorda no plural."
     },
     {
@@ -3791,22 +3791,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "preposição."
+          "text": "conjunção integrante."
         },
         {
           "letter": "C",
-          "text": "advérbio de intensidade."
+          "text": "preposição."
         },
         {
           "letter": "D",
-          "text": "conjunção integrante."
+          "text": "advérbio de intensidade."
         },
         {
           "letter": "E",
           "text": "pronome relativo."
         }
       ],
-      "answer": "D",
+      "answer": "B",
       "explanation": "“Que” introduz a oração substantiva “que os dados sejam conferidos”, a qual funciona como sujeito de “é necessário”. Não retoma um antecedente, portanto não é pronome relativo."
     },
     {
@@ -3819,26 +3819,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O servidor dirigiu-se a uma unidade próxima."
+          "text": "A que recebeu maior pontuação foi classificada."
         },
         {
           "letter": "B",
-          "text": "A comissão publicou a decisão."
+          "text": "O servidor dirigiu-se a uma unidade próxima."
         },
         {
           "letter": "C",
-          "text": "A análise ocorreu durante a reunião."
+          "text": "A comissão publicou a decisão."
         },
         {
           "letter": "D",
-          "text": "A que recebeu maior pontuação foi classificada."
+          "text": "A análise ocorreu durante a reunião."
         },
         {
           "letter": "E",
           "text": "A equipe entregou o relatório à chefia."
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "explanation": "Em B, “a” equivale a “aquela”: “Aquela que recebeu...”. Nas demais, há artigo definido ou preposição."
     },
     {
@@ -3851,26 +3851,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Devem existir soluções mais adequadas para o problema."
-        },
-        {
-          "letter": "B",
           "text": "Existe, no relatório, dados que precisam de revisão."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "Houveram diversas alterações no cronograma."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "Tratam-se de medidas temporárias."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "Fazem três meses que o sistema foi implantado."
+        },
+        {
+          "letter": "E",
+          "text": "Devem existir soluções mais adequadas para o problema."
         }
       ],
-      "answer": "A",
+      "answer": "E",
       "explanation": "“Existir” é pessoal, e o auxiliar de uma locução concorda com “soluções”: “devem existir”. “Fazer” temporal e “haver” com sentido de existir ficam no singular. Em C, o correto é “existem dados”. Em E, “tratar-se de” é impessoal nessa construção: “trata-se de medidas”."
     },
     {
@@ -3883,26 +3883,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Mais de um candidato apresentaram recurso."
+          "text": "Cerca de vinte processos permanecem pendentes."
         },
         {
           "letter": "B",
-          "text": "Fui eu que elaborou o parecer."
+          "text": "Mais de um candidato apresentaram recurso."
         },
         {
           "letter": "C",
-          "text": "Qual de nós resolveremos o problema?"
+          "text": "Fui eu que elaborou o parecer."
         },
         {
           "letter": "D",
-          "text": "Nem o gerente nem os servidores percebeu a inconsistência."
+          "text": "Qual de nós resolveremos o problema?"
         },
         {
           "letter": "E",
-          "text": "Cerca de vinte processos permanecem pendentes."
+          "text": "Nem o gerente nem os servidores percebeu a inconsistência."
         }
       ],
-      "answer": "E",
+      "answer": "A",
       "explanation": "Com expressão aproximativa seguida de numeral plural, o verbo concorda com o substantivo: “vinte processos permanecem”. Em A, em regra, “mais de um candidato apresentou”. Em B: “fui eu que elaborei”. Em C, o sujeito composto exige plural. Em E: “qual de nós resolverá”."
     },
     {
@@ -3915,11 +3915,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "É proibida entrada de pessoas não autorizadas."
+          "text": "As servidoras estavam meio preocupadas com o prazo."
         },
         {
           "letter": "B",
-          "text": "As servidoras estavam meio preocupadas com o prazo."
+          "text": "É proibida entrada de pessoas não autorizadas."
         },
         {
           "letter": "C",
@@ -3934,7 +3934,7 @@ export const questionBank = {
           "text": "Segue anexo as planilhas solicitadas."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "explanation": "“Meio”, com sentido de “um pouco”, é advérbio e permanece invariável. Em A: “seguem anexas”. Sem determinante, a forma tradicional é “é proibido entrada”; com artigo, “é proibida a entrada”. “Menas” não existe. Em E: “seguem inclusos”."
     },
     {
@@ -3959,14 +3959,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "A equipe assistiu o treinamento obrigatório."
+          "text": "A decisão implicará revisão dos procedimentos."
         },
         {
           "letter": "E",
-          "text": "A decisão implicará revisão dos procedimentos."
+          "text": "A equipe assistiu o treinamento obrigatório."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "“Implicar”, no sentido de acarretar, é transitivo direto: implica revisão. “Aspirar” no sentido de desejar e “assistir” no de presenciar exigem “a”. A construção normativa é “preferiu X a Y”. “Obedecer” exige “a”."
     },
     {
@@ -4015,22 +4015,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Nunca informou-me o motivo da alteração."
+          "text": "Quando lhe entregaram o processo, iniciou a análise."
         },
         {
           "letter": "C",
-          "text": "Tinha comunicado-lhe a decisão anteriormente."
+          "text": "Nunca informou-me o motivo da alteração."
         },
         {
           "letter": "D",
-          "text": "O servidor que manifestou-se recebeu resposta."
+          "text": "Tinha comunicado-lhe a decisão anteriormente."
         },
         {
           "letter": "E",
-          "text": "Quando lhe entregaram o processo, iniciou a análise."
+          "text": "O servidor que manifestou-se recebeu resposta."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "A conjunção subordinativa “quando” atrai o pronome: “quando lhe entregaram”. “Nunca” e o relativo “que” também exigem próclise em A e C. Não se inicia oração com pronome átono na escrita formal, como em B. Com particípio, não se usa ênclise: “tinha-lhe comunicado”."
     },
     {
@@ -4047,11 +4047,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Informar-me-iam os resultados amanhã."
+          "text": "Me informariam os resultados amanhã."
         },
         {
           "letter": "C",
-          "text": "Me informariam os resultados amanhã."
+          "text": "Informar-me-iam os resultados amanhã."
         },
         {
           "letter": "D",
@@ -4062,7 +4062,7 @@ export const questionBank = {
           "text": "Me informar-lhe-iam os resultados amanhã."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation": "Com futuro do pretérito, sem elemento atrativo, a tradição normativa prescreve mesóclise: “informar-me-iam”. Em usos contemporâneos, outras soluções sintáticas são preferidas, mas C é a resposta exigida pela norma formal."
     },
     {
@@ -4075,26 +4075,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Quando o sistema voltou a funcionar os dados, foram atualizados."
+          "text": "A equipe, após conferir os lotes, liberou os produtos."
         },
         {
           "letter": "B",
-          "text": "A unidade recebeu luvas, máscaras e, aventais."
+          "text": "Quando o sistema voltou a funcionar os dados, foram atualizados."
         },
         {
           "letter": "C",
-          "text": "Os medicamentos que exigem refrigeração, foram transferidos imediatamente."
+          "text": "A unidade recebeu luvas, máscaras e, aventais."
         },
         {
           "letter": "D",
-          "text": "A equipe, após conferir os lotes, liberou os produtos."
+          "text": "Os medicamentos que exigem refrigeração, foram transferidos imediatamente."
         },
         {
           "letter": "E",
           "text": "O responsável informou, que a reunião seria adiada."
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "explanation": "O adjunto adverbial intercalado “após conferir os lotes” está corretamente isolado. Em A, separa-se indevidamente sujeito e verbo. Em B, a oração adverbial anteposta deveria terminar após “funcionar”. Em D, não se separa o verbo de sua oração objetiva. Em E, a vírgula antes de “aventais” é indevida."
     },
     {
@@ -4107,26 +4107,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "é opcional e mantém a relação restritiva entre apresentação da receita e atendimento."
+          "text": "torna a oração explicativa e sugere que todos os usuários apresentaram receita."
         },
         {
           "letter": "B",
-          "text": "faz de “usuários” objeto direto da oração e altera sua função sintática no período."
+          "text": "é opcional e mantém a relação restritiva entre apresentação da receita e atendimento."
         },
         {
           "letter": "C",
-          "text": "indica que somente uma parcela dos usuários mencionados apresentou receita."
+          "text": "faz de “usuários” objeto direto da oração e altera sua função sintática no período."
         },
         {
           "letter": "D",
-          "text": "elimina o vínculo entre ter apresentado receita e ter sido atendido no enunciado."
+          "text": "indica que somente uma parcela dos usuários mencionados apresentou receita."
         },
         {
           "letter": "E",
-          "text": "torna a oração explicativa e sugere que todos os usuários apresentaram receita."
+          "text": "elimina o vínculo entre ter apresentado receita e ter sido atendido no enunciado."
         }
       ],
-      "answer": "E",
+      "answer": "A",
       "explanation": "As vírgulas alteram a natureza da oração adjetiva. Sem elas, há restrição; com elas, a informação é explicativa e se aplica ao conjunto já delimitado."
     },
     {
@@ -4139,26 +4139,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "O relatório apontou três problemas: atraso, desperdício e subnotificação."
-        },
-        {
-          "letter": "B",
           "text": "Foram analisados: os documentos encaminhados ontem pela equipe responsável."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "Os servidores: participaram da capacitação obrigatória realizada no período."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "A comissão decidiu: que o recurso apresentado era improcedente no processo."
+        },
+        {
+          "letter": "D",
+          "text": "O relatório apontou três problemas: atraso, desperdício e subnotificação."
         },
         {
           "letter": "E",
           "text": "A equipe verificou: e corrigiu todos os registros inconsistentes do setor."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "Os dois-pontos introduzem uma enumeração que explica “três problemas”. Nas demais opções, eles separam indevidamente verbo e complemento, sujeito e predicado ou elementos da locução verbal."
     },
     {
@@ -4183,14 +4183,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "Foram convocados Ana, farmacêutica; Bruno, enfermeiro; e Carlos, médico."
+          "text": "O servidor; que elaborou o relatório; pediu afastamento por motivos pessoais."
         },
         {
           "letter": "E",
-          "text": "O servidor; que elaborou o relatório; pediu afastamento por motivos pessoais."
+          "text": "Foram convocados Ana, farmacêutica; Bruno, enfermeiro; e Carlos, médico."
         }
       ],
-      "answer": "D",
+      "answer": "E",
       "explanation": "O ponto e vírgula separa itens de uma enumeração que já contêm vírgulas internas, tornando a estrutura clara. Nas demais, rompe relações sintáticas essenciais."
     },
     {
@@ -4207,22 +4207,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "A Portaria nº 344/1998, norma relacionada ao controle especial, exige estudo atento."
-        },
-        {
-          "letter": "C",
           "text": "A Portaria nº 344/1998 norma relacionada ao controle especial, exige estudo atento."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "A Portaria, nº 344/1998 norma relacionada ao controle especial exige estudo atento."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "A Portaria nº 344/1998 que trata de substâncias controladas exige estudo atento."
+        },
+        {
+          "letter": "E",
+          "text": "A Portaria nº 344/1998, norma relacionada ao controle especial, exige estudo atento."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "“Norma relacionada ao controle especial” é aposto explicativo e deve ficar entre vírgulas. As outras alternativas omitem ou posicionam mal os sinais."
     },
     {
@@ -4275,18 +4275,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "O gerente informou ao farmacêutico que seu relatório estava incompleto."
+          "text": "A comissão analisou cuidadosamente todos os recursos encaminhados dentro do prazo previsto."
         },
         {
           "letter": "D",
-          "text": "A comissão analisou cuidadosamente todos os recursos encaminhados dentro do prazo previsto."
+          "text": "O gerente informou ao farmacêutico que seu relatório estava incompleto."
         },
         {
           "letter": "E",
           "text": "A equipe atualizou os dados na manhã de segunda-feira, após receber os documentos necessários."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "explanation": "“Seu relatório” pode referir-se ao gerente ou ao farmacêutico. A ambiguidade decorre da referência incerta do pronome possessivo."
     },
     {
@@ -4311,14 +4311,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "retificar / retificação"
+          "text": "retificar / ratificação"
         },
         {
           "letter": "E",
-          "text": "retificar / ratificação"
+          "text": "retificar / retificação"
         }
       ],
-      "answer": "D",
+      "answer": "E",
       "explanation": "“Retificar” significa corrigir, e “retificação” é o ato de corrigir. “Ratificar” significa confirmar. O contexto informa alteração da decisão, por isso requer o campo semântico de correção."
     },
     {
@@ -4335,11 +4335,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "hiperônimo de “medicamento”."
+          "text": "polissemia, pois assume o sentido contextual de redução."
         },
         {
           "letter": "C",
-          "text": "polissemia, pois assume o sentido contextual de redução."
+          "text": "hiperônimo de “medicamento”."
         },
         {
           "letter": "D",
@@ -4350,7 +4350,7 @@ export const questionBank = {
           "text": "emprego exclusivamente literal relacionado ao movimento físico."
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "explanation": "“Queda” pode designar movimento físico ou, figuradamente, redução de um indicador. A multiplicidade de sentidos relacionados caracteriza polissemia."
     },
     {
@@ -4363,11 +4363,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "homófono."
+          "text": "hiperônimo."
         },
         {
           "letter": "B",
-          "text": "hiperônimo."
+          "text": "homófono."
         },
         {
           "letter": "C",
@@ -4382,7 +4382,7 @@ export const questionBank = {
           "text": "antônimo."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "explanation": "Hiperônimo é o termo de sentido mais abrangente que inclui outros mais específicos. As três formas citadas pertencem à categoria “forma farmacêutica”."
     },
     {
@@ -4399,11 +4399,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "O processo ficou sujeito à mudanças posteriores."
+          "text": "A equipe encaminhou o relatório à autoridade competente."
         },
         {
           "letter": "C",
-          "text": "A equipe encaminhou o relatório à autoridade competente."
+          "text": "O processo ficou sujeito à mudanças posteriores."
         },
         {
           "letter": "D",
@@ -4414,7 +4414,7 @@ export const questionBank = {
           "text": "O atendimento ocorre de segunda à sexta."
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "explanation": "“Encaminhar algo a alguém” exige preposição, e “autoridade” admite artigo feminino: a + a = à. Antes de verbo, pronome indefinido e plural sem artigo não ocorre crase. Na correlação temporal, o usual é “de segunda a sexta”."
     },
     {
@@ -4467,18 +4467,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "Esta é a norma à qual o parecer se refere."
+          "text": "Esta é a norma à que o parecer se refere."
         },
         {
           "letter": "D",
-          "text": "Esta é a norma à que o parecer se refere."
+          "text": "Esta é a norma à qual o parecer se refere."
         },
         {
           "letter": "E",
           "text": "Esta é a norma a qual o parecer se refere."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "explanation": "“Referir-se” rege “a”; o relativo feminino “a qual” admite artigo: a + a qual = à qual. Antes de “que”, em A, não há artigo que justifique o acento."
     },
     {
@@ -4499,18 +4499,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "Entregou o documento àquela servidora."
+          "text": "Encaminhou a solicitação à sua chefe."
         },
         {
           "letter": "D",
-          "text": "Encaminhou a solicitação à sua chefe."
+          "text": "Entregou o documento àquela servidora."
         },
         {
           "letter": "E",
           "text": "Voltou à cidade em que nasceu."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "Antes de pronome possessivo feminino singular, o artigo pode ser empregado ou omitido: “a sua chefe” ou “à sua chefe”. Nas demais, a estrutura indicada exige a fusão ou possui regra própria não facultativa no contexto."
     },
     {
@@ -4523,26 +4523,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "exceção, empecilho, privilégio."
-        },
-        {
-          "letter": "B",
           "text": "exceção, empecílio, priviléjio."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "excessão, impecilho, previlégio."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "excessão, empecilho, previlégio."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "exceção, impecílio, previlégio."
+        },
+        {
+          "letter": "E",
+          "text": "exceção, empecilho, privilégio."
         }
       ],
-      "answer": "A",
+      "answer": "E",
       "explanation": "As grafias normativas são “exceção”, “empecilho” e “privilégio”. As demais alternativas reproduzem trocas frequentes de letras."
     },
     {
@@ -4555,15 +4555,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "saúde, baú, saída."
-        },
-        {
-          "letter": "B",
           "text": "público, também, órgão."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "município, saúde, até."
+        },
+        {
+          "letter": "C",
+          "text": "saúde, baú, saída."
         },
         {
           "letter": "D",
@@ -4574,7 +4574,7 @@ export const questionBank = {
           "text": "análise, caráter, café."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "explanation": "“Saúde”, “baú” e “saída” recebem acento por apresentarem “i” ou “u” tônicos formando hiato, nas condições da regra. As demais opções misturam proparoxítonas, paroxítonas, oxítonas e ditongos."
     },
     {
@@ -4595,18 +4595,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "A equipe mantém os registros, mas eles não mantém os arquivos físicos."
+          "text": "O servidor pôde comparecer ontem, mas não pode comparecer hoje."
         },
         {
           "letter": "D",
-          "text": "O servidor pôde comparecer ontem, mas não pode comparecer hoje."
+          "text": "A equipe mantém os registros, mas eles não mantém os arquivos físicos."
         },
         {
           "letter": "E",
           "text": "Os gestores têm autonomia, mas o diretor também têm responsabilidade."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "O acento diferencial distingue “pôde” (pretérito) de “pode” (presente). Em A, o plural é “mantêm”. “Ideia” perdeu o acento. Em D, sujeito singular exige “tem”. Em E, “o relatório” exige “contém”; apenas “dados”, sujeito de “convir”, justifica a forma plural “convêm”."
     },
     {
@@ -4627,18 +4627,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "argumentação."
+          "text": "descrição."
         },
         {
           "letter": "D",
-          "text": "descrição."
+          "text": "argumentação."
         },
         {
           "letter": "E",
           "text": "injunção."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "explanation": "A argumentação articula uma tese e argumentos com a finalidade de convencer ou justificar uma posição. Narração organiza acontecimentos; descrição caracteriza; injunção orienta ações."
     },
     {
@@ -4651,26 +4651,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "conativa ou apelativa."
-        },
-        {
-          "letter": "B",
           "text": "poética."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "fática."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "emotiva."
+        },
+        {
+          "letter": "D",
+          "text": "conativa ou apelativa."
         },
         {
           "letter": "E",
           "text": "metalinguística."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "Os verbos no imperativo procuram influenciar o comportamento do destinatário. O foco no receptor caracteriza a função conativa ou apelativa."
     },
     {
@@ -4687,22 +4687,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Os dados apresentaram diferenças que, aparentemente, merecem revisão posterior pela equipe responsável."
+          "text": "Verificou-se inconsistência entre os registros e os documentos comprobatórios."
         },
         {
           "letter": "C",
-          "text": "Constataram-se falhas no preenchimento, atribuídas à desatenção dos envolvidos no procedimento analisado."
+          "text": "Os dados apresentaram diferenças que, aparentemente, merecem revisão posterior pela equipe responsável."
         },
         {
           "letter": "D",
-          "text": "Observou-se que o sistema apresentou problema no encerramento, exigindo avaliação complementar do setor."
+          "text": "Constataram-se falhas no preenchimento, atribuídas à desatenção dos envolvidos no procedimento analisado."
         },
         {
           "letter": "E",
-          "text": "Verificou-se inconsistência entre os registros e os documentos comprobatórios."
+          "text": "Observou-se que o sistema apresentou problema no encerramento, exigindo avaliação complementar do setor."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "C emprega vocabulário preciso, construção impessoal e registro compatível com documento técnico. As demais usam coloquialismos ou avaliações imprecisas."
     },
     {
@@ -4751,11 +4751,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Estrangeirismo é forma antiga do idioma que deixou de ser frequente no uso dos falantes atuais."
+          "text": "Arcaísmo é uma forma linguística cujo uso se tornou antigo ou pouco corrente."
         },
         {
           "letter": "C",
-          "text": "Arcaísmo é uma forma linguística cujo uso se tornou antigo ou pouco corrente."
+          "text": "Estrangeirismo é forma antiga do idioma que deixou de ser frequente no uso dos falantes atuais."
         },
         {
           "letter": "D",
@@ -4766,7 +4766,7 @@ export const questionBank = {
           "text": "Latinismo é a designação de erro produzido pela tradução literal de construções originárias do latim."
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "explanation": "Arcaísmo designa palavra, forma ou construção antiga ou em desuso. Estrangeirismo vem de outra língua; neologismo é uma criação ou uso novo; latinismo relaciona-se a elemento proveniente do latim. Abreviação e sigla não são categorias idênticas."
     },
     {
@@ -4783,11 +4783,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "Embora tenha recebido os documentos, a comissão adiou a decisão."
+          "text": "A comissão adiou a decisão, portanto recebeu os documentos."
         },
         {
           "letter": "C",
-          "text": "A comissão adiou a decisão, portanto recebeu os documentos."
+          "text": "Embora tenha recebido os documentos, a comissão adiou a decisão."
         },
         {
           "letter": "D",
@@ -4798,7 +4798,7 @@ export const questionBank = {
           "text": "Porque recebeu os documentos, a comissão adiou a decisão."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation": "“Apesar de” e “embora” estabelecem concessão: o recebimento dos documentos não impediu o adiamento. As outras opções introduzem causa, conclusão, condição ou finalidade."
     },
     {
@@ -4815,22 +4815,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "a origem geográfica da palavra."
+          "text": "que se trata de substantivo masculino."
         },
         {
           "letter": "C",
-          "text": "que a palavra possui sentido metafórico."
+          "text": "a origem geográfica da palavra."
         },
         {
           "letter": "D",
-          "text": "que a forma está ortograficamente incorreta."
+          "text": "que a palavra possui sentido metafórico."
         },
         {
           "letter": "E",
-          "text": "que se trata de substantivo masculino."
+          "text": "que a forma está ortograficamente incorreta."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "Dicionários utilizam abreviaturas para registrar informações gramaticais. “s.m.” costuma significar “substantivo masculino”. O próprio dicionário deve apresentar a lista de abreviaturas adotadas."
     },
     {
@@ -4843,26 +4843,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "A segunda frase explica por que a maior velocidade não dispensa o controle da qualidade dos dados."
-        },
-        {
-          "letter": "B",
           "text": "O pronome “ela” retoma a necessidade de conferir os registros mencionada na primeira oração."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "O texto sustenta que a digitalização eliminou a conferência, desde que o acesso aos registros seja rápido."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "A substituição de “quando” por “portanto” manteria a relação entre erro de origem e rapidez do sistema."
+        },
+        {
+          "letter": "D",
+          "text": "A segunda frase explica por que a maior velocidade não dispensa o controle da qualidade dos dados."
         },
         {
           "letter": "E",
           "text": "“Embora” introduz a causa pela qual a conferência dos registros deixou de ser necessária no procedimento."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "A segunda frase sustenta a ressalva da primeira: um sistema rápido também acelera a reprodução de erros se os dados de entrada estiverem errados. “Embora” é concessivo; “ela” retoma “digitalização”; “quando” introduz a circunstância em que a reprodução ocorre, enquanto “portanto” seria conclusivo."
     },
     {
@@ -11266,6 +11266,1286 @@ export const questionBank = {
       "explanation": "O seno é cateto oposto dividido pela hipotenusa. Assim, sen = 6/10 = 3/5."
     },
     {
+      "id": "portugues-exp-061",
+      "subjectId": "portugues",
+      "number": 61,
+      "topic": "Coesão referencial - pronome demonstrativo",
+      "area": "Coesão e coerência",
+      "stem": "No período \"O relatório foi entregue no prazo. Esse resultado decorreu de planejamento prévio\", a expressão \"Esse resultado\" retoma:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "o conteúdo integral do relatório."
+        },
+        {
+          "letter": "B",
+          "text": "a entrega do relatório no prazo."
+        },
+        {
+          "letter": "C",
+          "text": "a ideia de planejamento prévio."
+        },
+        {
+          "letter": "D",
+          "text": "a pessoa responsável pelo planejamento."
+        },
+        {
+          "letter": "E",
+          "text": "o prazo fixado para a entrega."
+        }
+      ],
+      "answer": "B",
+      "explanation": "O demonstrativo retoma a informação imediatamente anterior: o fato de o relatório ter sido entregue no prazo. O planejamento é apresentado como causa desse resultado."
+    },
+    {
+      "id": "portugues-exp-062",
+      "subjectId": "portugues",
+      "number": 62,
+      "topic": "Coesão sequencial - operador argumentativo",
+      "area": "Coesão e coerência",
+      "stem": "No trecho \"O prazo era curto; ainda assim, a equipe concluiu a análise\", a locução \"ainda assim\" introduz ideia de:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "causa."
+        },
+        {
+          "letter": "B",
+          "text": "concessão."
+        },
+        {
+          "letter": "C",
+          "text": "condição."
+        },
+        {
+          "letter": "D",
+          "text": "conclusão."
+        },
+        {
+          "letter": "E",
+          "text": "finalidade."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A locução marca contraste concessivo: apesar de o prazo ser curto, a análise foi concluída."
+    },
+    {
+      "id": "portugues-exp-063",
+      "subjectId": "portugues",
+      "number": 63,
+      "topic": "Reescrita - manutenção de sentido",
+      "area": "Reescrita",
+      "stem": "Sem alteração de sentido e de correção gramatical, a frase \"Embora o parecer fosse favorável, a autoridade solicitou nova análise\" pode ser reescrita como:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A autoridade solicitou nova análise, ainda que o parecer fosse favorável."
+        },
+        {
+          "letter": "B",
+          "text": "Como o parecer era favorável, a autoridade solicitou nova análise."
+        },
+        {
+          "letter": "C",
+          "text": "A autoridade solicitou nova análise, porque o parecer era favorável."
+        },
+        {
+          "letter": "D",
+          "text": "O parecer seria favorável, desde que a autoridade solicitasse nova análise."
+        },
+        {
+          "letter": "E",
+          "text": "A autoridade solicitou nova análise, portanto o parecer era favorável."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Embora e ainda que introduzem relação concessiva. As demais versões transformam a relação em causa, consequência ou condição."
+    },
+    {
+      "id": "portugues-exp-064",
+      "subjectId": "portugues",
+      "number": 64,
+      "topic": "Discurso direto e indireto",
+      "area": "Reescrita",
+      "stem": "A transposição correta para o discurso indireto de \"A servidora afirmou: 'Entregarei o processo amanhã'\" é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A servidora afirmou que entrega o processo no dia seguinte."
+        },
+        {
+          "letter": "B",
+          "text": "A servidora afirmou: entregaria o processo amanhã."
+        },
+        {
+          "letter": "C",
+          "text": "A servidora afirmou que entregaria o processo no dia seguinte."
+        },
+        {
+          "letter": "D",
+          "text": "A servidora afirmou que entregasse o processo no dia seguinte."
+        },
+        {
+          "letter": "E",
+          "text": "A servidora afirmou que entregará o processo amanhã."
+        }
+      ],
+      "answer": "C",
+      "explanation": "No discurso indireto, o futuro do presente passa, em regra, ao futuro do pretérito, e o advérbio amanhã passa a no dia seguinte."
+    },
+    {
+      "id": "portugues-exp-065",
+      "subjectId": "portugues",
+      "number": 65,
+      "topic": "Sintaxe - paralelismo",
+      "area": "Sintaxe",
+      "stem": "Assinale a alternativa que mantém o paralelismo sintático.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "O plano prevê reduzir custos, melhorar os fluxos e ampliar o atendimento."
+        },
+        {
+          "letter": "B",
+          "text": "O plano prevê redução de custos, que melhorem os fluxos e ampliar o atendimento."
+        },
+        {
+          "letter": "C",
+          "text": "O plano prevê a redução de custos, melhorar os fluxos e a ampliação do atendimento."
+        },
+        {
+          "letter": "D",
+          "text": "O plano prevê reduzir custos, a melhoria dos fluxos e que se amplie o atendimento."
+        },
+        {
+          "letter": "E",
+          "text": "O plano prevê que custos sejam reduzidos, melhorar fluxos e a ampliação do atendimento."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Os três complementos são formados por verbos no infinitivo: reduzir, melhorar e ampliar. Isso preserva o paralelismo."
+    },
+    {
+      "id": "portugues-exp-066",
+      "subjectId": "portugues",
+      "number": 66,
+      "topic": "Sintaxe - índice de indeterminação",
+      "area": "Sintaxe",
+      "stem": "Em \"Precisa-se de especialistas para a etapa final\", o termo \"se\" funciona como:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "conjunção condicional que introduz uma oração reduzida."
+        },
+        {
+          "letter": "B",
+          "text": "partícula expletiva, sem função sintática na oração."
+        },
+        {
+          "letter": "C",
+          "text": "pronome apassivador, e especialistas é sujeito paciente."
+        },
+        {
+          "letter": "D",
+          "text": "pronome reflexivo ligado ao sujeito oculto especialistas."
+        },
+        {
+          "letter": "E",
+          "text": "índice de indeterminação do sujeito, pois o verbo é transitivo indireto."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Com verbo transitivo indireto, como precisar de, o se indetermina o sujeito. O verbo permanece no singular."
+    },
+    {
+      "id": "portugues-exp-067",
+      "subjectId": "portugues",
+      "number": 67,
+      "topic": "Sintaxe - voz passiva",
+      "area": "Sintaxe",
+      "stem": "A forma correta na voz passiva analítica de \"A comissão analisará os recursos\" é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Os recursos serão analisados pela comissão."
+        },
+        {
+          "letter": "B",
+          "text": "A comissão será analisada pelos recursos."
+        },
+        {
+          "letter": "C",
+          "text": "Os recursos analisarão pela comissão."
+        },
+        {
+          "letter": "D",
+          "text": "Os recursos seriam analisados à comissão."
+        },
+        {
+          "letter": "E",
+          "text": "Analisar-se-ão os recursos pela comissão."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Na passiva analítica, o objeto direto os recursos torna-se sujeito paciente: Os recursos serão analisados pela comissão."
+    },
+    {
+      "id": "portugues-exp-068",
+      "subjectId": "portugues",
+      "number": 68,
+      "topic": "Sintaxe - objeto indireto",
+      "area": "Sintaxe",
+      "stem": "No período \"A chefia comunicou aos servidores a alteração do horário\", o termo \"aos servidores\" exerce função de:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "sujeito simples."
+        },
+        {
+          "letter": "B",
+          "text": "aposto explicativo."
+        },
+        {
+          "letter": "C",
+          "text": "objeto indireto."
+        },
+        {
+          "letter": "D",
+          "text": "objeto direto."
+        },
+        {
+          "letter": "E",
+          "text": "adjunto adnominal."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O verbo comunicar, nesse emprego, apresenta objeto direto, a alteração do horário, e objeto indireto introduzido por a, aos servidores."
+    },
+    {
+      "id": "portugues-exp-069",
+      "subjectId": "portugues",
+      "number": 69,
+      "topic": "Pronome relativo - regência",
+      "area": "Classes de palavras",
+      "stem": "A frase redigida de acordo com a norma-padrão é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "O regulamento a que obedecemos foi atualizado."
+        },
+        {
+          "letter": "B",
+          "text": "O regulamento que obedecemos foi atualizado."
+        },
+        {
+          "letter": "C",
+          "text": "O regulamento cujo obedecemos foi atualizado."
+        },
+        {
+          "letter": "D",
+          "text": "O regulamento no qual obedecemos a ele foi atualizado."
+        },
+        {
+          "letter": "E",
+          "text": "O regulamento onde obedecemos foi atualizado."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Quem obedece, obedece a algo. Por isso, o relativo deve ser precedido da preposição: a que obedecemos."
+    },
+    {
+      "id": "portugues-exp-070",
+      "subjectId": "portugues",
+      "number": 70,
+      "topic": "Oração subordinada substantiva",
+      "area": "Período composto",
+      "stem": "Em \"É necessário que os documentos sejam conferidos\", a oração destacada funciona como:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "predicativo do sujeito oculto."
+        },
+        {
+          "letter": "B",
+          "text": "adjunto adverbial de finalidade."
+        },
+        {
+          "letter": "C",
+          "text": "sujeito da oração principal."
+        },
+        {
+          "letter": "D",
+          "text": "aposto de documentos."
+        },
+        {
+          "letter": "E",
+          "text": "objeto direto do verbo necessário."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A oração que os documentos sejam conferidos exerce a função de sujeito de é necessário."
+    },
+    {
+      "id": "portugues-exp-071",
+      "subjectId": "portugues",
+      "number": 71,
+      "topic": "Oração subordinada adverbial - concessão",
+      "area": "Período composto",
+      "stem": "A relação semântica em \"Mesmo que haja recurso, o resultado provisório será divulgado\" é de:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "concessão."
+        },
+        {
+          "letter": "B",
+          "text": "consequência."
+        },
+        {
+          "letter": "C",
+          "text": "conformidade."
+        },
+        {
+          "letter": "D",
+          "text": "causa."
+        },
+        {
+          "letter": "E",
+          "text": "condição."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Mesmo que introduz concessão: a divulgação ocorrerá apesar da eventual existência de recurso."
+    },
+    {
+      "id": "portugues-exp-072",
+      "subjectId": "portugues",
+      "number": 72,
+      "topic": "Oração subordinada adverbial - consequência",
+      "area": "Período composto",
+      "stem": "Em \"O volume de dados foi tão grande que a equipe precisou ampliar o prazo\", a oração introduzida por \"que\" exprime:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "consequência."
+        },
+        {
+          "letter": "B",
+          "text": "proporção."
+        },
+        {
+          "letter": "C",
+          "text": "concessão."
+        },
+        {
+          "letter": "D",
+          "text": "finalidade."
+        },
+        {
+          "letter": "E",
+          "text": "causa."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A construção tão... que indica consequência: o grande volume de dados levou à ampliação do prazo."
+    },
+    {
+      "id": "portugues-exp-073",
+      "subjectId": "portugues",
+      "number": 73,
+      "topic": "Concordância verbal - sujeito composto",
+      "area": "Concordância",
+      "stem": "Assinale a alternativa correta quanto à concordância verbal.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Faltaria assinaturas e documentos no processo."
+        },
+        {
+          "letter": "B",
+          "text": "Faltassem assinatura e documentos no processo."
+        },
+        {
+          "letter": "C",
+          "text": "Falta assinaturas e documentos no processo."
+        },
+        {
+          "letter": "D",
+          "text": "Faltou assinaturas e documentos no processo."
+        },
+        {
+          "letter": "E",
+          "text": "Faltaram assinatura e documentos no processo."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Com sujeito composto posposto, assinatura e documentos, a concordância no plural é a forma recomendada: faltaram."
+    },
+    {
+      "id": "portugues-exp-074",
+      "subjectId": "portugues",
+      "number": 74,
+      "topic": "Concordância verbal - expressão partitiva",
+      "area": "Concordância",
+      "stem": "Na frase \"A maior parte dos candidatos ____ à reunião\", a forma adequada é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "compareceria ou comparecerá."
+        },
+        {
+          "letter": "B",
+          "text": "compareceu ou compareceram."
+        },
+        {
+          "letter": "C",
+          "text": "compareceram apenas."
+        },
+        {
+          "letter": "D",
+          "text": "compareceu apenas."
+        },
+        {
+          "letter": "E",
+          "text": "comparece ou compareciam."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Com expressão partitiva seguida de nome plural, o verbo pode concordar com o núcleo singular maior parte ou com o termo especificador candidatos."
+    },
+    {
+      "id": "portugues-exp-075",
+      "subjectId": "portugues",
+      "number": 75,
+      "topic": "Concordância nominal",
+      "area": "Concordância",
+      "stem": "A alternativa correta quanto à concordância nominal é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Segue anexas as planilhas solicitadas."
+        },
+        {
+          "letter": "B",
+          "text": "Seguem anexa as planilhas solicitadas."
+        },
+        {
+          "letter": "C",
+          "text": "Seguem anexo as planilhas solicitadas."
+        },
+        {
+          "letter": "D",
+          "text": "Segue anexa as planilhas solicitadas."
+        },
+        {
+          "letter": "E",
+          "text": "Seguem anexas as planilhas solicitadas."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Anexas concorda com planilhas, substantivo feminino plural. O verbo segue também concorda no plural."
+    },
+    {
+      "id": "portugues-exp-076",
+      "subjectId": "portugues",
+      "number": 76,
+      "topic": "Regência verbal",
+      "area": "Regência",
+      "stem": "De acordo com a norma-padrão, está correta a frase:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A equipe assistiu pelo treinamento obrigatório."
+        },
+        {
+          "letter": "B",
+          "text": "A equipe assistiu do treinamento obrigatório."
+        },
+        {
+          "letter": "C",
+          "text": "A equipe assistiu ao treinamento obrigatório."
+        },
+        {
+          "letter": "D",
+          "text": "A equipe assistiu o treinamento obrigatório."
+        },
+        {
+          "letter": "E",
+          "text": "A equipe assistiu no treinamento obrigatório."
+        }
+      ],
+      "answer": "C",
+      "explanation": "No sentido de ver ou presenciar, assistir rege a preposição a: assistir ao treinamento."
+    },
+    {
+      "id": "portugues-exp-077",
+      "subjectId": "portugues",
+      "number": 77,
+      "topic": "Regência verbal - preferência",
+      "area": "Regência",
+      "stem": "A redação de acordo com a norma-padrão é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A chefia prefere revisar o processo a arquivá-lo."
+        },
+        {
+          "letter": "B",
+          "text": "A chefia prefere revisar o processo do que arquivá-lo."
+        },
+        {
+          "letter": "C",
+          "text": "A chefia prefere mais revisar o processo que arquivá-lo."
+        },
+        {
+          "letter": "D",
+          "text": "A chefia prefere revisar o processo em vez arquivá-lo."
+        },
+        {
+          "letter": "E",
+          "text": "A chefia prefere revisar ao processo que arquivá-lo."
+        }
+      ],
+      "answer": "A",
+      "explanation": "O verbo preferir admite a construção preferir X a Y. A locução do que é desaconselhada nesse uso formal."
+    },
+    {
+      "id": "portugues-exp-078",
+      "subjectId": "portugues",
+      "number": 78,
+      "topic": "Crase - locução adverbial",
+      "area": "Crase",
+      "stem": "Assinale a alternativa em que o emprego da crase está correto.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "O sistema passou à funcionar normalmente."
+        },
+        {
+          "letter": "B",
+          "text": "A reunião ocorrerá às quinze horas."
+        },
+        {
+          "letter": "C",
+          "text": "Os documentos foram entregues à todos os setores."
+        },
+        {
+          "letter": "D",
+          "text": "A equipe ficou frente à frente com o problema."
+        },
+        {
+          "letter": "E",
+          "text": "O relatório foi enviado à partir das oito horas."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Há crase em locuções adverbiais femininas de horas: às quinze horas. Não ocorre em a partir, frente a frente, a todos ou antes de infinitivo."
+    },
+    {
+      "id": "portugues-exp-079",
+      "subjectId": "portugues",
+      "number": 79,
+      "topic": "Crase - pronome relativo",
+      "area": "Crase",
+      "stem": "A frase correta é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Esta é a norma onde nos referimos."
+        },
+        {
+          "letter": "B",
+          "text": "Esta é a norma a qual nos referimos."
+        },
+        {
+          "letter": "C",
+          "text": "Esta é a norma à que nos referimos."
+        },
+        {
+          "letter": "D",
+          "text": "Esta é a norma cuja nos referimos."
+        },
+        {
+          "letter": "E",
+          "text": "Esta é a norma à qual nos referimos."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Referir-se rege a preposição a, e norma admite artigo feminino a. Com a qual, ocorre a fusão: à qual."
+    },
+    {
+      "id": "portugues-exp-080",
+      "subjectId": "portugues",
+      "number": 80,
+      "topic": "Colocação pronominal - próclise",
+      "area": "Colocação pronominal",
+      "stem": "Segundo a norma-padrão, a frase correta é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Não comunicaram a me alteração."
+        },
+        {
+          "letter": "B",
+          "text": "Não comunicaram-me a alteração."
+        },
+        {
+          "letter": "C",
+          "text": "Não me comunicaram a alteração."
+        },
+        {
+          "letter": "D",
+          "text": "Não comunicaram a alteração-me."
+        },
+        {
+          "letter": "E",
+          "text": "Me não comunicaram a alteração."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A palavra negativa não atrai o pronome oblíquo para antes do verbo: Não me comunicaram."
+    },
+    {
+      "id": "portugues-exp-081",
+      "subjectId": "portugues",
+      "number": 81,
+      "topic": "Colocação pronominal - mesóclise",
+      "area": "Colocação pronominal",
+      "stem": "A alternativa que exemplifica corretamente a mesóclise é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Me enviarei o documento amanhã."
+        },
+        {
+          "letter": "B",
+          "text": "Enviar-ei-lhe o documento amanhã."
+        },
+        {
+          "letter": "C",
+          "text": "Enviar-lhe-ei o documento amanhã."
+        },
+        {
+          "letter": "D",
+          "text": "Enviarei-lhe o documento amanhã."
+        },
+        {
+          "letter": "E",
+          "text": "Lhe enviarei o documento amanhã."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A mesóclise insere o pronome no interior da forma verbal no futuro: enviar-lhe-ei. A forma enviar-ei-lhe é incorreta."
+    },
+    {
+      "id": "portugues-exp-082",
+      "subjectId": "portugues",
+      "number": 82,
+      "topic": "Pontuação - oração adjetiva",
+      "area": "Pontuação",
+      "stem": "A pontuação adequada para indicar que todos os servidores do setor participaram da capacitação é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Os servidores que atuam no setor participaram da capacitação."
+        },
+        {
+          "letter": "B",
+          "text": "Os servidores, que atuam no setor participaram da capacitação."
+        },
+        {
+          "letter": "C",
+          "text": "Os servidores que, atuam no setor, participaram da capacitação."
+        },
+        {
+          "letter": "D",
+          "text": "Os servidores que atuam no setor, participaram da capacitação."
+        },
+        {
+          "letter": "E",
+          "text": "Os servidores, que atuam no setor, participaram da capacitação."
+        }
+      ],
+      "answer": "E",
+      "explanation": "As vírgulas isolam oração adjetiva explicativa. Assim, a informação de que atuam no setor é apresentada como explicação sobre todos os servidores mencionados."
+    },
+    {
+      "id": "portugues-exp-083",
+      "subjectId": "portugues",
+      "number": 83,
+      "topic": "Pontuação - ponto e vírgula",
+      "area": "Pontuação",
+      "stem": "O ponto e vírgula é empregado adequadamente em:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Foram recebidos os relatórios das unidades Norte, Sul e Centro; os comprovantes de pagamento, e as atas das reuniões."
+        },
+        {
+          "letter": "B",
+          "text": "Foram recebidos os relatórios das unidades Norte, Sul e Centro; e os comprovantes de pagamento e as atas das reuniões."
+        },
+        {
+          "letter": "C",
+          "text": "Foram recebidos os relatórios das unidades Norte; Sul e Centro, os comprovantes de pagamento e as atas das reuniões."
+        },
+        {
+          "letter": "D",
+          "text": "Foram recebidos os relatórios das unidades Norte, Sul e Centro, os comprovantes de pagamento; e as atas das reuniões."
+        },
+        {
+          "letter": "E",
+          "text": "Foram recebidos os relatórios das unidades Norte, Sul e Centro; os comprovantes de pagamento; e as atas das reuniões."
+        }
+      ],
+      "answer": "E",
+      "explanation": "O ponto e vírgula separa itens extensos de uma enumeração, especialmente quando já contêm vírgulas internas ou grupos complexos."
+    },
+    {
+      "id": "portugues-exp-084",
+      "subjectId": "portugues",
+      "number": 84,
+      "topic": "Pontuação - dois-pontos",
+      "area": "Pontuação",
+      "stem": "Os dois-pontos foram empregados corretamente em:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A equipe informou o seguinte: os documentos serão reenviados."
+        },
+        {
+          "letter": "B",
+          "text": "A decisão: foi publicada ontem."
+        },
+        {
+          "letter": "C",
+          "text": "A servidora: que estava ausente, justificou-se."
+        },
+        {
+          "letter": "D",
+          "text": "O processo: embora completo, retornou ao setor."
+        },
+        {
+          "letter": "E",
+          "text": "O prazo foi curto: porém suficiente."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Os dois-pontos introduzem o esclarecimento anunciado por o seguinte: os documentos serão reenviados."
+    },
+    {
+      "id": "portugues-exp-085",
+      "subjectId": "portugues",
+      "number": 85,
+      "topic": "Semântica - parônimos",
+      "area": "Semântica",
+      "stem": "Assinale a alternativa que emprega corretamente os parônimos ratificar e retificar.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A comissão retificou a decisão, confirmando integralmente seu conteúdo."
+        },
+        {
+          "letter": "B",
+          "text": "A comissão retificou a norma para confirmar sua validade jurídica."
+        },
+        {
+          "letter": "C",
+          "text": "A comissão ratificou a decisão e retificou o dado incorreto nela constante."
+        },
+        {
+          "letter": "D",
+          "text": "A comissão ratificou a planilha para corrigir os valores digitados."
+        },
+        {
+          "letter": "E",
+          "text": "A comissão ratificou o erro material antes de publicar o ato."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Ratificar é confirmar; retificar é corrigir. A alternativa correta usa cada verbo com o sentido adequado."
+    },
+    {
+      "id": "portugues-exp-086",
+      "subjectId": "portugues",
+      "number": 86,
+      "topic": "Semântica - denotação e conotação",
+      "area": "Semântica",
+      "stem": "No enunciado \"A notícia acendeu um alerta na equipe\", o verbo \"acendeu\" foi empregado em sentido:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "metalinguístico, pois define o próprio verbo acender."
+        },
+        {
+          "letter": "B",
+          "text": "denotativo, pois descreve a ativação física de uma lâmpada."
+        },
+        {
+          "letter": "C",
+          "text": "conotativo, pois indica o surgimento de atenção ou preocupação."
+        },
+        {
+          "letter": "D",
+          "text": "eufemístico, pois evita mencionar uma ação proibida."
+        },
+        {
+          "letter": "E",
+          "text": "técnico, pois designa procedimento de segurança obrigatório."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Acender alerta é expressão figurada para indicar que algo despertou atenção, preocupação ou vigilância."
+    },
+    {
+      "id": "portugues-exp-087",
+      "subjectId": "portugues",
+      "number": 87,
+      "topic": "Semântica - relações de sentido",
+      "area": "Semântica",
+      "stem": "No contexto \"A medida foi provisória, não definitiva\", as palavras destacadas estabelecem relação de:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "homonímia."
+        },
+        {
+          "letter": "B",
+          "text": "sinonímia."
+        },
+        {
+          "letter": "C",
+          "text": "hiperonímia."
+        },
+        {
+          "letter": "D",
+          "text": "polissemia."
+        },
+        {
+          "letter": "E",
+          "text": "antonímia."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Provisória e definitiva apresentam sentidos opostos no contexto, estabelecendo antonímia."
+    },
+    {
+      "id": "portugues-exp-088",
+      "subjectId": "portugues",
+      "number": 88,
+      "topic": "Ortografia - por que",
+      "area": "Ortografia",
+      "stem": "Assinale a frase corretamente grafada.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "O motivo porque o sistema falhou será apurado."
+        },
+        {
+          "letter": "B",
+          "text": "Não sei porquê o sistema falhou."
+        },
+        {
+          "letter": "C",
+          "text": "Os técnicos explicaram por que o sistema falhou."
+        },
+        {
+          "letter": "D",
+          "text": "Por quê o sistema falhou, os técnicos explicaram."
+        },
+        {
+          "letter": "E",
+          "text": "O sistema falhou por que houve oscilação de energia."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Em pergunta indireta, usa-se por que separado: explicaram por que o sistema falhou. Porquê é substantivo; porque é conjunção explicativa ou causal; por quê ocorre no fim de frase."
+    },
+    {
+      "id": "portugues-exp-089",
+      "subjectId": "portugues",
+      "number": 89,
+      "topic": "Acentuação gráfica - pode e pôde",
+      "area": "Acentuação",
+      "stem": "A forma correta para indicar fato concluído no passado é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ontem, a equipe pôde concluir à revisão."
+        },
+        {
+          "letter": "B",
+          "text": "Ontem, a equipe pode concluír a revisão."
+        },
+        {
+          "letter": "C",
+          "text": "Ontem, a equipe pôde concluír a revisão."
+        },
+        {
+          "letter": "D",
+          "text": "Ontem, a equipe pôde concluir a revisão."
+        },
+        {
+          "letter": "E",
+          "text": "Ontem, a equipe pode concluir a revisão."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Pôde, com acento, indica pretérito perfeito do verbo poder. Pode, sem acento, indica presente. Concluir não recebe acento nessa forma."
+    },
+    {
+      "id": "portugues-exp-090",
+      "subjectId": "portugues",
+      "number": 90,
+      "topic": "Ortografia - porque",
+      "area": "Ortografia",
+      "stem": "Na frase \"O parecer foi aprovado ____ atendia aos requisitos\", completa corretamente a lacuna:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "por quê."
+        },
+        {
+          "letter": "B",
+          "text": "por que."
+        },
+        {
+          "letter": "C",
+          "text": "por quê?."
+        },
+        {
+          "letter": "D",
+          "text": "porquê."
+        },
+        {
+          "letter": "E",
+          "text": "porque."
+        }
+      ],
+      "answer": "E",
+      "explanation": "A lacuna introduz causa ou explicação. Por isso, emprega-se porque, escrito junto e sem acento."
+    },
+    {
+      "id": "portugues-exp-091",
+      "subjectId": "portugues",
+      "number": 91,
+      "topic": "Redação oficial - tratamento",
+      "area": "Redação oficial",
+      "stem": "Em comunicação dirigida a uma autoridade, a redação oficial deve privilegiar:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "linguagem coloquial e marcas pessoais, para aproximar emissor e destinatário."
+        },
+        {
+          "letter": "B",
+          "text": "opiniões pessoais do redator, para justificar a decisão administrativa."
+        },
+        {
+          "letter": "C",
+          "text": "abreviações informais, para reduzir o tamanho do expediente."
+        },
+        {
+          "letter": "D",
+          "text": "clareza, concisão, impessoalidade e adequação ao destinatário."
+        },
+        {
+          "letter": "E",
+          "text": "períodos longos e vocabulário raro, para demonstrar formalidade."
+        }
+      ],
+      "answer": "D",
+      "explanation": "A redação oficial busca comunicação clara, concisa, impessoal e adequada ao destinatário. Formalidade não se confunde com obscuridade."
+    },
+    {
+      "id": "portugues-exp-092",
+      "subjectId": "portugues",
+      "number": 92,
+      "topic": "Redação oficial - impessoalidade",
+      "area": "Redação oficial",
+      "stem": "A reescrita mais adequada para comunicação oficial de \"Eu acho que devemos revisar os dados\" é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Eu e a equipe revisaremos os dados, talvez."
+        },
+        {
+          "letter": "B",
+          "text": "Nós achamos que os dados merecem revisão."
+        },
+        {
+          "letter": "C",
+          "text": "Seria legal revisar os dados antes do envio."
+        },
+        {
+          "letter": "D",
+          "text": "Acho indispensável revisar os dados."
+        },
+        {
+          "letter": "E",
+          "text": "Considera-se necessária a revisão dos dados."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Considera-se necessária a revisão dos dados elimina a marca pessoal e mantém clareza e objetividade."
+    },
+    {
+      "id": "portugues-exp-093",
+      "subjectId": "portugues",
+      "number": 93,
+      "topic": "Coesão referencial - substituição",
+      "area": "Coesão e coerência",
+      "stem": "Em \"O órgão divulgou a lista de aprovados. A publicação ocorreu no portal oficial\", a expressão que pode substituir \"A publicação\" sem prejuízo de sentido é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Esse candidato."
+        },
+        {
+          "letter": "B",
+          "text": "Esse ato."
+        },
+        {
+          "letter": "C",
+          "text": "Aquela seleção."
+        },
+        {
+          "letter": "D",
+          "text": "Essa aprovação."
+        },
+        {
+          "letter": "E",
+          "text": "Tal resultado individual."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Esse ato retoma a ação de divulgar a lista. As demais expressões mudam o referente ou restringem indevidamente a informação."
+    },
+    {
+      "id": "portugues-exp-094",
+      "subjectId": "portugues",
+      "number": 94,
+      "topic": "Tipologia textual",
+      "area": "Tipologia e gêneros",
+      "stem": "Um texto que apresenta uma tese sobre mobilidade urbana e mobiliza razões para defendê-la é predominantemente:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "narrativo."
+        },
+        {
+          "letter": "B",
+          "text": "dialogal."
+        },
+        {
+          "letter": "C",
+          "text": "descritivo."
+        },
+        {
+          "letter": "D",
+          "text": "injuntivo."
+        },
+        {
+          "letter": "E",
+          "text": "argumentativo."
+        }
+      ],
+      "answer": "E",
+      "explanation": "A defesa de uma tese por meio de razões caracteriza predominância argumentativa, ainda que o texto contenha descrição ou exposição."
+    },
+    {
+      "id": "portugues-exp-095",
+      "subjectId": "portugues",
+      "number": 95,
+      "topic": "Correlação de estruturas",
+      "area": "Sintaxe",
+      "stem": "A alternativa que apresenta correlação adequada é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Não só a comissão revisou o processo, como também os anexos foram conferidos."
+        },
+        {
+          "letter": "B",
+          "text": "A comissão não só revisaria, mas também os anexos."
+        },
+        {
+          "letter": "C",
+          "text": "Não só a comissão revisou o processo, mas também conferiu os anexos."
+        },
+        {
+          "letter": "D",
+          "text": "Tanto a comissão revisou o processo, porém conferiu os anexos."
+        },
+        {
+          "letter": "E",
+          "text": "Não apenas a comissão revisou, como os anexos também conferiu."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A correlação não só... mas também une estruturas paralelas: revisou o processo e conferiu os anexos."
+    },
+    {
+      "id": "portugues-exp-096",
+      "subjectId": "portugues",
+      "number": 96,
+      "topic": "Tempos verbais - efeito de sentido",
+      "area": "Semântica verbal",
+      "stem": "No trecho \"Quando terminar a análise, a equipe encaminhará o parecer\", o futuro do subjuntivo em \"terminar\" indica:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ação simultânea obrigatoriamente presente."
+        },
+        {
+          "letter": "B",
+          "text": "ordem dirigida à equipe."
+        },
+        {
+          "letter": "C",
+          "text": "fato habitual e permanente."
+        },
+        {
+          "letter": "D",
+          "text": "hipótese ou fato futuro tomado como condição temporal."
+        },
+        {
+          "letter": "E",
+          "text": "fato concluído no passado."
+        }
+      ],
+      "answer": "D",
+      "explanation": "O futuro do subjuntivo é usado para ação futura eventual, ligada à condição temporal expressa por quando."
+    },
+    {
+      "id": "portugues-exp-097",
+      "subjectId": "portugues",
+      "number": 97,
+      "topic": "Emprego de que",
+      "area": "Classes de palavras",
+      "stem": "Em \"É provável que o prazo seja prorrogado\", a palavra \"que\" é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "conjunção integrante que introduz oração substantiva."
+        },
+        {
+          "letter": "B",
+          "text": "conjunção causal que explica a probabilidade."
+        },
+        {
+          "letter": "C",
+          "text": "pronome relativo com função de sujeito."
+        },
+        {
+          "letter": "D",
+          "text": "advérbio de intensidade."
+        },
+        {
+          "letter": "E",
+          "text": "partícula expletiva sem função na oração."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Que introduz a oração substantiva que o prazo seja prorrogado, a qual exerce a função de sujeito de é provável."
+    },
+    {
+      "id": "portugues-exp-098",
+      "subjectId": "portugues",
+      "number": 98,
+      "topic": "Oração subordinada adverbial - temporal",
+      "area": "Período composto",
+      "stem": "Em \"Assim que receber os documentos, o setor iniciará a conferência\", a oração destacada exprime:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "concessão."
+        },
+        {
+          "letter": "B",
+          "text": "causa."
+        },
+        {
+          "letter": "C",
+          "text": "condição."
+        },
+        {
+          "letter": "D",
+          "text": "finalidade."
+        },
+        {
+          "letter": "E",
+          "text": "tempo."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Assim que introduz uma relação temporal: o início da conferência ocorrerá no momento em que os documentos forem recebidos."
+    },
+    {
+      "id": "portugues-exp-099",
+      "subjectId": "portugues",
+      "number": 99,
+      "topic": "Vozes verbais",
+      "area": "Sintaxe",
+      "stem": "A forma correta na voz ativa de \"Os prazos foram redefinidos pela diretoria\" é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Os prazos redefiniram a diretoria."
+        },
+        {
+          "letter": "B",
+          "text": "A diretoria redefiniu os prazos."
+        },
+        {
+          "letter": "C",
+          "text": "A diretoria foi redefinida pelos prazos."
+        },
+        {
+          "letter": "D",
+          "text": "Redefiniram-se a diretoria e os prazos."
+        },
+        {
+          "letter": "E",
+          "text": "A diretoria redefiniria aos prazos."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Na conversão para a voz ativa, o agente da passiva, pela diretoria, torna-se sujeito: A diretoria redefiniu os prazos."
+    },
+    {
+      "id": "portugues-exp-100",
+      "subjectId": "portugues",
+      "number": 100,
+      "topic": "Reescrita - relação causal",
+      "area": "Reescrita",
+      "stem": "Preserva-se a relação de causa e consequência em \"Como os documentos estavam incompletos, o processo retornou ao setor\" na reescrita:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Os documentos estavam incompletos, embora o processo tenha retornado ao setor."
+        },
+        {
+          "letter": "B",
+          "text": "O processo retornou ao setor, desde que os documentos estivessem incompletos."
+        },
+        {
+          "letter": "C",
+          "text": "Os documentos estavam incompletos; portanto, o processo não retornou ao setor."
+        },
+        {
+          "letter": "D",
+          "text": "O processo retornou ao setor, pois os documentos estavam incompletos."
+        },
+        {
+          "letter": "E",
+          "text": "Ainda que os documentos estivessem incompletos, o processo retornou ao setor."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Pois introduz a causa do retorno do processo, preservando a relação original entre documentos incompletos e devolução ao setor."
+    },
+    {
       "id": "direito-constitucional-023",
       "subjectId": "direito-constitucional",
       "number": 23,
@@ -13674,6 +14954,48 @@ export const questionBank = {
       58,
       59,
       60
+    ],
+    "portugueseExpansionReviewed": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
     ],
     "pharmacyBatchTwoReviewed": [
       21,

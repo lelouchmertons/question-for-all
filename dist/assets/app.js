@@ -1,4 +1,4 @@
-import { questionBank } from "./questions.js?v=26";
+import { questionBank } from "./questions.js?v=27";
 
 const STORAGE_KEY = "caderno330-progress-v1";
 const THEME_KEY = "caderno330-theme";
@@ -59,7 +59,7 @@ function initTheme() {
 
 function renderSubjectOptions() {
   els["subject-filter"].innerHTML = [
-    '<option value="all">Todas as matérias (330)</option>',
+    `<option value="all">Todas as matérias (${questionBank.questions.length})</option>`,
     ...questionBank.subjects.map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`),
   ].join("");
 }

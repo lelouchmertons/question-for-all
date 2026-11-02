@@ -1,14 +1,14 @@
 {
   "matematica": {
-    "count": 60,
+    "count": 100,
     "answerCounts": {
-      "A": 12,
-      "B": 12,
-      "C": 12,
-      "D": 12,
-      "E": 12
+      "A": 20,
+      "B": 20,
+      "C": 20,
+      "D": 20,
+      "E": 20
     },
-    "correctUniquelyLongest": 3,
+    "correctUniquelyLongest": 4,
     "suspiciousLengthGap": 0
   },
   "direito-constitucional": {

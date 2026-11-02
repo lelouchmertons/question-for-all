@@ -1,11 +1,11 @@
 export const questionBank = {
-  "generatedAt": "2026-11-02T22:17:54.454Z",
+  "generatedAt": "2026-11-02T22:46:21.367Z",
   "subjects": [
     {
       "id": "matematica",
       "label": "Matemática e Raciocínio Lógico",
       "short": "Matemática",
-      "count": 60
+      "count": 100
     },
     {
       "id": "direito-constitucional",
@@ -83,18 +83,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "R$ 1.200,00 e R$ 1.310,20."
+          "text": "R$ 1.200,00 e R$ 1.309,80."
         },
         {
           "letter": "D",
-          "text": "R$ 1.200,00 e R$ 1.309,80."
+          "text": "R$ 1.200,00 e R$ 1.310,20."
         },
         {
           "letter": "E",
           "text": "R$ 1.200,00 e R$ 1.293,00."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "O preço original satisfaz 1,18P = 1.416, logo P = R$ 1.200,00. O desconto posterior incide sobre R$ 1.416,00: 1.416 × 0,925 = R$ 1.309,80. Os dois percentuais não podem ser somados porque atuam sobre bases diferentes."
     },
     {
@@ -119,14 +119,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "25% e 20 pontos percentuais."
+          "text": "25% e 16 pontos percentuais."
         },
         {
           "letter": "E",
-          "text": "25% e 16 pontos percentuais."
+          "text": "25% e 20 pontos percentuais."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "A variação absoluta é 80% - 64% = 16 pontos percentuais. Em relação ao valor inicial, o crescimento é 16/64 = 0,25 = 25%."
     },
     {
@@ -139,11 +139,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "0%."
+          "text": "+1%."
         },
         {
           "letter": "B",
-          "text": "+1%."
+          "text": "0%."
         },
         {
           "letter": "C",
@@ -158,7 +158,7 @@ export const questionBank = {
           "text": "−10%."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "explanation": "Os fatores são 1,25 e 0,80. Como 1,25 × 0,80 = 1, o preço retorna ao valor original. Percentuais inversos podem se anular quando seus fatores se compensam, embora 25 e 20 não sejam números iguais."
     },
     {
@@ -175,22 +175,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "−9%."
-        },
-        {
-          "letter": "C",
           "text": "0%."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "−3%."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "−6%."
+        },
+        {
+          "letter": "E",
+          "text": "−9%."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "O fator acumulado é 1,30 × 0,70 = 0,91. O resultado corresponde a 91% do valor inicial, portanto houve redução de 9%."
     },
     {
@@ -243,18 +243,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "117."
-        },
-        {
-          "letter": "D",
           "text": "108."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "132."
+        },
+        {
+          "letter": "E",
+          "text": "117."
         }
       ],
-      "answer": "C",
+      "answer": "E",
       "explanation": "Após a primeira etapa permanecem 65%: 240 x 0,65 = 156. Depois, permanecem 75% de 156: 156 x 0,75 = 117."
     },
     {
@@ -271,11 +271,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "120."
+          "text": "90."
         },
         {
           "letter": "C",
-          "text": "90."
+          "text": "120."
         },
         {
           "letter": "D",
@@ -286,7 +286,7 @@ export const questionBank = {
           "text": "80."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation": "Se X = 5k e Y = 3k, então (5k - 20)/(3k) = 3/2. Logo, 10k - 40 = 9k, portanto k = 40. Assim, Y = 3 x 40 = 120."
     },
     {
@@ -299,15 +299,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "74 minutos."
-        },
-        {
-          "letter": "B",
           "text": "64 minutos."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "72 minutos."
+        },
+        {
+          "letter": "C",
+          "text": "74 minutos."
         },
         {
           "letter": "D",
@@ -318,7 +318,7 @@ export const questionBank = {
           "text": "70 minutos."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "explanation": "A primeira bomba transfere 1.350/45 = 30 L/min. Em 20 minutos, transfere 600 L, restando 2.700 L. Juntas, as bombas transferem 50 L/min e gastam mais 54 minutos. O tempo total é 20 + 54 = 74 minutos."
     },
     {
@@ -331,26 +331,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "12 dias."
-        },
-        {
-          "letter": "B",
           "text": "10 dias."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "6 dias."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "9 dias."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "8 dias."
+        },
+        {
+          "letter": "E",
+          "text": "12 dias."
         }
       ],
-      "answer": "A",
+      "answer": "E",
       "explanation": "A produtividade é 7.200/(8 x 6 x 15) = 10 unidades por trabalhador-hora. O novo grupo produz 10 x 8 x 10 = 800 unidades por dia. Logo, 9.600/800 = 12 dias."
     },
     {
@@ -395,26 +395,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "40 litros."
-        },
-        {
-          "letter": "B",
           "text": "36 litros."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "45 litros."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "42 litros."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "48 litros."
+        },
+        {
+          "letter": "E",
+          "text": "40 litros."
         }
       ],
-      "answer": "A",
+      "answer": "E",
       "explanation": "A corresponde a 7/10 do total. Se há 28 litros de A, o total possível é 28 x 10/7 = 40 litros, utilizando 12 litros de B."
     },
     {
@@ -431,22 +431,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "52 m²."
+          "text": "48 m²."
         },
         {
           "letter": "C",
-          "text": "24 m²."
+          "text": "52 m²."
         },
         {
           "letter": "D",
-          "text": "60 m²."
+          "text": "24 m²."
         },
         {
           "letter": "E",
-          "text": "48 m²."
+          "text": "60 m²."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "As dimensões reais são 3,2 x 250 = 800 cm = 8 m e 2,4 x 250 = 600 cm = 6 m. A área é 8 x 6 = 48 m². A escala linear deve ser aplicada a cada dimensão."
     },
     {
@@ -467,18 +467,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "R$ 4.500,00; R$ 6.500,00; R$ 7.000,00."
+          "text": "R$ 4.500,00; R$ 6.000,00; R$ 7.500,00."
         },
         {
           "letter": "D",
-          "text": "R$ 4.500,00; R$ 6.000,00; R$ 7.500,00."
+          "text": "R$ 4.500,00; R$ 6.500,00; R$ 7.000,00."
         },
         {
           "letter": "E",
           "text": "R$ 4.250,00; R$ 6.250,00; R$ 7.500,00."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "explanation": "A divisão original é R$ 4.000,00, R$ 6.000,00 e R$ 8.000,00. A retenção de 12,5% sobre R$ 8.000,00 equivale a R$ 1.000,00. A maior parcela fica em R$ 7.000,00, enquanto cada uma das outras recebe R$ 500,00."
     },
     {
@@ -523,15 +523,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "293."
+          "text": "77."
         },
         {
           "letter": "B",
-          "text": "221."
+          "text": "293."
         },
         {
           "letter": "C",
-          "text": "77."
+          "text": "221."
         },
         {
           "letter": "D",
@@ -542,7 +542,7 @@ export const questionBank = {
           "text": "72."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "Se o número deixa resto 5, sua diferença para 5 deve ser múltipla comum de 8, 12 e 18. O MMC é 72. Assim, os números possíveis têm a forma 72k + 5; o menor que é maior que 18 é 77."
     },
     {
@@ -563,18 +563,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "(√5)² − 3."
+          "text": "√18 − √8."
         },
         {
           "letter": "D",
-          "text": "√18 − √8."
+          "text": "(√5)² − 3."
         },
         {
           "letter": "E",
           "text": "√48 ÷ √3."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "√18 − √8 = 3√2 − 2√2 = √2, que é irracional. As demais expressões resultam, respectivamente, em 0, 3, 2 e 4, todos números racionais."
     },
     {
@@ -599,14 +599,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "R$ 286,20."
+          "text": "R$ 270,00."
         },
         {
           "letter": "E",
-          "text": "R$ 270,00."
+          "text": "R$ 286,20."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "A taxa fixa original é 222 − 48 × 3,50 = R$ 54,00. No novo contrato, ela vale 54 × 0,80 = R$ 43,20, e o preço unitário vale 3,50 × 1,08 = R$ 3,78. Assim, 43,20 + 60 × 3,78 = R$ 270,00."
     },
     {
@@ -631,14 +631,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "R$ 50,00."
+          "text": "R$ 55,00."
         },
         {
           "letter": "E",
-          "text": "R$ 55,00."
+          "text": "R$ 50,00."
         }
       ],
-      "answer": "D",
+      "answer": "E",
       "explanation": "O sistema é 8A + 5B = 610 e 5A + 3B = 375. Multiplicando a primeira por 3 e a segunda por 5: 24A + 15B = 1.830 e 25A + 15B = 1.875. Logo, A = 45. Em 5A + 3B = 375: 225 + 3B = 375, então B = 50."
     },
     {
@@ -651,15 +651,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "64 m²."
+          "text": "74 m²."
         },
         {
           "letter": "B",
-          "text": "72 m²."
+          "text": "64 m²."
         },
         {
           "letter": "C",
-          "text": "74 m²."
+          "text": "72 m²."
         },
         {
           "letter": "D",
@@ -670,7 +670,7 @@ export const questionBank = {
           "text": "70 m²."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "Se a largura é x, então x(x + 5) = 300, cuja raiz positiva é x = 15; o comprimento é 20. Com a faixa externa, as dimensões passam a 17 m e 22 m. A área da faixa é 17 × 22 − 300 = 74 m²."
     },
     {
@@ -683,26 +683,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "64.000 unidades em 21 horas."
+          "text": "48.000 unidades em 21 horas."
         },
         {
           "letter": "B",
-          "text": "42.000 unidades em 21 horas."
+          "text": "64.000 unidades em 21 horas."
         },
         {
           "letter": "C",
-          "text": "36.000 unidades em 18 horas."
+          "text": "42.000 unidades em 21 horas."
         },
         {
           "letter": "D",
-          "text": "48.000 unidades em 21 horas."
+          "text": "36.000 unidades em 18 horas."
         },
         {
           "letter": "E",
           "text": "48.000 unidades em 18 horas."
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "explanation": "Para passar de 500 a 16.000 ocorre multiplicação por 32 = 2⁵, portanto são necessários 15 horas. Após a remoção, restam 12.000 unidades. Em mais 6 horas ocorrem duas duplicações: 12.000 × 4 = 48.000. O tempo total é 21 horas."
     },
     {
@@ -719,22 +719,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "1,8572."
-        },
-        {
-          "letter": "C",
           "text": "2,1583."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "2,0792."
+        },
+        {
+          "letter": "D",
+          "text": "1,8572."
         },
         {
           "letter": "E",
           "text": "1,9031."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "explanation": "72 = 2³ x 3². Logo, log 72 = 3 log 2 + 2 log 3 = 3(0,3010) + 2(0,4771) = 0,9030 + 0,9542 = 1,8572."
     },
     {
@@ -759,14 +759,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "500 procedimentos."
+          "text": "600 procedimentos."
         },
         {
           "letter": "E",
-          "text": "600 procedimentos."
+          "text": "500 procedimentos."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "No equilíbrio, receita e custo são iguais: 20x = 4.800 + 12x. Assim, 8x = 4.800 e x = 600."
     },
     {
@@ -779,26 +779,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "50 m."
+          "text": "47 m."
         },
         {
           "letter": "B",
-          "text": "45 m."
+          "text": "50 m."
         },
         {
           "letter": "C",
-          "text": "42 m."
+          "text": "45 m."
         },
         {
           "letter": "D",
-          "text": "47 m."
+          "text": "42 m."
         },
         {
           "letter": "E",
           "text": "46 m."
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "explanation": "O vértice ocorre em t = -b/(2a) = -30/(2 x -5) = 3. Então, h(3) = -5(9) + 30(3) + 2 = -45 + 90 + 2 = 47 m."
     },
     {
@@ -851,18 +851,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "R$ 7.080,00."
+          "text": "R$ 7.020,00."
         },
         {
           "letter": "D",
-          "text": "R$ 7.020,00."
+          "text": "R$ 7.080,00."
         },
         {
           "letter": "E",
           "text": "R$ 7.140,00."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "Nos quatro primeiros meses, os juros são 8.000 × 0,015 × 4 = R$ 480,00. Após a retirada, permanecem R$ 6.000,00 de principal, que rendem 6.000 × 0,015 × 6 = R$ 540,00. O saldo final é 6.000 + 480 + 540 = R$ 7.020,00."
     },
     {
@@ -883,18 +883,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "R$ 5.312,12."
+          "text": "R$ 5.306,04."
         },
         {
           "letter": "D",
-          "text": "R$ 5.306,04."
+          "text": "R$ 5.312,12."
         },
         {
           "letter": "E",
           "text": "R$ 5.320,40."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "M = 5.000(1,02)³ = 5.000 x 1,061208 = R$ 5.306,04."
     },
     {
@@ -911,22 +911,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "21%."
-        },
-        {
-          "letter": "C",
           "text": "22%."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "19%."
+        },
+        {
+          "letter": "D",
+          "text": "21%."
         },
         {
           "letter": "E",
           "text": "20%."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "explanation": "Em um ano há dois semestres. A taxa efetiva é (1,10)² - 1 = 1,21 - 1 = 0,21 = 21%."
     },
     {
@@ -939,15 +939,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "6,8."
+          "text": "7,2."
         },
         {
           "letter": "B",
-          "text": "7,6."
+          "text": "6,8."
         },
         {
           "letter": "C",
-          "text": "7,2."
+          "text": "7,6."
         },
         {
           "letter": "D",
@@ -958,7 +958,7 @@ export const questionBank = {
           "text": "7,4."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "A soma ponderada necessária é 7,4 × 10 = 74. As duas primeiras avaliações fornecem 2 × 7 + 3 × 8 = 38 pontos. Restam 36 pontos ponderados; dividindo pelo peso 5, a nota final deve ser 7,2."
     },
     {
@@ -1007,22 +1007,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "19."
-        },
-        {
-          "letter": "C",
           "text": "20,5."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "18,5."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "19,5."
+        },
+        {
+          "letter": "E",
+          "text": "19."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "A soma original era 12 x 18 = 216. A substituição aumenta a soma em 26 - 14 = 12. A nova soma é 228, e 228/12 = 19."
     },
     {
@@ -1039,11 +1039,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "As três unidades, 15%."
+          "text": "Unidade B, 20%."
         },
         {
           "letter": "C",
-          "text": "Unidade B, 20%."
+          "text": "As três unidades, 15%."
         },
         {
           "letter": "D",
@@ -1054,7 +1054,7 @@ export const questionBank = {
           "text": "Unidades A e C, 15%."
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "explanation": "A unidade A cresceu 60/400 = 15%; B cresceu 50/250 = 20%; e C cresceu 60/600 = 10%. O aumento absoluto não basta para comparar crescimento percentual, pois as bases iniciais são diferentes."
     },
     {
@@ -1111,14 +1111,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "32/45."
+          "text": "28/45."
         },
         {
           "letter": "E",
-          "text": "28/45."
+          "text": "32/45."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "A probabilidade é (8/10)(7/9) = 56/90 = 28/45."
     },
     {
@@ -1135,22 +1135,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "35."
-        },
-        {
-          "letter": "C",
           "text": "21."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "30."
+        },
+        {
+          "letter": "D",
+          "text": "35."
         },
         {
           "letter": "E",
           "text": "28."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "explanation": "Como a ordem não importa, usa-se combinação: C(7,3) = 7!/(3!4!) = (7 x 6 x 5)/(3 x 2 x 1) = 35."
     },
     {
@@ -1231,11 +1231,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "a conclusão da análise será posterior à liberação."
+          "text": "a liberação do lote não ocorreu antes da conclusão da análise."
         },
         {
           "letter": "C",
-          "text": "a liberação do lote não ocorreu antes da conclusão da análise."
+          "text": "a conclusão da análise será posterior à liberação."
         },
         {
           "letter": "D",
@@ -1246,7 +1246,7 @@ export const questionBank = {
           "text": "o lote foi liberado em caráter provisório."
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "explanation": "A proposição tem a forma “se L, então A”. Ao saber que A é falsa, conclui-se que L também é falsa. Esse raciocínio é o modus tollens; não depende de supor uma liberação provisória ou uma conclusão futura."
     },
     {
@@ -1267,18 +1267,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "81."
+          "text": "92."
         },
         {
           "letter": "D",
-          "text": "92."
+          "text": "81."
         },
         {
           "letter": "E",
           "text": "90."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "As diferenças são 4, 9, 16 e 25, isto é, 2², 3², 4² e 5². A próxima é 6² = 36. Logo, 56 + 36 = 92."
     },
     {
@@ -1295,22 +1295,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "S, P, Q, R, T."
+          "text": "P, S, Q, R, T."
         },
         {
           "letter": "C",
-          "text": "R, S, Q, P, T."
+          "text": "S, P, Q, R, T."
         },
         {
           "letter": "D",
-          "text": "S, Q, R, T, P."
+          "text": "R, S, Q, P, T."
         },
         {
           "letter": "E",
-          "text": "P, S, Q, R, T."
+          "text": "S, Q, R, T, P."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "Em E, P aparece antes de R, Q vem imediatamente após S e T ocupa a última posição. Em A, Q não vem imediatamente após S; as demais violam pelo menos uma das condições."
     },
     {
@@ -1323,26 +1323,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "10√13 m."
-        },
-        {
-          "letter": "B",
           "text": "20√13 m."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "5√5 m."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "5√13 m."
+        },
+        {
+          "letter": "D",
+          "text": "10√13 m."
         },
         {
           "letter": "E",
           "text": "10√5 m."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "Escrevendo os lados como 3k e 2k, o perímetro é 2(3k + 2k) = 10k. Logo, k = 10 e os lados medem 30 m e 20 m. Pela relação de Pitágoras, a diagonal é √(30² + 20²) = √1.300 = 10√13 m."
     },
     {
@@ -1355,15 +1355,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "9,6 cm."
+          "text": "7,2 cm."
         },
         {
           "letter": "B",
-          "text": "8,0 cm."
+          "text": "9,6 cm."
         },
         {
           "letter": "C",
-          "text": "7,2 cm."
+          "text": "8,0 cm."
         },
         {
           "letter": "D",
@@ -1374,7 +1374,7 @@ export const questionBank = {
           "text": "7,5 cm."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "A hipotenusa mede 15 cm pelo teorema de Pitágoras. Igualando as duas expressões para a área, (9 · 12)/2 = (15 · h)/2. Logo, h = 108/15 = 7,2 cm."
     },
     {
@@ -1387,26 +1387,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "64π m²."
-        },
-        {
-          "letter": "B",
           "text": "136π m²."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "36π m²."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "16π m²."
+        },
+        {
+          "letter": "D",
+          "text": "64π m²."
         },
         {
           "letter": "E",
           "text": "100π m²."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "A área da coroa circular é a diferença entre as áreas dos círculos: π(10² - 6²) = π(100 - 36) = 64π m²."
     },
     {
@@ -1423,22 +1423,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "112 cm²."
-        },
-        {
-          "letter": "C",
           "text": "98 cm²."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "108 cm²."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "224 cm²."
+        },
+        {
+          "letter": "E",
+          "text": "112 cm²."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "A área do trapézio é A = (B + b)h/2. Portanto, A = (20 + 12) · 7/2 = 16 · 7 = 112 cm²."
     },
     {
@@ -1451,11 +1451,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "72 cm³."
+          "text": "216 cm³."
         },
         {
           "letter": "B",
-          "text": "216 cm³."
+          "text": "72 cm³."
         },
         {
           "letter": "C",
@@ -1470,7 +1470,7 @@ export const questionBank = {
           "text": "180 cm³."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "explanation": "A diagonal espacial de um cubo de aresta a é d = a√3. Assim, a√3 = 6√3, de modo que a = 6 cm. O volume é a³ = 6³ = 216 cm³."
     },
     {
@@ -1483,26 +1483,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "90π m³."
-        },
-        {
-          "letter": "B",
           "text": "30π m³."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "900π m³."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "180π m³."
+        },
+        {
+          "letter": "D",
+          "text": "90π m³."
         },
         {
           "letter": "E",
           "text": "60π m³."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "O volume do cilindro é V = πr²h. Substituindo r = 3 e h = 10, obtém-se V = π · 9 · 10 = 90π m³."
     },
     {
@@ -1515,15 +1515,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "2,5 mg/mL."
-        },
-        {
-          "letter": "B",
           "text": "250 mg/mL."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "25 mg/mL."
+        },
+        {
+          "letter": "C",
+          "text": "2,5 mg/mL."
         },
         {
           "letter": "D",
@@ -1534,7 +1534,7 @@ export const questionBank = {
           "text": "2.500 mg/mL."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "explanation": "Como 0,25 g = 250 mg, há 250 mg em 100 mL. Portanto, 250/100 = 2,5 mg/mL."
     },
     {
@@ -1551,22 +1551,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "48 km/h."
-        },
-        {
-          "letter": "C",
           "text": "52 km/h."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "46 km/h."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "50 km/h."
+        },
+        {
+          "letter": "E",
+          "text": "48 km/h."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "O primeiro trecho dura 60/40 = 1,5 h, e o segundo, 60/60 = 1 h. A distância total é 120 km e o tempo total é 2,5 h. Logo, a velocidade média é 120/2,5 = 48 km/h. Não se deve usar a média aritmética simples das velocidades."
     },
     {
@@ -1591,14 +1591,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "4√5."
+          "text": "10."
         },
         {
           "letter": "E",
-          "text": "10."
+          "text": "4√5."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "Pela fórmula da distância, d = √[(4 - (-2))² + (-5 - 3)²] = √(6² + (-8)²) = √100 = 10."
     },
     {
@@ -1619,18 +1619,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "y = 3x - 7."
+          "text": "y = -3x + 5."
         },
         {
           "letter": "D",
-          "text": "y = -3x + 5."
+          "text": "y = 3x - 7."
         },
         {
           "letter": "E",
           "text": "y = -3x - 7."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "explanation": "Usando a forma ponto-inclinação, y - (-1) = 3(x - 2). Assim, y + 1 = 3x - 6 e, portanto, y = 3x - 7."
     },
     {
@@ -1647,22 +1647,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "4/3."
+          "text": "3/5."
         },
         {
           "letter": "C",
-          "text": "4/5."
+          "text": "4/3."
         },
         {
           "letter": "D",
-          "text": "5/4."
+          "text": "4/5."
         },
         {
           "letter": "E",
-          "text": "3/5."
+          "text": "5/4."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "Pode-se representar a tangente por um triângulo com cateto oposto 3 e cateto adjacente 4. A hipotenusa vale 5 pelo teorema de Pitágoras. Logo, sen θ = cateto oposto/hipotenusa = 3/5."
     },
     {
@@ -1711,22 +1711,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "6."
+          "text": "5."
         },
         {
           "letter": "C",
-          "text": "4."
+          "text": "6."
         },
         {
           "letter": "D",
-          "text": "5."
+          "text": "4."
         },
         {
           "letter": "E",
           "text": "3."
         }
       ],
-      "answer": "D",
+      "answer": "B",
       "explanation": "Da segunda equação, y = 3x - 7. Substituindo na primeira: x + 2(3x - 7) = 7, então 7x = 21 e x = 3. Logo, y = 2 e x + y = 5."
     },
     {
@@ -1743,22 +1743,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "900."
-        },
-        {
-          "letter": "C",
           "text": "840."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "940."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "880."
+        },
+        {
+          "letter": "E",
+          "text": "900."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "O vigésimo termo é a20 = 7 + 19 · 4 = 83. Portanto, S20 = 20(7 + 83)/2 = 10 · 90 = 900."
     },
     {
@@ -1775,22 +1775,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "186."
+          "text": "189."
         },
         {
           "letter": "C",
-          "text": "126."
+          "text": "186."
         },
         {
           "letter": "D",
-          "text": "144."
+          "text": "126."
         },
         {
           "letter": "E",
-          "text": "189."
+          "text": "144."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "Pela fórmula da soma finita, S6 = 3(2⁶ - 1)/(2 - 1). Assim, S6 = 3(64 - 1) = 3 · 63 = 189."
     },
     {
@@ -1803,15 +1803,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "x − 3."
+          "text": "x − 1."
         },
         {
           "letter": "B",
-          "text": "1."
+          "text": "x − 3."
         },
         {
           "letter": "C",
-          "text": "x − 1."
+          "text": "1."
         },
         {
           "letter": "D",
@@ -1822,7 +1822,7 @@ export const questionBank = {
           "text": "x − 2."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "Temos P(x) = (x − 1)(x − 2)(x − 3), enquanto x² − 5x + 6 = (x − 2)(x − 3). Portanto, P(x) = (x − 1)(x² − 5x + 6): o quociente é x − 1 e o resto é 0."
     },
     {
@@ -1839,11 +1839,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "110."
+          "text": "105."
         },
         {
           "letter": "C",
-          "text": "105."
+          "text": "110."
         },
         {
           "letter": "D",
@@ -1854,7 +1854,7 @@ export const questionBank = {
           "text": "115."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation": "Elevando a igualdade ao cubo, (x + 1/x)³ = x³ + 1/x³ + 3(x + 1/x). Logo, 125 = x³ + 1/x³ + 15, de modo que x³ + 1/x³ = 110."
     },
     {
@@ -1871,22 +1871,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "65."
+          "text": "53."
         },
         {
           "letter": "C",
-          "text": "63."
+          "text": "65."
         },
         {
           "letter": "D",
-          "text": "53."
+          "text": "63."
         },
         {
           "letter": "E",
           "text": "43."
         }
       ],
-      "answer": "D",
+      "answer": "B",
       "explanation": "Como 12 não fizeram curso algum, 108 fizeram ao menos um. Pela inclusão-exclusão, 108 = 75 + 55 - |A ∩ B|, então |A ∩ B| = 22. Os que fizeram somente A são 75 - 22 = 53."
     },
     {
@@ -1939,18 +1939,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "R$ 11.600,00."
+          "text": "R$ 11.680,00."
         },
         {
           "letter": "D",
-          "text": "R$ 11.680,00."
+          "text": "R$ 11.600,00."
         },
         {
           "letter": "E",
           "text": "R$ 11.100,00."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "O montante bruto é 10.000 · 1,10² = R$ 12.100,00. O rendimento é R$ 2.100,00, e o imposto corresponde a 20% desse valor, isto é, R$ 420,00. O resgate líquido é 12.100 - 420 = R$ 11.680,00."
     },
     {
@@ -9986,6 +9986,1286 @@ export const questionBank = {
       "explanation": "Há problema de segurança, adesão e efetividade. A intervenção deve ser centrada no paciente, avaliar urgência, prevenir dano, esclarecer o edema e buscar ajuste compartilhado, não impor ou improvisar tratamento."
     },
     {
+      "id": "matematica-exp-061",
+      "subjectId": "matematica",
+      "number": 61,
+      "topic": "Lógica proposicional - lei de De Morgan",
+      "area": "Lógica proposicional",
+      "stem": "A negação lógica da proposição \"P e Q\" é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P ou Q."
+        },
+        {
+          "letter": "B",
+          "text": "não P e não Q."
+        },
+        {
+          "letter": "C",
+          "text": "se P, então não Q."
+        },
+        {
+          "letter": "D",
+          "text": "não P ou não Q."
+        },
+        {
+          "letter": "E",
+          "text": "se não P, então Q."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Pela lei de De Morgan, a negação de uma conjunção é a disjunção das negações: ¬(P ∧ Q) equivale a ¬P ∨ ¬Q."
+    },
+    {
+      "id": "matematica-exp-062",
+      "subjectId": "matematica",
+      "number": 62,
+      "topic": "Conjuntos - inclusão e exclusão",
+      "area": "Teoria de conjuntos",
+      "stem": "Em um grupo de 180 candidatos, 98 estudam Matemática, 82 estudam Português e 15 não estudam nenhuma dessas matérias. Quantos estudam as duas matérias?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18."
+        },
+        {
+          "letter": "B",
+          "text": "21."
+        },
+        {
+          "letter": "C",
+          "text": "12."
+        },
+        {
+          "letter": "D",
+          "text": "15."
+        },
+        {
+          "letter": "E",
+          "text": "25."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Estudam ao menos uma matéria 180 − 15 = 165 candidatos. Pela inclusão e exclusão, 98 + 82 − ambos = 165; portanto, ambos = 15."
+    },
+    {
+      "id": "matematica-exp-063",
+      "subjectId": "matematica",
+      "number": 63,
+      "topic": "Matrizes - determinante",
+      "area": "Matrizes e determinantes",
+      "stem": "O determinante da matriz [[2, 3], [4, 1]] é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "−2."
+        },
+        {
+          "letter": "B",
+          "text": "−10."
+        },
+        {
+          "letter": "C",
+          "text": "10."
+        },
+        {
+          "letter": "D",
+          "text": "2."
+        },
+        {
+          "letter": "E",
+          "text": "14."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Para matriz 2 × 2, o determinante é ad − bc. Assim, 2 × 1 − 3 × 4 = 2 − 12 = −10."
+    },
+    {
+      "id": "matematica-exp-064",
+      "subjectId": "matematica",
+      "number": 64,
+      "topic": "Sistemas lineares - duas incógnitas",
+      "area": "Sistemas lineares",
+      "stem": "No sistema 2x + 3y = 19 e x − y = 2, o valor de x é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5."
+        },
+        {
+          "letter": "B",
+          "text": "7."
+        },
+        {
+          "letter": "C",
+          "text": "3."
+        },
+        {
+          "letter": "D",
+          "text": "6."
+        },
+        {
+          "letter": "E",
+          "text": "4."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Da segunda equação, x = y + 2. Substituindo na primeira: 2(y + 2) + 3y = 19, logo 5y = 15 e y = 3; portanto, x = 5."
+    },
+    {
+      "id": "matematica-exp-065",
+      "subjectId": "matematica",
+      "number": 65,
+      "topic": "Equação do segundo grau - raízes",
+      "area": "Álgebra",
+      "stem": "A equação x² − 7x + k = 0 possui raízes inteiras positivas que diferem de uma unidade. O valor de k é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "14."
+        },
+        {
+          "letter": "B",
+          "text": "10."
+        },
+        {
+          "letter": "C",
+          "text": "12."
+        },
+        {
+          "letter": "D",
+          "text": "13."
+        },
+        {
+          "letter": "E",
+          "text": "11."
+        }
+      ],
+      "answer": "C",
+      "explanation": "As raízes inteiras positivas com soma 7 e diferença 1 são 3 e 4. Pelo produto das raízes, k = 3 × 4 = 12."
+    },
+    {
+      "id": "matematica-exp-066",
+      "subjectId": "matematica",
+      "number": 66,
+      "topic": "Progressão aritmética - soma",
+      "area": "Progressões",
+      "stem": "Uma progressão aritmética tem primeiro termo 5 e razão 3. A soma dos 20 primeiros termos é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "640."
+        },
+        {
+          "letter": "B",
+          "text": "670."
+        },
+        {
+          "letter": "C",
+          "text": "650."
+        },
+        {
+          "letter": "D",
+          "text": "660."
+        },
+        {
+          "letter": "E",
+          "text": "630."
+        }
+      ],
+      "answer": "B",
+      "explanation": "O vigésimo termo é 5 + 19 × 3 = 62. Então S20 = 20(5 + 62)/2 = 10 × 67 = 670."
+    },
+    {
+      "id": "matematica-exp-067",
+      "subjectId": "matematica",
+      "number": 67,
+      "topic": "Progressão geométrica - termo geral",
+      "area": "Progressões",
+      "stem": "Em uma progressão geométrica de primeiro termo 3 e razão 2, o oitavo termo é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "320."
+        },
+        {
+          "letter": "B",
+          "text": "192."
+        },
+        {
+          "letter": "C",
+          "text": "256."
+        },
+        {
+          "letter": "D",
+          "text": "384."
+        },
+        {
+          "letter": "E",
+          "text": "768."
+        }
+      ],
+      "answer": "D",
+      "explanation": "a8 = 3 × 2⁷ = 3 × 128 = 384."
+    },
+    {
+      "id": "matematica-exp-068",
+      "subjectId": "matematica",
+      "number": 68,
+      "topic": "Análise combinatória - combinações",
+      "area": "Análise combinatória",
+      "stem": "De um grupo de 8 pessoas, o número de comissões distintas com 3 integrantes é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "112."
+        },
+        {
+          "letter": "B",
+          "text": "24."
+        },
+        {
+          "letter": "C",
+          "text": "336."
+        },
+        {
+          "letter": "D",
+          "text": "48."
+        },
+        {
+          "letter": "E",
+          "text": "56."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Como a ordem dos integrantes não importa, calcula-se C(8,3) = 8 × 7 × 6/(3 × 2 × 1) = 56."
+    },
+    {
+      "id": "matematica-exp-069",
+      "subjectId": "matematica",
+      "number": 69,
+      "topic": "Análise combinatória - arranjos",
+      "area": "Análise combinatória",
+      "stem": "De 7 candidatos, quantas maneiras há de preencher os cargos distintos de presidente, vice-presidente, secretário, tesoureiro e relator?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "210."
+        },
+        {
+          "letter": "B",
+          "text": "2.520."
+        },
+        {
+          "letter": "C",
+          "text": "5.040."
+        },
+        {
+          "letter": "D",
+          "text": "840."
+        },
+        {
+          "letter": "E",
+          "text": "1.260."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Como os cargos são distintos, a ordem importa: A(7,5) = 7 × 6 × 5 × 4 × 3 = 2.520."
+    },
+    {
+      "id": "matematica-exp-070",
+      "subjectId": "matematica",
+      "number": 70,
+      "topic": "Probabilidade condicional",
+      "area": "Probabilidade",
+      "stem": "Uma urna contém 5 fichas vermelhas e 3 azuis. Retiram-se duas fichas sem reposição. Sabendo que a primeira foi vermelha, a probabilidade de a segunda ser azul é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5/7."
+        },
+        {
+          "letter": "B",
+          "text": "3/7."
+        },
+        {
+          "letter": "C",
+          "text": "5/8."
+        },
+        {
+          "letter": "D",
+          "text": "3/8."
+        },
+        {
+          "letter": "E",
+          "text": "1/2."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Após retirar uma ficha vermelha, permanecem 7 fichas, das quais 3 são azuis. A probabilidade condicional é, portanto, 3/7."
+    },
+    {
+      "id": "matematica-exp-071",
+      "subjectId": "matematica",
+      "number": 71,
+      "topic": "Matemática financeira - juros compostos",
+      "area": "Matemática financeira",
+      "stem": "Um capital de R$ 5.000,00 é aplicado a juros compostos de 10% ao período por dois períodos. O montante é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R$ 5.500,00."
+        },
+        {
+          "letter": "B",
+          "text": "R$ 5.750,00."
+        },
+        {
+          "letter": "C",
+          "text": "R$ 6.050,00."
+        },
+        {
+          "letter": "D",
+          "text": "R$ 6.100,00."
+        },
+        {
+          "letter": "E",
+          "text": "R$ 6.000,00."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Em juros compostos, M = 5.000 × 1,10² = 5.000 × 1,21 = R$ 6.050,00."
+    },
+    {
+      "id": "matematica-exp-072",
+      "subjectId": "matematica",
+      "number": 72,
+      "topic": "Matemática financeira - taxa equivalente",
+      "area": "Matemática financeira",
+      "stem": "Uma taxa efetiva de 2% ao mês corresponde, em três meses, a uma taxa efetiva aproximada de:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6,06%."
+        },
+        {
+          "letter": "B",
+          "text": "6,24%."
+        },
+        {
+          "letter": "C",
+          "text": "6,00%."
+        },
+        {
+          "letter": "D",
+          "text": "6,20%."
+        },
+        {
+          "letter": "E",
+          "text": "6,12%."
+        }
+      ],
+      "answer": "E",
+      "explanation": "A taxa trimestral equivalente é (1,02)³ − 1 = 1,061208 − 1, aproximadamente 6,12%. Somar 2% três vezes produz apenas aproximação simples."
+    },
+    {
+      "id": "matematica-exp-073",
+      "subjectId": "matematica",
+      "number": 73,
+      "topic": "Logaritmos - equação",
+      "area": "Álgebra",
+      "stem": "A solução da equação log₂(x − 1) = 3 é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8."
+        },
+        {
+          "letter": "B",
+          "text": "4."
+        },
+        {
+          "letter": "C",
+          "text": "7."
+        },
+        {
+          "letter": "D",
+          "text": "16."
+        },
+        {
+          "letter": "E",
+          "text": "9."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Se log₂(x − 1) = 3, então x − 1 = 2³ = 8. Logo, x = 9."
+    },
+    {
+      "id": "matematica-exp-074",
+      "subjectId": "matematica",
+      "number": 74,
+      "topic": "Trigonometria - tangente",
+      "area": "Trigonometria",
+      "stem": "Em um triângulo retângulo, os catetos medem 3 cm e 4 cm. A tangente do ângulo oposto ao cateto de 3 cm é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4/3."
+        },
+        {
+          "letter": "B",
+          "text": "3/4."
+        },
+        {
+          "letter": "C",
+          "text": "4/5."
+        },
+        {
+          "letter": "D",
+          "text": "3/5."
+        },
+        {
+          "letter": "E",
+          "text": "5/3."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A tangente é a razão entre cateto oposto e cateto adjacente. Para o ângulo indicado, tan = 3/4."
+    },
+    {
+      "id": "matematica-exp-075",
+      "subjectId": "matematica",
+      "number": 75,
+      "topic": "Geometria plana - área do triângulo",
+      "area": "Geometria plana",
+      "stem": "Um triângulo possui base de 18 cm e altura relativa a essa base de 12 cm. Sua área é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "108 cm²."
+        },
+        {
+          "letter": "B",
+          "text": "144 cm²."
+        },
+        {
+          "letter": "C",
+          "text": "96 cm²."
+        },
+        {
+          "letter": "D",
+          "text": "216 cm²."
+        },
+        {
+          "letter": "E",
+          "text": "72 cm²."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A área de um triângulo é base × altura/2. Assim, 18 × 12/2 = 108 cm²."
+    },
+    {
+      "id": "matematica-exp-076",
+      "subjectId": "matematica",
+      "number": 76,
+      "topic": "Geometria plana - setor circular",
+      "area": "Geometria plana",
+      "stem": "Um setor circular de raio 6 cm tem ângulo central de 120°. Sua área é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9π cm²."
+        },
+        {
+          "letter": "B",
+          "text": "36π cm²."
+        },
+        {
+          "letter": "C",
+          "text": "18π cm²."
+        },
+        {
+          "letter": "D",
+          "text": "12π cm²."
+        },
+        {
+          "letter": "E",
+          "text": "6π cm²."
+        }
+      ],
+      "answer": "D",
+      "explanation": "O setor corresponde a 120/360 = 1/3 do círculo. Como a área do círculo é 36π, a área do setor é 12π cm²."
+    },
+    {
+      "id": "matematica-exp-077",
+      "subjectId": "matematica",
+      "number": 77,
+      "topic": "Geometria espacial - cilindro",
+      "area": "Geometria espacial",
+      "stem": "O volume de um cilindro de raio 3 cm e altura 10 cm é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30π cm³."
+        },
+        {
+          "letter": "B",
+          "text": "90π cm³."
+        },
+        {
+          "letter": "C",
+          "text": "45π cm³."
+        },
+        {
+          "letter": "D",
+          "text": "60π cm³."
+        },
+        {
+          "letter": "E",
+          "text": "75π cm³."
+        }
+      ],
+      "answer": "B",
+      "explanation": "O volume do cilindro é πr²h = π × 3² × 10 = 90π cm³."
+    },
+    {
+      "id": "matematica-exp-078",
+      "subjectId": "matematica",
+      "number": 78,
+      "topic": "Geometria espacial - cubo",
+      "area": "Geometria espacial",
+      "stem": "A diagonal espacial de um cubo de aresta 4 cm mede:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6√2 cm."
+        },
+        {
+          "letter": "B",
+          "text": "4√2 cm."
+        },
+        {
+          "letter": "C",
+          "text": "4√3 cm."
+        },
+        {
+          "letter": "D",
+          "text": "8√3 cm."
+        },
+        {
+          "letter": "E",
+          "text": "6√3 cm."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A diagonal espacial de um cubo é a√3. Para a = 4, resulta 4√3 cm."
+    },
+    {
+      "id": "matematica-exp-079",
+      "subjectId": "matematica",
+      "number": 79,
+      "topic": "Geometria analítica - distância",
+      "area": "Geometria analítica",
+      "stem": "A distância entre os pontos (1, 2) e (7, 10) é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10."
+        },
+        {
+          "letter": "B",
+          "text": "9."
+        },
+        {
+          "letter": "C",
+          "text": "12."
+        },
+        {
+          "letter": "D",
+          "text": "11."
+        },
+        {
+          "letter": "E",
+          "text": "8."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A diferença horizontal é 6 e a vertical é 8. Pela distância euclidiana, d = √(6² + 8²) = √100 = 10."
+    },
+    {
+      "id": "matematica-exp-080",
+      "subjectId": "matematica",
+      "number": 80,
+      "topic": "Geometria analítica - coeficiente angular",
+      "area": "Geometria analítica",
+      "stem": "A reta que passa pelos pontos (2, 3) e (6, 11) possui coeficiente angular igual a:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1."
+        },
+        {
+          "letter": "B",
+          "text": "4."
+        },
+        {
+          "letter": "C",
+          "text": "2."
+        },
+        {
+          "letter": "D",
+          "text": "5/2."
+        },
+        {
+          "letter": "E",
+          "text": "3/2."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O coeficiente angular é (11 − 3)/(6 − 2) = 8/4 = 2."
+    },
+    {
+      "id": "matematica-exp-081",
+      "subjectId": "matematica",
+      "number": 81,
+      "topic": "Lógica proposicional - condicional",
+      "area": "Lógica proposicional",
+      "stem": "A proposição \"Se P, então Q\" é falsa somente quando:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P é verdadeira e Q é falsa."
+        },
+        {
+          "letter": "B",
+          "text": "P e Q são verdadeiras."
+        },
+        {
+          "letter": "C",
+          "text": "P e Q são falsas."
+        },
+        {
+          "letter": "D",
+          "text": "P é falsa e Q é verdadeira."
+        },
+        {
+          "letter": "E",
+          "text": "P ou Q é falsa."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Uma implicação material somente é falsa no caso em que o antecedente é verdadeiro e o consequente é falso."
+    },
+    {
+      "id": "matematica-exp-082",
+      "subjectId": "matematica",
+      "number": 82,
+      "topic": "Lógica dos predicados - negação",
+      "area": "Lógica dos predicados",
+      "stem": "A negação de \"Existe pelo menos um candidato aprovado\" é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Todo candidato foi reprovado por nota insuficiente."
+        },
+        {
+          "letter": "B",
+          "text": "Todo candidato foi aprovado."
+        },
+        {
+          "letter": "C",
+          "text": "Há candidato aprovado e candidato reprovado."
+        },
+        {
+          "letter": "D",
+          "text": "Nenhum candidato foi aprovado."
+        },
+        {
+          "letter": "E",
+          "text": "Existe candidato reprovado."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Negar a existência de ao menos um elemento com determinada propriedade equivale a afirmar que nenhum elemento possui essa propriedade."
+    },
+    {
+      "id": "matematica-exp-083",
+      "subjectId": "matematica",
+      "number": 83,
+      "topic": "Lógica proposicional - bicondicional",
+      "area": "Lógica proposicional",
+      "stem": "A proposição \"P se, e somente se, Q\" é verdadeira quando:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P e Q possuem o mesmo valor lógico."
+        },
+        {
+          "letter": "B",
+          "text": "P é verdadeira e Q é falsa."
+        },
+        {
+          "letter": "C",
+          "text": "P e Q são simultaneamente falsas apenas."
+        },
+        {
+          "letter": "D",
+          "text": "P é falsa e Q é verdadeira."
+        },
+        {
+          "letter": "E",
+          "text": "ao menos uma entre P e Q é verdadeira."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Uma bicondicional é verdadeira quando as duas proposições têm o mesmo valor lógico: ambas verdadeiras ou ambas falsas."
+    },
+    {
+      "id": "matematica-exp-084",
+      "subjectId": "matematica",
+      "number": 84,
+      "topic": "Raciocínio lógico - ordenação",
+      "area": "Raciocínio lógico",
+      "stem": "Cinco relatórios A, B, C, D e E serão lidos em sequência. Sabe-se que A vem antes de B, C vem depois de D e E vem antes de A. Qual sequência é possível?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "E, A, B, C, D."
+        },
+        {
+          "letter": "B",
+          "text": "B, A, E, D, C."
+        },
+        {
+          "letter": "C",
+          "text": "D, C, E, A, B."
+        },
+        {
+          "letter": "D",
+          "text": "A, E, B, D, C."
+        },
+        {
+          "letter": "E",
+          "text": "E, B, A, C, D."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A sequência D, C, E, A, B respeita D antes de C, E antes de A e A antes de B. As demais violam ao menos uma das condições."
+    },
+    {
+      "id": "matematica-exp-085",
+      "subjectId": "matematica",
+      "number": 85,
+      "topic": "Raciocínio sequencial",
+      "area": "Raciocínio lógico",
+      "stem": "Na sequência 2, 6, 12, 20, 30, o próximo termo é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "44."
+        },
+        {
+          "letter": "B",
+          "text": "36."
+        },
+        {
+          "letter": "C",
+          "text": "48."
+        },
+        {
+          "letter": "D",
+          "text": "40."
+        },
+        {
+          "letter": "E",
+          "text": "42."
+        }
+      ],
+      "answer": "E",
+      "explanation": "As diferenças são 4, 6, 8 e 10. A próxima diferença é 12; portanto, o próximo termo é 30 + 12 = 42."
+    },
+    {
+      "id": "matematica-exp-086",
+      "subjectId": "matematica",
+      "number": 86,
+      "topic": "Orientação espacial",
+      "area": "Raciocínio lógico",
+      "stem": "Uma pessoa caminha 4 km para o norte, 3 km para o leste e 4 km para o sul. Em relação ao ponto de partida, ela está:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 km a nordeste."
+        },
+        {
+          "letter": "B",
+          "text": "4 km ao norte."
+        },
+        {
+          "letter": "C",
+          "text": "4 km ao sul."
+        },
+        {
+          "letter": "D",
+          "text": "3 km a oeste."
+        },
+        {
+          "letter": "E",
+          "text": "3 km a leste."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Os deslocamentos de 4 km ao norte e de 4 km ao sul se anulam. Resta apenas o deslocamento de 3 km para o leste."
+    },
+    {
+      "id": "matematica-exp-087",
+      "subjectId": "matematica",
+      "number": 87,
+      "topic": "Sistemas lineares - três incógnitas",
+      "area": "Sistemas lineares",
+      "stem": "No sistema x + y + z = 9, x − y = 1 e y + z = 5, o valor de x é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4."
+        },
+        {
+          "letter": "B",
+          "text": "5."
+        },
+        {
+          "letter": "C",
+          "text": "6."
+        },
+        {
+          "letter": "D",
+          "text": "3."
+        },
+        {
+          "letter": "E",
+          "text": "7."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Das duas equações que contêm y + z, obtém-se x + (y + z) = 9 e y + z = 5. Logo, x = 4. As demais equações confirmam y = 3 e z = 2."
+    },
+    {
+      "id": "matematica-exp-088",
+      "subjectId": "matematica",
+      "number": 88,
+      "topic": "Matrizes - produto",
+      "area": "Matrizes",
+      "stem": "Se A = [[1, 2], [3, 4]] e B = [[2, 0], [1, 2]], o elemento da primeira linha e primeira coluna de AB é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6."
+        },
+        {
+          "letter": "B",
+          "text": "2."
+        },
+        {
+          "letter": "C",
+          "text": "4."
+        },
+        {
+          "letter": "D",
+          "text": "3."
+        },
+        {
+          "letter": "E",
+          "text": "5."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O elemento (1,1) de AB é 1 × 2 + 2 × 1 = 4."
+    },
+    {
+      "id": "matematica-exp-089",
+      "subjectId": "matematica",
+      "number": 89,
+      "topic": "Polinômios - teorema do resto",
+      "area": "Polinômios",
+      "stem": "O resto da divisão de P(x) = x³ − 2x + 4 por x − 2 é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4."
+        },
+        {
+          "letter": "B",
+          "text": "6."
+        },
+        {
+          "letter": "C",
+          "text": "8."
+        },
+        {
+          "letter": "D",
+          "text": "0."
+        },
+        {
+          "letter": "E",
+          "text": "2."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Pelo teorema do resto, basta calcular P(2): 2³ − 2 × 2 + 4 = 8 − 4 + 4 = 8."
+    },
+    {
+      "id": "matematica-exp-090",
+      "subjectId": "matematica",
+      "number": 90,
+      "topic": "Inequação do primeiro grau",
+      "area": "Álgebra",
+      "stem": "O conjunto solução da inequação 3 − 2x ≥ 11 é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "−4 ≤ x ≤ 4."
+        },
+        {
+          "letter": "B",
+          "text": "x ≥ 4."
+        },
+        {
+          "letter": "C",
+          "text": "x ≤ 4."
+        },
+        {
+          "letter": "D",
+          "text": "x ≤ −4."
+        },
+        {
+          "letter": "E",
+          "text": "x ≥ −4."
+        }
+      ],
+      "answer": "D",
+      "explanation": "3 − 2x ≥ 11 implica −2x ≥ 8. Ao dividir por −2, inverte-se o sinal: x ≤ −4."
+    },
+    {
+      "id": "matematica-exp-091",
+      "subjectId": "matematica",
+      "number": 91,
+      "topic": "Números complexos",
+      "area": "Álgebra",
+      "stem": "O produto (3 + 4i)(3 − 4i) é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "25."
+        },
+        {
+          "letter": "B",
+          "text": "16."
+        },
+        {
+          "letter": "C",
+          "text": "24."
+        },
+        {
+          "letter": "D",
+          "text": "7."
+        },
+        {
+          "letter": "E",
+          "text": "49."
+        }
+      ],
+      "answer": "A",
+      "explanation": "São números complexos conjugados. O produto é 3² + 4² = 9 + 16 = 25."
+    },
+    {
+      "id": "matematica-exp-092",
+      "subjectId": "matematica",
+      "number": 92,
+      "topic": "Análise combinatória - restrição",
+      "area": "Análise combinatória",
+      "stem": "De 4 mulheres e 3 homens, o número de comissões de 3 pessoas com exatamente 2 mulheres é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "24."
+        },
+        {
+          "letter": "B",
+          "text": "12."
+        },
+        {
+          "letter": "C",
+          "text": "21."
+        },
+        {
+          "letter": "D",
+          "text": "16."
+        },
+        {
+          "letter": "E",
+          "text": "18."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Escolhem-se 2 das 4 mulheres e 1 dos 3 homens: C(4,2) × C(3,1) = 6 × 3 = 18."
+    },
+    {
+      "id": "matematica-exp-093",
+      "subjectId": "matematica",
+      "number": 93,
+      "topic": "Probabilidade - união de eventos",
+      "area": "Probabilidade",
+      "stem": "Ao lançar um dado honesto, a probabilidade de obter número par ou maior que 4 é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3/4."
+        },
+        {
+          "letter": "B",
+          "text": "2/3."
+        },
+        {
+          "letter": "C",
+          "text": "5/6."
+        },
+        {
+          "letter": "D",
+          "text": "1/2."
+        },
+        {
+          "letter": "E",
+          "text": "1/3."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Pares: {2,4,6}; maiores que 4: {5,6}. A união é {2,4,5,6}, com 4 resultados entre 6, isto é, 2/3."
+    },
+    {
+      "id": "matematica-exp-094",
+      "subjectId": "matematica",
+      "number": 94,
+      "topic": "Estatística - média ponderada",
+      "area": "Estatística",
+      "stem": "Três grupos possuem, respectivamente, 20, 30 e 50 participantes, com médias 6, 7 e 8. A média dos 100 participantes é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7,2."
+        },
+        {
+          "letter": "B",
+          "text": "7,4."
+        },
+        {
+          "letter": "C",
+          "text": "7,3."
+        },
+        {
+          "letter": "D",
+          "text": "7,1."
+        },
+        {
+          "letter": "E",
+          "text": "7,5."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A soma ponderada é 20 × 6 + 30 × 7 + 50 × 8 = 730. Dividindo por 100 participantes, a média é 7,3."
+    },
+    {
+      "id": "matematica-exp-095",
+      "subjectId": "matematica",
+      "number": 95,
+      "topic": "Potenciação e radiciação",
+      "area": "Álgebra",
+      "stem": "O valor de 27^(2/3) é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9."
+        },
+        {
+          "letter": "B",
+          "text": "6."
+        },
+        {
+          "letter": "C",
+          "text": "27."
+        },
+        {
+          "letter": "D",
+          "text": "3."
+        },
+        {
+          "letter": "E",
+          "text": "18."
+        }
+      ],
+      "answer": "A",
+      "explanation": "27^(2/3) = (³√27)² = 3² = 9."
+    },
+    {
+      "id": "matematica-exp-096",
+      "subjectId": "matematica",
+      "number": 96,
+      "topic": "Determinantes - sistema linear",
+      "area": "Matrizes e determinantes",
+      "stem": "No sistema x + y = 7 e 2x − y = 5, o determinante da matriz dos coeficientes é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1."
+        },
+        {
+          "letter": "B",
+          "text": "3."
+        },
+        {
+          "letter": "C",
+          "text": "5."
+        },
+        {
+          "letter": "D",
+          "text": "−1."
+        },
+        {
+          "letter": "E",
+          "text": "−3."
+        }
+      ],
+      "answer": "E",
+      "explanation": "A matriz dos coeficientes é [[1,1],[2,−1]]. Seu determinante é 1 × (−1) − 1 × 2 = −3."
+    },
+    {
+      "id": "matematica-exp-097",
+      "subjectId": "matematica",
+      "number": 97,
+      "topic": "Lógica proposicional - equivalência",
+      "area": "Lógica proposicional",
+      "stem": "A proposição \"Se P, então Q\" é logicamente equivalente a:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P e Q."
+        },
+        {
+          "letter": "B",
+          "text": "não P ou Q."
+        },
+        {
+          "letter": "C",
+          "text": "P ou não Q."
+        },
+        {
+          "letter": "D",
+          "text": "não P e Q."
+        },
+        {
+          "letter": "E",
+          "text": "P ou Q."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A implicação P → Q equivale à disjunção ¬P ∨ Q. Essa equivalência é útil para avaliar proposições compostas."
+    },
+    {
+      "id": "matematica-exp-098",
+      "subjectId": "matematica",
+      "number": 98,
+      "topic": "Orientação temporal",
+      "area": "Raciocínio lógico",
+      "stem": "Uma reunião começou às 13h45 e durou 2 horas e 35 minutos. O horário de término foi:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "16h30."
+        },
+        {
+          "letter": "B",
+          "text": "16h20."
+        },
+        {
+          "letter": "C",
+          "text": "16h10."
+        },
+        {
+          "letter": "D",
+          "text": "17h20."
+        },
+        {
+          "letter": "E",
+          "text": "15h20."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Somando 2 horas a 13h45, chega-se a 15h45. Somando mais 35 minutos, chega-se a 16h20."
+    },
+    {
+      "id": "matematica-exp-099",
+      "subjectId": "matematica",
+      "number": 99,
+      "topic": "Regra de três composta",
+      "area": "Grandezas proporcionais",
+      "stem": "Se 6 máquinas iguais produzem 1.800 peças em 5 horas, quantas peças 9 máquinas produzirão em 8 horas, no mesmo ritmo?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4.800."
+        },
+        {
+          "letter": "B",
+          "text": "3.840."
+        },
+        {
+          "letter": "C",
+          "text": "3.600."
+        },
+        {
+          "letter": "D",
+          "text": "4.200."
+        },
+        {
+          "letter": "E",
+          "text": "4.320."
+        }
+      ],
+      "answer": "E",
+      "explanation": "A produção é diretamente proporcional ao número de máquinas e ao tempo: 1.800 × (9/6) × (8/5) = 4.320."
+    },
+    {
+      "id": "matematica-exp-100",
+      "subjectId": "matematica",
+      "number": 100,
+      "topic": "Trigonometria - seno",
+      "area": "Trigonometria",
+      "stem": "Em um triângulo retângulo cuja hipotenusa mede 10 cm e um cateto mede 6 cm, o seno do ângulo oposto a esse cateto é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/2."
+        },
+        {
+          "letter": "B",
+          "text": "3/5."
+        },
+        {
+          "letter": "C",
+          "text": "3/4."
+        },
+        {
+          "letter": "D",
+          "text": "4/5."
+        },
+        {
+          "letter": "E",
+          "text": "5/6."
+        }
+      ],
+      "answer": "B",
+      "explanation": "O seno é cateto oposto dividido pela hipotenusa. Assim, sen = 6/10 = 3/5."
+    },
+    {
       "id": "direito-constitucional-023",
       "subjectId": "direito-constitucional",
       "number": 23,
@@ -12286,6 +13566,48 @@ export const questionBank = {
       58,
       59,
       60
+    ],
+    "mathExpansionReviewed": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
     ],
     "portugueseBatchOneReviewed": [
       1,

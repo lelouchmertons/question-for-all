@@ -2445,6 +2445,66 @@ function removeLocalMunicipalContent(bank) {
   }
 }
 
+const mathExpansionBatch = [
+  [61, "Lógica proposicional - lei de De Morgan", "Lógica proposicional", "A negação lógica da proposição \"P e Q\" é:", ["P ou Q.", "não P e não Q.", "não P ou não Q.", "se P, então não Q.", "se não P, então Q."], 2, "Pela lei de De Morgan, a negação de uma conjunção é a disjunção das negações: ¬(P ∧ Q) equivale a ¬P ∨ ¬Q."],
+  [62, "Conjuntos - inclusão e exclusão", "Teoria de conjuntos", "Em um grupo de 180 candidatos, 98 estudam Matemática, 82 estudam Português e 15 não estudam nenhuma dessas matérias. Quantos estudam as duas matérias?", ["12.", "15.", "18.", "21.", "25."], 1, "Estudam ao menos uma matéria 180 − 15 = 165 candidatos. Pela inclusão e exclusão, 98 + 82 − ambos = 165; portanto, ambos = 15."],
+  [63, "Matrizes - determinante", "Matrizes e determinantes", "O determinante da matriz [[2, 3], [4, 1]] é:", ["−10.", "−2.", "2.", "10.", "14."], 0, "Para matriz 2 × 2, o determinante é ad − bc. Assim, 2 × 1 − 3 × 4 = 2 − 12 = −10."],
+  [64, "Sistemas lineares - duas incógnitas", "Sistemas lineares", "No sistema 2x + 3y = 19 e x − y = 2, o valor de x é:", ["3.", "4.", "5.", "6.", "7."], 2, "Da segunda equação, x = y + 2. Substituindo na primeira: 2(y + 2) + 3y = 19, logo 5y = 15 e y = 3; portanto, x = 5."],
+  [65, "Equação do segundo grau - raízes", "Álgebra", "A equação x² − 7x + k = 0 possui raízes inteiras positivas que diferem de uma unidade. O valor de k é:", ["10.", "11.", "12.", "13.", "14."], 2, "As raízes inteiras positivas com soma 7 e diferença 1 são 3 e 4. Pelo produto das raízes, k = 3 × 4 = 12."],
+  [66, "Progressão aritmética - soma", "Progressões", "Uma progressão aritmética tem primeiro termo 5 e razão 3. A soma dos 20 primeiros termos é:", ["630.", "640.", "650.", "660.", "670."], 4, "O vigésimo termo é 5 + 19 × 3 = 62. Então S20 = 20(5 + 62)/2 = 10 × 67 = 670."],
+  [67, "Progressão geométrica - termo geral", "Progressões", "Em uma progressão geométrica de primeiro termo 3 e razão 2, o oitavo termo é:", ["192.", "256.", "320.", "384.", "768."], 3, "a8 = 3 × 2⁷ = 3 × 128 = 384."],
+  [68, "Análise combinatória - combinações", "Análise combinatória", "De um grupo de 8 pessoas, o número de comissões distintas com 3 integrantes é:", ["24.", "48.", "56.", "112.", "336."], 2, "Como a ordem dos integrantes não importa, calcula-se C(8,3) = 8 × 7 × 6/(3 × 2 × 1) = 56."],
+  [69, "Análise combinatória - arranjos", "Análise combinatória", "De 7 candidatos, quantas maneiras há de preencher os cargos distintos de presidente, vice-presidente, secretário, tesoureiro e relator?", ["210.", "840.", "1.260.", "2.520.", "5.040."], 3, "Como os cargos são distintos, a ordem importa: A(7,5) = 7 × 6 × 5 × 4 × 3 = 2.520."],
+  [70, "Probabilidade condicional", "Probabilidade", "Uma urna contém 5 fichas vermelhas e 3 azuis. Retiram-se duas fichas sem reposição. Sabendo que a primeira foi vermelha, a probabilidade de a segunda ser azul é:", ["3/8.", "3/7.", "5/8.", "5/7.", "1/2."], 1, "Após retirar uma ficha vermelha, permanecem 7 fichas, das quais 3 são azuis. A probabilidade condicional é, portanto, 3/7."],
+  [71, "Matemática financeira - juros compostos", "Matemática financeira", "Um capital de R$ 5.000,00 é aplicado a juros compostos de 10% ao período por dois períodos. O montante é:", ["R$ 5.500,00.", "R$ 5.750,00.", "R$ 6.000,00.", "R$ 6.050,00.", "R$ 6.100,00."], 3, "Em juros compostos, M = 5.000 × 1,10² = 5.000 × 1,21 = R$ 6.050,00."],
+  [72, "Matemática financeira - taxa equivalente", "Matemática financeira", "Uma taxa efetiva de 2% ao mês corresponde, em três meses, a uma taxa efetiva aproximada de:", ["6,00%.", "6,06%.", "6,12%.", "6,20%.", "6,24%."], 2, "A taxa trimestral equivalente é (1,02)³ − 1 = 1,061208 − 1, aproximadamente 6,12%. Somar 2% três vezes produz apenas aproximação simples."],
+  [73, "Logaritmos - equação", "Álgebra", "A solução da equação log₂(x − 1) = 3 é:", ["4.", "7.", "8.", "9.", "16."], 3, "Se log₂(x − 1) = 3, então x − 1 = 2³ = 8. Logo, x = 9."],
+  [74, "Trigonometria - tangente", "Trigonometria", "Em um triângulo retângulo, os catetos medem 3 cm e 4 cm. A tangente do ângulo oposto ao cateto de 3 cm é:", ["3/5.", "3/4.", "4/3.", "4/5.", "5/3."], 1, "A tangente é a razão entre cateto oposto e cateto adjacente. Para o ângulo indicado, tan = 3/4."],
+  [75, "Geometria plana - área do triângulo", "Geometria plana", "Um triângulo possui base de 18 cm e altura relativa a essa base de 12 cm. Sua área é:", ["72 cm².", "96 cm².", "108 cm².", "144 cm².", "216 cm²."], 2, "A área de um triângulo é base × altura/2. Assim, 18 × 12/2 = 108 cm²."],
+  [76, "Geometria plana - setor circular", "Geometria plana", "Um setor circular de raio 6 cm tem ângulo central de 120°. Sua área é:", ["6π cm².", "9π cm².", "12π cm².", "18π cm².", "36π cm²."], 2, "O setor corresponde a 120/360 = 1/3 do círculo. Como a área do círculo é 36π, a área do setor é 12π cm²."],
+  [77, "Geometria espacial - cilindro", "Geometria espacial", "O volume de um cilindro de raio 3 cm e altura 10 cm é:", ["30π cm³.", "45π cm³.", "60π cm³.", "75π cm³.", "90π cm³."], 4, "O volume do cilindro é πr²h = π × 3² × 10 = 90π cm³."],
+  [78, "Geometria espacial - cubo", "Geometria espacial", "A diagonal espacial de um cubo de aresta 4 cm mede:", ["4√2 cm.", "4√3 cm.", "6√2 cm.", "6√3 cm.", "8√3 cm."], 1, "A diagonal espacial de um cubo é a√3. Para a = 4, resulta 4√3 cm."],
+  [79, "Geometria analítica - distância", "Geometria analítica", "A distância entre os pontos (1, 2) e (7, 10) é:", ["8.", "9.", "10.", "11.", "12."], 2, "A diferença horizontal é 6 e a vertical é 8. Pela distância euclidiana, d = √(6² + 8²) = √100 = 10."],
+  [80, "Geometria analítica - coeficiente angular", "Geometria analítica", "A reta que passa pelos pontos (2, 3) e (6, 11) possui coeficiente angular igual a:", ["1.", "3/2.", "2.", "5/2.", "4."], 2, "O coeficiente angular é (11 − 3)/(6 − 2) = 8/4 = 2."],
+  [81, "Lógica proposicional - condicional", "Lógica proposicional", "A proposição \"Se P, então Q\" é falsa somente quando:", ["P e Q são verdadeiras.", "P é verdadeira e Q é falsa.", "P é falsa e Q é verdadeira.", "P e Q são falsas.", "P ou Q é falsa."], 1, "Uma implicação material somente é falsa no caso em que o antecedente é verdadeiro e o consequente é falso."],
+  [82, "Lógica dos predicados - negação", "Lógica dos predicados", "A negação de \"Existe pelo menos um candidato aprovado\" é:", ["Todo candidato foi aprovado.", "Nenhum candidato foi aprovado.", "Existe candidato reprovado.", "Todo candidato foi reprovado por nota insuficiente.", "Há candidato aprovado e candidato reprovado."], 1, "Negar a existência de ao menos um elemento com determinada propriedade equivale a afirmar que nenhum elemento possui essa propriedade."],
+  [83, "Lógica proposicional - bicondicional", "Lógica proposicional", "A proposição \"P se, e somente se, Q\" é verdadeira quando:", ["P é verdadeira e Q é falsa.", "P é falsa e Q é verdadeira.", "P e Q possuem o mesmo valor lógico.", "ao menos uma entre P e Q é verdadeira.", "P e Q são simultaneamente falsas apenas."], 2, "Uma bicondicional é verdadeira quando as duas proposições têm o mesmo valor lógico: ambas verdadeiras ou ambas falsas."],
+  [84, "Raciocínio lógico - ordenação", "Raciocínio lógico", "Cinco relatórios A, B, C, D e E serão lidos em sequência. Sabe-se que A vem antes de B, C vem depois de D e E vem antes de A. Qual sequência é possível?", ["A, E, B, D, C.", "B, A, E, D, C.", "D, C, E, A, B.", "E, B, A, C, D.", "E, A, B, C, D."], 2, "A sequência D, C, E, A, B respeita D antes de C, E antes de A e A antes de B. As demais violam ao menos uma das condições."],
+  [85, "Raciocínio sequencial", "Raciocínio lógico", "Na sequência 2, 6, 12, 20, 30, o próximo termo é:", ["36.", "40.", "42.", "44.", "48."], 2, "As diferenças são 4, 6, 8 e 10. A próxima diferença é 12; portanto, o próximo termo é 30 + 12 = 42."],
+  [86, "Orientação espacial", "Raciocínio lógico", "Uma pessoa caminha 4 km para o norte, 3 km para o leste e 4 km para o sul. Em relação ao ponto de partida, ela está:", ["3 km a leste.", "3 km a oeste.", "4 km ao norte.", "4 km ao sul.", "5 km a nordeste."], 0, "Os deslocamentos de 4 km ao norte e de 4 km ao sul se anulam. Resta apenas o deslocamento de 3 km para o leste."],
+  [87, "Sistemas lineares - três incógnitas", "Sistemas lineares", "No sistema x + y + z = 9, x − y = 1 e y + z = 5, o valor de x é:", ["3.", "4.", "5.", "6.", "7."], 1, "Das duas equações que contêm y + z, obtém-se x + (y + z) = 9 e y + z = 5. Logo, x = 4. As demais equações confirmam y = 3 e z = 2."],
+  [88, "Matrizes - produto", "Matrizes", "Se A = [[1, 2], [3, 4]] e B = [[2, 0], [1, 2]], o elemento da primeira linha e primeira coluna de AB é:", ["2.", "3.", "4.", "5.", "6."], 2, "O elemento (1,1) de AB é 1 × 2 + 2 × 1 = 4."],
+  [89, "Polinômios - teorema do resto", "Polinômios", "O resto da divisão de P(x) = x³ − 2x + 4 por x − 2 é:", ["0.", "2.", "4.", "6.", "8."], 4, "Pelo teorema do resto, basta calcular P(2): 2³ − 2 × 2 + 4 = 8 − 4 + 4 = 8."],
+  [90, "Inequação do primeiro grau", "Álgebra", "O conjunto solução da inequação 3 − 2x ≥ 11 é:", ["x ≤ −4.", "x ≤ 4.", "x ≥ −4.", "x ≥ 4.", "−4 ≤ x ≤ 4."], 0, "3 − 2x ≥ 11 implica −2x ≥ 8. Ao dividir por −2, inverte-se o sinal: x ≤ −4."],
+  [91, "Números complexos", "Álgebra", "O produto (3 + 4i)(3 − 4i) é:", ["7.", "16.", "24.", "25.", "49."], 3, "São números complexos conjugados. O produto é 3² + 4² = 9 + 16 = 25."],
+  [92, "Análise combinatória - restrição", "Análise combinatória", "De 4 mulheres e 3 homens, o número de comissões de 3 pessoas com exatamente 2 mulheres é:", ["12.", "16.", "18.", "21.", "24."], 2, "Escolhem-se 2 das 4 mulheres e 1 dos 3 homens: C(4,2) × C(3,1) = 6 × 3 = 18."],
+  [93, "Probabilidade - união de eventos", "Probabilidade", "Ao lançar um dado honesto, a probabilidade de obter número par ou maior que 4 é:", ["1/3.", "1/2.", "2/3.", "3/4.", "5/6."], 2, "Pares: {2,4,6}; maiores que 4: {5,6}. A união é {2,4,5,6}, com 4 resultados entre 6, isto é, 2/3."],
+  [94, "Estatística - média ponderada", "Estatística", "Três grupos possuem, respectivamente, 20, 30 e 50 participantes, com médias 6, 7 e 8. A média dos 100 participantes é:", ["7,1.", "7,2.", "7,3.", "7,4.", "7,5."], 2, "A soma ponderada é 20 × 6 + 30 × 7 + 50 × 8 = 730. Dividindo por 100 participantes, a média é 7,3."],
+  [95, "Potenciação e radiciação", "Álgebra", "O valor de 27^(2/3) é:", ["3.", "6.", "9.", "18.", "27."], 2, "27^(2/3) = (³√27)² = 3² = 9."],
+  [96, "Determinantes - sistema linear", "Matrizes e determinantes", "No sistema x + y = 7 e 2x − y = 5, o determinante da matriz dos coeficientes é:", ["−3.", "−1.", "1.", "3.", "5."], 0, "A matriz dos coeficientes é [[1,1],[2,−1]]. Seu determinante é 1 × (−1) − 1 × 2 = −3."],
+  [97, "Lógica proposicional - equivalência", "Lógica proposicional", "A proposição \"Se P, então Q\" é logicamente equivalente a:", ["P e Q.", "P ou Q.", "não P ou Q.", "não P e Q.", "P ou não Q."], 2, "A implicação P → Q equivale à disjunção ¬P ∨ Q. Essa equivalência é útil para avaliar proposições compostas."],
+  [98, "Orientação temporal", "Raciocínio lógico", "Uma reunião começou às 13h45 e durou 2 horas e 35 minutos. O horário de término foi:", ["15h20.", "16h10.", "16h20.", "16h30.", "17h20."], 2, "Somando 2 horas a 13h45, chega-se a 15h45. Somando mais 35 minutos, chega-se a 16h20."],
+  [99, "Regra de três composta", "Grandezas proporcionais", "Se 6 máquinas iguais produzem 1.800 peças em 5 horas, quantas peças 9 máquinas produzirão em 8 horas, no mesmo ritmo?", ["3.600.", "3.840.", "4.200.", "4.320.", "4.800."], 3, "A produção é diretamente proporcional ao número de máquinas e ao tempo: 1.800 × (9/6) × (8/5) = 4.320."],
+  [100, "Trigonometria - seno", "Trigonometria", "Em um triângulo retângulo cuja hipotenusa mede 10 cm e um cateto mede 6 cm, o seno do ângulo oposto a esse cateto é:", ["1/2.", "3/5.", "4/5.", "5/6.", "3/4."], 1, "O seno é cateto oposto dividido pela hipotenusa. Assim, sen = 6/10 = 3/5."]
+];
+
+function prepareMathExpansion(bank) {
+  bank.questions = bank.questions.filter(question => !question.id.startsWith("matematica-exp-"));
+  bank.questions.push(...mathExpansionBatch.map(([number, topic, area, stem, options, answerIndex, explanation]) => ({
+    id: `matematica-exp-${String(number).padStart(3, "0")}`,
+    subjectId: "matematica",
+    number,
+    topic,
+    area,
+    stem,
+    options: options.map((text, index) => ({ letter: "ABCDE"[index], text })),
+    answer: "ABCDE"[answerIndex],
+    explanation
+  })));
+  const subject = bank.subjects.find(item => item.id === "matematica");
+  if (subject) subject.count = bank.questions.filter(question => question.subjectId === "matematica").length;
+}
+
 const constitutionalBatch = [
   [
     23,
@@ -3034,6 +3094,7 @@ function validate(bank) {
 
 const bank = loadBank();
 removeLocalMunicipalContent(bank);
+prepareMathExpansion(bank);
 prepareConstitutionalSubject(bank);
 prepareAdministrativeSubject(bank);
 for (const question of bank.questions) {
@@ -3056,6 +3117,7 @@ bank.review = {
   mathBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
   mathBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
   mathBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),
+  mathExpansionReviewed: Array.from({ length: 40 }, (_, index) => index + 61),
   portugueseBatchOneReviewed: Array.from({ length: 20 }, (_, index) => index + 1),
   portugueseBatchTwoReviewed: Array.from({ length: 20 }, (_, index) => index + 21),
   portugueseBatchThreeReviewed: Array.from({ length: 20 }, (_, index) => index + 41),

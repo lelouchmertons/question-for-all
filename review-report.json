@@ -12,15 +12,15 @@
     "suspiciousLengthGap": 0
   },
   "administracao-publica": {
-    "count": 50,
+    "count": 31,
     "answerCounts": {
-      "A": 10,
-      "B": 10,
-      "C": 10,
-      "D": 10,
-      "E": 10
+      "A": 7,
+      "B": 6,
+      "C": 6,
+      "D": 6,
+      "E": 6
     },
-    "correctUniquelyLongest": 17,
+    "correctUniquelyLongest": 11,
     "suspiciousLengthGap": 0
   },
   "portugues": {

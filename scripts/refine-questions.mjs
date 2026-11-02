@@ -2428,6 +2428,23 @@ function cleanImportedFooter(question) {
     .trim();
 }
 
+// Conteúdos de literalidade de Massaranduba foram úteis para o concurso local,
+// mas não fazem parte do banco nacional de Administração Pública. Mantemos a
+// regra aqui para que uma futura reconstrução do banco não os reintroduza.
+function removeLocalMunicipalContent(bank) {
+  const localQuestionNumbers = new Set(Array.from({ length: 19 }, (_, index) => index + 32));
+  bank.questions = bank.questions.filter(question => !(
+    question.subjectId === "administracao-publica" && localQuestionNumbers.has(question.number)
+  ));
+
+  const administration = bank.subjects.find(subject => subject.id === "administracao-publica");
+  if (administration) {
+    administration.label = "Administração Pública";
+    administration.short = "Administração Pública";
+    administration.count = bank.questions.filter(question => question.subjectId === administration.id).length;
+  }
+}
+
 function reorderOptions(question, targetLetter) {
   const correct = question.options.find((option) => option.letter === question.answer);
   const distractors = question.options
@@ -2472,6 +2489,7 @@ function validate(bank) {
 }
 
 const bank = loadBank();
+removeLocalMunicipalContent(bank);
 for (const question of bank.questions) {
   cleanImportedFooter(question);
   applyMathOverrides(question);

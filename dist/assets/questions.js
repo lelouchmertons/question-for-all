@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-10-28T23:50:36.941Z",
+  "generatedAt": "2026-11-02T06:45:39.850Z",
   "subjects": [
     {
       "id": "matematica",
@@ -9,9 +9,9 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica",
-      "label": "Administração Pública e Legislação",
+      "label": "Administração Pública",
       "short": "Administração Pública",
-      "count": 50
+      "count": 31
     },
     {
       "id": "portugues",
@@ -1961,22 +1961,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "no sentido objetivo, reúne as funções legislativa e jurisdicional exercidas pelos Poderes, afastada a atividade administrativa."
+          "text": "no sentido subjetivo, designa órgãos, agentes e entidades; no objetivo, a atividade administrativa por eles exercida."
         },
         {
           "letter": "C",
-          "text": "nos dois sentidos, designa o conjunto de agentes públicos que exercem atividades estatais em nome da coletividade."
+          "text": "no sentido objetivo, reúne as funções legislativa e jurisdicional exercidas pelos Poderes, afastada a atividade administrativa."
         },
         {
           "letter": "D",
-          "text": "no sentido subjetivo, corresponde às entidades da administração indireta, excluídos os órgãos e os agentes públicos."
+          "text": "nos dois sentidos, designa o conjunto de agentes públicos que exercem atividades estatais em nome da coletividade."
         },
         {
           "letter": "E",
-          "text": "no sentido subjetivo, designa órgãos, agentes e entidades; no objetivo, a atividade administrativa por eles exercida."
+          "text": "no sentido subjetivo, corresponde às entidades da administração indireta, excluídos os órgãos e os agentes públicos."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "O sentido subjetivo, orgânico ou formal identifica quem administra: órgãos, entidades e agentes. O sentido objetivo, material ou funcional identifica o que é exercido: a atividade administrativa destinada à satisfação do interesse público."
     },
     {
@@ -1997,18 +1997,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "somente pode agir quando houver fundamento jurídico que autorize sua conduta, inclusive se entender que outra medida seria mais eficiente."
-        },
-        {
-          "letter": "D",
           "text": "pode adotar o procedimento após obter concordância verbal da chefia e dos servidores diretamente envolvidos na execução."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "pode substituir a exigência legal por justificativa técnica baseada em sua convicção sobre o interesse público envolvido."
+        },
+        {
+          "letter": "E",
+          "text": "somente pode agir quando houver fundamento jurídico que autorize sua conduta, inclusive se entender que outra medida seria mais eficiente."
         }
       ],
-      "answer": "C",
+      "answer": "E",
       "explanation": "Para o particular, em regra, é permitido fazer o que a lei não proíbe. O agente público, porém, está sujeito à legalidade administrativa: sua atuação deve possuir fundamento no ordenamento jurídico. Eficiência não autoriza afastar a legalidade."
     },
     {
@@ -2021,11 +2021,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "impessoalidade, pois a campanha institucional não pode servir à promoção pessoal de autoridades ou agentes públicos."
+          "text": "especialidade, pois a campanha deveria ser conduzida exclusivamente pelo órgão técnico responsável pela informação divulgada."
         },
         {
           "letter": "B",
-          "text": "especialidade, pois a campanha deveria ser conduzida exclusivamente pelo órgão técnico responsável pela informação divulgada."
+          "text": "impessoalidade, pois a campanha institucional não pode servir à promoção pessoal de autoridades ou agentes públicos."
         },
         {
           "letter": "C",
@@ -2040,7 +2040,7 @@ export const questionBank = {
           "text": "autotutela, pois a Administração deve rever seus atos apenas depois de provocação formal de outro Poder da República."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "explanation": "A publicidade oficial deve possuir caráter educativo, informativo ou de orientação social e não pode servir à promoção pessoal de autoridades ou servidores. A vedação concretiza especialmente a impessoalidade, sem prejuízo de possível ofensa à moralidade."
     },
     {
@@ -2061,18 +2061,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "a publicidade alcança os atos do Poder Executivo federal, enquanto Estados e Municípios seguem regime próprio de divulgação."
+          "text": "a transparência é a regra, mas o ordenamento admite sigilo em hipóteses constitucional e legalmente justificadas."
         },
         {
           "letter": "D",
-          "text": "a transparência é a regra, mas o ordenamento admite sigilo em hipóteses constitucional e legalmente justificadas."
+          "text": "a publicidade alcança os atos do Poder Executivo federal, enquanto Estados e Municípios seguem regime próprio de divulgação."
         },
         {
           "letter": "E",
           "text": "a Administração pode definir sigilo para atos de sua conveniência, desde que a decisão seja registrada no processo correspondente."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "Publicidade e transparência constituem a regra, mas não são absolutas. Admitem-se restrições, por exemplo, para proteger a intimidade ou informações cujo sigilo seja imprescindível à segurança da sociedade e do Estado. Publicar um ato ilegal não elimina seu vício."
     },
     {
@@ -2085,15 +2085,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "atendimento prioritário aos usuários que gerem menor custo administrativo, para ampliar a produtividade global da unidade."
+          "text": "atuação com qualidade, produtividade e bom uso dos recursos, respeitados os demais princípios jurídicos."
         },
         {
           "letter": "B",
-          "text": "obtenção de resultados mensuráveis pela Administração por meios que se afastem dos limites jurídicos aplicáveis à atuação estatal."
+          "text": "atendimento prioritário aos usuários que gerem menor custo administrativo, para ampliar a produtividade global da unidade."
         },
         {
           "letter": "C",
-          "text": "atuação com qualidade, produtividade e bom uso dos recursos, respeitados os demais princípios jurídicos."
+          "text": "obtenção de resultados mensuráveis pela Administração por meios que se afastem dos limites jurídicos aplicáveis à atuação estatal."
         },
         {
           "letter": "D",
@@ -2104,7 +2104,7 @@ export const questionBank = {
           "text": "substituição dos controles de legalidade por metas de produtividade definidas pela chefia responsável pelo setor administrativo."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "Eficiência envolve boa gestão, qualidade, produtividade e resultados, mas deve coexistir com legalidade, impessoalidade, moralidade e publicidade. Não há autorização para atingir resultados por meios ilegais ou discriminatórios."
     },
     {
@@ -2117,11 +2117,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o dever ético surge apenas se a conduta estiver prevista como crime, improbidade ou infração disciplinar formalmente tipificada."
+          "text": "utiliza a posição pública para produzir favorecimento privado e rompe a imparcialidade esperada do agente."
         },
         {
           "letter": "B",
-          "text": "utiliza a posição pública para produzir favorecimento privado e rompe a imparcialidade esperada do agente."
+          "text": "o dever ético surge apenas se a conduta estiver prevista como crime, improbidade ou infração disciplinar formalmente tipificada."
         },
         {
           "letter": "C",
@@ -2136,7 +2136,7 @@ export const questionBank = {
           "text": "o parentesco afasta o conflito de interesses quando o servidor não recebe vantagem econômica direta pela informação utilizada."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "explanation": "A ética pública exige honestidade, lealdade institucional, imparcialidade e orientação ao interesse coletivo. A ausência de ganho direto ou de condenação criminal não torna eticamente legítimo o uso do cargo para favorecer interesse privado."
     },
     {
@@ -2153,11 +2153,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "objetiva, cabendo à vítima demonstrar dano e nexo causal, assegurado o direito de regresso contra o agente nos casos de dolo ou culpa."
+          "text": "afastada quando o agente ocupa cargo efetivo, pois a estabilidade transfere ao servidor a responsabilidade integral pelo dano."
         },
         {
           "letter": "C",
-          "text": "afastada quando o agente ocupa cargo efetivo, pois a estabilidade transfere ao servidor a responsabilidade integral pelo dano."
+          "text": "objetiva, cabendo à vítima demonstrar dano e nexo causal, assegurado o direito de regresso contra o agente nos casos de dolo ou culpa."
         },
         {
           "letter": "D",
@@ -2168,7 +2168,7 @@ export const questionBank = {
           "text": "penal por sua natureza, ficando a reparação civil condicionada à existência de condenação criminal definitiva contra o agente."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation": "A vítima deve demonstrar, em regra, conduta administrativa, dano e nexo causal, sem precisar provar dolo ou culpa do agente. A pessoa jurídica pode buscar regressivamente o ressarcimento do agente quando houver dolo ou culpa."
     },
     {
@@ -2181,27 +2181,27 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "podem cumular-se e são independentes, embora decisões sobre fato ou autoria possam produzir repercussões legalmente previstas."
-        },
-        {
-          "letter": "B",
           "text": "não podem coexistir, devendo a Administração aguardar a definição da esfera penal antes de instaurar procedimento disciplinar."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "dependem de condenação penal prévia, porque a definição judicial sobre o fato impede apuração autônoma pelas demais instâncias."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "limitam-se à responsabilidade administrativa, reservando as demais consequências aos fatos praticados fora do exercício do cargo."
+        },
+        {
+          "letter": "D",
+          "text": "podem cumular-se e são independentes, embora decisões sobre fato ou autoria possam produzir repercussões legalmente previstas."
         },
         {
           "letter": "E",
           "text": "excluem o dever de reparar o dano, pois a aplicação de sanção administrativa já afasta a necessidade de indenização civil."
         }
       ],
-      "answer": "A",
-      "explanation": "As responsabilidades podem nascer do mesmo fato e, em regra, são independentes. O Estatuto de Massaranduba expressamente admite a cumulação e afasta a responsabilidade administrativa quando a absolvição criminal negar a existência do fato ou sua autoria (arts. 171 a 176 da LC nº 12/2005)."
+      "answer": "D",
+      "explanation": "As responsabilidades podem nascer do mesmo fato e, em regra, são independentes. Uma decisão penal que reconheça a inexistência do fato ou negue sua autoria pode produzir reflexos nas demais esferas, conforme a legislação aplicável."
     },
     {
       "id": "administracao-publica-009",
@@ -2213,26 +2213,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Órgãos públicos, concessionárias de serviço público, cartórios extrajudiciais e fundações privadas conveniadas ao Estado."
+          "text": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista, todas integrantes da administração indireta."
         },
         {
           "letter": "B",
-          "text": "Ministérios, secretarias, autarquias e departamentos administrativos responsáveis por atividades internas de cada Poder."
+          "text": "Órgãos públicos, concessionárias de serviço público, cartórios extrajudiciais e fundações privadas conveniadas ao Estado."
         },
         {
           "letter": "C",
-          "text": "Prefeituras, câmaras municipais, empresas públicas e sociedades de economia mista integrantes da estrutura local."
+          "text": "Ministérios, secretarias, autarquias e departamentos administrativos responsáveis por atividades internas de cada Poder."
         },
         {
           "letter": "D",
-          "text": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista, todas integrantes da administração indireta."
+          "text": "Prefeituras, câmaras municipais, empresas públicas e sociedades de economia mista integrantes da estrutura local."
         },
         {
           "letter": "E",
           "text": "Secretarias municipais, departamentos técnicos, fundações privadas comuns e conselhos de políticas públicas instituídos por lei."
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "explanation": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista são entidades dotadas de personalidade jurídica própria. Ministérios, secretarias e departamentos são órgãos da administração direta, não entidades."
     },
     {
@@ -2257,14 +2257,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "pode afastar leis federais e estaduais quando entender que elas não atendem às necessidades administrativas do seu território."
+          "text": "possui capacidades de auto-organização, autogoverno, autoadministração e autolegislação nos limites constitucionais."
         },
         {
           "letter": "E",
-          "text": "possui capacidades de auto-organização, autogoverno, autoadministração e autolegislação nos limites constitucionais."
+          "text": "pode afastar leis federais e estaduais quando entender que elas não atendem às necessidades administrativas do seu território."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "O Município é ente federativo autônomo, mas não soberano. Sua autonomia abrange organização, governo, administração e legislação sobre matérias de sua competência, sempre dentro da Constituição."
     },
     {
@@ -2281,22 +2281,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "a garantia do desenvolvimento nacional, formulada como objetivo fundamental a ser promovido pelo Estado brasileiro."
+          "text": "o pluralismo político, incluído entre os fundamentos que estruturam a República Federativa do Brasil no texto constitucional."
         },
         {
           "letter": "C",
-          "text": "a prevalência dos direitos humanos, adotada como princípio das relações internacionais da República Federativa do Brasil."
+          "text": "a garantia do desenvolvimento nacional, formulada como objetivo fundamental a ser promovido pelo Estado brasileiro."
         },
         {
           "letter": "D",
-          "text": "o pluralismo político, incluído entre os fundamentos que estruturam a República Federativa do Brasil no texto constitucional."
+          "text": "a prevalência dos direitos humanos, adotada como princípio das relações internacionais da República Federativa do Brasil."
         },
         {
           "letter": "E",
           "text": "a defesa da paz, indicada como princípio para a atuação do Brasil perante os demais Estados e organismos internacionais."
         }
       ],
-      "answer": "D",
+      "answer": "B",
       "explanation": "São fundamentos: soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa e pluralismo político. As demais alternativas trazem objetivos fundamentais ou princípios das relações internacionais."
     },
     {
@@ -2349,18 +2349,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "Legislativo, Tribunal de Contas e Executivo, com competências próprias e coordenação exercida pelo Poder Judiciário nacional."
+          "text": "Legislativo, Executivo e Judiciário, independentes e harmônicos entre si, com competências constitucionais próprias."
         },
         {
           "letter": "D",
-          "text": "Legislativo, Executivo e Judiciário, independentes e harmônicos entre si, com competências constitucionais próprias."
+          "text": "Legislativo, Tribunal de Contas e Executivo, com competências próprias e coordenação exercida pelo Poder Judiciário nacional."
         },
         {
           "letter": "E",
           "text": "Presidência, Congresso e Supremo Tribunal Federal, estruturados em hierarquia para coordenar as funções do Estado brasileiro."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "A Constituição consagra Legislativo, Executivo e Judiciário como Poderes independentes e harmônicos. Não há subordinação geral entre eles, embora existam controles recíprocos."
     },
     {
@@ -2441,22 +2441,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o Estado pode interferir no funcionamento das associações sempre que houver interesse administrativo na atividade exercida pelo grupo."
+          "text": "as associações só poderão ser compulsoriamente dissolvidas por decisão judicial transitada em julgado, nos casos previstos pela Constituição."
         },
         {
           "letter": "C",
-          "text": "a criação de associações depende de autorização prévia do Poder Executivo, seguida de registro perante a autoridade competente."
+          "text": "o Estado pode interferir no funcionamento das associações sempre que houver interesse administrativo na atividade exercida pelo grupo."
         },
         {
           "letter": "D",
-          "text": "associações lícitas podem adotar organização paramilitar quando a finalidade declarada for proteção interna de seus filiados."
+          "text": "a criação de associações depende de autorização prévia do Poder Executivo, seguida de registro perante a autoridade competente."
         },
         {
           "letter": "E",
-          "text": "as associações só poderão ser compulsoriamente dissolvidas por decisão judicial transitada em julgado, nos casos previstos pela Constituição."
+          "text": "associações lícitas podem adotar organização paramilitar quando a finalidade declarada for proteção interna de seus filiados."
         }
       ],
-      "answer": "E",
+      "answer": "B",
       "explanation": "A criação de associações independe de autorização, é vedada a interferência estatal em seu funcionamento e ninguém pode ser obrigado a associar-se ou permanecer associado. A dissolução compulsória exige decisão judicial transitada em julgado; para suspensão das atividades, basta decisão judicial."
     },
     {
@@ -2469,15 +2469,15 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "o exercício da propriedade não pode sofrer condicionamentos administrativos quando o bem estiver regularmente registrado em nome do titular."
+          "text": "a propriedade atenderá a sua função social, em conformidade com as limitações e finalidades previstas no ordenamento jurídico."
         },
         {
           "letter": "B",
-          "text": "a função social incide exclusivamente sobre imóveis urbanos, conforme a disciplina constitucional aplicável à política urbana municipal."
+          "text": "o exercício da propriedade não pode sofrer condicionamentos administrativos quando o bem estiver regularmente registrado em nome do titular."
         },
         {
           "letter": "C",
-          "text": "a propriedade atenderá a sua função social, em conformidade com as limitações e finalidades previstas no ordenamento jurídico."
+          "text": "a função social incide exclusivamente sobre imóveis urbanos, conforme a disciplina constitucional aplicável à política urbana municipal."
         },
         {
           "letter": "D",
@@ -2488,7 +2488,7 @@ export const questionBank = {
           "text": "a desapropriação decorre da supremacia do interesse público e dispensa fundamento constitucional ou legal específico para sua realização."
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "explanation": "O art. 5º assegura a propriedade e, simultaneamente, exige o cumprimento de sua função social. Portanto, o direito não é absoluto e deve ser exercido em compatibilidade com os parâmetros constitucionais."
     },
     {
@@ -2505,22 +2505,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "as informações relativas a despesas públicas, que dependem de autorização da autoridade responsável pelo respectivo órgão."
+          "text": "aquelas cujo sigilo seja imprescindível à segurança da sociedade e do Estado, conforme as hipóteses constitucionalmente protegidas."
         },
         {
           "letter": "C",
-          "text": "as informações requeridas por estrangeiros, salvo quando houver reciprocidade prevista em tratado internacional celebrado pelo Brasil."
+          "text": "as informações relativas a despesas públicas, que dependem de autorização da autoridade responsável pelo respectivo órgão."
         },
         {
           "letter": "D",
-          "text": "aquelas cujo sigilo seja imprescindível à segurança da sociedade e do Estado, conforme as hipóteses constitucionalmente protegidas."
+          "text": "as informações requeridas por estrangeiros, salvo quando houver reciprocidade prevista em tratado internacional celebrado pelo Brasil."
         },
         {
           "letter": "E",
           "text": "as informações produzidas pelo Poder Executivo, que permanecem sujeitas a divulgação apenas após aprovação pelo Poder Legislativo."
         }
       ],
-      "answer": "D",
+      "answer": "B",
       "explanation": "A transparência é a regra. A própria Constituição admite a ressalva do sigilo quando imprescindível à segurança da sociedade e do Estado, sem criar uma autorização genérica para ocultar erros ou despesas públicas."
     },
     {
@@ -2533,26 +2533,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "direito líquido e certo ameaçado ou violado por ilegalidade ou abuso de poder, quando não amparado por habeas corpus ou habeas data."
-        },
-        {
-          "letter": "B",
           "text": "falta de norma regulamentadora que inviabilize o exercício de direito constitucional ou prerrogativa ligada à cidadania."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "patrimônio público, moralidade administrativa, meio ambiente ou patrimônio cultural lesados por ato praticado por agente público."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder praticado por autoridade pública."
+        },
+        {
+          "letter": "D",
+          "text": "direito líquido e certo ameaçado ou violado por ilegalidade ou abuso de poder, quando não amparado por habeas corpus ou habeas data."
         },
         {
           "letter": "E",
           "text": "acesso ou retificação de dados pessoais mantidos em registros governamentais ou em bancos de dados de caráter público."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "explanation": "O mandado de segurança possui caráter residual em relação ao habeas corpus e ao habeas data e exige direito líquido e certo, demonstrável por prova pré-constituída. A liberdade de locomoção é tutelada pelo habeas corpus."
     },
     {
@@ -2565,26 +2565,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "invalidar ato lesivo ao patrimônio público, à moralidade administrativa, ao meio ambiente ou ao patrimônio cultural protegido."
+          "text": "assegurar conhecimento ou retificação de dados do impetrante mantidos em registros governamentais ou de caráter público."
         },
         {
           "letter": "B",
-          "text": "suprir falta de norma regulamentadora que inviabilize direito constitucional ou prerrogativa ligada à cidadania."
+          "text": "invalidar ato lesivo ao patrimônio público, à moralidade administrativa, ao meio ambiente ou ao patrimônio cultural protegido."
         },
         {
           "letter": "C",
-          "text": "proteger liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder praticado por autoridade pública."
+          "text": "suprir falta de norma regulamentadora que inviabilize direito constitucional ou prerrogativa ligada à cidadania."
         },
         {
           "letter": "D",
-          "text": "proteger direito líquido e certo demonstrado por prova pré-constituída quando não couber habeas corpus ou habeas data."
+          "text": "proteger liberdade de locomoção ameaçada ou restringida por ilegalidade ou abuso de poder praticado por autoridade pública."
         },
         {
           "letter": "E",
-          "text": "assegurar conhecimento ou retificação de dados do impetrante mantidos em registros governamentais ou de caráter público."
+          "text": "proteger direito líquido e certo demonstrado por prova pré-constituída quando não couber habeas corpus ou habeas data."
         }
       ],
-      "answer": "E",
+      "answer": "A",
       "explanation": "O habeas data protege o acesso e a correção de dados pessoais do próprio impetrante em registros governamentais ou de caráter público. Não substitui habeas corpus, mandado de segurança ou mandado de injunção."
     },
     {
@@ -2605,18 +2605,18 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "a saúde, incluída entre os direitos sociais assegurados pelo art. 6º da Constituição Federal e pelas normas de proteção social."
+          "text": "a censura prévia, prevista como controle estatal para impedir divulgação de conteúdo contrário ao interesse coletivo."
         },
         {
           "letter": "D",
-          "text": "a censura prévia, prevista como controle estatal para impedir divulgação de conteúdo contrário ao interesse coletivo."
+          "text": "a saúde, incluída entre os direitos sociais assegurados pelo art. 6º da Constituição Federal e pelas normas de proteção social."
         },
         {
           "letter": "E",
           "text": "o anonimato, reconhecido como forma de proteger a livre manifestação de pensamento em espaços públicos e digitais."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "explanation": "Entre os direitos sociais do art. 6º estão educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância e assistência aos desamparados."
     },
     {
@@ -2633,11 +2633,11 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "o nascido no estrangeiro de pai ou mãe brasileira que seja registrado em repartição brasileira competente."
+          "text": "o estrangeiro casado com pessoa brasileira, desde que mantenha residência permanente e vínculo familiar reconhecido no território nacional."
         },
         {
           "letter": "C",
-          "text": "o estrangeiro casado com pessoa brasileira, desde que mantenha residência permanente e vínculo familiar reconhecido no território nacional."
+          "text": "o nascido no estrangeiro de pai ou mãe brasileira que seja registrado em repartição brasileira competente."
         },
         {
           "letter": "D",
@@ -2648,7 +2648,7 @@ export const questionBank = {
           "text": "o nascido no Brasil de pais estrangeiros que estejam no País em missão oficial de seu Estado de origem."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation": "A Constituição prevê hipóteses de nacionalidade originária por critérios territorial e sanguíneo. O registro em repartição competente é uma das formas pelas quais o filho de brasileiro nascido no exterior pode ser brasileiro nato."
     },
     {
@@ -2661,26 +2661,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "analfabetos, maiores de 70 anos e maiores de 16 e menores de 18 anos, nas condições previstas pela Constituição Federal."
-        },
-        {
-          "letter": "B",
           "text": "estrangeiros residentes no Brasil, desde que possuam domicílio eleitoral reconhecido pela Justiça Eleitoral competente."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "todos os maiores de 18 anos, salvo aqueles que apresentem impedimento temporário justificado perante a autoridade eleitoral."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "conscritos durante o serviço militar obrigatório, aos quais é assegurado alistamento e voto facultativos durante a incorporação."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "somente maiores de 70 anos, com exclusão dos analfabetos e dos jovens entre 16 e 18 anos do exercício facultativo."
+        },
+        {
+          "letter": "E",
+          "text": "analfabetos, maiores de 70 anos e maiores de 16 e menores de 18 anos, nas condições previstas pela Constituição Federal."
         }
       ],
-      "answer": "A",
+      "answer": "E",
       "explanation": "O voto é obrigatório para alfabetizados entre 18 e 70 anos e facultativo para analfabetos, maiores de 70 e jovens de 16 e 17 anos. Estrangeiros e conscritos, durante o serviço militar obrigatório, não podem alistar-se."
     },
     {
@@ -2693,26 +2693,26 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "podem receber recursos de governo estrangeiro após autorização do Congresso Nacional e registro da transferência financeira."
+          "text": "têm criação, fusão, incorporação e extinção livres, respeitados soberania nacional, regime democrático, pluripartidarismo e direitos fundamentais."
         },
         {
           "letter": "B",
-          "text": "ficam dispensados de prestar contas à Justiça Eleitoral quando não recebem recursos provenientes do Fundo Partidário."
+          "text": "podem receber recursos de governo estrangeiro após autorização do Congresso Nacional e registro da transferência financeira."
         },
         {
           "letter": "C",
-          "text": "devem possuir caráter estadual, sendo facultativa a organização de diretório nacional para participação nas eleições gerais."
+          "text": "ficam dispensados de prestar contas à Justiça Eleitoral quando não recebem recursos provenientes do Fundo Partidário."
         },
         {
           "letter": "D",
-          "text": "têm criação, fusão, incorporação e extinção livres, respeitados soberania nacional, regime democrático, pluripartidarismo e direitos fundamentais."
+          "text": "devem possuir caráter estadual, sendo facultativa a organização de diretório nacional para participação nas eleições gerais."
         },
         {
           "letter": "E",
           "text": "podem adotar organização paramilitar voltada à segurança interna de seus filiados, desde que registrada perante a Justiça Eleitoral."
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "explanation": "A liberdade partidária convive com limites constitucionais. Os partidos devem ter caráter nacional, prestar contas à Justiça Eleitoral e não podem receber recursos de entidade ou governo estrangeiros nem adotar organização paramilitar."
     },
     {
@@ -2757,11 +2757,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "submetida à sanção do governador, porque a Lei Orgânica deve respeitar a estrutura constitucional estabelecida pelo Estado-membro."
+          "text": "votada em dois turnos, com interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal."
         },
         {
           "letter": "B",
-          "text": "votada em dois turnos, com interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal."
+          "text": "submetida à sanção do governador, porque a Lei Orgânica deve respeitar a estrutura constitucional estabelecida pelo Estado-membro."
         },
         {
           "letter": "C",
@@ -2776,7 +2776,7 @@ export const questionBank = {
           "text": "editada unilateralmente pelo prefeito, com posterior apreciação da Câmara Municipal para ratificação das regras de organização local."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "explanation": "O art. 29 da Constituição prevê votação em dois turnos, interstício mínimo de dez dias e aprovação por dois terços da Câmara Municipal. A lei orgânica é promulgada pela própria Câmara."
     },
     {
@@ -2793,22 +2793,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber, observados os limites constitucionais."
-        },
-        {
-          "letter": "C",
           "text": "legislar privativamente sobre direito penal, processual e eleitoral para adequar as normas às necessidades locais do Município."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "emitir moeda de circulação municipal, observadas as diretrizes de política econômica definidas pela União e pelo Banco Central."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "declarar guerra e celebrar a paz, mediante autorização da Câmara Municipal e coordenação com os demais entes da Federação."
+        },
+        {
+          "letter": "E",
+          "text": "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber, observados os limites constitucionais."
         }
       ],
-      "answer": "B",
+      "answer": "E",
       "explanation": "O art. 30 atribui aos Municípios a legislação sobre interesse local e a suplementação das normas federais e estaduais quando cabível. As demais matérias indicadas pertencem à esfera federal."
     },
     {
@@ -2833,14 +2833,14 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "legitimidade, pessoalidade, moralidade, sigilo e economicidade, aplicáveis à administração direta e indireta de cada ente federativo."
+          "text": "legalidade, impessoalidade, moralidade, publicidade e eficiência, princípios expressos que vinculam a Administração Pública."
         },
         {
           "letter": "E",
-          "text": "legalidade, impessoalidade, moralidade, publicidade e eficiência, princípios expressos que vinculam a Administração Pública."
+          "text": "legitimidade, pessoalidade, moralidade, sigilo e economicidade, aplicáveis à administração direta e indireta de cada ente federativo."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "O conhecido conjunto “LIMPE” corresponde a legalidade, impessoalidade, moralidade, publicidade e eficiência. Outros princípios também orientam a Administração, mas não integram essa enumeração expressa."
     },
     {
@@ -2889,22 +2889,22 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "de até dois anos, prorrogável uma vez por igual período, conforme a previsão estabelecida no edital do certame."
-        },
-        {
-          "letter": "C",
           "text": "de um ano, sem possibilidade de prorrogação, para garantir renovação periódica dos candidatos inscritos no certame público."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "definido livremente após a homologação, conforme a disponibilidade financeira e a necessidade de provimento da Administração."
+        },
+        {
+          "letter": "D",
+          "text": "de até dois anos, prorrogável uma vez por igual período, conforme a previsão estabelecida no edital do certame."
         },
         {
           "letter": "E",
           "text": "obrigatoriamente de quatro anos, considerando o prazo máximo de gestão e a continuidade do serviço público prestado."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "explanation": "Essa é a regra do art. 37, III. “Até dois anos” significa que o edital pode fixar prazo menor; a prorrogação pode ocorrer uma única vez e por período igual ao inicialmente estabelecido."
     },
     {
@@ -2925,627 +2925,19 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "funções de confiança e cargos em comissão dependem de concurso específico, seguido de livre designação pela autoridade competente."
+          "text": "funções de confiança são exclusivas de servidores efetivos, e ambas as figuras se destinam a direção, chefia e assessoramento."
         },
         {
           "letter": "D",
-          "text": "funções de confiança são exclusivas de servidores efetivos, e ambas as figuras se destinam a direção, chefia e assessoramento."
+          "text": "funções de confiança e cargos em comissão dependem de concurso específico, seguido de livre designação pela autoridade competente."
         },
         {
           "letter": "E",
           "text": "funções de confiança podem ser atribuídas a particulares, enquanto cargos em comissão são exclusivos de servidores efetivos."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "Função de confiança é exclusiva de servidor efetivo. Os cargos em comissão serão preenchidos por servidores de carreira nos casos, condições e percentuais mínimos previstos em lei. Ambos se limitam a direção, chefia e assessoramento."
-    },
-    {
-      "id": "administracao-publica-032",
-      "subjectId": "administracao-publica",
-      "number": 32,
-      "topic": "Lei Orgânica de Massaranduba - Poderes municipais",
-      "area": "Lei Orgânica de Massaranduba",
-      "stem": "Segundo a Lei Orgânica do Município de Massaranduba, são Poderes do Município, independentes e harmônicos entre si:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Prefeitura, Câmara e Tribunal de Contas municipal, com competências próprias para deliberar e executar atos locais."
-        },
-        {
-          "letter": "B",
-          "text": "Legislativo, Executivo e Judiciário, com atribuições próprias previstas para a estrutura institucional do Município."
-        },
-        {
-          "letter": "C",
-          "text": "Executivo e Ministério Público, responsáveis pelas funções políticas e administrativas previstas na Lei Orgânica municipal."
-        },
-        {
-          "letter": "D",
-          "text": "Legislativo e Executivo, independentes e harmônicos entre si, conforme a Lei Orgânica do Município."
-        },
-        {
-          "letter": "E",
-          "text": "Executivo, Judiciário e Ministério Público, organizados como Poderes locais independentes e harmônicos entre si."
-        }
-      ],
-      "answer": "D",
-      "explanation": "O art. 2º da Lei Orgânica prevê os Poderes Legislativo e Executivo. O Município não possui Poder Judiciário próprio. Independência não elimina a harmonia nem os controles recíprocos previstos no ordenamento."
-    },
-    {
-      "id": "administracao-publica-033",
-      "subjectId": "administracao-publica",
-      "number": 33,
-      "topic": "Lei Orgânica de Massaranduba - Câmara Municipal",
-      "area": "Lei Orgânica de Massaranduba",
-      "stem": "De acordo com a redação vigente do art. 13 da Lei Orgânica, a Câmara Municipal de Massaranduba é composta por:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "8 vereadores, com distribuição de mandatos definida pela Justiça Eleitoral para a representação local."
-        },
-        {
-          "letter": "B",
-          "text": "11 vereadores, quantidade prevista para a composição ordinária da Câmara Municipal em cada legislatura."
-        },
-        {
-          "letter": "C",
-          "text": "9 vereadores, conforme a redação vigente do art. 13 da Lei Orgânica de Massaranduba."
-        },
-        {
-          "letter": "D",
-          "text": "7 vereadores, número estabelecido para a representação legislativa municipal na redação vigente da Lei Orgânica."
-        },
-        {
-          "letter": "E",
-          "text": "13 vereadores, considerando o limite demográfico adotado pela Lei Orgânica para a composição da Câmara Municipal."
-        }
-      ],
-      "answer": "C",
-      "explanation": "A Lei Orgânica estabelece expressamente a composição por nove vereadores, eleitos nos termos da legislação. É um ponto de literalidade local, característico de prova municipal."
-    },
-    {
-      "id": "administracao-publica-034",
-      "subjectId": "administracao-publica",
-      "number": 34,
-      "topic": "Lei Orgânica de Massaranduba - emenda",
-      "area": "Lei Orgânica de Massaranduba",
-      "stem": "Uma proposta de emenda à Lei Orgânica de Massaranduba será considerada aprovada quando obtiver:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "voto favorável de dois terços dos membros da Câmara em dois turnos, observado interstício mínimo de dez dias entre as votações."
-        },
-        {
-          "letter": "B",
-          "text": "unanimidade dos vereadores presentes, seguida de sanção do prefeito e publicação do texto aprovado em diário oficial."
-        },
-        {
-          "letter": "C",
-          "text": "maioria absoluta dos membros da Câmara, em dois turnos consecutivos realizados na mesma sessão legislativa."
-        },
-        {
-          "letter": "D",
-          "text": "maioria simples dos vereadores presentes, em turno único convocado especificamente para votar a proposta de emenda."
-        },
-        {
-          "letter": "E",
-          "text": "voto favorável de três quintos dos membros da Câmara, em três turnos de discussão e deliberação legislativa."
-        }
-      ],
-      "answer": "A",
-      "explanation": "O art. 29, § 1º, da Lei Orgânica exige dois turnos, intervalo mínimo de dez dias e dois terços dos membros em ambos. A emenda é promulgada pela Mesa da Câmara, não sancionada pelo prefeito."
-    },
-    {
-      "id": "administracao-publica-035",
-      "subjectId": "administracao-publica",
-      "number": 35,
-      "topic": "Lei Orgânica de Massaranduba - iniciativa popular",
-      "area": "Lei Orgânica de Massaranduba",
-      "stem": "A iniciativa popular de projeto de lei municipal pode ser exercida mediante apresentação à Câmara de projeto subscrito por, no mínimo:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "3% dos moradores maiores de 16 anos, identificados conforme cadastro municipal de participação popular e eleitoral."
-        },
-        {
-          "letter": "B",
-          "text": "5% do eleitorado do Município, devidamente identificado na forma da Lei Orgânica, com apresentação do projeto à Câmara Municipal."
-        },
-        {
-          "letter": "C",
-          "text": "1% da população total do Município, incluídos residentes sem inscrição eleitoral e menores de idade interessados."
-        },
-        {
-          "letter": "D",
-          "text": "2% dos servidores municipais em exercício, representados por entidade sindical ou associação funcional regularmente constituída."
-        },
-        {
-          "letter": "E",
-          "text": "10% dos vereadores em exercício, mediante subscrição formal acompanhada de justificativa sobre a matéria legislativa."
-        }
-      ],
-      "answer": "B",
-      "explanation": "O art. 30, § 2º, adota o mínimo de cinco por cento do eleitorado, com identificação por assinatura, número do título, zona e seção eleitoral."
-    },
-    {
-      "id": "administracao-publica-036",
-      "subjectId": "administracao-publica",
-      "number": 36,
-      "topic": "LC nº 12/2005 - conceito de servidor",
-      "area": "LC nº 12/2005",
-      "stem": "Para os efeitos do Estatuto dos Servidores Públicos Municipais de Massaranduba, servidor é:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "o ocupante de cargo em comissão, por exercer função de confiança e livre nomeação no âmbito administrativo."
-        },
-        {
-          "letter": "B",
-          "text": "a pessoa legalmente investida em cargo público, após nomeação e posse segundo as exigências previstas no Estatuto municipal."
-        },
-        {
-          "letter": "C",
-          "text": "a pessoa designada para serviço eventual ao Município, vinculada a contratação temporária ou a parceria administrativa específica."
-        },
-        {
-          "letter": "D",
-          "text": "exclusivamente o agente político eleito para mandato municipal, durante o período de exercício de suas atribuições públicas."
-        },
-        {
-          "letter": "E",
-          "text": "toda pessoa contratada por empresa terceirizada para prestar serviço contínuo ou eventual em repartição municipal."
-        }
-      ],
-      "answer": "B",
-      "explanation": "Essa é a definição do art. 2º da LC nº 12/2005. O Estatuto também define cargo público como o conjunto de competências e responsabilidades previstas na estrutura organizacional e atribuídas ao titular."
-    },
-    {
-      "id": "administracao-publica-037",
-      "subjectId": "administracao-publica",
-      "number": 37,
-      "topic": "LC nº 12/2005 - formas de provimento",
-      "area": "LC nº 12/2005",
-      "stem": "Assinale a alternativa que NÃO corresponde a forma de provimento enumerada no art. 13 do Estatuto de Massaranduba.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "reversão, correspondente ao retorno à atividade nas hipóteses estatutariamente previstas para servidor aposentado."
-        },
-        {
-          "letter": "B",
-          "text": "recondução, associada ao retorno do servidor estável nas situações previstas pela norma estatutária municipal."
-        },
-        {
-          "letter": "C",
-          "text": "transferência, como forma de provimento enumerada no art. 13 do Estatuto dos Servidores de Massaranduba."
-        },
-        {
-          "letter": "D",
-          "text": "readaptação, quando há investidura em cargo compatível com limitação física ou mental verificada em inspeção médica."
-        },
-        {
-          "letter": "E",
-          "text": "nomeação, como ato inicial de provimento em cargo público previsto na relação estatutária aplicável aos servidores."
-        }
-      ],
-      "answer": "C",
-      "explanation": "O Estatuto enumera nomeação, promoção, readaptação, reversão, aproveitamento, recondução e reintegração. Transferência não aparece nessa lista de formas de provimento."
-    },
-    {
-      "id": "administracao-publica-038",
-      "subjectId": "administracao-publica",
-      "number": 38,
-      "topic": "LC nº 12/2005 - investidura",
-      "area": "LC nº 12/2005",
-      "stem": "Segundo o Estatuto dos Servidores de Massaranduba, a investidura em cargo público ocorre com:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "a posse, momento em que o nomeado aceita formalmente as atribuições, os deveres e as responsabilidades do cargo público."
-        },
-        {
-          "letter": "B",
-          "text": "a homologação do resultado, ato que encerra o concurso e autoriza posteriormente as nomeações dos candidatos aprovados."
-        },
-        {
-          "letter": "C",
-          "text": "a inscrição no concurso, mediante apresentação de documentos e confirmação de participação no processo seletivo público."
-        },
-        {
-          "letter": "D",
-          "text": "o primeiro pagamento, quando o servidor passa a integrar a folha financeira do Município e recebe a remuneração inicial."
-        },
-        {
-          "letter": "E",
-          "text": "o término do estágio probatório, após confirmação da aptidão funcional e avaliação do desempenho no cargo ocupado."
-        }
-      ],
-      "answer": "A",
-      "explanation": "O art. 17 determina que a investidura ocorre com a posse. Nomeação é forma de provimento; posse é o ato de aceitação e investidura; exercício é o efetivo desempenho das atribuições."
-    },
-    {
-      "id": "administracao-publica-039",
-      "subjectId": "administracao-publica",
-      "number": 39,
-      "topic": "LC nº 12/2005 - prazo para posse",
-      "area": "LC nº 12/2005",
-      "stem": "A posse ocorrerá, em regra, no prazo de:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "5 dias da homologação do concurso, sem prorrogação, para assegurar que a nomeação ocorra no início do exercício financeiro."
-        },
-        {
-          "letter": "B",
-          "text": "10 dias da convocação, prorrogáveis por 5 dias, mediante simples comunicação do candidato à unidade de recursos humanos."
-        },
-        {
-          "letter": "C",
-          "text": "15 dias da publicação do ato de nomeação, permitida prorrogação por igual prazo a requerimento do nomeado."
-        },
-        {
-          "letter": "D",
-          "text": "45 dias da publicação, automaticamente prorrogados por igual período quando o nomeado ainda não tiver apresentado documentos completos."
-        },
-        {
-          "letter": "E",
-          "text": "30 dias da nomeação, sem prorrogação, salvo decisão administrativa excepcional fundamentada pela autoridade competente."
-        }
-      ],
-      "answer": "C",
-      "explanation": "Essa é a regra do art. 25. Se a posse não ocorrer no prazo por omissão do interessado, a nomeação será tornada sem efeito e será declarado extinto o direito do nomeado."
-    },
-    {
-      "id": "administracao-publica-040",
-      "subjectId": "administracao-publica",
-      "number": 40,
-      "topic": "LC nº 12/2005 - exercício",
-      "area": "LC nº 12/2005",
-      "stem": "O servidor empossado que não entrar em exercício no prazo legal será exonerado. Segundo o Estatuto, esse prazo, contado da posse nos casos comuns, é de:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "10 dias da convocação, prorrogáveis por igual período quando o servidor apresentar justificativa aceita pela chefia imediata."
-        },
-        {
-          "letter": "B",
-          "text": "5 dias da posse, contados da investidura formal no cargo, salvo situação de exercício em outra localidade prevista no Estatuto."
-        },
-        {
-          "letter": "C",
-          "text": "15 dias da posse, prazo aplicável à apresentação inicial do servidor e à definição da unidade de lotação correspondente."
-        },
-        {
-          "letter": "D",
-          "text": "2 dias da posse, contados em dias úteis, para que o servidor compareça à unidade e inicie suas atividades funcionais."
-        },
-        {
-          "letter": "E",
-          "text": "3 dias da nomeação, antes da posse, para que o candidato indique à Administração a intenção de entrar em exercício."
-        }
-      ],
-      "answer": "B",
-      "explanation": "Os arts. 27 e 30 estabelecem o prazo de cinco dias para entrada em exercício. O art. 30 admite prorrogação por mais cinco dias, mediante solicitação do interessado e a juízo da autoridade competente."
-    },
-    {
-      "id": "administracao-publica-041",
-      "subjectId": "administracao-publica",
-      "number": 41,
-      "topic": "LC nº 12/2005 - readaptação",
-      "area": "LC nº 12/2005",
-      "stem": "Readaptação é:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "a investidura do servidor em cargo de atribuições e responsabilidades compatíveis com limitação física ou mental verificada em inspeção médica."
-        },
-        {
-          "letter": "B",
-          "text": "a reinvestidura do servidor no cargo anteriormente ocupado, depois de invalidada sua demissão por decisão administrativa ou judicial."
-        },
-        {
-          "letter": "C",
-          "text": "o retorno do aposentado por invalidez à atividade, após declaração de que não subsistem os motivos da aposentadoria concedida."
-        },
-        {
-          "letter": "D",
-          "text": "a promoção automática do servidor para cargo de maior vencimento, após reconhecimento de limitação que impeça atribuições anteriores."
-        },
-        {
-          "letter": "E",
-          "text": "o retorno do servidor estável ao cargo anteriormente ocupado, em razão de inabilitação em estágio probatório de outro cargo."
-        }
-      ],
-      "answer": "A",
-      "explanation": "Essa é a definição do art. 61. A readaptação deve ocorrer em cargo de atribuições afins e respeitar a habilitação exigida; não se confunde com reversão, recondução ou reintegração."
-    },
-    {
-      "id": "administracao-publica-042",
-      "subjectId": "administracao-publica",
-      "number": 42,
-      "topic": "LC nº 12/2005 - reversão",
-      "area": "LC nº 12/2005",
-      "stem": "Nos termos do Estatuto, reversão é:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "o retorno à atividade do servidor aposentado por invalidez quando declarados insubsistentes os motivos da aposentadoria."
-        },
-        {
-          "letter": "B",
-          "text": "a disponibilidade remunerada decorrente da extinção do cargo, com aproveitamento posterior em função compatível na administração."
-        },
-        {
-          "letter": "C",
-          "text": "o retorno ao cargo anterior por reprovação em estágio probatório de outro cargo, assegurada ao servidor estável a recondução."
-        },
-        {
-          "letter": "D",
-          "text": "o deslocamento do servidor entre repartições, com alteração de lotação e preservação das atribuições originalmente previstas."
-        },
-        {
-          "letter": "E",
-          "text": "a volta do servidor demitido após invalidação da demissão, com ressarcimento das vantagens devidas no período afastado."
-        }
-      ],
-      "answer": "A",
-      "explanation": "A definição está no art. 65. A reversão depende de exame médico e de cargo vago e ocorre, preferencialmente, no mesmo cargo ou no resultante de sua transformação."
-    },
-    {
-      "id": "administracao-publica-043",
-      "subjectId": "administracao-publica",
-      "number": 43,
-      "topic": "LC nº 12/2005 - recondução",
-      "area": "LC nº 12/2005",
-      "stem": "Constitui hipótese de recondução prevista no Estatuto:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "licença para interesse particular, com possibilidade de reassunção do cargo após o término do período autorizado pela chefia."
-        },
-        {
-          "letter": "B",
-          "text": "aposentadoria voluntária do servidor, seguida de retorno à atividade quando houver interesse da Administração e vaga disponível."
-        },
-        {
-          "letter": "C",
-          "text": "promoção por merecimento, seguida de retorno à classe anterior quando houver necessidade de reorganização do quadro funcional."
-        },
-        {
-          "letter": "D",
-          "text": "inabilitação em estágio probatório relativo a outro cargo, assegurado retorno do servidor estável à situação funcional anterior."
-        },
-        {
-          "letter": "E",
-          "text": "aquisição de nova escolaridade reconhecida pela Administração, com retorno do servidor ao cargo anteriormente ocupado na carreira."
-        }
-      ],
-      "answer": "D",
-      "explanation": "A recondução é o retorno do servidor estável ao cargo anteriormente ocupado e pode decorrer de inabilitação no estágio probatório de outro cargo, reintegração do ocupante anterior ou constatação de transferência indevida."
-    },
-    {
-      "id": "administracao-publica-044",
-      "subjectId": "administracao-publica",
-      "number": 44,
-      "topic": "LC nº 12/2005 - penalidades disciplinares",
-      "area": "LC nº 12/2005",
-      "stem": "NÃO integra a relação de penas disciplinares do art. 178 do Estatuto:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "advertência verbal ou escrita, utilizada para faltas de menor gravidade definidas no regime disciplinar estatutário."
-        },
-        {
-          "letter": "B",
-          "text": "suspensão, aplicada nas hipóteses previstas para infrações de gravidade superior à advertência e inferior à demissão."
-        },
-        {
-          "letter": "C",
-          "text": "demissão, aplicada nas situações mais graves previstas no Estatuto dos Servidores Públicos Municipais de Massaranduba."
-        },
-        {
-          "letter": "D",
-          "text": "destituição de função de confiança, aplicável ao servidor que deixa de atender aos deveres ligados à função exercida."
-        },
-        {
-          "letter": "E",
-          "text": "redução definitiva de vencimento como penalidade autônoma, aplicada após processo administrativo disciplinar regularmente instaurado."
-        }
-      ],
-      "answer": "E",
-      "explanation": "O Estatuto enumera advertência, suspensão, demissão, cassação da disponibilidade, destituição de cargo em comissão e destituição de função de confiança. Não prevê redução definitiva de vencimento como pena autônoma."
-    },
-    {
-      "id": "administracao-publica-045",
-      "subjectId": "administracao-publica",
-      "number": 45,
-      "topic": "LC nº 12/2005 - suspensão",
-      "area": "LC nº 12/2005",
-      "stem": "A suspensão disciplinar, nas hipóteses previstas no Estatuto de Massaranduba, não poderá exceder:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "30 dias, período máximo de suspensão estabelecido para as infrações que exigem afastamento temporário do exercício funcional."
-        },
-        {
-          "letter": "B",
-          "text": "20 dias, prazo máximo de afastamento disciplinar adotado para servidores do quadro efetivo municipal."
-        },
-        {
-          "letter": "C",
-          "text": "15 dias, limite aplicável à suspensão disciplinar ordinária prevista para infrações de menor gravidade no Estatuto municipal."
-        },
-        {
-          "letter": "D",
-          "text": "45 dias, limite definido para suspensão aplicada após reincidência em falta funcional que não imponha demissão do servidor."
-        },
-        {
-          "letter": "E",
-          "text": "60 dias, limite máximo de suspensão disciplinar nas hipóteses previstas no Estatuto de Massaranduba."
-        }
-      ],
-      "answer": "E",
-      "explanation": "O art. 180 fixa o máximo de 60 dias. Quando houver conveniência para o serviço, a suspensão pode ser convertida em multa de 50% por dia de remuneração, permanecendo o servidor em serviço."
-    },
-    {
-      "id": "administracao-publica-046",
-      "subjectId": "administracao-publica",
-      "number": 46,
-      "topic": "LC nº 190/2023 - objeto da lei",
-      "area": "LC nº 190/2023",
-      "stem": "A Lei Complementar Municipal nº 190/2023 tem como objeto central:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "o quadro de cargos, os planos de carreira e a remuneração dos servidores do quadro efetivo do Poder Executivo de Massaranduba."
-        },
-        {
-          "letter": "B",
-          "text": "o regime eleitoral municipal, disciplinando candidaturas, propaganda, votação e apuração dos resultados das eleições locais."
-        },
-        {
-          "letter": "C",
-          "text": "as contratações terceirizadas do Município, abrangendo seleção de prestadores, fiscalização contratual e substituição de postos de trabalho."
-        },
-        {
-          "letter": "D",
-          "text": "o regime disciplinar dos vereadores, incluindo deveres parlamentares, sanções por quebra de decoro e regras de funcionamento da Câmara."
-        },
-        {
-          "letter": "E",
-          "text": "a criação do Poder Judiciário municipal, com definição de varas, competências e formas de provimento dos respectivos cargos."
-        }
-      ],
-      "answer": "A",
-      "explanation": "A própria ementa delimita a norma: quadro de cargos, planos de carreira e remuneração do quadro efetivo do Executivo municipal. O regime jurídico geral e disciplinar dos servidores é tratado principalmente pela LC nº 12/2005."
-    },
-    {
-      "id": "administracao-publica-047",
-      "subjectId": "administracao-publica",
-      "number": 47,
-      "topic": "LC nº 190/2023 - gestão da carreira",
-      "area": "LC nº 190/2023",
-      "stem": "A Comissão de Gestão de Carreira do Servidor do Quadro Geral, criada com fundamento na LC nº 190/2023, tem por finalidade:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "nomear livremente servidores para cargos efetivos, observando necessidade administrativa e disponibilidade de vagas no quadro municipal."
-        },
-        {
-          "letter": "B",
-          "text": "elaborar a Lei Orgânica do Município, propondo alterações na estrutura dos Poderes e na organização político-administrativa local."
-        },
-        {
-          "letter": "C",
-          "text": "julgar crimes praticados por servidores, com competência para aplicar penas administrativas e encaminhar decisões ao Poder Judiciário."
-        },
-        {
-          "letter": "D",
-          "text": "desenvolver e acompanhar a ascensão profissional dos servidores efetivos do Poder Executivo municipal, conforme as regras do plano de carreira."
-        },
-        {
-          "letter": "E",
-          "text": "substituir integralmente o setor de recursos humanos na gestão de folha, registros funcionais e rotinas de admissão de pessoal."
-        }
-      ],
-      "answer": "D",
-      "explanation": "A comissão se vincula à implementação e ao acompanhamento da carreira. Não exerce função jurisdicional, não dispensa concurso e não recebe competência para substituir todos os órgãos de gestão de pessoal."
-    },
-    {
-      "id": "administracao-publica-048",
-      "subjectId": "administracao-publica",
-      "number": 48,
-      "topic": "LC nº 190/2023 - estrutura do quadro efetivo",
-      "area": "LC nº 190/2023",
-      "stem": "No plano de cargos instituído pela LC nº 190/2023, as categorias funcionais do Quadro Geral de Cargos Efetivos do Poder Executivo são organizadas:",
-      "options": [
-        {
-          "letter": "A",
-          "text": "sem relação com requisitos ou atribuições dos cargos, ficando a distribuição funcional sujeita à decisão de cada chefia imediata."
-        },
-        {
-          "letter": "B",
-          "text": "exclusivamente por decisões verbais de cada chefia, conforme a necessidade de serviço identificada em cada unidade administrativa."
-        },
-        {
-          "letter": "C",
-          "text": "em classes, com definição legal de elementos como quantidade de cargos, denominação e padrões referenciais de vencimento."
-        },
-        {
-          "letter": "D",
-          "text": "como cargos políticos eletivos, com mandatos definidos conforme a estrutura administrativa prevista para o Poder Executivo municipal."
-        },
-        {
-          "letter": "E",
-          "text": "sem denominação ou referência remuneratória definida, para permitir adequação anual conforme a disponibilidade financeira do Município."
-        }
-      ],
-      "answer": "C",
-      "explanation": "A lei estrutura o quadro efetivo por categorias e classes e contém quadros e anexos com dados dos cargos. Mudanças em vagas, denominações, carga horária ou padrões dependem do instrumento normativo adequado, não de simples ordem informal."
-    },
-    {
-      "id": "administracao-publica-049",
-      "subjectId": "administracao-publica",
-      "number": 49,
-      "topic": "LC nº 190/2023 - âmbito de aplicação",
-      "area": "LC nº 190/2023",
-      "stem": "Assinale a situação diretamente abrangida pelo núcleo da LC nº 190/2023.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "organização do quadro efetivo e do desenvolvimento funcional de servidores do Poder Executivo de Massaranduba."
-        },
-        {
-          "letter": "B",
-          "text": "organização dos partidos políticos, com definição de regras sobre filiação, prestação de contas e participação eleitoral no Município."
-        },
-        {
-          "letter": "C",
-          "text": "definição das penas aplicáveis a crimes federais, com estabelecimento de tipos penais e procedimentos processuais correspondentes."
-        },
-        {
-          "letter": "D",
-          "text": "estruturação da carreira de magistrados estaduais, com regras de promoção, vencimentos e garantias funcionais no âmbito do Judiciário."
-        },
-        {
-          "letter": "E",
-          "text": "regulamentação de associações privadas, incluindo requisitos de constituição, funcionamento e fiscalização pelo Poder Público municipal."
-        }
-      ],
-      "answer": "A",
-      "explanation": "A norma é municipal e se dirige ao quadro efetivo do Poder Executivo. As demais matérias pertencem a outros ramos ou entes e não correspondem ao objeto do plano de cargos e carreira local."
-    },
-    {
-      "id": "administracao-publica-050",
-      "subjectId": "administracao-publica",
-      "number": 50,
-      "topic": "Legislação municipal - relação entre as normas",
-      "area": "Legislação municipal",
-      "stem": "Quanto à relação entre a LC nº 12/2005 e a LC nº 190/2023, assinale a alternativa correta.",
-      "options": [
-        {
-          "letter": "A",
-          "text": "a LC nº 190/2023 corresponde à Lei Orgânica municipal, cabendo à LC nº 12/2005 organizar os Poderes Executivo e Legislativo."
-        },
-        {
-          "letter": "B",
-          "text": "a LC nº 12/2005 trata somente de remuneração, enquanto a LC nº 190/2023 disciplina provimento e responsabilidade funcional."
-        },
-        {
-          "letter": "C",
-          "text": "a LC nº 12/2005 estabelece o regime estatutário, e a LC nº 190/2023 organiza cargos, carreira e remuneração do quadro efetivo."
-        },
-        {
-          "letter": "D",
-          "text": "a LC nº 190/2023 substituiu integralmente o Estatuto e passou a reunir deveres, proibições e sanções disciplinares dos servidores."
-        },
-        {
-          "letter": "E",
-          "text": "as duas leis possuem o mesmo objeto e diferem apenas quanto aos valores remuneratórios atualizados em seus respectivos anexos."
-        }
-      ],
-      "answer": "C",
-      "explanation": "As normas possuem objetos complementares. Para a prova, é essencial separar as regras gerais da vida funcional e disciplinar, concentradas no Estatuto, da estrutura de cargos, evolução na carreira e remuneração tratada pelo plano de carreira."
     },
     {
       "id": "portugues-001",

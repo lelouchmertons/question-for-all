@@ -1,5 +1,5 @@
 export const questionBank = {
-  "generatedAt": "2026-11-02T21:36:21.567Z",
+  "generatedAt": "2026-11-02T22:17:54.454Z",
   "subjects": [
     {
       "id": "matematica",
@@ -14,10 +14,10 @@ export const questionBank = {
       "count": 50
     },
     {
-      "id": "administracao-publica",
+      "id": "direito-administrativo",
       "label": "Direito Administrativo",
       "short": "Direito Administrativo",
-      "count": 9
+      "count": 50
     },
     {
       "id": "portugues",
@@ -1955,7 +1955,7 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica-001",
-      "subjectId": "administracao-publica",
+      "subjectId": "direito-administrativo",
       "number": 1,
       "topic": "Administração Pública - sentidos objetivo e subjetivo",
       "area": "Administração Pública",
@@ -1975,19 +1975,19 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "no sentido subjetivo, designa órgãos, agentes e entidades; no objetivo, a atividade administrativa por eles exercida."
+          "text": "no sentido subjetivo, corresponde às entidades da administração indireta, excluídos os órgãos e os agentes públicos."
         },
         {
           "letter": "E",
-          "text": "no sentido subjetivo, corresponde às entidades da administração indireta, excluídos os órgãos e os agentes públicos."
+          "text": "no sentido subjetivo, designa órgãos, agentes e entidades; no objetivo, a atividade administrativa por eles exercida."
         }
       ],
-      "answer": "D",
+      "answer": "E",
       "explanation": "O sentido subjetivo, orgânico ou formal identifica quem administra: órgãos, entidades e agentes. O sentido objetivo, material ou funcional identifica o que é exercido: a atividade administrativa destinada à satisfação do interesse público."
     },
     {
       "id": "administracao-publica-002",
-      "subjectId": "administracao-publica",
+      "subjectId": "direito-administrativo",
       "number": 2,
       "topic": "Princípios administrativos - legalidade",
       "area": "Princípios administrativos",
@@ -1995,11 +1995,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "somente pode agir quando houver fundamento jurídico que autorize sua conduta, inclusive se entender que outra medida seria mais eficiente."
+          "text": "pode agir quando não houver proibição expressa, desde que a medida apresente resultado mais eficiente para a Administração."
         },
         {
           "letter": "B",
-          "text": "pode agir quando não houver proibição expressa, desde que a medida apresente resultado mais eficiente para a Administração."
+          "text": "somente pode agir quando houver fundamento jurídico que autorize sua conduta, inclusive se entender que outra medida seria mais eficiente."
         },
         {
           "letter": "C",
@@ -2014,12 +2014,12 @@ export const questionBank = {
           "text": "pode substituir a exigência legal por justificativa técnica baseada em sua convicção sobre o interesse público envolvido."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "explanation": "Para o particular, em regra, é permitido fazer o que a lei não proíbe. O agente público, porém, está sujeito à legalidade administrativa: sua atuação deve possuir fundamento no ordenamento jurídico. Eficiência não autoriza afastar a legalidade."
     },
     {
       "id": "administracao-publica-003",
-      "subjectId": "administracao-publica",
+      "subjectId": "direito-administrativo",
       "number": 3,
       "topic": "Princípios administrativos - impessoalidade",
       "area": "Princípios administrativos",
@@ -2051,7 +2051,7 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica-004",
-      "subjectId": "administracao-publica",
+      "subjectId": "direito-administrativo",
       "number": 4,
       "topic": "Princípios administrativos - publicidade",
       "area": "Princípios administrativos",
@@ -2071,19 +2071,19 @@ export const questionBank = {
         },
         {
           "letter": "D",
-          "text": "a Administração pode definir sigilo para atos de sua conveniência, desde que a decisão seja registrada no processo correspondente."
+          "text": "a transparência é a regra, mas o ordenamento admite sigilo em hipóteses constitucional e legalmente justificadas."
         },
         {
           "letter": "E",
-          "text": "a transparência é a regra, mas o ordenamento admite sigilo em hipóteses constitucional e legalmente justificadas."
+          "text": "a Administração pode definir sigilo para atos de sua conveniência, desde que a decisão seja registrada no processo correspondente."
         }
       ],
-      "answer": "E",
+      "answer": "D",
       "explanation": "Publicidade e transparência constituem a regra, mas não são absolutas. Admitem-se restrições, por exemplo, para proteger a intimidade ou informações cujo sigilo seja imprescindível à segurança da sociedade e do Estado. Publicar um ato ilegal não elimina seu vício."
     },
     {
       "id": "administracao-publica-005",
-      "subjectId": "administracao-publica",
+      "subjectId": "direito-administrativo",
       "number": 5,
       "topic": "Princípios administrativos - eficiência",
       "area": "Princípios administrativos",
@@ -2115,7 +2115,7 @@ export const questionBank = {
     },
     {
       "id": "administracao-publica-006",
-      "subjectId": "administracao-publica",
+      "subjectId": "direito-administrativo",
       "number": 6,
       "topic": "Ética e cidadania",
       "area": "Ética e cidadania",
@@ -2127,27 +2127,27 @@ export const questionBank = {
         },
         {
           "letter": "B",
-          "text": "utiliza a posição pública para produzir favorecimento privado e rompe a imparcialidade esperada do agente."
-        },
-        {
-          "letter": "C",
           "text": "a informação produzida no exercício do cargo pode ser utilizada pelo servidor após ele avaliar a conveniência para seus familiares."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "a ética funcional se limita ao cumprimento da jornada de trabalho, das ordens superiores e dos procedimentos do setor."
+        },
+        {
+          "letter": "D",
+          "text": "utiliza a posição pública para produzir favorecimento privado e rompe a imparcialidade esperada do agente."
         },
         {
           "letter": "E",
           "text": "o parentesco afasta o conflito de interesses quando o servidor não recebe vantagem econômica direta pela informação utilizada."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "explanation": "A ética pública exige honestidade, lealdade institucional, imparcialidade e orientação ao interesse coletivo. A ausência de ganho direto ou de condenação criminal não torna eticamente legítimo o uso do cargo para favorecer interesse privado."
     },
     {
       "id": "administracao-publica-007",
-      "subjectId": "administracao-publica",
+      "subjectId": "direito-administrativo",
       "number": 7,
       "topic": "Responsabilidade civil do Estado",
       "area": "Responsabilidade civil do Estado",
@@ -2155,31 +2155,31 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "objetiva, cabendo à vítima demonstrar dano e nexo causal, assegurado o direito de regresso contra o agente nos casos de dolo ou culpa."
-        },
-        {
-          "letter": "B",
           "text": "exclusiva do agente que praticou o ato, cabendo à pessoa jurídica apenas acompanhar a apuração administrativa posterior."
         },
         {
-          "letter": "C",
+          "letter": "B",
           "text": "afastada quando o agente ocupa cargo efetivo, pois a estabilidade transfere ao servidor a responsabilidade integral pelo dano."
         },
         {
-          "letter": "D",
+          "letter": "C",
           "text": "subjetiva, dependendo sempre de prova de dolo ou culpa do agente para que a vítima obtenha indenização da pessoa jurídica."
         },
         {
-          "letter": "E",
+          "letter": "D",
           "text": "penal por sua natureza, ficando a reparação civil condicionada à existência de condenação criminal definitiva contra o agente."
+        },
+        {
+          "letter": "E",
+          "text": "objetiva, cabendo à vítima demonstrar dano e nexo causal, assegurado o direito de regresso contra o agente nos casos de dolo ou culpa."
         }
       ],
-      "answer": "A",
+      "answer": "E",
       "explanation": "A vítima deve demonstrar, em regra, conduta administrativa, dano e nexo causal, sem precisar provar dolo ou culpa do agente. A pessoa jurídica pode buscar regressivamente o ressarcimento do agente quando houver dolo ou culpa."
     },
     {
       "id": "administracao-publica-008",
-      "subjectId": "administracao-publica",
+      "subjectId": "direito-administrativo",
       "number": 8,
       "topic": "Responsabilidade do servidor público",
       "area": "Responsabilidade do servidor público",
@@ -2195,23 +2195,23 @@ export const questionBank = {
         },
         {
           "letter": "C",
-          "text": "limitam-se à responsabilidade administrativa, reservando as demais consequências aos fatos praticados fora do exercício do cargo."
+          "text": "podem cumular-se e são independentes, embora decisões sobre fato ou autoria possam produzir repercussões legalmente previstas."
         },
         {
           "letter": "D",
-          "text": "podem cumular-se e são independentes, embora decisões sobre fato ou autoria possam produzir repercussões legalmente previstas."
+          "text": "limitam-se à responsabilidade administrativa, reservando as demais consequências aos fatos praticados fora do exercício do cargo."
         },
         {
           "letter": "E",
           "text": "excluem o dever de reparar o dano, pois a aplicação de sanção administrativa já afasta a necessidade de indenização civil."
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "explanation": "As responsabilidades podem nascer do mesmo fato e, em regra, são independentes. Uma decisão penal que reconheça a inexistência do fato ou negue sua autoria pode produzir reflexos nas demais esferas, conforme a legislação aplicável."
     },
     {
       "id": "administracao-publica-009",
-      "subjectId": "administracao-publica",
+      "subjectId": "direito-administrativo",
       "number": 9,
       "topic": "Administração direta e indireta",
       "area": "Administração direta e indireta",
@@ -2219,11 +2219,11 @@ export const questionBank = {
       "options": [
         {
           "letter": "A",
-          "text": "Órgãos públicos, concessionárias de serviço público, cartórios extrajudiciais e fundações privadas conveniadas ao Estado."
+          "text": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista, todas integrantes da administração indireta."
         },
         {
           "letter": "B",
-          "text": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista, todas integrantes da administração indireta."
+          "text": "Órgãos públicos, concessionárias de serviço público, cartórios extrajudiciais e fundações privadas conveniadas ao Estado."
         },
         {
           "letter": "C",
@@ -2238,7 +2238,7 @@ export const questionBank = {
           "text": "Secretarias municipais, departamentos técnicos, fundações privadas comuns e conselhos de políticas públicas instituídos por lei."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "explanation": "Autarquias, fundações públicas, empresas públicas e sociedades de economia mista são entidades dotadas de personalidade jurídica própria. Ministérios, secretarias e departamentos são órgãos da administração direta, não entidades."
     },
     {
@@ -10880,6 +10880,1318 @@ export const questionBank = {
       ],
       "answer": "A",
       "explanation": "O art. 144, § 8º, faculta aos Municípios constituir guardas municipais destinadas à proteção de seus bens, serviços e instalações, conforme dispuser a lei. A Constituição não lhes atribui polícia judiciária estadual, julgamento de infrações ou controle de fronteiras."
+    },
+    {
+      "id": "direito-administrativo-010",
+      "subjectId": "direito-administrativo",
+      "number": 10,
+      "topic": "Organização administrativa - autarquia",
+      "area": "Organização administrativa",
+      "stem": "Uma lei cria entidade com personalidade jurídica de direito público para executar atividade típica de Estado de forma descentralizada. Essa entidade é uma:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "autarquia, criada diretamente por lei para desempenhar atividade administrativa descentralizada."
+        },
+        {
+          "letter": "B",
+          "text": "fundação privada conveniada, pois a descentralização dispensa vinculação à Administração."
+        },
+        {
+          "letter": "C",
+          "text": "unidade interna da Administração direta, pois não possui personalidade jurídica própria."
+        },
+        {
+          "letter": "D",
+          "text": "empresa pública, pois toda entidade criada por lei possui personalidade de direito público."
+        },
+        {
+          "letter": "E",
+          "text": "sociedade de economia mista, pois executa serviço de interesse coletivo sob controle estatal."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Autarquia é pessoa jurídica de direito público criada diretamente por lei para desempenhar atividade típica de Estado de modo descentralizado. Não se confunde com órgão, que não possui personalidade jurídica própria."
+    },
+    {
+      "id": "direito-administrativo-011",
+      "subjectId": "direito-administrativo",
+      "number": 11,
+      "topic": "Organização administrativa - empresa pública",
+      "area": "Organização administrativa",
+      "stem": "A empresa pública diferencia-se da sociedade de economia mista porque:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "não integra a Administração indireta e atua apenas por delegação contratual do Estado."
+        },
+        {
+          "letter": "B",
+          "text": "é criada diretamente por lei e possui necessariamente personalidade jurídica de direito público."
+        },
+        {
+          "letter": "C",
+          "text": "deve ter ações negociadas em bolsa, enquanto a sociedade de economia mista possui capital integralmente público."
+        },
+        {
+          "letter": "D",
+          "text": "somente pode explorar atividade econômica, sendo vedada a prestação de serviços públicos."
+        },
+        {
+          "letter": "E",
+          "text": "possui capital exclusivamente público e pode adotar qualquer forma societária admitida em direito."
+        }
+      ],
+      "answer": "E",
+      "explanation": "A empresa pública integra a Administração indireta, possui capital exclusivamente público e pode assumir qualquer forma societária admitida em direito. A sociedade de economia mista tem capital misto e, em regra, forma de sociedade anônima."
+    },
+    {
+      "id": "direito-administrativo-012",
+      "subjectId": "direito-administrativo",
+      "number": 12,
+      "topic": "Organização administrativa - descentralização",
+      "area": "Organização administrativa",
+      "stem": "Há descentralização administrativa quando o Estado:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "distribui atribuições entre órgãos internos da mesma pessoa jurídica, sem criar ou utilizar outra entidade."
+        },
+        {
+          "letter": "B",
+          "text": "transfere a execução a outra pessoa jurídica, com fiscalização estatal quando cabível."
+        },
+        {
+          "letter": "C",
+          "text": "atribui competência a servidor subordinado para praticar ato anteriormente reservado à chefia imediata."
+        },
+        {
+          "letter": "D",
+          "text": "submete todos os atos de entidade indireta à aprovação prévia e vinculante do chefe do Poder Executivo."
+        },
+        {
+          "letter": "E",
+          "text": "extingue órgão público e reparte suas atribuições entre unidades administrativas da mesma estrutura."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Na descentralização, a atividade é transferida a outra pessoa jurídica, por criação de entidade ou delegação. A distribuição interna de atribuições entre órgãos da mesma pessoa jurídica é desconcentração."
+    },
+    {
+      "id": "direito-administrativo-013",
+      "subjectId": "direito-administrativo",
+      "number": 13,
+      "topic": "Organização administrativa - desconcentração",
+      "area": "Organização administrativa",
+      "stem": "A criação de coordenadorias e departamentos dentro de um mesmo Ministério, para repartir internamente atribuições, exemplifica:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "outorga de serviço público, porque as novas unidades recebem titularidade autônoma da atividade."
+        },
+        {
+          "letter": "B",
+          "text": "descentralização por colaboração, porque cada departamento passa a possuir personalidade própria."
+        },
+        {
+          "letter": "C",
+          "text": "desconcentração administrativa, pois há distribuição interna de competências sem nova pessoa jurídica."
+        },
+        {
+          "letter": "D",
+          "text": "privatização administrativa, porque atividades antes estatais passam a ser exercidas por setores especializados."
+        },
+        {
+          "letter": "E",
+          "text": "delegação legislativa, pois a estrutura interna substitui a necessidade de lei para definir competências."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Desconcentração é a distribuição interna de competências dentro da mesma pessoa jurídica, com criação ou reorganização de órgãos. Órgãos não se tornam pessoas jurídicas autônomas por essa divisão."
+    },
+    {
+      "id": "direito-administrativo-014",
+      "subjectId": "direito-administrativo",
+      "number": 14,
+      "topic": "Organização administrativa - órgãos públicos",
+      "area": "Organização administrativa",
+      "stem": "Os órgãos públicos são corretamente compreendidos como:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "associações de agentes públicos com autonomia financeira e política perante o ente federativo."
+        },
+        {
+          "letter": "B",
+          "text": "entidades privadas contratadas para executar serviços públicos delegados pelo Estado."
+        },
+        {
+          "letter": "C",
+          "text": "pessoas jurídicas de direito público criadas por lei para executar funções estatais específicas."
+        },
+        {
+          "letter": "D",
+          "text": "unidades independentes da Administração indireta, dotadas de patrimônio próprio e capacidade processual plena."
+        },
+        {
+          "letter": "E",
+          "text": "centros de competência despersonalizados, integrantes da estrutura de uma pessoa jurídica."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Órgãos são centros de competência sem personalidade jurídica própria, integrados à estrutura de uma pessoa jurídica. Autarquias, fundações, empresas públicas e sociedades de economia mista são entidades, não órgãos."
+    },
+    {
+      "id": "direito-administrativo-015",
+      "subjectId": "direito-administrativo",
+      "number": 15,
+      "topic": "Organização administrativa - delegação de serviço público",
+      "area": "Serviços públicos",
+      "stem": "A concessão de serviço público caracteriza-se, em regra, por:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "criação de autarquia para exercer atividade econômica sob regime de exclusividade."
+        },
+        {
+          "letter": "B",
+          "text": "autorização informal para exploração de atividade pública sem vínculo jurídico com a Administração."
+        },
+        {
+          "letter": "C",
+          "text": "transferência definitiva da titularidade do serviço para a concessionária privada."
+        },
+        {
+          "letter": "D",
+          "text": "delegação contratual da prestação do serviço, precedida de licitação, sob fiscalização do Poder Público."
+        },
+        {
+          "letter": "E",
+          "text": "substituição do dever estatal de regular e fiscalizar o serviço delegado."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Na concessão, a titularidade do serviço permanece pública; transfere-se a execução a particular mediante contrato e licitação, com regulação e fiscalização estatais. A delegação não elimina o dever de controle do Poder Público."
+    },
+    {
+      "id": "direito-administrativo-016",
+      "subjectId": "direito-administrativo",
+      "number": 16,
+      "topic": "Organização administrativa - Administração direta e indireta",
+      "area": "Organização administrativa",
+      "stem": "Integram a Administração direta:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "autarquias, empresas públicas e sociedades de economia mista criadas ou autorizadas por lei."
+        },
+        {
+          "letter": "B",
+          "text": "fundações privadas que recebam recursos públicos para executar projeto de interesse social."
+        },
+        {
+          "letter": "C",
+          "text": "órgãos que compõem a estrutura dos entes federativos, como Ministérios e Secretarias."
+        },
+        {
+          "letter": "D",
+          "text": "concessionárias e permissionárias de serviços públicos, enquanto durar o contrato de delegação."
+        },
+        {
+          "letter": "E",
+          "text": "organizações sociais qualificadas pelo Poder Público mediante contrato de gestão."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Administração direta é formada pelos órgãos que integram as pessoas políticas, como União, Estados, Distrito Federal e Municípios. As entidades com personalidade própria compõem a Administração indireta; particulares delegados não integram nenhuma delas."
+    },
+    {
+      "id": "direito-administrativo-017",
+      "subjectId": "direito-administrativo",
+      "number": 17,
+      "topic": "Princípios administrativos - moralidade",
+      "area": "Princípios administrativos",
+      "stem": "Uma medida formalmente prevista em norma é empregada por autoridade para beneficiar pessoa próxima, sem finalidade pública. A conduta afronta diretamente:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a continuidade, pois o ato somente poderia ser praticado após consulta popular."
+        },
+        {
+          "letter": "B",
+          "text": "a moralidade e a impessoalidade, pois a função pública não serve a interesse privado."
+        },
+        {
+          "letter": "C",
+          "text": "a especialidade, pois autoridades não podem praticar atos previstos em sua competência."
+        },
+        {
+          "letter": "D",
+          "text": "a publicidade, pois atos favoráveis a particulares devem permanecer sigilosos."
+        },
+        {
+          "letter": "E",
+          "text": "a eficiência, pois todo favorecimento pessoal reduz automaticamente a arrecadação pública."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Moralidade e impessoalidade impedem que a função administrativa seja utilizada para favorecimento pessoal. A aparência de legalidade formal não legitima ato praticado com desvio da finalidade pública."
+    },
+    {
+      "id": "direito-administrativo-018",
+      "subjectId": "direito-administrativo",
+      "number": 18,
+      "topic": "Princípios administrativos - publicidade e transparência",
+      "area": "Princípios administrativos",
+      "stem": "A publicidade dos atos administrativos:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dispensa motivação, pois a publicação do ato substitui a exposição de suas razões."
+        },
+        {
+          "letter": "B",
+          "text": "aplica-se apenas aos atos que gerem despesa, não alcançando decisões administrativas sem impacto financeiro."
+        },
+        {
+          "letter": "C",
+          "text": "torna válido qualquer ato praticado por autoridade incompetente desde que haja divulgação oficial."
+        },
+        {
+          "letter": "D",
+          "text": "é absoluta, alcançando inclusive informações protegidas por sigilo constitucional ou legal."
+        },
+        {
+          "letter": "E",
+          "text": "é regra, com sigilo admitido nas hipóteses constitucionais e legais."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Publicidade e transparência são a regra, mas comportam sigilo nas hipóteses constitucionais e legais. A divulgação não convalida vício de competência, finalidade ou forma."
+    },
+    {
+      "id": "direito-administrativo-019",
+      "subjectId": "direito-administrativo",
+      "number": 19,
+      "topic": "Princípios administrativos - proporcionalidade",
+      "area": "Princípios administrativos",
+      "stem": "Ao aplicar sanção administrativa, a autoridade deve escolher medida adequada, necessária e equilibrada diante da infração. Essa exigência decorre especialmente dos princípios da:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "proporcionalidade e razoabilidade, que vedam excessos na atuação administrativa."
+        },
+        {
+          "letter": "B",
+          "text": "continuidade do serviço, que exige afastamento automático do agente em toda infração funcional."
+        },
+        {
+          "letter": "C",
+          "text": "autotutela, que impede a Administração de graduar penalidades conforme a gravidade do fato."
+        },
+        {
+          "letter": "D",
+          "text": "legalidade e publicidade, que impedem qualquer avaliação das circunstâncias concretas."
+        },
+        {
+          "letter": "E",
+          "text": "supremacia do interesse público, que autoriza sempre a sanção mais severa prevista em lei."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Razoabilidade e proporcionalidade funcionam como limites à atuação administrativa e impedem medidas excessivas ou inadequadas. A sanção deve observar competência, devido processo e correspondência com a gravidade do fato."
+    },
+    {
+      "id": "direito-administrativo-020",
+      "subjectId": "direito-administrativo",
+      "number": 20,
+      "topic": "Princípios administrativos - eficiência",
+      "area": "Princípios administrativos",
+      "stem": "A busca por eficiência autoriza a Administração a:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "escolher usuários prioritários conforme o menor custo de atendimento para o órgão público."
+        },
+        {
+          "letter": "B",
+          "text": "adotar meios de gestão que melhorem resultados e qualidade, respeitados os demais princípios jurídicos."
+        },
+        {
+          "letter": "C",
+          "text": "reduzir etapas de controle previstas em lei para aumentar a produtividade do setor."
+        },
+        {
+          "letter": "D",
+          "text": "substituir critérios objetivos por metas informais definidas pela chefia imediata."
+        },
+        {
+          "letter": "E",
+          "text": "afastar exigências legais sempre que a solução alternativa for mais rápida e econômica."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Eficiência exige qualidade, produtividade e bom uso dos recursos, mas não permite afastar legalidade, impessoalidade, moralidade ou publicidade. Resultado administrativo não legitima meio ilícito."
+    },
+    {
+      "id": "direito-administrativo-021",
+      "subjectId": "direito-administrativo",
+      "number": 21,
+      "topic": "Agentes públicos - classificação",
+      "area": "Agentes públicos",
+      "stem": "São agentes políticos, em sentido amplo, aqueles que:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ocupam funções de direção política e representação estatal, como Chefes do Executivo e membros do Legislativo."
+        },
+        {
+          "letter": "B",
+          "text": "exercem apenas função técnica de apoio em órgãos da Administração direta."
+        },
+        {
+          "letter": "C",
+          "text": "atuam como particulares colaboradores, sem qualquer vínculo funcional com o Estado."
+        },
+        {
+          "letter": "D",
+          "text": "mantêm vínculo exclusivamente celetista com empresa pública exploradora de atividade econômica."
+        },
+        {
+          "letter": "E",
+          "text": "prestam serviço temporário à Administração sem exercer função pública de direção ou representação estatal."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Agentes políticos exercem funções de direção política e representação estatal, como Chefes do Executivo e membros do Legislativo. A classificação não abrange automaticamente todos os empregados públicos, temporários ou particulares colaboradores."
+    },
+    {
+      "id": "direito-administrativo-022",
+      "subjectId": "direito-administrativo",
+      "number": 22,
+      "topic": "Agentes públicos - cargo, emprego e função",
+      "area": "Agentes públicos",
+      "stem": "A expressão cargo público refere-se, em regra, a:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "qualquer atividade eventual prestada por particular em favor da Administração, ainda que sem vínculo funcional."
+        },
+        {
+          "letter": "B",
+          "text": "contrato de trabalho celetista celebrado por empresa privada que execute serviço público delegado."
+        },
+        {
+          "letter": "C",
+          "text": "atribuição informal distribuída pela chefia, independentemente de previsão normativa ou dotação orçamentária."
+        },
+        {
+          "letter": "D",
+          "text": "conjunto de atribuições e responsabilidades previsto na estrutura organizacional, criado por lei e provido na forma legal."
+        },
+        {
+          "letter": "E",
+          "text": "função exercida exclusivamente por agente político eleito para mandato representativo."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Cargo público é criado por lei e possui atribuições, responsabilidades e remuneração definidas na estrutura administrativa. Não se confunde com emprego público, função temporária ou atividade informal de particular."
+    },
+    {
+      "id": "direito-administrativo-023",
+      "subjectId": "direito-administrativo",
+      "number": 23,
+      "topic": "Atos administrativos - competência",
+      "area": "Atos administrativos",
+      "stem": "A competência administrativa é, como regra:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dispensável quando a decisão produzir resultado eficiente para o interesse público."
+        },
+        {
+          "letter": "B",
+          "text": "irrenunciável, exercida pelo órgão competente e delegável ou avocável nos limites legais."
+        },
+        {
+          "letter": "C",
+          "text": "sempre exclusiva, sendo vedada toda delegação entre autoridades administrativas."
+        },
+        {
+          "letter": "D",
+          "text": "livremente transferível a qualquer particular mediante contrato administrativo."
+        },
+        {
+          "letter": "E",
+          "text": "definida apenas por ordem verbal da autoridade hierarquicamente superior."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Competência decorre da lei e é irrenunciável. A delegação e a avocação podem ocorrer nas hipóteses e limites legais; não autorizam transferência indiscriminada a particulares nem afastam regras de competência exclusiva."
+    },
+    {
+      "id": "direito-administrativo-024",
+      "subjectId": "direito-administrativo",
+      "number": 24,
+      "topic": "Atos administrativos - finalidade",
+      "area": "Atos administrativos",
+      "stem": "A finalidade do ato administrativo corresponde:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ao elemento que permite substituir a competência legal por decisão discricionária da chefia."
+        },
+        {
+          "letter": "B",
+          "text": "à justificativa particular apresentada pela autoridade para demonstrar conveniência pessoal."
+        },
+        {
+          "letter": "C",
+          "text": "ao objetivo de interesse público previsto, explícita ou implicitamente, pela norma que atribui a competência."
+        },
+        {
+          "letter": "D",
+          "text": "ao efeito material escolhido livremente pelo agente, ainda que não tenha relação com interesse público."
+        },
+        {
+          "letter": "E",
+          "text": "à forma escrita do ato, que deve ser idêntica em todos os procedimentos administrativos."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Finalidade é o objetivo de interesse público fixado pela ordem jurídica para o exercício da competência. Utilizar ato aparentemente legal para objetivo diverso configura desvio de finalidade."
+    },
+    {
+      "id": "direito-administrativo-025",
+      "subjectId": "direito-administrativo",
+      "number": 25,
+      "topic": "Atos administrativos - presunção de legitimidade",
+      "area": "Atos administrativos",
+      "stem": "A presunção de legitimidade dos atos administrativos significa que:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "todo ato administrativo é imune a controle judicial e administrativo após sua publicação."
+        },
+        {
+          "letter": "B",
+          "text": "a Administração fica dispensada de demonstrar os fatos que motivaram sua decisão em processo administrativo."
+        },
+        {
+          "letter": "C",
+          "text": "o ato produz efeitos enquanto não invalidado, presumindo-se conforme ao ordenamento até prova ou decisão em contrário."
+        },
+        {
+          "letter": "D",
+          "text": "a presunção transforma ato ilegal em válido quando não houver impugnação imediata pelo interessado."
+        },
+        {
+          "letter": "E",
+          "text": "o particular deve cumprir ato manifestamente inexistente, ainda que não tenha sido formalizado pela autoridade competente."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A presunção de legitimidade permite que o ato produza efeitos até ser desconstituído, mas é relativa. O ato pode ser controlado e invalidado quando houver vício, e a Administração continua sujeita ao dever de motivação quando exigido."
+    },
+    {
+      "id": "direito-administrativo-026",
+      "subjectId": "direito-administrativo",
+      "number": 26,
+      "topic": "Atos administrativos - autoexecutoriedade",
+      "area": "Atos administrativos",
+      "stem": "A autoexecutoriedade permite, em hipóteses admitidas pela ordem jurídica, que a Administração:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "cobre compulsoriamente valores tributários sem lançamento, inscrição ou meios de defesa do contribuinte."
+        },
+        {
+          "letter": "B",
+          "text": "substitua a atividade jurisdicional sempre que houver risco de dano ao patrimônio estatal."
+        },
+        {
+          "letter": "C",
+          "text": "aplique qualquer sanção penal sem processo judicial, desde que o fato envolva interesse público."
+        },
+        {
+          "letter": "D",
+          "text": "execute certos atos sem ordem judicial prévia quando a lei autoriza ou houver urgência."
+        },
+        {
+          "letter": "E",
+          "text": "revogue decisões judiciais definitivas que interfiram na continuidade de serviços públicos."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Autoexecutoriedade é atributo presente em certos atos e permite execução direta quando houver autorização legal ou situação urgente. Não é poder geral para aplicar penas criminais, revogar decisões judiciais ou suprimir defesa."
+    },
+    {
+      "id": "direito-administrativo-027",
+      "subjectId": "direito-administrativo",
+      "number": 27,
+      "topic": "Atos administrativos - anulação e revogação",
+      "area": "Atos administrativos",
+      "stem": "A Administração identifica que um ato válido se tornou inconveniente diante de nova política pública, sem vício de legalidade. A providência adequada é:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anulação, porque todo ato inconveniente é necessariamente contrário à lei."
+        },
+        {
+          "letter": "B",
+          "text": "revogação, por razões de mérito administrativo, preservados os efeitos já consolidados quando cabível."
+        },
+        {
+          "letter": "C",
+          "text": "convalidação, porque a mudança de conveniência corrige defeito de competência."
+        },
+        {
+          "letter": "D",
+          "text": "cassação, pois o administrado descumpriu obrigação inexistente no ato original."
+        },
+        {
+          "letter": "E",
+          "text": "invalidação judicial obrigatória, pois a Administração não pode rever seus próprios atos."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Revogação retira ato válido por razões de conveniência e oportunidade, ligadas ao mérito administrativo. Anulação decorre de ilegalidade; convalidação busca sanar vício sanável; cassação depende de descumprimento posterior pelo beneficiário."
+    },
+    {
+      "id": "direito-administrativo-028",
+      "subjectId": "direito-administrativo",
+      "number": 28,
+      "topic": "Atos administrativos - convalidação",
+      "area": "Atos administrativos",
+      "stem": "A convalidação é cabível quando:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a Administração pretende substituir ato válido por outro mais conveniente, ainda que inexista vício."
+        },
+        {
+          "letter": "B",
+          "text": "o ato apresenta vício insanável de finalidade, pois o interesse público sempre permite corrigir a intenção do agente."
+        },
+        {
+          "letter": "C",
+          "text": "o ato foi declarado nulo por decisão judicial transitada em julgado, mas a Administração deseja preservar seus efeitos futuros."
+        },
+        {
+          "letter": "D",
+          "text": "o particular deixa de cumprir condição posterior estabelecida para manutenção do benefício administrativo."
+        },
+        {
+          "letter": "E",
+          "text": "há defeito sanável, não há lesão ao interesse público nem prejuízo a terceiros, e a ordem jurídica admite o saneamento."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Convalidação corrige vícios sanáveis, como certos defeitos de competência ou forma, desde que não haja lesão ao interesse público ou prejuízo a terceiros. Não serve para sanar desvio de finalidade nem para substituir revogação ou cassação."
+    },
+    {
+      "id": "direito-administrativo-029",
+      "subjectId": "direito-administrativo",
+      "number": 29,
+      "topic": "Atos administrativos - vinculação e discricionariedade",
+      "area": "Atos administrativos",
+      "stem": "Em ato vinculado, a Administração:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "atua sem necessidade de motivação, pois a lei já define todos os efeitos do ato."
+        },
+        {
+          "letter": "B",
+          "text": "escolhe livremente motivo, objeto e destinatário de acordo com juízo pessoal de conveniência."
+        },
+        {
+          "letter": "C",
+          "text": "dispõe de liberdade absoluta para criar critérios não previstos na norma aplicável."
+        },
+        {
+          "letter": "D",
+          "text": "pode afastar requisito legal quando demonstrar que a decisão atenderá melhor ao interesse público."
+        },
+        {
+          "letter": "E",
+          "text": "deve observar os pressupostos e a consequência estabelecidos pela norma, sem espaço para escolha de mérito."
+        }
+      ],
+      "answer": "E",
+      "explanation": "No ato vinculado, a lei predetermina os requisitos e o resultado, não havendo escolha administrativa de conveniência e oportunidade. Discricionariedade, quando existente, também é limitada pela lei e pelos princípios administrativos."
+    },
+    {
+      "id": "direito-administrativo-030",
+      "subjectId": "direito-administrativo",
+      "number": 30,
+      "topic": "Atos administrativos - motivação",
+      "area": "Atos administrativos",
+      "stem": "A motivação de um ato administrativo consiste na:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "faculdade de substituir a competência legal por razões de urgência administrativa."
+        },
+        {
+          "letter": "B",
+          "text": "mera assinatura da autoridade competente ao final do documento administrativo."
+        },
+        {
+          "letter": "C",
+          "text": "concordância do interessado com o conteúdo do ato antes de sua prática."
+        },
+        {
+          "letter": "D",
+          "text": "indicação dos fatos e fundamentos jurídicos da decisão."
+        },
+        {
+          "letter": "E",
+          "text": "publicação do ato em meio oficial, independentemente das razões que levaram à decisão."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Motivação é a exposição dos fatos e fundamentos jurídicos que embasam a decisão. Ela permite controle, transparência e defesa, não se confundindo com competência, forma ou simples publicação do ato."
+    },
+    {
+      "id": "direito-administrativo-031",
+      "subjectId": "direito-administrativo",
+      "number": 31,
+      "topic": "Poderes administrativos - hierárquico",
+      "area": "Poderes administrativos",
+      "stem": "O poder hierárquico permite à Administração:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "editar leis em sentido formal para criar obrigações gerais aos particulares."
+        },
+        {
+          "letter": "B",
+          "text": "delegar a particulares a titularidade permanente de competências exclusivas de Estado."
+        },
+        {
+          "letter": "C",
+          "text": "afastar decisões judiciais quando consideradas contrárias ao interesse público."
+        },
+        {
+          "letter": "D",
+          "text": "aplicar sanções penais e restritivas de liberdade sem necessidade de processo judicial."
+        },
+        {
+          "letter": "E",
+          "text": "distribuir funções, fiscalizar subordinados e rever atos dentro da estrutura administrativa."
+        }
+      ],
+      "answer": "E",
+      "explanation": "O poder hierárquico organiza internamente a Administração, permitindo distribuição de atribuições, fiscalização, delegação e revisão nos limites legais. Ele não cria leis nem autoriza invasão das funções judicial ou legislativa."
+    },
+    {
+      "id": "direito-administrativo-032",
+      "subjectId": "direito-administrativo",
+      "number": 32,
+      "topic": "Poderes administrativos - disciplinar",
+      "area": "Poderes administrativos",
+      "stem": "O poder disciplinar autoriza a Administração a:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "apurar infrações e sancionar servidores ou particulares com vínculo específico, assegurado devido processo."
+        },
+        {
+          "letter": "B",
+          "text": "restringir direitos individuais sem competência legal sempre que houver interesse público genérico."
+        },
+        {
+          "letter": "C",
+          "text": "editar regulamentos autônomos sobre toda matéria ainda não disciplinada por lei."
+        },
+        {
+          "letter": "D",
+          "text": "substituir a jurisdição penal na apuração de crimes praticados por servidores públicos."
+        },
+        {
+          "letter": "E",
+          "text": "aplicar sanções a particulares em geral por qualquer conduta considerada inconveniente pela autoridade."
+        }
+      ],
+      "answer": "A",
+      "explanation": "O poder disciplinar alcança servidores e particulares submetidos a vínculo específico com a Administração, como contratados. Sua aplicação exige competência, processo e respeito ao contraditório e à ampla defesa, sem substituir a jurisdição penal."
+    },
+    {
+      "id": "direito-administrativo-033",
+      "subjectId": "direito-administrativo",
+      "number": 33,
+      "topic": "Poderes administrativos - regulamentar",
+      "area": "Poderes administrativos",
+      "stem": "O poder regulamentar permite ao chefe do Poder Executivo:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "transferir competências constitucionais do Legislativo para órgãos da Administração direta."
+        },
+        {
+          "letter": "B",
+          "text": "editar decretos e regulamentos para fiel execução das leis, sem inovar livremente na ordem jurídica."
+        },
+        {
+          "letter": "C",
+          "text": "criar crimes e penas por decreto quando houver necessidade administrativa urgente."
+        },
+        {
+          "letter": "D",
+          "text": "revogar leis aprovadas pelo Poder Legislativo que se mostrem ineficientes."
+        },
+        {
+          "letter": "E",
+          "text": "dispensar licitação por ato normativo genérico, independentemente das hipóteses previstas em lei."
+        }
+      ],
+      "answer": "B",
+      "explanation": "O regulamento detalha a execução da lei e não pode criar obrigações ou restrições fora dos limites legais. Decretos não substituem lei para criar crimes, revogar normas legislativas ou instituir hipóteses autônomas de dispensa de licitação."
+    },
+    {
+      "id": "direito-administrativo-034",
+      "subjectId": "direito-administrativo",
+      "number": 34,
+      "topic": "Poderes administrativos - poder de polícia",
+      "area": "Poderes administrativos",
+      "stem": "O poder de polícia administrativa consiste na atividade estatal que:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "limita direitos e atividades privadas em benefício coletivo, nos limites legais."
+        },
+        {
+          "letter": "B",
+          "text": "autoriza a Administração a impor qualquer obrigação a particulares sem motivação ou proporcionalidade."
+        },
+        {
+          "letter": "C",
+          "text": "permite cobrança de tributos sem lei que defina fato gerador, base de cálculo e sujeito passivo."
+        },
+        {
+          "letter": "D",
+          "text": "substitui a atividade legislativa na criação de direitos e deveres gerais para toda a sociedade."
+        },
+        {
+          "letter": "E",
+          "text": "investiga exclusivamente infrações penais e conduz inquéritos sob direção do Poder Judiciário."
+        }
+      ],
+      "answer": "A",
+      "explanation": "O poder de polícia limita direitos e atividades privadas para proteger interesse coletivo, desde que haja base legal, competência, motivação e proporcionalidade. Não se confunde com polícia judiciária nem dispensa observância de garantias."
+    },
+    {
+      "id": "direito-administrativo-035",
+      "subjectId": "direito-administrativo",
+      "number": 35,
+      "topic": "Poderes administrativos - abuso de poder",
+      "area": "Poderes administrativos",
+      "stem": "Há desvio de finalidade quando a autoridade:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "atua fora dos limites materiais de sua competência, praticando ato reservado a outra autoridade."
+        },
+        {
+          "letter": "B",
+          "text": "deixa de publicar ato regularmente motivado em diário oficial, embora a publicação seja exigida."
+        },
+        {
+          "letter": "C",
+          "text": "delega atribuição não exclusiva a autoridade subordinada, observadas as formalidades legais."
+        },
+        {
+          "letter": "D",
+          "text": "revoga ato válido por razões de conveniência e oportunidade supervenientes."
+        },
+        {
+          "letter": "E",
+          "text": "utiliza competência existente para alcançar finalidade diversa daquela prevista em lei e do interesse público."
+        }
+      ],
+      "answer": "E",
+      "explanation": "Desvio de finalidade ocorre quando o agente usa competência que possui para finalidade diversa da prevista na norma. Excesso de poder, por sua vez, decorre da atuação além dos limites da competência."
+    },
+    {
+      "id": "direito-administrativo-036",
+      "subjectId": "direito-administrativo",
+      "number": 36,
+      "topic": "Processo administrativo - princípios",
+      "area": "Processo administrativo",
+      "stem": "A Lei nº 9.784/1999 disciplina o processo administrativo no âmbito:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "somente do Poder Judiciário, quando exerce atividade jurisdicional."
+        },
+        {
+          "letter": "B",
+          "text": "apenas de empresas privadas que mantenham contratos com órgãos federais."
+        },
+        {
+          "letter": "C",
+          "text": "da Administração Pública Federal, direta e indireta."
+        },
+        {
+          "letter": "D",
+          "text": "de todos os processos judiciais e administrativos de qualquer ente federativo, sem possibilidade de legislação própria."
+        },
+        {
+          "letter": "E",
+          "text": "exclusivamente das administrações municipais, aplicando-se à União apenas por analogia."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A Lei nº 9.784/1999 regula o processo administrativo no âmbito da Administração Pública Federal. Ela orienta proteção de direitos dos administrados e cumprimento dos fins administrativos, sem substituir automaticamente a legislação estadual ou municipal própria."
+    },
+    {
+      "id": "direito-administrativo-037",
+      "subjectId": "direito-administrativo",
+      "number": 37,
+      "topic": "Processo administrativo - dever de decidir",
+      "area": "Processo administrativo",
+      "stem": "Concluída a instrução de processo administrativo, a Administração tem o dever de:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "decidir expressamente as solicitações ou reclamações em matéria de sua competência."
+        },
+        {
+          "letter": "B",
+          "text": "arquivar automaticamente o processo quando não houver unanimidade entre os setores técnicos consultados."
+        },
+        {
+          "letter": "C",
+          "text": "submeter toda decisão ao Poder Judiciário antes de comunicar o interessado."
+        },
+        {
+          "letter": "D",
+          "text": "decidir sem motivação, pois a fundamentação é exigida apenas em processos judiciais."
+        },
+        {
+          "letter": "E",
+          "text": "aguardar provocação do interessado para praticar qualquer ato de decisão ou encaminhamento."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A Lei nº 9.784/1999 prevê o dever de a Administração decidir expressamente processos administrativos e solicitações de sua competência. A decisão deve respeitar os princípios do processo administrativo, inclusive motivação quando exigida."
+    },
+    {
+      "id": "direito-administrativo-038",
+      "subjectId": "direito-administrativo",
+      "number": 38,
+      "topic": "Controle da Administração - autotutela",
+      "area": "Controle da Administração",
+      "stem": "Pelo poder de autotutela, a Administração pode:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anular atos ilegais e revogar atos válidos por conveniência ou oportunidade, respeitados direitos adquiridos."
+        },
+        {
+          "letter": "B",
+          "text": "aplicar sanção penal diretamente a particular para preservar a ordem administrativa."
+        },
+        {
+          "letter": "C",
+          "text": "declarar inconstitucional qualquer lei em tese, retirando-a definitivamente do ordenamento jurídico."
+        },
+        {
+          "letter": "D",
+          "text": "reformar decisões judiciais transitadas em julgado quando identificar interesse público relevante."
+        },
+        {
+          "letter": "E",
+          "text": "desconsiderar decisão de órgão de controle externo sempre que discordar de sua fundamentação."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A autotutela permite anulação de atos ilegais e revogação de atos válidos por mérito, observados limites jurídicos e direitos adquiridos. Não autoriza a Administração a afastar leis em tese ou decisões judiciais definitivas."
+    },
+    {
+      "id": "direito-administrativo-039",
+      "subjectId": "direito-administrativo",
+      "number": 39,
+      "topic": "Controle da Administração - controle judicial",
+      "area": "Controle da Administração",
+      "stem": "No controle judicial de ato administrativo, o Poder Judiciário pode:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "substituir livremente o juízo de conveniência da Administração por sua preferência sobre a política pública."
+        },
+        {
+          "letter": "B",
+          "text": "dispensar a Administração de observar contraditório e ampla defesa quando houver interesse coletivo envolvido."
+        },
+        {
+          "letter": "C",
+          "text": "revogar ato válido por oportunidade, pois o Judiciário possui poder hierárquico sobre todos os órgãos públicos."
+        },
+        {
+          "letter": "D",
+          "text": "examinar legalidade, finalidade, motivação e respeito aos direitos, sem assumir o mérito administrativo legítimo."
+        },
+        {
+          "letter": "E",
+          "text": "criar ato administrativo novo e impor sua execução sempre que discordar da solução adotada pelo gestor."
+        }
+      ],
+      "answer": "D",
+      "explanation": "O Judiciário controla a juridicidade do ato administrativo, inclusive competência, finalidade, forma, motivo e respeito a direitos. Não substitui, em regra, o mérito administrativo legítimo por escolha própria de conveniência e oportunidade."
+    },
+    {
+      "id": "direito-administrativo-040",
+      "subjectId": "direito-administrativo",
+      "number": 40,
+      "topic": "Controle da Administração - controle externo",
+      "area": "Controle da Administração",
+      "stem": "O controle externo da Administração Pública é exercido pelo Poder Legislativo, com auxílio:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "das controladorias internas, que possuem função exclusiva de julgamento das contas do chefe do Executivo."
+        },
+        {
+          "letter": "B",
+          "text": "de empresas de auditoria privadas, que passam a exercer competência constitucional vinculante."
+        },
+        {
+          "letter": "C",
+          "text": "do Poder Judiciário, que aprova previamente toda despesa pública antes de sua execução."
+        },
+        {
+          "letter": "D",
+          "text": "do Ministério Público, que substitui o Legislativo na apreciação das contas anuais."
+        },
+        {
+          "letter": "E",
+          "text": "dos Tribunais de Contas, nos termos da Constituição."
+        }
+      ],
+      "answer": "E",
+      "explanation": "A Constituição atribui ao Poder Legislativo o controle externo, exercido com auxílio dos Tribunais de Contas. Controle interno, Ministério Público e Judiciário possuem atribuições próprias, mas não substituem essa estrutura constitucional."
+    },
+    {
+      "id": "direito-administrativo-041",
+      "subjectId": "direito-administrativo",
+      "number": 41,
+      "topic": "Responsabilidade civil do Estado - ação regressiva",
+      "area": "Responsabilidade civil do Estado",
+      "stem": "Após indenizar particular por dano causado por seu agente público, a pessoa jurídica estatal poderá exercer ação regressiva contra o agente:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "apenas se o agente ocupar cargo em comissão, pois servidores efetivos possuem imunidade civil."
+        },
+        {
+          "letter": "B",
+          "text": "desde que o particular renuncie integralmente à indenização recebida da Administração."
+        },
+        {
+          "letter": "C",
+          "text": "sempre que houver dano, ainda que o agente tenha atuado sem dolo ou culpa."
+        },
+        {
+          "letter": "D",
+          "text": "quando demonstrados dolo ou culpa do agente na ocorrência do dano."
+        },
+        {
+          "letter": "E",
+          "text": "somente após condenação penal definitiva do agente pelo mesmo fato."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Pelo art. 37, § 6º, a responsabilidade da pessoa jurídica perante a vítima é objetiva, assegurado o direito de regresso contra o agente responsável nos casos de dolo ou culpa. A ação regressiva não depende de condenação penal."
+    },
+    {
+      "id": "direito-administrativo-042",
+      "subjectId": "direito-administrativo",
+      "number": 42,
+      "topic": "Responsabilidade civil do Estado - elementos",
+      "area": "Responsabilidade civil do Estado",
+      "stem": "Para responsabilizar objetivamente o Estado por dano causado por agente público nessa qualidade, é necessário demonstrar, em regra:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "vínculo contratual direto entre a vítima e a Administração Pública responsável pelo serviço."
+        },
+        {
+          "letter": "B",
+          "text": "dolo específico do agente e condenação criminal definitiva antes da ação indenizatória."
+        },
+        {
+          "letter": "C",
+          "text": "somente a existência de prejuízo financeiro, pois todo dano é automaticamente imputável ao Estado."
+        },
+        {
+          "letter": "D",
+          "text": "dano e nexo causal, sem prova de dolo ou culpa do agente perante a vítima."
+        },
+        {
+          "letter": "E",
+          "text": "erro judicial reconhecido pelo Supremo Tribunal Federal, ainda que o dano decorra de atividade administrativa comum."
+        }
+      ],
+      "answer": "D",
+      "explanation": "A responsabilidade objetiva exige, em regra, conduta administrativa, dano e nexo causal. A vítima não precisa provar dolo ou culpa do agente, sem prejuízo de causas que possam excluir ou romper o nexo causal conforme o caso concreto."
+    },
+    {
+      "id": "direito-administrativo-043",
+      "subjectId": "direito-administrativo",
+      "number": 43,
+      "topic": "Improbidade administrativa - elemento subjetivo",
+      "area": "Improbidade administrativa",
+      "stem": "Segundo a Lei nº 8.429/1992, após as alterações legislativas, configuram atos de improbidade administrativa:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "as condutas dolosas tipificadas nos arts. 9º, 10 e 11 da Lei, ressalvadas hipóteses previstas em leis especiais."
+        },
+        {
+          "letter": "B",
+          "text": "apenas atos praticados por ocupantes de cargo eletivo durante o mandato."
+        },
+        {
+          "letter": "C",
+          "text": "toda irregularidade formal praticada por agente público, ainda que sem dolo e sem finalidade ilícita."
+        },
+        {
+          "letter": "D",
+          "text": "qualquer dano ao erário decorrente de culpa leve, ainda que não haja conduta tipificada na Lei de Improbidade."
+        },
+        {
+          "letter": "E",
+          "text": "somente os crimes contra a Administração Pública definidos no Código Penal."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A Lei nº 8.429/1992 considera atos de improbidade as condutas dolosas tipificadas nos arts. 9º, 10 e 11. O mero exercício da função sem comprovação de ato doloso com fim ilícito não basta para caracterizar improbidade."
+    },
+    {
+      "id": "direito-administrativo-044",
+      "subjectId": "direito-administrativo",
+      "number": 44,
+      "topic": "Improbidade administrativa - ilegalidade e improbidade",
+      "area": "Improbidade administrativa",
+      "stem": "Uma falha administrativa sem dolo e sem enquadramento em conduta tipificada na Lei nº 8.429/1992:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pode gerar consequências administrativas ou civis cabíveis, mas não configura por si só improbidade administrativa."
+        },
+        {
+          "letter": "B",
+          "text": "impede qualquer forma de apuração interna, pois a ausência de dolo torna o fato juridicamente irrelevante."
+        },
+        {
+          "letter": "C",
+          "text": "deve ser convertida obrigatoriamente em processo penal contra o agente responsável."
+        },
+        {
+          "letter": "D",
+          "text": "gera perda automática da função pública, independentemente de processo e de decisão judicial."
+        },
+        {
+          "letter": "E",
+          "text": "constitui automaticamente ato de improbidade, porque toda ilegalidade administrativa viola a moralidade pública."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Nem toda ilegalidade é improbidade. A Lei nº 8.429/1992 exige conduta dolosa tipificada; outras irregularidades podem produzir efeitos administrativos, civis ou disciplinares conforme a legislação aplicável."
+    },
+    {
+      "id": "direito-administrativo-045",
+      "subjectId": "direito-administrativo",
+      "number": 45,
+      "topic": "Licitações - princípios",
+      "area": "Licitações e contratos",
+      "stem": "A Lei nº 14.133/2021 estabelece que a licitação deve observar, entre outros, os princípios da:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "escolha pessoal da autoridade competente como critério suficiente para contratação pública."
+        },
+        {
+          "letter": "B",
+          "text": "legalidade, impessoalidade, moralidade, publicidade, eficiência, interesse público, planejamento e transparência."
+        },
+        {
+          "letter": "C",
+          "text": "supremacia absoluta da proposta de menor preço, independentemente da qualidade ou da adequação ao objeto contratado."
+        },
+        {
+          "letter": "D",
+          "text": "liberdade irrestrita de negociação entre gestor e fornecedor antes da definição das regras do certame."
+        },
+        {
+          "letter": "E",
+          "text": "confidencialidade permanente de todas as etapas, inclusive após a homologação do resultado."
+        }
+      ],
+      "answer": "B",
+      "explanation": "O art. 5º da Lei nº 14.133/2021 reúne princípios como legalidade, impessoalidade, moralidade, publicidade, eficiência, interesse público, planejamento e transparência. A seleção da proposta deve seguir critérios legais e regras previamente definidas."
+    },
+    {
+      "id": "direito-administrativo-046",
+      "subjectId": "direito-administrativo",
+      "number": 46,
+      "topic": "Licitações - modalidades",
+      "area": "Licitações e contratos",
+      "stem": "São modalidades de licitação previstas na Lei nº 14.133/2021:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pregão, concurso, inexigibilidade, credenciamento e tomada de preços."
+        },
+        {
+          "letter": "B",
+          "text": "pregão, consulta, convite, procedimento competitivo e credenciamento."
+        },
+        {
+          "letter": "C",
+          "text": "pregão, concorrência, concurso, leilão e diálogo competitivo."
+        },
+        {
+          "letter": "D",
+          "text": "concorrência, tomada de preços, convite, concurso e leilão."
+        },
+        {
+          "letter": "E",
+          "text": "concorrência, chamamento público, registro de preços, leilão e dispensa."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O art. 28 da Lei nº 14.133/2021 prevê pregão, concorrência, concurso, leilão e diálogo competitivo. Tomada de preços e convite pertenciam ao regime anterior; dispensa e inexigibilidade são formas de contratação direta, não modalidades."
+    },
+    {
+      "id": "direito-administrativo-047",
+      "subjectId": "direito-administrativo",
+      "number": 47,
+      "topic": "Licitações - inexigibilidade",
+      "area": "Licitações e contratos",
+      "stem": "A contratação direta por inexigibilidade ocorre quando:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "o contrato tem duração inferior a um ano e envolve serviço comum de natureza continuada."
+        },
+        {
+          "letter": "B",
+          "text": "a competição é inviável em hipótese prevista em lei."
+        },
+        {
+          "letter": "C",
+          "text": "a licitação anterior recebeu poucas propostas, ainda que seja possível repetir o certame com ampla competição."
+        },
+        {
+          "letter": "D",
+          "text": "o valor estimado é baixo, independentemente de qualquer hipótese legal de dispensa."
+        },
+        {
+          "letter": "E",
+          "text": "a Administração prefere contratar fornecedor conhecido, mesmo existindo competição viável entre diversos interessados."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A inexigibilidade pressupõe inviabilidade de competição, conforme hipóteses legais. Dispensa de licitação possui fundamento diverso e depende das situações previstas em lei; preferência subjetiva do gestor não autoriza contratação direta."
+    },
+    {
+      "id": "direito-administrativo-048",
+      "subjectId": "direito-administrativo",
+      "number": 48,
+      "topic": "Licitações - fases do procedimento",
+      "area": "Licitações e contratos",
+      "stem": "A sequência ordinária de fases da licitação, segundo a Lei nº 14.133/2021, inicia-se pela fase preparatória e inclui, entre outras:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "habilitação definitiva de todos os interessados, seguida de escolha informal do vencedor e abertura de prazo para elaboração do termo de referência."
+        },
+        {
+          "letter": "B",
+          "text": "assinatura do contrato, execução integral do objeto, prestação de contas e somente depois divulgação do edital."
+        },
+        {
+          "letter": "C",
+          "text": "publicação do edital, apresentação de propostas e lances quando aplicável, julgamento, habilitação, fase recursal e homologação."
+        },
+        {
+          "letter": "D",
+          "text": "pagamento antecipado ao vencedor, dispensa de fiscalização e publicação posterior de justificativa resumida."
+        },
+        {
+          "letter": "E",
+          "text": "decisão judicial sobre a validade do edital antes da apresentação de qualquer proposta, em todos os certames."
+        }
+      ],
+      "answer": "C",
+      "explanation": "O art. 17 da Lei nº 14.133/2021 lista fase preparatória, divulgação do edital, apresentação de propostas e lances quando aplicável, julgamento, habilitação, fase recursal e homologação. A ordem pode ter inversão de habilitação em hipóteses legais, mas não dispensa as etapas essenciais."
+    },
+    {
+      "id": "direito-administrativo-049",
+      "subjectId": "direito-administrativo",
+      "number": 49,
+      "topic": "Serviços públicos - continuidade",
+      "area": "Serviços públicos",
+      "stem": "O princípio da continuidade do serviço público significa que:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "o usuário perde direito à informação quando há necessidade de interrupção técnica programada."
+        },
+        {
+          "letter": "B",
+          "text": "todo serviço deve funcionar vinte e quatro horas por dia, independentemente de sua natureza e do regime legal aplicável."
+        },
+        {
+          "letter": "C",
+          "text": "a delegação do serviço a particular afasta a responsabilidade do Poder Público pela fiscalização e continuidade."
+        },
+        {
+          "letter": "D",
+          "text": "a prestação deve buscar regularidade e não pode ser interrompida arbitrariamente, observadas as hipóteses legais."
+        },
+        {
+          "letter": "E",
+          "text": "a Administração é impedida de fiscalizar ou suspender atividade que ofereça risco à segurança dos usuários."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Continuidade exige prestação regular e proteção do usuário contra interrupções arbitrárias. O princípio não elimina hipóteses legais de suspensão, manutenção, emergência ou inadimplemento, nem impede fiscalização estatal."
+    },
+    {
+      "id": "direito-administrativo-050",
+      "subjectId": "direito-administrativo",
+      "number": 50,
+      "topic": "Serviços públicos - delegação",
+      "area": "Serviços públicos",
+      "stem": "A delegação da prestação de serviço público a particular:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dispensa licitação sempre que o particular demonstrar experiência técnica superior à dos demais interessados."
+        },
+        {
+          "letter": "B",
+          "text": "pode ocorrer por concessão ou permissão, mediante licitação e contrato, preservada a titularidade estatal do serviço."
+        },
+        {
+          "letter": "C",
+          "text": "transfere definitivamente a titularidade do serviço e impede controle posterior pelo Poder Público."
+        },
+        {
+          "letter": "D",
+          "text": "impede aplicação de normas de defesa do usuário, pois a relação passa a ser exclusivamente privada."
+        },
+        {
+          "letter": "E",
+          "text": "transforma o particular em órgão público integrante da Administração direta durante a vigência do contrato."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Concessão e permissão delegam a execução do serviço público, normalmente mediante licitação e contrato, sem transferir sua titularidade ao particular. O Poder Público mantém deveres de regulação, fiscalização e proteção dos usuários."
     }
   ],
   "review": {
@@ -11196,6 +12508,49 @@ export const questionBank = {
       160
     ],
     "constitutionalExpansionReviewed": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "administrativeExpansionReviewed": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
       23,
       24,
       25,

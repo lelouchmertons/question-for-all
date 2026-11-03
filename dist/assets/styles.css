@@ -224,8 +224,11 @@ button:disabled { cursor: not-allowed; }
 .question-footer button { border: 0; background: transparent; color: var(--accent); font-size: 11px; font-weight: 850; letter-spacing: .12em; }
 .question-footer button:disabled { opacity: .3; }
 
-.site-footer { min-height: 110px; padding: 28px clamp(22px, 5vw, 76px); display: flex; justify-content: space-between; align-items: center; gap: 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
-.site-footer strong { color: var(--ink); text-transform: uppercase; letter-spacing: .12em; }
+.site-footer { min-height: 300px; padding: 42px clamp(22px, 7vw, 120px); display: grid; grid-template-columns: minmax(210px, 1fr) minmax(260px, 1.15fr) minmax(210px, 1fr); align-items: center; gap: clamp(24px, 6vw, 110px); border-top: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 75%, var(--paper)); }
+.footer-phrases { min-height: 194px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
+.footer-phrases p, .footer-center { margin: 0; color: var(--muted); font: 500 clamp(15px, 1.3vw, 19px)/1.55 var(--serif); }
+.footer-left { text-align: left; }.footer-right { text-align: right; }
+.footer-center { color: var(--ink); text-align: center; font-size: clamp(18px, 1.7vw, 25px); line-height: 1.6; }
 
 dialog { width: min(560px, calc(100% - 36px)); border: 1px solid var(--line); padding: 0; background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
 dialog::backdrop { background: rgba(9, 18, 24, .72); }
@@ -272,7 +275,9 @@ dialog .danger-button { border-color: var(--wrong); background: var(--wrong); co
   .explanation dl { grid-template-columns: 1fr; }
   .explanation dl div { display: block; border-bottom: 1px solid var(--line); }
   .explanation dt, .explanation dd { border: 0; padding: 4px 0; }
-  .site-footer { align-items: flex-start; flex-direction: column; }
+  .site-footer { min-height: 0; grid-template-columns: 1fr; gap: 34px; text-align: center; }
+  .footer-phrases { min-height: 0; gap: 28px; text-align: center; }
+  .footer-left { order: 1; }.footer-center { order: 2; }.footer-right { order: 3; }
 }
 
 @media (prefers-reduced-motion: reduce) {

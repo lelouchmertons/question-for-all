@@ -35,10 +35,10 @@ function setTheme(theme) {
 }
 function initTheme() { setTheme(localStorage.getItem(THEME_KEY) || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")); }
 function renderSubjectOptions() {
-  els["subject-filter"].innerHTML = [`<option value="all">Todas as matérias (${questionBank.questions.length})</option>`, ...orderedSubjects().map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
+  els["subject-filter"].innerHTML = [`<option value="all">Todas as ${questionBank.subjects.length} matérias</option>`, ...orderedSubjects().map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
 }
 function renderProgressSubjectOptions() {
-  els["progress-subject-filter"].innerHTML = [`<option value="all">Todas as matérias (${questionBank.questions.length})</option>`, ...orderedSubjects().map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
+  els["progress-subject-filter"].innerHTML = [`<option value="all">Todas as ${questionBank.subjects.length} matérias</option>`, ...orderedSubjects().map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
 }
 function renderTopicOptions() {
   const id = els["subject-filter"].value;

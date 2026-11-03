@@ -1,4 +1,4 @@
-const CACHE = "caderno330-v43";
+const CACHE = "caderno330-v44";
 const ASSETS = [
   "./",
   "index.html",
@@ -8,7 +8,7 @@ const ASSETS = [
   "assets/all-might-footer.png",
   "assets/all-might-chest.svg",
   "assets/styles.css?v=14",
-  "assets/app.js?v=37",
+  "assets/app.js?v=38",
   "assets/questions.js?v=30"
 ];
 

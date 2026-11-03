@@ -61,9 +61,9 @@ button:disabled { cursor: not-allowed; }
 [data-theme="dark"] .theme-track i { transform: translateX(26px); }
 
 .landing { position: relative; min-height: 620px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(480px, 1.1fr); overflow: hidden; border-bottom: 1px solid var(--line); background: #102966; }
-.landing::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .76; background: url("all-might-chest.svg") center / cover no-repeat; }
+.landing::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .84; background: url("all-might-chest.svg?v=2") center / cover no-repeat; }
 .landing-copy, .study-setup { position: relative; z-index: 1; }
-.landing-copy { padding: 34px clamp(24px, 6vw, 96px) clamp(56px, 6vw, 92px); display: grid; grid-template-rows: auto 1fr auto; background: linear-gradient(135deg, rgba(8,22,65,.75), rgba(13,37,91,.54)); backdrop-filter: blur(3px); }
+.landing-copy { padding: 34px clamp(24px, 6vw, 96px) clamp(56px, 6vw, 92px); display: grid; grid-template-rows: auto 1fr auto; background: linear-gradient(135deg, rgba(8,22,65,.75), rgba(13,37,91,.54)); }
 .eyebrow { margin: 0 0 20px; color: var(--accent); font-size: 12px; font-weight: 850; letter-spacing: .19em; }
 .landing h1 { max-width: 940px; margin: 0; padding: 14px 18px 18px; font: 500 clamp(48px, 4.3vw, 66px)/.98 var(--serif); letter-spacing: -.045em; text-transform: uppercase; background: linear-gradient(90deg, rgba(5,16,53,.7), rgba(5,16,53,.3), transparent); text-shadow: 0 2px 18px rgba(0,0,0,.38); }
 .landing h1 span, .landing h1 em { display: block; }
@@ -74,7 +74,7 @@ button:disabled { cursor: not-allowed; }
 .bank-summary b { color: var(--ink); font: 700 22px/.9 var(--serif); }
 .bank-summary i { font-size: 12px; font-style: normal; }
 
-.study-setup { padding: 48px clamp(28px, 5vw, 76px) clamp(44px, 5vw, 68px); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; background: rgba(8,24,71,.76); color: #fffdf4; backdrop-filter: blur(3px); }
+.study-setup { padding: 48px clamp(28px, 5vw, 76px) clamp(44px, 5vw, 68px); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; background: rgba(8,24,71,.76); color: #fffdf4; }
 .study-setup > * { width: min(100%, 780px); }
 .study-setup header p { margin: 0 0 12px; color: #ffe37b; font-size: 11px; font-weight: 850; letter-spacing: .2em; }
 .study-setup h2 { margin: 0 0 48px; font: 500 clamp(30px, 3.2vw, 48px)/1.05 var(--serif); white-space: nowrap; text-align: center; text-shadow: 0 2px 16px rgba(0,0,0,.45); }

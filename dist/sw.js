@@ -1,12 +1,12 @@
-const CACHE = "caderno330-v33";
+const CACHE = "caderno330-v34";
 const ASSETS = [
   "./",
   "index.html",
   "manifest.webmanifest",
   "assets/icon.svg",
   "assets/all-might-brand.png",
-  "assets/styles.css?v=5",
-  "assets/app.js?v=33",
+  "assets/styles.css?v=6",
+  "assets/app.js?v=34",
   "assets/questions.js?v=30"
 ];
 

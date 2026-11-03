@@ -63,14 +63,14 @@ button:disabled { cursor: not-allowed; }
 .landing { min-height: 690px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(480px, 1.1fr); border-bottom: 1px solid var(--line); }
 .landing-copy { padding: clamp(76px, 8vw, 128px) clamp(24px, 6vw, 96px); display: flex; flex-direction: column; justify-content: center; background: linear-gradient(135deg, transparent 63%, color-mix(in srgb, var(--accent) 9%, transparent) 63%); }
 .eyebrow { margin: 0 0 20px; color: var(--accent); font-size: 12px; font-weight: 850; letter-spacing: .19em; }
-.landing h1 { max-width: 780px; margin: 0; font: 500 clamp(54px, 6.2vw, 94px)/.98 var(--serif); letter-spacing: -.045em; }
-.landing h1 em { color: var(--accent); font-weight: 400; }
+.landing h1 { max-width: 780px; margin: 0; font: 500 clamp(50px, 5.6vw, 84px)/.98 var(--serif); letter-spacing: -.045em; }
+.landing h1 span, .landing h1 em { display: block; }
+.landing h1 em { max-width: 740px; margin-top: 38px; color: var(--accent); font-size: .78em; font-weight: 400; line-height: 1.06; }
 .lede { max-width: 700px; margin: 34px 0 0; color: var(--muted); font-size: clamp(17px, 1.4vw, 21px); line-height: 1.7; }
 .bank-summary { margin-top: 50px; display: flex; flex-wrap: wrap; gap: 10px; }
-.bank-summary span { min-height: 64px; padding: 12px 18px; display: grid; align-content: center; border: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 75%, transparent); color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
-.bank-summary b { margin-right: 5px; color: var(--ink); font: 700 22px var(--serif); }
-.bank-summary span:nth-child(2) { justify-items: center; text-align: center; }
-.bank-summary span:nth-child(2) b { margin-right: 0; }
+.bank-summary span { min-width: 220px; min-height: 132px; padding: 20px 24px; display: grid; align-content: center; justify-items: center; gap: 10px; border: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 75%, transparent); color: var(--muted); text-align: center; text-transform: uppercase; letter-spacing: .08em; }
+.bank-summary b { color: var(--ink); font: 700 42px/.9 var(--serif); }
+.bank-summary i { font-size: 13px; font-style: normal; }
 
 .study-setup { padding: clamp(60px, 7vw, 108px) clamp(28px, 5vw, 76px); display: flex; flex-direction: column; justify-content: center; background: var(--accent); color: #f7f4eb; }
 .study-setup header p { margin: 0 0 12px; color: #badddf; font-size: 11px; font-weight: 850; letter-spacing: .2em; }

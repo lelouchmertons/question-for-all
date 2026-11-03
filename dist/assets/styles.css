@@ -121,8 +121,9 @@ button:disabled { cursor: not-allowed; }
 .sim-topic-picker { margin-top: 26px; }
 .sim-topic-picker > div:first-child { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .sim-topic-picker strong { color: var(--muted); font-size: 10px; letter-spacing: .13em; }
-.sim-all-topics { border: 1px solid var(--line); padding: 8px 10px; background: transparent; color: var(--accent); font-size: 10px; font-weight: 850; letter-spacing: .08em; }
-.sim-all-topics.active { background: var(--accent-soft); border-color: var(--accent); }
+.sim-topic-actions { display: inline-flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.sim-all-topics, .sim-none-topics { border: 1px solid var(--line); padding: 8px 10px; background: transparent; color: var(--accent); font-size: 10px; font-weight: 850; letter-spacing: .08em; }
+.sim-all-topics.active, .sim-none-topics.active { background: var(--accent-soft); border-color: var(--accent); }
 .sim-topic-picker p { margin: 10px 0 14px; color: var(--muted); font-size: 12px; }
 .sim-topic-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .sim-topic-list label { display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; border: 1px solid var(--line); font-size: 12px; cursor: pointer; }
@@ -132,13 +133,18 @@ button:disabled { cursor: not-allowed; }
 .simulator-actions .secondary-button { border-color: var(--line); background: transparent; color: var(--accent); }
 .simulator-actions .secondary-button span { display: inline; margin: 0; }
 .simulation-results, .simulation-history { padding: clamp(24px, 4vw, 52px); }
-.result-summary { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 36px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.result-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-top: 36px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .result-summary article { min-height: 160px; padding: 24px; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .result-summary span { color: var(--muted); font-size: 10px; font-weight: 850; letter-spacing: .12em; }.result-summary strong { margin-top: auto; font: 600 56px/1 var(--serif); }.result-summary small { margin-top: 8px; color: var(--muted); }
 .result-by-subject { margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
 .result-by-subject article { min-height: 118px; padding: 18px; display: grid; border-left: 3px solid var(--warm); background: var(--surface-2); }.result-by-subject span { color: var(--muted); font-size: 13px; }.result-by-subject b { color: var(--accent); font: 600 27px var(--serif); }
+.result-by-topic { margin-top: 34px; padding-top: 28px; border-top: 1px solid var(--line); }
+.result-by-topic h4 { margin: 0 0 16px; font-size: 18px; }
+.result-by-topic > div { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.result-by-topic article { min-height: 108px; padding: 16px; display: grid; border: 1px solid var(--line); background: var(--surface-2); }
+.result-by-topic span { color: var(--muted); font-size: 12px; line-height: 1.45; }.result-by-topic strong { margin-top: 10px; }.result-by-topic b { color: var(--accent); font: 600 24px var(--serif); }
 .simulation-history h3 { font-size: clamp(32px, 4vw, 52px); }.empty-history { color: var(--muted); }
-.history-item { margin-top: 16px; padding: 18px; display: grid; grid-template-columns: 170px 1fr auto; gap: 18px; align-items: center; border: 1px solid var(--line); background: var(--surface-2); }.history-item div { display: grid; }.history-item strong { color: var(--accent); font: 600 34px var(--serif); }.history-item span, .history-item p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.5; }.history-item button { border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--wrong); font-size: 10px; font-weight: 800; letter-spacing: .08em; }.end-simulation { border-color: var(--warm); background: var(--warm); color: #1c2428; }
+.history-item { margin-top: 16px; padding: 18px; display: grid; grid-template-columns: 170px 1fr auto; gap: 18px; align-items: center; border: 1px solid var(--line); background: var(--surface-2); }.history-item div { display: grid; }.history-item strong { color: var(--accent); font: 600 34px var(--serif); }.history-item span, .history-item p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.5; }.history-item button { border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--wrong); font-size: 10px; font-weight: 800; letter-spacing: .08em; }
 
 .dashboard { padding: 88px clamp(24px, 6vw, 96px) 96px; }
 .dashboard-heading { max-width: 760px; }
@@ -174,6 +180,8 @@ button:disabled { cursor: not-allowed; }
 .status-legend .correct { background: var(--correct); border-color: var(--correct); }.status-legend .wrong { background: var(--wrong); border-color: var(--wrong); }.status-legend .current { background: var(--current); border-color: var(--current); }
 .status-legend .sim-answered { background: var(--accent); border-color: var(--accent); }
 .question-navigator button.sim-answered { border-color: var(--accent); background: var(--accent); color: #fff; }
+.status-legend .pending { background: var(--warm); border-color: var(--warm); }
+.question-navigator button.pending { border-color: var(--warm); background: var(--warm); color: #1c2428; }
 
 .question-panel { max-width: 1100px; margin: 48px auto 0; border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); }
 .question-heading { min-height: 152px; padding: 34px clamp(24px, 5vw, 58px); display: flex; justify-content: space-between; align-items: center; gap: 30px; border-bottom: 1px solid var(--line); }
@@ -248,7 +256,6 @@ dialog .danger-button { border-color: var(--wrong); background: var(--wrong); co
   .sim-total-field { width: 100%; }
   .result-summary { grid-template-columns: 1fr; }
   .history-item { grid-template-columns: 1fr; gap: 10px; }
-  .end-simulation { min-height: 42px; padding: 0 12px; }
   .dashboard { padding: 70px 18px 76px; }
   .progress-cards { grid-template-columns: 1fr; }
   .progress-cards article { min-height: 155px; }

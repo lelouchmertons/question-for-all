@@ -8,7 +8,7 @@
   <title>Caderno 460 — Questões de Concurso</title>
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="assets/styles.css?v=2">
+  <link rel="stylesheet" href="assets/styles.css?v=3">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -111,6 +111,7 @@
         <h3 id="simulation-results-title">Seu resultado</h3>
         <div class="result-summary" id="simulation-summary"></div>
         <div class="result-by-subject" id="simulation-subject-results"></div>
+        <div class="result-by-topic" id="simulation-topic-results"></div>
         <div class="simulator-actions">
           <button class="primary-button" id="save-simulation" type="button">SALVAR RESULTADO NESTE APARELHO</button>
           <button class="secondary-button" id="review-simulation-errors" type="button">REVISAR QUESTÕES ERRADAS</button>
@@ -151,7 +152,6 @@
           <strong id="session-position">Questão 1 de 60</strong>
           <span id="session-label">Matemática · ordem sequencial</span>
         </div>
-        <button class="secondary-button end-simulation" id="end-simulation" type="button" hidden>ENCERRAR SIMULADO</button>
       </header>
 
       <nav class="question-navigator" aria-label="Navegação pelas questões">
@@ -221,6 +221,6 @@
     </form>
   </dialog>
 
-  <script type="module" src="assets/app.js?v=29"></script>
+  <script type="module" src="assets/app.js?v=30"></script>
 </body>
 </html>

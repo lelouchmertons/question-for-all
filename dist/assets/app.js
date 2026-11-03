@@ -67,13 +67,14 @@ function startStudy() {
 
 function openSimulator() {
   document.querySelector(".landing").hidden = true; document.querySelector(".dashboard").hidden = true; els.estudo.hidden = true; els.simulador.hidden = false;
-  els["simulation-results"].hidden = true; renderSimulatorSubjects(); renderSimulationHistory();
+  renderSimulatorSubjects(); renderSimulationHistory();
   showSimulatorConfig();
 }
-function showSimulatorConfig() { els["simulator-config"].scrollIntoView({ behavior: "smooth", block: "start" }); }
+function showSimulatorConfig() { els["simulator-config"].hidden = false; els["simulation-results"].hidden = true; els["simulator-config"].scrollIntoView({ behavior: "smooth", block: "start" }); }
 function returnToSimulator() {
-  els.estudo.hidden = true; els.simulador.hidden = false; els["simulation-results"].hidden = !simulation?.finished;
-  renderSimulatorSubjects(); renderSimulationHistory(); if (simulation?.finished) { renderSimulationResults(); els["simulation-results"].scrollIntoView({ behavior: "smooth", block: "start" }); }
+  if (!simulation?.finished) return showHome();
+  els.estudo.hidden = true; els.simulador.hidden = false; els["simulator-config"].hidden = true; els["simulation-results"].hidden = false;
+  renderSimulationHistory(); renderSimulationResults(); els["simulation-results"].scrollIntoView({ behavior: "smooth", block: "start" });
 }
 function renderSimulatorSubjects() {
   els["sim-subjects"].innerHTML = simulatorOrder.map((id, index) => {
@@ -185,7 +186,7 @@ function calculateResult() {
 }
 function finishSimulation() {
   if (!simulation || simulation.finished || simulation.questions.some(question => !simulation.answers[question.id])) return;
-  preserveViewport(() => { simulation.finished = true; simulation.result = calculateResult(); els.estudo.hidden = true; els.simulador.hidden = false; renderSimulationResults(); renderSimulationHistory(); });
+  preserveViewport(() => { simulation.finished = true; simulation.result = calculateResult(); els.estudo.hidden = true; els.simulador.hidden = false; els["simulator-config"].hidden = true; renderSimulationResults(); renderSimulationHistory(); });
 }
 function renderSimulationResults() {
   const result = simulation?.result; if (!result) return; els["simulation-results"].hidden = false;
@@ -209,7 +210,7 @@ function renderProgress() {
 }
 function backFromStudy() {
   if (studyMode === "review") returnToSimulator();
-  else if (studyMode === "simulation") { if (!window.confirm("Sair agora abandona este simulado sem resultado. Deseja continuar?")) return; simulation = null; returnToSimulator(); }
+  else if (studyMode === "simulation") { if (!window.confirm("Sair agora abandona este simulado sem resultado. Deseja continuar?")) return; simulation = null; showHome(); }
   else showHome();
 }
 
@@ -228,13 +229,20 @@ els["simulation-history-list"].addEventListener("click", event => { const button
 els.alternatives.addEventListener("change", event => { if (revealed || studyMode === "review") return; selectedAnswer = event.target.value; if (studyMode === "simulation") { simulation.pending[session[cursor].id] = selectedAnswer; renderQuestionStrip(); } els["confirm-answer"].disabled = false; els["answer-hint"].textContent = studyMode === "simulation" ? `Alternativa ${selectedAnswer} selecionada e pendente de confirmação.` : `Alternativa ${selectedAnswer} selecionada. Confirme quando estiver pronto.`; });
 els["confirm-answer"].addEventListener("click", () => studyMode === "simulation" ? confirmSimulation() : confirmPractice()); els["previous-question"].addEventListener("click", () => moveQuestion(-1)); els["next-question"].addEventListener("click", () => moveQuestion(1));
 els["question-strip"].addEventListener("click", event => { const button = event.target.closest("button[data-index]"); if (!button) return; preserveViewport(() => { cursor = Number(button.dataset.index); renderQuestion(); }); });
+function selectKeyboardAlternative(direction) {
+  if (revealed || studyMode === "review") return;
+  const inputs = [...els.alternatives.querySelectorAll('input[type="radio"]')]; if (!inputs.length) return;
+  const current = inputs.findIndex(input => input.checked), index = current < 0 ? (direction > 0 ? 0 : inputs.length - 1) : (current + direction + inputs.length) % inputs.length, input = inputs[index];
+  input.checked = true; input.dispatchEvent(new Event("change", { bubbles: true })); input.focus({ preventScroll: true });
+}
 document.addEventListener("keydown", event => {
   if (els.estudo.hidden || event.altKey || event.ctrlKey || event.metaKey) return;
-  const target = event.target;
-  if (target.matches("input:not([type=radio]), textarea, select") || target.matches("input[type=radio]")) return;
+  if (event.target.matches("input:not([type=radio]), textarea, select")) return;
+  if (event.key === "ArrowUp") { event.preventDefault(); selectKeyboardAlternative(-1); return; }
+  if (event.key === "ArrowDown") { event.preventDefault(); selectKeyboardAlternative(1); return; }
+  if (event.key === "ArrowLeft") { event.preventDefault(); moveQuestion(-1); return; }
+  if (event.key === "ArrowRight") { event.preventDefault(); moveQuestion(1); return; }
   if (event.key === "Enter" && !els["confirm-answer"].hidden && !els["confirm-answer"].disabled) { event.preventDefault(); studyMode === "simulation" ? confirmSimulation() : confirmPractice(); }
-  if (event.key === "ArrowLeft") { event.preventDefault(); moveQuestion(-1); }
-  if (event.key === "ArrowRight") { event.preventDefault(); moveQuestion(1); }
 });
 els["reset-progress"].addEventListener("click", () => els["reset-dialog"].showModal()); els["reset-dialog"].addEventListener("close", () => { if (els["reset-dialog"].returnValue !== "confirm") return; progress = {}; localStorage.removeItem(STORAGE_KEY); renderProgress(); });
 

@@ -68,8 +68,8 @@ button:disabled { cursor: not-allowed; }
 .landing h1 { max-width: 940px; margin: 0; padding: 14px 18px 18px; font: 500 clamp(48px, 4.3vw, 66px)/.98 var(--serif); letter-spacing: -.045em; text-transform: uppercase; background: linear-gradient(90deg, rgba(5,16,53,.7), rgba(5,16,53,.3), transparent); text-shadow: 0 2px 18px rgba(0,0,0,.38); }
 .landing h1 span, .landing h1 em { display: block; }
 .landing h1 em { max-width: 940px; margin-top: 22px; color: var(--accent); font-size: 1em; font-weight: 400; line-height: .98; }
-.lede { max-width: 650px; align-self: end; margin: 0 18px; padding: 16px 18px; color: #e4ebfa; font-size: clamp(16px, 1.25vw, 19px); line-height: 1.65; background: rgba(5,16,53,.68); border-left: 3px solid var(--accent); }
-.bank-summary { margin-top: 28px; display: flex; flex-wrap: nowrap; justify-content: center; gap: 10px; }
+.lede { max-width: 650px; align-self: end; margin: 0; padding: 16px 18px; color: #e4ebfa; font-size: clamp(16px, 1.25vw, 19px); line-height: 1.65; background: rgba(5,16,53,.68); border-left: 3px solid var(--accent); }
+.bank-summary { margin-top: 52px; display: flex; flex-wrap: nowrap; justify-content: center; gap: 10px; }
 .bank-summary span { min-width: 0; min-height: 58px; padding: 10px 16px; display: grid; flex: 0 1 auto; align-content: center; justify-items: center; gap: 11px; border: 1px solid rgba(255,255,255,.55); background: rgba(8,25,72,.74); color: #e4ecff; text-align: center; text-transform: uppercase; letter-spacing: .08em; }
 .bank-summary b { color: var(--ink); font: 700 22px/.9 var(--serif); }
 .bank-summary i { font-size: 12px; font-style: normal; }
@@ -77,7 +77,7 @@ button:disabled { cursor: not-allowed; }
 .study-setup { padding: 48px clamp(28px, 5vw, 76px) clamp(44px, 5vw, 68px); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; background: rgba(8,24,71,.76); color: #fffdf4; backdrop-filter: blur(3px); }
 .study-setup > * { width: min(100%, 780px); }
 .study-setup header p { margin: 0 0 12px; color: #ffe37b; font-size: 11px; font-weight: 850; letter-spacing: .2em; }
-.study-setup h2 { margin: 0 0 30px; font: 500 clamp(34px, 4vw, 58px)/1.05 var(--serif); text-shadow: 0 2px 16px rgba(0,0,0,.45); }
+.study-setup h2 { margin: 0 0 48px; font: 500 clamp(30px, 3.2vw, 48px)/1.05 var(--serif); white-space: nowrap; text-align: center; text-shadow: 0 2px 16px rgba(0,0,0,.45); }
 .setup-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .setup-grid label { min-width: 0; padding: 12px; border: 1px solid rgba(255,255,255,.18); background: rgba(4,16,55,.58); }
 .setup-grid label > span { display: block; margin-bottom: 9px; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
@@ -90,7 +90,7 @@ button:disabled { cursor: not-allowed; }
 .number-field input::placeholder { color: rgba(255,255,255,.6); }
 .setup-grid small { display: block; margin-top: 7px; color: #d8e3f8; font-size: 11px; line-height: 1.4; }
 .setup-message { min-height: 22px; margin: 20px 0 0; color: #ffe178; font-size: 13px; }
-.setup-actions { margin-top: auto; padding-top: 34px; display: flex; align-items: stretch; justify-content: center; gap: 12px; }
+.setup-actions { margin-top: 52px; padding-top: 0; display: flex; align-items: stretch; justify-content: center; gap: 12px; }
 .primary-button, .secondary-button { min-height: 54px; padding: 0 22px; border: 1px solid transparent; font-size: 12px; font-weight: 850; letter-spacing: .11em; }
 .study-setup .primary-button { background: #fffdf4; color: #0b1a4a; }
 .study-setup .secondary-button { border-color: #f4c62f; background: #f4c62f; color: #0b1a4a; box-shadow: 0 10px 24px rgba(2, 8, 31, .3); }
@@ -259,7 +259,8 @@ dialog .danger-button { border-color: var(--wrong); background: var(--wrong); co
   .landing-copy { min-height: auto; padding: 64px 22px 54px; display: flex; }
   .landing h1 { font-size: clamp(42px, 13vw, 60px); }
   .study-setup { min-height: auto; padding: 46px 22px 58px; align-items: stretch; }
-  .bank-summary { justify-content: flex-start; }
+  .study-setup h2 { margin-bottom: 30px; white-space: normal; }
+  .bank-summary { margin-top: 28px; justify-content: flex-start; }
   .setup-grid { grid-template-columns: 1fr; }
   .setup-actions { margin-top: 26px; padding-top: 0; flex-direction: column; }
   .simulator-view { padding: 56px 18px 70px; }

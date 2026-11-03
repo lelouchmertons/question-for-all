@@ -16,6 +16,10 @@ function loadJson(key, fallback) { try { return JSON.parse(localStorage.getItem(
 function escapeHtml(value) { return String(value).replace(/[&<>'"]/g, char => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", "'":"&#39;", '"':"&quot;" })[char]); }
 function shuffled(list) { const copy = [...list]; for (let i = copy.length - 1; i > 0; i -= 1) { const j = Math.floor(Math.random() * (i + 1)); [copy[i], copy[j]] = [copy[j], copy[i]]; } return copy; }
 function subjectById(id) { return questionBank.subjects.find(subject => subject.id === id); }
+function orderedSubjects() {
+  const priority = { portugues: 0, matematica: 1 };
+  return [...questionBank.subjects].sort((a, b) => (priority[a.id] ?? 2) - (priority[b.id] ?? 2) || a.label.localeCompare(b.label, "pt-BR"));
+}
 function areasForSubject(id) { return [...new Set(questionBank.questions.filter(question => question.subjectId === id).map(question => question.area))].sort((a,b) => a.localeCompare(b, "pt-BR")); }
 function saveProgress() { localStorage.setItem(STORAGE_KEY, JSON.stringify(progress)); renderProgress(); }
 function saveHistory() { localStorage.setItem(SIMULATION_STORAGE_KEY, JSON.stringify(savedSimulations)); renderSimulationHistory(); }
@@ -31,10 +35,10 @@ function setTheme(theme) {
 }
 function initTheme() { setTheme(localStorage.getItem(THEME_KEY) || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")); }
 function renderSubjectOptions() {
-  els["subject-filter"].innerHTML = [`<option value="all">Todas as matérias (${questionBank.questions.length})</option>`, ...questionBank.subjects.map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
+  els["subject-filter"].innerHTML = [`<option value="all">Todas as matérias (${questionBank.questions.length})</option>`, ...orderedSubjects().map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
 }
 function renderProgressSubjectOptions() {
-  els["progress-subject-filter"].innerHTML = [`<option value="all">Todas as matérias (${questionBank.questions.length})</option>`, ...questionBank.subjects.map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
+  els["progress-subject-filter"].innerHTML = [`<option value="all">Todas as matérias (${questionBank.questions.length})</option>`, ...orderedSubjects().map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
 }
 function renderTopicOptions() {
   const id = els["subject-filter"].value;

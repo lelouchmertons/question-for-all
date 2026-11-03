@@ -20,6 +20,7 @@ function areasForSubject(id) { return [...new Set(questionBank.questions.filter(
 function saveProgress() { localStorage.setItem(STORAGE_KEY, JSON.stringify(progress)); renderProgress(); }
 function saveHistory() { localStorage.setItem(SIMULATION_STORAGE_KEY, JSON.stringify(savedSimulations)); renderSimulationHistory(); }
 function formatDuration(seconds) { const total = Math.max(0, Math.round(Number(seconds) || 0)), minutes = Math.floor(total / 60), remainder = total % 60; return minutes ? `${minutes} min ${String(remainder).padStart(2, "0")} s` : `${remainder} s`; }
+function preserveViewport(update) { const left = window.scrollX, top = window.scrollY; update(); window.scrollTo(left, top); requestAnimationFrame(() => window.scrollTo(left, top)); }
 
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
@@ -67,11 +68,12 @@ function startStudy() {
 function openSimulator() {
   document.querySelector(".landing").hidden = true; document.querySelector(".dashboard").hidden = true; els.estudo.hidden = true; els.simulador.hidden = false;
   els["simulation-results"].hidden = true; renderSimulatorSubjects(); renderSimulationHistory();
-  els["simulator-config"].scrollIntoView({ behavior: "smooth", block: "start" });
+  showSimulatorConfig();
 }
+function showSimulatorConfig() { els["simulator-config"].scrollIntoView({ behavior: "smooth", block: "start" }); }
 function returnToSimulator() {
   els.estudo.hidden = true; els.simulador.hidden = false; els["simulation-results"].hidden = !simulation?.finished;
-  renderSimulatorSubjects(); renderSimulationHistory(); if (simulation?.finished) renderSimulationResults();
+  renderSimulatorSubjects(); renderSimulationHistory(); if (simulation?.finished) { renderSimulationResults(); els["simulation-results"].scrollIntoView({ behavior: "smooth", block: "start" }); }
 }
 function renderSimulatorSubjects() {
   els["sim-subjects"].innerHTML = simulatorOrder.map((id, index) => {
@@ -109,7 +111,6 @@ function renderQuestionStrip() {
     const status = studyMode === "simulation" ? (simulation.pending[question.id] ? "pending" : simulation.answers[question.id] ? "sim-answered" : "unanswered") : studyMode === "review" ? (simulation.answers[question.id] === question.answer ? "correct" : "wrong") : (progress[question.id]?.status || "unanswered");
     return `<button class="${status}${index === cursor ? " current" : ""}" type="button" data-index="${index}" aria-label="Ir para a questão ${index + 1}">${index + 1}</button>`;
   }).join("");
-  els["question-strip"].querySelector(".current")?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
 }
 function renderLegend() {
   const legend = document.querySelector(".status-legend");
@@ -140,11 +141,13 @@ function showFeedback(question, selected, correct) {
 function renderPracticeQuestion() {
   const question = session[cursor]; selectedAnswer = null; revealed = false;
   const modes = { sequential: "ordem sequencial", random: "ordem aleatória", wrong: "revisão de erros" };
+  els["back-home"].textContent = "← VOLTAR AOS FILTROS";
   setQuestionFrame(question, `${subjectById(question.subjectId).short} · ${modes[els["order-filter"].value]}`); renderOptions(question, null, false);
   els["confirm-answer"].disabled = true; els["confirm-answer"].hidden = false; els["confirm-answer"].textContent = "CONFIRMAR RESPOSTA"; els["answer-hint"].textContent = "Selecione uma alternativa para continuar."; els.feedback.hidden = true;
 }
 function renderSimulationQuestion() {
   const question = session[cursor]; selectedAnswer = simulation.pending[question.id] || simulation.answers[question.id] || null; revealed = false;
+  els["back-home"].textContent = "← ABANDONAR SIMULADO";
   setQuestionFrame(question, "Modo simulado · resultado oculto até o encerramento"); renderOptions(question, selectedAnswer, false);
   const registered = simulation.answers[question.id];
   els["confirm-answer"].disabled = !selectedAnswer; els["confirm-answer"].hidden = false; els["confirm-answer"].textContent = registered ? "ATUALIZAR RESPOSTA" : "REGISTRAR RESPOSTA";
@@ -152,6 +155,7 @@ function renderSimulationQuestion() {
 }
 function renderReviewQuestion() {
   const question = session[cursor]; selectedAnswer = simulation.answers[question.id];
+  els["back-home"].textContent = "← VOLTAR AO RESULTADO";
   setQuestionFrame(question, "Revisão de questões erradas do simulado"); renderOptions(question, selectedAnswer, true, true); els["confirm-answer"].hidden = true; els["answer-hint"].textContent = "Revise a explicação e avance quando estiver pronto."; showFeedback(question, selectedAnswer, selectedAnswer === question.answer);
 }
 function renderQuestion() { if (studyMode === "simulation") renderSimulationQuestion(); else if (studyMode === "review") renderReviewQuestion(); else renderPracticeQuestion(); }
@@ -167,10 +171,10 @@ function confirmSimulation() {
   simulation.answers[id] = selectedAnswer;
   delete simulation.pending[id];
   if (simulation.questions.every(question => simulation.answers[question.id])) return finishSimulation();
-  if (cursor < session.length - 1) { cursor += 1; renderQuestion(); }
-  else { renderQuestion(); const remaining = simulation.questions.filter(question => !simulation.answers[question.id]).length; els["answer-hint"].textContent = `Faltam ${remaining} resposta(s) confirmada(s). Use os números acima para voltar às questões pendentes.`; }
+  if (cursor < session.length - 1) { preserveViewport(() => { cursor += 1; renderQuestion(); }); }
+  else { preserveViewport(() => { renderQuestion(); const remaining = simulation.questions.filter(question => !simulation.answers[question.id]).length; els["answer-hint"].textContent = `Faltam ${remaining} resposta(s) confirmada(s). Use os números acima para voltar às questões pendentes.`; }); }
 }
-function moveQuestion(step) { const next = cursor + step; if (next < 0 || next >= session.length) return; cursor = next; renderQuestion(); }
+function moveQuestion(step) { const next = cursor + step; if (next < 0 || next >= session.length) return; preserveViewport(() => { cursor = next; renderQuestion(); }); }
 function calculateResult() {
   const subjectStats = simulation.subjectOrder.map(subjectId => { const items = simulation.questions.filter(question => question.subjectId === subjectId), correct = items.filter(question => simulation.answers[question.id] === question.answer).length; return { subjectId, total: items.length, correct, wrong: items.length - correct, percentage: Math.round(correct / items.length * 100) }; });
   const topics = new Map();
@@ -181,7 +185,7 @@ function calculateResult() {
 }
 function finishSimulation() {
   if (!simulation || simulation.finished || simulation.questions.some(question => !simulation.answers[question.id])) return;
-  simulation.finished = true; simulation.result = calculateResult(); els.estudo.hidden = true; els.simulador.hidden = false; renderSimulationResults(); renderSimulationHistory(); els["simulation-results"].scrollIntoView({ behavior: "smooth", block: "start" });
+  preserveViewport(() => { simulation.finished = true; simulation.result = calculateResult(); els.estudo.hidden = true; els.simulador.hidden = false; renderSimulationResults(); renderSimulationHistory(); });
 }
 function renderSimulationResults() {
   const result = simulation?.result; if (!result) return; els["simulation-results"].hidden = false;
@@ -210,7 +214,7 @@ function backFromStudy() {
 }
 
 els["theme-toggle"].addEventListener("click", () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"));
-els["subject-filter"].addEventListener("change", renderTopicOptions); els["progress-subject-filter"].addEventListener("change", renderProgress); els["start-study"].addEventListener("click", startStudy); els["open-simulator"].addEventListener("click", openSimulator); els["back-from-simulator"].addEventListener("click", showHome); els["start-simulation"].addEventListener("click", buildSimulation); els["save-simulation"].addEventListener("click", saveCurrentSimulation); els["review-simulation-errors"].addEventListener("click", reviewSimulationErrors); els["new-simulation"].addEventListener("click", () => { simulation = null; els["simulation-results"].hidden = true; renderSimulatorSubjects(); }); els["back-home"].addEventListener("click", backFromStudy);
+els["subject-filter"].addEventListener("change", renderTopicOptions); els["progress-subject-filter"].addEventListener("change", renderProgress); els["start-study"].addEventListener("click", startStudy); els["open-simulator"].addEventListener("click", openSimulator); els["back-from-simulator"].addEventListener("click", showHome); els["start-simulation"].addEventListener("click", buildSimulation); els["save-simulation"].addEventListener("click", saveCurrentSimulation); els["review-simulation-errors"].addEventListener("click", reviewSimulationErrors); els["new-simulation"].addEventListener("click", () => { simulation = null; els["simulation-results"].hidden = true; renderSimulatorSubjects(); showSimulatorConfig(); }); els["back-home"].addEventListener("click", backFromStudy);
 els["sim-total"].addEventListener("input", () => { els["sim-message"].textContent = ""; });
 els["sim-subjects"].addEventListener("change", event => {
   const enabled = event.target.dataset.simEnabled, count = event.target.dataset.simCount, topic = event.target.dataset.simTopic;
@@ -223,7 +227,15 @@ els["sim-subjects"].addEventListener("click", event => { const move = event.targ
 els["simulation-history-list"].addEventListener("click", event => { const button = event.target.closest("button[data-delete-simulation]"); if (!button) return; savedSimulations = savedSimulations.filter(record => record.id !== button.dataset.deleteSimulation); saveHistory(); });
 els.alternatives.addEventListener("change", event => { if (revealed || studyMode === "review") return; selectedAnswer = event.target.value; if (studyMode === "simulation") { simulation.pending[session[cursor].id] = selectedAnswer; renderQuestionStrip(); } els["confirm-answer"].disabled = false; els["answer-hint"].textContent = studyMode === "simulation" ? `Alternativa ${selectedAnswer} selecionada e pendente de confirmação.` : `Alternativa ${selectedAnswer} selecionada. Confirme quando estiver pronto.`; });
 els["confirm-answer"].addEventListener("click", () => studyMode === "simulation" ? confirmSimulation() : confirmPractice()); els["previous-question"].addEventListener("click", () => moveQuestion(-1)); els["next-question"].addEventListener("click", () => moveQuestion(1));
-els["question-strip"].addEventListener("click", event => { const button = event.target.closest("button[data-index]"); if (!button) return; cursor = Number(button.dataset.index); renderQuestion(); });
+els["question-strip"].addEventListener("click", event => { const button = event.target.closest("button[data-index]"); if (!button) return; preserveViewport(() => { cursor = Number(button.dataset.index); renderQuestion(); }); });
+document.addEventListener("keydown", event => {
+  if (els.estudo.hidden || event.altKey || event.ctrlKey || event.metaKey) return;
+  const target = event.target;
+  if (target.matches("input:not([type=radio]), textarea, select") || target.matches("input[type=radio]")) return;
+  if (event.key === "Enter" && !els["confirm-answer"].hidden && !els["confirm-answer"].disabled) { event.preventDefault(); studyMode === "simulation" ? confirmSimulation() : confirmPractice(); }
+  if (event.key === "ArrowLeft") { event.preventDefault(); moveQuestion(-1); }
+  if (event.key === "ArrowRight") { event.preventDefault(); moveQuestion(1); }
+});
 els["reset-progress"].addEventListener("click", () => els["reset-dialog"].showModal()); els["reset-dialog"].addEventListener("close", () => { if (els["reset-dialog"].returnValue !== "confirm") return; progress = {}; localStorage.removeItem(STORAGE_KEY); renderProgress(); });
 
 initTheme(); renderSubjectOptions(); renderProgressSubjectOptions(); renderTopicOptions(); renderProgress(); renderSimulatorSubjects(); renderSimulationHistory();

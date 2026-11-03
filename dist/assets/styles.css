@@ -110,7 +110,9 @@ button:disabled { cursor: not-allowed; }
 .sim-subject-row.is-enabled { border-color: var(--accent); }
 .sim-subject-row header { min-height: 70px; display: flex; align-items: stretch; justify-content: space-between; gap: 16px; }
 .sim-subject-toggle { flex: 1; min-width: 0; padding: 15px 18px; display: grid; grid-template-columns: 20px 1fr; column-gap: 12px; align-items: center; cursor: pointer; }
-.sim-subject-toggle input { width: 17px; height: 17px; grid-row: span 2; accent-color: var(--accent); }
+.sim-subject-toggle input, .sim-topic-list input { width: 18px; height: 18px; appearance: none; flex: 0 0 18px; margin: 0; border: 1px solid var(--line); background: var(--surface); cursor: pointer; }
+.sim-subject-toggle input { grid-row: span 2; }
+.sim-subject-toggle input:checked, .sim-topic-list input:checked { border-color: var(--accent); background: var(--accent); box-shadow: inset 0 0 0 3px var(--surface); }
 .sim-subject-toggle span { font-weight: 800; }
 .sim-subject-toggle small { color: var(--muted); font-size: 11px; }
 .sim-order-controls { display: flex; border-left: 1px solid var(--line); }
@@ -127,7 +129,6 @@ button:disabled { cursor: not-allowed; }
 .sim-topic-picker p { margin: 10px 0 14px; color: var(--muted); font-size: 12px; }
 .sim-topic-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .sim-topic-list label { display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; border: 1px solid var(--line); font-size: 12px; cursor: pointer; }
-.sim-topic-list input { accent-color: var(--accent); }
 .simulator-actions { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .simulator-actions .primary-button { background: var(--accent); color: var(--surface); }
 .simulator-actions .secondary-button { border-color: var(--line); background: transparent; color: var(--accent); }

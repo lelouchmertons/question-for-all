@@ -29,7 +29,7 @@ export const questionBank = {
       "id": "farmacia",
       "label": "Farmácia",
       "short": "Farmácia",
-      "count": 700
+      "count": 1000
     }
   ],
   "questions": [
@@ -15578,7 +15578,7 @@ const portaria344LoteUm = [
     "supor que a Portaria nº 344/1998 perdeu vigência integral em 2026.",
     "estender indevidamente uma prorrogação eletrônica à impressão de modelos físicos antigos."
   ]]
-].map(([id, number, topic, stem, answer, explanation, ...options]) => ({
+].map(([id, number, topic, stem, answer, explanation, options]) => ({
   id: `farmacia-${id}`,
   subjectId: "farmacia",
   number,
@@ -17087,3 +17087,8 @@ questionBank.questions.filter(q=>q.subjectId==="farmacia"&&q.number>=855).forEac
 const farmaciaOrdenadaNove=questionBank.questions.filter(q=>q.subjectId==="farmacia").sort((a,b)=>a.number-b.number);let indiceFarmaciaNove=0;questionBank.questions=questionBank.questions.map(q=>q.subjectId==="farmacia"?farmaciaOrdenadaNove[indiceFarmaciaNove++]:q);
 questionBank.generatedAt = "2026-11-05T07:00:00.000Z";
 questionBank.review.clinicaLoteDoisReviewed = Array.from({length:50},(_,index)=>index+855);
+// Integridade do catálogo: os números exibidos na interface derivam do banco
+// efetivo, evitando contagens defasadas após a inclusão de novos lotes.
+questionBank.subjects.forEach(subject => {
+  subject.count = questionBank.questions.filter(question => question.subjectId === subject.id).length;
+});

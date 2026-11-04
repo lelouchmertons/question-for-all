@@ -1,10 +1,10 @@
-import { questionBank } from "./questions.js?v=49";
+import { questionBank } from "./questions.js?v=50";
 
 const STORAGE_KEY = "caderno330-progress-v1";
 const FOCUS_KEY = "caderno330-focus-mode";
 const SIMULATION_STORAGE_KEY = "caderno330-simulations-v1";
 const recommendedOrder = ["portugues", "matematica", "direito-constitucional", "direito-administrativo", "farmacia"];
-const ids = ["subject-filter","topic-filter","order-filter","question-number","setup-message","start-study","open-simulator","simulador","back-from-simulator","simulator-config","sim-total","sim-subjects","sim-message","start-simulation","simulation-results","simulation-summary","simulation-subject-results","simulation-topic-results","save-simulation","review-simulation-errors","new-simulation","simulation-history-list","answered-count","answered-total","correct-count","wrong-count","accuracy-rate","progress-fill","progress-subject-filter","reset-progress","reset-dialog","estudo","back-home","session-position","session-label","question-strip","question-subject","question-display-number","question-topic","question-stem","alternatives","confirm-answer","answer-hint","feedback","feedback-result","feedback-explanation","correct-answer","feedback-topic","previous-question","next-question","focus-toggle"];
+const ids = ["subject-filter","topic-filter","order-filter","question-number","setup-message","start-study","open-simulator","simulador","back-from-simulator","simulator-config","sim-total","sim-subjects","sim-message","start-simulation","simulation-results","simulation-summary","simulation-subject-results","simulation-topic-results","save-simulation","review-simulation-errors","new-simulation","simulation-history-list","answered-count","answered-total","correct-count","wrong-count","accuracy-rate","progress-fill","progress-subject-filter","reset-progress","reset-dialog","estudo","back-home","session-position","session-label","question-strip","question-subject","question-display-number","question-topic","question-stem","alternatives","confirm-answer","answer-hint","feedback","feedback-result","feedback-explanation","correct-answer","feedback-topic","previous-question","next-question","focus-toggle","total-count"];
 const els = Object.fromEntries(ids.map(id => [id, document.getElementById(id)]));
 let progress = loadJson(STORAGE_KEY, {});
 let savedSimulations = loadJson(SIMULATION_STORAGE_KEY, []);
@@ -34,6 +34,14 @@ function setFocus(active) {
   localStorage.setItem(FOCUS_KEY, String(active));
 }
 function initFocus() { setFocus(localStorage.getItem(FOCUS_KEY) === "true"); }
+function renderBankCounts() {
+  const total = questionBank.questions.length;
+  const highestQuestionNumber = Math.max(...questionBank.questions.map(question => question.number));
+  els["total-count"].textContent = String(total);
+  els["sim-total"].max = String(total);
+  els["question-number"].max = String(highestQuestionNumber);
+  document.querySelector('meta[name="description"]')?.setAttribute("content", `Question for All: PWA de estudos com ${total} questões de concurso comentadas, filtros por matéria e progresso local.`);
+}
 function renderSubjectOptions() {
   els["subject-filter"].innerHTML = [`<option value="all">Todas as ${questionBank.subjects.length} matérias</option>`, ...orderedSubjects().map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
 }
@@ -250,5 +258,5 @@ document.addEventListener("keydown", event => {
 });
 els["reset-progress"].addEventListener("click", () => els["reset-dialog"].showModal()); els["reset-dialog"].addEventListener("close", () => { if (els["reset-dialog"].returnValue !== "confirm") return; progress = {}; localStorage.removeItem(STORAGE_KEY); renderProgress(); });
 
-initFocus(); renderSubjectOptions(); renderProgressSubjectOptions(); renderTopicOptions(); renderProgress(); renderSimulatorSubjects(); renderSimulationHistory();
+initFocus(); renderBankCounts(); renderSubjectOptions(); renderProgressSubjectOptions(); renderTopicOptions(); renderProgress(); renderSimulatorSubjects(); renderSimulationHistory();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");

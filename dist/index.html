@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1a4a">
-  <meta name="description" content="Question for All: PWA de estudos com 460 questões de concurso comentadas, filtros por matéria e progresso local.">
+  <meta name="description" content="Question for All: PWA de estudos com 1300 questões de concurso comentadas, filtros por matéria e progresso local.">
   <title>Question for All — Questões de Concurso</title>
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -61,7 +61,7 @@
             <span>Ir para uma questão</span>
             <div class="number-field">
               <span>Nº</span>
-              <input id="question-number" type="number" min="1" max="999" inputmode="numeric" placeholder="Ex.: 25">
+              <input id="question-number" type="number" min="1" max="1000" inputmode="numeric" placeholder="Ex.: 25">
             </div>
             <small>O número é considerado dentro da matéria escolhida.</small>
           </label>
@@ -73,7 +73,7 @@
           <button class="secondary-button" id="open-simulator" type="button">CRIAR SIMULADO</button>
         </div>
         <div class="bank-summary" aria-label="Resumo do banco">
-          <span><b id="total-count">460</b><i>questões</i></span>
+          <span><b id="total-count">1300</b><i>questões</i></span>
           <span><b>5</b><i>matérias</i></span>
           <span><b>100%</b><i>comentadas</i></span>
         </div>
@@ -94,7 +94,7 @@
             <p class="eyebrow">CONFIGURAÇÃO</p>
             <h3 id="simulator-config-title">Quantas questões terá o simulado?</h3>
           </div>
-          <label class="sim-total-field"><span>TOTAL</span><input id="sim-total" type="number" min="1" max="460" value="20" inputmode="numeric"></label>
+          <label class="sim-total-field"><span>TOTAL</span><input id="sim-total" type="number" min="1" max="1300" value="20" inputmode="numeric"></label>
         </div>
         <p class="sim-help">Defina a quantidade por matéria. Quando houver mais assuntos selecionados do que questões, cada questão sairá de um assunto diferente. Quando houver menos assuntos, o restante será sorteado sem repetir questões.</p>
         <div class="sim-subjects" id="sim-subjects"></div>
@@ -135,7 +135,7 @@
         </label>
       </div>
       <div class="progress-cards">
-        <article><span>RESPONDIDAS</span><strong id="answered-count">0</strong><small id="answered-total">de 460 questões</small></article>
+        <article><span>RESPONDIDAS</span><strong id="answered-count">0</strong><small id="answered-total">de 1300 questões</small></article>
         <article class="correct-card"><span>ACERTOS</span><strong id="correct-count">0</strong><small id="accuracy-rate">0% de aproveitamento</small></article>
         <article class="wrong-card"><span>PARA REVISAR</span><strong id="wrong-count">0</strong><small>questões erradas</small></article>
       </div>
@@ -229,6 +229,6 @@
     </form>
   </dialog>
 
-  <script type="module" src="assets/app.js?v=58"></script>
+  <script type="module" src="assets/app.js?v=59"></script>
 </body>
 </html>

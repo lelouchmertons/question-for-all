@@ -16918,7 +16918,8 @@ const safetyWrong = {
   "Síntese":["concentrar toda decisão em um único profissional.","medir segurança apenas pelo número de produtos entregues.","eliminar registros para acelerar o processo.","agir somente depois que ocorrer dano."]
 };
 const segurancaLoteUm = segurancaSeeds.map(([topic, stem, correct], index) => {
- const answer="BECDA"[index%5], options=[...safetyWrong[topic]]; options.splice("ABCDE".indexOf(answer),0,correct);
+ const answer="BECDA"[index%5], variant=index%5, base=[...safetyWrong[topic], `considerar que ${topic.toLowerCase()} só merece intervenção depois de dano confirmado.`];
+ const options=[base[variant],base[(variant+1)%5],base[(variant+2)%5],base[(variant+3)%5]]; options.splice("ABCDE".indexOf(answer),0,correct);
  return {id:`farmacia-${501+index}`,subjectId:"farmacia",number:405+index,topic,area:"Segurança do paciente e LASA",stem,options:options.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:`A alternativa correta é: ${correct} A medida reduz risco ao reforçar barreiras de segurança no processo.`};
 });
 questionBank.questions.filter(question=>question.subjectId==="farmacia"&&question.number>=405).forEach(question=>{question.number+=50;});
@@ -16938,7 +16939,7 @@ const pkConcepts=[
 const pkTemplates=[
 ["O conceito de {topic} refere-se a:","A"],["Em um caso clínico, {topic} ajuda a explicar:","B"],["A interpretação correta sobre {topic} é:","C"],["No acompanhamento farmacoterapêutico, {topic} merece atenção porque:","D"],["Uma afirmação tecnicamente adequada sobre {topic} é:","E"]
 ];
-const pkLoteUm=pkConcepts.flatMap(([topic,correct,wrong],c)=>pkTemplates.map(([model,answer],v)=>{const stem=model.replace("{topic}",topic);const options=[wrong,"a escolha do medicamento apenas pelo preço.","a ausência de necessidade de monitoramento.","a substituição da avaliação clínica por cálculo isolado."];options.splice("ABCDE".indexOf(answer),0,correct);return{id:`farmacia-${551+c*5+v}`,subjectId:"farmacia",number:455+c*5+v,topic,area:"Farmacocinética e farmacodinâmica",stem,options:options.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:`A resposta correta descreve ${topic}: ${correct} A interpretação deve sempre considerar o contexto clínico.`};}));
+const pkLoteUm=pkConcepts.flatMap(([topic,correct,wrong],c)=>pkTemplates.map(([model,answer],v)=>{const stem=model.replace("{topic}",topic);const base=[wrong,`${topic} não sofre influência de características do paciente ou de outros medicamentos.`,`informações de ${topic} dispensam avaliação clínica e acompanhamento.`,`${topic} pode ser interpretada sem considerar dose, via ou tempo de uso.`,`a avaliação de ${topic} substitui a conferência da prescrição e do contexto terapêutico.`];const options=[base[v],base[(v+1)%5],base[(v+2)%5],base[(v+3)%5]];options.splice("ABCDE".indexOf(answer),0,correct);return{id:`farmacia-${551+c*5+v}`,subjectId:"farmacia",number:455+c*5+v,topic,area:"Farmacocinética e farmacodinâmica",stem,options:options.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:`A resposta correta descreve ${topic}: ${correct} A interpretação deve sempre considerar dose, via, tempo e contexto clínico.`};}));
 questionBank.questions.filter(q=>q.subjectId==="farmacia"&&q.number>=455).forEach(q=>{q.number+=50;});questionBank.questions.push(...pkLoteUm);
 const farmaciaOrdenadaQuatro = questionBank.questions
   .filter(question => question.subjectId === "farmacia")

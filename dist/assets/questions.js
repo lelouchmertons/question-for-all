@@ -29,7 +29,7 @@ export const questionBank = {
       "id": "farmacia",
       "label": "Farmácia",
       "short": "Farmácia",
-      "count": 160
+      "count": 210
     }
   ],
   "questions": [
@@ -15226,3 +15226,382 @@ export const questionBank = {
     ]
   }
 };
+
+const portaria344LoteUm = [
+  ["161", 65, "Listas atualizadas", "Ao conferir se uma substância está sujeita a controle especial, a conduta tecnicamente mais segura é:", "C", "Os anexos da Portaria nº 344/1998 sofrem atualizações periódicas pela Anvisa. A classificação deve ser confirmada na lista vigente, e não em apostilas ou listas antigas.", [
+    "usar a classificação indicada na bula mais recente do fabricante, pois ela substitui a lista sanitária.",
+    "adotar a classificação lembrada pela equipe, desde que o medicamento seja de uso frequente.",
+    "consultar a lista vigente publicada ou referenciada pela Anvisa antes de definir o controle aplicável.",
+    "considerar controlada apenas a substância cuja embalagem apresente tarja preta em todas as apresentações.",
+    "aguardar comunicação individual da vigilância sanitária local antes de atualizar qualquer procedimento."
+  ]],
+  ["162", 66, "Listas A", "Na organização das listas da Portaria nº 344/1998, a associação correta é:", "A", "As listas A1 e A2 abrangem entorpecentes; a A3 abrange psicotrópicos. Essa classificação orienta o tipo de controle e de receituário aplicável.", [
+    "A1 e A2: entorpecentes; A3: psicotrópicos.",
+    "A1 e A2: psicotrópicos; A3: entorpecentes.",
+    "A1 e A2: retinoides sistêmicos; A3: anabolizantes.",
+    "A1 e A2: precursores químicos; A3: plantas proscritas.",
+    "A1 e A2: imunossupressores; A3: antimicrobianos."
+  ]],
+  ["163", 67, "Listas B", "Em relação às listas B da Portaria nº 344/1998, assinale a alternativa correta:", "D", "A lista B1 reúne substâncias psicotrópicas, enquanto a B2 é destinada a substâncias psicotrópicas anorexígenas. A identificação do grupo não pode ser inferida somente pela indicação clínica.", [
+    "B1 reúne entorpecentes e B2 reúne precursores químicos.",
+    "B1 reúne imunossupressores e B2 reúne retinoides sistêmicos.",
+    "B1 reúne anabolizantes e B2 reúne antirretrovirais.",
+    "B1 reúne psicotrópicos e B2 reúne psicotrópicos anorexígenos.",
+    "B1 reúne plantas proscritas e B2 reúne substâncias de uso veterinário."
+  ]],
+  ["164", 68, "Listas C", "A lista C1 da Portaria nº 344/1998 é usualmente identificada como a lista de:", "B", "A C1 abrange outras substâncias sujeitas a controle especial. Ela não deve ser confundida com as listas específicas C2, C3, C4 e C5.", [
+    "substâncias entorpecentes de uso exclusivamente hospitalar.",
+    "outras substâncias sujeitas a controle especial.",
+    "plantas que podem originar substâncias entorpecentes.",
+    "substâncias proscritas no território nacional.",
+    "precursores químicos de uso industrial."
+  ]],
+  ["165", 69, "Listas C", "A correspondência entre as listas especiais C2 e C3 é, respectivamente:", "E", "A lista C2 trata de substâncias retinoicas de uso sistêmico; a C3, de substâncias imunossupressoras. A identificação correta evita aplicar receituário ou condição de dispensação indevida.", [
+    "antirretrovirais e anabolizantes.",
+    "psicotrópicos e anorexígenos.",
+    "precursores químicos e plantas proscritas.",
+    "entorpecentes e psicotrópicos.",
+    "retinoicas de uso sistêmico e imunossupressoras."
+  ]],
+  ["166", 70, "Listas C", "A lista C4 está associada, na estrutura clássica da Portaria nº 344/1998, a substâncias:", "C", "A C4 corresponde a substâncias antirretrovirais. A classificação deve ser sempre confirmada na lista vigente, porque inclusões e exclusões podem ocorrer.", [
+    "anorexígenas.",
+    "anabolizantes.",
+    "antirretrovirais.",
+    "retinoicas de uso sistêmico.",
+    "proscritas."
+  ]],
+  ["167", 71, "Listas C", "Uma prescrição contém substância classificada na lista C5. O farmacêutico deve reconhecer que se trata de substância:", "A", "A lista C5 corresponde aos anabolizantes. A conduta de dispensação depende também dos requisitos vigentes do receituário e da documentação.", [
+    "anabolizante.",
+    "antirretroviral.",
+    "imunossupressora.",
+    "psicotrópica anorexígena.",
+    "precursora química."
+  ]],
+  ["168", 72, "Listas D", "Na Portaria nº 344/1998, as listas D1 e D2 referem-se principalmente a:", "D", "As listas D abrangem precursores e insumos químicos sujeitos a controle. Não são listas de medicamentos de dispensação comum.", [
+    "medicamentos biológicos e imunobiológicos.",
+    "antibióticos e antirretrovirais.",
+    "anabolizantes e retinoides sistêmicos.",
+    "precursores e insumos químicos sujeitos a controle.",
+    "substâncias de uso exclusivo em hospitais universitários."
+  ]],
+  ["169", 73, "Listas E e F", "A alternativa que diferencia adequadamente as listas E e F é:", "B", "A lista E abrange plantas que podem originar substâncias entorpecentes ou psicotrópicas; a F abrange substâncias de uso proscrito no Brasil.", [
+    "E reúne imunossupressores e F reúne antirretrovirais.",
+    "E reúne plantas controladas e F reúne substâncias proscritas.",
+    "E reúne entorpecentes e F reúne anorexígenos.",
+    "E reúne precursores químicos e F reúne anabolizantes.",
+    "E reúne psicotrópicos e F reúne retinoides sistêmicos."
+  ]],
+  ["170", 74, "Classificação sanitária", "A classificação de uma substância em lista de controle especial serve, principalmente, para:", "E", "As listas estabelecem o regime sanitário aplicável: controle, tipo de receituário e obrigações de registro. Elas não substituem avaliação clínica ou decisão terapêutica.", [
+    "determinar a eficácia comparativa entre medicamentos de uma mesma classe.",
+    "definir a indicação clínica exclusiva de cada medicamento controlado.",
+    "dispensar a necessidade de avaliação farmacêutica da prescrição.",
+    "substituir a bula e os protocolos terapêuticos do serviço de saúde.",
+    "definir o regime de controle, receituário e registro sanitário aplicável."
+  ]],
+  ["171", 75, "Notificação de Receita A", "A Notificação de Receita A é tradicionalmente identificada pela cor:", "C", "A Notificação de Receita A é amarela. A cor, sozinha, não basta: deve haver compatibilidade entre substância, prescrição e requisitos formais.", [
+    "azul.",
+    "branca.",
+    "amarela.",
+    "verde.",
+    "rosa."
+  ]],
+  ["172", 76, "Notificação de Receita B", "A Notificação de Receita B é tradicionalmente identificada pela cor:", "A", "A Notificação de Receita B é azul. A conferência deve incluir a classificação vigente da substância e os demais requisitos do documento.", [
+    "azul.",
+    "amarela.",
+    "branca.",
+    "verde.",
+    "rosa."
+  ]],
+  ["173", 77, "Receita de Controle Especial", "A Receita de Controle Especial, nas hipóteses previstas, caracteriza-se por ser emitida em:", "D", "A Receita de Controle Especial é emitida em duas vias, com retenção da primeira pela farmácia ou drogaria e devolução da segunda ao paciente, conforme as regras aplicáveis.", [
+    "via única, destinada exclusivamente ao paciente.",
+    "três vias, com uma destinada obrigatoriamente ao conselho profissional.",
+    "via eletrônica exclusiva, sem possibilidade de documento físico.",
+    "duas vias, com retenção da primeira e devolução da segunda ao paciente.",
+    "duas vias, ambas obrigatoriamente retidas pelo estabelecimento."
+  ]],
+  ["174", 78, "Retenção e rastreabilidade", "A retenção do receituário sujeito a controle especial tem por finalidade central:", "B", "A retenção integra a rastreabilidade e a fiscalização sanitária. Não autoriza alterar a prescrição nem substitui a escrituração exigida.", [
+    "transferir ao estabelecimento a decisão terapêutica originalmente feita pelo prescritor.",
+    "assegurar rastreabilidade da dispensação e permitir fiscalização sanitária.",
+    "permitir que o paciente retire nova quantidade sem nova avaliação documental.",
+    "substituir a necessidade de registro de entrada e saída do estoque controlado.",
+    "dispensar a conferência da identidade e habilitação do prescritor."
+  ]],
+  ["175", 79, "Análise de prescrição", "Ao receber prescrição de medicamento controlado, a conferência farmacêutica deve avaliar conjuntamente:", "E", "A dispensação requer avaliação integrada: substância, documento, identificação, quantidade, validade e demais condições aplicáveis. A aparência formal isolada não basta.", [
+    "apenas a assinatura do prescritor e o nome comercial do produto.",
+    "somente a legibilidade do nome do paciente e a data de emissão.",
+    "a disponibilidade de estoque e o preço registrado no sistema.",
+    "a tarja da embalagem e a marca escolhida pelo paciente.",
+    "substância, tipo de receituário, preenchimento, quantidade, validade e requisitos vigentes."
+  ]],
+  ["176", 80, "Modelos de receituário em 2026", "Sobre os modelos físicos de Notificações de Receita e de Receita de Controle Especial em 2026, é correto afirmar que:", "C", "Os modelos que constavam dos anexos da Portaria nº 344/1998 foram revogados. A versão 2 dos novos modelos foi publicada em março e tornou-se obrigatória para novas impressões em 18 de maio de 2026.", [
+    "os anexos antigos voltaram a ser obrigatórios após a prorrogação das funções eletrônicas do SNCR.",
+    "a atualização alcançou apenas prescrições digitais, preservando os anexos antigos para formulários físicos.",
+    "os modelos anexos antigos foram revogados e a versão 2 passou a ser exigida para novas impressões.",
+    "a versão 2 substituiu a Portaria nº 344/1998 em todos os seus dispositivos materiais.",
+    "a versão 2 tornou desnecessário o preenchimento de campos obrigatórios no documento físico."
+  ]],
+  ["177", 81, "Modelos de receituário em 2026", "A versão 2 dos novos modelos de receituário físico foi publicada pela Anvisa em:", "A", "A versão 2 foi publicada em 16 de março de 2026. Para a prova, é importante distinguir publicação do modelo e data a partir da qual novas impressões se tornaram obrigatórias.", [
+    "16 de março de 2026.",
+    "18 de maio de 2026.",
+    "30 de setembro de 2026.",
+    "13 de fevereiro de 2026.",
+    "12 de fevereiro de 2026."
+  ]],
+  ["178", 82, "Modelos de receituário em 2026", "A obrigatoriedade de utilização da versão 2 para novas impressões de receituários físicos iniciou-se em:", "D", "Desde 18 de maio de 2026, a versão 2 tornou-se obrigatória para as impressões. Isso não equivale a invalidar automaticamente formulários impressos anteriormente dentro do período permitido.", [
+    "13 de fevereiro de 2026.",
+    "16 de março de 2026.",
+    "17 de maio de 2026.",
+    "18 de maio de 2026.",
+    "30 de setembro de 2026."
+  ]],
+  ["179", 83, "Regras de transição em 2026", "Uma farmácia possui formulários físicos antigos impressos dentro do período em que ainda era permitida sua impressão. A interpretação correta é que:", "B", "A Anvisa manteve a possibilidade de prescrição até esgotar o estoque já impresso e de dispensação dentro do prazo de validade do receituário. O que cessou foi a possibilidade de novas impressões do modelo antigo.", [
+    "o estoque deve ser inutilizado imediatamente, ainda que o documento esteja válido.",
+    "o estoque pode ser utilizado nas condições transitórias, respeitada a validade aplicável.",
+    "o estoque pode ser usado apenas para prescrições digitais posteriormente impressas.",
+    "o estoque pode ser reaproveitado após a retirada dos campos revogados.",
+    "o estoque passa a ter validade indefinida para prescrição e dispensação."
+  ]],
+  ["180", 84, "SNCR e atualização de 2026", "A prorrogação promovida pela RDC nº 1.028/2026 alcançou especificamente:", "E", "A RDC nº 1.028/2026 prorrogou o prazo para disponibilização das funcionalidades eletrônicas do SNCR. Ela não restaurou modelos antigos nem afastou a obrigatoriedade dos novos modelos físicos.", [
+    "a vigência de todos os modelos físicos antigos de receituário.",
+    "a obrigação de retenção de documentos sujeitos a controle especial.",
+    "a atualização das listas de substâncias controladas pela Anvisa.",
+    "a aplicação das regras da RDC nº 1.000/2025 sobre receituários físicos.",
+    "a disponibilização das funcionalidades eletrônicas do SNCR."
+  ]],
+  ["181", 85, "SNCR e atualização de 2026", "A prorrogação das funcionalidades eletrônicas do SNCR até 30 de setembro de 2026:", "A", "O adiamento tratou somente das funcionalidades eletrônicas. Os modelos físicos novos continuaram obrigatórios para impressões a partir de 18 de maio de 2026.", [
+    "não restabeleceu modelos antigos nem afastou as regras físicas já vigentes.",
+    "suspendeu toda a disciplina de receituários da RDC nº 1.000/2025.",
+    "transferiu para os conselhos profissionais o controle das receitas físicas.",
+    "permitiu imprimir qualquer modelo antigo até o fim de 2026.",
+    "tornou facultativa a conferência dos campos obrigatórios da prescrição."
+  ]],
+  ["182", 86, "Preenchimento obrigatório", "Quanto aos novos modelos de receituário físico, a regra de preenchimento indicada pela Anvisa é:", "D", "Os campos obrigatórios do modelo vigente devem ser preenchidos. A mudança de formulário não eliminou a responsabilidade de conferir requisitos materiais e formais.", [
+    "preencher somente os campos destinados ao paciente e ao medicamento.",
+    "dispensar os dados do prescritor quando houver carimbo profissional.",
+    "preencher os campos que o estabelecimento considerar essenciais para o caso.",
+    "preencher todos os campos obrigatórios do modelo aplicável.",
+    "aceitar campos incompletos desde que haja registro eletrônico posterior."
+  ]],
+  ["183", 87, "Consulta à norma vigente", "Um material didático de anos anteriores classifica uma substância em determinada lista, mas a lista atual da Anvisa indica mudança posterior. Para a dispensação, deve prevalecer:", "C", "A lista vigente atualizada pela Anvisa é a referência para a classificação atual. Material didático é apoio de estudo, não substitui a norma em vigor.", [
+    "a classificação do material didático, por ser mais conhecida pelos candidatos.",
+    "a classificação adotada pela farmácia nos últimos inventários.",
+    "a classificação constante da lista vigente atualizada pela Anvisa.",
+    "a classificação escolhida pelo prescritor conforme sua especialidade.",
+    "a classificação utilizada pelo fabricante na primeira bula do produto."
+  ]],
+  ["184", 88, "Atualização das listas", "A atualização periódica dos anexos da Portaria nº 344/1998 pode envolver:", "B", "A Anvisa pode incluir, excluir ou alterar substâncias e adendos das listas. Por isso, decorar uma relação fixa sem verificar a versão atual cria risco de erro.", [
+    "somente mudança de cor das notificações já existentes.",
+    "inclusões, exclusões e alterações nas listas e seus adendos.",
+    "apenas reajuste de preços de medicamentos controlados.",
+    "substituição da responsabilidade do farmacêutico pela do prescritor.",
+    "extinção automática dos registros de estoque dos estabelecimentos."
+  ]],
+  ["185", 89, "Controle de versões", "Em um procedimento operacional da drogaria, a melhor prática para evitar aplicação de lista desatualizada é:", "E", "O procedimento deve prever fonte oficial, responsável, periodicidade e registro de atualização. Uma cópia não datada no balcão não garante rastreabilidade nem controle de versão.", [
+    "manter cópia impressa sem data para evitar alterações frequentes da rotina.",
+    "aguardar a primeira fiscalização para substituir a relação de substâncias.",
+    "usar somente a lista disponível no software de gestão, sem validação externa.",
+    "deixar a atualização a cargo de cada atendente em seu turno de trabalho.",
+    "definir fonte oficial, responsável, periodicidade e registro das atualizações."
+  ]],
+  ["186", 90, "Dispensação e classificação", "A identificação correta da lista da substância é necessária porque influencia diretamente:", "A", "A lista integra a definição do controle sanitário aplicável, incluindo documentação e registros. Ela não define, isoladamente, dose clínica ou escolha terapêutica.", [
+    "o tipo de receituário, a retenção e os registros sanitários exigidos.",
+    "a preferência terapêutica do paciente entre medicamentos equivalentes.",
+    "a margem de lucro praticada pela farmácia na dispensação.",
+    "a possibilidade de substituir avaliação clínica por conferência documental.",
+    "a obrigatoriedade de venda exclusiva em ambiente hospitalar."
+  ]],
+  ["187", 91, "Documento incompatível", "Se a substância prescrita exige controle que não corresponde ao documento apresentado, a conduta adequada é:", "D", "A incompatibilidade deve ser esclarecida antes da dispensação. O farmacêutico não deve adaptar unilateralmente o documento para fazê-lo caber no regime de controle.", [
+    "dispensar a menor apresentação disponível para reduzir o risco.",
+    "alterar a classificação no verso do documento e registrar a intervenção.",
+    "aceitar o documento se a substância for conhecida pelo paciente.",
+    "interromper a dispensação e buscar esclarecimento ou regularização antes de prosseguir.",
+    "dispensar parcialmente e solicitar a regularização na próxima compra."
+  ]],
+  ["188", 92, "Limites da intervenção farmacêutica", "Diante de quantidade ou apresentação incompatível com os requisitos de uma prescrição controlada, o farmacêutico:", "C", "A intervenção farmacêutica não autoriza reescrever unilateralmente a prescrição. A correção depende de regularização pelo prescritor ou de outra solução legalmente admitida.", [
+    "pode alterar livremente a quantidade, desde que a dose diária permaneça semelhante.",
+    "pode substituir a apresentação e registrar a mudança somente no sistema interno.",
+    "deve buscar a regularização necessária antes de dispensar em desacordo com a prescrição.",
+    "deve entregar a apresentação de menor custo e orientar o paciente sobre a alteração.",
+    "pode dispensar metade da quantidade e completar a outra metade em nova receita."
+  ]],
+  ["189", 93, "Rastreabilidade", "A rastreabilidade de medicamentos controlados é fortalecida quando o estabelecimento:", "B", "A rastreabilidade depende de coerência entre documento, estoque e registros. A conciliação permite identificar divergências e agir antes que se transformem em perda ou desvio.", [
+    "concentra a conferência documental apenas no encerramento anual do inventário.",
+    "mantém coerência entre receituários retidos, registros e saldo físico do estoque.",
+    "dispensa o registro de perdas quando o saldo físico permanece positivo.",
+    "substitui inventários físicos por consulta ao saldo do sistema informatizado.",
+    "mantém os produtos em exposição para facilitar a conferência visual do público."
+  ]],
+  ["190", 94, "Estoque controlado", "A divergência entre saldo físico e registro de estoque de medicamento controlado exige, inicialmente:", "E", "A primeira medida é apurar e documentar a divergência conforme procedimento e exigências aplicáveis. Ajustar o sistema sem investigação elimina evidências e compromete a rastreabilidade.", [
+    "ajustar o saldo eletrônico para coincidir com a contagem física e encerrar a ocorrência.",
+    "repor a diferença com produto de outro lote e manter o documento original arquivado.",
+    "transferir o produto para o estoque geral até a próxima conferência mensal.",
+    "dispensar o saldo remanescente e aguardar novo recebimento para realizar a apuração.",
+    "apurar e documentar a divergência, adotando as providências previstas no procedimento e na norma."
+  ]],
+  ["191", 95, "Armazenamento de controlados", "O armazenamento de medicamentos sujeitos a controle especial deve favorecer:", "A", "O acesso restrito e a organização que permita inventário reduzem risco de desvio e erro. Não basta separar visualmente os produtos se o acesso permanece sem controle.", [
+    "acesso restrito, segurança física, organização e conferência de estoque.",
+    "exposição separada ao público para facilitar a identificação da tarja.",
+    "armazenamento junto aos medicamentos de maior giro para agilizar a dispensação.",
+    "acesso livre da equipe administrativa para atualização do sistema de vendas.",
+    "guarda exclusiva fora do estabelecimento, sem conciliação com o estoque local."
+  ]],
+  ["192", 96, "Responsabilidade sanitária", "A presença de um sistema informatizado para controlados:", "D", "O sistema é instrumento de apoio; não substitui análise profissional, conferência do documento, procedimentos e responsabilidade técnica.", [
+    "substitui integralmente a conferência do receituário pelo farmacêutico.",
+    "dispensa a retenção documental nas hipóteses em que ela é exigida.",
+    "autoriza corrigir dados da prescrição depois da dispensação sem contato com o prescritor.",
+    "apoia o registro e a rastreabilidade, mas não elimina as demais obrigações sanitárias.",
+    "torna desnecessária a verificação de saldo físico em inventários programados."
+  ]],
+  ["193", 97, "Atualização de 2026", "A adoção dos novos modelos de receituário em 2026 representa:", "B", "A atualização modernizou os modelos e regras correspondentes, sem extinguir a base material da Portaria nº 344/1998 nem as obrigações de controle especial.", [
+    "a extinção das listas de substâncias sujeitas a controle especial.",
+    "uma atualização de modelos e regras, preservando o regime de controle sanitário aplicável.",
+    "a substituição obrigatória de toda receita física por prescrição exclusivamente eletrônica.",
+    "a retirada da competência da Anvisa para atualizar as listas de substâncias.",
+    "a dispensa de retenção e de escrituração dos medicamentos controlados."
+  ]],
+  ["194", 98, "Uso de fontes oficiais", "Para responder questão sobre uma substância recém-incluída ou remanejada de lista, a fonte mais adequada é:", "C", "A página oficial da Anvisa consolida o histórico e indica a versão vigente das listas. Ela é mais adequada do que resumos não atualizados.", [
+    "um manual de farmacologia sem indicação da data de atualização.",
+    "a lista impressa anexada a uma prescrição recebida do paciente.",
+    "a lista vigente e o histórico de atualizações disponibilizados pela Anvisa.",
+    "a experiência de outro estabelecimento que já comercializa o produto.",
+    "a indicação terapêutica descrita em publicidade do fabricante."
+  ]],
+  ["195", 99, "Caso integrado: classificação", "Uma substância foi excluída de uma lista por atualização posterior da Anvisa. Para fins de controle, o estabelecimento deve:", "E", "O regime atual decorre da norma vigente. A exclusão, inclusão ou remanejamento deve ser incorporado formalmente às rotinas, sem usar classificação histórica como se ainda estivesse em vigor.", [
+    "manter o controle anterior até que o estoque do produto seja completamente renovado.",
+    "seguir a classificação que vigorava na data em que o medicamento foi adquirido.",
+    "aplicar a lista que a empresa fornecedora utiliza em seu catálogo comercial.",
+    "aguardar orientação do paciente para decidir o tipo de documento necessário.",
+    "adequar os procedimentos à classificação vigente, registrando a atualização interna."
+  ]],
+  ["196", 100, "Caso integrado: modelos físicos", "Em junho de 2026, uma gráfica pretende produzir novos blocos de receituário físico com o modelo antigo dos anexos da Portaria nº 344/1998. A conduta está:", "A", "Os modelos antigos não podiam mais ser impressos depois de 18 de maio de 2026. A versão 2 dos novos modelos era obrigatória para novas impressões.", [
+    "em desacordo com a regra vigente, pois novas impressões devem usar a versão 2.",
+    "regular, desde que a gráfica mantenha cópia digital do modelo antigo.",
+    "regular, porque a obrigação da versão 2 vale apenas para prescrições eletrônicas.",
+    "regular, se os blocos forem utilizados exclusivamente em estabelecimentos privados.",
+    "regular, desde que as receitas sejam dispensadas antes de 30 de setembro de 2026."
+  ]],
+  ["197", 101, "Caso integrado: SNCR", "Uma equipe conclui que a prorrogação do SNCR eletrônico dispensou a adoção do novo modelo físico de receituário. Essa conclusão é:", "D", "A prorrogação alcançou apenas as funcionalidades eletrônicas do SNCR. Os modelos físicos novos permaneceram obrigatórios para impressões realizadas a partir de 18 de maio de 2026.", [
+    "correta, porque os prazos físico e eletrônico foram unificados pela RDC nº 1.028/2026.",
+    "correta, desde que a farmácia mantenha arquivo eletrônico das prescrições.",
+    "correta, apenas para medicamentos das listas C e D.",
+    "incorreta, pois a prorrogação eletrônica não alterou a exigência do modelo físico vigente.",
+    "incorreta somente se o estabelecimento atender pacientes do SUS."
+  ]],
+  ["198", 102, "Caso integrado: conferência", "Uma receita apresenta substância controlada e assinatura identificável, mas deixa sem preenchimento campo obrigatório do modelo vigente. A assinatura, isoladamente:", "B", "Todos os campos obrigatórios devem ser preenchidos. A existência de assinatura não sana automaticamente ausência de informação exigida pelo modelo.", [
+    "permite dispensar se o paciente for acompanhado regularmente pelo estabelecimento.",
+    "não dispensa a verificação e o preenchimento dos campos obrigatórios aplicáveis.",
+    "permite ao farmacêutico completar qualquer dado clínico com base no histórico do paciente.",
+    "autoriza dispensar uma única unidade e reter a receita para ajuste posterior.",
+    "substitui a necessidade de identificar o medicamento e sua apresentação."
+  ]],
+  ["199", 103, "Caso integrado: lista vigente", "Ao identificar discrepância entre o sistema interno e a lista vigente da Anvisa, a providência prioritária é:", "C", "O sistema interno precisa refletir a norma atual. Deve-se corrigir a parametrização, orientar a equipe e registrar a atualização, preservando a rastreabilidade das ações.", [
+    "manter ambos os cadastros até o próximo inventário anual para evitar mudanças abruptas.",
+    "dispensar conforme o sistema e corrigir a lista oficial utilizada na consulta.",
+    "corrigir e validar a parametrização interna com base na fonte oficial vigente.",
+    "suspender todas as dispensações do estabelecimento por prazo indeterminado.",
+    "usar a classificação menos restritiva até que o fornecedor atualize seu catálogo."
+  ]],
+  ["200", 104, "Caso integrado: finalidade do controle", "As exigências de receituário, retenção e registros de controlados devem ser compreendidas como medidas voltadas principalmente a:", "E", "As exigências formam uma cadeia de controle sanitário: reduzem risco de uso indevido, permitem rastrear dispensações e apoiam a fiscalização.", [
+    "ampliar a autonomia do estabelecimento para alterar prescrições incompletas.",
+    "substituir o acompanhamento clínico do paciente pelo controle documental.",
+    "reservar medicamentos controlados exclusivamente a hospitais públicos.",
+    "impedir qualquer dispensação a pacientes que utilizem medicamentos de uso contínuo.",
+    "promover rastreabilidade, uso seguro e fiscalização sanitária."
+  ]],
+  ["201", 105, "Portaria nº 344/1998 e atualizações", "A afirmação de que a Portaria nº 344/1998 permanece relevante, apesar das atualizações posteriores, é correta porque:", "A", "A Portaria segue como referência do controle especial, com anexos e regras alterados ou atualizados por atos posteriores. Atualizar não significa apagar toda a base normativa.", [
+    "o regime é continuamente atualizado por atos posteriores, sem que toda a base normativa seja automaticamente revogada.",
+    "as atualizações posteriores servem apenas para alterar a identidade visual dos formulários.",
+    "a Portaria não admite inclusão ou exclusão de substâncias em seus anexos.",
+    "cada estado aplica listas próprias sem relação com a Anvisa.",
+    "os modelos físicos novos eliminam a necessidade de consultar a classificação da substância."
+  ]],
+  ["202", 106, "Portaria nº 344/1998 e atualizações", "Para fins de prova e de prática profissional, a melhor forma de conciliar a Portaria nº 344/1998 com atualizações recentes é:", "D", "A leitura correta combina a estrutura da Portaria com as atualizações normativas e listas vigentes. Nenhuma fonte isolada e desatualizada deve substituir essa verificação.", [
+    "estudar apenas o texto original, porque atualizações não alcançam a rotina de dispensação.",
+    "considerar somente a cor do receituário como critério de classificação.",
+    "adotar a versão de lista que constava na primeira edição da Portaria.",
+    "usar a estrutura da Portaria juntamente com as atualizações e listas vigentes.",
+    "tratar toda substância de uso contínuo como pertencente à lista C1."
+  ]],
+  ["203", 107, "Portaria nº 344/1998 e atualizações", "Em caso de dúvida sobre se uma mudança de 2026 alterou modelo físico ou regra eletrônica do SNCR, o profissional deve:", "B", "Os atos de 2026 trataram temas distintos. A orientação oficial deve ser lida quanto ao seu objeto específico, sem expandir uma prorrogação eletrônica para requisitos físicos que permaneceram vigentes.", [
+    "presumir que qualquer prorrogação eletrônica suspende todos os requisitos físicos.",
+    "consultar o ato e a orientação oficial para identificar exatamente o alcance da mudança.",
+    "seguir a interpretação do fornecedor do sistema, sem necessidade de validação normativa.",
+    "utilizar o modelo antigo até que uma inspeção determine sua substituição.",
+    "considerar que mudanças de receituário alteram automaticamente todas as listas."
+  ]],
+  ["204", 108, "Portaria nº 344/1998 e atualizações", "Qual situação revela uso inadequado de uma informação histórica sobre controle especial?", "E", "Informação histórica pode ajudar a entender a evolução normativa, mas não pode prevalecer sobre a classificação e o modelo vigentes na data da dispensação.", [
+    "consultar a data de vigência de uma atualização antes de aplicá-la.",
+    "registrar no procedimento interno a fonte e a data da lista consultada.",
+    "distinguir a data de publicação do modelo da data de obrigatoriedade de impressão.",
+    "orientar a equipe sobre a mudança de uma substância entre listas.",
+    "dispensar conforme lista revogada porque ela era a adotada no treinamento antigo."
+  ]],
+  ["205", 109, "Portaria nº 344/1998 e atualizações", "O controle de medicamentos sujeitos a regime especial depende da atuação coordenada entre:", "C", "O controle é sistêmico: documento válido, análise farmacêutica, registros e estoque precisam estar coerentes. A falha de uma etapa prejudica a rastreabilidade do conjunto.", [
+    "prescritor e paciente, sem participação do estabelecimento dispensador.",
+    "fornecedor e fabricante, sem necessidade de conferência pela farmácia.",
+    "prescrição válida, análise farmacêutica, registros e controle de estoque.",
+    "sistema informatizado e caixa, independentemente de documento físico ou eletrônico.",
+    "órgão fiscalizador e paciente, dispensando a responsabilidade técnica."
+  ]],
+  ["206", 110, "Portaria nº 344/1998 e atualizações", "A alternativa que melhor descreve uma rotina segura de dispensação de controlados é:", "A", "A rotina segura começa antes da entrega: envolve conferir classificação, documento, dados obrigatórios, validade, quantidade e registros. A dispensação não deve ser tratada como mera baixa de estoque.", [
+    "conferir classificação, documento, dados obrigatórios, validade, quantidade e registros antes da dispensação.",
+    "realizar a baixa do estoque e conferir a prescrição somente se houver divergência de preço.",
+    "dispensar primeiro e completar os registros no fim do turno para evitar filas.",
+    "aceitar documento incompleto quando a substância for conhecida como de uso contínuo.",
+    "usar apenas a tarja da embalagem para definir o receituário necessário."
+  ]],
+  ["207", 111, "Portaria nº 344/1998 e atualizações", "Quando uma lista de substâncias é atualizada, a mudança deve alcançar também:", "D", "A atualização precisa chegar à prática: cadastros, procedimentos, treinamento e conferência. Apenas arquivar o ato normativo não torna a rotina aderente à nova regra.", [
+    "somente o material de divulgação externo do estabelecimento.",
+    "a identidade visual dos rótulos internos, sem outras mudanças operacionais.",
+    "apenas as receitas já retidas antes da entrada em vigor da atualização.",
+    "cadastros, procedimentos, treinamento da equipe e critérios de conferência.",
+    "exclusivamente o preço cadastrado para cada apresentação comercial."
+  ]],
+  ["208", 112, "Portaria nº 344/1998 e atualizações", "Em uma inspeção, a existência de formulários atuais, mas de cadastro interno desatualizado para uma substância, demonstra que:", "B", "A conformidade deve ser integral. O formulário correto não compensa falha de classificação no cadastro, que pode levar a dispensação, retenção ou registro incompatíveis.", [
+    "o estabelecimento está regular, porque o modelo de receituário prevalece sobre qualquer cadastro.",
+    "a atualização foi incompleta, pois o controle depende também da classificação correta no sistema.",
+    "a falha é irrelevante se o produto estiver armazenado sob chave.",
+    "a divergência pode ser corrigida apenas na próxima atualização anual de software.",
+    "o farmacêutico pode ignorar a lista vigente se a prescrição estiver legível."
+  ]],
+  ["209", 113, "Portaria nº 344/1998 e atualizações", "A consulta à fonte oficial é especialmente importante em questões que envolvem substâncias novas porque:", "C", "Substâncias e adendos podem ser incluídos, excluídos ou remanejados. A consulta oficial evita aplicar uma classificação que já não corresponde à versão vigente.", [
+    "as listas da Portaria são imutáveis depois de publicadas.",
+    "o nome comercial determina automaticamente a lista sanitária.",
+    "inclusões, exclusões e remanejamentos podem modificar o enquadramento aplicável.",
+    "todo medicamento novo é automaticamente classificado na lista B1.",
+    "as regras de controle dependem apenas do município onde ocorre a dispensação."
+  ]],
+  ["210", 114, "Portaria nº 344/1998 e atualizações", "Uma questão afirma que a alteração de prazo do SNCR eletrônico permitiu novas impressões de qualquer modelo físico antigo. O erro da afirmação está em:", "E", "A prorrogação de 2026 foi restrita às funcionalidades eletrônicas do SNCR. Ela não permitiu novas impressões de modelos físicos antigos nem afastou a versão vigente.", [
+    "considerar que todo receituário físico depende de sistema eletrônico para ser válido.",
+    "presumir que a Anvisa não pode atualizar modelos de documentos físicos.",
+    "confundir a data de publicação da versão 2 com sua data de obrigatoriedade.",
+    "supor que a Portaria nº 344/1998 perdeu vigência integral em 2026.",
+    "estender indevidamente uma prorrogação eletrônica à impressão de modelos físicos antigos."
+  ]]
+].map(([id, number, topic, stem, answer, explanation, options]) => ({
+  id: `farmacia-${id}`,
+  subjectId: "farmacia",
+  number,
+  topic,
+  area: "Portaria SVS/MS nº 344/1998 e atualizações 2026",
+  stem,
+  options: options.map((text, index) => ({ letter: "ABCDE"[index], text })),
+  answer,
+  explanation
+}));
+
+// Mantém a sequência de Farmácia organizada por tema sem alterar os IDs já
+// usados para registrar o histórico local de estudo.
+questionBank.questions
+  .filter(question => question.subjectId === "farmacia" && question.number >= 65)
+  .forEach(question => { question.number += 50; });
+questionBank.questions.push(...portaria344LoteUm);
+const farmaciaOrdenada = questionBank.questions
+  .filter(question => question.subjectId === "farmacia")
+  .sort((a, b) => a.number - b.number);
+let indiceFarmacia = 0;
+questionBank.questions = questionBank.questions.map(question =>
+  question.subjectId === "farmacia" ? farmaciaOrdenada[indiceFarmacia++] : question
+);
+questionBank.generatedAt = "2026-11-04T12:00:00.000Z";
+questionBank.review.portaria344LoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 65);

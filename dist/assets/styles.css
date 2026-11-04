@@ -53,7 +53,7 @@ button:disabled { cursor: not-allowed; }
 .brand strong { min-width: 132px; display: grid; justify-items: start; gap: 7px; font-weight: 800; line-height: .9; text-transform: none; }
 .brand strong span { font-size: 31px; letter-spacing: -.04em; }
 .brand strong small { justify-self: center; margin-top: 1px; font-size: 17px; font-weight: 750; letter-spacing: .04em; }
-.all-might-hair { width: min(320px, 22vw); height: 82px; display: block; object-fit: contain; transform: translateY(-6px); }
+.all-might-hair { width: min(350px, 24vw); height: 90px; display: block; object-fit: contain; transform: translateY(-7px); }
 .header-actions { justify-self: end; display: flex; align-items: center; gap: 24px; }
 .offline-state { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .09em; }
 .offline-state i { width: 8px; height: 8px; border-radius: 50%; background: var(--correct); box-shadow: 0 0 0 5px color-mix(in srgb, var(--correct) 16%, transparent); }

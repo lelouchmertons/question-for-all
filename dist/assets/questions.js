@@ -16920,6 +16920,170 @@ Object.entries(cuidadoDistratoresRevisados).forEach(([id, distractors]) => {
   distractors.splice("ABCDE".indexOf(question.answer), 0, correct);
   question.options = distractors.map((text, index) => ({ letter: "ABCDE"[index], text }));
 });
+const cuidadoDistratoresPorTema = {
+  "Monitoramento": [
+    "encerrar o acompanhamento após a primeira resposta favorável, pois novos problemas deixam de ser prováveis.",
+    "basear a decisão apenas no relato de uma dose isolada, sem relacioná-la ao esquema completo.",
+    "priorizar a troca imediata do produto antes de verificar uso, acesso e possíveis interações.",
+    "restringir o seguimento aos medicamentos de maior custo, independentemente do risco clínico."
+  ],
+  "Armazenamento domiciliar": [
+    "manter todos os medicamentos no banheiro para facilitar a lembrança das doses.",
+    "transferir comprimidos para recipientes sem identificação quando a embalagem original ocupar espaço.",
+    "usar aparência e cheiro como únicos critérios para decidir se o produto permanece adequado.",
+    "guardar medicamentos de uso infantil em local de acesso fácil para a criança responsável pela dose."
+  ],
+  "Uso racional": [
+    "manter o tratamento por prazo indefinido sempre que houver benefício percebido pelo usuário.",
+    "escolher a apresentação mais disponível como critério principal e deixar a necessidade clínica para avaliação posterior.",
+    "adicionar produtos para prevenir desconfortos possíveis antes de avaliar indicação e risco.",
+    "considerar que a dose habitual dispensa revisão em pessoas com condições clínicas diferentes."
+  ],
+  "Cuidado centrado": [
+    "definir a conduta com base exclusiva no protocolo, sem abrir espaço para barreiras relatadas pela pessoa.",
+    "atribuir a baixa adesão à falta de colaboração antes de conhecer a experiência do usuário.",
+    "priorizar a solução mais simples para o serviço, mesmo que ela não seja viável na rotina da pessoa.",
+    "concentrar a conversa na entrega do medicamento e deixar objetivos terapêuticos para outro momento."
+  ],
+  "Encaminhamento": [
+    "manter a situação no atendimento farmacêutico mesmo quando houver sinal que exige avaliação clínica.",
+    "encaminhar o usuário sem registrar o motivo, as informações disponíveis ou as orientações dadas.",
+    "substituir o encaminhamento por recomendação genérica de retorno quando possível, sem analisar urgência.",
+    "retardar a comunicação com a equipe até que o problema se repita em novo atendimento."
+  ],
+  "Interações": [
+    "presumir que produtos isentos de prescrição não alteram a segurança de tratamentos em curso.",
+    "avaliar cada medicamento isoladamente, sem relacionar dose, tempo de uso e condição clínica.",
+    "orientar interrupção de todos os medicamentos envolvidos antes de verificar gravidade e prescrição.",
+    "considerar a interação irrelevante quando o usuário não relata sintoma no momento da dispensação."
+  ],
+  "Polifarmácia": [
+    "manter toda a lista de medicamentos porque a presença de vários prescritores confirma cada indicação.",
+    "revisar somente o medicamento iniciado mais recentemente e ignorar os demais tratamentos.",
+    "agrupar produtos pelo nome comercial para decidir quais podem ser retirados do esquema.",
+    "simplificar o tratamento retirando itens de forma autônoma, sem avaliar finalidade e risco."
+  ],
+  "Idoso": [
+    "presumir que a orientação escrita será suficiente quando a dose prescrita estiver correta.",
+    "substituir o medicamento por apresentação líquida sem confirmar estabilidade, dose e prescrição.",
+    "tratar dificuldade de abrir embalagem como motivo para fracionar ou triturar qualquer produto.",
+    "manter esquema complexo sem avaliar visão, memória, destreza ou apoio disponível."
+  ],
+  "Pediatria": [
+    "calcular a dose pelo volume mais simples de medir, independentemente de peso e concentração.",
+    "usar colher doméstica como padrão, pois pequenas variações não alteram o tratamento infantil.",
+    "arredondar toda dose para o valor inteiro mais próximo antes de conferir a prescrição.",
+    "orientar o cuidador a repetir a dose se parte do medicamento for derramada, sem nova avaliação."
+  ],
+  "Gestação": [
+    "recomendar suspensão imediata de qualquer medicamento de uso contínuo até a próxima consulta.",
+    "orientar uso de produto isento de prescrição como alternativa segura em toda situação de dúvida.",
+    "considerar que a gestação elimina a necessidade de avaliar benefício, risco e condição clínica.",
+    "sugerir redução de dose por conta própria para diminuir a exposição ao medicamento."
+  ],
+  "Adversidades": [
+    "atribuir todo sintoma ao medicamento mais recente antes de avaliar outras causas e a cronologia.",
+    "registrar o evento somente se houver confirmação definitiva de causalidade por especialista.",
+    "manter a mesma orientação diante de sinal grave, pois a notificação pode ser feita depois.",
+    "considerar que a ausência de dano imediato torna desnecessária a análise do evento."
+  ],
+  "Dispensação remota": [
+    "enviar o produto sem confirmação de destinatário, condições de entrega ou meio de orientação.",
+    "usar qualquer embalagem de transporte quando o percurso for curto, independentemente do produto.",
+    "substituir contato orientado por mensagem automática, mesmo diante de dúvida relevante do usuário.",
+    "despachar medicamento sensível após simples conferência do endereço, sem avaliar a condição logística."
+  ],
+  "Documentação": [
+    "registrar apenas a quantidade entregue, pois as demais informações dificultam o fluxo do serviço.",
+    "preencher a intervenção ao final do mês, com base na memória da equipe.",
+    "omitir a orientação prestada quando não houver alteração de medicamento na mesma consulta.",
+    "usar anotações livres sem identificação de data, profissional ou motivo da intervenção."
+  ],
+  "Sigilo": [
+    "compartilhar informações do tratamento com acompanhantes presentes para tornar o atendimento mais rápido.",
+    "conversar sobre condições de saúde em área de espera quando a farmácia estiver movimentada.",
+    "usar dados clínicos de usuários em exemplos de treinamento sem avaliar necessidade de identificação.",
+    "fornecer detalhes do tratamento a quem solicita a informação, desde que conheça o usuário."
+  ],
+  "Educação": [
+    "oferecer material padronizado e considerar a ação concluída independentemente de dúvidas posteriores.",
+    "medir a qualidade da orientação pela quantidade de informações transmitidas no encontro.",
+    "substituir demonstração e diálogo por termos técnicos para preservar precisão da mensagem.",
+    "repetir o mesmo conteúdo a todos os grupos, sem relacioná-lo a situações de uso cotidiano."
+  ],
+  "Seguimento": [
+    "tratar a primeira orientação como etapa suficiente, mesmo quando houver risco de dificuldade posterior.",
+    "avaliar somente se o medicamento foi retirado, sem explorar resultado, segurança ou barreiras.",
+    "presumir compreensão porque a pessoa não formulou perguntas durante a dispensação.",
+    "encaminhar toda dúvida para outro serviço antes de revisar a orientação já oferecida."
+  ],
+  "Casos clínicos": [
+    "orientar alteração imediata do tratamento com base em uma informação isolada, sem conferência adicional.",
+    "considerar que a embalagem ou o nome comercial bastam para definir a conduta diante do caso.",
+    "manter a mesma recomendação mesmo quando a informação relatada indicar novo risco clínico.",
+    "deixar a decisão para o próximo atendimento, independentemente da gravidade ou da incerteza apresentada."
+  ],
+  "Síntese": [
+    "limitar a dispensação à entrega correta do produto, deixando comunicação e registro fora do processo.",
+    "priorizar rapidez de atendimento como único indicador de qualidade do cuidado farmacêutico.",
+    "separar a orientação do acompanhamento, pois cada etapa deve ser conduzida sem articulação.",
+    "considerar que o cuidado termina quando o medicamento deixa o balcão da farmácia."
+  ]
+};
+questionBank.questions
+  .filter(question => question.subjectId === "farmacia" && question.number >= 365 && question.number <= 404)
+  .forEach(question => {
+    const base = cuidadoDistratoresPorTema[question.topic];
+    const shift = question.number % base.length;
+    const distractors = [...base.slice(shift), ...base.slice(0, shift)];
+    const correct = question.options.find(option => option.letter === question.answer).text;
+    distractors.splice("ABCDE".indexOf(question.answer), 0, correct);
+    question.options = distractors.map((text, index) => ({ letter: "ABCDE"[index], text }));
+  });
+const casosClinicosDistratoresRevisados = {
+  397: [
+    "presumir adaptação ao tratamento e manter o esquema sem avaliar a intensidade da sonolência.",
+    "orientar interrupção abrupta do medicamento antes de conhecer indicação, dose e risco clínico.",
+    "atribuir o sintoma exclusivamente à idade, sem revisar a cronologia ou outros produtos em uso.",
+    "adicionar um estimulante de venda livre para compensar o desconforto relatado."
+  ],
+  398: [
+    "manter os dois produtos porque embalagens e nomes comerciais diferentes indicam tratamentos distintos.",
+    "suspender ambos os medicamentos até a próxima consulta, sem examinar a prescrição vigente.",
+    "orientar alternância entre os produtos em dias consecutivos para reduzir o risco de excesso.",
+    "considerar a duplicidade irrelevante quando cada item foi obtido em estabelecimento diferente."
+  ],
+  399: [
+    "interpretar a abreviatura pelo uso mais frequente no serviço e registrar a decisão posteriormente.",
+    "dispensar a menor dose comercial disponível até que o prescritor seja localizado.",
+    "substituir a abreviatura por uma orientação verbal genérica ao usuário.",
+    "usar a receita anterior como referência, mesmo que o tratamento atual seja diferente."
+  ],
+  400: [
+    "orientar a divisão quando o comprimido apresentar sulco, sem verificar se a formulação permite fracionamento.",
+    "sugerir trituração prévia para tornar as partes mais uniformes na administração.",
+    "recomendar que a pessoa ajuste a dose pelo tamanho visual das metades obtidas.",
+    "manter a orientação anterior porque a alteração de apresentação não interfere no modo de uso."
+  ],
+  401: [
+    "recomendar retorno imediato ao esquema anterior, sem explorar o efeito relatado e sua gravidade.",
+    "atribuir o uso irregular a falta de interesse antes de perguntar sobre a experiência com o medicamento.",
+    "orientar redução de dose por iniciativa própria para evitar novo desconforto.",
+    "substituir o medicamento por outro da mesma classe sem avaliar indicação ou necessidade de encaminhamento."
+  ],
+  402: [
+    "informar que o medicamento é equivalente e presumir que a pessoa manterá a mesma rotina sem orientação adicional.",
+    "orientar nova dose de acordo com a cor da embalagem, independentemente da concentração informada.",
+    "preservar a orientação da apresentação anterior mesmo quando a forma de uso tiver mudado.",
+    "dispensar o produto sem conferir se o usuário reconheceu a apresentação recebida."
+  ]
+};
+Object.entries(casosClinicosDistratoresRevisados).forEach(([number, distractors]) => {
+  const question = questionBank.questions.find(item => item.subjectId === "farmacia" && item.number === Number(number));
+  const correct = question.options.find(option => option.letter === question.answer).text;
+  distractors.splice("ABCDE".indexOf(question.answer), 0, correct);
+  question.options = distractors.map((text, index) => ({ letter: "ABCDE"[index], text }));
+});
 const segurancaSeeds = [
 ["LASA","A identificação de medicamentos LASA deve priorizar:","diferenciação visual, separação física e conferência reforçada antes da dispensação."],
 ["LASA","Tall man lettering é usado para:","destacar partes diferentes de nomes semelhantes e reduzir risco de confusão visual."],

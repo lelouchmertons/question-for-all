@@ -77,7 +77,7 @@ button:disabled { cursor: not-allowed; }
 .number-field input::placeholder { color: rgba(255,255,255,.6); }
 .setup-grid small { display: block; margin-top: 7px; color: #d8e3f8; font-size: 11px; line-height: 1.4; }
 .setup-message { min-height: 22px; margin: 20px 0 0; color: #ffe178; font-size: 13px; }
-.setup-actions { margin-top: 28px; padding-top: 0; display: flex; align-items: stretch; justify-content: center; gap: 12px; }
+.setup-actions { margin-top: 20px; padding-top: 0; display: flex; align-items: stretch; justify-content: center; gap: 12px; }
 .study-setup .primary-button, .study-setup .secondary-button { min-height: 62px; padding-inline: 28px; }
 .primary-button, .secondary-button { min-height: 54px; padding: 0 22px; border: 1px solid transparent; font-size: 12px; font-weight: 850; letter-spacing: .11em; }
 .study-setup .primary-button { background: #fffdf4; color: #0b1a4a; }

@@ -29,7 +29,7 @@ export const questionBank = {
       "id": "farmacia",
       "label": "Farmácia",
       "short": "Farmácia",
-      "count": 600
+      "count": 650
     }
   ],
   "questions": [
@@ -16941,6 +16941,22 @@ const pkTemplates=[
 ];
 const pkLoteUm=pkConcepts.flatMap(([topic,correct,wrong],c)=>pkTemplates.map(([model,answer],v)=>{const stem=model.replace("{topic}",topic);const base=[wrong,`${topic} não sofre influência de características do paciente ou de outros medicamentos.`,`informações de ${topic} dispensam avaliação clínica e acompanhamento.`,`${topic} pode ser interpretada sem considerar dose, via ou tempo de uso.`,`a avaliação de ${topic} substitui a conferência da prescrição e do contexto terapêutico.`];const options=[base[v],base[(v+1)%5],base[(v+2)%5],base[(v+3)%5]];options.splice("ABCDE".indexOf(answer),0,correct);return{id:`farmacia-${551+c*5+v}`,subjectId:"farmacia",number:455+c*5+v,topic,area:"Farmacocinética e farmacodinâmica",stem,options:options.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:`A resposta correta descreve ${topic}: ${correct} A interpretação deve sempre considerar dose, via, tempo e contexto clínico.`};}));
 questionBank.questions.filter(q=>q.subjectId==="farmacia"&&q.number>=455).forEach(q=>{q.number+=50;});questionBank.questions.push(...pkLoteUm);
+const fmt=n=>String(Number.isInteger(n)?n:Number(n.toFixed(2))).replace(".",",");
+const numericOptions=(correct, candidates, answer)=>{const values=[...new Set(candidates.map(fmt).filter(v=>v!==fmt(correct)))].slice(0,4);while(values.length<4)values.push(fmt(correct+values.length+1));values.splice("ABCDE".indexOf(answer),0,fmt(correct));return values;};
+const calcFactories=[
+ i=>{const peso=52+i*6,dose=7+i;const r=peso*dose;return["Dose por peso",`Prescrevem-se ${dose} mg/kg para pessoa com ${peso} kg. Qual é a dose total em mg?`,r,[peso+dose,peso*dose/10,r+100,r-100],`Multiplica-se ${peso} por ${dose}: ${r} mg.`];},
+ i=>{const g=1+i;const r=g*1000;return["Conversão de unidades",`Uma dose contém ${g} g de fármaco. Quantos mg ela corresponde?`,r,[g*100,r/10,r+500,r-500],`Cada grama equivale a 1.000 mg; portanto, ${g} g correspondem a ${r} mg.`];},
+ i=>{const mg=250+i*50,ml=5;const r=mg/ml;return["Concentração",`Uma solução contém ${mg} mg em ${ml} mL. Qual é a concentração em mg/mL?`,r,[mg*ml,mg/ml+5,mg/ml-10,ml/mg],`Divide-se a quantidade de fármaco pelo volume: ${mg}/${ml} = ${r} mg/mL.`];},
+ i=>{const conc=20+i*5,dose=80+i*20;const r=dose/conc;return["Volume a administrar",`A solução tem ${conc} mg/mL e a dose prescrita é ${dose} mg. Qual volume, em mL, deve ser administrado?`,r,[dose*conc,dose/5,r+2,r-2],`Volume = dose/concentração: ${dose}/${conc} = ${r} mL.`];},
+ i=>{const c1=20+i*10,v2=100+i*50,c2=5+i*5;const r=c2*v2/c1;return["Diluição",`Para preparar ${v2} mL a ${c2}%, usando solução a ${c1}%, qual volume da solução concentrada é necessário, em mL?`,r,[c1*v2/c2,c2/c1,r+10,r-10],`Aplica-se C1×V1=C2×V2; V1=(${c2}×${v2})/${c1}=${r} mL.`];},
+ i=>{const vol=500+i*100,fator=20,time=240+i*60;const r=vol*fator/time;return["Gotejamento",`Infundir ${vol} mL em ${time} minutos com equipo de ${fator} gotas/mL. Quantas gotas/minuto?`,r,[vol/time,vol*fator,time/vol,r+5],`Gotas/min = volume × fator ÷ tempo: ${vol}×${fator}/${time}=${r}.`];},
+ i=>{const vol=500+i*100,h=4+i;const r=vol/h;return["Velocidade de infusão",`Uma infusão de ${vol} mL deve terminar em ${h} horas. Qual velocidade em mL/h?`,r,[vol*h,vol/h/2,h/vol,r+20],`Divide-se o volume pelo tempo: ${vol}/${h}=${r} mL/h.`];},
+ i=>{const pct=1+i,vol=100+i*50;const r=pct*vol/100;return["Porcentagem",`Quantos gramas de soluto são necessários para preparar ${vol} mL de solução a ${pct}% (m/v)?`,r,[pct*vol,pct/vol,r+1,r+2],`${pct}% m/v significa ${pct} g em 100 mL; para ${vol} mL, são ${r} g.`];},
+ i=>{const estoque=300+i*100,uso=20+i*5;const r=estoque/uso;return["Cobertura de estoque",`Há ${estoque} unidades em estoque e consumo previsto de ${uso} unidades/dia. Quantos dias de cobertura existem?`,r,[estoque*uso,uso/estoque,r+5,r-5],`Cobertura = estoque/consumo: ${estoque}/${uso}=${r} dias.`];},
+ i=>{const dose=250+i*50,vezes=2+i;const r=dose*vezes;return["Dose diária",`A prescrição determina ${dose} mg por tomada, ${vezes} vezes ao dia. Qual é a dose diária total em mg?`,r,[dose+vezes,dose/vezes,r+100,r-100],`Multiplica-se a dose por tomada pela frequência: ${dose}×${vezes}=${r} mg/dia.`];}
+];
+const calculosLoteUm=calcFactories.flatMap((factory,c)=>Array.from({length:5},(_,v)=>{const [topic,stem,correct,candidates,explanation]=factory(v);const answer="BECDA"[(c*5+v)%5];return{id:`farmacia-${601+c*5+v}`,subjectId:"farmacia",number:505+c*5+v,topic,area:"Cálculos farmacêuticos",stem,options:numericOptions(correct,candidates,answer).map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation};}));
+questionBank.questions.filter(q=>q.subjectId==="farmacia"&&q.number>=505).forEach(q=>{q.number+=50;});questionBank.questions.push(...calculosLoteUm);
 const farmaciaOrdenadaQuatro = questionBank.questions
   .filter(question => question.subjectId === "farmacia")
   .sort((a, b) => a.number - b.number);
@@ -16955,3 +16971,4 @@ questionBank.review.susPnafLoteUmReviewed = Array.from({ length: 50 }, (_, index
 questionBank.review.cuidadoFarmaceuticoLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 355);
 questionBank.review.segurancaLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 405);
 questionBank.review.pkLoteUmReviewed = Array.from({length:50},(_,index)=>index+455);
+questionBank.review.calculosLoteUmReviewed = Array.from({length:50},(_,index)=>index+505);

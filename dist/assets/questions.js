@@ -17171,7 +17171,151 @@ const pkConcepts=[
 const pkTemplates=[
 ["O conceito de {topic} refere-se a:","A"],["Em um caso clínico, {topic} ajuda a explicar:","B"],["A interpretação correta sobre {topic} é:","C"],["No acompanhamento farmacoterapêutico, {topic} merece atenção porque:","D"],["Uma afirmação tecnicamente adequada sobre {topic} é:","E"]
 ];
-const pkLoteUm=pkConcepts.flatMap(([topic,correct,wrong],c)=>pkTemplates.map(([model,answer],v)=>{const stem=model.replace("{topic}",topic);const base=[wrong,`${topic} não sofre influência de características do paciente ou de outros medicamentos.`,`informações de ${topic} dispensam avaliação clínica e acompanhamento.`,`${topic} pode ser interpretada sem considerar dose, via ou tempo de uso.`,`a avaliação de ${topic} substitui a conferência da prescrição e do contexto terapêutico.`];const options=[base[v],base[(v+1)%5],base[(v+2)%5],base[(v+3)%5]];options.splice("ABCDE".indexOf(answer),0,correct);return{id:`farmacia-${551+c*5+v}`,subjectId:"farmacia",number:455+c*5+v,topic,area:"Farmacocinética e farmacodinâmica",stem,options:options.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:`A resposta correta descreve ${topic}: ${correct} A interpretação deve sempre considerar dose, via, tempo e contexto clínico.`};}));
+const pkDistratores = {
+  "Absorção": [
+    "a distribuição do fármaco entre plasma e tecidos depois de já alcançar a circulação.",
+    "a transformação metabólica do fármaco antes ou depois de sua ação no organismo.",
+    "a remoção de fármaco inalterado do organismo por processos de excreção.",
+    "a ligação do fármaco a proteínas plasmáticas durante o transporte sanguíneo.",
+    "a interação do fármaco com receptor responsável por produzir o efeito farmacológico."
+  ],
+  "Biodisponibilidade": [
+    "a velocidade com que se observa a concentração máxima, independentemente da quantidade absorvida.",
+    "a proporção de fármaco ligada a proteínas plasmáticas após sua distribuição.",
+    "a quantidade de medicamento que permanece armazenada em tecidos periféricos.",
+    "a fração da dose eliminada inalterada pelos rins durante um intervalo de tempo.",
+    "a quantidade de metabólitos formados depois da passagem pelo fígado."
+  ],
+  "Primeira passagem": [
+    "a eliminação renal do medicamento depois que ele já produziu efeito sistêmico.",
+    "a distribuição do fármaco para tecidos periféricos após administração intravenosa.",
+    "a ligação reversível do fármaco às proteínas presentes no plasma.",
+    "a conversão de parte da dose em metabólitos após excreção urinária.",
+    "a resposta inicial de um receptor diante do primeiro contato com um agonista."
+  ],
+  "Distribuição": [
+    "a passagem do fármaco administrado por via oral através da mucosa intestinal.",
+    "a conversão enzimática do fármaco em metabólitos antes da excreção.",
+    "a remoção do medicamento do plasma por filtração, secreção ou reabsorção renal.",
+    "a fração da dose oral que chega inalterada à circulação sistêmica.",
+    "a ativação de receptor que produz o efeito farmacológico desejado."
+  ],
+  "Ligação proteica": [
+    "a taxa com que o fármaco é eliminado pelos rins em condições de função renal preservada.",
+    "a transformação obrigatória de todo fármaco em metabólito inativo antes do efeito.",
+    "a passagem inicial do medicamento do local de administração para o sangue.",
+    "a quantidade administrada que necessariamente alcança o receptor farmacológico.",
+    "a capacidade de um antagonista produzir resposta máxima no sistema biológico."
+  ],
+  "Metabolismo": [
+    "a passagem do medicamento do local de administração para a circulação sistêmica.",
+    "a distribuição reversível de moléculas já circulantes entre sangue e tecidos.",
+    "a ligação de fármaco livre a proteínas plasmáticas sem alteração química.",
+    "a eliminação exclusiva de medicamento inalterado pela urina.",
+    "a ocupação de receptor que impede a ação de um agonista no mesmo alvo."
+  ],
+  "Eliminação renal": [
+    "a disponibilidade da dose oral antes da absorção pelo trato gastrointestinal.",
+    "a transformação hepática que sempre aumenta a atividade do fármaco.",
+    "a distribuição do medicamento para compartimentos teciduais profundos.",
+    "a ligação do medicamento a proteínas que impede qualquer filtração glomerular.",
+    "a ativação de receptor que explica a intensidade máxima do efeito terapêutico."
+  ],
+  "Meia-vida": [
+    "o tempo necessário para que todo o fármaco administrado seja eliminado do organismo.",
+    "o intervalo fixo entre administração e início de ação para qualquer medicamento.",
+    "a duração da validade do produto definida na embalagem comercial.",
+    "a quantidade de medicamento necessária para atingir concentração terapêutica inicial.",
+    "a fração da dose que alcança a circulação sistêmica após administração oral."
+  ],
+  "Agonista": [
+    "ocupa o receptor sem produzir resposta farmacológica, impedindo a ação de outros ligantes.",
+    "reduz a concentração plasmática por aumentar diretamente a filtração renal.",
+    "transforma o fármaco em metabólito antes de ele se ligar ao alvo.",
+    "aumenta a ligação proteica para impedir a distribuição aos tecidos.",
+    "remove moléculas do organismo sem interagir com receptor ou alvo farmacológico."
+  ],
+  "Antagonista": [
+    "ativa o receptor com resposta intrínseca máxima, independentemente da concentração.",
+    "aumenta a absorção intestinal de qualquer medicamento administrado por via oral.",
+    "converte automaticamente o agonista em metabólito inativo no plasma.",
+    "acelera a eliminação renal por mecanismo independente da função do rim.",
+    "eleva a biodisponibilidade por alterar a ligação a proteínas plasmáticas."
+  ]
+};
+const pkCorretas = {
+  "Absorção": [
+    "a passagem do fármaco do local de administração para a circulação sistêmica.",
+    "pode variar conforme via de administração, formulação, motilidade e condições do trato gastrointestinal.",
+    "influencia a velocidade e a extensão com que o fármaco fica disponível para produzir efeito sistêmico.",
+    "pode ser alterada por interações que modifiquem pH, motilidade ou ligação do medicamento no trato gastrointestinal.",
+    "é contornada quanto à etapa gastrointestinal quando o medicamento é administrado por via intravenosa."
+  ],
+  "Biodisponibilidade": [
+    "a fração da dose que alcança a circulação sistêmica inalterada.",
+    "tem a via intravenosa como referência de disponibilidade sistêmica integral.",
+    "pode ser reduzida por metabolismo pré-sistêmico após administração oral.",
+    "pode mudar com a formulação, a dissolução e condições que alterem a absorção do produto.",
+    "relaciona-se à exposição sistêmica do fármaco, frequentemente avaliada por parâmetros como a área sob a curva."
+  ],
+  "Primeira passagem": [
+    "a metabolização pré-sistêmica que pode reduzir a biodisponibilidade oral.",
+    "ocorre principalmente na parede intestinal e no fígado antes que parte da dose oral alcance a circulação sistêmica.",
+    "tem relevância maior para medicamentos administrados por via oral do que por via intravenosa.",
+    "pode justificar exposição sistêmica menor após administração oral de uma mesma dose nominal.",
+    "pode ser influenciada por alterações enzimáticas que modifiquem o metabolismo intestinal ou hepático."
+  ],
+  "Distribuição": [
+    "a passagem reversível do fármaco entre sangue e tecidos.",
+    "é influenciada por perfusão tecidual, lipossolubilidade, permeabilidade e ligação a proteínas.",
+    "pode ser descrita pelo volume aparente de distribuição, parâmetro que relaciona quantidade corporal e concentração plasmática.",
+    "tende a ser mais extensa quando o fármaco alcança tecidos além do compartimento vascular.",
+    "afeta a velocidade com que o medicamento se aproxima do local em que exercerá seu efeito."
+  ],
+  "Ligação proteica": [
+    "pode alterar a fração livre disponível para distribuição e efeito.",
+    "deixa a fração não ligada mais apta a atravessar membranas e interagir com alvos farmacológicos.",
+    "pode ser modificada quando há alterações importantes de proteínas plasmáticas, como a albumina.",
+    "exige interpretação clínica quando há possibilidade de deslocamento relevante entre fármacos ligados às mesmas proteínas.",
+    "não torna o fármaco permanentemente indisponível, pois a ligação costuma ser reversível."
+  ],
+  "Metabolismo": [
+    "pode transformar o fármaco em metabólitos mais ou menos ativos.",
+    "ocorre com frequência no fígado, embora também possa envolver outros tecidos e enzimas.",
+    "pode aumentar a polaridade de moléculas e facilitar sua eliminação posterior.",
+    "pode ser inibido ou induzido por outros medicamentos, alterando a exposição ao fármaco.",
+    "pode ativar pró-fármacos cuja forma administrada ainda não apresenta a atividade terapêutica principal."
+  ],
+  "Eliminação renal": [
+    "pode ser modificada por função renal, filtração, secreção e reabsorção.",
+    "depende da filtração da fração livre do fármaco no glomérulo.",
+    "pode envolver secreção tubular ativa para determinados medicamentos.",
+    "pode ser influenciada por condições que modifiquem reabsorção tubular e pH urinário.",
+    "pode exigir ajuste de dose ou intervalo quando a função renal está significativamente reduzida."
+  ],
+  "Meia-vida": [
+    "o tempo necessário para redução aproximada de metade da concentração no organismo.",
+    "é relativamente constante em cinética de primeira ordem, enquanto os processos de eliminação permanecem proporcionais à concentração.",
+    "ajuda a estimar o intervalo entre doses e o potencial de acúmulo do medicamento.",
+    "contribui para prever que o estado de equilíbrio costuma ser aproximado após várias meias-vidas em cinética linear.",
+    "pode se prolongar quando a eliminação do fármaco diminui por alteração renal, hepática ou interação relevante."
+  ],
+  "Agonista": [
+    "produz resposta ao ativar receptor ou alvo farmacológico.",
+    "liga-se ao receptor e possui atividade intrínseca capaz de desencadear efeito no sistema.",
+    "pode ser parcial quando sua eficácia máxima é menor que a de um agonista pleno no mesmo sistema.",
+    "tem sua potência relacionada à concentração necessária para produzir determinado efeito.",
+    "tem sua eficácia relacionada ao efeito máximo que consegue produzir após interagir com o alvo."
+  ],
+  "Antagonista": [
+    "reduz ou bloqueia a resposta de um agonista em seu alvo.",
+    "pode ocupar o receptor sem ativá-lo de modo a impedir ou diminuir o efeito do agonista.",
+    "competitivo pode deslocar a curva concentração-resposta do agonista quando a interação é reversível.",
+    "irreversível pode reduzir a resposta máxima disponível ao agonista em determinadas condições.",
+    "não precisa produzir efeito agonista próprio para modificar a resposta observada no sistema."
+  ]
+};
+const pkLoteUm=pkConcepts.flatMap(([topic],c)=>pkTemplates.map(([model,answer],v)=>{const stem=model.replace("{topic}",topic);const correct=pkCorretas[topic][v];const base=pkDistratores[topic];const options=[base[v],base[(v+1)%5],base[(v+2)%5],base[(v+3)%5]];options.splice("ABCDE".indexOf(answer),0,correct);return{id:`farmacia-${551+c*5+v}`,subjectId:"farmacia",number:455+c*5+v,topic,area:"Farmacocinética e farmacodinâmica",stem,options:options.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:`A resposta correta descreve ${topic}: ${correct} A interpretação deve considerar dose, via, tempo e contexto clínico.`};}));
 questionBank.questions.filter(q=>q.subjectId==="farmacia"&&q.number>=455).forEach(q=>{q.number+=50;});questionBank.questions.push(...pkLoteUm);
 const fmt=n=>String(Number.isInteger(n)?n:Number(n.toFixed(2))).replace(".",",");
 const numericOptions=(correct, candidates, answer)=>{const values=[...new Set(candidates.map(fmt).filter(v=>v!==fmt(correct)))].slice(0,4);while(values.length<4)values.push(fmt(correct+values.length+1));values.splice("ABCDE".indexOf(answer),0,fmt(correct));return values;};

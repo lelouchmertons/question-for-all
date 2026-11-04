@@ -29,7 +29,7 @@ export const questionBank = {
       "id": "farmacia",
       "label": "Farmácia",
       "short": "Farmácia",
-      "count": 450
+      "count": 500
     }
   ],
   "questions": [
@@ -16784,6 +16784,74 @@ questionBank.questions
   .filter(question => question.subjectId === "farmacia" && question.number >= 305)
   .forEach(question => { question.number += 50; });
 questionBank.questions.push(...susPnafLoteUm);
+const cuidadoSeeds = [
+["Dispensação","Ao dispensar medicamento de uso contínuo, a prioridade é confirmar a compreensão do esquema e orientar o uso seguro.","confirmar dados relevantes e explicar como utilizar, conservar e acompanhar o tratamento."],
+["Dispensação","Havendo dúvida relevante na prescrição, a conduta mais segura é:","interromper a dispensação daquele ponto e buscar esclarecimento com o prescritor ou serviço responsável."],
+["Adesão","Um usuário relata que esquece doses com frequência. A primeira abordagem adequada é:","investigar as causas do esquecimento e construir estratégia factível com o usuário."],
+["Adesão","Em tratamento crônico, baixa adesão não deve ser interpretada automaticamente como:","falta de interesse, pois barreiras clínicas, sociais, cognitivas e organizacionais precisam ser exploradas."],
+["Conciliação","A conciliação medicamentosa busca principalmente:","comparar listas de medicamentos e identificar discrepâncias relevantes nas transições do cuidado."],
+["Conciliação","Na admissão hospitalar, uma lista completa de medicamentos de uso domiciliar ajuda a:","reduzir omissões, duplicidades e interações não intencionais."],
+["Segurança","Diante de dois medicamentos com nomes semelhantes, a dispensação deve incluir:","conferência reforçada de nome, dose, apresentação e destinatário."],
+["Segurança","Uma orientação sobre reação adversa deve informar:","quais sinais exigem atenção e onde buscar ajuda, conforme o medicamento e o risco."],
+["Orientação","A técnica de pedir que o usuário repita com suas palavras a orientação serve para:","verificar compreensão e corrigir falhas antes do encerramento do atendimento."],
+["Orientação","Orientação farmacêutica efetiva deve usar linguagem:","clara, adaptada ao usuário e suficiente para orientar a decisão e o uso."],
+["Monitoramento","O monitoramento farmacoterapêutico é indicado especialmente quando:","há risco de problema relacionado a medicamentos ou necessidade de acompanhar resultados e segurança."],
+["Monitoramento","Ao identificar possível inefetividade terapêutica, o farmacêutico deve:","avaliar adesão, uso, dose, interações e necessidade de articulação com a equipe."],
+["Armazenamento domiciliar","A orientação geral para guardar medicamentos em casa é:","mantê-los protegidos de calor, umidade, luz e fora do alcance de crianças."],
+["Armazenamento domiciliar","Medicamento com alteração inesperada de cor, odor ou aspecto deve:","ser avaliado antes do uso e não ser utilizado apenas por ainda estar dentro da validade."],
+["Uso racional","O uso racional de medicamentos pressupõe:","medicamento apropriado, dose e duração adequadas, com menor risco possível ao usuário."],
+["Uso racional","A automedicação em pessoa com múltiplos medicamentos exige atenção porque:","pode introduzir interações, duplicidades ou mascarar situação que requer avaliação."],
+["Cuidado centrado","No cuidado centrado na pessoa, a decisão farmacêutica deve considerar:","necessidades, preferências, contexto e evidências, em diálogo com o usuário e a equipe."],
+["Cuidado centrado","Uma barreira de letramento em saúde é reduzida quando o profissional:","usa linguagem acessível e confirma o entendimento sem constranger a pessoa."],
+["Encaminhamento","O encaminhamento é necessário quando:","a situação ultrapassa o escopo da orientação ou apresenta sinal de alerta que exige avaliação."],
+["Encaminhamento","Ao encaminhar um usuário, é útil registrar:","informações relevantes, motivo do encaminhamento e orientações dadas."],
+["Interações","Ao suspeitar de interação medicamentosa, a primeira medida é:","avaliar os medicamentos envolvidos, a gravidade potencial e a necessidade de intervenção."],
+["Interações","Medicamentos isentos de prescrição merecem avaliação porque:","também podem interagir com tratamentos em uso ou ser inadequados em certas condições."],
+["Polifarmácia","Em polifarmácia, a revisão de medicamentos busca:","identificar necessidade, efetividade, segurança, duplicidade e oportunidade de simplificação."],
+["Polifarmácia","A presença de vários prescritores aumenta a importância de:","manter lista atualizada e compartilhar informações relevantes entre os profissionais."],
+["Idoso","Na orientação a pessoa idosa, deve-se considerar:","função cognitiva, visão, destreza, apoio disponível e complexidade do esquema."],
+["Idoso","Em caso de dificuldade para abrir embalagem, a melhor conduta é:","buscar solução segura e compatível com a prescrição, sem improvisar alteração do medicamento."],
+["Pediatria","Na dispensação pediátrica, a dose deve ser conferida com atenção porque:","frequentemente depende de peso, apresentação e instrumento de medida adequados."],
+["Pediatria","Para medicamento líquido infantil, a orientação deve destacar:","uso de dispositivo de medida apropriado e entendimento da dose prescrita."],
+["Gestação","Em gestante com dúvida sobre medicamento, a orientação prudente é:","avaliar o tratamento prescrito e encaminhar para decisão clínica quando houver risco ou incerteza."],
+["Gestação","Suspender medicamento de uso contínuo por iniciativa própria pode:","trazer risco de descompensação e deve ser discutido com profissional responsável."],
+["Adversidades","A notificação de suspeita de evento adverso contribui para:","identificar riscos e ampliar o conhecimento sobre a segurança dos medicamentos."],
+["Adversidades","Evento adverso temporalmente associado ao medicamento deve ser:","avaliado considerando relação temporal, outros fatores e necessidade de cuidado imediato."],
+["Dispensação remota","Na dispensação remota, o serviço deve assegurar:","informação ao usuário e condições que preservem qualidade e integridade do produto."],
+["Dispensação remota","O transporte de medicamento exige atenção especial quando:","o produto possui condições específicas de temperatura, umidade ou proteção física."],
+["Documentação","Documentar intervenção farmacêutica é importante para:","dar continuidade ao cuidado, comunicar decisões e permitir acompanhamento posterior."],
+["Documentação","Um registro de dispensação útil deve permitir:","identificar usuário, medicamento, orientação relevante e rastrear a movimentação quando aplicável."],
+["Sigilo","Informações de saúde obtidas no atendimento farmacêutico devem:","ser protegidas e compartilhadas somente conforme necessidade assistencial e regras aplicáveis."],
+["Sigilo","Ao orientar usuário em ambiente com outras pessoas, o profissional deve:","preservar privacidade e buscar local adequado quando a situação exigir confidencialidade."],
+["Educação","Educação em saúde sobre medicamentos é mais efetiva quando:","parte das dúvidas e da realidade do usuário, com informação prática e verificável."],
+["Educação","Folheto educativo não substitui orientação individual quando:","há risco, dúvida específica ou dificuldade de compreensão que demande diálogo."],
+["Seguimento","O seguimento farmacoterapêutico permite:","acompanhar resultados, dificuldades e novos problemas após uma intervenção inicial."],
+["Seguimento","Ao detectar que a orientação não foi compreendida, o profissional deve:","reformular a explicação e confirmar novamente o entendimento."],
+["Casos clínicos","Usuário apresenta sonolência após início de novo medicamento. A conduta inicial inclui:","avaliar temporalidade, intensidade, outros medicamentos e necessidade de encaminhamento."],
+["Casos clínicos","Usuário relata duplicidade de medicamentos com nomes diferentes. O cuidado adequado é:","verificar princípio ativo, prescrição e risco antes de orientar qualquer alteração."],
+["Casos clínicos","Prescrição contém abreviatura ambígua. A melhor resposta é:","esclarecer a prescrição antes da dispensação para evitar interpretação insegura."],
+["Casos clínicos","Usuário deseja partir comprimido sem saber se isso é permitido. A orientação correta é:","verificar se a forma farmacêutica permite fracionamento antes de recomendar a prática."],
+["Casos clínicos","Usuário relata uso irregular por efeito adverso. A conduta é:","acolher a queixa, avaliar gravidade e articular solução sem orientar abandono automático."],
+["Casos clínicos","Em troca de apresentação do medicamento, a orientação deve:","explicar o que mudou e confirmar que a pessoa compreendeu dose, uso e diferença visual."],
+["Síntese","A dispensação de qualidade é aquela que:","une conferência técnica, entrega correta, orientação compreensível e registro necessário."],
+["Síntese","O cuidado farmacêutico seguro se orienta por:","necessidades da pessoa, evidências, comunicação e acompanhamento de resultados."]
+];
+const careDistractors = [
+"priorizar apenas a entrega rápida do produto, sem avaliar informações do caso.",
+"alterar por conta própria a prescrição para simplificar o atendimento.",
+"adiar a verificação para a próxima retirada, mesmo diante da dúvida atual.",
+"fornecer orientação genérica sem confirmar se ela se aplica à situação apresentada."
+];
+const cuidadoFarmaceuticoLoteUm = cuidadoSeeds.map(([topic, stem, correct], index) => {
+  const answer = "BECDA"[index % 5];
+  const options = [...careDistractors];
+  options.splice("ABCDE".indexOf(answer), 0, correct);
+  return { id: `farmacia-${451 + index}`, subjectId: "farmacia", number: 355 + index, topic,
+    area: "Dispensação e cuidado farmacêutico", stem, options: options.map((text, optionIndex) => ({ letter: "ABCDE"[optionIndex], text })),
+    answer, explanation: `A conduta correta é: ${correct} Isso preserva segurança, continuidade e uso adequado de medicamentos.` };
+});
+questionBank.questions.filter(question => question.subjectId === "farmacia" && question.number >= 355).forEach(question => { question.number += 50; });
+questionBank.questions.push(...cuidadoFarmaceuticoLoteUm);
 const farmaciaOrdenadaQuatro = questionBank.questions
   .filter(question => question.subjectId === "farmacia")
   .sort((a, b) => a.number - b.number);
@@ -16791,7 +16859,8 @@ let indiceFarmaciaQuatro = 0;
 questionBank.questions = questionBank.questions.map(question =>
   question.subjectId === "farmacia" ? farmaciaOrdenadaQuatro[indiceFarmaciaQuatro++] : question
 );
-questionBank.generatedAt = "2026-11-04T23:00:00.000Z";
+questionBank.generatedAt = "2026-11-05T00:00:00.000Z";
 questionBank.review.cicloLoteDoisReviewed = Array.from({ length: 50 }, (_, index) => index + 205);
 questionBank.review.gestaoFarmaceuticaLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 255);
 questionBank.review.susPnafLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 305);
+questionBank.review.cuidadoFarmaceuticoLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 355);

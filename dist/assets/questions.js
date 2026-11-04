@@ -29,7 +29,7 @@ export const questionBank = {
       "id": "farmacia",
       "label": "Farmácia",
       "short": "Farmácia",
-      "count": 260
+      "count": 300
     }
   ],
   "questions": [
@@ -15298,12 +15298,12 @@ const portaria344LoteUm = [
     "substituir a bula e os protocolos terapêuticos do serviço de saúde.",
     "definir o regime de controle, receituário e registro sanitário aplicável."
   ]],
-  ["171", 75, "Notificação de Receita A", "A Notificação de Receita A é tradicionalmente identificada pela cor:", "C", "A Notificação de Receita A é amarela. A cor, sozinha, não basta: deve haver compatibilidade entre substância, prescrição e requisitos formais.", [
-    "azul.",
-    "branca.",
-    "amarela.",
-    "verde.",
-    "rosa."
+  ["171", 75, "Notificação de Receita A", "Na triagem de uma Notificação de Receita A, a cor amarela deve ser interpretada como:", "C", "A cor amarela identifica a Notificação A, mas não basta para validar a dispensação. A equipe deve conferir substância, preenchimento e os demais requisitos aplicáveis.", [
+    "indicação de que qualquer psicotrópico pode ser dispensado no documento.",
+    "prova de que a receita dispensa retenção e registro de saída.",
+    "elemento identificador do tipo A, sujeito às demais conferências necessárias.",
+    "equivalente à Receita de Controle Especial em duas vias.",
+    "sinal de que o documento se destina exclusivamente a medicamentos da lista C."
   ]],
   ["172", 76, "Notificação de Receita B", "A Notificação de Receita B é tradicionalmente identificada pela cor:", "A", "A Notificação de Receita B é azul. A conferência deve incluir a classificação vigente da substância e os demais requisitos do documento.", [
     "azul.",
@@ -15355,7 +15355,7 @@ const portaria344LoteUm = [
     "30 de setembro de 2026."
   ]],
   ["179", 83, "Regras de transição em 2026", "Uma farmácia possui formulários físicos antigos impressos dentro do período em que ainda era permitida sua impressão. A interpretação correta é que:", "B", "A Anvisa manteve a possibilidade de prescrição até esgotar o estoque já impresso e de dispensação dentro do prazo de validade do receituário. O que cessou foi a possibilidade de novas impressões do modelo antigo.", [
-    "o estoque deve ser inutilizado imediatamente, ainda que o documento esteja válido.",
+    "o estoque deve ser inutilizado imediatamente, mesmo que o documento esteja válido.",
     "o estoque pode ser utilizado nas condições transitórias, respeitada a validade aplicável.",
     "o estoque pode ser usado apenas para prescrições digitais posteriormente impressas.",
     "o estoque pode ser reaproveitado após a retirada dos campos revogados.",
@@ -15623,7 +15623,7 @@ const portaria344LoteDois = [
   ]],
   ["213", 117, "Responsabilidade técnica", "No controle de medicamentos sujeitos a regime especial, a responsabilidade técnica do farmacêutico inclui:", "C", "A responsabilidade técnica exige supervisão efetiva da rotina, prevenção de desvios e atuação diante de irregularidades. Não se limita a assinar documentos.", [
     "delegar a conferência de documentos ao caixa quando o sistema apontar saldo disponível.",
-    "autorizar correções clínicas na prescrição sempre que houver desabastecimento.",
+    "autorizar correções clínicas na prescrição quando houver desabastecimento.",
     "supervisionar os processos, prevenir desvios e intervir diante de irregularidades.",
     "realizar apenas inventário anual, pois os registros diários são automatizados.",
     "transferir o controle documental ao fornecedor durante a entrega dos produtos."
@@ -15917,7 +15917,7 @@ const portaria344LoteDois = [
   ]],
   ["255", 159, "Questão integrada", "A melhor síntese da conduta do farmacêutico diante de prescrição sujeita a controle especial é:", "A", "A atuação profissional é preventiva: conferir antes de dispensar, respeitar a regra vigente, registrar adequadamente e interromper o fluxo quando houver não conformidade relevante.", [
     "avaliar a conformidade antes da dispensação, registrar a operação e regularizar inconsistências quando necessário.",
-    "dispensar sempre que houver identificação do paciente, independentemente do modelo de receita.",
+    "dispensar com base apenas na identificação do paciente, sem conferir o modelo de receita.",
     "priorizar a rapidez de atendimento e realizar as conferências no fim do turno.",
     "alterar elementos da prescrição para compatibilizá-la com o estoque disponível.",
     "usar a experiência do paciente como substituta da documentação exigida."
@@ -15948,7 +15948,7 @@ const portaria344LoteDois = [
     "apenas por resumos de cursinho, para evitar excessivo detalhamento normativo.",
     "com a estrutura da norma e a consulta contínua às atualizações oficiais vigentes.",
     "unicamente pela tarja e pelo nome comercial dos medicamentos.",
-    "sem considerar os modelos de receituário e os procedimentos do estabelecimento."
+    "ignorando os modelos de receituário e os procedimentos do estabelecimento."
   ]],
   ["260", 164, "Questão integrada", "O erro mais relevante em uma rotina de controlados é tratar o conjunto de exigências como mera burocracia, porque elas:", "D", "Receituário, retenção, registros e estoque não são formalidades isoladas: formam barreiras de rastreabilidade, segurança e fiscalização.", [
     "existem apenas para aumentar o tempo de atendimento em farmácias.",
@@ -15982,3 +15982,311 @@ questionBank.questions = questionBank.questions.map(question =>
 );
 questionBank.generatedAt = "2026-11-04T15:00:00.000Z";
 questionBank.review.portaria344LoteDoisReviewed = Array.from({ length: 50 }, (_, index) => index + 115);
+
+const portaria344EncerramentoECicloUm = [
+  ["261", 165, "Portaria 344: encerramento", "A correta aplicação da Portaria nº 344/1998 exige que o estabelecimento trate a lista de substâncias como:", "B", "A lista vigente é referência operacional de classificação. Ela precisa estar incorporada à rotina e ser conferida diante de dúvidas ou atualizações.", [
+    "material histórico útil apenas para treinamento inicial da equipe.",
+    "referência normativa atualizada para definir o controle sanitário aplicável.",
+    "orientação facultativa quando o medicamento tiver tarja conhecida.",
+    "documento substituível pela indicação clínica feita pelo prescritor.",
+    "relação exclusiva para fabricantes e distribuidores de medicamentos."
+  ]],
+  ["262", 166, "Portaria 344: encerramento", "Uma mudança de lista deve ser tratada como risco operacional porque pode afetar:", "E", "Alterar a lista pode mudar exigências de documento, retenção, registro e rotina. Por isso, a mudança precisa alcançar os cadastros e a prática do estabelecimento.", [
+    "somente a precificação do medicamento no sistema comercial.",
+    "a escolha terapêutica do paciente entre apresentações equivalentes.",
+    "apenas o local físico de armazenamento do produto no estoque.",
+    "exclusivamente o prazo de validade impresso na embalagem.",
+    "documento, registros, procedimentos e conferências da dispensação."
+  ]],
+  ["263", 167, "Portaria 344: encerramento", "Em relação aos documentos de controle especial, a rotina correta é:", "C", "Documento válido não é mera formalidade: ele deve ser compatível com a substância, preenchido adequadamente e tratado conforme as exigências de retenção e registro.", [
+    "aceitar qualquer modelo se houver identificação legível do paciente.",
+    "usar somente a cor do formulário para concluir pela regularidade.",
+    "verificar compatibilidade, preenchimento, validade e demais requisitos aplicáveis.",
+    "dispensar a quantidade disponível e corrigir o documento no sistema depois.",
+    "considerar dispensada a conferência quando houver receita de uso contínuo."
+  ]],
+  ["264", 168, "Portaria 344: encerramento", "Uma receita formalmente bem preenchida, mas incompatível com a classificação vigente da substância, deve ser:", "D", "A forma correta não supre incompatibilidade material. É necessário interromper o fluxo e buscar regularização antes de dispensar.", [
+    "aceita porque o formulário completo prevalece sobre a lista.",
+    "aceita se o paciente declarar que utiliza o medicamento há meses.",
+    "aceita apenas em quantidade reduzida e complementada depois.",
+    "esclarecida ou regularizada antes da dispensação.",
+    "transformada pela farmácia em outro tipo de receituário."
+  ]],
+  ["265", 169, "Portaria 344: encerramento", "A retenção do documento de controle especial não substitui:", "A", "Reter documento é uma camada de rastreabilidade, mas não substitui escrituração, controle de estoque e conferência de requisitos.", [
+    "os registros e a conciliação necessários à rastreabilidade da operação.",
+    "a necessidade de entregar o medicamento ao paciente.",
+    "a identificação do produto armazenado no estoque geral.",
+    "a orientação sobre o modo de uso indicada pelo prescritor.",
+    "a conferência de preço praticada pelo estabelecimento."
+  ]],
+  ["266", 170, "Portaria 344: encerramento", "A principal razão para não aceitar correção unilateral do farmacêutico em elemento essencial de prescrição controlada é:", "B", "A correção unilateral pode alterar o sentido da prescrição e romper a segurança documental. O caminho adequado é esclarecer e regularizar com quem tem competência para prescrever.", [
+    "a farmácia não pode realizar qualquer orientação ao paciente.",
+    "a alteração pode modificar conteúdo essencial sem respaldo do prescritor.",
+    "o sistema de estoque impede qualquer mudança após a primeira leitura.",
+    "receitas controladas jamais podem ter qualquer dado esclarecido.",
+    "o paciente deve definir sozinho qual apresentação será dispensada."
+  ]],
+  ["267", 171, "Portaria 344: encerramento", "A análise de conformidade de uma dispensação controlada deve ocorrer:", "E", "A conferência deve preceder a entrega. Corrigir depois de dispensar pode não reparar a irregularidade nem preservar a rastreabilidade.", [
+    "somente após a saída do paciente, no fechamento do turno.",
+    "quando houver divergência de preço entre a receita e o sistema.",
+    "apenas em medicamentos que tenham embalagem semelhante a outros.",
+    "na auditoria anual, depois da conciliação de estoque.",
+    "antes da dispensação, como etapa de prevenção de erro e não conformidade."
+  ]],
+  ["268", 172, "Portaria 344: encerramento", "A segurança do controle especial depende de barreiras sucessivas porque:", "C", "A combinação de documento, análise profissional, registros, estoque e auditoria diminui a chance de que uma falha isolada resulte em erro ou desvio.", [
+    "um único sistema eletrônico elimina falhas humanas de conferência.",
+    "a cor da notificação resolve todas as dúvidas de classificação.",
+    "camadas de conferência reduzem risco de erro e fortalecem a rastreabilidade.",
+    "o armazenamento restrito torna dispensável a conferência documental.",
+    "a assinatura do prescritor basta para validar toda dispensação."
+  ]],
+  ["269", 173, "Portaria 344: encerramento", "A versão 2 dos modelos físicos de 2026 deve ser entendida como:", "A", "A versão 2 é o modelo vigente para novas impressões. Ela atualiza os formulários físicos sem extinguir o restante da disciplina de controle especial.", [
+    "modelo vigente para novas impressões, integrado às demais regras de controle.",
+    "medida que revogou toda a Portaria nº 344/1998.",
+    "formulário opcional enquanto houver estoque de modelos antigos na gráfica.",
+    "documento destinado exclusivamente a prescrições eletrônicas.",
+    "instrumento que dispensa o preenchimento dos campos obrigatórios."
+  ]],
+  ["270", 174, "Portaria 344: encerramento", "O adiamento das funcionalidades eletrônicas do SNCR em 2026 ilustra que:", "D", "A prorrogação teve alcance específico. Não se pode transferir seus efeitos para os requisitos físicos que já estavam vigentes.", [
+    "qualquer prazo eletrônico suspende automaticamente a disciplina física.",
+    "modelos antigos podem voltar a ser impressos após ato eletrônico.",
+    "a Anvisa deixou de atualizar listas e receituários no período.",
+    "atos normativos devem ser interpretados conforme seu objeto e alcance específicos.",
+    "a emissão eletrônica é requisito para toda prescrição controlada física."
+  ]],
+  ["271", 175, "Portaria 344: encerramento", "Uma equipe que mantém cadastro de listas desatualizado, embora use formulário físico vigente, apresenta:", "E", "Conformidade é sistêmica. Formulário adequado não compensa erro de classificação no cadastro, que pode produzir controle incorreto.", [
+    "regularidade plena, pois o formulário prevalece sobre o cadastro interno.",
+    "apenas um problema estético de organização interna.",
+    "situação irrelevante se o estoque estiver sob chave.",
+    "falha que depende exclusivamente do fornecedor do sistema.",
+    "atualização incompleta, com risco de aplicar controle incompatível."
+  ]],
+  ["272", 176, "Portaria 344: encerramento", "A consulta às fontes oficiais deve ser reforçada especialmente após:", "B", "Atualizações podem modificar classificação e procedimentos. A verificação oficial impede que resumos antigos conduzam a conduta incorreta.", [
+    "qualquer troca de funcionário no caixa da farmácia.",
+    "inclusão, exclusão ou remanejamento de substâncias nas listas.",
+    "reposição ordinária de medicamentos já cadastrados.",
+    "alteração de preço promovida pela distribuidora.",
+    "mudança de marca comercial sem alteração de princípio ativo."
+  ]],
+  ["273", 177, "Portaria 344: encerramento", "A melhor evidência de rastreabilidade em uma dispensação controlada é a coerência entre:", "C", "Rastreabilidade exige vínculo verificável entre documento, produto, saída registrada e saldo de estoque. Um dado isolado não demonstra o percurso completo.", [
+    "nome comercial e preferência declarada pelo paciente.",
+    "preço de venda e desconto cadastrado no sistema.",
+    "documento, produto dispensado, registro de saída e saldo de estoque.",
+    "data de compra do produto e validade da embalagem.",
+    "orientação verbal e assinatura do atendente do caixa."
+  ]],
+  ["274", 178, "Portaria 344: encerramento", "É exemplo de conduta que enfraquece a rastreabilidade de controlados:", "D", "Registrar a saída sem conectá-la ao documento retido impede reconstituir adequadamente a operação e dificulta apuração posterior.", [
+    "conferir a substância antes de efetuar a baixa de estoque.",
+    "documentar divergência e iniciar sua apuração conforme procedimento.",
+    "restringir acesso físico e realizar inventários periódicos.",
+    "registrar saída de estoque sem relacioná-la à documentação correspondente.",
+    "atualizar os procedimentos após publicação de norma relevante."
+  ]],
+  ["275", 179, "Portaria 344: encerramento", "O uso racional de medicamentos controlados é favorecido por uma dispensação que:", "A", "Uso racional inclui segurança e conformidade. A orientação não substitui as exigências documentais, mas deve coexistir com elas.", [
+    "combina verificação regulatória, dispensação correta e orientação adequada ao paciente.",
+    "prioriza rapidez de entrega e posterga a conferência documental.",
+    "aceita alteração verbal de dose para evitar retorno ao prescritor.",
+    "trata a retenção como única medida necessária de segurança.",
+    "dispensa qualquer orientação quando o medicamento for de uso contínuo."
+  ]],
+  ["276", 180, "Portaria 344: encerramento", "Ao final de uma revisão de rotina de controlados, o indicador mais útil para detectar fragilidade é:", "E", "Divergências entre estoques, documentos e registros apontam falhas de processo que devem ser apuradas antes de causar consequências maiores.", [
+    "quantidade de embalagens expostas em área de atendimento.",
+    "número de marcas comerciais disponíveis para cada princípio ativo.",
+    "valor médio das vendas de medicamentos sujeitos a controle.",
+    "tempo médio de espera do paciente na fila de atendimento.",
+    "divergências entre saldo físico, documentos retidos e registros de movimentação."
+  ]],
+  ["277", 181, "Portaria 344: encerramento", "A afirmação “modelo novo de receita elimina a necessidade de analisar a lista da substância” é:", "B", "Modelo de receita e classificação da substância são controles complementares. O formulário não revela sozinho qual regime é aplicável.", [
+    "correta, porque o formulário já contém todas as classificações possíveis.",
+    "incorreta, pois modelo e lista são verificações complementares.",
+    "correta, desde que o sistema interno esteja atualizado.",
+    "incorreta apenas para medicamentos das listas A e B.",
+    "correta quando a receita possuir duas vias."
+  ]],
+  ["278", 182, "Portaria 344: encerramento", "A atuação diante de dúvida normativa deve privilegiar:", "D", "Em caso de dúvida relevante, a conduta segura é interromper a dispensação até obter fonte oficial, esclarecimento ou regularização. A urgência comercial não justifica improvisação.", [
+    "a interpretação mais permissiva para evitar desabastecimento.",
+    "a decisão do atendente com maior experiência no balcão.",
+    "a prática adotada pela concorrência no mesmo município.",
+    "consulta à fonte oficial e regularização antes de dispensar em dúvida relevante.",
+    "a preferência do paciente pela apresentação disponível."
+  ]],
+  ["279", 183, "Portaria 344: encerramento", "O conjunto Portaria nº 344/1998, listas atualizadas e modelos vigentes deve ser estudado como:", "C", "A aplicação correta resulta da interação entre a estrutura de controle, as atualizações de listas e os modelos/documentos em vigor.", [
+    "três normas sem relação entre si, aplicáveis em situações isoladas.",
+    "tema limitado à indústria, sem impacto na dispensação em farmácias.",
+    "sistema integrado de classificação, documentação, registro e fiscalização.",
+    "conjunto de recomendações sem força para orientar a rotina sanitária.",
+    "matéria substituída integralmente pela adoção do SNCR eletrônico."
+  ]],
+  ["280", 184, "Portaria 344: encerramento", "A prática mais consistente em controle especial é manter:", "A", "Aderência normativa exige rotina ativa de atualização, conferência e registro. Isso protege paciente, profissional e estabelecimento.", [
+    "procedimentos atualizados, equipe treinada e registros coerentes com a norma vigente.",
+    "modelos antigos como padrão enquanto houver estoque de medicamentos.",
+    "uma única conferência mensal para todas as dispensações realizadas.",
+    "cadastros baseados exclusivamente em materiais didáticos de anos anteriores.",
+    "alterações de prescrição feitas internamente para agilizar o atendimento."
+  ]],
+  ["281", 185, "Seleção de medicamentos", "No ciclo da assistência farmacêutica, a seleção de medicamentos deve priorizar:", "B", "A seleção busca escolhas baseadas em evidência, perfil epidemiológico, segurança, eficácia e viabilidade. Não é simples relação de itens mais vendidos.", [
+    "preferência comercial do fornecedor que oferece menor prazo de entrega.",
+    "evidências de eficácia e segurança, necessidades de saúde e uso racional.",
+    "exclusivamente o menor preço unitário encontrado em pesquisa de mercado.",
+    "lista de produtos com maior giro em farmácias privadas da região.",
+    "medicamentos solicitados individualmente por profissionais sem análise técnica."
+  ]],
+  ["282", 186, "Seleção de medicamentos", "Uma seleção tecnicamente inadequada ocorre quando o serviço:", "E", "A seleção deve ser transparente e baseada em critérios técnicos. Incluir produto somente por pressão comercial fragiliza o uso racional e a gestão pública.", [
+    "analisa eficácia, segurança e adequação ao perfil epidemiológico.",
+    "utiliza critérios explícitos e registra a decisão da comissão responsável.",
+    "considera impacto orçamentário junto às necessidades assistenciais.",
+    "revisa a relação quando surgem evidências ou mudanças relevantes.",
+    "inclui produto apenas por pressão comercial, sem avaliação técnica documentada."
+  ]],
+  ["283", 187, "Programação de medicamentos", "A programação de medicamentos tem como objetivo principal:", "C", "Programar é estimar necessidades para evitar tanto falta quanto excesso. Dados históricos ajudam, mas devem ser combinados com perfil epidemiológico e mudanças no serviço.", [
+    "escolher qual fornecedor vencerá a futura aquisição.",
+    "definir a forma de armazenamento antes de conhecer o consumo.",
+    "estimar necessidades e quantidades para atender a demanda prevista.",
+    "substituir o inventário físico por projeções de consumo.",
+    "autorizar dispensação sem prescrição em períodos de desabastecimento."
+  ]],
+  ["284", 188, "Programação de medicamentos", "Basear a programação apenas no consumo histórico pode ser insuficiente porque:", "A", "Consumo passado não capta sozinho surtos, mudanças epidemiológicas, ampliação de serviço, protocolos ou rupturas anteriores de abastecimento.", [
+    "mudanças de perfil epidemiológico, protocolos e oferta de serviços podem alterar a necessidade futura.",
+    "o consumo histórico nunca possui utilidade para previsão de demanda.",
+    "a programação deve ignorar completamente o saldo disponível em estoque.",
+    "a quantidade deve ser definida somente pelo fornecedor mais frequente.",
+    "toda necessidade futura é idêntica à quantidade adquirida no ano anterior."
+  ]],
+  ["285", 189, "Programação de medicamentos", "Para estimar necessidade de um medicamento, uma equipe deve considerar de forma integrada:", "D", "Programar bem requer olhar consumo, estoque, demanda esperada, perfil epidemiológico, prazo de reposição e eventuais mudanças no serviço.", [
+    "somente o saldo físico encontrado no almoxarifado.",
+    "exclusivamente a previsão de preço da próxima compra.",
+    "apenas o número de prescritores vinculados à unidade.",
+    "consumo, estoque, demanda prevista, prazos de reposição e contexto assistencial.",
+    "unicamente os medicamentos que venceram no período anterior."
+  ]],
+  ["286", 190, "Aquisição de medicamentos", "Uma especificação técnica bem elaborada para aquisição deve:", "E", "A especificação descreve o que será adquirido com critérios verificáveis, sem direcionamento indevido de marca. Isso ajuda a receber o item correto.", [
+    "indicar a marca preferida, ainda que haja alternativas equivalentes disponíveis.",
+    "usar descrição genérica que permita receber qualquer apresentação semelhante.",
+    "priorizar a embalagem visualmente mais conhecida pelos profissionais.",
+    "ser definida apenas após a chegada dos produtos ao almoxarifado.",
+    "descrever características verificáveis sem restringir indevidamente a competição."
+  ]],
+  ["287", 191, "Aquisição de medicamentos", "A aquisição integrada ao ciclo da assistência farmacêutica ocorre quando:", "B", "A compra deve responder à programação e à seleção; adquirir sem conexão com essas etapas aumenta risco de excesso, falta e itens inadequados.", [
+    "o fornecedor define quais itens serão comprados com base no próprio catálogo.",
+    "as quantidades e especificações derivam da seleção e da programação realizadas.",
+    "o recebimento substitui a necessidade de especificação técnica detalhada.",
+    "os medicamentos são escolhidos somente pelo menor preço apresentado.",
+    "o estoque atual é ignorado para evitar influência na compra."
+  ]],
+  ["288", 192, "Recebimento de medicamentos", "No recebimento de medicamentos, a conferência deve incluir:", "C", "O recebimento precisa verificar aderência ao pedido e integridade do produto: item, lote, validade, quantidade, condição de transporte e documentação.", [
+    "apenas o número de caixas entregues pela transportadora.",
+    "somente a assinatura de recebimento no documento fiscal.",
+    "item, quantidade, lote, validade, integridade, condições e documentação.",
+    "preferência da equipe pela apresentação recebida.",
+    "valor comercial do produto, sem necessidade de conferir o lote."
+  ]],
+  ["289", 193, "Recebimento de medicamentos", "Ao constatar embalagem violada ou condição de transporte incompatível, o procedimento adequado é:", "A", "Produto com não conformidade deve ser identificado e segregado para avaliação. Incorporá-lo automaticamente ao estoque pode expor pacientes e dificultar a apuração.", [
+    "identificar, segregar, registrar a não conformidade e avaliar a providência cabível.",
+    "incorporar ao estoque e dispensar primeiro para evitar perdas.",
+    "reembalar o produto e apagar a ocorrência do documento de entrega.",
+    "misturar o lote aos demais para facilitar a reposição das prateleiras.",
+    "aceitar o lote desde que a quantidade entregue corresponda ao pedido."
+  ]],
+  ["290", 194, "Armazenamento e validade", "A adoção do critério FEFO no estoque significa priorizar a saída de itens:", "D", "FEFO, first expire, first out, prioriza os itens que vencem primeiro, ajudando a reduzir perdas por validade.", [
+    "recebidos primeiro, independentemente da data de validade.",
+    "com maior valor financeiro, antes dos de menor custo.",
+    "mais solicitados pelos profissionais da unidade de saúde.",
+    "com vencimento mais próximo, respeitadas as condições de uso.",
+    "de menor quantidade em estoque, sem considerar a validade."
+  ]],
+  ["291", 195, "Armazenamento e validade", "A gestão de validade é mais efetiva quando o serviço:", "E", "Prevenir perdas exige monitoramento contínuo, não apenas observação quando o item já venceu. Ações antecipadas podem remanejar, priorizar uso ou evitar novas compras.", [
+    "verifica vencimentos somente quando um produto já não pode ser dispensado.",
+    "concentra todos os itens com validade próxima em uma prateleira sem registro.",
+    "remove as datas de validade das caixas para padronizar a armazenagem.",
+    "programa nova compra de item próximo ao vencimento para manter estoque cheio.",
+    "monitora prazos, prioriza uso adequado e planeja ações antes do vencimento."
+  ]],
+  ["292", 196, "Distribuição", "A distribuição de medicamentos às unidades deve buscar:", "B", "Distribuir não é apenas transportar caixas: exige produto, quantidade, destino, condições de transporte e rastreabilidade adequados.", [
+    "entregar qualquer apresentação disponível, desde que haja saldo no almoxarifado.",
+    "produto correto, quantidade correta, destino adequado e rastreabilidade.",
+    "reduzir a conferência para tornar o transporte mais rápido.",
+    "concentrar todo o controle documental exclusivamente na unidade recebedora.",
+    "separar os produtos por cor de embalagem, sem observar os pedidos."
+  ]],
+  ["293", 197, "Distribuição", "Uma falha de distribuição ocorre quando:", "C", "Enviar produto correto ao destino errado também configura falha. A qualidade logística depende de todos os elementos da entrega.", [
+    "o produto chega à unidade solicitante na quantidade e condição adequadas.",
+    "a unidade recebedora confere a entrega antes de incorporar ao estoque.",
+    "o medicamento é enviado a unidade diversa daquela definida na requisição.",
+    "o transporte preserva as condições exigidas para o produto.",
+    "a saída é registrada e vinculada ao pedido que a originou."
+  ]],
+  ["294", 198, "Logística farmacêutica", "A integração entre seleção, programação, aquisição, armazenamento e distribuição é importante porque:", "A", "As etapas são interdependentes. Falha em uma delas afeta disponibilidade, qualidade, custo e continuidade do cuidado.", [
+    "cada etapa influencia a disponibilidade, a qualidade e o uso adequado nas etapas seguintes.",
+    "a aquisição pode corrigir qualquer erro ocorrido na seleção de medicamentos.",
+    "o armazenamento torna desnecessário programar quantidades de reposição.",
+    "a distribuição deve ser planejada sem considerar o estoque disponível.",
+    "a seleção ocorre apenas depois de definidos os produtos adquiridos."
+  ]],
+  ["295", 199, "Logística farmacêutica", "O desabastecimento de um medicamento pode ser prevenido mais adequadamente por:", "D", "Prevenir falta exige monitorar consumo, estoque, prazo de reposição e risco de ruptura, com ação antes de o saldo atingir nível crítico.", [
+    "esperar que o estoque zere para identificar a necessidade de compra.",
+    "reduzir a conferência de saídas para simplificar a rotina do almoxarifado.",
+    "manter quantidade fixa de todos os itens, sem analisar consumo.",
+    "monitorar consumo, estoque, prazo de reposição e risco de ruptura.",
+    "substituir qualquer medicamento faltante sem avaliação terapêutica ou técnica."
+  ]],
+  ["296", 200, "Logística farmacêutica", "O excesso de estoque também representa risco porque pode:", "E", "Excesso imobiliza recursos e aumenta perdas, obsolescência e vencimento. O objetivo é equilíbrio entre disponibilidade e uso racional do estoque.", [
+    "eliminar totalmente a necessidade de programação de compras.",
+    "garantir que todos os produtos sejam utilizados antes do vencimento.",
+    "substituir controles de temperatura e de integridade das embalagens.",
+    "reduzir automaticamente a possibilidade de perdas por validade.",
+    "aumentar imobilização de recursos, perdas e risco de vencimento."
+  ]],
+  ["297", 201, "Ciclo da assistência farmacêutica", "A etapa de dispensação no ciclo da assistência farmacêutica deve ser entendida como:", "B", "Dispensar envolve assegurar acesso ao medicamento correto e orientar seu uso. Não é simples ato de entrega de produto.", [
+    "atividade de entrega sem necessidade de análise ou orientação ao usuário.",
+    "ato que envolve acesso ao medicamento correto e orientação para seu uso adequado.",
+    "etapa exclusiva do fornecedor, sem participação do serviço de saúde.",
+    "substituta das etapas de seleção e programação de medicamentos.",
+    "procedimento restrito ao registro financeiro da saída de estoque."
+  ]],
+  ["298", 202, "Ciclo da assistência farmacêutica", "Um indicador útil para avaliar desempenho logístico é aquele que permite acompanhar:", "C", "Indicadores devem apoiar decisão: falta, perdas, tempo de reposição e aderência de entrega revelam desempenho real do processo.", [
+    "apenas a preferência de marca dos profissionais prescritores.",
+    "somente o custo unitário dos medicamentos em estoque.",
+    "ocorrência de desabastecimento, perdas, prazo e qualidade da entrega.",
+    "unicamente o número de caixas armazenadas em cada prateleira.",
+    "a quantidade de formulários impressos pela unidade de saúde."
+  ]],
+  ["299", 203, "Ciclo da assistência farmacêutica", "Um processo logístico resiliente deve prever:", "A", "Planejar contingências e monitorar riscos permite reagir a atrasos, aumento de demanda e falhas de fornecimento antes de interromper o cuidado.", [
+    "monitoramento de riscos e medidas de contingência para evitar interrupções assistenciais.",
+    "compras emergenciais como única estratégia de gestão de estoque.",
+    "suspensão da dispensação ao primeiro sinal de atraso de fornecedor.",
+    "substituição automática de medicamentos sem avaliação técnica.",
+    "eliminação dos registros de perdas para simplificar a programação."
+  ]],
+  ["300", 204, "Ciclo da assistência farmacêutica", "A melhor síntese do ciclo da assistência farmacêutica é:", "D", "O ciclo é contínuo e interdependente: selecionar, programar, adquirir, armazenar, distribuir e dispensar com foco em acesso, qualidade e uso racional.", [
+    "conjunto de compras isoladas realizadas conforme a demanda de cada fornecedor.",
+    "rotina limitada à guarda física de medicamentos em almoxarifado.",
+    "sistema em que a dispensação ocorre antes da programação e aquisição.",
+    "processo integrado voltado à disponibilidade, qualidade e uso racional de medicamentos.",
+    "atividade administrativa sem relação com o cuidado e os resultados em saúde."
+  ]]
+].map(([id, number, topic, stem, answer, explanation, options]) => ({
+  id: `farmacia-${id}`,
+  subjectId: "farmacia",
+  number,
+  topic,
+  area: number <= 184 ? "Portaria SVS/MS nº 344/1998 e atualizações 2026" : "Ciclo da assistência farmacêutica e logística",
+  stem,
+  options: options.map((text, index) => ({ letter: "ABCDE"[index], text })),
+  answer,
+  explanation
+}));
+
+questionBank.questions
+  .filter(question => question.subjectId === "farmacia" && question.number >= 165)
+  .forEach(question => { question.number += 40; });
+questionBank.questions.push(...portaria344EncerramentoECicloUm);
+const farmaciaOrdenadaTres = questionBank.questions
+  .filter(question => question.subjectId === "farmacia")
+  .sort((a, b) => a.number - b.number);
+let indiceFarmaciaTres = 0;
+questionBank.questions = questionBank.questions.map(question =>
+  question.subjectId === "farmacia" ? farmaciaOrdenadaTres[indiceFarmaciaTres++] : question
+);
+questionBank.generatedAt = "2026-11-04T18:00:00.000Z";
+questionBank.review.portaria344EncerramentoReviewed = Array.from({ length: 20 }, (_, index) => index + 165);
+questionBank.review.cicloLoteUmReviewed = Array.from({ length: 20 }, (_, index) => index + 185);

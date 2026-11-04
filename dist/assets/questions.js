@@ -16852,6 +16852,74 @@ const cuidadoFarmaceuticoLoteUm = cuidadoSeeds.map(([topic, stem, correct], inde
 });
 questionBank.questions.filter(question => question.subjectId === "farmacia" && question.number >= 355).forEach(question => { question.number += 50; });
 questionBank.questions.push(...cuidadoFarmaceuticoLoteUm);
+const cuidadoDistratoresRevisados = {
+  "farmacia-451": [
+    "confirmar somente o nome do medicamento, supondo que o esquema já seja conhecido pelo usuário.",
+    "concentrar a conversa na data da próxima retirada e deixar dose e conservação para consulta futura.",
+    "entregar a quantidade prescrita e usar apenas o folheto para esclarecer dúvidas sobre o uso.",
+    "ajustar o horário de administração por conveniência, sem revisar a prescrição."
+  ],
+  "farmacia-452": [
+    "dispensar a menor quantidade disponível e registrar a dúvida para avaliação posterior.",
+    "substituir pelo medicamento de mesma classe e orientar reavaliação na próxima consulta.",
+    "pedir ao usuário que escolha a interpretação mais próxima do que costuma utilizar.",
+    "manter a dispensação conforme a receita anterior, mesmo que o dado atual seja divergente."
+  ],
+  "farmacia-453": [
+    "reforçar que o resultado depende apenas de disciplina, sem explorar a rotina da pessoa.",
+    "substituir imediatamente o medicamento por outro mais simples, antes de entender o problema.",
+    "orientar compensar os esquecimentos com dose dobrada na tomada seguinte.",
+    "indicar um lembrete padronizado sem verificar barreiras de acesso, compreensão ou efeitos adversos."
+  ],
+  "farmacia-454": [
+    "possível dificuldade de compreender o esquema ou de encaixá-lo na rotina diária.",
+    "ocorrência de efeito adverso que leve a pessoa a evitar algumas doses.",
+    "barreira de acesso, custo ou indisponibilidade do medicamento no momento necessário.",
+    "necessidade de revisar o tratamento com acolhimento e perguntas abertas."
+  ],
+  "farmacia-455": [
+    "substituir a lista de uso domiciliar pela prescrição emitida no momento da internação.",
+    "conferir somente medicamentos de alto custo, deixando os demais para a alta.",
+    "organizar os medicamentos em ordem alfabética, sem confrontar dose, via e indicação.",
+    "registrar a lista recebida sem verificar diferenças entre fontes de informação."
+  ],
+  "farmacia-456": [
+    "presumir que os medicamentos de uso domiciliar foram suspensos se não constarem da prescrição inicial.",
+    "copiar a lista apresentada na triagem sem checar nome, dose, frequência e última administração.",
+    "adiar a comparação dos tratamentos até a alta, quando a prescrição estiver definitiva.",
+    "restringir a conferência aos medicamentos fornecidos pela própria instituição."
+  ],
+  "farmacia-457": [
+    "conferência apenas da embalagem externa, desde que o nome comercial pareça familiar.",
+    "separação por ordem alfabética e entrega conforme a primeira apresentação localizada.",
+    "validação exclusiva da quantidade solicitada, sem confrontar dose e apresentação.",
+    "dispensação baseada no histórico de compras do serviço, mesmo quando a prescrição diverge."
+  ],
+  "farmacia-458": [
+    "garantir que todo sintoma esperado seja leve e possa ser acompanhado sem orientação adicional.",
+    "sugerir troca imediata do medicamento por iniciativa própria diante de qualquer desconforto.",
+    "listar efeitos raros sem diferenciar os sinais que exigem contato rápido com o serviço.",
+    "orientar a manter o uso em qualquer circunstância, independentemente da gravidade do sinal."
+  ],
+  "farmacia-459": [
+    "avaliar apenas a capacidade de leitura do usuário, sem conferir o que foi compreendido.",
+    "reduzir a conversa a uma pergunta genérica sobre ter ouvido a orientação.",
+    "transferir ao acompanhante a responsabilidade de interpretar todas as instruções recebidas.",
+    "encerrar o atendimento após entregar a receita, presumindo que a explicação foi suficiente."
+  ],
+  "farmacia-460": [
+    "reproduzir os termos técnicos da prescrição para manter a orientação idêntica ao documento.",
+    "utilizar a mesma explicação para todos os usuários, independentemente de contexto ou dúvidas.",
+    "evitar perguntas durante a orientação para não prolongar o atendimento.",
+    "limitar a conversa ao nome do produto e à quantidade fornecida."
+  ]
+};
+Object.entries(cuidadoDistratoresRevisados).forEach(([id, distractors]) => {
+  const question = questionBank.questions.find(item => item.id === id);
+  const correct = question.options.find(option => option.letter === question.answer).text;
+  distractors.splice("ABCDE".indexOf(question.answer), 0, correct);
+  question.options = distractors.map((text, index) => ({ letter: "ABCDE"[index], text }));
+});
 const segurancaSeeds = [
 ["LASA","A identificação de medicamentos LASA deve priorizar:","diferenciação visual, separação física e conferência reforçada antes da dispensação."],
 ["LASA","Tall man lettering é usado para:","destacar partes diferentes de nomes semelhantes e reduzir risco de confusão visual."],

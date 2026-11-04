@@ -29,7 +29,7 @@ export const questionBank = {
       "id": "farmacia",
       "label": "Farmácia",
       "short": "Farmácia",
-      "count": 650
+      "count": 700
     }
   ],
   "questions": [
@@ -16957,6 +16957,18 @@ const calcFactories=[
 ];
 const calculosLoteUm=calcFactories.flatMap((factory,c)=>Array.from({length:5},(_,v)=>{const [topic,stem,correct,candidates,explanation]=factory(v);const answer="BECDA"[(c*5+v)%5];return{id:`farmacia-${601+c*5+v}`,subjectId:"farmacia",number:505+c*5+v,topic,area:"Cálculos farmacêuticos",stem,options:numericOptions(correct,candidates,answer).map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation};}));
 questionBank.questions.filter(q=>q.subjectId==="farmacia"&&q.number>=505).forEach(q=>{q.number+=50;});questionBank.questions.push(...calculosLoteUm);
+const calcDois=[
+["Reconstituição",(i)=>{const mg=500+i*250,conc=50;return[`Após reconstituição, há ${conc} mg/mL. Para administrar ${mg} mg, qual volume em mL?`,mg/conc,[mg*conc,mg/10,mg/conc+2,mg/conc-2],`Volume = ${mg}/${conc} = ${mg/conc} mL.`]}],
+["Razão e proporção",(i)=>{const base=2+i,total=10+i*5,r=base*total/100;return[`Quantos gramas são necessários para preparar ${total} mL de solução a ${base}% (m/v)?`,r,[base*total,base/total,r+1,r+2],`${base}% corresponde a ${base} g/100 mL; resultado: ${r} g.`]}],
+["Insulina",(i)=>{const u=10+i*5,conc=100,r=u/conc;return[`Em seringa graduada para 100 U/mL, qual volume em mL corresponde a ${u} unidades?`,r,[u*conc,u/10,r+0.1,r+0.2],`${u}/100 = ${r} mL.`]}],
+["Conversão",(i)=>{const mcg=250+i*250,r=mcg/1000;return[`Uma dose de ${mcg} microgramas corresponde a quantos miligramas?`,r,[mcg*1000,mcg/100,r+1,r+2],`1 mg = 1.000 microgramas; ${mcg}/1.000 = ${r} mg.`]}],
+["Infusão",(i)=>{const vol=100+i*50,min=30+i*15,r=vol/min*60;return[`Infundir ${vol} mL em ${min} minutos. Qual velocidade em mL/h?`,r,[vol/min,vol*min,r+20,r-20],`Converte-se para hora: ${vol}/${min}×60 = ${r} mL/h.`]}],
+["Fracionamento",(i)=>{const tab=20+i*10,dose=2+i,r=tab/dose;return[`Há ${tab} comprimidos e o usuário toma ${dose} comprimidos/dia. Por quantos dias o estoque dura?`,r,[tab*dose,dose/tab,r+5,r-5],`${tab}/${dose} = ${r} dias.`]}]
+];
+const calculosLoteDois=calcDois.flatMap(([topic,fn],c)=>Array.from({length:5},(_,v)=>{const [stem,correct,candidates,explanation]=fn(v);const answer="BECDA"[(c*5+v)%5];return{id:`farmacia-${651+c*5+v}`,subjectId:"farmacia",number:555+c*5+v,topic,area:"Cálculos farmacêuticos",stem,options:numericOptions(correct,candidates,answer).map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation};}));
+const formasSeeds=["Comprimido de liberação modificada não deve ser partido sem verificar se a tecnologia permite fracionamento.","Suspensão oral deve ser homogeneizada conforme orientação antes da medição da dose.","Forma farmacêutica estéril exige condições de preparo e controle compatíveis com sua via de administração.","O teste de dissolução avalia a liberação do fármaco a partir da forma farmacêutica em condições padronizadas.","Emulsão instável pode apresentar separação de fases e requer avaliação antes do uso.","Validação de processo busca evidenciar que o processo produz resultados consistentes.","A embalagem primária protege diretamente o medicamento e influencia sua estabilidade.","Excipiente pode alterar propriedades tecnológicas sem ser o princípio ativo.","Prazo de validade depende de estudos de estabilidade nas condições definidas.","Desvio de qualidade deve ser registrado, investigado e tratado antes da liberação.","Controle de qualidade compara o produto a especificações previamente definidas.","pH pode influenciar solubilidade, estabilidade e compatibilidade de formulações.","Pomada é uma forma semissólida destinada geralmente ao uso tópico.","Solução é sistema homogêneo com soluto dissolvido no veículo.","Suspensão contém partículas dispersas que podem sedimentar com o tempo.","Biodisponibilidade pode ser influenciada pela forma farmacêutica e pela dissolução.","Medicamento fotossensível requer proteção contra luz conforme sua especificação.","Contaminação cruzada é risco que exige segregação e limpeza adequadas.","Rotulagem deve identificar produto, concentração, lote, validade e condições relevantes.","Liberação de lote exige revisão de resultados e conformidade com especificações."];
+const formasLoteUm=formasSeeds.map((correct,i)=>{const answer="BECDA"[(30+i)%5],topic=["Formas farmacêuticas","Controle de qualidade","Estabilidade","Boas práticas"][i%4],wrong=["A forma pode ser alterada livremente sem avaliar impacto na liberação.","O produto deve ser liberado antes da conferência de seus dados críticos.","A condição de armazenamento não interfere na qualidade do medicamento.","A orientação técnica pode ser substituída pela aparência externa do produto."];wrong.splice("ABCDE".indexOf(answer),0,correct);return{id:`farmacia-${681+i}`,subjectId:"farmacia",number:585+i,topic,area:"Farmacotécnica e qualidade",stem:`Assinale a alternativa correta sobre ${topic.toLowerCase()}:`,options:wrong.map((text,j)=>({letter:"ABCDE"[j],text})),answer,explanation:correct};});
+questionBank.questions.filter(q=>q.subjectId==="farmacia"&&q.number>=555).forEach(q=>{q.number+=50;});questionBank.questions.push(...calculosLoteDois,...formasLoteUm);
 const farmaciaOrdenadaQuatro = questionBank.questions
   .filter(question => question.subjectId === "farmacia")
   .sort((a, b) => a.number - b.number);
@@ -16972,3 +16984,5 @@ questionBank.review.cuidadoFarmaceuticoLoteUmReviewed = Array.from({ length: 50 
 questionBank.review.segurancaLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 405);
 questionBank.review.pkLoteUmReviewed = Array.from({length:50},(_,index)=>index+455);
 questionBank.review.calculosLoteUmReviewed = Array.from({length:50},(_,index)=>index+505);
+questionBank.review.calculosLoteDoisReviewed = Array.from({length:30},(_,index)=>index+555);
+questionBank.review.formasLoteUmReviewed = Array.from({length:20},(_,index)=>index+585);

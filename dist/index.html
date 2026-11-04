@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f2ea">
+  <meta name="theme-color" content="#0b1a4a">
   <meta name="description" content="Question for All: PWA de estudos com 460 questões de concurso comentadas, filtros por matéria e progresso local.">
   <title>Question for All — Questões de Concurso</title>
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="assets/styles.css?v=23">
+  <link rel="stylesheet" href="assets/styles.css?v=24">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -21,10 +21,9 @@
     <img class="all-might-hair" src="assets/all-might-hair-a.png?v=1" alt="" aria-hidden="true">
     <div class="header-actions">
       <span class="offline-state"><i></i> disponível offline</span>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
-        <span class="sun" aria-hidden="true">☀</span>
-        <span class="theme-track"><i></i></span>
-        <span class="moon" aria-hidden="true">☾</span>
+      <button class="focus-toggle" id="focus-toggle" type="button" aria-label="Ativar modo foco" aria-pressed="false">
+        <span class="focus-icon" aria-hidden="true">◉</span>
+        <span class="focus-label">Modo foco</span>
       </button>
     </div>
   </header>
@@ -230,6 +229,6 @@
     </form>
   </dialog>
 
-  <script type="module" src="assets/app.js?v=39"></script>
+  <script type="module" src="assets/app.js?v=40"></script>
 </body>
 </html>

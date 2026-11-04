@@ -1,10 +1,10 @@
 import { questionBank } from "./questions.js?v=31";
 
 const STORAGE_KEY = "caderno330-progress-v1";
-const THEME_KEY = "caderno330-theme";
+const FOCUS_KEY = "caderno330-focus-mode";
 const SIMULATION_STORAGE_KEY = "caderno330-simulations-v1";
 const recommendedOrder = ["portugues", "matematica", "direito-constitucional", "direito-administrativo", "farmacia"];
-const ids = ["subject-filter","topic-filter","order-filter","question-number","setup-message","start-study","open-simulator","simulador","back-from-simulator","simulator-config","sim-total","sim-subjects","sim-message","start-simulation","simulation-results","simulation-summary","simulation-subject-results","simulation-topic-results","save-simulation","review-simulation-errors","new-simulation","simulation-history-list","answered-count","answered-total","correct-count","wrong-count","accuracy-rate","progress-fill","progress-subject-filter","reset-progress","reset-dialog","estudo","back-home","session-position","session-label","question-strip","question-subject","question-display-number","question-topic","question-stem","alternatives","confirm-answer","answer-hint","feedback","feedback-result","feedback-explanation","correct-answer","feedback-topic","previous-question","next-question","theme-toggle"];
+const ids = ["subject-filter","topic-filter","order-filter","question-number","setup-message","start-study","open-simulator","simulador","back-from-simulator","simulator-config","sim-total","sim-subjects","sim-message","start-simulation","simulation-results","simulation-summary","simulation-subject-results","simulation-topic-results","save-simulation","review-simulation-errors","new-simulation","simulation-history-list","answered-count","answered-total","correct-count","wrong-count","accuracy-rate","progress-fill","progress-subject-filter","reset-progress","reset-dialog","estudo","back-home","session-position","session-label","question-strip","question-subject","question-display-number","question-topic","question-stem","alternatives","confirm-answer","answer-hint","feedback","feedback-result","feedback-explanation","correct-answer","feedback-topic","previous-question","next-question","focus-toggle"];
 const els = Object.fromEntries(ids.map(id => [id, document.getElementById(id)]));
 let progress = loadJson(STORAGE_KEY, {});
 let savedSimulations = loadJson(SIMULATION_STORAGE_KEY, []);
@@ -26,14 +26,14 @@ function saveHistory() { localStorage.setItem(SIMULATION_STORAGE_KEY, JSON.strin
 function formatDuration(seconds) { const total = Math.max(0, Math.round(Number(seconds) || 0)), minutes = Math.floor(total / 60), remainder = total % 60; return minutes ? `${minutes} min ${String(remainder).padStart(2, "0")} s` : `${remainder} s`; }
 function preserveViewport(update) { const left = window.scrollX, top = window.scrollY; update(); window.scrollTo(left, top); requestAnimationFrame(() => window.scrollTo(left, top)); }
 
-function setTheme(theme) {
-  document.documentElement.dataset.theme = theme;
-  els["theme-toggle"].setAttribute("aria-pressed", String(theme === "dark"));
-  els["theme-toggle"].setAttribute("aria-label", theme === "dark" ? "Ativar modo claro" : "Ativar modo escuro");
-  document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#11191e" : "#f5f2ea";
-  localStorage.setItem(THEME_KEY, theme);
+function setFocus(active) {
+  document.body.classList.toggle("focus-mode", active);
+  els["focus-toggle"].setAttribute("aria-pressed", String(active));
+  els["focus-toggle"].setAttribute("aria-label", active ? "Desativar modo foco" : "Ativar modo foco");
+  els["focus-toggle"].querySelector(".focus-label").textContent = active ? "Foco ativo" : "Modo foco";
+  localStorage.setItem(FOCUS_KEY, String(active));
 }
-function initTheme() { setTheme(localStorage.getItem(THEME_KEY) || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")); }
+function initFocus() { setFocus(localStorage.getItem(FOCUS_KEY) === "true"); }
 function renderSubjectOptions() {
   els["subject-filter"].innerHTML = [`<option value="all">Todas as ${questionBank.subjects.length} matérias</option>`, ...orderedSubjects().map(subject => `<option value="${subject.id}">${escapeHtml(subject.label)} (${subject.count})</option>`)].join("");
 }
@@ -218,7 +218,7 @@ function backFromStudy() {
   else showHome();
 }
 
-els["theme-toggle"].addEventListener("click", () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"));
+els["focus-toggle"].addEventListener("click", () => setFocus(!document.body.classList.contains("focus-mode")));
 els["subject-filter"].addEventListener("change", renderTopicOptions); els["progress-subject-filter"].addEventListener("change", renderProgress); els["start-study"].addEventListener("click", startStudy); els["open-simulator"].addEventListener("click", openSimulator); els["back-from-simulator"].addEventListener("click", showHome); els["start-simulation"].addEventListener("click", buildSimulation); els["save-simulation"].addEventListener("click", saveCurrentSimulation); els["review-simulation-errors"].addEventListener("click", reviewSimulationErrors); els["new-simulation"].addEventListener("click", () => { simulation = null; els["simulation-results"].hidden = true; renderSimulatorSubjects(); showSimulatorConfig(); }); els["back-home"].addEventListener("click", backFromStudy);
 els["sim-total"].addEventListener("input", () => { els["sim-message"].textContent = ""; });
 els["sim-subjects"].addEventListener("change", event => {
@@ -250,5 +250,5 @@ document.addEventListener("keydown", event => {
 });
 els["reset-progress"].addEventListener("click", () => els["reset-dialog"].showModal()); els["reset-dialog"].addEventListener("close", () => { if (els["reset-dialog"].returnValue !== "confirm") return; progress = {}; localStorage.removeItem(STORAGE_KEY); renderProgress(); });
 
-initTheme(); renderSubjectOptions(); renderProgressSubjectOptions(); renderTopicOptions(); renderProgress(); renderSimulatorSubjects(); renderSimulationHistory();
+initFocus(); renderSubjectOptions(); renderProgressSubjectOptions(); renderTopicOptions(); renderProgress(); renderSimulatorSubjects(); renderSimulationHistory();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");

@@ -29,7 +29,7 @@ export const questionBank = {
       "id": "farmacia",
       "label": "Farmácia",
       "short": "Farmácia",
-      "count": 550
+      "count": 600
     }
   ],
   "questions": [
@@ -16923,6 +16923,23 @@ const segurancaLoteUm = segurancaSeeds.map(([topic, stem, correct], index) => {
 });
 questionBank.questions.filter(question=>question.subjectId==="farmacia"&&question.number>=405).forEach(question=>{question.number+=50;});
 questionBank.questions.push(...segurancaLoteUm);
+const pkConcepts=[
+["Absorção","a passagem do fármaco do local de administração para a circulação sistêmica","a eliminação renal do fármaco"],
+["Biodisponibilidade","a fração da dose que alcança a circulação sistêmica inalterada","a quantidade total armazenada no organismo"],
+["Primeira passagem","a metabolização pré-sistêmica que pode reduzir a biodisponibilidade oral","a excreção pulmonar após a distribuição"],
+["Distribuição","a passagem reversível do fármaco entre sangue e tecidos","a transformação química obrigatória do fármaco"],
+["Ligação proteica","pode alterar a fração livre disponível para distribuição e efeito","impede definitivamente qualquer eliminação"],
+["Metabolismo","pode transformar o fármaco em metabólitos mais ou menos ativos","ocorre somente nos rins e nunca no fígado"],
+["Eliminação renal","pode ser modificada por função renal, filtração, secreção e reabsorção","é independente da concentração e do estado clínico"],
+["Meia-vida","o tempo necessário para redução aproximada de metade da concentração no organismo","o tempo fixo de início do efeito em qualquer pessoa"],
+["Agonista","produz resposta ao ativar receptor ou alvo farmacológico","bloqueia todo receptor independentemente da concentração"],
+["Antagonista","reduz ou bloqueia a resposta de um agonista em seu alvo","produz sempre a mesma resposta máxima do agonista"]
+];
+const pkTemplates=[
+["O conceito de {topic} refere-se a:","A"],["Em um caso clínico, {topic} ajuda a explicar:","B"],["A interpretação correta sobre {topic} é:","C"],["No acompanhamento farmacoterapêutico, {topic} merece atenção porque:","D"],["Uma afirmação tecnicamente adequada sobre {topic} é:","E"]
+];
+const pkLoteUm=pkConcepts.flatMap(([topic,correct,wrong],c)=>pkTemplates.map(([model,answer],v)=>{const stem=model.replace("{topic}",topic);const options=[wrong,"a escolha do medicamento apenas pelo preço.","a ausência de necessidade de monitoramento.","a substituição da avaliação clínica por cálculo isolado."];options.splice("ABCDE".indexOf(answer),0,correct);return{id:`farmacia-${551+c*5+v}`,subjectId:"farmacia",number:455+c*5+v,topic,area:"Farmacocinética e farmacodinâmica",stem,options:options.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:`A resposta correta descreve ${topic}: ${correct} A interpretação deve sempre considerar o contexto clínico.`};}));
+questionBank.questions.filter(q=>q.subjectId==="farmacia"&&q.number>=455).forEach(q=>{q.number+=50;});questionBank.questions.push(...pkLoteUm);
 const farmaciaOrdenadaQuatro = questionBank.questions
   .filter(question => question.subjectId === "farmacia")
   .sort((a, b) => a.number - b.number);
@@ -16936,3 +16953,4 @@ questionBank.review.gestaoFarmaceuticaLoteUmReviewed = Array.from({ length: 50 }
 questionBank.review.susPnafLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 305);
 questionBank.review.cuidadoFarmaceuticoLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 355);
 questionBank.review.segurancaLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 405);
+questionBank.review.pkLoteUmReviewed = Array.from({length:50},(_,index)=>index+455);

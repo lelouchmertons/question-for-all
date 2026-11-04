@@ -1,18 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 210" fill="none">
-  <!-- Mechas longas, separadas para preservar a silhueta pontiaguda. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" fill="none">
+  <!-- Topetes: mechas finas e altas, conectadas apenas pela base central. -->
   <g fill="#f4c62f">
-    <path d="M230 137C188 104 148 53 74 4c25 53 58 102 133 147Z"/>
-    <path d="M222 143C175 112 130 76 42 43c39 45 87 83 162 116Z"/>
-    <path d="M214 148C160 128 104 111 18 91c51 36 111 59 178 75Z"/>
-    <path d="M207 154C153 150 91 145 30 151c60 22 120 25 174 19Z"/>
-    <path d="M250 137C292 104 332 53 406 4c-25 53-58 102-133 147Z"/>
-    <path d="M258 143c47-31 92-67 180-100-39 45-87 83-162 116Z"/>
-    <path d="M266 148c54-20 110-37 196-57-51 36-111 59-178 75Z"/>
-    <path d="M273 154c54-4 116-9 177-3-60 22-120 25-174 19Z"/>
+    <path d="M243 87C184 69 103 31 16 2c24 43 68 80 173 104Z"/>
+    <path d="M232 93C174 78 96 59 28 46c35 35 91 65 176 62Z"/>
+    <path d="M221 100C166 96 102 94 44 105c48 22 104 27 166 12Z"/>
+    <path d="M257 87C316 69 397 31 484 2c-24 43-68 80-173 104Z"/>
+    <path d="M268 93c58-15 136-34 204-47-35 35-91 65-176 62Z"/>
+    <path d="M279 100c55-4 119-6 177 5-48 22-104 27-166 12Z"/>
   </g>
-  <!-- Sobrancelhas independentes e inclinadas para baixo em direção ao centro. -->
+  <!-- Sobrancelhas independentes: cada uma desce em direção ao centro e termina em ponta. -->
   <g fill="#f4c62f">
-    <path d="M58 197c45-39 99-54 158-29l-19 23c-43-16-84-7-122 22Z"/>
-    <path d="M422 197c-45-39-99-54-158-29l19 23c43-16 84-7 122 22Z"/>
+    <path d="M70 149 153 127 226 145 191 157 151 147 103 160Z"/>
+    <path d="m430 149-83-22-73 18 35 12 40-10 48 13Z"/>
   </g>
 </svg>

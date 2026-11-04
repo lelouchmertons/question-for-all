@@ -29,7 +29,7 @@ export const questionBank = {
       "id": "farmacia",
       "label": "Farmácia",
       "short": "Farmácia",
-      "count": 500
+      "count": 550
     }
   ],
   "questions": [
@@ -16852,6 +16852,77 @@ const cuidadoFarmaceuticoLoteUm = cuidadoSeeds.map(([topic, stem, correct], inde
 });
 questionBank.questions.filter(question => question.subjectId === "farmacia" && question.number >= 355).forEach(question => { question.number += 50; });
 questionBank.questions.push(...cuidadoFarmaceuticoLoteUm);
+const segurancaSeeds = [
+["LASA","A identificação de medicamentos LASA deve priorizar:","diferenciação visual, separação física e conferência reforçada antes da dispensação."],
+["LASA","Tall man lettering é usado para:","destacar partes diferentes de nomes semelhantes e reduzir risco de confusão visual."],
+["LASA","Dois produtos de nomes semelhantes chegam juntos ao estoque. A medida inicial é:","avaliar risco e definir armazenamento separado com identificação inequívoca."],
+["LASA","A proximidade de medicamentos LASA em uma prateleira pode:","aumentar a chance de seleção por engano durante a separação."],
+["LASA","Alertas para produtos LASA devem ser:","visíveis, padronizados e acompanhados de barreiras reais de conferência."],
+["Medicamentos de alta vigilância","Medicamento de alta vigilância exige:","barreiras adicionais de segurança devido ao maior potencial de dano em caso de erro."],
+["Medicamentos de alta vigilância","Dupla checagem é mais útil quando:","é independente e incide sobre dados críticos antes da etapa irreversível."],
+["Medicamentos de alta vigilância","Uma dupla checagem frágil ocorre quando:","a segunda pessoa apenas confirma verbalmente sem conferir os dados originais."],
+["Medicamentos de alta vigilância","Para concentrados de eletrólitos, a organização segura inclui:","restrição de acesso, rotulagem destacada e protocolo de conferência."],
+["Medicamentos de alta vigilância","O objetivo de padronizar concentrações é:","reduzir variações que favorecem erro de cálculo, seleção e administração."],
+["Prescrição segura","Uma prescrição segura deve permitir:","identificação clara de medicamento, dose, via, frequência e usuário."],
+["Prescrição segura","Abreviatura ambígua na prescrição deve ser:","esclarecida antes da dispensação ou administração do medicamento."],
+["Prescrição segura","A ausência de via de administração em medicamento com vias diferentes exige:","verificação com o prescritor ou serviço responsável antes de prosseguir."],
+["Prescrição segura","Uma dose incomum para o perfil do usuário demanda:","avaliação clínica e técnica, sem assumir que se trata apenas de variação aceitável."],
+["Prescrição segura","Medicamento com nome comercial pouco conhecido deve ser conferido quanto a:","princípio ativo, concentração, forma farmacêutica e indicação no contexto da prescrição."],
+["Dispensação segura","A conferência final da dispensação deve confrontar:","usuário, prescrição, medicamento, dose, forma, quantidade e orientação necessária."],
+["Dispensação segura","Separar itens por usuário antes da entrega reduz:","mistura de tratamentos e troca de medicamentos entre pessoas atendidas."],
+["Dispensação segura","Interrupções durante a separação devem ser manejadas com:","retomada do processo a partir de ponto seguro e nova conferência quando necessária."],
+["Dispensação segura","A etiqueta de dispensação deve apoiar:","identificação correta e orientação coerente com o medicamento entregue."],
+["Dispensação segura","Quando há divergência entre rótulo e sistema, a conduta é:","suspender a liberação até investigar e resolver a inconsistência."],
+["Armazenamento","Estoque organizado por risco deve:","considerar semelhança de nomes, aparência, concentração e potencial de dano."],
+["Armazenamento","A localização de produtos em prateleiras deve evitar:","aproximação de itens semelhantes quando isso aumentar chance de troca."],
+["Armazenamento","Um medicamento sem rótulo identificável deve ser:","segregado até que sua identidade e condição possam ser confirmadas."],
+["Armazenamento","A conservação inadequada pode afetar:","qualidade, estabilidade e segurança do produto mesmo sem alteração visual evidente."],
+["Armazenamento","A regra FEFO contribui para segurança porque:","prioriza saída pelo vencimento mais próximo e reduz perdas evitáveis."],
+["Comunicação","Passagem de plantão segura deve incluir:","informações críticas, pendências, riscos e ações necessárias para continuidade."],
+["Comunicação","Comunicação de ordem verbal exige:","confirmação do conteúdo e registro conforme protocolos aplicáveis."],
+["Comunicação","Um alerta de segurança eficaz é aquele que:","chega à pessoa certa no momento do processo em que pode prevenir o erro."],
+["Comunicação","Ao identificar risco de troca, a equipe deve:","comunicar o risco e ajustar o sistema, não apenas advertir individualmente."],
+["Comunicação","A comunicação com o usuário contribui para segurança quando:","permite que ele reconheça medicamento, finalidade e sinais de alerta relevantes."],
+["Erros e quase erros","Um quase erro deve ser analisado porque:","revela fragilidade do sistema antes que ocorra dano ao usuário."],
+["Erros e quase erros","A análise de erro mais produtiva procura:","causas e barreiras do processo, além da atuação individual envolvida."],
+["Erros e quase erros","Corrigir somente a pessoa que errou é insuficiente quando:","o fluxo, o ambiente ou a identificação permitem repetição do mesmo evento."],
+["Erros e quase erros","Notificação de incidente deve ser encarada como:","fonte de aprendizagem e melhoria, com análise proporcional ao risco."],
+["Erros e quase erros","Após incidente, uma ação corretiva consistente deve:","atacar causa identificada e ser monitorada quanto ao resultado."],
+["Reconciliação","Na transição de cuidado, a lista de medicamentos deve ser:","comparada com a nova prescrição para identificar omissões, duplicidades e alterações."],
+["Reconciliação","Discrepância intencional em medicamento deve:","ser documentada e compreendida pela equipe e, quando pertinente, pelo usuário."],
+["Reconciliação","Discrepância não intencional deve levar a:","avaliação e correção oportuna para reduzir risco de dano."],
+["Reconciliação","A fonte mais segura para lista de medicamentos é:","combinação de informações do usuário, prescrições, registros e embalagens disponíveis."],
+["Reconciliação","A reconciliação é especialmente importante após:","admissão, transferência e alta, momentos com maior risco de mudanças não percebidas."],
+["Farmacovigilância","Suspeita de reação adversa deve ser:","avaliada e notificada conforme gravidade, relevância e fluxos aplicáveis."],
+["Farmacovigilância","A relação temporal entre evento e medicamento:","é um elemento de avaliação, mas não prova isoladamente causalidade."],
+["Farmacovigilância","Uma queixa técnica de produto pode envolver:","desvio de qualidade, embalagem, aspecto ou informação que exija investigação."],
+["Farmacovigilância","A notificação de evento adverso contribui para:","detecção de sinais e aprimoramento da segurança de medicamentos."],
+["Farmacovigilância","Orientar usuário sobre evento adverso deve incluir:","sinais de alarme e orientação de procura de cuidado quando necessário."],
+["Caso integrado","Ao detectar comprimidos de aparência semelhante em caixas trocadas, a conduta imediata é:","segregar os itens, interromper dispensação e investigar a extensão do risco."],
+["Caso integrado","Após troca sem dano ao usuário, a melhor resposta é:","registrar, comunicar, analisar causas e fortalecer barreiras do processo."],
+["Caso integrado","Uma unidade recebe produto de concentração diferente da habitual. Antes de disponibilizá-lo, deve:","avaliar impacto, comunicar a mudança e adaptar identificação e orientação."],
+["Caso integrado","Em falha de sistema durante dispensação, uma medida segura é:","usar contingência documentada e realizar conferências compatíveis com o risco."],
+["Síntese","Segurança medicamentosa depende principalmente de:","barreiras coordenadas no sistema, comunicação e atenção às etapas críticas."]
+];
+const safetyWrong = {
+  "LASA":["manter os itens juntos para facilitar comparação visual.","trocar identificação por memorização da equipe.","priorizar velocidade de separação em vez de barreiras de conferência.","registrar o risco apenas após ocorrer uma troca."],
+  "Medicamentos de alta vigilância":["usar o mesmo fluxo de qualquer medicamento sem distinção.","reduzir conferências para evitar atrasos.","delegar decisão crítica sem validação independente.","manter concentração variável conforme a disponibilidade."],
+  "Prescrição segura":["supor o dado ausente pelo histórico do usuário.","dispensar o produto mais habitual na unidade.","corrigir a prescrição informalmente sem comunicação.","adiar toda verificação até a próxima consulta."],
+  "Dispensação segura":["liberar o item e orientar apenas se houver retorno do usuário.","conferir exclusivamente o nome comercial.","priorizar a fila mesmo diante de inconsistência.","substituir conferência por confirmação verbal rápida."],
+  "Armazenamento":["manter o item disponível até o inventário seguinte.","reorganizar apenas quando faltar espaço.","concentrar produtos semelhantes para facilitar reposição.","remover alertas visuais para reduzir poluição visual."],
+  "Comunicação":["restringir informação a quem identificou o risco.","usar mensagens informais sem registro.","aguardar reunião mensal para comunicar evento crítico.","evitar envolver o usuário nas orientações."],
+  "Erros e quase erros":["tratar o evento como falha exclusivamente pessoal.","alterar dados sem investigar a causa.","deixar de registrar quando não houve dano.","encerrar o caso após advertência verbal."],
+  "Reconciliação":["considerar somente a última receita apresentada.","presumir que listas diferentes são equivalentes.","excluir medicamentos antigos sem confirmação.","delegar a comparação ao usuário sem apoio."],
+  "Farmacovigilância":["ignorar evento se não houver certeza absoluta de causalidade.","atribuir todo sintoma ao medicamento novo.","orientar interrupção automática sem avaliação.","guardar a informação sem comunicar o serviço."],
+  "Caso integrado":["prosseguir normalmente para não atrasar atendimento.","corrigir apenas visualmente e descartar registros.","atribuir o risco a uma única pessoa sem revisar o fluxo.","aguardar nova ocorrência para definir ação."],
+  "Síntese":["concentrar toda decisão em um único profissional.","medir segurança apenas pelo número de produtos entregues.","eliminar registros para acelerar o processo.","agir somente depois que ocorrer dano."]
+};
+const segurancaLoteUm = segurancaSeeds.map(([topic, stem, correct], index) => {
+ const answer="BECDA"[index%5], options=[...safetyWrong[topic]]; options.splice("ABCDE".indexOf(answer),0,correct);
+ return {id:`farmacia-${501+index}`,subjectId:"farmacia",number:405+index,topic,area:"Segurança do paciente e LASA",stem,options:options.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:`A alternativa correta é: ${correct} A medida reduz risco ao reforçar barreiras de segurança no processo.`};
+});
+questionBank.questions.filter(question=>question.subjectId==="farmacia"&&question.number>=405).forEach(question=>{question.number+=50;});
+questionBank.questions.push(...segurancaLoteUm);
 const farmaciaOrdenadaQuatro = questionBank.questions
   .filter(question => question.subjectId === "farmacia")
   .sort((a, b) => a.number - b.number);
@@ -16859,8 +16930,9 @@ let indiceFarmaciaQuatro = 0;
 questionBank.questions = questionBank.questions.map(question =>
   question.subjectId === "farmacia" ? farmaciaOrdenadaQuatro[indiceFarmaciaQuatro++] : question
 );
-questionBank.generatedAt = "2026-11-05T00:00:00.000Z";
+questionBank.generatedAt = "2026-11-05T01:00:00.000Z";
 questionBank.review.cicloLoteDoisReviewed = Array.from({ length: 50 }, (_, index) => index + 205);
 questionBank.review.gestaoFarmaceuticaLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 255);
 questionBank.review.susPnafLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 305);
 questionBank.review.cuidadoFarmaceuticoLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 355);
+questionBank.review.segurancaLoteUmReviewed = Array.from({ length: 50 }, (_, index) => index + 405);

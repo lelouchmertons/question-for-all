@@ -27,7 +27,7 @@ export const questionBank = {
     },
     {
       "id": "farmacia",
-      "label": "Conhecimentos Específicos de Farmácia",
+      "label": "Farmácia",
       "short": "Farmácia",
       "count": 160
     }

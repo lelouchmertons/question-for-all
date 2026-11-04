@@ -29,7 +29,7 @@ export const questionBank = {
       "id": "farmacia",
       "label": "Farmácia",
       "short": "Farmácia",
-      "count": 300
+      "count": 350
     }
   ],
   "questions": [
@@ -16290,3 +16290,380 @@ questionBank.questions = questionBank.questions.map(question =>
 questionBank.generatedAt = "2026-11-04T18:00:00.000Z";
 questionBank.review.portaria344EncerramentoReviewed = Array.from({ length: 20 }, (_, index) => index + 165);
 questionBank.review.cicloLoteUmReviewed = Array.from({ length: 20 }, (_, index) => index + 185);
+
+const cicloLoteDois = [
+  ["301",205,"Seleção baseada em evidências","Ao avaliar a inclusão de medicamento em lista padronizada, a comissão deve dar maior peso a:","B","A seleção deve ser técnica e transparente, combinando evidência, segurança, efetividade, necessidade em saúde e viabilidade. Popularidade comercial não é critério suficiente.",[
+    "volume de publicidade realizado pelo fabricante no período.",
+    "evidência de benefício, segurança, necessidade de saúde e viabilidade.",
+    "preferência individual do prescritor com maior número de atendimentos.",
+    "aparência da embalagem e facilidade de exposição no almoxarifado.",
+    "posição do produto em rankings de venda de farmácias privadas."
+  ]],
+  ["302",206,"Seleção e padronização","Uma relação padronizada de medicamentos deve ser revisada quando:","E","Revisar a padronização permite incorporar novas evidências, mudanças epidemiológicas e questões de segurança ou disponibilidade, sempre com critérios documentados.",[
+    "um fornecedor solicitar inclusão de novo produto em seu catálogo.",
+    "a equipe desejar ampliar o número de marcas disponíveis.",
+    "a unidade dispuser de espaço ocioso no almoxarifado.",
+    "o item possuir embalagem mais atrativa para o paciente.",
+    "surgirem evidências, mudanças epidemiológicas ou problemas relevantes de uso."
+  ]],
+  ["303",207,"Seleção e padronização","A padronização farmacêutica contribui diretamente para:","C","Padronizar favorece previsibilidade, treinamento, programação, segurança e uso racional. Ela não deve ser confundida com exclusão irrefletida de alternativas clinicamente necessárias.",[
+    "substituir protocolos clínicos por escolhas de estoque.",
+    "dispensar análise de efetividade e segurança dos medicamentos.",
+    "organizar o cuidado, a logística e o uso racional de medicamentos.",
+    "impedir revisão da lista mesmo diante de evidências novas.",
+    "garantir que qualquer marca comercial possa ser adquirida."
+  ]],
+  ["304",208,"Programação","A programação é inadequada quando considera somente o consumo histórico e ignora:","D","Dados históricos são essenciais, mas não bastam se houve mudança de demanda, surtos, ampliação de serviços, saldo atípico ou ruptura anterior.",[
+    "a identificação do fornecedor que realizou a última entrega.",
+    "a localização física dos produtos dentro do estoque.",
+    "a forma de pagamento prevista na aquisição futura.",
+    "perfil epidemiológico, mudanças de serviço, estoque e prazo de reposição.",
+    "a preferência de marca declarada pelos pacientes atendidos."
+  ]],
+  ["305",209,"Programação","Uma série histórica de consumo apresenta queda porque o produto ficou indisponível por dois meses. Para programar o período seguinte, a equipe deve:","A","A queda por ruptura não representa demanda real. É preciso interpretar o dado e combinar outras informações para estimar a necessidade.",[
+    "corrigir a interpretação do histórico considerando a ruptura e a demanda não atendida.",
+    "usar a média reduzida como consumo normal do período seguinte.",
+    "eliminar todo o histórico anterior e programar sem base de dados.",
+    "programar somente a quantidade disponível no saldo atual.",
+    "adquirir quantidade arbitrária, pois rupturas impedem qualquer previsão."
+  ]],
+  ["306",210,"Programação","O estoque de segurança existe principalmente para:","B","O estoque de segurança absorve variações de consumo e atrasos dentro do planejamento. Ele não substitui programação, monitoramento e reposição em tempo oportuno.",[
+    "manter produtos próximos ao vencimento para uso prioritário.",
+    "reduzir o risco de ruptura diante de variações e atrasos previstos.",
+    "aumentar o volume comprado sem considerar consumo ou prazo.",
+    "substituir o inventário físico por saldo eletrônico.",
+    "eliminar a necessidade de acompanhar entregas de fornecedores."
+  ]],
+  ["307",211,"Ponto de pedido","O ponto de pedido deve ser definido de modo a sinalizar reposição:","E","O ponto de pedido considera consumo e tempo de reposição, acrescido da margem de segurança quando aplicável. Esperar zerar o estoque aumenta o risco de interrupção.",[
+    "somente após o saldo físico chegar a zero.",
+    "quando o produto atingir metade da capacidade física da prateleira.",
+    "na data fixa de inventário, qualquer que seja o consumo.",
+    "depois que a unidade solicitante comunicar falta do medicamento.",
+    "antes de o saldo atingir nível incapaz de cobrir o período de reposição."
+  ]],
+  ["308",212,"Programação","A programação orientada pelo perfil epidemiológico é especialmente importante quando:","C","Mudanças de perfil epidemiológico podem elevar ou reduzir necessidades sem aparecer ainda no consumo histórico. A programação deve antecipar a demanda assistencial plausível.",[
+    "o fornecedor mantém preços estáveis durante todo o exercício.",
+    "a unidade possui estoque elevado de produtos sem saída.",
+    "há previsão de mudanças na frequência ou no tipo de agravos atendidos.",
+    "a lista de medicamentos não sofreu atualização no último ano.",
+    "o almoxarifado passou por reforma de suas instalações físicas."
+  ]],
+  ["309",213,"Aquisição","A especificação técnica de um medicamento em processo de aquisição deve ser suficiente para:","D","Especificar adequadamente permite comparar propostas e receber o item pretendido, sem direcionar marca sem justificativa técnica.",[
+    "indicar a marca com maior participação de mercado.",
+    "permitir entrega de qualquer apresentação farmacêutica semelhante.",
+    "substituir a conferência no recebimento dos produtos.",
+    "definir de forma verificável o item, apresentação e requisitos necessários.",
+    "dispensar a necessidade de seleção e programação prévias."
+  ]],
+  ["310",214,"Aquisição","Direcionar a especificação a uma marca, sem justificativa técnica válida, compromete:","A","A descrição deve preservar competitividade e aderência técnica. Restringir sem necessidade pode impedir comparação adequada e elevar risco de compra inadequada.",[
+    "a isonomia e a competição, além de fragilizar a justificativa da compra.",
+    "a necessidade de conferir lote e validade no recebimento.",
+    "o uso do critério FEFO para organização do estoque.",
+    "a realização de inventário físico pelo almoxarifado.",
+    "a orientação farmacêutica durante a dispensação ao usuário."
+  ]],
+  ["311",215,"Aquisição","A compra de quantidade superior à programada, sem justificativa de risco ou demanda, pode produzir:","B","Comprar além da necessidade pode imobilizar recursos e ampliar perdas por vencimento. A disponibilidade deve ser equilibrada com consumo e capacidade de armazenamento.",[
+    "redução automática da necessidade de controle de validade.",
+    "excesso de estoque, perdas e maior imobilização de recursos.",
+    "eliminação de todos os custos relacionados ao armazenamento.",
+    "garantia de consumo integral de todos os lotes adquiridos.",
+    "dispensa da conferência de quantidade e integridade no recebimento."
+  ]],
+  ["312",216,"Recebimento","No recebimento de medicamentos, uma caixa íntegra externamente não dispensa:","E","A integridade externa é apenas um dos critérios. Deve-se verificar item, quantidade, lote, validade, condições de transporte e documentação conforme o processo.",[
+    "a assinatura do motorista responsável pelo transporte.",
+    "a informação de preço praticado no varejo da região.",
+    "a preferência de marca da equipe assistencial.",
+    "a conferência da cor das embalagens recebidas.",
+    "a verificação de item, quantidade, lote, validade e documentação."
+  ]],
+  ["313",217,"Recebimento","O lote recebido diverge da apresentação especificada no pedido, embora tenha o mesmo princípio ativo. A conduta correta é:","C","Princípio ativo igual não garante equivalência com a apresentação ou especificação contratada. A divergência deve ser registrada e avaliada antes da entrada em estoque.",[
+    "incorporar o lote, pois o princípio ativo é o único dado relevante.",
+    "dispensar as unidades primeiro e documentar a diferença ao final do mês.",
+    "registrar a divergência e avaliar a aceitação conforme a especificação e o processo.",
+    "substituir a especificação do pedido para coincidir com o produto recebido.",
+    "misturar o lote aos demais para simplificar a organização física."
+  ]],
+  ["314",218,"Recebimento","A quarentena no recebimento de medicamentos serve para:","D","Quarentena impede uso ou distribuição antes que o item seja liberado após conferência e tratamento de eventuais não conformidades.",[
+    "separar produtos de alto custo para venda prioritária.",
+    "armazenar definitivamente os itens de maior giro.",
+    "reduzir a necessidade de conferência documental da entrega.",
+    "impedir uso antes da liberação após conferência e avaliação necessária.",
+    "substituir o controle de temperatura durante o transporte."
+  ]],
+  ["315",219,"Recebimento","Produto termolábil chega sem evidência adequada de manutenção da condição requerida. A medida inicial mais apropriada é:","A","Diante de possível excursão de temperatura, o produto deve ser identificado e segregado até avaliação técnica. Liberá-lo por aparência aumenta risco.",[
+    "segregar, registrar a ocorrência e avaliar tecnicamente antes de liberar o produto.",
+    "incorporar ao estoque se a embalagem não apresentar vazamento.",
+    "dispensar primeiro as unidades recebidas para reduzir exposição ao ambiente.",
+    "substituir a informação ausente por declaração verbal do transportador.",
+    "misturar o lote com os demais e acompanhar somente a data de validade."
+  ]],
+  ["316",220,"Armazenamento","Uma condição essencial para armazenamento seguro de medicamentos é:","B","O armazenamento requer monitoramento das condições aplicáveis, organização, limpeza, proteção contra avarias e rastreabilidade. Não se limita a manter o local fechado.",[
+    "guardar todos os produtos em qualquer área livre, desde que haja estantes.",
+    "manter condições ambientais, organização e monitoramento adequados ao produto.",
+    "priorizar proximidade do caixa em vez das condições recomendadas.",
+    "retirar identificação de lotes para reduzir erros de leitura.",
+    "organizar medicamentos somente por valor unitário de aquisição."
+  ]],
+  ["317",221,"Armazenamento","A organização física do estoque deve facilitar:","E","Boa organização facilita localizar itens, identificar lotes e validades, realizar inventários e evitar trocas. O estoque não deve ser organizado apenas pela aparência das embalagens.",[
+    "a escolha livre de qualquer lote pelo colaborador no momento da separação.",
+    "a exposição de medicamentos ao público para acelerar a dispensação.",
+    "o agrupamento de produtos similares sem identificação diferenciada.",
+    "a guarda de itens vencidos junto aos itens disponíveis para uso.",
+    "a identificação, a rastreabilidade, a conferência e a saída adequada dos itens."
+  ]],
+  ["318",222,"FEFO","Em situação na qual dois lotes possuem a mesma apresentação e um vence antes, a regra FEFO orienta:","C","A saída deve privilegiar o lote com vencimento mais próximo, desde que esteja liberado e adequado para uso. Isso reduz perdas por expiração.",[
+    "usar o lote recebido mais recentemente, para equilibrar a estocagem.",
+    "escolher o lote de maior quantidade para liberar mais espaço físico.",
+    "priorizar o lote com vencimento mais próximo.",
+    "manter ambos os lotes até que a unidade solicite especificamente um deles.",
+    "dispensar o lote de maior preço para reduzir capital imobilizado."
+  ]],
+  ["319",223,"Inventário","A realização de inventário físico tem como objetivo central:","D","Inventário confronta o que existe fisicamente com o que está registrado, permitindo identificar erros, perdas, vencimentos e inconsistências de processo.",[
+    "substituir todos os controles de entrada e saída de medicamentos.",
+    "definir quais produtos devem ser dispensados sem prescrição.",
+    "alterar o saldo de sistema para qualquer quantidade encontrada.",
+    "confrontar saldo físico e registros para identificar divergências.",
+    "calcular apenas o valor financeiro dos produtos armazenados."
+  ]],
+  ["320",224,"Inventário","Ao identificar diferença entre estoque físico e saldo registrado, a melhor primeira providência é:","A","A divergência deve ser recontada, investigada e documentada. Ajuste automático no sistema pode apagar evidências de uma falha anterior.",[
+    "recontar, investigar a origem e documentar a divergência antes do ajuste.",
+    "ajustar imediatamente o sistema para coincidir com a contagem física.",
+    "ignorar a diferença se ela representar pequena quantidade do item.",
+    "solicitar nova compra para compensar a falta antes de investigar.",
+    "baixar todo o lote do sistema, independentemente da causa encontrada."
+  ]],
+  ["321",225,"Curva ABC","Na classificação ABC de estoque, os itens A são aqueles que, em regra, demandam maior atenção porque:","B","Itens A concentram parcela relevante do valor movimentado e exigem monitoramento mais próximo. A classificação não mede, sozinha, criticidade clínica.",[
+    "possuem sempre menor consumo e menor impacto financeiro.",
+    "concentram maior parcela do valor de consumo ou movimentação.",
+    "são obrigatoriamente os medicamentos de maior criticidade clínica.",
+    "não exigem inventário físico por terem saída previsível.",
+    "devem ficar dispensados de controle de validade e perdas."
+  ]],
+  ["322",226,"Classificação XYZ","A classificação XYZ complementa a Curva ABC ao considerar principalmente:","E","XYZ avalia criticidade ou dificuldade de substituição/impacto da falta, enquanto ABC focaliza valor. Usá-las juntas melhora priorização de gestão.",[
+    "somente a forma farmacêutica e o tamanho da embalagem.",
+    "exclusivamente o preço unitário do produto adquirido.",
+    "a data de fabricação e o fornecedor de cada lote.",
+    "a cor da embalagem e a localização no almoxarifado.",
+    "a criticidade e as consequências de eventual falta do item."
+  ]],
+  ["323",227,"Curva ABC e XYZ","Um medicamento de baixo valor, mas cuja falta compromete atendimento essencial, merece atenção porque:","C","Baixo valor não significa baixa criticidade. A combinação ABC/XYZ impede que a análise financeira esconda risco assistencial.",[
+    "todo item de baixo valor pode ser estocado sem limite.",
+    "a criticidade clínica substitui a necessidade de programação.",
+    "pode ser pouco relevante financeiramente, mas crítico para a assistência.",
+    "deve ser excluído da lista por não impactar o orçamento.",
+    "dispensa monitoramento se possuir fornecedor único."
+  ]],
+  ["324",228,"Indicadores logísticos","A taxa de desabastecimento é útil porque informa:","D","O indicador mostra falhas de disponibilidade e ajuda a investigar programação, aquisição, distribuição ou consumo. Ele deve gerar ação, não apenas registro.",[
+    "somente o valor financeiro total do estoque no período.",
+    "a preferência dos pacientes por determinada marca comercial.",
+    "a quantidade de funcionários presentes no almoxarifado.",
+    "ocorrência de faltas e impacto na disponibilidade dos itens.",
+    "a temperatura média da sala administrativa do serviço."
+  ]],
+  ["325",229,"Indicadores logísticos","Um indicador é mais útil à gestão quando:","A","Indicador deve ser definido, mensurável e conectado a decisão. Medir algo que não produz ação apenas aumenta volume de dados sem melhorar o processo.",[
+    "possui definição clara e subsidia decisões de melhoria do processo.",
+    "é coletado apenas uma vez, independentemente de sua finalidade.",
+    "mede dados de fácil acesso, mesmo que não tenham utilidade prática.",
+    "não pode ser comparado ao histórico ou a metas do serviço.",
+    "substitui a investigação qualitativa das causas de problemas."
+  ]],
+  ["326",230,"Distribuição","Antes de enviar medicamentos a uma unidade, o serviço deve verificar especialmente:","B","A expedição deve garantir que produto, quantidade e destino correspondam à requisição, com condições de transporte e rastreabilidade adequadas.",[
+    "apenas o peso total das caixas já separadas.",
+    "produto, quantidade, destino, documentação e condições de transporte.",
+    "a preferência do motorista quanto à ordem de entrega.",
+    "somente o saldo remanescente após a separação.",
+    "a possibilidade de substituir itens sem comunicar a unidade."
+  ]],
+  ["327",231,"Distribuição","O envio de produto correto para unidade não solicitante caracteriza:","E","A entrega precisa ser correta em todos os elementos. Destino errado compromete rastreabilidade e pode causar falta na unidade que demandou o item.",[
+    "entrega adequada, pois o medicamento permanece dentro da rede.",
+    "ajuste logístico que dispensa registro de transferência.",
+    "erro sem impacto, caso o produto tenha validade longa.",
+    "situação resolvida pela simples comunicação verbal entre unidades.",
+    "falha de distribuição que exige correção e rastreabilidade da movimentação."
+  ]],
+  ["328",232,"Transporte","O transporte de medicamentos deve ser planejado considerando:","C","A condição de transporte deve preservar a qualidade do produto e manter a rastreabilidade da entrega. Rapidez não pode substituir requisitos de conservação.",[
+    "somente a rota mais curta disponível no dia.",
+    "exclusivamente o custo do veículo utilizado na entrega.",
+    "condições de conservação, proteção, prazo e rastreabilidade.",
+    "a cor das embalagens e a ordem alfabética dos produtos.",
+    "a preferência da unidade recebedora por horários de entrega."
+  ]],
+  ["329",233,"Transporte","A confirmação de recebimento pela unidade destinatária contribui para:","D","Confirmar recebimento fecha a cadeia de movimentação e permite identificar rapidamente entrega incompleta, avaria ou envio ao destino incorreto.",[
+    "eliminar a necessidade de conferência na saída do almoxarifado.",
+    "substituir a identificação de lotes e validades no transporte.",
+    "definir automaticamente o consumo da unidade no mês seguinte.",
+    "comprovar a entrega e apoiar a rastreabilidade da distribuição.",
+    "dispensar a guarda de documentação relacionada à requisição."
+  ]],
+  ["330",234,"Gestão de perdas","Uma ação preventiva contra perdas por vencimento é:","A","Monitorar validade com antecedência permite priorizar uso, remanejar quando cabível e evitar recompras desnecessárias. Agir após o vencimento é tardio.",[
+    "monitorar validades e agir antecipadamente sobre itens com prazo curto.",
+    "retirar datas de validade das caixas para simplificar a organização.",
+    "concentrar todos os itens próximos ao vencimento em local sem identificação.",
+    "adquirir mais unidades do item próximo ao vencimento para equilibrar o estoque.",
+    "considerar vencido somente o produto cuja embalagem esteja danificada."
+  ]],
+  ["331",235,"Gestão de perdas","Um medicamento vencido deve ser tratado como:","B","Produto vencido não pode permanecer disponível para dispensação. Deve ser segregado, identificado e destinado conforme procedimento e regras aplicáveis.",[
+    "produto disponível se mantido em embalagem íntegra e armazenado corretamente.",
+    "item segregado e identificado, com destinação conforme procedimento aplicável.",
+    "estoque de segurança para situações emergenciais da unidade.",
+    "lote apto a remanejamento para unidade com maior consumo.",
+    "produto que pode ser misturado ao estoque regular até inventário anual."
+  ]],
+  ["332",236,"Gestão de riscos","A gestão de risco na logística farmacêutica é mais efetiva quando:","E","Gestão de risco identifica causas potenciais, monitora sinais de problema e estabelece respostas antes que a assistência seja interrompida.",[
+    "atua somente depois que o medicamento já está indisponível.",
+    "substitui programação por compras emergenciais frequentes.",
+    "considera apenas perdas financeiras, sem avaliar impacto assistencial.",
+    "evita registrar eventos para reduzir indicadores negativos.",
+    "antecipa falhas, monitora sinais e estabelece medidas de contingência."
+  ]],
+  ["333",237,"Gestão de riscos","A existência de fornecedor único para item crítico exige:","C","Fornecedor único pode ampliar risco de ruptura. O serviço deve monitorar e planejar contingência dentro das possibilidades técnicas e legais.",[
+    "reduzir o monitoramento, pois a aquisição se torna mais simples.",
+    "eliminar o estoque de segurança para reduzir capital imobilizado.",
+    "acompanhamento de risco e planejamento de contingência para possível interrupção.",
+    "substituição automática do item sem avaliação técnica ou clínica.",
+    "dispensa de programação porque o fornecedor já conhece a demanda."
+  ]],
+  ["334",238,"Gestão de riscos","A compra emergencial recorrente costuma sinalizar:","D","Emergência repetida sugere falha de programação, monitoramento, aquisição ou distribuição. Deve-se investigar a causa para evitar normalizar o problema.",[
+    "eficiência elevada do processo de planejamento ordinário.",
+    "estoque de segurança calculado com margem excessiva.",
+    "ausência de necessidade de rever indicadores de desabastecimento.",
+    "possível fragilidade nas etapas regulares de programação e abastecimento.",
+    "garantia de que todos os itens foram selecionados corretamente."
+  ]],
+  ["335",239,"Assistência farmacêutica","A disponibilidade de medicamentos essenciais depende de um ciclo que:","A","Acesso depende de processos conectados. Seleção adequada sem programação ou distribuição eficiente não assegura disponibilidade ao usuário.",[
+    "integre seleção, programação, aquisição, armazenamento, distribuição e dispensação.",
+    "concentre todas as decisões no momento da dispensação ao paciente.",
+    "priorize apenas o menor preço, independentemente de qualidade e necessidade.",
+    "separe a logística do cuidado para reduzir responsabilidades compartilhadas.",
+    "substitua inventários e indicadores por experiência dos profissionais."
+  ]],
+  ["336",240,"Assistência farmacêutica","No ciclo da assistência farmacêutica, uma falha na programação tende a repercutir em:","B","Programação inadequada pode gerar excesso ou falta, pressionando aquisição, armazenamento, distribuição e dispensação.",[
+    "somente na aparência física do almoxarifado.",
+    "risco de excesso, ruptura e dificuldades nas etapas posteriores.",
+    "eliminação da necessidade de seleção de medicamentos.",
+    "melhoria automática da qualidade dos produtos adquiridos.",
+    "dispensa de monitorar validade dos itens estocados."
+  ]],
+  ["337",241,"Caso integrado","Uma unidade pede quantidade acima do consumo esperado porque teme falta, mas já possui estoque elevado e vários lotes próximos do vencimento. A resposta técnica é:","E","A decisão deve equilibrar disponibilidade e risco de perda. É necessário analisar saldo, validade, consumo e possibilidade de priorizar/remanejar antes de nova reposição.",[
+    "atender integralmente a solicitação para evitar qualquer questionamento da unidade.",
+    "enviar somente medicamentos de maior valor para reduzir capital imobilizado.",
+    "cancelar toda distribuição futura até que os lotes vençam.",
+    "ignorar a validade porque a unidade informou receio de desabastecimento.",
+    "reavaliar necessidade com base em saldo, consumo, validade e alternativas de gestão."
+  ]],
+  ["338",242,"Caso integrado","O relatório aponta aumento repentino de consumo, mas não identifica se houve ampliação de atendimento, mudança de protocolo ou erro de registro. Antes de programar nova compra, é necessário:","C","Dado anômalo precisa ser qualificado. Verificar sua causa evita programar com base em erro de registro ou em evento excepcional mal interpretado.",[
+    "adotar imediatamente o maior consumo como padrão permanente.",
+    "desconsiderar o relatório porque todo dado excepcional é irrelevante.",
+    "investigar a causa da variação antes de convertê-la em previsão de demanda.",
+    "reduzir a próxima compra para compensar o aumento inesperado.",
+    "substituir todos os itens consumidos por alternativas de menor custo."
+  ]],
+  ["339",243,"Caso integrado","No recebimento, a validade de parte do lote é inferior ao mínimo definido no edital ou processo. A conduta adequada é:","D","Aceitação deve respeitar a especificação definida. Prazo inferior pode comprometer uso e gerar perda; a não conformidade precisa ser tratada formalmente.",[
+    "aceitar o lote se o fornecedor oferecer desconto adicional.",
+    "incorporar ao estoque e priorizar a saída sem registrar a divergência.",
+    "substituir o prazo definido por decisão verbal do almoxarifado.",
+    "registrar a não conformidade e avaliar a recusa ou providência prevista no processo.",
+    "misturar o lote aos demais para evitar identificação do prazo reduzido."
+  ]],
+  ["340",244,"Caso integrado","Uma requisição foi separada corretamente, mas transportada sem proteção adequada contra condição ambiental relevante ao produto. O erro ocorreu na etapa de:","A","A distribuição inclui a preservação das condições de transporte. Separação correta não garante qualidade se o trajeto compromete a conservação.",[
+    "distribuição e transporte, que devem preservar a condição requerida pelo produto.",
+    "seleção, pois o item deveria ter sido excluído da padronização.",
+    "programação, porque todo medicamento deve ser estocado em excesso.",
+    "dispensação, ainda que o produto não tenha chegado à unidade.",
+    "inventário, porque somente a contagem física evita esse tipo de falha."
+  ]],
+  ["341",245,"Caso integrado","Uma unidade relata faltas frequentes de determinado medicamento; o saldo central, porém, mostra disponibilidade. A investigação deve começar por:","B","É preciso rastrear a cadeia: requisição, separação, transporte, recebimento, registro e saldo local. Estoque central positivo não prova que a unidade recebeu ou incorporou o item.",[
+    "adquirir nova quantidade imediatamente, sem revisar movimentações anteriores.",
+    "verificar requisição, distribuição, recebimento e registros entre estoque central e unidade.",
+    "atribuir a falta ao paciente, pois há saldo no almoxarifado central.",
+    "suspender a dispensação de todos os medicamentos da unidade.",
+    "alterar o saldo central para coincidir com a percepção da unidade."
+  ]],
+  ["342",246,"Caso integrado","A integração entre dados de consumo e inventário físico é necessária porque:","E","Consumo registrado sem saldo físico pode esconder erro de entrada, saída, perda ou registro. A decisão confiável depende de dados coerentes.",[
+    "o inventário elimina a necessidade de registrar dispensações.",
+    "o consumo histórico substitui a conferência dos lotes armazenados.",
+    "a contagem física deve ocorrer somente quando o sistema falhar.",
+    "qualquer divergência é resolvida ajustando-se o sistema ao saldo esperado.",
+    "programação e reposição dependem de saldos e consumos confiáveis."
+  ]],
+  ["343",247,"Caso integrado","Um gestor decide reduzir o estoque de todos os itens na mesma proporção para liberar espaço. A limitação dessa medida é que:","C","Itens têm valores, criticidade, consumo e prazos diferentes. Redução uniforme ignora priorização e pode gerar ruptura de itens essenciais.",[
+    "estoques não podem ser reduzidos em nenhuma situação.",
+    "todo item deve manter a mesma quantidade mínima em qualquer serviço.",
+    "itens possuem perfis de consumo e criticidade distintos, exigindo análise individual.",
+    "o espaço físico nunca deve ser considerado na gestão de almoxarifado.",
+    "a redução de estoque impede por si só o vencimento de produtos."
+  ]],
+  ["344",248,"Caso integrado","A comissão de seleção recebe proposta de medicamento mais barato, porém com evidência de segurança inferior para a população-alvo. A decisão técnica deve:","D","Preço importa, mas não pode ser analisado isoladamente. A escolha deve considerar benefício, segurança, necessidade, custo e impacto do cuidado.",[
+    "aceitar o item mais barato porque a seleção deve priorizar exclusivamente o custo.",
+    "recusar qualquer análise econômica em decisões de padronização.",
+    "manter o produto atual apenas porque já está conhecido pela equipe.",
+    "ponderar custo junto a evidência de benefício, segurança e necessidade assistencial.",
+    "deixar a escolha para o fornecedor que oferecer maior quantidade de amostras."
+  ]],
+  ["345",249,"Caso integrado","A consequência mais provável de confundir seleção com aquisição é:","A","Seleção define o que é apropriado e necessário; aquisição busca obter o que foi definido. Misturar papéis pode permitir compra sem justificativa técnica.",[
+    "comprar itens sem base técnica clara de necessidade, benefício e padronização.",
+    "eliminar a necessidade de receber e conferir os produtos entregues.",
+    "impedir o uso de qualquer indicador na logística farmacêutica.",
+    "garantir que toda compra tenha melhor custo-benefício automaticamente.",
+    "substituir a dispensação ao paciente por entrega direta do fornecedor."
+  ]],
+  ["346",250,"Caso integrado","Uma ação de melhoria após aumento de perdas por vencimento deve incluir:","B","A melhoria deve olhar causas: programação, compras, recebimento, FEFO, remanejamento e acompanhamento de validade. Apenas descartar o vencido não corrige o processo.",[
+    "descartar os produtos vencidos e manter a mesma rotina de programação.",
+    "analisar causas, monitorar validades e ajustar programação, estoque e distribuição.",
+    "aumentar a compra dos itens com maior perda para compensar o descarte.",
+    "remover datas de validade do sistema para reduzir alertas repetitivos.",
+    "transferir todos os produtos próximos do vencimento sem verificar necessidade local."
+  ]],
+  ["347",251,"Caso integrado","Uma medida que reduz risco de troca durante separação e distribuição é:","E","Identificação clara, conferência contra a requisição e organização por item/lote reduzem trocas. Produtos visualmente similares exigem ainda mais atenção.",[
+    "agrupar produtos semelhantes para reduzir o número de prateleiras.",
+    "retirar rótulos externos para padronizar caixas de transporte.",
+    "separar pedidos apenas pela memória do colaborador responsável.",
+    "registrar a saída depois de concluir todas as entregas do dia.",
+    "identificar pedidos e conferir item, quantidade e destino antes da expedição."
+  ]],
+  ["348",252,"Caso integrado","Um estoque bem gerido não é aquele que contém o maior número possível de itens, mas aquele que:","C","Boa gestão busca disponibilidade adequada, não acúmulo. Estoque precisa ser suficiente, seguro, rastreável e compatível com consumo e capacidade.",[
+    "mantém todos os produtos adquiridos, independentemente de consumo ou validade.",
+    "reduz o saldo de todos os itens ao mínimo absoluto em qualquer contexto.",
+    "equilibra disponibilidade, risco de falta, perdas, consumo e capacidade de armazenamento.",
+    "prioriza a compra dos produtos mais caros para justificar o espaço físico.",
+    "dispensa inventários quando houver sistema informatizado atualizado."
+  ]],
+  ["349",253,"Caso integrado","A programação que considera prazo de reposição é importante porque:","D","O tempo entre pedido e disponibilidade influencia o momento de repor. Ignorá-lo pode levar a pedidos tardios e desabastecimento.",[
+    "o prazo substitui a necessidade de conhecer o consumo do item.",
+    "todo fornecedor entrega no mesmo período, independentemente do contrato.",
+    "a data de validade deixa de ser relevante quando há reposição frequente.",
+    "a reposição precisa ser acionada com antecedência compatível com o tempo de fornecimento.",
+    "o estoque de segurança torna desnecessário acompanhar pedidos em andamento."
+  ]],
+  ["350",254,"Síntese logística","A decisão logística mais madura em assistência farmacêutica é aquela que:","A","A logística farmacêutica deve apoiar o cuidado. Decisões robustas conectam dados, risco, qualidade e disponibilidade, em vez de reagir apenas quando a falta aparece.",[
+    "integra dados de consumo, estoque, risco, qualidade e necessidade assistencial.",
+    "prioriza apenas o menor preço, sem considerar segurança ou disponibilidade.",
+    "se baseia exclusivamente na intuição do responsável pelo almoxarifado.",
+    "responde às faltas somente depois que a unidade interrompe o atendimento.",
+    "trata cada etapa do ciclo como independente das demais."
+  ]]
+].map(([id, number, topic, stem, answer, explanation, options]) => ({
+  id: `farmacia-${id}`,
+  subjectId: "farmacia",
+  number,
+  topic,
+  area: "Ciclo da assistência farmacêutica e logística",
+  stem,
+  options: options.map((text, index) => ({ letter: "ABCDE"[index], text })),
+  answer,
+  explanation
+}));
+
+questionBank.questions
+  .filter(question => question.subjectId === "farmacia" && question.number >= 205)
+  .forEach(question => { question.number += 50; });
+questionBank.questions.push(...cicloLoteDois);
+const farmaciaOrdenadaQuatro = questionBank.questions
+  .filter(question => question.subjectId === "farmacia")
+  .sort((a, b) => a.number - b.number);
+let indiceFarmaciaQuatro = 0;
+questionBank.questions = questionBank.questions.map(question =>
+  question.subjectId === "farmacia" ? farmaciaOrdenadaQuatro[indiceFarmaciaQuatro++] : question
+);
+questionBank.generatedAt = "2026-11-04T21:00:00.000Z";
+questionBank.review.cicloLoteDoisReviewed = Array.from({ length: 50 }, (_, index) => index + 205);

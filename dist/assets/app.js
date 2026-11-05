@@ -1,4 +1,4 @@
-import { questionBank } from "./questions.js?v=70";
+import { questionBank } from "./questions.js?v=71";
 
 const STORAGE_KEY = "caderno330-progress-v1";
 const FOCUS_KEY = "caderno330-focus-mode";

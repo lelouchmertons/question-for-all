@@ -17942,6 +17942,62 @@ const portuguesIntegradasLoteUm=portuguesIntegradasLoteUmCasos.flatMap((caso,cas
 });
 questionBank.questions.push(...portuguesIntegradasLoteUm);
 questionBank.review.portuguesIntegradasLoteUmReviewed = Array.from({length:50},(_,index)=>index+951);
+const opcoesCalculo=(correct,wrong,answer)=>{const options=[...wrong];options.splice("ABCDE".indexOf(answer),0,String(correct));return options.map((text,index)=>({letter:"ABCDE"[index],text:String(text)}));};
+const matematicaPorcentagemLoteUmBase = [
+  ["Porcentagem","18% de 450 corresponde a:",81,[72,75,84,90],"18% equivale a 0,18. Portanto, 450 × 0,18 = 81."],
+  ["Porcentagem","Um produto de 750 recebeu desconto de 12%. O novo preço é:",660,[640,672,675,690],"O desconto é 750 × 0,12 = 90. Assim, 750 − 90 = 660."],
+  ["Porcentagem","Ao aumentar 640 em 25%, obtém-se:",800,[720,760,820,860],"Um aumento de 25% corresponde a multiplicar por 1,25: 640 × 1,25 = 800."],
+  ["Variação percentual","A redução de 480 para 360 representa uma queda percentual de:",25,[20,22,24,30],"A redução foi de 120. Em relação a 480, 120 ÷ 480 = 0,25, ou 25%."],
+  ["Porcentagem","A fração 3/8, escrita em porcentagem, é:",37.5,[30,32.5,35,40],"Dividindo 3 por 8, obtém-se 0,375. Multiplicando por 100, resulta em 37,5%."],
+  ["Porcentagem","Se 45 corresponde a 15% de um total, esse total é:",300,[240,270,315,360],"Se 15% é 45, então 100% é 45 ÷ 0,15, isto é, 300."],
+  ["Porcentagem sucessiva","Um valor de 480 aumenta 20% e, depois, diminui 20%. O resultado final é:",460.8,[456,468,480,492],"Primeiro: 480 × 1,20 = 576. Depois: 576 × 0,80 = 460,8."],
+  ["Porcentagem sucessiva","Um preço de 200 sofre aumento de 10% e depois de 15%. O novo valor é:",253,[240,246,250,260],"Os reajustes são sucessivos: 200 × 1,10 × 1,15 = 253."],
+  ["Porcentagem","Um item que custa 420 recebe acréscimo de 30%. Seu preço passa a ser:",546,[520,530,540,560],"O acréscimo é 420 × 0,30 = 126. Logo, 420 + 126 = 546."],
+  ["Porcentagem","Uma comissão de 5% sobre 8.600 é igual a:",430,[400,410,420,440],"Calcula-se 8.600 × 0,05, cujo resultado é 430."],
+  ["Porcentagem sucessiva","Um valor de 250 aumenta 25% e depois recebe desconto de 10%. O resultado é:",281.25,[275,280,285,287.5],"Primeiro: 250 × 1,25 = 312,50. Depois: 312,50 × 0,90 = 281,25."],
+  ["Porcentagem sucessiva","Uma quantia de 1.200 é reduzida em 30% e, em seguida, em 20%. O resultado é:",672,[640,660,680,700],"As reduções são sucessivas: 1.200 × 0,70 × 0,80 = 672."],
+  ["Porcentagem","Uma população de 5.000 cresce 8%. A nova população é:",5400,[5200,5300,5450,5600],"O crescimento é 5.000 × 0,08 = 400. Logo, a nova população é 5.400."],
+  ["Variação percentual","A redução de 1.800 para 1.530 corresponde a:",15,[10,12,18,20],"A diferença é 270. Como 270 ÷ 1.800 = 0,15, a redução é de 15%."],
+  ["Porcentagem","Um produto comprado por 500 é vendido por 650. O lucro percentual sobre o custo é:",30,[20,25,28,35],"O lucro é 150. Em relação ao custo, 150 ÷ 500 = 0,30, isto é, 30%."],
+  ["Porcentagem","Em um grupo de 320 pessoas, 40% são homens. O número de mulheres é:",192,[128,160,180,200],"Homens: 320 × 0,40 = 128. Mulheres: 320 − 128 = 192."],
+  ["Porcentagem","O valor correspondente a 17,5% de 1.600 é:",280,[240,260,300,320],"17,5% equivale a 0,175. Assim, 1.600 × 0,175 = 280."],
+  ["Porcentagem","Um tributo de 7,5% incide sobre 2.400. O valor do tributo é:",180,[150,160,170,190],"Como 7,5% é 0,075, calcula-se 2.400 × 0,075 = 180."],
+  ["Porcentagem","Se 84 representa 35% de um total, o total é:",240,[210,220,230,250],"O total é 84 ÷ 0,35, resultando em 240."],
+  ["Porcentagem","Após um aumento de 25%, um preço passou a ser 500. Antes do aumento, era:",400,[375,390,420,450],"Se o valor final é 125% do inicial, o inicial é 500 ÷ 1,25 = 400."],
+  ["Porcentagem","O juro simples mensal de 2% sobre 1.500, em um mês, é:",30,[20,25,35,40],"O juro é 1.500 × 0,02 = 30."],
+  ["Variação percentual","A queda de 900 para 765 corresponde a uma redução de:",15,[12,13,14,18],"A redução foi de 135. Como 135 ÷ 900 = 0,15, ela corresponde a 15%."],
+  ["Porcentagem","A razão 56/160, em porcentagem, é:",35,[30,32,36,40],"Dividindo 56 por 160, obtém-se 0,35, ou 35%."],
+  ["Porcentagem","Ao aumentar 500 em 12%, obtém-se:",560,[540,550,570,580],"O acréscimo é 500 × 0,12 = 60. Logo, o total é 560."],
+  ["Porcentagem sucessiva","Um preço de 1.000 recebe descontos sucessivos de 20% e 10%. O preço final é:",720,[700,710,730,750],"O preço passa por 1.000 × 0,80 × 0,90, chegando a 720."],
+  ["Regra de três inversa","Cinco trabalhadores concluem uma tarefa em 12 dias. Mantido o ritmo, oito trabalhadores levarão:",7.5,[6.5,7,8,8.5],"O trabalho exige 5 × 12 = 60 homem-dias. Com oito trabalhadores, 60 ÷ 8 = 7,5 dias."],
+  ["Escala","Em uma escala 1:50.000, um segmento de 3,6 cm representa, em quilômetros:",1.8,[1.5,1.6,2,2.4],"3,6 × 50.000 = 180.000 cm, equivalentes a 1,8 km."],
+  ["Razão e proporção","Uma quantia de 96 é dividida na razão 3:5. A menor parte é:",36,[30,32,40,45],"A soma das partes é 8. Cada parte vale 96 ÷ 8 = 12; a menor é 3 × 12 = 36."],
+  ["Regra de três direta","Se 7 unidades custam 84, então 12 unidades custam:",144,[120,126,132,156],"Cada unidade custa 84 ÷ 7 = 12. Assim, 12 unidades custam 144."],
+  ["Regra de três inversa","Seis torneiras iguais enchem um reservatório em 15 horas, dez torneiras iguais o enchem em:",9,[8,10,11,12],"A quantidade de torneiras e o tempo são inversamente proporcionais: 6 × 15 ÷ 10 = 9."],
+  ["Razão e proporção","Uma mistura na razão 2:3 totaliza 250 litros. A menor parcela mede:",100,[80,90,110,120],"Há cinco partes ao todo. Cada parte vale 50; a menor parcela é 2 × 50 = 100."],
+  ["Regra de três direta","Quatro cadernos custam 28. Nove cadernos, ao mesmo preço unitário, custam:",63,[56,60,65,70],"O valor unitário é 28 ÷ 4 = 7. Então, 9 × 7 = 63."],
+  ["Velocidade média","Um veículo percorre 180 km em 3 horas, com velocidade constante. Sua velocidade é:",60,[50,55,65,70],"Velocidade é distância dividida pelo tempo: 180 ÷ 3 = 60."],
+  ["Grandezas inversas","Para percorrer uma distância fixa, a 80 km/h gastam-se 5 horas. A 100 km/h, gastam-se:",4,[3,3.5,4.5,5],"A distância é 80 × 5 = 400 km. A 100 km/h, 400 ÷ 100 = 4 horas."],
+  ["Divisão proporcional","A quantia 720 é dividida na razão 2:3:4. A parte intermediária é:",240,[160,180,200,280],"A soma é 9. Cada parte unitária vale 80; a parte de razão 3 vale 240."],
+  ["Escala","Em uma escala 1:200, um segmento de 4,5 cm representa, em metros:",9,[7.5,8,8.5,10],"4,5 × 200 = 900 cm, equivalentes a 9 metros."],
+  ["Regra de três inversa","Quinze máquinas realizam uma produção em 8 horas. Vinte e quatro máquinas iguais realizarão a mesma produção em:",5,[4,4.5,5.5,6],"São 15 × 8 = 120 máquina-horas. Com 24 máquinas, 120 ÷ 24 = 5 horas."],
+  ["Proporção direta","Doze litros de combustível permitem percorrer 180 km. Para percorrer 300 km, serão necessários:",20,[18,19,21,22],"O consumo é proporcional à distância: 12 × 300 ÷ 180 = 20 litros."],
+  ["Regra de três inversa","Nove trabalhadores concluem uma tarefa em 16 dias. Doze trabalhadores, no mesmo ritmo, levarão:",12,[10,11,13,14],"O total é 9 × 16 = 144 homem-dias. Dividindo por 12, obtêm-se 12 dias."],
+  ["Razão","Em uma razão A:B = 7:9, se B vale 63, A vale:",49,[42,45,54,56],"Cada unidade da razão vale 63 ÷ 9 = 7. Logo, A vale 7 × 7 = 49."],
+  ["Velocidade média","Um veículo percorre 120 km a 60 km/h e 240 km a 80 km/h. A velocidade média total é:",72,[68,70,74,75],"O tempo total é 2 + 3 = 5 horas; a distância total é 360 km. Assim, 360 ÷ 5 = 72."],
+  ["Proporção","Em x/18 = 14/21, o valor de x é:",12,[10,11,13,14],"Multiplicando em cruz, 21x = 18 × 14 = 252. Portanto, x = 12."],
+  ["Regra de três direta","Oito tarefas iguais são concluídas em 5 dias. Mantido o ritmo, vinte tarefas iguais exigem:",12.5,[10,11,12,13],"A relação é direta: 5 × 20 ÷ 8 = 12,5 dias."],
+  ["Regra de três direta","Se 18 páginas são revisadas em 12 minutos, 75 páginas serão revisadas em:",50,[45,48,52,55],"O tempo é proporcional às páginas: 12 × 75 ÷ 18 = 50 minutos."],
+  ["Proporção direta","Se 4 kg de um produto custam 35, então 6,8 kg custam:",59.5,[56,57.5,61,63],"O preço por quilo é 35 ÷ 4 = 8,75. Multiplicando por 6,8, resulta em 59,5."],
+  ["Porcentagem composta","Quanto corresponde a 60% de 40% de 500:",120,[100,110,130,140],"Primeiro, 40% de 500 é 200. Depois, 60% de 200 é 120."],
+  ["Porcentagem","Após redução de 30%, um preço passou a 560. O preço anterior era:",800,[700,720,750,840],"560 corresponde a 70% do preço inicial. Portanto, 560 ÷ 0,70 = 800."],
+  ["Porcentagem sucessiva","Um valor de 1.000 aumenta 12% e depois diminui 12%. O resultado final é:",985.6,[976,980,988,1000],"Os percentuais incidem sobre bases diferentes: 1.000 × 1,12 × 0,88 = 985,6."],
+  ["Juros compostos","Um capital de 2.000 rende 10% ao mês, em juros compostos, durante dois meses. O montante é:",2420,[2200,2300,2400,2440],"O montante é 2.000 × 1,10² = 2.420." ],
+  ["Porcentagem","Um preço de 1.250 recebe desconto de 16%. O valor final é:",1050,[1000,1025,1060,1100],"O desconto é 1.250 × 0,16 = 200. Portanto, o preço final é 1.250 − 200 = 1.050."]
+];
+const matematicaPorcentagemLoteUm = matematicaPorcentagemLoteUmBase.map(([topic,stem,correct,wrong,explanation],index)=>{const answer="CEBAD"[index%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, o resultado correto é ${correct}.`;return{id:`matematica-${101+index}`,subjectId:"matematica",number:101+index,topic,area:"Porcentagem e proporcionalidade",stem,options:opcoesCalculo(correct,wrong,answer),answer,explanation:completeExplanation};});
+questionBank.questions.push(...matematicaPorcentagemLoteUm);
+questionBank.review.matematicaPorcentagemLoteUmReviewed = Array.from({length:50},(_,index)=>index+101);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

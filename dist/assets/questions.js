@@ -17998,6 +17998,25 @@ const matematicaPorcentagemLoteUmBase = [
 const matematicaPorcentagemLoteUm = matematicaPorcentagemLoteUmBase.map(([topic,stem,correct,wrong,explanation],index)=>{const answer="CEBAD"[index%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, o resultado correto é ${correct}.`;return{id:`matematica-${101+index}`,subjectId:"matematica",number:101+index,topic,area:"Porcentagem e proporcionalidade",stem,options:opcoesCalculo(correct,wrong,answer),answer,explanation:completeExplanation};});
 questionBank.questions.push(...matematicaPorcentagemLoteUm);
 questionBank.review.matematicaPorcentagemLoteUmReviewed = Array.from({length:50},(_,index)=>index+101);
+const formatarNumero=(value)=>String(Number(Number(value).toFixed(2)));
+const opcoesFinanceiras=(correct,answer)=>{const base=Math.max(Math.abs(correct)*0.1,0.2);const wrong=[correct-base,correct+base,correct-base*2,correct+base*2].map(formatarNumero);const options=wrong;options.splice("ABCDE".indexOf(answer),0,formatarNumero(correct));return options.map((text,index)=>({letter:"ABCDE"[index],text}));};
+const matematicaFinanceiraLoteUmCasos = [
+  [2000,3,5],[3600,2.5,4],[1500,4,6],[4800,1.5,10],[2500,5,3],
+  [4200,2,8],[8000,1.25,12],[6000,3.5,2],[10000,0.8,15],[3200,6,2]
+];
+const matematicaFinanceiraLoteUm=matematicaFinanceiraLoteUmCasos.flatMap(([capital,taxa,tempo],caseIndex)=>{
+  const juros=capital*(taxa/100)*tempo;const montante=capital+juros;
+  const itens=[
+    ["Juros simples",`Um capital de ${capital} é aplicado a juros simples de ${taxa}% ao mês durante ${tempo} meses. Os juros produzidos são:`,juros,`Em juros simples, J = C × i × t. Assim, ${capital} × ${taxa/100} × ${tempo} = ${formatarNumero(juros)}.`],
+    ["Juros simples",`Um capital de ${capital} é aplicado a juros simples de ${taxa}% ao mês durante ${tempo} meses. O montante é:`,montante,`Os juros são ${formatarNumero(juros)}. Somando-os ao capital de ${capital}, obtém-se ${formatarNumero(montante)}.`],
+    ["Taxa de juros simples",`Um capital de ${capital} gerou juros simples de ${formatarNumero(juros)} em ${tempo} meses. A taxa mensal utilizada foi:`,taxa,`Pela fórmula J = C × i × t, tem-se i = ${formatarNumero(juros)} ÷ (${capital} × ${tempo}) = ${formatarNumero(taxa)}%.`],
+    ["Prazo em juros simples",`Um capital de ${capital}, aplicado a ${taxa}% ao mês, gerou juros simples de ${formatarNumero(juros)}. O prazo da aplicação foi:`,tempo,`Isolando o prazo em J = C × i × t, resulta t = ${formatarNumero(juros)} ÷ (${capital} × ${taxa/100}) = ${formatarNumero(tempo)}.`],
+    ["Capital em juros simples",`Uma aplicação a ${taxa}% ao mês, durante ${tempo} meses, gerou juros simples de ${formatarNumero(juros)}. O capital aplicado era:`,capital,`Em juros simples, C = J ÷ (i × t). Logo, ${formatarNumero(juros)} ÷ (${taxa/100} × ${tempo}) = ${formatarNumero(capital)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];return{id:`matematica-${151+caseIndex*5+itemIndex}`,subjectId:"matematica",number:151+caseIndex*5+itemIndex,topic,area:"Juros simples e matemática financeira",stem,options:opcoesFinanceiras(correct,answer),answer,explanation};});
+});
+questionBank.questions.push(...matematicaFinanceiraLoteUm);
+questionBank.review.matematicaFinanceiraLoteUmReviewed = Array.from({length:50},(_,index)=>index+151);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

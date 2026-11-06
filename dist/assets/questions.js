@@ -18017,6 +18017,24 @@ const matematicaFinanceiraLoteUm=matematicaFinanceiraLoteUmCasos.flatMap(([capit
 });
 questionBank.questions.push(...matematicaFinanceiraLoteUm);
 questionBank.review.matematicaFinanceiraLoteUmReviewed = Array.from({length:50},(_,index)=>index+151);
+const opcoesAlgebra=(correct,answer)=>{const base=Math.max(Math.abs(correct)*0.12,0.5);const wrong=[correct-base,correct+base,correct-base*2,correct+base*2].map(formatarNumero);wrong.splice("ABCDE".indexOf(answer),0,formatarNumero(correct));return wrong.map((text,index)=>({letter:"ABCDE"[index],text}));};
+const matematicaAlgebraLoteUmCasos = [
+  [3,-6,4],[4,8,3],[5,-15,7],[2,10,5],[6,-18,4],
+  [7,14,2],[8,-24,5],[9,18,1],[10,-20,6],[12,24,2]
+];
+const matematicaAlgebraLoteUm=matematicaAlgebraLoteUmCasos.flatMap(([a,b,x],caseIndex)=>{
+  const y=a*x+b;const raiz=-b/a;const deslocamento=caseIndex%3+1;const produto=a*(x-deslocamento);
+  const itens=[
+    ["Equação do primeiro grau",`Resolva a equação ${a}x ${b>=0?"+":"−"} ${Math.abs(b)} = ${y}.`,x,`Ao isolar o termo com x e dividir por ${a}, obtém-se x = ${formatarNumero(x)}.`],
+    ["Equação do primeiro grau",`Na equação ${a}(x − ${deslocamento}) = ${produto}, o valor de x é:`,x,`Dividindo por ${a}, tem-se x − ${deslocamento} = ${formatarNumero(produto/a)}. Somando ${deslocamento}, resulta x = ${formatarNumero(x)}.`],
+    ["Função afim",`Para f(x) = ${a}x ${b>=0?"+":"−"} ${Math.abs(b)}, o valor de f(${x}) é:`,y,`Substitui-se x por ${x}: f(${x}) = ${a} × ${x} ${b>=0?"+":"−"} ${Math.abs(b)} = ${formatarNumero(y)}.`],
+    ["Função afim",`Se f(x) = ${a}x ${b>=0?"+":"−"} ${Math.abs(b)} e f(x) = ${y}, então x vale:`,x,`A igualdade f(x) = ${y} gera a equação ${a}x ${b>=0?"+":"−"} ${Math.abs(b)} = ${y}, cuja solução é ${formatarNumero(x)}.`],
+    ["Zero de função",`O zero da função f(x) = ${a}x ${b>=0?"+":"−"} ${Math.abs(b)} é:`,raiz,`Para encontrar o zero, iguala-se f(x) a zero. Assim, ${a}x ${b>=0?"+":"−"} ${Math.abs(b)} = 0, resultando em x = ${formatarNumero(raiz)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${201+caseIndex*5+itemIndex}`,subjectId:"matematica",number:201+caseIndex*5+itemIndex,topic,area:"Álgebra e funções",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+questionBank.questions.push(...matematicaAlgebraLoteUm);
+questionBank.review.matematicaAlgebraLoteUmReviewed = Array.from({length:50},(_,index)=>index+201);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

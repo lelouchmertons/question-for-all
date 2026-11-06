@@ -18035,6 +18035,21 @@ const matematicaAlgebraLoteUm=matematicaAlgebraLoteUmCasos.flatMap(([a,b,x],case
 });
 questionBank.questions.push(...matematicaAlgebraLoteUm);
 questionBank.review.matematicaAlgebraLoteUmReviewed = Array.from({length:50},(_,index)=>index+201);
+const matematicaQuadraticaLoteUmCasos = [[2,5],[3,7],[1,6],[-2,4],[4,8],[-3,2],[5,9],[2,10],[-4,1],[6,12]];
+const matematicaQuadraticaLoteUm=matematicaQuadraticaLoteUmCasos.flatMap(([r1,r2],caseIndex)=>{
+  const menor=Math.min(r1,r2),maior=Math.max(r1,r2),soma=r1+r2,produto=r1*r2,xv=soma/2;
+  const sinalSoma=soma>=0?"−":"+";const sinalProduto=produto>=0?"+":"−";const equacao=`x² ${sinalSoma} ${Math.abs(soma)}x ${sinalProduto} ${Math.abs(produto)} = 0`;
+  const itens=[
+    ["Equação do segundo grau",`A menor raiz da equação ${equacao} é:`,menor,`A equação pode ser fatorada pelas raízes ${formatarNumero(r1)} e ${formatarNumero(r2)}. A menor delas é ${formatarNumero(menor)}.`],
+    ["Equação do segundo grau",`A maior raiz da equação ${equacao} é:`,maior,`Pela fatoração ou pela fórmula de Bhaskara, as raízes são ${formatarNumero(r1)} e ${formatarNumero(r2)}. A maior é ${formatarNumero(maior)}.`],
+    ["Relações entre raízes",`A soma das raízes da equação ${equacao} é:`,soma,`Para x² − Sx + P = 0, a soma das raízes é S. Neste caso, ${formatarNumero(r1)} + ${formatarNumero(r2)} = ${formatarNumero(soma)}.`],
+    ["Relações entre raízes",`O produto das raízes da equação ${equacao} é:`,produto,`O produto das raízes é o termo independente da equação normalizada. Logo, ${formatarNumero(r1)} × ${formatarNumero(r2)} = ${formatarNumero(produto)}.`],
+    ["Função quadrática",`Para f(x) = x² ${sinalSoma} ${Math.abs(soma)}x ${sinalProduto} ${Math.abs(produto)}, a abscissa do vértice é:`,xv,`Na função quadrática, xᵥ = −b/(2a). Como b = ${formatarNumero(-soma)} e a = 1, xᵥ = ${formatarNumero(xv)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];return{id:`matematica-${251+caseIndex*5+itemIndex}`,subjectId:"matematica",number:251+caseIndex*5+itemIndex,topic,area:"Álgebra e funções",stem,options:opcoesAlgebra(correct,answer),answer,explanation};});
+});
+questionBank.questions.push(...matematicaQuadraticaLoteUm);
+questionBank.review.matematicaQuadraticaLoteUmReviewed = Array.from({length:50},(_,index)=>index+251);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

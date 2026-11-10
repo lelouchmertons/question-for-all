@@ -18210,6 +18210,29 @@ const matematicaRaciocinioLoteUmItens = [
 const matematicaRaciocinioLoteUm=matematicaRaciocinioLoteUmItens.map(([topic,stem,correct,explanation],index)=>{const answer="ABCDE"[index%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${551+index}`,subjectId:"matematica",number:551+index,topic,area:"Raciocínio lógico e sequências",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
 questionBank.questions.push(...matematicaRaciocinioLoteUm);
 questionBank.review.matematicaRaciocinioLoteUmReviewed = Array.from({length:50},(_,index)=>index+551);
+const matematicaMatrizesLoteUmCasos = [
+  [2,3,1,4,5,1,2,3],[4,-1,2,3,1,2,3,4],[5,2,3,1,4,1,2,6],[1,4,2,5,3,2,1,4],[6,1,4,2,2,3,5,1],
+  [3,5,1,2,4,2,3,5],[7,2,3,4,1,5,2,3],[2,6,1,5,3,4,2,1],[8,1,5,3,2,2,4,6],[4,3,2,7,5,1,1,3]
+];
+const matematicaMatrizesLoteUm=matematicaMatrizesLoteUmCasos.flatMap(([a,b,c,d,e,f,g,h],caseIndex)=>{
+  const detA=a*d-b*c;
+  const tracoA=a+d;
+  const somaOnze=a+e;
+  const produtoOnze=a*e+b*g;
+  const detB=e*h-f*g;
+  const matrizA=`[${a} ${b}; ${c} ${d}]`;
+  const matrizB=`[${e} ${f}; ${g} ${h}]`;
+  const itens=[
+    ["Determinante de matriz",`O determinante da matriz A = ${matrizA} é:`,detA,`Para uma matriz 2 × 2, det(A) = ad − bc. Assim, ${a} × ${d} − ${b} × ${c} = ${formatarNumero(detA)}.`],
+    ["Traço de matriz",`O traço da matriz A = ${matrizA} é:`,tracoA,`O traço é a soma dos elementos da diagonal principal. Portanto, ${a} + ${d} = ${formatarNumero(tracoA)}.`],
+    ["Adição de matrizes",`Se A = ${matrizA} e B = ${matrizB}, o elemento da primeira linha e primeira coluna de A + B é:`,somaOnze,`Na adição de matrizes, somam-se elementos na mesma posição. Logo, o elemento procurado é ${a} + ${e} = ${formatarNumero(somaOnze)}.`],
+    ["Multiplicação de matrizes",`Se A = ${matrizA} e B = ${matrizB}, o elemento da primeira linha e primeira coluna de AB é:`,produtoOnze,`O elemento (1,1) de AB é obtido pelo produto escalar da primeira linha de A com a primeira coluna de B: ${a} × ${e} + ${b} × ${g} = ${formatarNumero(produtoOnze)}.`],
+    ["Determinante de matriz",`O determinante da matriz B = ${matrizB} é:`,detB,`Aplicando det(B) = eh − fg, obtém-se ${e} × ${h} − ${f} × ${g} = ${formatarNumero(detB)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${601+caseIndex*5+itemIndex}`,subjectId:"matematica",number:601+caseIndex*5+itemIndex,topic,area:"Matrizes e determinantes",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+questionBank.questions.push(...matematicaMatrizesLoteUm);
+questionBank.review.matematicaMatrizesLoteUmReviewed = Array.from({length:50},(_,index)=>index+601);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

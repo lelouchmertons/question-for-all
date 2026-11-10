@@ -18313,29 +18313,40 @@ const matematicaInteirosLoteUm=matematicaInteirosLoteUmCasos.flatMap(([a,b,limit
 });
 questionBank.questions.push(...matematicaInteirosLoteUm);
 questionBank.review.matematicaInteirosLoteUmReviewed = Array.from({length:50},(_,index)=>index+801);
-const matematicaFinanceiraLoteDoisCasos = [
-  [1000,0.10,2,0.15],[2500,0.08,3,0.20],[1800,0.05,4,0.10],[3200,0.12,2,0.25],[1500,0.06,5,0.18],
-  [4000,0.03,6,0.10],[2800,0.09,3,0.12],[2200,0.07,4,0.20],[5000,0.04,3,0.15],[3600,0.11,2,0.05]
-];
-const matematicaFinanceiraLoteDois=matematicaFinanceiraLoteDoisCasos.flatMap(([capital,taxa,periodos,desconto],caseIndex)=>{
-  const fator=(1+taxa)**periodos;
-  const montante=capital*fator;
-  const jurosCompostos=montante-capital;
-  const jurosSimples=capital*taxa*periodos;
-  const valorAposAjustes=capital*(1+taxa)*(1-desconto);
-  const variacaoEfetiva=100*((1+taxa)*(1-desconto)-1);
-  const taxaPercentual=100*taxa,descontoPercentual=100*desconto;
+const matematicaDiagramasLogicosLoteUmCasos = [[100,45,38,20],[120,62,55,28],[90,40,47,16],[150,75,68,35],[110,58,42,19]];
+const matematicaDiagramasLogicosLoteUm=matematicaDiagramasLogicosLoteUmCasos.flatMap(([universo,a,b,intersecao],caseIndex)=>{
+  const uniao=a+b-intersecao;
+  const somenteA=a-intersecao;
+  const somenteB=b-intersecao;
+  const nenhum=universo-uniao;
+  const exatamenteUm=somenteA+somenteB;
   const itens=[
-    ["Juros compostos",`Um capital de ${capital} é aplicado a juros compostos de ${formatarNumero(taxaPercentual)}% por período durante ${periodos} períodos. O montante é:`,montante,`Em juros compostos, M = C(1 + i)ⁿ. Logo, ${capital} × (${formatarNumero(1+taxa)})^${periodos} = ${formatarNumero(montante)}.`],
-    ["Juros compostos",`Um capital de ${capital} é aplicado a juros compostos de ${formatarNumero(taxaPercentual)}% por período durante ${periodos} períodos. Os juros acumulados são:`,jurosCompostos,`Primeiro, o montante é ${formatarNumero(montante)}. Subtraindo o capital inicial de ${capital}, os juros acumulados são ${formatarNumero(jurosCompostos)}.`],
-    ["Juros simples",`Um capital de ${capital} é aplicado a juros simples de ${formatarNumero(taxaPercentual)}% por período durante ${periodos} períodos. Os juros são:`,jurosSimples,`Em juros simples, J = C × i × n. Assim, ${capital} × ${formatarNumero(taxa)} × ${periodos} = ${formatarNumero(jurosSimples)}.`],
-    ["Reajuste e desconto",`Um valor de ${capital} recebe aumento de ${formatarNumero(taxaPercentual)}% e, depois, desconto de ${formatarNumero(descontoPercentual)}%. O valor final é:`,valorAposAjustes,`Os percentuais incidem sucessivamente: ${capital} × ${formatarNumero(1+taxa)} × ${formatarNumero(1-desconto)} = ${formatarNumero(valorAposAjustes)}.`],
-    ["Variação percentual",`Após aumento de ${formatarNumero(taxaPercentual)}% e desconto de ${formatarNumero(descontoPercentual)}%, a variação efetiva de um preço é, em porcentagem:`,variacaoEfetiva,`O fator total é ${formatarNumero(1+taxa)} × ${formatarNumero(1-desconto)}. Subtraindo 1 e multiplicando por 100, obtém-se ${formatarNumero(variacaoEfetiva)}%.`]
+    ["Diagramas lógicos",`Em um universo de ${universo} elementos, o diagrama indica ${a} elementos em A, ${b} em B e ${intersecao} em A ∩ B. Quantos elementos pertencem a A ∪ B?`,uniao,`Pelo princípio da inclusão-exclusão, |A ∪ B| = |A| + |B| − |A ∩ B| = ${a} + ${b} − ${intersecao} = ${formatarNumero(uniao)}.`],
+    ["Diagramas lógicos",`Em um universo de ${universo} elementos, com |A| = ${a}, |B| = ${b} e |A ∩ B| = ${intersecao}, quantos pertencem somente a A?`,somenteA,`Os elementos somente de A são os de A que não estão na interseção: ${a} − ${intersecao} = ${formatarNumero(somenteA)}.`],
+    ["Diagramas lógicos",`Em um universo de ${universo} elementos, com |A| = ${a}, |B| = ${b} e |A ∩ B| = ${intersecao}, quantos pertencem somente a B?`,somenteB,`Os elementos somente de B são os de B que não estão na interseção: ${b} − ${intersecao} = ${formatarNumero(somenteB)}.`],
+    ["Diagramas lógicos",`Em um universo de ${universo} elementos, com |A| = ${a}, |B| = ${b} e |A ∩ B| = ${intersecao}, quantos não pertencem nem a A nem a B?`,nenhum,`Primeiro, |A ∪ B| = ${formatarNumero(uniao)}. Logo, fora dos dois conjuntos há ${universo} − ${formatarNumero(uniao)} = ${formatarNumero(nenhum)} elementos.`],
+    ["Diagramas lógicos",`Em um universo de ${universo} elementos, com |A| = ${a}, |B| = ${b} e |A ∩ B| = ${intersecao}, quantos pertencem a exatamente um dos conjuntos?`,exatamenteUm,`Exatamente um conjunto significa somente A ou somente B: ${formatarNumero(somenteA)} + ${formatarNumero(somenteB)} = ${formatarNumero(exatamenteUm)}.`]
   ];
-  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${851+caseIndex*5+itemIndex}`,subjectId:"matematica",number:851+caseIndex*5+itemIndex,topic,area:"Matemática financeira e proporcionalidade",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];return{id:`matematica-${851+caseIndex*5+itemIndex}`,subjectId:"matematica",number:851+caseIndex*5+itemIndex,topic,area:"Diagramas lógicos e conjuntos",stem,options:opcoesAlgebra(correct,answer),answer,explanation};});
 });
-questionBank.questions.push(...matematicaFinanceiraLoteDois);
-questionBank.review.matematicaFinanceiraLoteDoisReviewed = Array.from({length:50},(_,index)=>index+851);
+const matematicaPredicadosLoteUmCasos = [[80,45,38,20],[100,62,55,28],[80,40,47,16],[130,75,68,35],[90,58,42,19]];
+const matematicaPredicadosLoteUm=matematicaPredicadosLoteUmCasos.flatMap(([universo,p,q,intersecao],caseIndex)=>{
+  const uniao=p+q-intersecao;
+  const somenteP=p-intersecao;
+  const somenteQ=q-intersecao;
+  const nenhum=universo-uniao;
+  const naoP=universo-p;
+  const itens=[
+    ["Lógica dos predicados",`No universo U com ${universo} elementos, P(x) é verdadeiro para ${p} elementos, Q(x) é verdadeiro para ${q} e ambos são verdadeiros para ${intersecao}. Quantos elementos tornam P(x) ∧ Q(x) verdadeiro?`,intersecao,`A conjunção P(x) ∧ Q(x) corresponde à interseção dos conjuntos. Portanto, há ${formatarNumero(intersecao)} elementos.`],
+    ["Lógica dos predicados",`No universo U com ${universo} elementos, P(x) é verdadeiro para ${p} elementos, Q(x) para ${q} e ambos para ${intersecao}. Quantos tornam P(x) ∨ Q(x) verdadeiro?`,uniao,`A disjunção inclusiva corresponde à união: ${p} + ${q} − ${intersecao} = ${formatarNumero(uniao)} elementos.`],
+    ["Quantificadores",`No universo U com ${universo} elementos, P(x) é verdadeiro para ${p} elementos. Para quantos elementos ¬P(x) é verdadeiro?`,naoP,`A negação de P vale exatamente para os elementos que não satisfazem P. Assim, ${universo} − ${p} = ${formatarNumero(naoP)}.`],
+    ["Lógica dos predicados",`No universo U com ${universo} elementos, P(x) é verdadeiro para ${p}, Q(x) para ${q} e ambos para ${intersecao}. Quantos tornam P(x) verdadeiro e Q(x) falso?`,somenteP,`P(x) verdadeiro e Q(x) falso significa pertencer somente a P. Logo, ${p} − ${intersecao} = ${formatarNumero(somenteP)}.`],
+    ["Sentenças e quantificadores",`No universo U com ${universo} elementos, P(x) é verdadeiro para ${p}, Q(x) para ${q} e ambos para ${intersecao}. Quantos não satisfazem P(x) nem Q(x)?`,nenhum,`Primeiro, P(x) ∨ Q(x) é verdadeiro para ${formatarNumero(uniao)} elementos. Portanto, ${universo} − ${formatarNumero(uniao)} = ${formatarNumero(nenhum)} não satisfazem nenhum dos predicados.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];return{id:`matematica-${876+caseIndex*5+itemIndex}`,subjectId:"matematica",number:876+caseIndex*5+itemIndex,topic,area:"Lógica dos predicados e quantificadores",stem,options:opcoesAlgebra(correct,answer),answer,explanation};});
+});
+questionBank.questions.push(...matematicaDiagramasLogicosLoteUm,...matematicaPredicadosLoteUm);
+questionBank.review.matematicaDiagramasPredicadosLoteUmReviewed = Array.from({length:50},(_,index)=>index+851);
 const matematicaSistemasLoteUmCasos = [
   [3,2,2,1,1,-1],[4,1,1,2,3,-1],[2,5,3,1,1,2],[-1,4,2,3,1,-2],[5,3,1,1,2,-1],
   [6,2,2,-1,1,3],[1,7,3,2,2,-1],[4,-2,1,3,2,1],[3,6,4,-1,1,2],[7,1,2,3,3,-2]

@@ -18155,6 +18155,61 @@ const matematicaConjuntosLoteUm=matematicaConjuntosLoteUmCasos.flatMap(([univers
 });
 questionBank.questions.push(...matematicaConjuntosLoteUm);
 questionBank.review.matematicaConjuntosLoteUmReviewed = Array.from({length:50},(_,index)=>index+501);
+const matematicaRaciocinioLoteUmItens = [
+  ["Progressão aritmética", "Na PA 3, 7, 11, ... , o vigésimo termo é:", 79, "Em uma PA, aₙ = a₁ + (n − 1)r. Assim, a₂₀ = 3 + 19 × 4 = 79."],
+  ["Progressão aritmética", "Na PA 50, 45, 40, ... , o décimo segundo termo é:", -5, "A razão é −5. Logo, a₁₂ = 50 + 11 × (−5) = −5."],
+  ["Progressão aritmética", "Uma PA tem primeiro termo 8 e razão 6. O décimo quinto termo é:", 92, "Aplicando aₙ = a₁ + (n − 1)r, obtém-se 8 + 14 × 6 = 92."],
+  ["Soma de PA", "A soma dos dez primeiros termos da PA 4, 10, 16, ... é:", 310, "O décimo termo é 4 + 9 × 6 = 58. Então S₁₀ = 10 × (4 + 58) ÷ 2 = 310."],
+  ["Progressão aritmética", "Na PA 2, 5, 8, ... , qual é a posição ocupada pelo termo 29?", 10, "Resolve-se 2 + (n − 1) × 3 = 29. Assim, 3(n − 1) = 27 e n = 10."],
+  ["Progressão aritmética", "Uma PA começa em 100 e tem razão −7. Seu décimo terceiro termo é:", 16, "O termo procurado é 100 + 12 × (−7). Portanto, a₁₃ = 16."],
+  ["Soma de PA", "A soma dos dezoito primeiros termos da PA 6, 9, 12, ... é:", 567, "O décimo oitavo termo é 6 + 17 × 3 = 57. Logo, S₁₈ = 18 × (6 + 57) ÷ 2 = 567."],
+  ["Progressão aritmética", "Na PA 14, 20, 26, ... , o nono termo é:", 62, "Com razão 6, a₉ = 14 + 8 × 6. Portanto, o nono termo é 62."],
+  ["Progressão aritmética", "Em uma PA de razão 4, o oitavo termo vale 31. O primeiro termo é:", 3, "Como a₈ = a₁ + 7 × 4, temos 31 = a₁ + 28. Assim, a₁ = 3."],
+  ["Progressão aritmética", "Uma PA tem primeiro termo 5, razão 5 e último termo 50. Ela possui quantos termos?", 10, "Pela fórmula 50 = 5 + (n − 1) × 5, resulta 45 = 5(n − 1), logo n = 10."],
+  ["Progressão geométrica", "Na PG 2, 6, 18, ... , o sétimo termo é:", 1458, "A razão é 3. Assim, a₇ = 2 × 3⁶ = 2 × 729 = 1458."],
+  ["Progressão geométrica", "Na PG 81, 27, 9, ... , o quinto termo é:", 1, "A razão é 1/3. Portanto, a₅ = 81 × (1/3)⁴ = 1."],
+  ["Soma de PG", "Uma PG tem primeiro termo 5 e razão 2. A soma dos seis primeiros termos é:", 315, "Usando Sₙ = a₁(qⁿ − 1)/(q − 1), resulta 5 × (2⁶ − 1) = 315."],
+  ["Progressão geométrica", "Em uma PG de primeiro termo 3 e razão 3, o quinto termo é:", 243, "Calcula-se a₅ = 3 × 3⁴. Logo, o quinto termo é 243."],
+  ["Progressão geométrica", "Na PG 64, 32, 16, ... , o sétimo termo é:", 1, "A razão é 1/2. Assim, a₇ = 64 × (1/2)⁶ = 1."],
+  ["Soma de PG", "A soma dos cinco primeiros termos da PG 4, 8, 16, ... é:", 124, "A soma é 4 × (2⁵ − 1)/(2 − 1). Portanto, S₅ = 4 × 31 = 124."],
+  ["Progressão geométrica", "Em uma PG de razão 3, o terceiro termo vale 36. O primeiro termo é:", 4, "Temos a₃ = a₁ × 3². Então a₁ = 36 ÷ 9 = 4."],
+  ["Progressão geométrica", "Uma PG tem primeiro termo 7 e razão 2. O sexto termo é:", 224, "Pela fórmula aₙ = a₁qⁿ⁻¹, a₆ = 7 × 2⁵ = 224."],
+  ["Progressão geométrica", "Na PG 256, 64, 16, ... , o quinto termo é:", 1, "A razão é 1/4. Logo, a₅ = 256 × (1/4)⁴ = 1."],
+  ["Progressão geométrica", "Uma PG tem primeiro termo 2 e razão 5. O quarto termo é:", 250, "Calcula-se a₄ = 2 × 5³. Portanto, o quarto termo é 250."],
+  ["Sistema linear", "No sistema x + y = 17 e x − y = 5, o valor de x é:", 11, "Somando as duas equações, obtém-se 2x = 22. Portanto, x = 11."],
+  ["Sistema linear", "No sistema 2x + y = 19 e x + y = 12, o valor de x é:", 7, "Subtraindo a segunda equação da primeira, sobra x = 19 − 12. Assim, x = 7."],
+  ["Sistema linear", "No sistema 3x + 2y = 26 e x + y = 10, o valor de y é:", 4, "Da segunda equação, x = 10 − y. Substituindo na primeira, 30 − y = 26, portanto y = 4."],
+  ["Sistema linear", "Em uma compra, 39 itens custam 201, sendo alguns de preço 4 e os demais de preço 7. A quantidade de itens de preço 4 é:", 24, "Se x itens custam 4, então 4x + 7(39 − x) = 201. Logo, −3x = −72 e x = 24."],
+  ["Sistema linear", "Duas idades somam 46 anos e diferem em 8 anos. A maior idade é:", 27, "Somando as equações idade maior + menor = 46 e maior − menor = 8, obtém-se 2 × maior = 54. Logo, a maior idade é 27."],
+  ["Sistema linear", "No sistema 4x + 3y = 36 e x + y = 11, o valor de x é:", 3, "Substitui-se y por 11 − x: 4x + 3(11 − x) = 36. Assim, x = 3."],
+  ["Sistema linear", "No sistema 7x + 2y = 46 e x + y = 8, o valor de x é:", 6, "Usando y = 8 − x, temos 7x + 2(8 − x) = 46. Portanto, 5x = 30 e x = 6."],
+  ["Sistema linear", "Vinte ingressos, entre adultos de 12 e estudantes de 7, renderam 190. A quantidade de ingressos de adulto foi:", 10, "Se a representa os ingressos de adulto, 12a + 7(20 − a) = 190. Logo, 5a = 50 e a = 10."],
+  ["Sistema linear", "Em uma mistura de 30 litros, há dois líquidos em quantidades x e y, com x + y = 30 e 3x + 5y = 126. O valor de y é:", 18, "Substituindo x por 30 − y, obtém-se 3(30 − y) + 5y = 126. Assim, 2y = 36 e y = 18."],
+  ["Sistema linear", "No sistema x/2 + y/3 = 9 e x + y = 24, o valor de x é:", 6, "Multiplicando a primeira equação por 6, vem 3x + 2y = 54. Com x + y = 24, resulta x = 6."],
+  ["Produção", "Uma esteira embala 18 caixas por hora durante 7,5 horas. O total de caixas embaladas é:", 135, "Multiplica-se a taxa pelo tempo: 18 × 7,5 = 135 caixas."],
+  ["Proporcionalidade", "Oito impressoras produzem 12.000 páginas em cinco horas. Mantida a taxa, seis impressoras produzem quantas páginas em quatro horas?", 7200, "A produção é proporcional ao número de impressoras e ao tempo: 12.000 × (6/8) × (4/5) = 7.200."],
+  ["Razão e proporção", "Uma quantidade é dividida na razão 3:5 e o total é 96. A maior parte vale:", 60, "A soma das partes é 8. Cada parte vale 96 ÷ 8 = 12, e a maior parcela corresponde a 5 × 12 = 60."],
+  ["Escala", "Em uma escala 1:25.000, uma distância mede 8 cm no mapa. A distância real, em quilômetros, é:", 2, "A distância real é 8 × 25.000 = 200.000 cm. Como 1 km tem 100.000 cm, o resultado é 2 km."],
+  ["Velocidade média", "Um veículo percorre 60 km a 40 km/h e outros 60 km a 60 km/h. Sua velocidade média, em km/h, é:", 48, "O tempo total é 60/40 + 60/60 = 2,5 horas. Dividindo 120 km por 2,5 horas, obtém-se 48 km/h."],
+  ["Porcentagem", "Se 72 corresponde a 30% de um total, esse total é:", 240, "Se 30% vale 72, então 100% vale 72 ÷ 0,30. Portanto, o total é 240."],
+  ["Porcentagem sucessiva", "Um valor de 500 aumenta 20% e, em seguida, diminui 20%. O resultado final é:", 480, "O cálculo é 500 × 1,20 × 0,80. Assim, o valor final é 480."],
+  ["Desconto sucessivo", "Um produto de 200 recebe descontos sucessivos de 10% e 15%. O preço final é:", 153, "Os descontos são aplicados em sequência: 200 × 0,90 × 0,85 = 153."],
+  ["Trabalho e produtividade", "Doze trabalhadores concluem uma tarefa em 15 dias, trabalhando oito horas por dia. Com dezoito trabalhadores, em dez dias, serão necessárias quantas horas diárias?", 8, "O trabalho total é 12 × 15 × 8 = 1.440 homem-horas. Dividindo por 18 × 10, obtém-se 8 horas diárias."],
+  ["Produção", "Quatro máquinas produzem 960 peças em seis horas. Mantida a produtividade, cinco máquinas produzem quantas peças em oito horas?", 1600, "A produção é proporcional a máquinas e tempo: 960 × (5/4) × (8/6) = 1.600 peças."],
+  ["Lógica proposicional", "Uma tabela-verdade com quatro proposições simples possui quantas linhas?", 16, "Cada proposição admite dois valores lógicos. Com quatro proposições, há 2⁴ = 16 combinações possíveis."],
+  ["Lógica proposicional", "Com três proposições simples, em quantas linhas da tabela-verdade exatamente uma delas é verdadeira?", 3, "Escolhe-se qual das três proposições será verdadeira. Existem C(3,1) = 3 possibilidades."],
+  ["Raciocínio binário", "Quantas sequências de cinco dígitos binários podem ser formadas, admitindo 0 e 1 em cada posição?", 32, "Cada posição possui duas possibilidades independentes. Logo, 2⁵ = 32 sequências."],
+  ["Princípio multiplicativo", "Um código de quatro dígitos usa somente os algarismos de 1 a 5, com repetição permitida. Quantos códigos podem ser formados?", 625, "Há cinco escolhas para cada uma das quatro posições. Portanto, 5⁴ = 625 códigos."],
+  ["Permutação", "Cinco livros diferentes devem ser organizados em uma prateleira. Quantas ordens distintas são possíveis?", 120, "A organização de cinco objetos distintos é 5!. Assim, 5 × 4 × 3 × 2 × 1 = 120."],
+  ["Arranjo", "Entre seis pessoas diferentes, escolhem-se presidente e vice-presidente. Quantas escolhas ordenadas são possíveis?", 30, "Há seis escolhas para presidente e cinco para vice. Portanto, 6 × 5 = 30 escolhas ordenadas."],
+  ["Permutação circular", "Seis pessoas distintas sentam-se ao redor de uma mesa circular. Quantas disposições diferentes existem?", 120, "Em uma permutação circular de seis pessoas, fixa-se uma posição e permutam-se as outras cinco: 5! = 120."],
+  ["Conjuntos", "Um conjunto com seis elementos possui quantos subconjuntos?", 64, "Cada elemento pode pertencer ou não ao subconjunto. Assim, o total é 2⁶ = 64 subconjuntos."],
+  ["Divisibilidade", "Quantos números inteiros positivos de 1 a 100 são múltiplos de 7?", 14, "Os múltiplos de 7 até 100 são 7, 14, ..., 98. Como 98 ÷ 7 = 14, existem 14 múltiplos."],
+  ["Inclusão-exclusão", "De 1 a 100, quantos números são múltiplos de 3 ou de 5?", 47, "Há 33 múltiplos de 3, 20 de 5 e 6 de 15. Pela inclusão-exclusão, 33 + 20 − 6 = 47."]
+];
+const matematicaRaciocinioLoteUm=matematicaRaciocinioLoteUmItens.map(([topic,stem,correct,explanation],index)=>{const answer="ABCDE"[index%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${551+index}`,subjectId:"matematica",number:551+index,topic,area:"Raciocínio lógico e sequências",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+questionBank.questions.push(...matematicaRaciocinioLoteUm);
+questionBank.review.matematicaRaciocinioLoteUmReviewed = Array.from({length:50},(_,index)=>index+551);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

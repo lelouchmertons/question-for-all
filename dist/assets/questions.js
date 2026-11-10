@@ -18316,6 +18316,29 @@ const matematicaInteirosLoteUm=matematicaInteirosLoteUmCasos.flatMap(([a,b,limit
 });
 questionBank.questions.push(...matematicaInteirosLoteUm);
 questionBank.review.matematicaInteirosLoteUmReviewed = Array.from({length:50},(_,index)=>index+801);
+const matematicaFinanceiraLoteDoisCasos = [
+  [1000,0.10,2,0.15],[2500,0.08,3,0.20],[1800,0.05,4,0.10],[3200,0.12,2,0.25],[1500,0.06,5,0.18],
+  [4000,0.03,6,0.10],[2800,0.09,3,0.12],[2200,0.07,4,0.20],[5000,0.04,3,0.15],[3600,0.11,2,0.05]
+];
+const matematicaFinanceiraLoteDois=matematicaFinanceiraLoteDoisCasos.flatMap(([capital,taxa,periodos,desconto],caseIndex)=>{
+  const fator=(1+taxa)**periodos;
+  const montante=capital*fator;
+  const jurosCompostos=montante-capital;
+  const jurosSimples=capital*taxa*periodos;
+  const valorAposAjustes=capital*(1+taxa)*(1-desconto);
+  const variacaoEfetiva=100*((1+taxa)*(1-desconto)-1);
+  const taxaPercentual=100*taxa,descontoPercentual=100*desconto;
+  const itens=[
+    ["Juros compostos",`Um capital de ${capital} é aplicado a juros compostos de ${formatarNumero(taxaPercentual)}% por período durante ${periodos} períodos. O montante é:`,montante,`Em juros compostos, M = C(1 + i)ⁿ. Logo, ${capital} × (${formatarNumero(1+taxa)})^${periodos} = ${formatarNumero(montante)}.`],
+    ["Juros compostos",`Um capital de ${capital} é aplicado a juros compostos de ${formatarNumero(taxaPercentual)}% por período durante ${periodos} períodos. Os juros acumulados são:`,jurosCompostos,`Primeiro, o montante é ${formatarNumero(montante)}. Subtraindo o capital inicial de ${capital}, os juros acumulados são ${formatarNumero(jurosCompostos)}.`],
+    ["Juros simples",`Um capital de ${capital} é aplicado a juros simples de ${formatarNumero(taxaPercentual)}% por período durante ${periodos} períodos. Os juros são:`,jurosSimples,`Em juros simples, J = C × i × n. Assim, ${capital} × ${formatarNumero(taxa)} × ${periodos} = ${formatarNumero(jurosSimples)}.`],
+    ["Reajuste e desconto",`Um valor de ${capital} recebe aumento de ${formatarNumero(taxaPercentual)}% e, depois, desconto de ${formatarNumero(descontoPercentual)}%. O valor final é:`,valorAposAjustes,`Os percentuais incidem sucessivamente: ${capital} × ${formatarNumero(1+taxa)} × ${formatarNumero(1-desconto)} = ${formatarNumero(valorAposAjustes)}.`],
+    ["Variação percentual",`Após aumento de ${formatarNumero(taxaPercentual)}% e desconto de ${formatarNumero(descontoPercentual)}%, a variação efetiva de um preço é, em porcentagem:`,variacaoEfetiva,`O fator total é ${formatarNumero(1+taxa)} × ${formatarNumero(1-desconto)}. Subtraindo 1 e multiplicando por 100, obtém-se ${formatarNumero(variacaoEfetiva)}%.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${851+caseIndex*5+itemIndex}`,subjectId:"matematica",number:851+caseIndex*5+itemIndex,topic,area:"Matemática financeira e proporcionalidade",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+questionBank.questions.push(...matematicaFinanceiraLoteDois);
+questionBank.review.matematicaFinanceiraLoteDoisReviewed = Array.from({length:50},(_,index)=>index+851);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

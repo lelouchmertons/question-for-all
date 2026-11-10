@@ -24,7 +24,7 @@ O problema está na distribuição: dois lotes recentes repetem proporcionalidad
 |---|---|---|---|
 | 701–750 | Geometria analítica; conteúdo útil, mas não previsto expressamente no edital analisado | Lógica proposicional formal | Proposições simples e compostas; conectivos; tabela-verdade; negação; equivalência; implicação; tautologia; contradição; condições necessária e suficiente. |
 | 851–900 | Matemática financeira e proporcionalidade; repete o núcleo de 101–150 e 151–200 | Lógica de predicados e diagramas lógicos | Sentenças abertas e fechadas; quantificadores; negação de quantificadores; argumentos; diagramas lógicos; relações entre conjuntos e lógica. |
-| 951–1000 | Modelagem e proporcionalidade; repete porcentagem, regra de três e álgebra já fortemente presentes | Lógica de predicados e diagramas lógicos | Sentenças abertas e fechadas; quantificadores; negação de quantificadores; argumentos; diagramas lógicos; relações entre conjuntos e lógica. |
+| 951–1000 | Modelagem e proporcionalidade; repete porcentagem, regra de três e álgebra já fortemente presentes | Fundamentos numéricos e conversões | Números complexos; racionais, reais e irracionais; orientação espacial e temporal; escala; sistema métrico e conversões. |
 
 Essas duas substituições resolvem as lacunas conceituais mais graves sem reduzir a prática de cálculo: permanecem 50 questões de porcentagem/proporcionalidade, 50 de juros, 100 de álgebra/funções e 50 de sistemas lineares.
 

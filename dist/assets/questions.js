@@ -18374,31 +18374,72 @@ const matematicaSistemasLoteUm=matematicaSistemasLoteUmCasos.flatMap(([x,y,a,b,c
 });
 questionBank.questions.push(...matematicaSistemasLoteUm);
 questionBank.review.matematicaSistemasLoteUmReviewed = Array.from({length:50},(_,index)=>index+901);
-const matematicaModelagemLoteUmCasos = [
-  [24,18,3,5,12],[30,20,4,7,15],[18,27,2,6,9],[40,25,5,8,20],[28,14,3,4,11],
-  [36,24,6,5,14],[45,30,4,9,18],[32,16,5,3,10],[21,35,3,7,13],[50,40,8,6,16]
-];
-const matematicaModelagemLoteUm=matematicaModelagemLoteUmCasos.flatMap(([a,b,p,q,quantidade],caseIndex)=>{
-  const media=(a+b)/2;
-  const diferenca=a-b;
-  const direta=quantidade*q/p;
-  const inversa=quantidade*p/q;
-  const totalProporcional=a*p+b*q;
+const matematicaComplexosLoteDoisCasos = [[3,4,2,1],[5,2,1,3],[4,3,2,-1]];
+const matematicaComplexosLoteDois=matematicaComplexosLoteDoisCasos.flatMap(([a,b,c,d],caseIndex)=>{
+  const moduloQuadrado=a*a+b*b;
+  const realSoma=a+c;
+  const imaginarioSoma=b+d;
+  const realQuadrado=a*a-b*b;
+  const produtoConjugado=moduloQuadrado;
   const itens=[
-    ["Média aritmética",`A média aritmética entre ${a} e ${b} é:`,media,`A média aritmética é a soma dos valores dividida por 2: (${a} + ${b}) ÷ 2 = ${formatarNumero(media)}.`],
-    ["Problema algébrico",`Em uma situação em que dois resultados são ${a} e ${b}, a diferença entre o maior e o menor resultado é:`,Math.abs(diferenca),`A diferença é calculada por |${a} − ${b}| = ${formatarNumero(Math.abs(diferenca))}.`],
-    ["Regra de três direta",`${p} unidades de um insumo atendem ${quantidade} tarefas no mesmo ritmo. Mantida a proporção direta, ${q} unidades atendem quantas tarefas?`,direta,`Na proporcionalidade direta, multiplica-se pela razão ${q}/${p}. Assim, ${quantidade} × ${q} ÷ ${p} = ${formatarNumero(direta)}.`],
-    ["Regra de três inversa",`${p} trabalhadores realizam uma atividade em ${quantidade} dias, mantendo produtividade constante. Com ${q} trabalhadores, o prazo será de quantos dias?`,inversa,`O número de trabalhadores e o tempo são inversamente proporcionais. Logo, ${quantidade} × ${p} ÷ ${q} = ${formatarNumero(inversa)}.`],
-    ["Expressão algébrica",`O valor de ${a} × ${p} + ${b} × ${q} é:`,totalProporcional,`Efetuando os produtos e a soma, ${a} × ${p} + ${b} × ${q} = ${formatarNumero(totalProporcional)}.`]
+    ["Números complexos",`Para z = ${a} + ${b}i, o valor de |z|² é:`,moduloQuadrado,`O quadrado do módulo é a² + b². Portanto, |z|² = ${a}² + ${b}² = ${formatarNumero(moduloQuadrado)}.`],
+    ["Números complexos",`Para z₁ = ${a} + ${b}i e z₂ = ${c} ${d>=0?"+":"−"} ${Math.abs(d)}i, a parte real de z₁ + z₂ é:`,realSoma,`Somam-se as partes reais: ${a} + ${c} = ${formatarNumero(realSoma)}.`],
+    ["Números complexos",`Para z₁ = ${a} + ${b}i e z₂ = ${c} ${d>=0?"+":"−"} ${Math.abs(d)}i, o coeficiente de i em z₁ + z₂ é:`,imaginarioSoma,`Somam-se os coeficientes imaginários: ${b} + (${d}) = ${formatarNumero(imaginarioSoma)}.`],
+    ["Números complexos",`Para z = ${a} + ${b}i, a parte real de z² é:`,realQuadrado,`Como (a + bi)² = a² − b² + 2abi, a parte real é ${a}² − ${b}² = ${formatarNumero(realQuadrado)}.`],
+    ["Números complexos",`Para z = ${a} + ${b}i e seu conjugado z̄, o produto z × z̄ é:`,produtoConjugado,`O produto de um complexo pelo conjugado é a² + b². Logo, ${a}² + ${b}² = ${formatarNumero(produtoConjugado)}.`]
   ];
-  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{
-    const answer="CEBAD"[(caseIndex*5+itemIndex)%5];
-    const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, o resultado numérico correto é ${formatarNumero(correct)}.`;
-    return{id:`matematica-${951+caseIndex*5+itemIndex}`,subjectId:"matematica",number:951+caseIndex*5+itemIndex,topic,area:"Modelagem, proporcionalidade e problemas",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};
-  });
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, o resultado é ${formatarNumero(correct)}.`;return{id:`matematica-${951+caseIndex*5+itemIndex}`,subjectId:"matematica",number:951+caseIndex*5+itemIndex,topic,area:"Números complexos",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
 });
-questionBank.questions.push(...matematicaModelagemLoteUm);
-questionBank.review.matematicaModelagemLoteUmReviewed = Array.from({length:50},(_,index)=>index+951);
+const matematicaConjuntosNumericosLoteDoisCasos = [[3,4,5,2],[5,6,7,5],[7,8,9,4]];
+const matematicaConjuntosNumericosLoteDois=matematicaConjuntosNumericosLoteDoisCasos.flatMap(([a,b,c,denominador],caseIndex)=>{
+  const somaFracoes=(a+b)/denominador;
+  const produtoFracao=a*c/denominador;
+  const raizQuadrada=c*c;
+  const potencia=a*a;
+  const valorAbsoluto=Math.abs(a-b-c);
+  const itens=[
+    ["Números racionais",`O valor de ${a}/${denominador} + ${b}/${denominador} é:`,somaFracoes,`As frações têm o mesmo denominador: (${a} + ${b}) ÷ ${denominador} = ${formatarNumero(somaFracoes)}.`],
+    ["Números racionais",`O valor de (${a}/${denominador}) × ${c} é:`,produtoFracao,`Multiplicando o numerador por ${c}, obtém-se ${a} × ${c} ÷ ${denominador} = ${formatarNumero(produtoFracao)}.`],
+    ["Números reais",`O valor de √${raizQuadrada} é:`,c,`Como ${c} × ${c} = ${raizQuadrada}, a raiz quadrada principal de ${raizQuadrada} é ${formatarNumero(c)}.`],
+    ["Potenciação",`O valor de ${a}² é:`,potencia,`Elevando ${a} ao quadrado: ${a} × ${a} = ${formatarNumero(potencia)}.`],
+    ["Valor absoluto",`O valor de |${a} − ${b} − ${c}| é:`,valorAbsoluto,`Primeiro, ${a} − ${b} − ${c} = ${a-b-c}. O valor absoluto é ${formatarNumero(valorAbsoluto)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, o resultado é ${formatarNumero(correct)}.`;return{id:`matematica-${966+caseIndex*5+itemIndex}`,subjectId:"matematica",number:966+caseIndex*5+itemIndex,topic,area:"Conjuntos numéricos e operações",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+const matematicaOrientacaoLoteDoisCasos = [[2,5,3,4],[3,7,2,5]];
+const matematicaOrientacaoLoteDois=matematicaOrientacaoLoteDoisCasos.flatMap(([inicio,avanço,retorno,escala],caseIndex)=>{
+  const posicaoFinal=inicio+avanço-retorno;
+  const distanciaTotal=avanço+retorno;
+  const diaFinal=((inicio-1+avanço)%7)+1;
+  const deslocamentoEscalado=avanço*escala;
+  const diferenca=Math.abs(avanço-retorno);
+  const itens=[
+    ["Orientação espacial",`Em uma linha numerada, uma pessoa parte da posição ${inicio}, avança ${avanço} unidades e retorna ${retorno} unidades. Em qual posição termina?`,posicaoFinal,`O deslocamento líquido é ${avanço} − ${retorno} = ${formatarNumero(avanço-retorno)}. Logo, a posição final é ${inicio} + ${formatarNumero(avanço-retorno)} = ${formatarNumero(posicaoFinal)}.`],
+    ["Orientação espacial",`Uma pessoa avança ${avanço} unidades e retorna ${retorno} unidades em linha reta. Qual distância total ela percorre?`,distanciaTotal,`A distância percorrida soma os dois trajetos, independentemente do sentido: ${avanço} + ${retorno} = ${formatarNumero(distanciaTotal)}.`],
+    ["Orientação temporal",`Use a codificação 1 para segunda-feira e 7 para domingo. Partindo do dia ${inicio}, após ${avanço} dias, o código do dia será:`,diaFinal,`Avançam-se ${avanço} posições em um ciclo de 7 dias. O resultado é o código ${formatarNumero(diaFinal)}.`],
+    ["Escala",`Em um croqui, cada centímetro representa ${escala} unidades reais. Um trecho de ${avanço} cm no croqui representa quantas unidades reais?`,deslocamentoEscalado,`Multiplica-se a medida no croqui pela escala: ${avanço} × ${escala} = ${formatarNumero(deslocamentoEscalado)}.`],
+    ["Orientação espacial",`Após avançar ${avanço} unidades e retornar ${retorno}, qual é o módulo do deslocamento líquido?`,diferenca,`O deslocamento líquido é ${avanço} − ${retorno}. Seu módulo é |${avanço} − ${retorno}| = ${formatarNumero(diferenca)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, o resultado é ${formatarNumero(correct)}.`;return{id:`matematica-${981+caseIndex*5+itemIndex}`,subjectId:"matematica",number:981+caseIndex*5+itemIndex,topic,area:"Orientação espacial, temporal e escala",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+const matematicaConversoesLoteDoisCasos = [[3,250,4,120],[5,400,6,150]];
+const matematicaConversoesLoteDois=matematicaConversoesLoteDoisCasos.flatMap(([metros,centimetros,litros,segundos],caseIndex)=>{
+  const cmEmMetros=centimetros/100;
+  const mEmCm=metros*100;
+  const ml=litros*1000;
+  const minutos=segundos/60;
+  const volumeDm3=litros;
+  const itens=[
+    ["Sistema métrico",`${centimetros} cm correspondem a quantos metros?`,cmEmMetros,`Como 1 m = 100 cm, divide-se ${centimetros} por 100: ${formatarNumero(cmEmMetros)} m.`],
+    ["Sistema métrico",`${metros} m correspondem a quantos centímetros?`,mEmCm,`Como 1 m = 100 cm, multiplica-se ${metros} por 100: ${formatarNumero(mEmCm)} cm.`],
+    ["Conversão de volume",`${litros} L correspondem a quantos mililitros?`,ml,`Cada litro possui 1.000 mL. Portanto, ${litros} × 1.000 = ${formatarNumero(ml)} mL.`],
+    ["Conversão de tempo",`${segundos} segundos correspondem a quantos minutos?`,minutos,`Um minuto possui 60 segundos. Assim, ${segundos} ÷ 60 = ${formatarNumero(minutos)} minuto(s).`],
+    ["Volume e capacidade",`${litros} L correspondem a quantos decímetros cúbicos?`,volumeDm3,`Por definição, 1 L equivale a 1 dm³. Logo, ${litros} L = ${formatarNumero(volumeDm3)} dm³.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, o resultado é ${formatarNumero(correct)}.`;return{id:`matematica-${991+caseIndex*5+itemIndex}`,subjectId:"matematica",number:991+caseIndex*5+itemIndex,topic,area:"Sistema métrico e conversões",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+questionBank.questions.push(...matematicaComplexosLoteDois,...matematicaConjuntosNumericosLoteDois,...matematicaOrientacaoLoteDois,...matematicaConversoesLoteDois);
+questionBank.review.matematicaFundamentosComplementaresLoteDoisReviewed = Array.from({length:50},(_,index)=>index+951);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

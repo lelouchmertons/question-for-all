@@ -18133,6 +18133,28 @@ const matematicaProbabilidadeLoteUm=matematicaProbabilidadeLoteUmCasos.flatMap((
 });
 questionBank.questions.push(...matematicaProbabilidadeLoteUm);
 questionBank.review.matematicaProbabilidadeLoteUmReviewed = Array.from({length:50},(_,index)=>index+451);
+const matematicaConjuntosLoteUmCasos = [
+  [60,32,28,15],[80,44,37,21],[100,55,48,22],[75,35,42,18],[90,50,46,30],
+  [120,70,65,38],[50,24,31,12],[110,62,58,35],[95,40,57,19],[70,38,29,14]
+];
+const matematicaConjuntosLoteUm=matematicaConjuntosLoteUmCasos.flatMap(([universo,conjuntoA,conjuntoB,intersecao],caseIndex)=>{
+  const uniao=conjuntoA+conjuntoB-intersecao;
+  const somenteA=conjuntoA-intersecao;
+  const somenteB=conjuntoB-intersecao;
+  const nenhum=universo-uniao;
+  const exatamenteUm=somenteA+somenteB;
+  const contexto=`Em um grupo de ${universo} pessoas, ${conjuntoA} pertencem ao conjunto A, ${conjuntoB} pertencem ao conjunto B e ${intersecao} pertencem aos dois conjuntos`;
+  const itens=[
+    ["União de conjuntos",`${contexto}. O número de pessoas em A ∪ B é:`,uniao,`Pela inclusão-exclusão, |A ∪ B| = |A| + |B| − |A ∩ B|. Assim, ${conjuntoA} + ${conjuntoB} − ${intersecao} = ${formatarNumero(uniao)}.`],
+    ["Diferença de conjuntos",`${contexto}. O número de pessoas que pertencem somente a A é:`,somenteA,`As pessoas somente em A são as de A que não estão na interseção. Portanto, ${conjuntoA} − ${intersecao} = ${formatarNumero(somenteA)}.`],
+    ["Diferença de conjuntos",`${contexto}. O número de pessoas que pertencem somente a B é:`,somenteB,`As pessoas somente em B são as de B que não pertencem aos dois conjuntos. Logo, ${conjuntoB} − ${intersecao} = ${formatarNumero(somenteB)}.`],
+    ["Complemento de conjuntos",`${contexto}. O número de pessoas que não pertencem nem a A nem a B é:`,nenhum,`Primeiro, |A ∪ B| = ${formatarNumero(uniao)}. Subtraindo esse total do universo de ${universo} pessoas, obtém-se ${formatarNumero(nenhum)}.`],
+    ["Contagem por conjuntos",`${contexto}. O número de pessoas que pertencem a exatamente um dos conjuntos é:`,exatamenteUm,`Pertencer a exatamente um conjunto significa estar somente em A ou somente em B. Assim, ${somenteA} + ${somenteB} = ${formatarNumero(exatamenteUm)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];return{id:`matematica-${501+caseIndex*5+itemIndex}`,subjectId:"matematica",number:501+caseIndex*5+itemIndex,topic,area:"Teoria dos conjuntos e lógica de contagem",stem,options:opcoesAlgebra(correct,answer),answer,explanation};});
+});
+questionBank.questions.push(...matematicaConjuntosLoteUm);
+questionBank.review.matematicaConjuntosLoteUmReviewed = Array.from({length:50},(_,index)=>index+501);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

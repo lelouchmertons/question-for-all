@@ -18233,6 +18233,28 @@ const matematicaMatrizesLoteUm=matematicaMatrizesLoteUmCasos.flatMap(([a,b,c,d,e
 });
 questionBank.questions.push(...matematicaMatrizesLoteUm);
 questionBank.review.matematicaMatrizesLoteUmReviewed = Array.from({length:50},(_,index)=>index+601);
+const matematicaTrigonometriaLoteUmCasos = [
+  [3,4,5],[5,12,13],[8,15,17],[7,24,25],[20,21,29],
+  [9,40,41],[12,35,37],[16,30,34],[11,60,61],[28,45,53]
+];
+const matematicaTrigonometriaLoteUm=matematicaTrigonometriaLoteUmCasos.flatMap(([oposto,adjacente,hipotenusa],caseIndex)=>{
+  const seno=100*oposto/hipotenusa;
+  const cosseno=100*adjacente/hipotenusa;
+  const tangente=oposto/adjacente;
+  const area=oposto*adjacente/2;
+  const perimetro=oposto+adjacente+hipotenusa;
+  const descricao=`Em um triângulo retângulo, em relação ao ângulo agudo α, os catetos oposto e adjacente medem ${oposto} e ${adjacente}, e a hipotenusa mede ${hipotenusa}`;
+  const itens=[
+    ["Seno",`${descricao}. O seno de α, expresso em porcentagem, é:`,seno,`O seno é cateto oposto dividido pela hipotenusa. Assim, ${oposto} ÷ ${hipotenusa} × 100 = ${formatarNumero(seno)}.`],
+    ["Cosseno",`${descricao}. O cosseno de α, expresso em porcentagem, é:`,cosseno,`O cosseno é cateto adjacente dividido pela hipotenusa. Logo, ${adjacente} ÷ ${hipotenusa} × 100 = ${formatarNumero(cosseno)}.`],
+    ["Tangente",`${descricao}. A tangente de α é:`,tangente,`A tangente é a razão entre cateto oposto e cateto adjacente. Portanto, tg(α) = ${oposto} ÷ ${adjacente} = ${formatarNumero(tangente)}.`],
+    ["Área de triângulo retângulo",`${descricao}. A área do triângulo, em unidades quadradas, é:`,area,`Os catetos são base e altura perpendiculares. Assim, a área é ${oposto} × ${adjacente} ÷ 2 = ${formatarNumero(area)}.`],
+    ["Perímetro de triângulo",`${descricao}. O perímetro do triângulo é:`,perimetro,`O perímetro é a soma dos três lados. Logo, ${oposto} + ${adjacente} + ${hipotenusa} = ${formatarNumero(perimetro)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${651+caseIndex*5+itemIndex}`,subjectId:"matematica",number:651+caseIndex*5+itemIndex,topic,area:"Trigonometria e triângulos retângulos",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+questionBank.questions.push(...matematicaTrigonometriaLoteUm);
+questionBank.review.matematicaTrigonometriaLoteUmReviewed = Array.from({length:50},(_,index)=>index+651);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

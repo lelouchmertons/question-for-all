@@ -4,6 +4,8 @@
 
 Substituir apenas questões efetivamente redundantes por questões inéditas dos itens menos cobertos dos editais. O banco continuará com **1.000 questões de Língua Portuguesa** e **1.000 questões de Matemática e Raciocínio Lógico**. Nenhuma questão será simplesmente removida: cada posição reaproveitada receberá uma questão nova, comentada e revisada.
 
+**Status: concluído em 10 de novembro de 2026.** Foram substituídas 34 posições em Matemática e 73 em Português. A validação final não encontrou duplicidades exatas em nenhum dos dois bancos.
+
 ## Padrão obrigatório de produção
 
 Cada questão de substituição deverá:

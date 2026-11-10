@@ -18092,6 +18092,27 @@ const matematicaGeometriaLoteUm=matematicaGeometriaLoteUmCasos.flatMap(([base,al
 });
 questionBank.questions.push(...matematicaGeometriaLoteUm);
 questionBank.review.matematicaGeometriaLoteUmReviewed = Array.from({length:50},(_,index)=>index+351);
+const matematicaEspacialLoteUmCasos = [
+  [4,5,6,3,7,10],[8,3,5,4,5,12],[10,4,7,5,6,15],[6,9,4,6,4,20],[12,5,3,7,8,9],
+  [7,8,5,8,10,6],[9,4,8,9,3,14],[5,11,6,10,7,8],[14,3,5,11,5,16],[6,7,9,12,9,10]
+];
+const matematicaEspacialLoteUm=matematicaEspacialLoteUmCasos.flatMap(([comprimento,largura,altura,aresta,raio,alturaCilindro],caseIndex)=>{
+  const volumePrisma=comprimento*largura*altura;
+  const areaCubo=6*aresta**2;
+  const volumeCilindro=22*raio**2*alturaCilindro/7;
+  const areaLateralCilindro=44*raio*alturaCilindro/7;
+  const litros=volumePrisma/1000;
+  const itens=[
+    ["Volume de paralelepípedo",`Um paralelepípedo retângulo tem dimensões ${comprimento} cm, ${largura} cm e ${altura} cm. Seu volume, em cm³, é:`,volumePrisma,`O volume do paralelepípedo é comprimento × largura × altura. Logo, ${comprimento} × ${largura} × ${altura} = ${formatarNumero(volumePrisma)} cm³.`],
+    ["Área total de cubo",`Um cubo possui aresta de ${aresta} cm. Sua área total, em cm², é:`,areaCubo,`Um cubo tem seis faces quadradas iguais. Assim, a área total é 6 × ${aresta}² = ${formatarNumero(areaCubo)} cm².`],
+    ["Volume de cilindro",`Considerando π = 22/7, o volume de um cilindro com raio ${raio} cm e altura ${alturaCilindro} cm é, em cm³:`,volumeCilindro,`O volume do cilindro é πr²h. Portanto, (22/7) × ${raio}² × ${alturaCilindro} = ${formatarNumero(volumeCilindro)} cm³.`],
+    ["Área lateral de cilindro",`Considerando π = 22/7, a área lateral de um cilindro de raio ${raio} cm e altura ${alturaCilindro} cm é, em cm²:`,areaLateralCilindro,`A área lateral do cilindro é 2πrh. Substituindo os valores, 2 × (22/7) × ${raio} × ${alturaCilindro} = ${formatarNumero(areaLateralCilindro)} cm².`],
+    ["Conversão de volume",`Um reservatório em forma de paralelepípedo mede ${comprimento} cm, ${largura} cm e ${altura} cm. Sua capacidade, em litros, é:`,litros,`Primeiro, o volume é ${comprimento} × ${largura} × ${altura} = ${formatarNumero(volumePrisma)} cm³. Como 1 litro corresponde a 1.000 cm³, a capacidade é ${formatarNumero(litros)} litro(s).`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];return{id:`matematica-${401+caseIndex*5+itemIndex}`,subjectId:"matematica",number:401+caseIndex*5+itemIndex,topic,area:"Geometria espacial e medidas",stem,options:opcoesAlgebra(correct,answer),answer,explanation};});
+});
+questionBank.questions.push(...matematicaEspacialLoteUm);
+questionBank.review.matematicaEspacialLoteUmReviewed = Array.from({length:50},(_,index)=>index+401);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

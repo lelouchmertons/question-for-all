@@ -18050,6 +18050,27 @@ const matematicaQuadraticaLoteUm=matematicaQuadraticaLoteUmCasos.flatMap(([r1,r2
 });
 questionBank.questions.push(...matematicaQuadraticaLoteUm);
 questionBank.review.matematicaQuadraticaLoteUmReviewed = Array.from({length:50},(_,index)=>index+251);
+const matematicaExponencialLoteUmCasos = [
+  [2,7,3],[3,6,2],[4,5,1],[5,4,2],[10,3,1],
+  [2,8,4],[3,5,3],[4,4,2],[5,5,1],[10,4,2]
+];
+const matematicaExponencialLoteUm=matematicaExponencialLoteUmCasos.flatMap(([base,expoente,deslocamento],caseIndex)=>{
+  const diferenca=expoente-deslocamento;
+  const dobro=(expoente+deslocamento)/2;
+  const potencia=base**expoente;
+  const produtoLog=base**diferenca;
+  const quociente=expoente-deslocamento;
+  const itens=[
+    ["Equação exponencial",`Resolva a equação ${base}^(x + ${deslocamento}) = ${base}^${expoente}.`,diferenca,`Como as potências têm a mesma base positiva e diferente de 1, igualam-se os expoentes: x + ${deslocamento} = ${expoente}. Portanto, x = ${formatarNumero(diferenca)}.`],
+    ["Equação exponencial",`Na equação ${base}^(2x − ${deslocamento}) = ${base}^${expoente}, o valor de x é:`,dobro,`Com bases iguais, 2x − ${deslocamento} = ${expoente}. Logo, 2x = ${expoente+deslocamento} e x = ${formatarNumero(dobro)}.`],
+    ["Logaritmos",`O valor de log_${base}(${base}^${expoente}) é:`,expoente,`Por definição, logaritmo é o expoente ao qual a base deve ser elevada. Como ${base}^${expoente} aparece no argumento, o resultado é ${expoente}.`],
+    ["Logaritmos",`Se log_${base}(x) = ${expoente}, então x vale:`,potencia,`A igualdade log_${base}(x) = ${expoente} equivale a x = ${base}^${expoente}. Calculando a potência, obtém-se x = ${formatarNumero(potencia)}.`],
+    ["Propriedades das potências",`Se ${base}^${expoente} ÷ ${base}^${deslocamento} = ${base}^y, então y é:`,quociente,`Na divisão de potências de mesma base, subtraem-se os expoentes. Assim, y = ${expoente} − ${deslocamento} = ${formatarNumero(quociente)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${301+caseIndex*5+itemIndex}`,subjectId:"matematica",number:301+caseIndex*5+itemIndex,topic,area:"Potências, exponenciais e logaritmos",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+questionBank.questions.push(...matematicaExponencialLoteUm);
+questionBank.review.matematicaExponencialLoteUmReviewed = Array.from({length:50},(_,index)=>index+301);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

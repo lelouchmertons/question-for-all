@@ -18277,6 +18277,26 @@ const matematicaAnaliticaLoteUm=matematicaAnaliticaLoteUmCasos.flatMap(([x1,y1,d
 });
 questionBank.questions.push(...matematicaAnaliticaLoteUm);
 questionBank.review.matematicaAnaliticaLoteUmReviewed = Array.from({length:50},(_,index)=>index+701);
+const matematicaInequacoesLoteUmCasos = [
+  [5,3,2,7,3,25,20,5],[4,5,-1,6,4,34,25,7],[10,2,3,9,5,49,18,3],[0,4,-3,5,6,41,15,3],[-2,6,-4,8,7,55,24,6],
+  [7,2,1,11,8,63,30,6],[3,7,-5,4,9,80,36,9],[12,3,6,10,5,29,27,2],[1,8,-2,12,4,38,22,4],[-5,4,-7,3,6,47,18,3]
+];
+const matematicaInequacoesLoteUm=matematicaInequacoesLoteUmCasos.flatMap(([centro,raio,raizMenor,raizMaior,coeficiente,limite,termo,desvio],caseIndex)=>{
+  const solucaoMaior=centro+raio;
+  const quantidadeInteiros=2*raio-1;
+  const maiorInteiro=Math.floor(limite/coeficiente);
+  const menorSolucaoAbs=(termo-desvio)/3;
+  const itens=[
+    ["Valor absoluto",`A maior solução da equação |x ${centro>=0?"−":"+"} ${Math.abs(centro)}| = ${raio} é:`,solucaoMaior,`A equação |x − a| = b possui as soluções a − b e a + b. A maior é ${formatarNumero(centro)} + ${raio} = ${formatarNumero(solucaoMaior)}.`],
+    ["Inequação modular",`Quantos valores inteiros de x satisfazem |x ${centro>=0?"−":"+"} ${Math.abs(centro)}| < ${raio}?`,quantidadeInteiros,`A desigualdade indica os inteiros estritamente entre ${centro-raio} e ${centro+raio}. Há 2 × ${raio} − 1 = ${formatarNumero(quantidadeInteiros)} valores inteiros.`],
+    ["Equação do segundo grau",`A maior raiz da equação (x ${raizMenor>=0?"−":"+"} ${Math.abs(raizMenor)})(x ${raizMaior>=0?"−":"+"} ${Math.abs(raizMaior)}) = 0 é:`,raizMaior,`Um produto é zero quando algum fator é zero. As raízes são ${formatarNumero(raizMenor)} e ${formatarNumero(raizMaior)}, sendo a maior ${formatarNumero(raizMaior)}.`],
+    ["Inequação do primeiro grau",`O maior número inteiro que satisfaz ${coeficiente}x ≤ ${limite} é:`,maiorInteiro,`Dividindo a desigualdade por ${coeficiente}, obtém-se x ≤ ${formatarNumero(limite/coeficiente)}. O maior valor inteiro possível é ${formatarNumero(maiorInteiro)}.`],
+    ["Valor absoluto",`A menor solução de |3x − ${termo}| = ${desvio}, arredondada a duas casas decimais quando necessário, é:`,menorSolucaoAbs,`As possibilidades são 3x − ${termo} = ${desvio} ou 3x − ${termo} = −${desvio}. A menor solução é (${termo} − ${desvio}) ÷ 3 = ${formatarNumero(menorSolucaoAbs)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${751+caseIndex*5+itemIndex}`,subjectId:"matematica",number:751+caseIndex*5+itemIndex,topic,area:"Equações, inequações e valor absoluto",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+questionBank.questions.push(...matematicaInequacoesLoteUm);
+questionBank.review.matematicaInequacoesLoteUmReviewed = Array.from({length:50},(_,index)=>index+751);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

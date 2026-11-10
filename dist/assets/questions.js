@@ -18255,28 +18255,25 @@ const matematicaTrigonometriaLoteUm=matematicaTrigonometriaLoteUmCasos.flatMap((
 });
 questionBank.questions.push(...matematicaTrigonometriaLoteUm);
 questionBank.review.matematicaTrigonometriaLoteUmReviewed = Array.from({length:50},(_,index)=>index+651);
-const matematicaAnaliticaLoteUmCasos = [
-  [1,2,3,4],[-2,5,5,12],[4,-3,8,15],[-5,-1,7,24],[0,0,20,21],
-  [6,4,9,40],[-7,3,12,35],[3,-8,16,30],[-10,6,11,60],[2,9,28,45]
-];
-const matematicaAnaliticaLoteUm=matematicaAnaliticaLoteUmCasos.flatMap(([x1,y1,deltaX,deltaY],caseIndex)=>{
-  const x2=x1+deltaX,y2=y1+deltaY;
-  const distancia=Math.sqrt(deltaX**2+deltaY**2);
-  const pontoMedioX=(x1+x2)/2;
-  const pontoMedioY=(y1+y2)/2;
-  const inclinacao=deltaY/deltaX;
-  const areaRetangulo=deltaX*deltaY;
+const matematicaLogicaProposicionalLoteUmCasos = [2,3,4,5,6,3,4,5,2,6];
+const matematicaLogicaProposicionalLoteUm=matematicaLogicaProposicionalLoteUmCasos.flatMap((quantidadeProposicoes,caseIndex)=>{
+  const linhas=2**quantidadeProposicoes;
+  const condicionalFalsa=2**Math.max(0,quantidadeProposicoes-2);
+  const bicondicionalVerdadeira=2**Math.max(0,quantidadeProposicoes-1);
   const itens=[
-    ["Distância entre pontos",`A distância entre os pontos A(${x1}, ${y1}) e B(${x2}, ${y2}) no plano cartesiano é:`,distancia,`A diferença horizontal é ${deltaX} e a vertical é ${deltaY}. Pela fórmula da distância, d = √(${deltaX}² + ${deltaY}²) = ${formatarNumero(distancia)}.`],
-    ["Ponto médio",`O ponto médio do segmento com extremos A(${x1}, ${y1}) e B(${x2}, ${y2}) possui coordenada x igual a:`,pontoMedioX,`A coordenada x do ponto médio é a média das abscissas: (${x1} + ${x2}) ÷ 2 = ${formatarNumero(pontoMedioX)}.`],
-    ["Ponto médio",`O ponto médio do segmento com extremos A(${x1}, ${y1}) e B(${x2}, ${y2}) possui coordenada y igual a:`,pontoMedioY,`A coordenada y do ponto médio é a média das ordenadas: (${y1} + ${y2}) ÷ 2 = ${formatarNumero(pontoMedioY)}.`],
-    ["Coeficiente angular",`A reta que passa por A(${x1}, ${y1}) e B(${x2}, ${y2}) tem coeficiente angular, arredondado a duas casas decimais, igual a:`,inclinacao,`O coeficiente angular é (y₂ − y₁)/(x₂ − x₁). Portanto, ${deltaY} ÷ ${deltaX} = ${formatarNumero(inclinacao)}.`],
-    ["Geometria analítica",`Os pontos A(${x1}, ${y1}) e B(${x2}, ${y2}) são vértices opostos de um retângulo com lados paralelos aos eixos. A área do retângulo é:`,areaRetangulo,`Os comprimentos dos lados são |${x2} − ${x1}| = ${deltaX} e |${y2} − ${y1}| = ${deltaY}. Logo, a área é ${deltaX} × ${deltaY} = ${formatarNumero(areaRetangulo)}.`]
+    ["Tabela-verdade",`Uma tabela-verdade é construída com ${quantidadeProposicoes} proposições simples independentes. Quantas linhas ela possui?`,linhas,`Cada proposição pode ser verdadeira ou falsa. Portanto, a tabela tem 2^${quantidadeProposicoes} = ${formatarNumero(linhas)} linhas.`],
+    ["Tautologia",`Na tabela-verdade da proposição p ∨ ¬p, quantas linhas possuem valor falso?`,0,`A expressão p ∨ ¬p é verdadeira para qualquer valor de p. Por definição, uma tautologia não possui linha falsa.`],
+    ["Contradição",`Na tabela-verdade da proposição p ∧ ¬p, quantas linhas possuem valor verdadeiro?`,0,`A expressão p ∧ ¬p nunca pode ser verdadeira, pois p e sua negação não são verdadeiras ao mesmo tempo. Trata-se de uma contradição.`],
+    ["Implicação lógica",`Em uma tabela com ${quantidadeProposicoes} proposições simples, quantas linhas tornam falsa a implicação p → q?`,condicionalFalsa,`Uma implicação só é falsa quando p é verdadeira e q é falsa. As demais ${Math.max(0,quantidadeProposicoes-2)} proposições ficam livres, gerando 2^${Math.max(0,quantidadeProposicoes-2)} = ${formatarNumero(condicionalFalsa)} linhas.`],
+    ["Equivalência lógica",`Em uma tabela com ${quantidadeProposicoes} proposições simples, em quantas linhas p ↔ q é verdadeira?`,bicondicionalVerdadeira,`O bicondicional é verdadeiro quando p e q têm o mesmo valor. Metade das combinações possíveis satisfaz essa condição: 2^${Math.max(0,quantidadeProposicoes-1)} = ${formatarNumero(bicondicionalVerdadeira)}.`]
   ];
-  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${701+caseIndex*5+itemIndex}`,subjectId:"matematica",number:701+caseIndex*5+itemIndex,topic,area:"Geometria analítica",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{
+    const answer="CEBAD"[(caseIndex*5+itemIndex)%5];
+    return{id:`matematica-${701+caseIndex*5+itemIndex}`,subjectId:"matematica",number:701+caseIndex*5+itemIndex,topic,area:"Lógica proposicional formal",stem,options:opcoesAlgebra(correct,answer),answer,explanation};
+  });
 });
-questionBank.questions.push(...matematicaAnaliticaLoteUm);
-questionBank.review.matematicaAnaliticaLoteUmReviewed = Array.from({length:50},(_,index)=>index+701);
+questionBank.questions.push(...matematicaLogicaProposicionalLoteUm);
+questionBank.review.matematicaLogicaProposicionalLoteUmReviewed = Array.from({length:50},(_,index)=>index+701);
 const matematicaInequacoesLoteUmCasos = [
   [5,3,2,7,3,25,20,5],[4,5,-1,6,4,34,25,7],[10,2,3,9,5,49,18,3],[0,4,-3,5,6,41,15,3],[-2,6,-4,8,7,55,24,6],
   [7,2,1,11,8,63,30,6],[3,7,-5,4,9,80,36,9],[12,3,6,10,5,29,27,2],[1,8,-2,12,4,38,22,4],[-5,4,-7,3,6,47,18,3]

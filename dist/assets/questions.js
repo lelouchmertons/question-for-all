@@ -18339,6 +18339,33 @@ const matematicaFinanceiraLoteDois=matematicaFinanceiraLoteDoisCasos.flatMap(([c
 });
 questionBank.questions.push(...matematicaFinanceiraLoteDois);
 questionBank.review.matematicaFinanceiraLoteDoisReviewed = Array.from({length:50},(_,index)=>index+851);
+const matematicaSistemasLoteUmCasos = [
+  [3,2,2,1,1,-1],[4,1,1,2,3,-1],[2,5,3,1,1,2],[-1,4,2,3,1,-2],[5,3,1,1,2,-1],
+  [6,2,2,-1,1,3],[1,7,3,2,2,-1],[4,-2,1,3,2,1],[3,6,4,-1,1,2],[7,1,2,3,3,-2]
+];
+const matematicaSistemasLoteUm=matematicaSistemasLoteUmCasos.flatMap(([x,y,a,b,c,d],caseIndex)=>{
+  const e=a*x+b*y;
+  const f=c*x+d*y;
+  const determinante=a*d-b*c;
+  const soma=x+y;
+  const expressao=2*x-y;
+  const produto=x*y;
+  const sistema=`${a}x ${b>=0?"+":"−"} ${Math.abs(b)}y = ${e} e ${c}x ${d>=0?"+":"−"} ${Math.abs(d)}y = ${f}`;
+  const itens=[
+    ["Sistema linear",`No sistema ${sistema}, o valor de x é:`,x,`Substituindo ou eliminando uma das incógnitas, obtém-se x = ${formatarNumero(x)} e y = ${formatarNumero(y)}.`],
+    ["Sistema linear",`No sistema ${sistema}, o valor de y é:`,y,`Pela eliminação ou substituição entre as duas equações, a solução do sistema tem y = ${formatarNumero(y)}.`],
+    ["Sistema linear",`No sistema ${sistema}, o valor de x + y é:`,soma,`A solução é x = ${formatarNumero(x)} e y = ${formatarNumero(y)}. Portanto, x + y = ${formatarNumero(x)} + ${formatarNumero(y)} = ${formatarNumero(soma)}.`],
+    ["Determinante",`Para o sistema ${sistema}, o determinante da matriz dos coeficientes é:`,determinante,`O determinante é a × d − b × c. Assim, ${a} × ${d} − ${b} × ${c} = ${formatarNumero(determinante)}.`],
+    ["Sistema linear",`No sistema ${sistema}, o valor da expressão 2x − y é:`,expressao,`Com x = ${formatarNumero(x)} e y = ${formatarNumero(y)}, calcula-se 2x − y = 2 × ${formatarNumero(x)} − ${formatarNumero(y)} = ${formatarNumero(expressao)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{
+    const answer="CEBAD"[(caseIndex*5+itemIndex)%5];
+    const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, o resultado numérico correto é ${formatarNumero(correct)}.`;
+    return{id:`matematica-${901+caseIndex*5+itemIndex}`,subjectId:"matematica",number:901+caseIndex*5+itemIndex,topic,area:"Sistemas lineares e determinantes",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};
+  });
+});
+questionBank.questions.push(...matematicaSistemasLoteUm);
+questionBank.review.matematicaSistemasLoteUmReviewed = Array.from({length:50},(_,index)=>index+901);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

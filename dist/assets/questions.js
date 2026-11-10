@@ -18071,6 +18071,27 @@ const matematicaExponencialLoteUm=matematicaExponencialLoteUmCasos.flatMap(([bas
 });
 questionBank.questions.push(...matematicaExponencialLoteUm);
 questionBank.review.matematicaExponencialLoteUmReviewed = Array.from({length:50},(_,index)=>index+301);
+const matematicaGeometriaLoteUmCasos = [
+  [12,8,9,5,7,9,12],[15,6,12,7,14,5,12],[20,9,14,10,21,8,15],[18,10,16,6,28,7,24],[24,7,11,9,35,20,21],
+  [14,12,18,4,42,12,35],[30,5,13,8,49,9,40],[16,15,15,12,56,11,60],[25,8,20,11,63,16,63],[22,14,17,13,70,18,80]
+];
+const matematicaGeometriaLoteUm=matematicaGeometriaLoteUmCasos.flatMap(([base,altura,comprimento,largura,raio,catetoUm,catetoDois],caseIndex)=>{
+  const areaTriangulo=base*altura/2;
+  const perimetroRetangulo=2*(comprimento+largura);
+  const areaRetangulo=comprimento*largura;
+  const areaCirculo=22*raio*raio/7;
+  const hipotenusa=Math.sqrt(catetoUm**2+catetoDois**2);
+  const itens=[
+    ["Área de triângulo",`Um triângulo possui base de ${base} cm e altura correspondente de ${altura} cm. Sua área, em cm², é:`,areaTriangulo,`A área do triângulo é dada por base × altura ÷ 2. Logo, ${base} × ${altura} ÷ 2 = ${formatarNumero(areaTriangulo)} cm².`],
+    ["Perímetro de retângulo",`Um retângulo mede ${comprimento} cm de comprimento e ${largura} cm de largura. Seu perímetro, em cm, é:`,perimetroRetangulo,`O perímetro soma os quatro lados: 2 × (${comprimento} + ${largura}). Portanto, o perímetro é ${formatarNumero(perimetroRetangulo)} cm.`],
+    ["Área de retângulo",`A área de um retângulo de lados ${comprimento} cm e ${largura} cm é, em cm²:`,areaRetangulo,`Para um retângulo, multiplica-se comprimento por largura. Assim, ${comprimento} × ${largura} = ${formatarNumero(areaRetangulo)} cm².`],
+    ["Área de círculo",`Considerando π = 22/7, a área de um círculo de raio ${raio} cm é, em cm²:`,areaCirculo,`A área do círculo é πr². Substituindo π por 22/7 e r por ${raio}, obtém-se (22/7) × ${raio}² = ${formatarNumero(areaCirculo)} cm².`],
+    ["Teorema de Pitágoras",`Em um triângulo retângulo, os catetos medem ${catetoUm} cm e ${catetoDois} cm. A hipotenusa, em cm, mede:`,hipotenusa,`Pelo teorema de Pitágoras, h² = ${catetoUm}² + ${catetoDois}² = ${catetoUm**2} + ${catetoDois**2}. Logo, h = ${formatarNumero(hipotenusa)} cm.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];return{id:`matematica-${351+caseIndex*5+itemIndex}`,subjectId:"matematica",number:351+caseIndex*5+itemIndex,topic,area:"Geometria plana e medidas",stem,options:opcoesAlgebra(correct,answer),answer,explanation};});
+});
+questionBank.questions.push(...matematicaGeometriaLoteUm);
+questionBank.review.matematicaGeometriaLoteUmReviewed = Array.from({length:50},(_,index)=>index+351);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

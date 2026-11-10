@@ -18366,6 +18366,31 @@ const matematicaSistemasLoteUm=matematicaSistemasLoteUmCasos.flatMap(([x,y,a,b,c
 });
 questionBank.questions.push(...matematicaSistemasLoteUm);
 questionBank.review.matematicaSistemasLoteUmReviewed = Array.from({length:50},(_,index)=>index+901);
+const matematicaModelagemLoteUmCasos = [
+  [24,18,3,5,12],[30,20,4,7,15],[18,27,2,6,9],[40,25,5,8,20],[28,14,3,4,11],
+  [36,24,6,5,14],[45,30,4,9,18],[32,16,5,3,10],[21,35,3,7,13],[50,40,8,6,16]
+];
+const matematicaModelagemLoteUm=matematicaModelagemLoteUmCasos.flatMap(([a,b,p,q,quantidade],caseIndex)=>{
+  const media=(a+b)/2;
+  const diferenca=a-b;
+  const direta=quantidade*q/p;
+  const inversa=quantidade*p/q;
+  const totalProporcional=a*p+b*q;
+  const itens=[
+    ["Média aritmética",`A média aritmética entre ${a} e ${b} é:`,media,`A média aritmética é a soma dos valores dividida por 2: (${a} + ${b}) ÷ 2 = ${formatarNumero(media)}.`],
+    ["Problema algébrico",`Em uma situação em que dois resultados são ${a} e ${b}, a diferença entre o maior e o menor resultado é:`,Math.abs(diferenca),`A diferença é calculada por |${a} − ${b}| = ${formatarNumero(Math.abs(diferenca))}.`],
+    ["Regra de três direta",`${p} unidades de um insumo atendem ${quantidade} tarefas no mesmo ritmo. Mantida a proporção direta, ${q} unidades atendem quantas tarefas?`,direta,`Na proporcionalidade direta, multiplica-se pela razão ${q}/${p}. Assim, ${quantidade} × ${q} ÷ ${p} = ${formatarNumero(direta)}.`],
+    ["Regra de três inversa",`${p} trabalhadores realizam uma atividade em ${quantidade} dias, mantendo produtividade constante. Com ${q} trabalhadores, o prazo será de quantos dias?`,inversa,`O número de trabalhadores e o tempo são inversamente proporcionais. Logo, ${quantidade} × ${p} ÷ ${q} = ${formatarNumero(inversa)}.`],
+    ["Expressão algébrica",`O valor de ${a} × ${p} + ${b} × ${q} é:`,totalProporcional,`Efetuando os produtos e a soma, ${a} × ${p} + ${b} × ${q} = ${formatarNumero(totalProporcional)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{
+    const answer="CEBAD"[(caseIndex*5+itemIndex)%5];
+    const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, o resultado numérico correto é ${formatarNumero(correct)}.`;
+    return{id:`matematica-${951+caseIndex*5+itemIndex}`,subjectId:"matematica",number:951+caseIndex*5+itemIndex,topic,area:"Modelagem, proporcionalidade e problemas",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};
+  });
+});
+questionBank.questions.push(...matematicaModelagemLoteUm);
+questionBank.review.matematicaModelagemLoteUmReviewed = Array.from({length:50},(_,index)=>index+951);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

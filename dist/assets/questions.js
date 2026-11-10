@@ -18297,6 +18297,25 @@ const matematicaInequacoesLoteUm=matematicaInequacoesLoteUmCasos.flatMap(([centr
 });
 questionBank.questions.push(...matematicaInequacoesLoteUm);
 questionBank.review.matematicaInequacoesLoteUmReviewed = Array.from({length:50},(_,index)=>index+751);
+const mdcInteiros=(a,b)=>{let x=Math.abs(a),y=Math.abs(b);while(y){[x,y]=[y,x%y];}return x;};
+const matematicaInteirosLoteUmCasos = [[24,36,200],[18,30,150],[45,60,500],[28,42,300],[32,48,400],[20,50,250],[27,36,360],[35,49,500],[16,40,240],[54,72,600]];
+const matematicaInteirosLoteUm=matematicaInteirosLoteUmCasos.flatMap(([a,b,limite],caseIndex)=>{
+  const mdc=mdcInteiros(a,b);
+  const mmc=a*b/mdc;
+  const restoLimite=limite%a;
+  const restoQuadrado=(a*a)%b;
+  const multiplosComuns=Math.floor(limite/mmc);
+  const itens=[
+    ["Máximo divisor comum",`O máximo divisor comum entre ${a} e ${b} é:`,mdc,`Pela decomposição em fatores ou pelo algoritmo de Euclides, o maior divisor que divide ${a} e ${b} é ${formatarNumero(mdc)}.`],
+    ["Mínimo múltiplo comum",`O mínimo múltiplo comum entre ${a} e ${b} é:`,mmc,`Usa-se MMC(a,b) = a × b ÷ MDC(a,b). Assim, ${a} × ${b} ÷ ${mdc} = ${formatarNumero(mmc)}.`],
+    ["Resto da divisão",`O resto da divisão de ${limite} por ${a} é:`,restoLimite,`Escrevendo ${limite} = q × ${a} + r, o maior múltiplo de ${a} que não ultrapassa ${limite} deixa resto ${formatarNumero(restoLimite)}.`],
+    ["Aritmética modular",`O resto da divisão de ${a}² por ${b} é:`,restoQuadrado,`Calcula-se ${a}² = ${a*a}. Dividindo ${a*a} por ${b}, o resto obtido é ${formatarNumero(restoQuadrado)}.`],
+    ["Divisibilidade",`Quantos números positivos até ${limite} são múltiplos simultaneamente de ${a} e de ${b}?`,multiplosComuns,`Os múltiplos simultâneos são os múltiplos do MMC, que é ${mmc}. Como ${limite} ÷ ${mmc} resulta em ${formatarNumero(multiplosComuns)} múltiplos completos, essa é a quantidade procurada.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${801+caseIndex*5+itemIndex}`,subjectId:"matematica",number:801+caseIndex*5+itemIndex,topic,area:"Aritmética dos inteiros e divisibilidade",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+questionBank.questions.push(...matematicaInteirosLoteUm);
+questionBank.review.matematicaInteirosLoteUmReviewed = Array.from({length:50},(_,index)=>index+801);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

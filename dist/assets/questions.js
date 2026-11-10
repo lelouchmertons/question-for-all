@@ -18113,6 +18113,26 @@ const matematicaEspacialLoteUm=matematicaEspacialLoteUmCasos.flatMap(([comprimen
 });
 questionBank.questions.push(...matematicaEspacialLoteUm);
 questionBank.review.matematicaEspacialLoteUmReviewed = Array.from({length:50},(_,index)=>index+401);
+const matematicaProbabilidadeLoteUmCasos = [
+  [20,7,6,90,12,7,2,9,3],[25,8,7,110,15,6,3,8,2],[40,9,8,125,18,5,1,9,4],[30,11,9,160,20,8,4,6,1],[50,18,10,105,14,4,2,10,3],
+  [16,5,11,130,22,9,3,6,2],[24,13,12,150,25,7,2,10,5],[35,14,13,140,17,3,1,8,4],[45,20,14,175,30,6,5,9,2],[28,7,15,120,19,8,3,5,2]
+];
+const matematicaProbabilidadeLoteUm=matematicaProbabilidadeLoteUmCasos.flatMap(([total,favoraveis,pessoas,soma,mediana,notaUm,pesoUm,notaDois,pesoDois],caseIndex)=>{
+  const probabilidade=100*favoraveis/total;
+  const pares=pessoas*(pessoas-1)/2;
+  const media=soma/5;
+  const mediaPonderada=(notaUm*pesoUm+notaDois*pesoDois)/(pesoUm+pesoDois);
+  const itens=[
+    ["Probabilidade",`Em uma urna há ${total} fichas, das quais ${favoraveis} são favoráveis a um evento. A probabilidade desse evento, em porcentagem, é:`,probabilidade,`A probabilidade é o número de casos favoráveis dividido pelo total. Assim, ${favoraveis} ÷ ${total} × 100 = ${formatarNumero(probabilidade)}.`],
+    ["Análise combinatória",`De um grupo de ${pessoas} pessoas, o número de duplas distintas que podem ser formadas é:`,pares,`Uma dupla é uma combinação de ${pessoas} elementos tomados 2 a 2. Portanto, C(${pessoas},2) = ${pessoas} × ${pessoas-1} ÷ 2 = ${formatarNumero(pares)}.`],
+    ["Média aritmética",`A soma de cinco valores é ${soma}. A média aritmética desses valores é:`,media,`A média aritmética é a soma dividida pela quantidade de valores. Logo, ${soma} ÷ 5 = ${formatarNumero(media)}.`],
+    ["Mediana",`Os valores ordenados de uma amostra são ${mediana-5}, ${mediana-2}, ${mediana}, ${mediana+3} e ${mediana+6}. A mediana é:`,mediana,`Como há cinco valores ordenados, a mediana é o termo central, isto é, o terceiro valor da lista. Portanto, a mediana é ${formatarNumero(mediana)}.`],
+    ["Média ponderada",`Duas avaliações têm notas ${notaUm} e ${notaDois}, com pesos ${pesoUm} e ${pesoDois}, respectivamente. A média ponderada é:`,mediaPonderada,`Multiplicam-se as notas pelos respectivos pesos e divide-se pela soma dos pesos: (${notaUm} × ${pesoUm} + ${notaDois} × ${pesoDois}) ÷ ${pesoUm+pesoDois} = ${formatarNumero(mediaPonderada)}.`]
+  ];
+  return itens.map(([topic,stem,correct,explanation],itemIndex)=>{const answer="CEBAD"[(caseIndex*5+itemIndex)%5];const completeExplanation=explanation.length>=55?explanation:`${explanation} Portanto, a alternativa correta é ${formatarNumero(correct)}.`;return{id:`matematica-${451+caseIndex*5+itemIndex}`,subjectId:"matematica",number:451+caseIndex*5+itemIndex,topic,area:"Probabilidade, combinatória e estatística",stem,options:opcoesAlgebra(correct,answer),answer,explanation:completeExplanation};});
+});
+questionBank.questions.push(...matematicaProbabilidadeLoteUm);
+questionBank.review.matematicaProbabilidadeLoteUmReviewed = Array.from({length:50},(_,index)=>index+451);
 // Integridade do catálogo: os números exibidos na interface derivam do banco
 // efetivo, evitando contagens defasadas após a inclusão de novos lotes.
 questionBank.subjects.forEach(subject => {

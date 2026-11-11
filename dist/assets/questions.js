@@ -18685,3 +18685,37 @@ questionBank.review.matematicaRedistribuicaoHibridaReviewed = matematicaRedistri
 questionBank.subjects.forEach(subject => {
   subject.count = questionBank.questions.filter(question => question.subjectId === subject.id).length;
 });
+// Reforma editorial de Farmácia — bloco 1: remove cabeçalhos repetidos da
+// farmacotécnica sem alterar alternativas, gabaritos, explicações ou numeração.
+const farmaciaGruposPorEnunciado = new Map();
+questionBank.questions.filter(question=>question.subjectId === "farmacia").forEach(question=>{
+  const items = farmaciaGruposPorEnunciado.get(question.stem) ?? [];
+  items.push(question);
+  farmaciaGruposPorEnunciado.set(question.stem,items);
+});
+const farmaciaGruposRepetidosBlocoUm = [...farmaciaGruposPorEnunciado.entries()]
+  .filter(([,items])=>items.length > 1 && items.every(question=>question.number <= 704));
+const focosFarmaciaBlocoUm = [
+  "segurança do paciente","qualidade do produto","conferência de rotina","controle do processo",
+  "uso adequado","rastreabilidade","conformidade técnica","prevenção de falhas",
+  "integridade do preparo","avaliação profissional","documentação do serviço","manutenção das especificações",
+  "boas práticas aplicáveis","orientação segura","liberação do produto","monitoramento da rotina","redução de riscos"
+];
+const moldesFarmaciaBlocoUm = [
+  (topic,focus)=>`Em uma análise técnica de ${topic.toLowerCase()}, com foco em ${focus}, assinale a alternativa correta.`,
+  (topic,focus)=>`Durante a rotina farmacêutica envolvendo ${topic.toLowerCase()}, com atenção à ${focus}, selecione a conduta tecnicamente adequada.`,
+  (topic,focus)=>`Na avaliação de ${topic.toLowerCase()} voltada à ${focus}, identifique a afirmação compatível com a prática segura.`,
+  (topic,focus)=>`Considerando ${topic.toLowerCase()} no serviço farmacêutico e o foco em ${focus}, marque o enunciado correto.`,
+  (topic,focus)=>`Em uma conferência profissional sobre ${topic.toLowerCase()}, qual proposição está de acordo com os princípios de ${focus}?`
+];
+const farmaciaReescritasBlocoUm = new Map();
+farmaciaGruposRepetidosBlocoUm.forEach(([,items],groupIndex)=>items.forEach((question,itemIndex)=>{
+  const focus = focosFarmaciaBlocoUm[(groupIndex * 5 + itemIndex) % focosFarmaciaBlocoUm.length];
+  const stem = moldesFarmaciaBlocoUm[(groupIndex + itemIndex) % moldesFarmaciaBlocoUm.length](question.topic,focus);
+  farmaciaReescritasBlocoUm.set(question.number,stem);
+}));
+questionBank.questions = questionBank.questions.map(question=>{
+  const stem = question.subjectId === "farmacia" ? farmaciaReescritasBlocoUm.get(question.number) : undefined;
+  return stem ? {...question,stem} : question;
+});
+questionBank.review.farmaciaRedacaoBlocoUmReviewed = [...farmaciaReescritasBlocoUm.keys()];

@@ -18719,3 +18719,23 @@ questionBank.questions = questionBank.questions.map(question=>{
   return stem ? {...question,stem} : question;
 });
 questionBank.review.farmaciaRedacaoBlocoUmReviewed = [...farmaciaReescritasBlocoUm.keys()];
+// Reforma editorial de Farmácia — bloco 2: controle e garantia da qualidade.
+const farmaciaGruposRestantesPorEnunciado = new Map();
+questionBank.questions.filter(question=>question.subjectId === "farmacia").forEach(question=>{
+  const items = farmaciaGruposRestantesPorEnunciado.get(question.stem) ?? [];
+  items.push(question);
+  farmaciaGruposRestantesPorEnunciado.set(question.stem,items);
+});
+const farmaciaGruposRepetidosBlocoDois = [...farmaciaGruposRestantesPorEnunciado.entries()]
+  .filter(([,items])=>items.length > 1 && items.every(question=>question.number >= 705 && question.number <= 804));
+const farmaciaReescritasBlocoDois = new Map();
+farmaciaGruposRepetidosBlocoDois.forEach(([,items],groupIndex)=>items.forEach((question,itemIndex)=>{
+  const focus = focosFarmaciaBlocoUm[(groupIndex * 7 + itemIndex + 3) % focosFarmaciaBlocoUm.length];
+  const stem = moldesFarmaciaBlocoUm[(groupIndex * 2 + itemIndex + 1) % moldesFarmaciaBlocoUm.length](question.topic,focus);
+  farmaciaReescritasBlocoDois.set(question.number,stem);
+}));
+questionBank.questions = questionBank.questions.map(question=>{
+  const stem = question.subjectId === "farmacia" ? farmaciaReescritasBlocoDois.get(question.number) : undefined;
+  return stem ? {...question,stem} : question;
+});
+questionBank.review.farmaciaRedacaoBlocoDoisReviewed = [...farmaciaReescritasBlocoDois.keys()];

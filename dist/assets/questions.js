@@ -19709,3 +19709,59 @@ const inglesLoteUm=inglesLoteUmDados.map(([topic,stem,correct,wrong],index)=>{co
 questionBank.questions.push(...inglesLoteUm);
 questionBank.review.inglesLoteUmReviewed=inglesLoteUm.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+const explicacaoInglesLoteUm={"Vocabulário - cognatos":"Trata-se de cognato verdadeiro: a forma inglesa e a portuguesa compartilham sentido no contexto.","Falsos cognatos":"A palavra se parece com termo do português, mas seu sentido correto é determinado pelo uso em inglês.","Sinonímia":"A escolha correta preserva o sentido central da palavra no enunciado, sem alterar sua função no contexto.","Antonímia":"A alternativa correta expressa oposição semântica direta ao termo destacado.","Classes de palavras":"A classificação decorre da função sintática que a palavra exerce na oração, e não apenas de sua forma.","Pronomes":"A forma correta depende da posição do pronome e da relação de posse, sujeito ou objeto exigida pela construção.","Comparativo e superlativo":"A construção selecionada segue a regra de comparação aplicável ao adjetivo, advérbio ou substantivo empregado.","Preposições":"A preposição é exigida pela regência da expressão inglesa; tradução palavra por palavra não basta.","Conectores":"O conector correto estabelece a relação lógica indicada entre as duas ideias.","Coesão e ordem de palavras":"A resposta respeita a organização sintática e a retomada referencial necessárias para a coerência do trecho."};
+questionBank.questions=questionBank.questions.map(q=>q.subjectId==="ingles"&&q.number<=50?{...q,explanation:explicacaoInglesLoteUm[q.topic]}:q);
+const inglesLoteDoisDados=[
+["Simple present","The laboratory ___ samples every morning.","processes",["process","is process","has process","processing"]],
+["Present continuous","At the moment, the team ___ the new protocol.","is reviewing",["reviews","reviewed","has reviewed","review"]],
+["Simple past","Last year, the agency ___ its internal procedures.","updated",["updates","has update","is updating","had updating"]],
+["Present perfect","The researchers ___ the preliminary report already.","have completed",["completed","are completing","had complete","complete"]],
+["Past perfect","By the time the inspector arrived, the staff ___ the records.","had organized",["organized","have organized","were organize","organizes"]],
+["Future forms","The committee ___ its decision next Friday.","will announce",["announced","has announced","was announce","announcing"]],
+["Present perfect continuous","The unit ___ on the project since January.","has been working",["works","worked","had worked","is work"]],
+["Past continuous","While the technician ___ the device, the power failed.","was calibrating",["calibrated","has calibrated","calibrates","had calibrate"]],
+["Future continuous","This time tomorrow, the auditors ___ the final documents.","will be examining",["examine","examined","have examined","had examined"]],
+["Sequence of tenses","The director said that the team ___ the issue the following day.","would discuss",["will discuss","discusses","has discussed","is discussing"]],
+["Modal verbs","Employees ___ wear protective equipment in the restricted area.","must",["might","would","used to","could have"]],
+["Modal verbs","The discrepancy ___ be investigated before the report is released.","should",["can to","musts","will to","may have to be"]],
+["Modal verbs","You ___ submit the form today; tomorrow is also acceptable.","do not have to",["must not","should not","cannot","would not"]],
+["Modal verbs","The result ___ indicate a measurement error, but further tests are needed.","may",["has to","must not","did","would to"]],
+["Modal verbs","Visitors ___ enter this room without authorization.","must not",["do not have to","should","might","used to"]],
+["Passive voice","The samples ___ by an independent laboratory.","were analyzed",["analyzed","have analyzing","were analyze","are analyze"]],
+["Passive voice","A new policy ___ next month.","will be implemented",["will implement","is implementing","will be implement","has implement"]],
+["Passive voice","The documents ___ before the meeting began.","had been checked",["had checked","were checking","have checked","had being checked"]],
+["Passive voice","The report ___ by the manager every week.","is reviewed",["reviews","is reviewing by","has review","was reviewing"]],
+["Passive voice","The findings ___ to the public after approval.","will be disclosed",["will disclose","disclosed","are disclosing","will be disclose"]],
+["Imperative","Choose the appropriate instruction for a safety manual:","Keep the container tightly closed.",["You keep the container tightly closed.","Keeping the container tightly closed.","To kept the container tightly closed.","The container tightly closed."]],
+["Imperative","Choose the correct negative instruction:","Do not operate the device without training.",["Not operate the device without training.","Does not operate the device without training.","Do not to operate the device without training.","Do not operating the device without training."]],
+["Imperative","In “Please submit the form by Friday”, the verb expresses:","a polite instruction",["a completed past action","a hypothetical condition","a passive construction","a comparison"]],
+["Imperative","Choose the best sign for an emergency exit:","Do not block this door.",["You do not block this door.","Not blocking this door.","Does not block this door.","Do not to block this door."]],
+["Imperative","The sentence “Report any malfunction immediately” is formed with:","base form of the verb",["past participle","infinitive with to","present perfect","gerund only"]],
+["Zero conditional","Complete: “If water ___ to 0°C, it freezes.”","cools",["will cool","cooled","would cool","has cooled"]],
+["First conditional","Complete: “If the test ___ valid, we will publish the result.”","is",["will be","was","would be","has been"]],
+["Second conditional","Complete: “If I ___ more data, I would revise the conclusion.”","had",["have","will have","had had","am having"]],
+["Third conditional","Complete: “If the team had checked the file, it ___ the error.”","would have found",["will find","would find","found","has found"]],
+["Conditionals","Choose the correct sentence:","If the alarm rings, leave the building immediately.",["If the alarm will ring, leave the building immediately.","If the alarm rang, leave the building immediately yesterday.","If the alarm had rung, leave the building immediately tomorrow.","If the alarm ringing, leave the building."]],
+["Phrasal verbs","In “The meeting was put off until Monday”, **put off** means:","postponed",["started","recorded","repeated","cancelled permanently"]],
+["Phrasal verbs","In “Please look into the complaint”, **look into** means:","investigate",["ignore","publish","summarize","translate"]],
+["Phrasal verbs","In “The machine broke down during the test”, **broke down** means:","stopped functioning",["increased speed","was transported","was approved","was cleaned"]],
+["Phrasal verbs","In “The team carried out the inspection”, **carried out** means:","performed",["postponed","refused","copied","anticipated"]],
+["Phrasal verbs","In “The supervisor pointed out an inconsistency”, **pointed out** means:","identified",["removed","hid","created","measured"]],
+["Direct and indirect speech","Choose the correct reported form: Ana said, “I am reviewing the file.”","Ana said that she was reviewing the file.",["Ana said that she is reviewing the file.","Ana said that I was reviewing the file.","Ana says she reviewed the file yesterday.","Ana said that she reviewing the file."]],
+["Direct and indirect speech","Choose the correct reported request: “Submit the report,” the manager said.","The manager told us to submit the report.",["The manager said us submit the report.","The manager told that we submit the report.","The manager asked that to submit the report.","The manager told us submitting the report."]],
+["Question tags","Complete: “The samples were labeled, ___?”","weren't they",["were they","didn't they","aren't they","don't they"]],
+["Question tags","Complete: “You have reviewed the data, ___?”","haven't you",["have you","don't you","didn't you","aren't you"]],
+["Question tags","Complete: “Nobody called the office, ___?”","did they",["didn't they","wasn't it","were they","hasn't he"]],
+["Question tags","Complete: “Let's begin the inspection, ___?”","shall we",["will we","do we","aren't we","didn't we"]],
+["Question tags","Complete: “The system is working, ___?”","isn't it",["is it","doesn't it","wasn't it","hasn't it"]],
+["Uso integrado de tempos","Choose the correct sentence:","The team has worked on the case since the evidence was collected.",["The team works on the case since the evidence was collected.","The team has worked on the case since the evidence collected.","The team had worked on the case since the evidence has collected.","The team is worked on the case since the evidence was collected."]],
+["Uso integrado de tempos","Choose the correct sentence:","When the report was released, the review had already ended.",["When the report was released, the review already ends.","When the report released, the review had already ended.","When the report was releasing, the review has ended.","When the report was released, the review has already end."]],
+["Uso integrado de tempos","Choose the correct sentence:","By next June, the agency will have completed the project.",["By next June, the agency completes the project.","By next June, the agency completed the project.","By next June, the agency will completed the project.","By next June, the agency has complete the project."]],
+["Uso integrado de tempos","Choose the correct sentence:","The analyst was preparing the summary when the call arrived.",["The analyst prepared the summary when the call was arriving.","The analyst was prepare the summary when the call arrived.","The analyst has prepared the summary when the call arrived.","The analyst prepares the summary when the call arrived."]],
+["Uso integrado de tempos","Choose the correct sentence:","If the results had been clearer, the decision would have been easier.",["If the results were clearer, the decision would have been easier.","If the results had clearer, the decision would have easier.","If the results have been clearer, the decision will be easier.","If the results had been clear, the decision would be easier yesterday."]]
+,["Voz ativa e passiva","Choose the correct active equivalent of “The report was approved by the board.”","The board approved the report.",["The board was approving the report.","The report approved the board.","The board has approve the report.","The board approving the report."]]
+,["Conditional sentences","Complete: “If the documents arrive today, we ___ them immediately.”","will review",["would review","reviewed","had reviewed","have review"]]
+,["Phrasal verbs","In “The agency set up a new review panel”, **set up** means:","established",["cancelled","criticized","postponed","ignored"]]
+];
+const inglesLoteDois=inglesLoteDoisDados.map(([topic,stem,correct,wrong],index)=>{const number=51+index,answer="ABCDE"[index%5];return{id:`ingles-${String(number).padStart(3,"0")}`,subjectId:"ingles",number,topic,area:"Tempos verbais e estruturas",stem,options:opcoesIntegradas(correct,wrong,answer),answer,explanation:`A forma correta é exigida pelo marcador temporal, pela voz verbal ou pela estrutura sintática do enunciado. Os distratores alteram o tempo, o auxiliar ou a construção requerida.`};});
+questionBank.questions.push(...inglesLoteDois);questionBank.review.inglesLoteDoisReviewed=inglesLoteDois.map(q=>q.number);questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});

@@ -36,6 +36,12 @@ export const questionBank = {
       "label": "Farmácia",
       "short": "Farmácia",
       "count": 1000
+    },
+    {
+      "id": "ingles",
+      "label": "Língua Inglesa",
+      "short": "Inglês",
+      "count": 0
     }
   ],
   "questions": [
@@ -19645,4 +19651,61 @@ const administrativoFechamentoBlocos=[
 const administrativoFechamentoAdicional=administrativoFechamentoBlocos.flatMap(([topic,area,corrects,wrongs],block)=>corrects.map((correct,index)=>{const number=226+block*5+index;const answer="ABCDE"[(number-201)%5];const opts=[wrongs[index],wrongs[(index+1)%5],wrongs[(index+2)%5],wrongs[(index+3)%5]];opts.splice("ABCDE".indexOf(answer),0,correct);return{id:`direito-administrativo-${String(number).padStart(3,"0")}`,subjectId:"direito-administrativo",number,topic,area,stem:`Sobre ${area.toLowerCase()}, assinale a alternativa correta.`,options:opts.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:`A alternativa correta expressa a regra aplicável a ${area.toLowerCase()}. Os demais itens alteram requisito, competência, alcance ou consequência jurídica da disciplina.`};}));
 questionBank.questions.push(...administrativoFechamentoBase,...administrativoFechamentoAdicional);
 questionBank.review.direitoAdministrativoFechamentoEditorial=[...administrativoFechamentoBase,...administrativoFechamentoAdicional].map(q=>q.number);
+questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+
+const inglesLoteUmDados=[
+["Vocabulário - cognatos","In the sentence “The committee approved the proposal after a detailed analysis”, the word **approved** means:","aprovou",["adiou","contestou","traduziu","rejeitou"]],
+["Vocabulário - cognatos","In “The hospital will provide assistance to the affected families”, **assistance** means:","assistência",["seguro","advertência","ausência","financiamento"]],
+["Vocabulário - cognatos","In “The project requires an efficient administrative structure”, **efficient** means:","eficiente",["deficiente","eventual","dispendioso","experimental"]],
+["Vocabulário - cognatos","In “The laboratory reported a significant variation in the results”, **significant** means:","relevante",["silencioso","idêntico","insignificante","ilegal"]],
+["Vocabulário - cognatos","In “The agency published the final document on its website”, **document** means:","documento",["departamento","desconto","debate","diretoria"]],
+["Falsos cognatos","In “The manager eventually accepted the proposal”, **eventually** means:","finalmente",["eventualmente","imediatamente","provavelmente","raramente"]],
+["Falsos cognatos","In “The applicant actually met all the requirements”, **actually** means:","de fato",["atualmente","ativamente","talvez","habitualmente"]],
+["Falsos cognatos","In “The researchers intend to attend the conference”, **attend** means:","comparecer a",["atender clinicamente","adiar","ministrar","assistir pela televisão"]],
+["Falsos cognatos","In “The data were collected in a large library”, **library** means:","biblioteca",["livraria","laboratório","arquivo digital","editora"]],
+["Falsos cognatos","In “The company requested a comprehensive report”, **comprehensive** means:","abrangente",["compreensivo no sentido de tolerante","curto","incompreensível","confidencial"]],
+["Sinonímia","In “The new protocol aims to reduce unnecessary delays”, the closest meaning of **aims** is:","seeks",["avoids","forgets","proves","denies"]],
+["Sinonímia","In “The evidence was sufficient to support the conclusion”, **sufficient** is closest to:","adequate",["ambiguous","temporary","unrelated","scarce"]],
+["Sinonímia","In “The authority issued a mandatory guideline”, **mandatory** means:","required",["optional","outdated","informal","uncertain"]],
+["Sinonímia","In “The team identified a relevant discrepancy”, **relevant** is closest to:","important",["hidden","ordinary","incorrect","remote"]],
+["Sinonímia","In “The procedure was revised to improve accuracy”, **accuracy** means:","precision",["speed","expense","visibility","novelty"]],
+["Antonímia","In “The report describes a gradual increase in demand”, the opposite of **increase** is:","decrease",["growth","rise","expansion","addition"]],
+["Antonímia","In “Access to the records is restricted”, the opposite of **restricted** is:","unlimited",["controlled","partial","protected","conditional"]],
+["Antonímia","In “The result was consistent across the samples”, the opposite of **consistent** is:","contradictory",["reliable","stable","coherent","regular"]],
+["Antonímia","In “The decision was temporary”, the opposite of **temporary** is:","permanent",["provisional","brief","conditional","interim"]],
+["Antonímia","In “The method is suitable for routine use”, the opposite of **suitable** is:","inappropriate",["practical","adaptable","valid","convenient"]],
+["Classes de palavras","In “The technician carefully recorded every measurement”, **carefully** functions as a:","adverb",["noun","verb","adjective","pronoun"]],
+["Classes de palavras","In “Reliable information supports better decisions”, **reliable** functions as a:","adjective",["adverb","noun","preposition","conjunction"]],
+["Classes de palavras","In “The inspection revealed several flaws”, **inspection** functions as a:","noun",["verb","adverb","article","pronoun"]],
+["Classes de palavras","In “They will review the documents tomorrow”, **will** is a:","modal auxiliary verb",["main noun","possessive adjective","preposition","relative pronoun"]],
+["Classes de palavras","In “Because the deadline was short, the team worked efficiently”, **because** is a:","conjunction",["interjection","noun","adjective","determiner"]],
+["Pronomes","Complete the sentence correctly: “The report was sent to Ana and ___.”","me",["I","my","mine","myself"]],
+["Pronomes","Complete the sentence correctly: “The researchers published ___ findings.”","their",["them","they","theirs","themselves"]],
+["Pronomes","In “The device, which was tested yesterday, performed well”, **which** introduces:","a relative clause",["a conditional clause","a question tag","an imperative form","a possessive phrase"]],
+["Pronomes","Complete the sentence: “Each participant must bring ___ identification document.”","his or her",["theirselves","them","they","theirs"]],
+["Pronomes","Choose the correct sentence:","Neither of the proposals has been approved.",["Neither of the proposals have been approved.","Neither proposal have been approved.","Neither of proposals has been approved.","Neither the proposals has approved."]],
+["Comparativo e superlativo","Complete: “This method is ___ than the previous one.”","more reliable",["reliable","most reliable","the more reliable","reliablest"]],
+["Comparativo e superlativo","Complete: “It was the ___ result in the entire sample.”","most accurate",["more accurate","accurater","accurate","much accurate"]],
+["Comparativo e superlativo","Complete: “The new system uses ___ resources than the old one.”","fewer",["less","few","fewest","the fewer"]],
+["Comparativo e superlativo","Complete: “No alternative is ___ this one for this purpose.”","better than",["best than","more good than","as better as","the better"]],
+["Comparativo e superlativo","Choose the grammatically correct sentence:","The more carefully data are checked, the fewer errors remain.",["The most carefully data are checked, the fewer errors remain.","More carefully data are checked, fewer errors remains.","The carefullyer data are checked, the less errors remain.","The more careful data are checked, fewer error remain."]],
+["Preposições","Complete: “The decision depends ___ the evidence available.”","on",["at","in","for","by"]],
+["Preposições","Complete: “The team is responsible ___ verifying the records.”","for",["to","at","with","by"]],
+["Preposições","Complete: “The samples were stored ___ a controlled temperature.”","at",["on","to","from","about"]],
+["Preposições","Complete: “The report refers ___ the events of last year.”","to",["at","for","with","by"]],
+["Preposições","Complete: “The measure was adopted ___ prevent further losses.”","to",["for preventing","at","by","with"]],
+["Conectores","Complete: “The evidence was incomplete; ___, the conclusion was postponed.”","therefore",["although","unless","meanwhile","instead of"]],
+["Conectores","Complete: “___ the data were limited, the study identified a clear trend.”","Although",["Because","Therefore","Unless","So that"]],
+["Conectores","Complete: “The device was calibrated before use ___ reduce measurement error.”","in order to",["despite","whereas","unless","although"]],
+["Conectores","Complete: “The protocol was updated, ___ the previous version remained available for consultation.”","while",["because","therefore","unless","so"]],
+["Conectores","Complete: “The test will be repeated ___ a discrepancy is detected.”","if",["despite","although","because of","whereas"]],
+["Coesão e ordem de palavras","Choose the correct sentence:","The agency released the data after it had verified the records.",["The agency released after it had verified the data the records.","After verified the records, the agency released the data had.","The agency the data released after verified it had the records.","The agency released the data after had it verified the records."]],
+["Coesão e ordem de palavras","Choose the most coherent continuation: “The sample was contaminated. ___, the analysis had to be repeated.”","Consequently",["For example","In contrast","Nevertheless to","Despite"]],
+["Coesão e ordem de palavras","In “The report was incomplete; this problem delayed the review”, **this problem** refers to:","the incompleteness of the report",["the identity of the reviewer","the publication date","the sample size","the final decision"]],
+["Coesão e ordem de palavras","Choose the sentence with correct word order:","Rarely has the team faced such a complex case.",["Rarely the team has faced such a complex case.","Rarely has faced the team such a complex case.","The team rarely has faced such a complex case.","Has rarely the team faced such a complex case."]],
+["Coesão e ordem de palavras","Choose the best connector: “The records were complete. ___, the audit found no material discrepancy.”","Accordingly",["However","Although","Unless","Because of"]]
+];
+const inglesLoteUm=inglesLoteUmDados.map(([topic,stem,correct,wrong],index)=>{const number=index+1,answer="ABCDE"[index%5];return{id:`ingles-${String(number).padStart(3,"0")}`,subjectId:"ingles",number,topic,area:"Vocabulário e estruturas básicas",stem,options:opcoesIntegradas(correct,wrong,answer),answer,explanation:`A alternativa correta preserva o sentido ou a estrutura gramatical exigida no enunciado. As demais alteram o significado, a classe da palavra ou a regência da construção em inglês.`};});
+questionBank.questions.push(...inglesLoteUm);
+questionBank.review.inglesLoteUmReviewed=inglesLoteUm.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});

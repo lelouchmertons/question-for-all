@@ -19828,3 +19828,29 @@ const inglesLoteFinalBlocos=[
 ];
 const inglesLoteFinal=inglesLoteFinalBlocos.flatMap(([area,corrects,wrongs],block)=>corrects.map((correct,index)=>{const number=251+block*5+index,answer="ABCDE"[(number-251)%5];const opts=[wrongs[index%4],wrongs[(index+1)%4],wrongs[(index+2)%4],wrongs[(index+3)%4]];opts.splice("ABCDE".indexOf(answer),0,correct);return{id:`ingles-${String(number).padStart(3,"0")}`,subjectId:"ingles",number,topic:"Leitura avançada, reescrita e inferência",area,stem:`Choose the alternative that preserves the meaning and the grammatical relation expressed by the statement.`,options:opts.map((text,i)=>({letter:"ABCDE"[i],text})),answer,explanation:"A alternativa correta preserva simultaneamente a relação lógica, a modalidade e o foco informacional do enunciado. Os distratores alteram causa, consequência, alcance ou grau de certeza."};}));
 questionBank.questions.push(...inglesLoteFinal);questionBank.review.inglesLoteFinalReviewed=inglesLoteFinal.map(q=>q.number);questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+
+// Reforma editorial: transforma os itens introdutórios de Inglês em perguntas contextualizadas.
+const contextosInglesSuperior=[
+"A public-health unit is preparing an English summary for an international audit. The text must be precise because decisions will be based on it.",
+"A research team is revising a technical report before submitting it to an external review committee.",
+"During an inspection, staff members must interpret written instructions and distinguish obligations, possibilities and conditions.",
+"An agency is comparing two English-language reports whose wording changes the scope of the conclusion.",
+"A laboratory is documenting a nonconformity and needs to preserve the exact relation between cause, evidence and consequence."
+];
+questionBank.questions=questionBank.questions.map(q=>{
+ if(q.subjectId!=="ingles"||q.number>100)return q;
+ const context=contextosInglesSuperior[(q.number-1)%contextosInglesSuperior.length];
+ const isGap=/^(Complete|The laboratory|At the moment|Last year|By the time|This time|While|Employees|Visitors|You )/.test(q.stem);
+ const revisedStem=isGap?`${context}\n\nComplete the sentence below using the form that preserves the intended technical meaning:\n\n${q.stem}`:`${context}\n\n${q.stem}`;
+ return {...q,stem:revisedStem,explanation:`No contexto profissional apresentado, ${q.explanation.charAt(0).toLowerCase()}${q.explanation.slice(1)}`};
+});
+questionBank.review.inglesReformaInicialReviewed=Array.from({length:100},(_,i)=>i+1);
+const comandosLeitura=["Which statement does the passage explicitly support?","Which conclusion is warranted by the passage?","Which option preserves the qualification made by the author?","Which statement is compatible with the information provided?","Which claim would the author most likely accept?"];
+const comandosEstrutura=["Choose the option that is grammatically correct in this context.","Choose the revision that preserves both grammar and meaning.","Identify the sentence that follows standard formal English.","Choose the alternative that avoids the grammatical error in the construction.","Select the option suitable for a formal technical document."];
+questionBank.questions=questionBank.questions.map(q=>{
+ if(q.subjectId!=="ingles"||q.number<101)return q;
+ if(q.number<=150)return {...q,stem:q.stem.replace("According to the text, choose the statement that is supported.",comandosLeitura[(q.number-101)%5])};
+ if(q.number<=250)return {...q,stem:comandosEstrutura[(q.number-151)%5]};
+ return q;
+});
+questionBank.review.inglesComandosDiversificados=Array.from({length:150},(_,i)=>i+101);

@@ -20745,3 +20745,27 @@ const criminalisticaLoteDois=criminalisticaLoteDoisDados.map(([topic,stem,correc
 questionBank.questions.push(...criminalisticaLoteDois);
 questionBank.review.criminalisticaLoteDoisReviewed=criminalisticaLoteDois.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+
+// Criminalística — Lote 3: papiloscopia, genética e documentos.
+const criminalisticaLoteTresBases=[
+["Papiloscopia","padrões papilares", "comparar características suficientes com padrão conhecido, documentando método e limitações",["concluir identidade por semelhança geral","ignorar qualidade da impressão","dispensar padrão de confronto","definir autoria criminal"]],
+["Impressão latente","impressão não visível", "selecionar técnica de revelação adequada à superfície e preservar o registro obtido",["limpar antes de examinar","considerar ausência definitiva","usar qualquer reagente sem avaliar suporte","dispensar fotografia"]],
+["DNA","perfil genético", "interpretar o resultado com referência, controles, cadeia de custódia e contexto de deposição",["atribuir autoria pela presença isolada","ignorar mistura possível","dispensar controles","definir dinâmica do fato sozinho"]],
+["Mistura genética","amostra com mais de um contribuinte", "avaliar a mistura por método apropriado e expressar limites de interpretação",["atribuir todos os alelos a uma pessoa","tratar perfil complexo como simples","omitir a mistura","concluir sem referência"]],
+["Contaminação","possível contaminação", "revisar coleta, controles, origem das amostras e impacto sobre a conclusão",["presumir fraude automaticamente","omitir a divergência","usar resultado como certeza","descartar toda documentação"]],
+["Documento","documento questionado", "preservar o original e aplicar exame compatível antes de intervenções irreversíveis",["escrever no original","substituir por cópia","laminar imediatamente","concluir por impressão visual"]],
+["Grafoscopia","escrita questionada", "confrontar características com padrões autênticos e suficientes",["comparar somente assinatura curta","usar padrão não autenticado","definir intenção do escritor","ignorar variação natural"]],
+["Vestígio biológico","mancha biológica", "individualizar, documentar e evitar transferência cruzada entre amostras",["misturar coletas","lavar o suporte","embalar sem identificação","dispensar luvas"]],
+["Banco de dados","resultado de banco de perfis", "tratá-lo como informação de investigação que requer confirmação e interpretação pericial adequada",["considerá-lo sentença","atribuir autoria automaticamente","dispensar nova coleta","ignorar qualidade do perfil"]],
+["Laudo","conclusão pericial", "separar achado, método, interpretação e limitação com linguagem proporcional à evidência",["ocultar limitações","usar certeza sem suporte","definir responsabilidade penal","substituir decisão judicial"]]
+];
+const criminalisticaLoteTres=criminalisticaLoteTresBases.flatMap(([topic,obj,correct,wrongs],b)=>[
+`Em perícia envolvendo ${obj}, a conduta tecnicamente mais adequada é:`,
+`Para que o exame de ${obj} tenha valor interpretativo, é necessário:`,
+`Diante de resultado relacionado a ${obj}, o perito deve prioritariamente:`,
+`A principal falha metodológica no exame de ${obj} seria:`,
+`No laudo sobre ${obj}, a conclusão deve:`
+].map((stem,i)=>{const number=101+b*5+i,answer="ABCDE"[(number-1)%5];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Papiloscopia, genética e documentos",stem,options:opcoesIntegradas(correct,wrongs,answer),answer,explanation:`Em ${topic.toLowerCase()}, a validade do resultado depende de método, documentação, controles e interpretação compatível com o contexto.`};}));
+questionBank.questions.push(...criminalisticaLoteTres);
+questionBank.review.criminalisticaLoteTresReviewed=criminalisticaLoteTres.map(q=>q.number);
+questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});

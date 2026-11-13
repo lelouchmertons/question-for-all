@@ -20929,6 +20929,30 @@ questionBank.questions.push(...criminalisticaLoteOito);
 questionBank.review.criminalisticaLoteOitoReviewed=criminalisticaLoteOito.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
 
+// Criminalística — Lote 9: método científico, comparação e controle pericial.
+const criminalisticaLoteNoveBases=[
+["Método científico","hipótese construída a partir de vestígios","submetê-la a confronto com dados observáveis e hipóteses concorrentes antes de incorporá-la à conclusão",["tratá-la como confirmação do cenário inicial","selecionar somente dados favoráveis","substituir testes por experiência pessoal","assumir que uma hipótese exclui as demais"]],
+["Comparação pericial","dois materiais aparentemente semelhantes","avaliar características discriminantes, método de confronto e limites de associação entre eles",["concluir origem comum pela aparência geral","desconsiderar diferenças relevantes de composição","atribuir autoria com base no confronto isolado","restringir o exame à característica mais visível"]],
+["Controle de qualidade","resultado analítico inesperado","verificar cadeia de processamento, controles, instrumentos e possibilidade de interferência antes de reportar a conclusão",["ajustar o resultado para coincidir com a hipótese","desprezar o controle que diverge do conjunto","repetir o valor anterior sem nova verificação","atribuir o resultado à amostra sem examinar o procedimento"]],
+["Validação","técnica aplicada em exame pericial","demonstrar que o método é adequado ao objetivo, à matriz analisada e ao nível de conclusão pretendido",["aplicar a técnica sem avaliar sua finalidade","considerar o equipamento suficiente como validação","substituir critérios técnicos por rotina administrativa","tratar todo resultado instrumental como autoexplicativo"]],
+["Erro de medição","medida obtida em perícia de local","informar referência, instrumento, condições de obtenção e precisão compatível com a análise",["apresentar valor exato sem indicar como foi obtido","arredondar dados para adequar ao cenário","usar medida estimada como parâmetro fixo","omitir condições que possam afetar a medição"]],
+["Confronto de padrões","padrão conhecido utilizado em comparação","verificar autenticidade, representatividade e conservação antes de usá-lo como referência",["tratar qualquer exemplar como padrão suficiente","presumir origem pela proximidade física","substituir o padrão por descrição verbal","atribuir a mesma origem a materiais sem comparação"]],
+["Fotografia pericial","imagem usada para documentar vestígio","manter registro que permita identificar contexto, escala, autoria, momento e eventuais limitações da imagem",["editar a imagem sem registrar a intervenção","usar recorte sem referência espacial","descrever a fotografia como prova autônoma de autoria","substituir todos os demais registros pela imagem"]],
+["Exame multidisciplinar","caso que reúne vestígios físicos, biológicos e digitais","integrar resultados de especialidades distintas sem perder a origem, o método e o limite de cada achado",["fundir resultados em uma conclusão sem fonte identificada","atribuir maior peso ao dado mais recente sem análise","considerar um único exame suficiente para toda a dinâmica","transformar compatibilidade entre dados em autoria comprovada"]],
+["Contraprova","pedido tecnicamente viável de reexame","preservar material e documentação necessários para que a verificação seja realizada sob condições identificáveis",["alterar a amostra após a primeira análise","substituir o material por transcrição do laudo","restringir registros para evitar interpretações distintas","tratar a reanálise como irrelevante ao controle técnico"]],
+["Conclusão probabilística","achado que sustenta associação, mas não individualização exclusiva","empregar linguagem proporcional e esclarecer quais alternativas permanecem tecnicamente possíveis",["converter associação em identificação definitiva","omitir possibilidades alternativas relevantes","usar certeza jurídica para reforçar o laudo","afirmar que não há limite metodológico"]]
+];
+const criminalisticaLoteNove=criminalisticaLoteNoveBases.flatMap(([topic,obj,correct,wrongs],b)=>[
+`No exame de ${obj}, a decisão técnica mais adequada é:`,
+`Para interpretar ${obj} de forma confiável, é necessário:`,
+`Diante de resultado relacionado a ${obj}, o perito deve:`,
+`A leitura metodologicamente inadequada de ${obj} seria:`,
+`No relatório sobre ${obj}, a conclusão deve:`
+].map((stem,i)=>{const number=401+b*5+i,answer="ABCDE"[(number-1)%5],explicacao=["O método técnico deve permitir testar a hipótese, e não somente confirmá-la.","A confiabilidade exige rastreabilidade das etapas e adequação da referência utilizada.","Resultados inesperados precisam ser examinados antes de serem incorporados ao laudo.","A falha apontada extrapola ou enfraquece o suporte efetivamente disponível.","A conclusão só pode alcançar o que dados, método e controle permitem sustentar."][i];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Método, comparação e controle pericial",stem,options:opcoesContextualizadas(correct,wrongs,answer,i),answer,explanation:`${explicacao} Em ${topic.toLowerCase()}, transparência e reprodutibilidade são essenciais.`};}));
+questionBank.questions.push(...criminalisticaLoteNove);
+questionBank.review.criminalisticaLoteNoveReviewed=criminalisticaLoteNove.map(q=>q.number);
+questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+
 // Revisão editorial transversal: torna os distratores menos denunciativos sem alterar
 // o conteúdo correto, a resposta, a numeração ou a estrutura de cada questão.
 const refinarDistratorCriminalistica=text=>text

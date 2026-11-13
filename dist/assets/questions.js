@@ -20905,6 +20905,30 @@ questionBank.questions.push(...criminalisticaLoteSete);
 questionBank.review.criminalisticaLoteSeteReviewed=criminalisticaLoteSete.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
 
+// Criminalística — Lote 8: prova pericial, quesitos e cenários de local de crime.
+const criminalisticaLoteOitoBases=[
+["Prova pericial","vestígio material relacionado ao fato","submetê-lo a exame tecnicamente fundamentado, preservando origem, integridade e possibilidade de controle",["atribuir-lhe significado conclusivo antes do exame","substituir a análise por relato indireto","reduzir sua relevância por não indicar autoria imediata","vinculá-lo ao fato sem registrar a origem"]],
+["Exame direto e indireto","impossibilidade de exame direto do vestígio","utilizar os elementos documentais e técnicos disponíveis, explicitando a limitação decorrente da ausência do objeto original",["tratar o exame indireto como reprodução integral do objeto","concluir que a materialidade é irrelevante","substituir as fontes técnicas por hipótese investigativa","omitir a razão de não haver exame direto"]],
+["Requisição de perícia","requisição formulada para exame técnico","delimitar objeto, quesitos e materiais encaminhados de modo que o exame responda à demanda verificável",["deixar o objeto indefinido para ampliar o resultado","converter a requisição em antecipação de culpa","enviar materiais sem identificação individual","exigir conclusão além das possibilidades do vestígio"]],
+["Quesitos","quesito apresentado ao perito","respondê-lo dentro do campo técnico, distinguindo dado observado, interpretação e limite do método",["resolver a consequência jurídica do fato","adaptar o dado à tese de uma parte","presumir informação não examinada","trocar o quesito por conclusão genérica"]],
+["Limitação pericial","resultado com limitação de material ou método","descrever a restrição e indicar de que maneira ela afeta o alcance da conclusão",["suprimir a limitação para simplificar a leitura","tratar a limitação como confirmação de hipótese","converter resultado inconclusivo em identificação","substituir o método por impressão visual"]],
+["Local contra a vida","local de crime contra a vida","preservar relações espaciais entre corpo, vestígios, acessos e intervenções de socorro documentadas",["isolar somente a área imediatamente próxima ao corpo","recompor objetos deslocados antes do registro","atribuir causa da morte pela disposição da cena","desconsiderar deslocamentos de atendimento emergencial"]],
+["Local contra o patrimônio","local com possível arrombamento","registrar pontos de acesso, danos, marcas e vestígios de transferência antes de remover elementos",["classificar a ferramenta pela aparência do dano","concluir entrada forçada sem confronto dos vestígios","alterar fechaduras antes de documentá-las","reunir fragmentos de áreas distintas em um único invólucro"]],
+["Local contra a dignidade sexual","local relacionado a crime contra a dignidade sexual","priorizar preservação, coleta individualizada e registro de contexto dos vestígios físicos e biológicos",["substituir a coleta por relato de terceiros","concentrar todas as amostras em embalagem única","inferir consentimento a partir de vestígio isolado","reduzir o exame ao item visualmente mais evidente"]],
+["Classificação de vestígios","vestígio que requer diferentes especialidades","preservar suas características e encaminhá-lo com documentação que permita definir exame compatível",["atribuir-lhe uma única natureza antes da triagem","usar técnica destrutiva sem avaliar alternativas","separar o item de sua informação de origem","considerar que a aparência externa esgota sua análise"]],
+["Resposta pericial","conclusão de exame criminalístico","apresentar resposta proporcional aos dados e indicar o que os achados sustentam, não sustentam ou deixam em aberto",["usar linguagem definitiva para compensar incerteza","substituir a análise por narrativa investigativa","omitir hipótese alternativa relevante","associar compatibilidade técnica à autoria comprovada"]]
+];
+const criminalisticaLoteOito=criminalisticaLoteOitoBases.flatMap(([topic,obj,correct,wrongs],b)=>[
+`Na análise de ${obj}, a conduta mais adequada é:`,
+`Para conferir utilidade técnica a ${obj}, é necessário:`,
+`Diante de questão envolvendo ${obj}, o perito deve:`,
+`A abordagem inadequada de ${obj} seria:`,
+`No laudo relativo a ${obj}, a resposta deve:`
+].map((stem,i)=>{const number=351+b*5+i,answer="ABCDE"[(number-1)%5],explicacao=["A conduta inicial protege a possibilidade de exame e de controle posterior.","O valor técnico decorre do vínculo entre material, método e documentação.","A interpretação deve permanecer dentro dos dados efetivamente examinados.","A falha indicada compromete o contexto ou amplia indevidamente o alcance do achado.","A redação pericial deve expressar suporte, limite e pertinência da conclusão."][i];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Prova pericial e cenários de local",stem,options:opcoesContextualizadas(correct,wrongs,answer,i),answer,explanation:`${explicacao} Em ${topic.toLowerCase()}, a análise tecnicamente defensável depende de preservação e fundamentação.`};}));
+questionBank.questions.push(...criminalisticaLoteOito);
+questionBank.review.criminalisticaLoteOitoReviewed=criminalisticaLoteOito.map(q=>q.number);
+questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+
 // Revisão editorial transversal: torna os distratores menos denunciativos sem alterar
 // o conteúdo correto, a resposta, a numeração ou a estrutura de cada questão.
 const refinarDistratorCriminalistica=text=>text

@@ -20747,6 +20747,11 @@ questionBank.review.criminalisticaLoteDoisReviewed=criminalisticaLoteDois.map(q=
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
 
 // Criminalística — Lote 3: papiloscopia, genética e documentos.
+const opcoesContextualizadas=(correct,wrongs,answer,indice)=>{
+  const inicio=["A providência indicada é ","A orientação técnica consiste em ","A conduta a adotar é ","A interpretação defendida é a de ","A medida sugerida é "][indice];
+  const finalizar=text=>`${inicio}${text.replace(/[.]$/,'')}.`;
+  return opcoesIntegradas(finalizar(correct),wrongs.map(finalizar),answer);
+};
 const criminalisticaLoteTresBases=[
 ["Papiloscopia","padrões papilares", "comparar características suficientes com padrão conhecido, documentando método e limitações",["concluir identidade por semelhança geral","ignorar qualidade da impressão","dispensar padrão de confronto","definir autoria criminal"]],
 ["Impressão latente","impressão não visível", "selecionar técnica de revelação adequada à superfície e preservar o registro obtido",["limpar antes de examinar","considerar ausência definitiva","usar qualquer reagente sem avaliar suporte","dispensar fotografia"]],
@@ -20765,7 +20770,7 @@ const criminalisticaLoteTres=criminalisticaLoteTresBases.flatMap(([topic,obj,cor
 `Diante de resultado relacionado a ${obj}, o perito deve prioritariamente:`,
 `A principal falha metodológica no exame de ${obj} seria:`,
 `No laudo sobre ${obj}, a conclusão deve:`
-].map((stem,i)=>{const number=101+b*5+i,answer="ABCDE"[(number-1)%5];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Papiloscopia, genética e documentos",stem,options:opcoesIntegradas(correct,wrongs,answer),answer,explanation:`Em ${topic.toLowerCase()}, a validade do resultado depende de método, documentação, controles e interpretação compatível com o contexto.`};}));
+].map((stem,i)=>{const number=101+b*5+i,answer="ABCDE"[(number-1)%5],explicacao=["A conduta inicial deve proteger a amostra e as informações que ela conserva.","O valor do resultado depende da origem conhecida, do método e dos controles aplicados.","A interpretação precisa relacionar o achado ao contexto e às suas limitações.","A alternativa incorreta falha por simplificar ou comprometer uma etapa indispensável do exame.","A redação do laudo deve refletir exatamente o alcance técnico obtido."][i];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Papiloscopia, genética e documentos",stem,options:opcoesContextualizadas(correct,wrongs,answer,i),answer,explanation:`${explicacao} Em ${topic.toLowerCase()}, documentação e controles sustentam a conclusão.`};}));
 questionBank.questions.push(...criminalisticaLoteTres);
 questionBank.review.criminalisticaLoteTresReviewed=criminalisticaLoteTres.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
@@ -20789,7 +20794,7 @@ const criminalisticaLoteQuatro=criminalisticaLoteQuatroBases.flatMap(([topic,obj
 `Diante de resultado relacionado a ${obj}, o perito deve:`,
 `A interpretação inadequada de ${obj} ocorreria ao:`,
 `No laudo referente a ${obj}, a conclusão deve:`
-].map((stem,i)=>{const number=151+b*5+i,answer="ABCDE"[(number-1)%5];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Perícias de local e informática forense",stem,options:opcoesIntegradas(correct,wrongs,answer),answer,explanation:`Em ${topic.toLowerCase()}, a conclusão confiável depende de preservação, documentação, método e correlação com o contexto.`};}));
+].map((stem,i)=>{const number=151+b*5+i,answer="ABCDE"[(number-1)%5],explicacao=["A providência inicial deve preservar o estado encontrado e evitar alterações desnecessárias.","A força probatória depende de demonstrar que o dado permaneceu íntegro e identificável.","O resultado deve ser correlacionado a outras fontes antes de qualquer inferência pessoal.","A leitura inadequada transforma um dado técnico limitado em conclusão que ele não suporta.","O laudo precisa expor método, escopo e limites com clareza."][i];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Perícias de local e informática forense",stem,options:opcoesContextualizadas(correct,wrongs,answer,i),answer,explanation:`${explicacao} Em ${topic.toLowerCase()}, preservação e contexto são indispensáveis.`};}));
 questionBank.questions.push(...criminalisticaLoteQuatro);
 questionBank.review.criminalisticaLoteQuatroReviewed=criminalisticaLoteQuatro.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
@@ -20871,7 +20876,7 @@ const criminalisticaLoteSeis=criminalisticaLoteSeisBases.flatMap(([topic,obj,cor
 `Na interpretação de resultado sobre ${obj}, o perito deve:`,
 `A conduta metodologicamente inadequada em exame de ${obj} seria:`,
 `No laudo referente a ${obj}, a conclusão tecnicamente correta deve:`
-].map((stem,i)=>{const number=251+b*5+i,answer="ABCDE"[(number-1)%5];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Documentoscopia e vestígios materiais",stem,options:opcoesIntegradas(correct,wrongs,answer),answer,explanation:`Em ${topic.toLowerCase()}, a validade da conclusão depende de preservação, método de confronto, documentação e limites expressamente indicados.`};}));
+].map((stem,i)=>{const number=251+b*5+i,answer="ABCDE"[(number-1)%5],explicacao=["O primeiro cuidado é preservar características que podem não ser recuperadas depois.","O confronto exige origem conhecida e condições que permitam reexame técnico.","A interpretação deve diferenciar compatibilidade de identificação exclusiva.","O erro metodológico decorre de reduzir a análise a uma característica isolada.","A conclusão deve indicar o que foi observado e o que permanece indeterminado."][i];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Documentoscopia e vestígios materiais",stem,options:opcoesContextualizadas(correct,wrongs,answer,i),answer,explanation:`${explicacao} Em ${topic.toLowerCase()}, o valor do achado depende de método e documentação.`};}));
 questionBank.questions.push(...criminalisticaLoteSeis);
 questionBank.review.criminalisticaLoteSeisReviewed=criminalisticaLoteSeis.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
@@ -20895,7 +20900,38 @@ const criminalisticaLoteSete=criminalisticaLoteSeteBases.flatMap(([topic,obj,cor
 `Diante de questão envolvendo ${obj}, a atuação correta consiste em:`,
 `A falha metodológica mais relevante em ${obj} seria:`,
 `No relatório relacionado a ${obj}, o perito deve:`
-].map((stem,i)=>{const number=301+b*5+i,answer="ABCDE"[(number-1)%5];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Integração de vestígios e laudo pericial",stem,options:opcoesIntegradas(correct,wrongs,answer),answer,explanation:`Em ${topic.toLowerCase()}, rastreabilidade, transparência metodológica e limites claros permitem uma conclusão tecnicamente defensável.`};}));
+].map((stem,i)=>{const number=301+b*5+i,answer="ABCDE"[(number-1)%5],explicacao=["O registro de cada etapa permite reconstruir o percurso do material examinado.","Preservar o vínculo entre item, origem e condição evita lacunas na rastreabilidade.","A resposta técnica deve enfrentar a questão apresentada sem extrapolar os dados disponíveis.","A falha indicada enfraquece a possibilidade de controle e revisão do resultado.","O relatório deve permitir que outra pessoa compreenda como a conclusão foi alcançada."][i];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Integração de vestígios e laudo pericial",stem,options:opcoesContextualizadas(correct,wrongs,answer,i),answer,explanation:`${explicacao} Em ${topic.toLowerCase()}, transparência e limites claros qualificam a prova.`};}));
 questionBank.questions.push(...criminalisticaLoteSete);
 questionBank.review.criminalisticaLoteSeteReviewed=criminalisticaLoteSete.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+
+// Revisão editorial transversal: torna os distratores menos denunciativos sem alterar
+// o conteúdo correto, a resposta, a numeração ou a estrutura de cada questão.
+const refinarDistratorCriminalistica=text=>text
+  .replace(/concluir identidade por semelhança geral/gi,"admitir identificação a partir de semelhança geral, sem confronto suficiente")
+  .replace(/definir autoria criminal/gi,"atribuir autoria com base exclusivamente no achado técnico")
+  .replace(/definir autoria do portador/gi,"atribuir autoria ao portador sem correlação adicional")
+  .replace(/definir autoria pelo metadado/gi,"atribuir autoria a partir de metadado isolado")
+  .replace(/definir dinâmica do fato sozinho/gi,"explicar a dinâmica exclusivamente a partir daquele achado")
+  .replace(/omitir a divergência/gi,"tratar a divergência como irrelevante sem análise complementar")
+  .replace(/descartar toda documentação/gi,"atribuir peso reduzido à documentação disponível")
+  .replace(/presumir autenticidade absoluta/gi,"presumir autenticidade sem verificar origem e integridade")
+  .replace(/usar resultado como certeza/gi,"conferir ao resultado alcance superior ao permitido pelo método")
+  .replace(/limpar antes de examinar/gi,"iniciar o exame após limpeza prévia da superfície")
+  .replace(/considerar ausência definitiva/gi,"tratar a ausência de revelação como resultado definitivo")
+  .replace(/dispensa\s+([^.]*)/gi,"trata como secundária a exigência de $1")
+  .replace(/\bdispensar\s+([^.]*)/gi,"considerar secundária a necessidade de $1")
+  .replace(/\bignorar\s+([^.]*)/gi,"atribuir relevância reduzida a $1")
+  .replace(/\bautomaticamente\b/gi,"por relação direta")
+  .replace(/\bde forma absoluta\b/gi,"de maneira definitiva")
+  .replace(/\bcerteza absoluta\b/gi,"conclusão definitiva")
+  .replace(/\bcerteza\b/gi,"conclusão definitiva")
+  .replace(/\babsoluta\b/gi,"sem ressalvas")
+  .replace(/\bapenas\b/gi,"predominantemente")
+  .replace(/\bqualquer\b/gi,"uma única")
+  .replace(/\bsempre\b/gi,"necessariamente")
+  .replace(/\bnunca\b/gi,"em hipótese alguma")
+  .replace(/exigência de o /gi,"exigência do ");
+questionBank.questions.filter(q=>q.subjectId==="criminalistica").forEach(q=>{
+  q.options=q.options.map(option=>option.letter===q.answer?option:{...option,text:refinarDistratorCriminalistica(option.text)});
+});

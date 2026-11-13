@@ -20875,3 +20875,27 @@ const criminalisticaLoteSeis=criminalisticaLoteSeisBases.flatMap(([topic,obj,cor
 questionBank.questions.push(...criminalisticaLoteSeis);
 questionBank.review.criminalisticaLoteSeisReviewed=criminalisticaLoteSeis.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+
+// Criminalística — Lote 7: integração probatória, cadeia de custódia e laudo.
+const criminalisticaLoteSeteBases=[
+["Cadeia de custódia","registro de recebimento de vestígio","identificar item, embalagem, lacre, data, responsável e condição de recebimento antes do processamento",["iniciar exame sem conferir a embalagem","substituir a identificação por memória","descartar o lacre antes do registro","presumir regularidade sem documentação"]],
+["Cadeia de custódia","rompimento autorizado de lacre","registrar a abertura, preservar informações anteriores e realizar novo acondicionamento identificável ao final",["omitir o rompimento no laudo","reutilizar o lacre sem anotação","misturar o item com outro material","descuidar da identificação de origem"]],
+["Cadeia de custódia","divergência entre item e requisição","registrar a inconsistência e adotar providências de conferência antes de vincular definitivamente o material ao caso",["corrigir a etiqueta sem registro","atribuir o item ao processo mais próximo","ignorar a divergência se a embalagem estiver lacrada","descartar o material sem qualquer informação"]],
+["Amostra de referência","amostra padrão para confronto","documentar sua origem e coletá-la de modo separado para permitir comparação tecnicamente controlada",["misturá-la ao material questionado","presumir autenticidade sem origem","dispensar a identificação do doador ou fonte","usar qualquer objeto semelhante como padrão"]],
+["Controle de qualidade","controle negativo em exame","avaliar se reagentes, ambiente ou procedimento introduziram interferência no resultado",["confirmar autoria automaticamente","substituir a amostra questionada","aumentar a concentração do vestígio","eliminar a necessidade de repetição técnica"]],
+["Reprodutibilidade","resultado pericial passível de revisão","descrever método, instrumentos, dados examinados e registros suficientes para avaliação independente",["apresentar apenas a conclusão","reservar as etapas para comunicação verbal","omitir parâmetros aplicados","substituir registros por opinião profissional"]],
+["Integração de evidências","vestígios de fontes diversas","correlacionar resultados independentes preservando a origem, a limitação e o alcance de cada fonte",["tratar uma fonte como confirmação automática de todas","omitir resultados divergentes","atribuir autoria pela quantidade de vestígios","misturar informações sem identificação"]],
+["Hipóteses periciais","hipótese investigativa inicial","testá-la diante dos vestígios e também confrontá-la com explicações alternativas razoáveis",["selecionar somente evidências favoráveis","convertê-la em conclusão antes do exame","descartar dados incompatíveis","atribuir sua formulação ao perito"]],
+["Laudo pericial","conclusão baseada em exame técnico","separar observação, resultado, interpretação, limitações e resposta aos quesitos",["usar linguagem absoluta sem método","resolver questões jurídicas no lugar da perícia","omitir limitações relevantes","confundir hipótese com achado"]],
+["Revisão técnica","revisão de laudo antes da emissão","verificar coerência entre registros, métodos, resultados, conclusões e identificação dos itens",["alterar conclusões para atender expectativa externa","remover dados divergentes","dispensar conferência de numeração","substituir registros por resumo oral"]]
+];
+const criminalisticaLoteSete=criminalisticaLoteSeteBases.flatMap(([topic,obj,correct,wrongs],b)=>[
+`Em situação de ${obj}, a providência tecnicamente adequada é:`,
+`Para preservar o valor pericial de ${obj}, é necessário:`,
+`Diante de questão envolvendo ${obj}, a atuação correta consiste em:`,
+`A falha metodológica mais relevante em ${obj} seria:`,
+`No relatório relacionado a ${obj}, o perito deve:`
+].map((stem,i)=>{const number=301+b*5+i,answer="ABCDE"[(number-1)%5];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Integração de vestígios e laudo pericial",stem,options:opcoesIntegradas(correct,wrongs,answer),answer,explanation:`Em ${topic.toLowerCase()}, rastreabilidade, transparência metodológica e limites claros permitem uma conclusão tecnicamente defensável.`};}));
+questionBank.questions.push(...criminalisticaLoteSete);
+questionBank.review.criminalisticaLoteSeteReviewed=criminalisticaLoteSete.map(q=>q.number);
+questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});

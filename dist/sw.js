@@ -1,4 +1,4 @@
-const CACHE = "caderno330-v155";
+const CACHE = "caderno330-v156";
 const ASSETS = [
   "./",
   "index.html",
@@ -9,8 +9,8 @@ const ASSETS = [
   "assets/all-might-hair-a.png?v=1",
   "assets/all-might-chest.svg?v=2",
   "assets/styles.css?v=25",
-  "assets/app.js?v=140",
-  "assets/questions.js?v=131"
+  "assets/app.js?v=141",
+  "assets/questions.js?v=132"
 ];
 
 self.addEventListener("install", event => {

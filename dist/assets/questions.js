@@ -20935,3 +20935,8 @@ const refinarDistratorCriminalistica=text=>text
 questionBank.questions.filter(q=>q.subjectId==="criminalistica").forEach(q=>{
   q.options=q.options.map(option=>option.letter===q.answer?option:{...option,text:refinarDistratorCriminalistica(option.text)});
 });
+// Mantém a numeração sequencial também na ordem física do banco, inclusive quando
+// lotes de uma mesma matéria foram publicados em momentos diferentes.
+const ordemMaterias=new Map(questionBank.subjects.map((subject,index)=>[subject.id,index]));
+questionBank.questions.sort((a,b)=>(ordemMaterias.get(a.subjectId)-ordemMaterias.get(b.subjectId))||a.number-b.number);
+questionBank.subjects.forEach(subject=>{subject.count=questionBank.questions.filter(question=>question.subjectId===subject.id).length;});

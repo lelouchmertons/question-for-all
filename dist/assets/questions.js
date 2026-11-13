@@ -20769,3 +20769,27 @@ const criminalisticaLoteTres=criminalisticaLoteTresBases.flatMap(([topic,obj,cor
 questionBank.questions.push(...criminalisticaLoteTres);
 questionBank.review.criminalisticaLoteTresReviewed=criminalisticaLoteTres.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+
+// Criminalística — Lote 4: perícias de local e informática forense.
+const criminalisticaLoteQuatroBases=[
+["Dispositivo eletrônico","um dispositivo eletrônico apreendido", "preservar seu estado, documentar condição e aplicar procedimento forense que evite alteração indevida",["explorar livremente o conteúdo","conectar à internet sem registro","formatar o dispositivo","atribuir usuário pelo simples porte"]],
+["Integridade digital","evidência digital", "verificar e registrar mecanismos de integridade que permitam demonstrar preservação do conteúdo analisado",["editar arquivos para facilitar leitura","ignorar metadados","dispensar cópia forense","presumir autenticidade absoluta"]],
+["Metadados","metadados de arquivo", "interpretar data, origem e histórico considerando sistema, configuração, cópias e limites técnicos",["tratar data como prova absoluta","ignorar fuso horário","definir autoria pelo metadado","dispensar confronto com outros dados"]],
+["Registro de acesso","registro de acesso digital", "correlacionar identificadores, horários, fonte do registro e demais evidências antes de atribuir conduta a pessoa",["equiparar IP a autoria certa","ignorar compartilhamento de conta","omitir origem do log","dispensar análise temporal"]],
+["Imagem forense","imagem forense de mídia", "criar cópia tecnicamente verificável e trabalhar sobre a cópia preservando o original",["analisar apenas o original","alterar arquivos do original","dispensar verificação","apagar dados irrelevantes"]],
+["Local de crime","vestígio em local complexo", "planejar busca, setores, registro de acessos e prioridades de preservação conforme risco de perda",["coletar itens sem ordem","liberar acesso amplo","registrar somente ao final","examinar só área principal"]],
+["Vestígio temporal","cronologia de vestígios", "confrontar horários de fontes independentes e registrar diferenças de relógio ou configuração",["usar uma hora isolada","assumir sincronização perfeita","ignorar logs divergentes","definir autor pelo horário"]],
+["Geolocalização","dado de geolocalização", "avaliar precisão, método de obtenção, intervalo temporal e contexto antes de inferir posição",["tratá-lo como coordenada infalível","ignorar margem de erro","definir atividade pelo ponto","dispensar outras fontes"]],
+["Nuvem","dado armazenado em nuvem", "documentar origem, forma de obtenção, escopo e preservação dos dados recebidos",["supor que todo dado é local","misturar contas diferentes","omitir data de obtenção","dispensar registro de custódia"]],
+["Laudo digital","conclusão de informática forense", "explicitar ferramentas, dados analisados, resultados e limitações sem extrapolar para autoria automática",["resolver questão jurídica","ocultar limitações","confundir conta com pessoa","afirmar certeza sem suporte"]]
+];
+const criminalisticaLoteQuatro=criminalisticaLoteQuatroBases.flatMap(([topic,obj,correct,wrongs],b)=>[
+`No exame de ${obj}, a providência inicial tecnicamente correta é:`,
+`Para preservar o valor probatório de ${obj}, é necessário:`,
+`Diante de resultado relacionado a ${obj}, o perito deve:`,
+`A interpretação inadequada de ${obj} ocorreria ao:`,
+`No laudo referente a ${obj}, a conclusão deve:`
+].map((stem,i)=>{const number=151+b*5+i,answer="ABCDE"[(number-1)%5];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Perícias de local e informática forense",stem,options:opcoesIntegradas(correct,wrongs,answer),answer,explanation:`Em ${topic.toLowerCase()}, a conclusão confiável depende de preservação, documentação, método e correlação com o contexto.`};}));
+questionBank.questions.push(...criminalisticaLoteQuatro);
+questionBank.review.criminalisticaLoteQuatroReviewed=criminalisticaLoteQuatro.map(q=>q.number);
+questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});

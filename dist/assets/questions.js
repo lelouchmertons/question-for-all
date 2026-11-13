@@ -20851,3 +20851,27 @@ const criminalisticaLoteCinco=criminalisticaLoteCincoDados.map(([topic,stem,corr
 questionBank.questions.push(...criminalisticaLoteCinco);
 questionBank.review.criminalisticaLoteCincoReviewed=criminalisticaLoteCinco.map(q=>q.number);
 questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});
+
+// Criminalística — Lote 6: documentoscopia, marcas e vestígios materiais.
+const criminalisticaLoteSeisBases=[
+["Documentoscopia","documento com possível alteração","preservar o original, registrar suas condições e selecionar exames que não eliminem informações relevantes",["anotar diretamente no documento","substituir o original por fotocópia","laminar o documento antes do exame","concluir apenas pela aparência visual"]],
+["Documentoscopia","rasura ou acréscimo suspeito","comparar suporte, tintas, traços e sequência gráfica com método compatível e conclusão limitada aos achados",["atribuir autoria pela cor da tinta","remover a área alterada para análise","presumir fraude sem confronto técnico","desconsiderar o contexto documental"]],
+["Grafoscopia","assinatura questionada","confrontar características gráficas com padrões autênticos, adequados e suficientes",["comparar somente o desenho geral","usar uma assinatura sem origem conhecida","definir intenção do escritor","ignorar variações naturais de escrita"]],
+["Moeda e cédula","cédula suspeita de falsificação","examinar elementos de segurança e características do suporte mediante técnica apropriada",["avaliar somente o estado de conservação","afirmar falsidade pelo valor facial","substituir o exame por fotografia","atribuir a origem da cédula ao seu portador"]],
+["Marcas de ferramenta","marca de ferramenta em superfície","registrar, preservar e confrontar características de classe e individuais sem afirmar origem exclusiva sem suporte",["limar a marca para torná-la visível","atribuir a ferramenta por semelhança geral","misturar amostras de áreas distintas","dispensar padrão de confronto"]],
+["Materiais","fragmento de vidro","individualizar a origem e comparar propriedades e características disponíveis entre questionado e padrão",["concluir origem apenas pela cor","reunir todos os fragmentos em uma embalagem","lavar o fragmento antes do registro","assumir que todo vidro da cena tem mesma origem"]],
+["Materiais","fibra encontrada em vestígio","comparar características físicas e químicas com fontes de referência, considerando a frequência e o contexto",["identificar autor apenas pela cor","ignorar possível transferência secundária","dispensar controle de origem","concluir exclusividade em todo confronto"]],
+["Materiais","traço de tinta","avaliar composição, camadas, morfologia e relação com padrões conhecidos",["considerar tonalidade visual suficiente","definir a data exata da aplicação","atribuir autoria sem amostra padrão","descartar diferenças microscópicas"]],
+["Solo","amostra de solo de calçado","preservar e comparar características relevantes com amostras de referência individualizadas",["lavar o calçado antes da coleta","concluir presença pela cor do solo","misturar amostras de locais diferentes","dispensar registro de origem"]],
+["Laudo comparativo","resultado de confronto material","distinguir compatibilidade, grau de suporte e limitações, sem converter semelhança em certeza de origem",["afirmar identidade sempre que houver semelhança","omitir diferenças observadas","substituir método por opinião","definir responsabilidade penal pelo confronto"]]
+];
+const criminalisticaLoteSeis=criminalisticaLoteSeisBases.flatMap(([topic,obj,correct,wrongs],b)=>[
+`Diante de ${obj}, a providência pericial mais adequada é:`,
+`Para que o exame de ${obj} tenha utilidade probatória, é necessário:`,
+`Na interpretação de resultado sobre ${obj}, o perito deve:`,
+`A conduta metodologicamente inadequada em exame de ${obj} seria:`,
+`No laudo referente a ${obj}, a conclusão tecnicamente correta deve:`
+].map((stem,i)=>{const number=251+b*5+i,answer="ABCDE"[(number-1)%5];return{id:`criminalistica-${String(number).padStart(3,"0")}`,subjectId:"criminalistica",number,topic,area:"Documentoscopia e vestígios materiais",stem,options:opcoesIntegradas(correct,wrongs,answer),answer,explanation:`Em ${topic.toLowerCase()}, a validade da conclusão depende de preservação, método de confronto, documentação e limites expressamente indicados.`};}));
+questionBank.questions.push(...criminalisticaLoteSeis);
+questionBank.review.criminalisticaLoteSeisReviewed=criminalisticaLoteSeis.map(q=>q.number);
+questionBank.subjects.forEach(s=>{s.count=questionBank.questions.filter(q=>q.subjectId===s.id).length;});

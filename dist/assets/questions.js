@@ -21049,6 +21049,46 @@ questionBank.questions=questionBank.questions.map(question=>{
 });
 questionBank.review.inglesReworkLoteDoisReviewed=Array.from({length:50},(_,index)=>201+index);
 
+// Reforma editorial de Inglês — lote 3: reescrita, modalidade e coesão com enunciado-base.
+const inglesReworkLoteTresBases=[
+["The report was so incomplete that the review was postponed.","cause and consequence","causa e consequência"],
+["Despite the limited sample, the findings were consistent.","concession","concessão"],
+["The evidence was compelling; consequently, the policy was revised.","cause and consequence","causa e consequência"],
+["The database was updated. This change improved access to recent records.","textual cohesion","coesão textual"],
+["The committee rejected the proposal after reviewing the evidence.","voice and informational focus","voz e foco informacional"],
+["The results should be interpreted cautiously because the data are preliminary.","modality and degree of certainty","modalidade e grau de certeza"],
+["The results may indicate an association, but they do not establish causation.","association and causation","associação e causalidade"],
+["Only after the audit did the agency identify the error.","time relation and emphasis","relação temporal e ênfase"],
+["A statistically significant result is not necessarily practically important.","scope of a technical conclusion","alcance de uma conclusão técnica"],
+["Effective policy combines evidence, transparency and periodic evaluation.","synthesis of complementary elements","síntese de elementos complementares"]
+];
+const comandosReescrita=[
+"Which alternative preserves both the meaning and the logical relation expressed in the statement?",
+"Which revision is accurate in formal written English without changing the original claim?",
+"Which option keeps the same relation of cause, contrast, time or limitation?",
+"Which reformulation is supported by the statement without increasing its degree of certainty?",
+"Which sentence conveys the original information with grammatical accuracy?"
+];
+questionBank.questions=questionBank.questions.map(question=>{
+ if(question.subjectId!=="ingles"||question.number<251||question.number>300)return question;
+ const bloco=Math.floor((question.number-251)/5);
+ const [statement,focus,focusPt]=inglesReworkLoteTresBases[bloco];
+ const command=comandosReescrita[(question.number-251)%5].replace(/^Which/,"which");
+ return {...question,stem:`Read the statement:\n\n“${statement}”\n\nConsidering **${focus}**, ${command}`,explanation:`A alternativa correta preserva a relação de ${focusPt} sem alterar o alcance, a modalidade ou o foco informacional da afirmação-base. Os distratores modificam a relação lógica ou introduzem conclusão não sustentada.`};
+});
+questionBank.review.inglesReworkLoteTresReviewed=Array.from({length:50},(_,index)=>251+index);
+
+// Ajustes pontuais: elimina os últimos enunciados e conjuntos de alternativas duplicados em Inglês.
+const ajustesFinaisIngles={
+  30:{stem:"A technical report mentions a laboratory, a sample and a revised protocol. Choose the sentence whose pronoun reference is clear and grammatically correct."},
+  39:{options:[{letter:"A",text:"about"},{letter:"B",text:"on"},{letter:"C",text:"for"},{letter:"D",text:"to"},{letter:"E",text:"with"}],explanation:"A expressão correta é *refer to*. As demais preposições não completam essa construção verbal no inglês-padrão."},
+  46:{stem:"An editor is combining two findings in a public-health summary. Choose the sentence whose word order and connective create a clear and cohesive relation."},
+  80:{stem:"A laboratory manual describes a possible future response to an inconclusive result. Choose the conditional sentence that expresses the required relation accurately."},
+  95:{stem:"A forensic report needs to distinguish an earlier action from a later review. Choose the sentence whose verb forms establish the sequence correctly."}
+};
+questionBank.questions=questionBank.questions.map(question=>question.subjectId==="ingles"&&ajustesFinaisIngles[question.number]?{...question,...ajustesFinaisIngles[question.number]}:question);
+questionBank.review.inglesDuplicidadesCorrigidas=[30,39,46,80,95];
+
 // Mantém a numeração sequencial também na ordem física do banco, inclusive quando
 // lotes de uma mesma matéria foram publicados em momentos diferentes.
 const ordemMaterias=new Map(questionBank.subjects.map((subject,index)=>[subject.id,index]));

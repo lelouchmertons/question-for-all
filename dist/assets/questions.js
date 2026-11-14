@@ -21033,6 +21033,22 @@ const inglesReworkLoteUmPorNumero=new Map(inglesReworkLoteUm.map(question=>[ques
 questionBank.questions=questionBank.questions.map(question=>question.subjectId==="ingles"&&inglesReworkLoteUmPorNumero.has(question.number)?inglesReworkLoteUmPorNumero.get(question.number):question);
 questionBank.review.inglesReworkLoteUmReviewed=inglesReworkLoteUm.map(question=>question.number);
 
+// Reforma editorial de Inglês — lote 2: gramática aplicada a comunicação técnica.
+const roteirosInglesGramatica=[
+"An editor is reviewing a formal report before it is sent to an external audit.",
+"A laboratory must issue a precise English-language note about its procedures.",
+"During a procurement review, the technical team needs wording that cannot create ambiguity.",
+"A public agency is preparing an official summary for an international partner.",
+"A research group is revising a manuscript in response to reviewers' comments."
+];
+questionBank.questions=questionBank.questions.map(question=>{
+ if(question.subjectId!=="ingles"||question.number<201||question.number>250)return question;
+ const context=roteirosInglesGramatica[(question.number-201)%5];
+ const prompt=`${context}\n\nConsidering standard written English and the use of **${question.area}**, select the sentence that is grammatically accurate and appropriate for this technical context.`;
+ return {...question,stem:prompt,explanation:`Em comunicação técnica formal, a alternativa correta aplica adequadamente ${question.area.toLowerCase()}, preservando a relação gramatical e o sentido pretendido. As demais alteram a forma exigida ou comprometem a construção.`};
+});
+questionBank.review.inglesReworkLoteDoisReviewed=Array.from({length:50},(_,index)=>201+index);
+
 // Mantém a numeração sequencial também na ordem física do banco, inclusive quando
 // lotes de uma mesma matéria foram publicados em momentos diferentes.
 const ordemMaterias=new Map(questionBank.subjects.map((subject,index)=>[subject.id,index]));

@@ -21089,6 +21089,37 @@ const ajustesFinaisIngles={
 questionBank.questions=questionBank.questions.map(question=>question.subjectId==="ingles"&&ajustesFinaisIngles[question.number]?{...question,...ajustesFinaisIngles[question.number]}:question);
 questionBank.review.inglesDuplicidadesCorrigidas=[30,39,46,80,95];
 
+// Reforma editorial de Direito Administrativo — lote 1: casos próprios de contratação e serviços públicos.
+const cenariosAdministrativoLoteUm={
+  226:"Uma secretaria pretende contratar solução para gestão de filas e ainda compara alternativas tecnológicas. Antes de definir o objeto, a equipe deve observar que:",
+  227:"Na contratação de manutenção predial, a unidade requisitante precisa registrar o que será entregue, os requisitos de desempenho e a forma de execução. Nesse caso:",
+  228:"Durante a elaboração do orçamento estimado para compra de equipamentos, foram encontradas cotações com valores muito discrepantes. A providência compatível com o planejamento é:",
+  229:"Uma contratação de sistema crítico depende de fornecedor, integração e prazo de implantação. Para antecipar eventos que possam comprometer o resultado:",
+  230:"Um gestor decidiu iniciar a disputa e deixar a especificação do objeto para depois da escolha do vencedor. À luz do planejamento da contratação:",
+  231:"O edital de uma concorrência passou a prever, somente após a abertura das propostas, novo peso para a experiência prévia. A medida contraria o entendimento de que:",
+  232:"Em uma licitação, a proposta mais barata deixa de atender requisito técnico expressamente exigido no edital. A comissão deve reconhecer que:",
+  233:"Dois licitantes atendem às mesmas exigências, mas um servidor propõe favorecimento do outro por relação pessoal com a Administração. Nessa hipótese:",
+  234:"A comissão identificou divergência formal em documento apresentado por licitante, sem que seja necessário mudar preço, objeto ou conteúdo material da proposta. É correto afirmar que:",
+  235:"Após a análise das propostas, a comissão escolheu a vencedora sem registrar os fundamentos do julgamento. A decisão válida exige que:",
+  236:"A execução de um contrato de obras foi afetada por fato superveniente que aumentou os encargos do contratado. A análise do equilíbrio econômico-financeiro deve considerar que:",
+  237:"Durante a execução, a Administração pretende ampliar quantitativamente o objeto contratado. A providência somente será legítima se:",
+  238:"O fiscal de contrato constatou atraso recorrente e divergência entre materiais entregues e os especificados. No acompanhamento da execução:",
+  239:"Um objeto foi recebido provisoriamente, mas defeito oculto tornou-se identificável depois de teste técnico. O recebimento:",
+  240:"O contratado solicitou extensão do prazo de serviço contínuo, apresentando justificativa e demonstrando continuidade da necessidade pública. A prorrogação:",
+  241:"Empresa contratada foi acusada de descumprimento contratual e a autoridade pretende aplicar multa imediatamente, sem ouvi-la. A aplicação de sanção:",
+  242:"Dois fornecedores cometeram descumprimentos de gravidade distinta na execução contratual. Ao definir a penalidade, a Administração deve considerar que:",
+  243:"Após decisão sancionatória, o contratado pretende questionar os fundamentos e requer reexame administrativo. Nessa situação:",
+  244:"Uma empresa sofre impedimento de licitar e questiona se a medida pode vigorar sem limite temporal ou territorial. A resposta depende de que:",
+  245:"Diante de conduta grave, a autoridade local pretende declarar empresa inidônea sem identificar sua competência nem instaurar procedimento específico. A medida:",
+  246:"Usuário de serviço público relata demora e solicita informação sobre o prazo de atendimento. A prestação adequada pressupõe que:",
+  247:"Uma usuária quer registrar reclamação sobre atendimento, mas a unidade informa que aceita manifestações apenas presencialmente e em horário restrito. Quanto aos canais de atendimento:",
+  248:"A autarquia pretende avaliar se a população percebe melhora após mudanças no serviço oferecido. A avaliação da qualidade:",
+  249:"Concessionária alterou a forma de cobrança de tarifa sem explicar os critérios ou os efeitos para os usuários. A cobrança de serviço público:",
+  250:"Em unidade de atendimento, um servidor prioriza usuários conhecidos sem critério objetivo e adota tratamento hostil com os demais. A conduta viola o dever de que:"
+};
+questionBank.questions=questionBank.questions.map(question=>question.subjectId==="direito-administrativo"&&cenariosAdministrativoLoteUm[question.number]?{...question,stem:cenariosAdministrativoLoteUm[question.number],explanation:`${question.explanation} O caso exige relacionar a regra jurídica à decisão administrativa concreta, sem substituir seus requisitos por conveniência operacional.`}:question);
+questionBank.review.direitoAdministrativoReworkLoteUm=Object.keys(cenariosAdministrativoLoteUm).map(Number);
+
 // Mantém a numeração sequencial também na ordem física do banco, inclusive quando
 // lotes de uma mesma matéria foram publicados em momentos diferentes.
 const ordemMaterias=new Map(questionBank.subjects.map((subject,index)=>[subject.id,index]));

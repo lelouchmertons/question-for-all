@@ -21120,6 +21120,37 @@ const cenariosAdministrativoLoteUm={
 questionBank.questions=questionBank.questions.map(question=>question.subjectId==="direito-administrativo"&&cenariosAdministrativoLoteUm[question.number]?{...question,stem:cenariosAdministrativoLoteUm[question.number],explanation:`${question.explanation} O caso exige relacionar a regra jurídica à decisão administrativa concreta, sem substituir seus requisitos por conveniência operacional.`}:question);
 questionBank.review.direitoAdministrativoReworkLoteUm=Object.keys(cenariosAdministrativoLoteUm).map(Number);
 
+// Reforma editorial de Direito Administrativo — lote 2: delegação, processo, polícia, controle e responsabilidade.
+const cenariosAdministrativoLoteDois={
+  251:"Após delegar a operação de transporte coletivo, o município recebeu reclamações sobre descumprimento dos horários. Mesmo sem executar o serviço diretamente, a providência juridicamente adequada pressupõe que:",
+  252:"Uma concessão em funcionamento precisa ser retomada pelo poder público para implantação de nova política de mobilidade. A retomada antes do prazo contratual deve ser examinada como hipótese de:",
+  253:"A concessionária de abastecimento deixou de cumprir metas essenciais apesar de notificações e da oportunidade de correção. Para extinguir a delegação por inadimplemento, a Administração deve observar o regime de:",
+  254:"Encerrada a concessão de iluminação pública, discute-se o destino dos equipamentos indispensáveis à continuidade do serviço. Nesse contexto, a reversão:",
+  255:"Em audiência pública, um participante afirmou que a delegação de um serviço transfere definitivamente sua titularidade à empresa contratada. Essa afirmação está incorreta porque:",
+  256:"Uma pessoa requer acesso a procedimento instaurado por órgão federal que pode afetar diretamente sua esfera jurídica. A finalidade do processo administrativo evidencia que ele:",
+  257:"No curso de processo administrativo federal, o interessado pediu cópia de parecer técnico e informação sobre o ato que abriu a instrução. Em regra, ele:",
+  258:"Uma autarquia negou benefício com base em conclusão técnica, mas publicou apenas a frase 'pedido indeferido'. Quando exigida, a motivação adequada deve:",
+  259:"Uma demanda regularmente instruída permaneceu sem decisão porque a autoridade responsável preferiu aguardar, por tempo indeterminado, uma futura reorganização interna. À luz da Lei nº 9.784/1999:",
+  260:"Após receber decisão desfavorável, a interessada aponta erro na apreciação das provas e pretende submetê-la a nova análise dentro da própria Administração. O instrumento compatível é:",
+  261:"A vigilância sanitária condicionou o funcionamento de estabelecimento à adoção de medidas previstas em norma para proteção da coletividade. A atuação exemplifica poder de polícia porque:",
+  262:"Durante fiscalização, agente pretende interditar imediatamente qualquer estabelecimento com irregularidade formal, sem avaliar urgência, risco ou autorização legal específica. Sobre a autoexecutoriedade:",
+  263:"Uma norma municipal impõe adequação de acessibilidade a determinada atividade econômica e prevê multa pelo descumprimento. A possibilidade de impor a obrigação ilustra a:",
+  264:"Ao aplicar penalidade a comerciante, a autoridade ignora que o fato ocorreu fora de sua área de atribuição e fixa medida muito além do necessário para cessar o risco. O ato de polícia deve respeitar:",
+  265:"Regulamento interno criou multa administrativa para conduta que a lei não tipificou e permitiu sua imposição sem defesa prévia. A sanção é inválida porque:",
+  266:"Unidade de auditoria de uma fundação pública verifica seus próprios procedimentos de pagamento e recomenda correções à diretoria. Trata-se de exemplo de:",
+  267:"A comissão parlamentar solicita fiscalização de contas de órgão do Executivo, com atuação técnica do Tribunal de Contas nos limites constitucionais. A situação caracteriza:",
+  268:"Cidadão questiona judicialmente ato administrativo que lhe negou licença, alegando violação da lei. No controle judicial, o magistrado deve examinar:",
+  269:"Uma prefeitura divulga contratos, relatórios de execução e canal para manifestações dos usuários sobre obras em andamento. A medida fortalece principalmente:",
+  270:"Após constatar erro material em ato próprio, a Administração inicia procedimento para revê-lo, assegurando contraditório quando a medida puder afetar situação individual favorável. A providência decorre da:",
+  271:"Veículo oficial, conduzido por servidor em serviço, atinge pedestre durante atividade administrativa. Para discutir reparação pelo ente público, a análise parte da existência de:",
+  272:"O Estado indenizou vítima por dano causado por agente público e pretende cobrar do agente o prejuízo suportado. A ação regressiva exige:",
+  273:"Em ação indenizatória contra autarquia, a parte autora demonstra a atuação administrativa, mas não comprova prejuízo efetivo. Ainda que se aplique responsabilidade objetiva:",
+  274:"Em acidente relacionado a serviço público, as provas revelam que a própria vítima praticou conduta exclusiva e suficiente para produzir o dano. Essa circunstância pode:",
+  275:"Empresa privada contratada para operar serviço público causa dano a usuária durante a prestação. Quanto à responsabilidade perante a lesada, é correto afirmar que:"
+};
+questionBank.questions=questionBank.questions.map(question=>question.subjectId==="direito-administrativo"&&cenariosAdministrativoLoteDois[question.number]?{...question,stem:cenariosAdministrativoLoteDois[question.number],explanation:`${question.explanation} A resposta deve ser extraída do regime jurídico aplicado ao fato narrado, sem presumir poderes, deveres ou efeitos que a lei não prevê.`}:question);
+questionBank.review.direitoAdministrativoReworkLoteDois=Object.keys(cenariosAdministrativoLoteDois).map(Number);
+
 // Mantém a numeração sequencial também na ordem física do banco, inclusive quando
 // lotes de uma mesma matéria foram publicados em momentos diferentes.
 const ordemMaterias=new Map(questionBank.subjects.map((subject,index)=>[subject.id,index]));

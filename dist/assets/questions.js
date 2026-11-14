@@ -21238,6 +21238,62 @@ const cenariosPortuguesReworkLoteUm={
 questionBank.questions=questionBank.questions.map(question=>question.subjectId==="portugues"&&cenariosPortuguesReworkLoteUm[question.number]?{...question,stem:cenariosPortuguesReworkLoteUm[question.number],explanation:`${question.explanation} A análise deve considerar a construção efetiva do enunciado e a norma-padrão, sem converter preferência de estilo em regra gramatical.`}:question);
 questionBank.review.portuguesReworkLoteUm=Object.keys(cenariosPortuguesReworkLoteUm).map(Number);
 
+// Reforma editorial de Língua Portuguesa — lote 2: ortografia, reescrita, período e redação oficial.
+const cenariosPortuguesReworkLoteDois={
+  51:"Em lista de termos revisada para um edital, assinale a alternativa em que todas as palavras obedecem às regras de acentuação gráfica:",
+  52:"Em comunicado que distingue fato passado de possibilidade presente, assinale a redação correta segundo as regras de acentuação e a ortografia oficial:",
+  53:"Leia o trecho: ‘A ampliação do atendimento depende de recursos estáveis, pois a interrupção de contratos prejudica a continuidade das ações.’ Predomina no excerto a tipologia:",
+  54:"Em peça de campanha que busca levar o destinatário a adotar uma conduta, a função de linguagem predominante é a:",
+  55:"Um setor substitui em mensagem institucional uma forma coloquial por expressão adequada à comunicação formal. Assinale a alternativa que atende a esse critério:",
+  56:"No vocábulo ‘reutilização’, empregado para designar o reaproveitamento de materiais, identifique corretamente o processo de formação de palavras indicado na alternativa:",
+  57:"Em debate sobre linguagem institucional, uma expressão recém-incorporada é contrastada com palavra antiga e com termo estrangeiro. Assinale a definição correta de arcaísmo:",
+  58:"Uma comissão precisa reescrever a frase ‘Apesar de ter recebido os documentos, adiou a decisão’, sem alterar a relação de sentido. Assinale a versão correta:",
+  59:"Ao consultar um verbete, o leitor encontra a abreviatura ‘s. m.’ depois da palavra de entrada. Essa indicação mostra que a palavra é:",
+  60:"Leia:\n\n‘A digitalização acelerou a tramitação dos documentos. Contudo, a velocidade de processamento não elimina a necessidade de conferir a qualidade das informações.’\n\nA relação entre as duas frases é corretamente descrita por:",
+  61:"No trecho ‘A chefia determinou a entrega do relatório até sexta-feira. Esse prazo foi comunicado a todas as unidades’, a expressão ‘Esse prazo’ retoma:",
+  62:"Complete o período preservando a relação de concessão: ‘________ o parecer seja favorável, a autoridade poderá solicitar diligência complementar.’",
+  63:"Assinale a reescrita que preserva simultaneamente o sentido e a relação concessiva de ‘Ainda que o parecer fosse favorável, a autoridade solicitou nova análise.’",
+  64:"Em ata, a fala ‘Entregarei o processo amanhã’ foi convertida para discurso indireto. Assinale a transformação adequada:",
+  65:"Para manter paralelismo sintático em uma lista de providências, assinale a redação correta:",
+  66:"No aviso ‘Necessita-se de profissionais com experiência na área’, a expressão ‘se’ exerce a função de:",
+  67:"A frase ativa ‘A comissão analisará os recursos’ deve ser convertida para a voz passiva mantendo tempo verbal e sentido. Assinale a alternativa correta:",
+  68:"No período ‘A equipe obedeceu ao regulamento’, o termo ‘ao regulamento’ funciona como:",
+  69:"Em qual alternativa o pronome relativo vem acompanhado da preposição exigida pelo verbo da oração subordinada?",
+  70:"No período ‘É necessário que o relatório seja revisto’, a oração introduzida por ‘que’ desempenha a função de:",
+  71:"No período ‘Embora o prazo estivesse vencido, o sistema permaneceu disponível’, a oração subordinada expressa:",
+  72:"Em ‘A fila aumentou tanto que a unidade reorganizou o atendimento’, a oração introduzida por ‘que’ indica:",
+  73:"Em registro de pendências, assinale a frase cuja concordância verbal com sujeito composto está de acordo com a norma-padrão:",
+  74:"Na frase ‘A maioria dos participantes ________ à reunião’, assinale a flexão verbal admitida pela norma-padrão:",
+  75:"Em relatório acompanhado de documentos, assinale a alternativa que apresenta concordância nominal adequada:",
+  76:"Em qual alternativa o verbo ‘assistir’, no sentido de presenciar, é regido conforme a norma-padrão?",
+  77:"Em memorando que compara duas medidas, assinale a frase correta quanto à regência do verbo ‘preferir’:",
+  78:"Em convocação com indicação de horário, assinale a alternativa que emprega corretamente a crase:",
+  79:"Na referência a norma antecedida de preposição, assinale a alternativa correta quanto ao emprego da crase antes do pronome relativo:",
+  80:"Em comunicado iniciado por palavra negativa, a colocação pronominal conforme a norma-padrão é:",
+  81:"Em ofício formal, sem palavra atrativa, assinale a forma adequada de colocação pronominal com futuro do presente:",
+  82:"Assinale a alternativa em que as vírgulas isolam corretamente oração adjetiva explicativa:",
+  83:"Em ata que enumera grupos internos de elementos, assinale a alternativa que emprega adequadamente o ponto e vírgula:",
+  84:"Em despacho, os dois-pontos foram usados para introduzir informação anunciada pelo primeiro segmento. Assinale a alternativa correta:",
+  85:"Complete corretamente: ‘A comissão ________ a decisão e ________ o erro material identificado no texto.’",
+  86:"No trecho ‘A notícia acendeu o debate sobre a medida’, o verbo ‘acendeu’ é empregado em sentido:",
+  87:"Na relação entre ‘aprovar’ e ‘rejeitar’, verifica-se:",
+  88:"Complete a frase conforme a ortografia oficial: ‘Os técnicos explicaram ________ o sistema falhou.’",
+  89:"Em relatório que contrapõe fato concluído no dia anterior e possibilidade atual, assinale a frase correta quanto a ‘pode’ e ‘pôde’:",
+  90:"Em ‘A medida foi adotada ________ atendia à necessidade identificada’, assinale a forma correta de ‘porque’:",
+  91:"Ao redigir comunicação oficial para destinatário externo, devem prevalecer características de:",
+  92:"Em ofício, qual redação preserva impessoalidade sem ocultar a informação necessária?",
+  93:"No período ‘A diretoria publicou a portaria. Esse ato alterou o fluxo de análise’, a expressão ‘Esse ato’ retoma:",
+  94:"Um artigo apresenta posição e procura sustentá-la por argumentos. A tipologia predominante é:",
+  95:"Para preservar a correlação ‘não só... mas também’, assinale a alternativa corretamente estruturada:",
+  96:"Em ‘Se o setor receber os documentos, iniciará a conferência’, o presente do subjuntivo contribui para expressar:",
+  97:"No período ‘A chefia informou que o processo seria reaberto’, a palavra ‘que’ introduz:",
+  98:"Em ‘Quando a equipe concluiu a vistoria, encaminhou o relatório’, a oração iniciada por ‘Quando’ expressa:",
+  99:"A frase ‘Os prazos foram redefinidos pela diretoria’ deve ser convertida para voz ativa. Assinale a alternativa adequada:",
+  100:"Assinale a reescrita que preserva a relação causal de ‘O processo retornou ao setor porque os documentos estavam incompletos.’"
+};
+questionBank.questions=questionBank.questions.map(question=>question.subjectId==="portugues"&&cenariosPortuguesReworkLoteDois[question.number]?{...question,stem:cenariosPortuguesReworkLoteDois[question.number],explanation:`${question.explanation} A solução depende da relação sintática e semântica estabelecida no próprio período, observada a norma-padrão em contexto formal.`}:question);
+questionBank.review.portuguesReworkLoteDois=Object.keys(cenariosPortuguesReworkLoteDois).map(Number);
+
 // Mantém a numeração sequencial também na ordem física do banco, inclusive quando
 // lotes de uma mesma matéria foram publicados em momentos diferentes.
 const ordemMaterias=new Map(questionBank.subjects.map((subject,index)=>[subject.id,index]));

@@ -21151,6 +21151,37 @@ const cenariosAdministrativoLoteDois={
 questionBank.questions=questionBank.questions.map(question=>question.subjectId==="direito-administrativo"&&cenariosAdministrativoLoteDois[question.number]?{...question,stem:cenariosAdministrativoLoteDois[question.number],explanation:`${question.explanation} A resposta deve ser extraída do regime jurídico aplicado ao fato narrado, sem presumir poderes, deveres ou efeitos que a lei não prevê.`}:question);
 questionBank.review.direitoAdministrativoReworkLoteDois=Object.keys(cenariosAdministrativoLoteDois).map(Number);
 
+// Reforma editorial de Direito Administrativo — lote 3: agentes, atos, organização, improbidade e governança.
+const cenariosAdministrativoLoteTres={
+  276:"Lei municipal cria unidade permanente de atribuições, com denominação própria e provimento conforme as regras constitucionais. A figura descrita corresponde a:",
+  277:"Uma empresa pública federal seleciona empregados mediante concurso e celebra vínculo sob regime celetista, respeitadas as normas aplicáveis. A situação caracteriza:",
+  278:"Diretor de autarquia pretende designar pessoa sem vínculo efetivo para exercer função de confiança destinada a atividades de direção e assessoramento. A designação é incompatível com a regra de que:",
+  279:"Servidora ocupante de cargo técnico pretende acumular outro vínculo remunerado na Administração. A análise do pedido deve partir de que:",
+  280:"Apuração interna identifica possível dano causado por agente público e remete documentos também às autoridades competentes. A responsabilização do agente pode ocorrer:",
+  281:"Fiscal lavra auto de infração e o particular pretende afastar seus efeitos demonstrando que os fatos registrados não ocorreram. A presunção do ato administrativo:",
+  282:"Órgão regulador impõe obrigação prevista em lei a empresa sujeita à sua fiscalização, independentemente de concordância prévia dela. A característica evidenciada é a:",
+  283:"Administração descobre que licença foi concedida por autoridade incompetente, em violação à lei, e o interessado busca revisão judicial. A invalidação por ilegalidade:",
+  284:"Autoridade decide retirar autorização regularmente concedida porque uma nova política pública tornou sua manutenção inconveniente, sem apontar ilegalidade originária. A retirada configura:",
+  285:"Em processo de licenciamento, identifica-se defeito formal sanável que não trouxe prejuízo a terceiros nem afetou o interesse público. A Administração poderá avaliar a:",
+  286:"Lei cria entidade para executar atividade típica do Estado, dotando-a de personalidade jurídica de direito público e patrimônio próprio. Trata-se de:",
+  287:"A União pretende instituir pessoa jurídica para explorar atividade econômica, integralmente composta por capital público e organizada na forma societária mais adequada ao objeto. A entidade será:",
+  288:"Em sociedade organizada para explorar atividade econômica, o Estado detém controle acionário, mas há participação de particulares no capital. A descrição é compatível com:",
+  289:"Setor interno de ministério celebra contrato em nome da União e é questionado sobre possuir patrimônio e capacidade processual próprios. O setor é órgão público e, por isso:",
+  290:"Uma secretaria cria departamentos internos e distribui entre eles competências antes concentradas no gabinete central, sem instituir nova pessoa jurídica. O fenômeno é:",
+  291:"Servidor recebe vantagem patrimonial de particular para facilitar decisão que integra suas atribuições. Para fins de improbidade, a conduta deve ser analisada como possível:",
+  292:"Em auditoria, constata-se pagamento indevido em contrato público, mas o processo precisa identificar a extensão concreta do prejuízo e os elementos previstos em lei. Para caracterizar dano ao erário:",
+  293:"Um ato administrativo é anulado por vício formal, sem prova de desonestidade, dano ou elemento subjetivo exigido pela Lei de Improbidade. Nessa hipótese:",
+  294:"Após investigação, a Administração pretende aplicar diretamente sanções próprias da Lei nº 8.429/1992 contra agente apontado como ímprobo. A pretensão desconsidera que:",
+  295:"Em ação de improbidade, o julgador reconhece conduta prevista em lei e passa a definir as consequências aplicáveis. A dosimetria deve levar em conta:",
+  296:"Órgão público prepara plano anual, mapeia riscos de fraude, define responsáveis e divulga resultados de execução. O conjunto de práticas expressa:",
+  297:"Entidade publica dados sobre sua execução orçamentária, mas preserva documento coberto por sigilo legal específico. A conduta é compatível com o princípio de que:",
+  298:"Gestor recebe pedido para destinar recurso público a finalidade estranha à competência do órgão e sem interesse coletivo demonstrado. A decisão válida precisa:",
+  299:"Conselho diretor aprova medida com impacto relevante e registra os dados, as razões e a norma que justificam a escolha. A motivação qualificada:",
+  300:"Servidor participa de decisão que pode beneficiar empresa de familiar e comunica a situação antes de atuar no processo. A providência se relaciona ao dever de:"
+};
+questionBank.questions=questionBank.questions.map(question=>question.subjectId==="direito-administrativo"&&cenariosAdministrativoLoteTres[question.number]?{...question,stem:cenariosAdministrativoLoteTres[question.number],explanation:`${question.explanation} O enunciado exige distinguir a consequência jurídica adequada das soluções apenas aparentemente convenientes para a Administração.`}:question);
+questionBank.review.direitoAdministrativoReworkLoteTres=Object.keys(cenariosAdministrativoLoteTres).map(Number);
+
 // Mantém a numeração sequencial também na ordem física do banco, inclusive quando
 // lotes de uma mesma matéria foram publicados em momentos diferentes.
 const ordemMaterias=new Map(questionBank.subjects.map((subject,index)=>[subject.id,index]));

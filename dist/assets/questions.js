@@ -21182,6 +21182,62 @@ const cenariosAdministrativoLoteTres={
 questionBank.questions=questionBank.questions.map(question=>question.subjectId==="direito-administrativo"&&cenariosAdministrativoLoteTres[question.number]?{...question,stem:cenariosAdministrativoLoteTres[question.number],explanation:`${question.explanation} O enunciado exige distinguir a consequência jurídica adequada das soluções apenas aparentemente convenientes para a Administração.`}:question);
 questionBank.review.direitoAdministrativoReworkLoteTres=Object.keys(cenariosAdministrativoLoteTres).map(Number);
 
+// Reforma editorial de Língua Portuguesa — lote 1: interpretação, sintaxe, coesão e norma-padrão em contexto.
+const cenariosPortuguesReworkLoteUm={
+  1:"Leia o excerto de uma nota técnica dirigida a usuários de um serviço público:\n\n‘A precisão da orientação não basta quando o destinatário não consegue relacioná-la à sua própria situação. Por isso, explicar pressupõe verificar a compreensão e ajustar a linguagem, sem simplificar indevidamente a informação.’\n\nA ideia central do texto é:",
+  2:"Um relatório de estoque informa que o gasto mensal permaneceu dentro da previsão orçamentária. No mesmo período, medicamentos essenciais faltaram e diversos itens venceram sem utilização. A partir dessas informações, é possível inferir que:",
+  3:"Em comunicado interno, lê-se: ‘O setor finalmente retomou a atualização mensal dos registros.’ O emprego de ‘finalmente’ permite pressupor que:",
+  4:"Leia o trecho de relatório:\n\n‘O aumento da demanda não foi atribuído a um único fator. A equipe mencionou o crescimento do público atendido, a sazonalidade de doenças e a alteração de protocolo como fatores que atuaram conjuntamente.’\n\nConforme o texto, o relatório:",
+  5:"Leia:\n\n‘Comparações de produtividade exigem cautela. Unidades que atendem casos mais complexos podem registrar menos procedimentos e, ainda assim, produzir resultados mais relevantes. Assim, números isolados não esgotam a avaliação do serviço.’\n\nA tese e o argumento que a sustenta são, respectivamente:",
+  6:"Em relatório de execução, registra-se que ‘a implantação do sistema foi concluída, mas ainda há gargalos na comunicação entre as unidades’. Nesse contexto, ‘gargalos’ designa:",
+  7:"Leia:\n\n‘Após treinamento, cresceram as notificações de eventos adversos. O dado, isoladamente, não autoriza concluir que a segurança piorou, pois a equipe pode ter passado a reconhecer e registrar ocorrências antes subnotificadas.’\n\nA segunda frase do trecho:",
+  8:"Um manual orienta: ‘Antes de iniciar o procedimento, confira identificação, concentração, via de administração e prazo de validade. Havendo divergência, interrompa a atividade e comunique a chefia.’ Predomina no trecho a finalidade de:",
+  9:"Depois de aguardar três horas por atendimento agendado, um usuário afirma: ‘A pontualidade de vocês é realmente admirável.’ O efeito de sentido decorre:",
+  10:"Leia o período de um parecer: ‘A comissão analisou as propostas dos fornecedores e encaminhou as que satisfaziam os requisitos técnicos à etapa seguinte.’ O pronome ‘as’ retoma:",
+  11:"Complete o enunciado de modo a preservar a relação lógica: ‘O medicamento constava como disponível no almoxarifado; ________, não pôde ser dispensado porque o lote estava bloqueado para investigação.’",
+  12:"Em um comunicado institucional, qual enunciado mantém coerência entre os fatos apresentados e a conclusão formulada?",
+  13:"Campanha de uso racional de medicamentos emprega a frase ‘No meio do caminho tinha uma interação’, retomando e transformando a estrutura de verso conhecido de Carlos Drummond de Andrade. O recurso constitui:",
+  14:"No enunciado ‘Os resultados provavelmente decorrem da combinação de fatores’, o advérbio destacado indica que o enunciador:",
+  15:"Em revisão de relatório, assinale a alternativa em que a identificação do sujeito da oração está correta:",
+  16:"Na frase de um parecer, ‘A comissão considerou inadequada a proposta’, os termos ‘a proposta’ e ‘inadequada’ exercem, respectivamente, as funções de:",
+  17:"Em qual alternativa o termo destacado completa o sentido de um nome, e não apenas o caracteriza?",
+  18:"Um relatório informa que ‘a equipe registrou os eventos adversos’. A conversão correta dessa oração para a voz passiva analítica é:",
+  19:"No período ‘Embora o estoque estivesse regular, a equipe manteve o monitoramento diário’, a oração iniciada por ‘Embora’ estabelece relação de:",
+  20:"Compare as versões de um comunicado:\n\nI. Os servidores que participaram do treinamento receberão certificado.\nII. Os servidores, que participaram do treinamento, receberão certificado.\n\nA interpretação adequada da diferença de pontuação é:",
+  21:"No período ‘A equipe revisou o protocolo, mas não alterou o fluxo de atendimento’, a conjunção ‘mas’ introduz ideia de:",
+  22:"Para registrar em ata um fato hipotético ocorrido no passado, assinale a alternativa cuja correlação entre tempos e modos verbais segue a norma-padrão:",
+  23:"Em qual alternativa o pronome relativo foi empregado com a regência exigida pelo verbo da oração?",
+  24:"No enunciado ‘Como o sistema estava indisponível, os registros foram feitos manualmente’, a palavra ‘Como’ introduz ideia de:",
+  25:"No trecho ‘A equipe respondeu bastante rapidamente às solicitações’, os termos ‘bastante’ e ‘rapidamente’ são, respectivamente:",
+  26:"Em nota de divulgação, lê-se: ‘Publicaram-se os resultados definitivos.’ A classificação correta do termo ‘se’ é:",
+  27:"No período ‘É necessário que os dados sejam conferidos’, a palavra ‘que’ exerce a função de:",
+  28:"Em qual alternativa a forma ‘a’ funciona como pronome demonstrativo, e não como artigo?",
+  29:"Em um despacho, a concordância deve obedecer à norma-padrão. Assinale a alternativa correta:",
+  30:"Para redigir comunicado formal sem desvio de concordância verbal, assinale a frase correta:",
+  31:"Em comunicado com duas ações sucessivas, assinale a alternativa em que o ponto final separa adequadamente períodos autônomos:",
+  32:"Em manifestação técnica, qual frase emprega o verbo com a regência prescrita pela norma-padrão?",
+  33:"Assinale a alternativa em que a relação entre o nome e seu complemento está construída de acordo com a regência normativa:",
+  34:"Na redação de ofício, assinale a alternativa que apresenta colocação pronominal adequada à norma-padrão:",
+  35:"Em registro formal sem palavra atrativa, a forma com mesóclise adequada é:",
+  36:"Assinale a alternativa cuja pontuação isola corretamente informação intercalada sem comprometer a estrutura sintática do período:",
+  37:"Compare:\n\nI. Os usuários que apresentaram receita foram atendidos.\nII. Os usuários, que apresentaram receita, foram atendidos.\n\nNo segundo enunciado, as vírgulas:",
+  38:"Em qual alternativa os dois-pontos introduzem adequadamente explicação ou enumeração esperada pelo primeiro segmento?",
+  39:"Na organização de uma enumeração complexa em ata, assinale a alternativa em que o ponto e vírgula é empregado adequadamente:",
+  40:"Assinale a alternativa em que a informação explicativa intercalada está corretamente isolada por vírgulas:",
+  41:"Em qual frase a vírgula assinala corretamente o deslocamento de adjunto adverbial para o início do período?",
+  42:"Em relatório de ocorrência, qual frase apresenta ambiguidade estrutural que pode dificultar a identificação do referente?",
+  43:"Complete corretamente o trecho: ‘Após examinar o processo, a autoridade decidiu ________ a decisão anterior e determinou a ________ do documento pelo setor responsável.’",
+  44:"No enunciado ‘A unidade apresentou uma queda no consumo de antibióticos’, o emprego da palavra ‘queda’ ilustra:",
+  45:"Considerando ‘comprimido’, ‘cápsula’ e ‘solução oral’, a expressão ‘forma farmacêutica’ constitui um:",
+  46:"Em qual alternativa o acento grave indicativo de crase foi empregado de acordo com a norma-padrão?",
+  47:"Em aviso de urgência, assinale a frase que emprega corretamente crase em locução adverbial:",
+  48:"Assinale a alternativa em que a crase diante de pronome relativo está corretamente justificada pela regência:",
+  49:"Em qual alternativa o emprego da crase é facultativo, sem alteração relevante de sentido?",
+  50:"Assinale a alternativa em que todas as palavras estão grafadas de acordo com a ortografia oficial vigente:"
+};
+questionBank.questions=questionBank.questions.map(question=>question.subjectId==="portugues"&&cenariosPortuguesReworkLoteUm[question.number]?{...question,stem:cenariosPortuguesReworkLoteUm[question.number],explanation:`${question.explanation} A análise deve considerar a construção efetiva do enunciado e a norma-padrão, sem converter preferência de estilo em regra gramatical.`}:question);
+questionBank.review.portuguesReworkLoteUm=Object.keys(cenariosPortuguesReworkLoteUm).map(Number);
+
 // Mantém a numeração sequencial também na ordem física do banco, inclusive quando
 // lotes de uma mesma matéria foram publicados em momentos diferentes.
 const ordemMaterias=new Map(questionBank.subjects.map((subject,index)=>[subject.id,index]));

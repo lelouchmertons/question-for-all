@@ -19018,6 +19018,22 @@ const saneamentoMatematicaLoteTres={
 questionBank.questions=questionBank.questions.map(question=>{const item=question.subjectId==="matematica"?saneamentoMatematicaLoteTres[question.number]:null;return item?{...question,topic:item.t,area:item.r,stem:item.s,options:question.options.map((option,index)=>({...option,text:item.o[index]})),answer:item.a,explanation:item.e}:question;});
 questionBank.review.saneamentoMatematicaLoteTres=Object.keys(saneamentoMatematicaLoteTres).map(Number);
 
+// Saneamento editorial de Matemática — lote 4A: potências e logaritmos em contexto.
+const saneamentoMatematicaLoteQuatroA={
+301:{t:"Potenciação",r:"Álgebra, potências e logaritmos",s:"Uma cultura de células dobra a cada ciclo. Partindo de 125 células, quantas haverá após três ciclos completos?",o:["500.","750.","1.000.","1.125.","1.250."],a:"C",e:"Dobrar três vezes equivale a multiplicar por 2³=8. Assim, 125×8=1.000 células."},
+302:{t:"Equação exponencial",r:"Álgebra, potências e logaritmos",s:"Uma população inicial de 200 unidades cresce segundo P=200·3^t. Para atingir 5.400 unidades, qual deve ser o valor de t?",o:["2.","2,5.","3,5.","4.","3."],a:"E",e:"5.400/200=27, e 27=3³. Portanto, t=3."},
+303:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Se log₁₀(N)=4, qual é a ordem de grandeza de N?",o:["10³.","10⁴.","10⁵.","4.000.","40.000."],a:"B",e:"Por definição, log₁₀(N)=4 significa que N=10⁴, isto é, 10.000."},
+304:{t:"Propriedades das potências",r:"Álgebra, potências e logaritmos",s:"Qual é o valor de 5³·5²/5⁴?",o:["5.","1.","25.","125.","1/5."],a:"A",e:"Na multiplicação, somam-se expoentes; na divisão, subtraem-se: 5^(3+2−4)=5¹=5."},
+305:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Qual valor de x satisfaz log₂(x)=5?",o:["10.","16.","25.","32.","64."],a:"D",e:"log₂(x)=5 equivale a x=2⁵=32."},
+306:{t:"Notação científica",r:"Álgebra, potências e logaritmos",s:"O número 0,000072 pode ser escrito em notação científica como:",o:["7,2×10⁻⁴.","72×10⁻⁶.","7,2×10⁻⁵.","0,72×10⁻⁵.","7,2×10⁵."],a:"C",e:"Deslocando a vírgula cinco casas para a direita, obtém-se 7,2; portanto, 0,000072=7,2×10⁻⁵."},
+307:{t:"Equação exponencial",r:"Álgebra, potências e logaritmos",s:"Em uma depreciação exponencial, V=6.400·(1/2)^t. Após quantos períodos o valor será R$ 800,00?",o:["1.","2.","4.","5.","3."],a:"E",e:"800/6.400=1/8=(1/2)³. Logo, t=3 períodos."},
+308:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Se log₃(81)=x, então x é igual a:",o:["3.","4.","5.","9.","27."],a:"B",e:"Como 81=3⁴, temos log₃(81)=4."},
+309:{t:"Propriedades das potências",r:"Álgebra, potências e logaritmos",s:"O valor de (2³)⁴ é:",o:["4.096.","256.","1.024.","64.","512."],a:"A",e:"Na potência de potência, multiplicam-se os expoentes: (2³)⁴=2¹²=4.096."},
+310:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Para qual valor positivo de x vale log₁₀(x)=−2?",o:["0,1.","0,02.","1.","0,01.","100."],a:"D",e:"log₁₀(x)=−2 equivale a x=10⁻²=0,01."}
+};
+questionBank.questions=questionBank.questions.map(question=>{const item=question.subjectId==="matematica"?saneamentoMatematicaLoteQuatroA[question.number]:null;return item?{...question,topic:item.t,area:item.r,stem:item.s,options:question.options.map((option,index)=>({...option,text:item.o[index]})),answer:item.a,explanation:item.e}:question;});
+questionBank.review.saneamentoMatematicaLoteQuatroA=Object.keys(saneamentoMatematicaLoteQuatroA).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

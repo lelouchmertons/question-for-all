@@ -19034,6 +19034,23 @@ const saneamentoMatematicaLoteQuatroA={
 questionBank.questions=questionBank.questions.map(question=>{const item=question.subjectId==="matematica"?saneamentoMatematicaLoteQuatroA[question.number]:null;return item?{...question,topic:item.t,area:item.r,stem:item.s,options:question.options.map((option,index)=>({...option,text:item.o[index]})),answer:item.a,explanation:item.e}:question;});
 questionBank.review.saneamentoMatematicaLoteQuatroA=Object.keys(saneamentoMatematicaLoteQuatroA).map(Number);
 
+const saneamentoMatematicaLoteQuatroB={
+311:{t:"Equação exponencial",r:"Álgebra, potências e logaritmos",s:"Qual valor de x satisfaz 4^(x−1)=64?",o:["2.","3.","4.","5.","6."],a:"C",e:"64=4³; portanto x−1=3 e x=4."},
+312:{t:"Crescimento exponencial",r:"Álgebra, potências e logaritmos",s:"Uma quantidade triplica a cada período. Partindo de 30 unidades, quantas haverá após dois períodos?",o:["90.","180.","210.","240.","270."],a:"E",e:"Triplicar duas vezes equivale a multiplicar por 3²=9. Assim, 30×9=270."},
+313:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Se log₅(x)=3, então x é igual a:",o:["25.","125.","15.","625.","75."],a:"B",e:"A igualdade equivale a x=5³=125."},
+314:{t:"Propriedades das potências",r:"Álgebra, potências e logaritmos",s:"O valor de 3⁵/3² é:",o:["27.","9.","81.","243.","1/27."],a:"A",e:"Na divisão de potências de mesma base, subtraem-se expoentes: 3^(5−2)=3³=27."},
+315:{t:"Notação científica",r:"Álgebra, potências e logaritmos",s:"Qual é a escrita decimal de 6,4×10³?",o:["640.","64.000.","0,0064.","6.400.","640.000."],a:"D",e:"Multiplicar por 10³ desloca a vírgula três casas para a direita: 6,4×1.000=6.400."},
+316:{t:"Equação exponencial",r:"Álgebra, potências e logaritmos",s:"A solução de 9^x=27 é:",o:["1/3.","1.","3/2.","2.","3."],a:"C",e:"Escrevendo as bases em função de 3: (3²)^x=3³; então 2x=3 e x=3/2."},
+317:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Qual é o valor de log₂(1/8)?",o:["−1.","−2.","−4.","3.","−3."],a:"E",e:"Como 1/8=2⁻³, log₂(1/8)=−3."},
+318:{t:"Potenciação",r:"Álgebra, potências e logaritmos",s:"O valor de 2⁶−2⁴ é:",o:["32.","48.","64.","16.","80."],a:"B",e:"2⁶=64 e 2⁴=16. Logo, 64−16=48."},
+319:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Se log₁₀(x)=2,5, então x está entre:",o:["100 e 1.000.","1 e 10.","10 e 100.","1.000 e 10.000.","0 e 1."],a:"A",e:"10²<10^2,5<10³; portanto x está entre 100 e 1.000."},
+320:{t:"Equação exponencial",r:"Álgebra, potências e logaritmos",s:"A solução de 2^(x+1)=16 é:",o:["2.","4.","5.","3.","6."],a:"D",e:"16=2⁴. Assim, x+1=4 e x=3."},
+321:{t:"Notação científica",r:"Álgebra, potências e logaritmos",s:"Qual número corresponde a 3,2×10⁻³?",o:["0,032.","0,00032.","0,0032.","3.200.","32.000."],a:"C",e:"10⁻³ desloca a vírgula três casas para a esquerda: 0,0032."},
+322:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Se log₄(x)=2, qual é x?",o:["4.","8.","12.","32.","16."],a:"E",e:"A definição fornece x=4²=16."}
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==="matematica"?saneamentoMatematicaLoteQuatroB[q.number]:null;return i?{...q,topic:i.t,area:i.r,stem:i.s,options:q.options.map((o,n)=>({...o,text:i.o[n]})),answer:i.a,explanation:i.e}:q;});
+questionBank.review.saneamentoMatematicaLoteQuatroB=Object.keys(saneamentoMatematicaLoteQuatroB).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

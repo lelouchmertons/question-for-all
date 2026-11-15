@@ -19051,6 +19051,23 @@ const saneamentoMatematicaLoteQuatroB={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==="matematica"?saneamentoMatematicaLoteQuatroB[q.number]:null;return i?{...q,topic:i.t,area:i.r,stem:i.s,options:q.options.map((o,n)=>({...o,text:i.o[n]})),answer:i.a,explanation:i.e}:q;});
 questionBank.review.saneamentoMatematicaLoteQuatroB=Object.keys(saneamentoMatematicaLoteQuatroB).map(Number);
 
+const saneamentoMatematicaLoteQuatroC={
+323:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Qual é o valor de log₉(3)?",o:["1/4.","1/2.","2.","3.","9."],a:"B",e:"Como 9^(1/2)=3, conclui-se que log₉(3)=1/2."},
+324:{t:"Potenciação",r:"Álgebra, potências e logaritmos",s:"Qual expressão é igual a 1/27?",o:["3⁻³.","3³.","−3³.","27³.","1/3."],a:"A",e:"Expoente negativo indica inverso: 3⁻³=1/3³=1/27."},
+325:{t:"Equação exponencial",r:"Álgebra, potências e logaritmos",s:"A solução de 5^(2x)=125 é:",o:["1.","2.","3.","3/2.","5."],a:"D",e:"125=5³. Assim, 2x=3 e x=3/2."},
+326:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Se log₁₀(A)=6 e log₁₀(B)=2, então log₁₀(A/B) é:",o:["2.","3.","4.","6.","8."],a:"C",e:"Pela propriedade do quociente, log(A/B)=log A−log B=6−2=4."},
+327:{t:"Notação científica",r:"Álgebra, potências e logaritmos",s:"A soma 2,5×10⁶ + 3,0×10⁶ é igual a:",o:["5,5×10⁵.","5,0×10⁶.","3,25×10⁶.","25,5×10⁶.","5,5×10⁶."],a:"E",e:"As parcelas têm a mesma potência de dez: (2,5+3,0)×10⁶=5,5×10⁶."},
+328:{t:"Propriedades das potências",r:"Álgebra, potências e logaritmos",s:"O valor de (10⁻²)³ é:",o:["10⁻⁵.","10⁻⁶.","10⁶.","10⁻¹.","10²."],a:"B",e:"Na potência de potência, multiplicam-se os expoentes: (10⁻²)³=10⁻⁶."},
+329:{t:"Equação exponencial",r:"Álgebra, potências e logaritmos",s:"Uma substância reduz-se à metade a cada hora. Se começa com 320 mg, qual massa resta após cinco horas?",o:["10 mg.","20 mg.","40 mg.","80 mg.","160 mg."],a:"A",e:"Após cinco meias-vidas, a massa é 320×(1/2)⁵=320/32=10 mg."},
+330:{t:"Logaritmos",r:"Álgebra, potências e logaritmos",s:"Qual é o domínio real da função f(x)=log₂(x−4)?",o:["x≥4.","x≤4.","x≠4.","x>4.","todos os reais."],a:"D",e:"O argumento do logaritmo deve ser positivo: x−4>0. Portanto, x>4."},
+331:{t:"Geometria analítica",r:"Geometria analítica",s:"Em qual quadrante está o ponto (−5,−2)?",o:["I.","II.","III.","IV.","sobre um eixo."],a:"C",e:"Coordenadas x e y negativas caracterizam o terceiro quadrante."},
+332:{t:"Geometria analítica",r:"Geometria analítica",s:"Qual é a inclinação da reta que passa por (0,1) e (2,7)?",o:["2.","2,5.","4.","5.","3."],a:"E",e:"O coeficiente angular é (7−1)/(2−0)=6/2=3."},
+333:{t:"Circunferência",r:"Geometria analítica",s:"A circunferência (x−3)²+(y+1)²=16 tem centro e raio, respectivamente:",o:["(3,−1) e 4.","(−3,1) e 4.","(3,1) e 16.","(−3,−1) e 16.","(3,−1) e 16."],a:"A",e:"Na forma (x−a)²+(y−b)²=r², o centro é (a,b). Logo, centro (3,−1) e raio √16=4."},
+334:{t:"Equação da reta",r:"Geometria analítica",s:"A reta que passa por (1,3) e tem coeficiente angular 2 possui equação:",o:["y=2x+1.","y=x+2.","y=2x−1.","y=−2x+1.","y=2x+2."],a:"A",e:"Pela forma ponto-inclinação, y−3=2(x−1). Desenvolvendo, y=2x+1."}
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==="matematica"?saneamentoMatematicaLoteQuatroC[q.number]:null;return i?{...q,topic:i.t,area:i.r,stem:i.s,options:q.options.map((o,n)=>({...o,text:i.o[n]})),answer:i.a,explanation:i.e}:q;});
+questionBank.review.saneamentoMatematicaLoteQuatroC=Object.keys(saneamentoMatematicaLoteQuatroC).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

@@ -19471,6 +19471,61 @@ const segurancaFarmacoterapeuticaLote={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?segurancaFarmacoterapeuticaLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.segurancaFarmacoterapeuticaLote=Object.keys(segurancaFarmacoterapeuticaLote).map(Number);
 
+const errosEfarmacocineticaLote={
+435:["Por que um quase erro deve ser analisado em segurança medicamentosa?","Ele revela falha que foi interceptada antes de causar dano e permite fortalecer barreiras sem esperar evento grave."],
+436:["Qual é o foco mais produtivo da análise de um erro de medicação?","Investigar condições do sistema, barreiras, comunicação e processo que contribuíram para o evento é mais eficaz que limitar-se à culpa individual."],
+437:["Quando corrigir apenas a pessoa que errou é insuficiente?","Quando o processo continua favorecendo o mesmo erro por desenho, sobrecarga, informação ambígua ou ausência de barreiras."],
+438:["Como a notificação de incidente deve ser compreendida por uma cultura de segurança?","Como fonte de aprendizado e melhoria, com análise justa e proteção contra resposta meramente punitiva a falhas não intencionais."],
+439:["Após um incidente de dispensação, o que caracteriza ação corretiva consistente?","Corrigir causa ou fator contribuinte, definir responsável, acompanhar implementação e verificar se o risco realmente diminuiu."],
+440:["Como deve ser construída a lista de medicamentos em transição de cuidado?","Com múltiplas fontes confiáveis, confirmação com usuário/cuidador quando possível e registro de nome, dose, via, frequência e indicação pertinente."],
+441:["Uma discrepância intencional identificada na conciliação precisa de qual tratamento?","Deve estar clinicamente justificada, comunicada e documentada para que profissionais e usuário compreendam a mudança no tratamento."],
+442:["O que deve ocorrer diante de discrepância não intencional na conciliação?","Ela deve ser esclarecida e corrigida de forma oportuna, pois pode representar omissão, duplicidade, dose errada ou interação evitável."],
+443:["Qual estratégia aumenta a confiabilidade da lista de medicamentos de um usuário?","Combinar entrevista estruturada, prescrições, registros de dispensação e embalagens/listas disponíveis é mais seguro que confiar em fonte única."],
+444:["Em quais momentos a conciliação medicamentosa é especialmente importante?","Em admissões, altas, transferências e mudanças relevantes de tratamento, quando há maior risco de discrepâncias não intencionais."],
+445:["Como deve ser tratada uma suspeita de reação adversa?","Deve ser avaliada, manejada conforme gravidade e notificada nos sistemas cabíveis quando aplicável, sem exigir certeza absoluta de causalidade."],
+446:["O que a relação temporal entre evento e medicamento permite concluir?","Ela pode apoiar suspeita, mas isoladamente não prova causalidade; dose, reexposição, outras causas e características clínicas precisam ser considerados."],
+447:["O que pode caracterizar uma queixa técnica de medicamento?","Desvio de qualidade como alteração de embalagem, rotulagem, aspecto, contaminação suspeita ou problema de desempenho deve ser avaliado e comunicado."],
+448:["Como notificações de eventos adversos contribuem para farmacovigilância?","Elas alimentam detecção de sinais e avaliação de segurança, permitindo recomendações e medidas de prevenção em escala coletiva."],
+449:["Ao orientar usuário sobre possível evento adverso, o que não pode faltar?","Sinais de alerta, medidas imediatas adequadas e indicação clara de onde procurar cuidado, evitando banalizar sintomas importantes."],
+450:["São encontrados comprimidos semelhantes em caixas trocadas. Qual é a conduta imediata?","Interromper uso e dispensação do material envolvido, segregar, identificar alcance da ocorrência e acionar o fluxo de investigação."],
+451:["Após troca de medicamento sem dano conhecido ao usuário, qual é a melhor resposta do serviço?","Comunicar conforme necessidade, analisar o incidente e redesenhar barreiras; ausência de dano não elimina a necessidade de aprendizagem."],
+452:["Uma unidade recebe produto com concentração diferente da habitual. O que deve preceder sua disponibilização?","Avaliar equivalência, ajustar cadastros/alertas/treinamento e garantir que a diferença seja claramente reconhecida no processo de uso."],
+453:["O sistema fica indisponível durante a dispensação. Qual medida preserva segurança?","Usar procedimento de contingência validado, com registro e conferências reforçadas, sem improvisar fluxo que elimine rastreabilidade."],
+454:["De que depende, principalmente, a segurança medicamentosa?","Depende de sistema com múltiplas barreiras: pessoas treinadas, processos claros, tecnologia adequada, comunicação e aprendizado contínuo."],
+455:["Em farmacocinética, o que representa absorção?","É a passagem do fármaco do local de administração para a circulação sistêmica, etapa que pode alterar início e intensidade do efeito."],
+456:["Como a absorção ajuda a explicar resposta diferente em dois usuários do mesmo medicamento oral?","Alimentos, formulação, motilidade, interações e condições gastrointestinais podem modificar a quantidade ou velocidade de entrada na circulação."],
+457:["Qual afirmação sobre absorção é tecnicamente adequada?","A via de administração e propriedades do fármaco influenciam absorção; não se pode presumir que todas as formas e vias produzam exposição igual."],
+458:["Por que absorção merece atenção no acompanhamento farmacoterapêutico?","Alterações na via, formulação, uso com alimentos ou condição clínica podem explicar falta de resposta ou efeito inesperado."],
+459:["Que conclusão é compatível com o conceito de absorção?","Menor absorção pode reduzir exposição sistêmica, mas a interpretação clínica depende também de distribuição, metabolismo, eliminação e adesão."],
+460:["O que significa biodisponibilidade?","É a extensão e velocidade com que o princípio ativo alcança a circulação sistêmica disponível para produzir efeito, conforme a via e formulação."],
+461:["Como biodisponibilidade pode explicar diferenças entre apresentações de um medicamento?","Formulação, via, alimento, primeira passagem e integridade da forma farmacêutica podem modificar a exposição sistêmica."],
+462:["Qual interpretação sobre biodisponibilidade é correta?","Ela não equivale automaticamente a eficácia clínica; é parâmetro de exposição que deve ser relacionado à farmacodinâmica e ao contexto do paciente."],
+463:["Por que a biodisponibilidade é relevante no acompanhamento clínico?","Mudanças de apresentação, técnica de uso ou condições do paciente podem alterar exposição e exigir avaliação de eficácia ou toxicidade."],
+464:["Que afirmação é adequada sobre biodisponibilidade?","Duas formulações podem ter o mesmo princípio ativo e ainda demandar avaliação de equivalência antes de serem tratadas como intercambiáveis."],
+465:["O que é efeito de primeira passagem?","É o metabolismo pré-sistêmico, principalmente hepático e intestinal, que pode reduzir a fração de fármaco oral que alcança a circulação sistêmica."],
+466:["Como o efeito de primeira passagem pode orientar raciocínio clínico?","Ajuda a compreender por que via oral e vias que o evitam podem produzir exposições diferentes para um mesmo fármaco."],
+467:["Qual afirmação sobre primeira passagem é correta?","Não é sinônimo de eliminação total do fármaco; seu impacto depende do medicamento, da via e da atividade metabólica envolvida."],
+468:["Por que primeira passagem importa no seguimento farmacoterapêutico?","Interações e alterações hepáticas/intestinais podem modificar exposição de fármacos sujeitos a metabolismo pré-sistêmico relevante."],
+469:["Que conclusão é compatível com primeira passagem?","A escolha da via pode alterar biodisponibilidade e início de efeito, portanto não deve ser substituída sem avaliação clínica e farmacêutica."],
+470:["Em farmacocinética, o que descreve distribuição?","É o processo pelo qual o fármaco deixa a circulação e alcança tecidos e compartimentos corporais, influenciado por perfusão e propriedades físico-químicas."],
+471:["Como distribuição pode explicar efeito de um fármaco em paciente edemaciado?","Alterações de volume e composição corporal podem modificar concentração e exposição em compartimentos, exigindo interpretação clínica cuidadosa."],
+472:["Qual interpretação sobre distribuição é correta?","A concentração plasmática não traduz necessariamente de modo simples a concentração em todos os tecidos, pois a distribuição é dinâmica."],
+473:["Por que distribuição merece atenção no acompanhamento?","Idade, gestação, edema, obesidade e doença crítica podem alterar compartimentos e modificar risco de subexposição ou toxicidade."],
+474:["Que afirmação é tecnicamente adequada sobre distribuição?","Ligação a proteínas, perfusão tecidual, lipossolubilidade e barreiras biológicas influenciam a distribuição dos fármacos."],
+475:["O que representa ligação proteica de um fármaco?","É a associação reversível a proteínas plasmáticas; a fração livre costuma ser a disponível para atravessar membranas e exercer efeito."],
+476:["Por que hipoalbuminemia pode ter relevância farmacoterapêutica?","Pode alterar a fração livre de fármacos muito ligados a proteínas, mas a consequência clínica depende de distribuição, eliminação e margem terapêutica."],
+477:["Qual afirmação sobre ligação proteica é correta?","Deslocamento de ligação não deve ser interpretado isoladamente como toxicidade inevitável; é necessário considerar compensações farmacocinéticas e o quadro clínico."],
+478:["Quando a ligação proteica merece atenção especial?","Em fármacos muito ligados, margem terapêutica estreita, alterações importantes de albumina ou interações, sempre correlacionando com dados clínicos."],
+479:["Que conclusão é adequada sobre fração livre?","A fração livre é farmacologicamente relevante, mas sua relação com efeito não dispensa avaliação de concentração, eliminação e resposta do paciente."],
+480:["O que é metabolismo de fármacos?","É a biotransformação enzimática que pode gerar metabólitos ativos/inativos e facilitar eliminação, principalmente no fígado, mas não exclusivamente."],
+481:["Como o metabolismo ajuda a explicar interação medicamentosa?","Indução ou inibição enzimática pode diminuir ou aumentar exposição de fármacos, com repercussão em eficácia e toxicidade."],
+482:["Qual interpretação sobre metabolismo é correta?","Nem todo metabólito é inativo e nem toda alteração hepática exige a mesma conduta; medicamento e função clínica devem ser avaliados individualmente."],
+483:["Por que metabolismo merece atenção no acompanhamento farmacoterapêutico?","Doença hepática, idade, genética e medicamentos concomitantes podem modificar depuração e exigir observação de resposta ou ajuste conforme orientação técnica."],
+484:["Que afirmação é adequada sobre metabolismo?","Alterações metabólicas podem modificar concentração e efeito, mas decisões de dose devem se apoiar em recomendações específicas e monitoramento clínico."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?errosEfarmacocineticaLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.errosEfarmacocineticaLote=Object.keys(errosEfarmacocineticaLote).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

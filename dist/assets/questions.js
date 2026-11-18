@@ -19646,6 +19646,41 @@ const farmacocineticaFarmacodinamicaAplicadaLote={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?farmacocineticaFarmacodinamicaAplicadaLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.farmacocineticaFarmacodinamicaAplicadaLote=Object.keys(farmacocineticaFarmacodinamicaAplicadaLote).map(Number);
 
+const farmacotecnicaAplicadaLoteUm={
+585:["Usuário pergunta se pode partir comprimido de liberação modificada para facilitar deglutição. Qual orientação é segura?","A tecnologia de liberação deve ser verificada; partir sem avaliação pode alterar a dose liberada e o perfil de exposição."],
+586:["Na administração de suspensão oral, qual etapa reduz risco de dose incorreta?","A suspensão deve ser homogeneizada conforme orientação antes de medir a dose, pois partículas podem sedimentar."],
+587:["Por que preparo de forma estéril exige controles específicos?","A via de administração e o risco ao paciente exigem condições assépticas e controle compatíveis com esterilidade."],
+588:["O que o teste de dissolução avalia em um comprimido?","Avalia a liberação do fármaco a partir da forma farmacêutica em condições padronizadas; não é simples teste visual."],
+589:["Uma emulsão apresenta separação de fases antes da dispensação. Qual conduta é adequada?","Separação pode indicar instabilidade; o produto deve ser avaliado antes do uso, e não apenas agitado e liberado automaticamente."],
+590:["Qual evidência se busca com validação de processo em farmacotécnica?","Busca-se demonstrar que o processo, sob condições definidas, produz resultados consistentes e conformes."],
+591:["Como a embalagem primária pode influenciar a estabilidade de um medicamento?","Ela protege diretamente o produto de fatores como umidade, luz, oxigênio e contaminação, conforme a formulação."],
+592:["Qual é o papel possível de um excipiente em uma formulação?","Pode modificar propriedades tecnológicas, como dissolução ou estabilidade, embora não seja o princípio ativo."],
+593:["Em que se baseia a definição do prazo de validade de um medicamento?","Em estudos de estabilidade sob condições definidas, que sustentam a manutenção das especificações até o prazo estabelecido."],
+594:["Um teste de qualidade ficou fora de especificação antes da liberação. O que deve ocorrer?","O desvio deve ser registrado, investigado e tratado antes de liberar o lote, sem ajuste documental para ocultar o resultado."],
+595:["Qual é a finalidade de comparar um produto às especificações estabelecidas?","Verificar se atributos críticos de qualidade estão conformes para liberação e uso seguro."],
+596:["Por que o pH é parâmetro relevante em algumas formulações?","Pode influenciar solubilidade, estabilidade, compatibilidade e aceitabilidade, devendo atender à especificação pertinente."],
+597:["Como se classifica uma pomada destinada à aplicação cutânea?","É forma farmacêutica semissólida, geralmente de uso tópico, cuja base influencia liberação e aceitabilidade."],
+598:["Qual propriedade diferencia solução farmacêutica de suspensão?","Solução é sistema homogêneo com soluto dissolvido; suspensão contém partículas dispersas que podem sedimentar."],
+599:["Por que uma suspensão pode exigir agitação antes do uso?","Partículas dispersas podem sedimentar; homogeneizar contribui para que a dose medida reflita a concentração pretendida."],
+600:["Como a forma farmacêutica pode influenciar biodisponibilidade?","Dissolução, desintegração, liberação e via podem alterar a exposição sistêmica do fármaco."],
+601:["Um medicamento é classificado como fotossensível. Como deve ser armazenado?","Deve ser protegido da luz conforme especificação, pois exposição inadequada pode comprometer estabilidade."],
+602:["Qual medida previne contaminação cruzada em área de preparo?","Segregação, limpeza validada, identificação e controle de fluxo reduzem transferência indevida entre produtos."],
+603:["Que informações de rotulagem são essenciais para rastreabilidade de uma preparação?","Produto, concentração, lote, validade e condições relevantes devem permitir identificar e usar o item adequadamente."],
+604:["O que deve preceder a liberação de um lote?","Revisão dos resultados e confirmação de conformidade com especificações e procedimentos aplicáveis."],
+605:["Por que o ensaio de desintegração é relevante em comprimidos convencionais?","A desintegração favorece etapa inicial de liberação do fármaco, embora não substitua a avaliação de dissolução quando aplicável."],
+606:["Qual é a finalidade de revestimento entérico?","Resistir ao meio gástrico e liberar o fármaco em região apropriada, conforme a tecnologia da formulação."],
+607:["O que caracteriza comprimido de liberação prolongada?","Pode manter liberação do fármaco por período maior; sua manipulação deve respeitar a tecnologia empregada."],
+608:["Todo comprimido sulcado pode ser dividido?","Não. O sulco não autoriza automaticamente divisão; formulação, revestimento e recomendação do fabricante precisam ser considerados."],
+609:["Por que dureza e friabilidade são avaliadas em comprimidos?","São atributos de qualidade que influenciam resistência mecânica e integridade durante produção, embalagem e manuseio."],
+610:["O que cápsulas duras podem conter em seu interior?","Usualmente pós ou grânulos, cuja formulação e integridade precisam ser preservadas até o uso."],
+611:["Usuário deseja abrir cápsula para misturar o conteúdo em alimento. Qual orientação é correta?","A possibilidade depende da formulação e da orientação técnica; abrir pode comprometer liberação, estabilidade ou segurança."],
+612:["Por que cápsula de liberação modificada pode conter grânulos?","Os grânulos podem incorporar tecnologia de liberação específica, que pode ser comprometida por abertura ou trituração inadequada."],
+613:["Como a umidade pode afetar cápsulas de gelatina?","Pode comprometer integridade física e qualidade, exigindo condições de armazenamento adequadas."],
+614:["O que deve ser avaliado antes de dispensar uma cápsula?","A integridade da cápsula e da embalagem deve ser observada, pois alteração pode indicar problema de conservação ou qualidade."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?farmacotecnicaAplicadaLoteUm[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.farmacotecnicaAplicadaLoteUm=Object.keys(farmacotecnicaAplicadaLoteUm).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

@@ -19099,6 +19099,16 @@ const saneamentoMatematicaGeometriaUm={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==="matematica"?saneamentoMatematicaGeometriaUm[q.number]:null;return i?{...q,topic:i.t,area:i.r,stem:i.s,options:q.options.map((o,n)=>({...o,text:i.o[n]})),answer:i.a,explanation:i.e}:q;});
 questionBank.review.saneamentoMatematicaGeometriaUm=Object.keys(saneamentoMatematicaGeometriaUm).map(Number);
 
+const saneamentoMatematicaGeometriaDois={
+385:{t:"Teorema de Pitágoras",r:"Geometria plana e medidas",s:"Uma tela retangular de 20 m por 21 m será reforçada por uma barra diagonal. Qual deve ser o comprimento mínimo da barra?",o:["25 m.","28 m.","30 m.","29 m.","35 m."],a:"D",e:"A diagonal mede √(20²+21²)=√841=29 m."},
+386:{t:"Área de triângulo",r:"Geometria plana e medidas",s:"Um lote triangular possui lados usados como base e altura de 30 m e 18 m. Se metade da área será preservada, quantos metros quadrados poderão ser utilizados?",o:["90 m².","108 m².","135 m².","180 m².","270 m²."],a:"C",e:"A área do lote é 30×18/2=270 m². A metade utilizável é 135 m²."},
+387:{t:"Perímetro de retângulo",r:"Geometria plana e medidas",s:"Um retângulo tem comprimento igual ao dobro da largura e área de 128 m². Qual é seu perímetro?",o:["40 m.","44 m.","46 m.","52 m.","48 m."],a:"E",e:"Se a largura é x, 2x²=128, então x=8 e o comprimento é 16. O perímetro é 2(8+16)=48 m."},
+388:{t:"Área de retângulo",r:"Geometria plana e medidas",s:"Uma parede de 8 m por 3 m possui uma porta de 2,1 m por 0,8 m. Qual é a área que será pintada?",o:["20,32 m².","22,32 m².","21,68 m².","23,20 m².","24 m²."],a:"B",e:"A parede mede 24 m² e a porta mede 1,68 m². A área restante é 22,32 m²."},
+389:{t:"Área de círculo",r:"Geometria plana e medidas",s:"Uma área circular de raio 8 m será coberta, exceto por um círculo central de raio 2 m. Qual é a área a cobrir, em função de π?",o:["60π m².","64π m².","48π m².","32π m².","16π m²."],a:"A",e:"A área anular é π(8²−2²)=π(64−4)=60π m²."}
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='matematica'?saneamentoMatematicaGeometriaDois[q.number]:null;return i?{...q,topic:i.t,area:i.r,stem:i.s,options:q.options.map((o,n)=>({...o,text:i.o[n]})),answer:i.a,explanation:i.e}:q;});
+questionBank.review.saneamentoMatematicaGeometriaDois=Object.keys(saneamentoMatematicaGeometriaDois).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

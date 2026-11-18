@@ -19416,6 +19416,61 @@ const dispensacaoSegurancaCuidadoLote={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?dispensacaoSegurancaCuidadoLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.dispensacaoSegurancaCuidadoLote=Object.keys(dispensacaoSegurancaCuidadoLote).map(Number);
 
+const segurancaFarmacoterapeuticaLote={
+385:["Por que notificar uma suspeita de evento adverso relacionado a medicamento?","A notificação gera sinais para vigilância, amplia conhecimento sobre segurança e pode subsidiar medidas de prevenção, mesmo sem prova definitiva de causalidade."],
+386:["Como deve ser manejado um evento adverso temporalmente associado a medicamento?","Deve ser avaliado clinicamente, documentado e encaminhado/notificado conforme gravidade e fluxos aplicáveis; coincidência temporal não prova causa, mas não deve ser ignorada."],
+387:["Em dispensação remota, qual condição é indispensável para manter qualidade do cuidado?","O serviço deve assegurar identificação, avaliação e orientação adequadas, proteção das informações e canal para esclarecimento, conforme normas aplicáveis."],
+388:["No transporte de medicamento ao usuário, quando a atenção deve ser reforçada?","Quando o produto exige condições específicas de conservação, há risco de dano, tempo de percurso relevante ou necessidade de rastrear a entrega."],
+389:["Por que documentar uma intervenção farmacêutica?","O registro sustenta continuidade, comunicação com a equipe, avaliação de resultado e responsabilidade profissional, sem expor informação além do necessário."],
+390:["Que característica torna um registro de dispensação útil ao cuidado?","Deve permitir reconhecer o que foi fornecido, as orientações/intervenções relevantes e a rastreabilidade necessária para seguimento seguro."],
+391:["Como devem ser tratadas as informações de saúde obtidas no atendimento farmacêutico?","Devem ser protegidas por sigilo e compartilhadas apenas na medida necessária ao cuidado e conforme deveres éticos e legais."],
+392:["Ao orientar usuário em ambiente com outras pessoas, qual precaução é necessária?","Preservar privacidade, adaptar o local ou a forma de comunicação e evitar exposição indevida de diagnóstico, tratamento ou informações pessoais."],
+393:["Quando a educação em saúde sobre medicamentos é mais efetiva?","Quando é dialogada, relevante à realidade do usuário, usa linguagem compreensível e verifica se a informação foi assimilada."],
+394:["Por que material educativo não substitui sempre orientação individual?","Folheto não identifica dúvida, contexto, barreira de compreensão ou risco particular; pode complementar, mas não substituir cuidado quando necessário."],
+395:["O que o seguimento farmacoterapêutico permite acompanhar?","Permite avaliar resposta, adesão, segurança, problemas relacionados a medicamentos e necessidade de ajustar ou articular intervenções."],
+396:["O usuário não compreendeu a orientação inicial. Qual deve ser a resposta profissional?","Reformular em linguagem e estratégia adequadas, verificar novamente o entendimento e registrar/encaminhar se houver risco relevante."],
+397:["Usuário desenvolveu sonolência após início de novo medicamento. Qual avaliação inicial é apropriada?","Verificar medicamento, dose, início, outros depressores do sistema nervoso, impacto funcional e sinais de gravidade, definindo a necessidade de encaminhamento."],
+398:["Usuário informa uso simultâneo de dois produtos com nomes diferentes. Qual cuidado é necessário?","Identificar princípios ativos, indicações e prescritores para detectar possível duplicidade terapêutica antes de orientar manutenção ou suspensão."],
+399:["Uma prescrição contém abreviatura ambígua. Qual resposta protege o paciente?","Não interpretar por suposição; a abreviatura deve ser esclarecida com a fonte responsável antes de executar a prescrição."],
+400:["Usuário quer partir comprimido, mas desconhece se a forma permite fracionamento. Qual orientação é correta?","Avaliar apresentação, presença de sulco e características como revestimento ou liberação modificada; não recomendar partir sem confirmação."],
+401:["Usuário usa medicamento de forma irregular por efeito adverso. Como abordar?","Acolher o relato, avaliar gravidade e relação com o tratamento, orientar medidas seguras e articular avaliação clínica sem julgamento automático."],
+402:["Houve troca de apresentação de medicamento. O que deve ser enfatizado ao usuário?","Deve-se explicar concentração, forma, dispositivo de medida e modo de uso, confirmando que a mudança não seja interpretada como alteração indevida de dose."],
+403:["Como se caracteriza uma dispensação de qualidade?","Combina produto correto, avaliação e orientação pertinentes, registro, segurança e consideração das necessidades reais do usuário."],
+404:["Por que o cuidado farmacêutico seguro não se limita à conferência de produto?","Ele considera pessoa, contexto, evidência, riscos, comunicação e acompanhamento para prevenir danos relacionados a medicamentos."],
+405:["Na identificação de medicamentos LASA, que elementos merecem prioridade?","Nomes, grafias, embalagens, apresentações e locais de armazenamento com potencial de confusão devem ser analisados sistematicamente."],
+406:["Qual é a finalidade do tall man lettering?","Destacar visualmente partes diferentes de nomes semelhantes para reduzir erro de leitura e troca, como barreira complementar e não única."],
+407:["Dois produtos de nomes semelhantes chegam juntos ao estoque. Qual medida inicial é segura?","Identificar o risco, separar fisicamente quando possível, sinalizar e ajustar a organização antes de disponibilizá-los à rotina."],
+408:["Por que a proximidade de medicamentos LASA em uma mesma prateleira aumenta risco?","Facilita seleção por leitura rápida ou reconhecimento visual inadequado, sobretudo sob interrupção ou alta demanda."],
+409:["Como devem ser elaborados alertas para produtos LASA?","Devem ser visíveis, específicos e integrados ao processo de armazenamento, prescrição e dispensação, sem depender apenas da memória da equipe."],
+410:["O que exige um medicamento de alta vigilância?","Exige barreiras proporcionais ao potencial de dano, como padronização, identificação, limites de acesso, conferência e treinamento."],
+411:["Quando a dupla checagem é mais útil?","Quando é independente, realizada nos pontos críticos e focada em elementos que podem causar dano significativo se estiverem errados."],
+412:["O que torna uma dupla checagem frágil?","Apenas repetir a confirmação de modo automático, com a mesma informação e sem independência, transforma a barreira em formalidade."],
+413:["Como concentrados de eletrólitos devem ser organizados de forma segura?","Com acesso e armazenamento controlados, identificação destacada, segregação e procedimentos que reduzam seleção e preparo equivocados."],
+414:["Qual benefício decorre da padronização de concentrações?","Reduz variabilidade, cálculos desnecessários e risco de confundir apresentações, facilitando treinamento e conferência."],
+415:["Que condição uma prescrição precisa cumprir para ser segura?","Ser legível e completa, com identificação, medicamento, dose, via, frequência e demais informações necessárias à execução sem suposição."],
+416:["Como tratar abreviatura ambígua em prescrição?","Deve ser evitada; se presente, precisa ser esclarecida antes do preparo ou dispensação, sem inferência pelo hábito."],
+417:["Falta a via de administração em medicamento que possui mais de uma via possível. Qual conduta é apropriada?","A via é informação essencial e deve ser esclarecida antes da execução; não se deve escolhê-la com base em suposição."],
+418:["Uma dose parece incomum para o perfil do usuário. O que deve ocorrer?","Conferir dados clínicos e prescrição, avaliar se há erro de unidade/concentração e contatar o prescritor ou equipe quando houver dúvida relevante."],
+419:["Medicamento prescrito por nome comercial pouco conhecido deve ser conferido quanto a quê?","Deve-se confirmar princípio ativo, concentração, forma e equivalência apropriada, evitando dispensar por semelhança de marca."],
+420:["O que a conferência final de dispensação deve confrontar?","Deve confrontar prescrição/ordem, produto separado, paciente, dose, forma, quantidade e informações relevantes antes da entrega."],
+421:["Por que separar itens por usuário antes da entrega reduz risco?","Evita mistura de tratamentos e troca de destinatário, criando uma barreira física e organizacional contra erro de dispensação."],
+422:["Como interrupções durante separação devem ser manejadas?","Com estratégia que permita retomar a conferência em ponto seguro, evitando depender da memória para saber o que já foi checado."],
+423:["Como a etiqueta de dispensação deve apoiar a segurança?","Deve identificar de modo claro usuário, medicamento e informações úteis ao uso, sem substituir a orientação e a conferência profissional."],
+424:["Há divergência entre rótulo do produto e sistema. Qual é a conduta segura?","Suspender a liberação e investigar a discrepância contra fonte confiável, corrigindo o processo antes de entregar o medicamento."],
+425:["Como organizar estoque considerando risco de erro?","A disposição deve facilitar identificação e conferência, segregar itens críticos/LASA e evitar combinações que favoreçam troca."],
+426:["Que arranjo de prateleiras deve ser evitado?","Deve-se evitar proximidade e apresentação visual que induzam confusão entre nomes, doses, concentrações ou embalagens semelhantes."],
+427:["Um medicamento está sem rótulo identificável. O que deve ser feito?","Não deve ser dispensado; deve ser segregado e submetido ao fluxo de identificação ou descarte conforme a situação."],
+428:["Que consequência pode decorrer de conservação inadequada?","Pode comprometer estabilidade, potência, segurança e qualidade do medicamento, mesmo quando a embalagem parece íntegra."],
+429:["Como o FEFO contribui para segurança?","Ao priorizar lote com validade mais próxima, reduz risco de dispensar produto vencido e estimula monitoramento ativo do estoque."],
+430:["Que informação precisa constar em passagem de plantão segura?","Pendências, itens de risco, mudanças relevantes, ocorrências, medidas já adotadas e responsabilidades de seguimento devem ser comunicadas de forma estruturada."],
+431:["Que precaução acompanha comunicação de ordem verbal?","Deve haver confirmação por repetição/leitura de volta, registro oportuno e formalização conforme regras do serviço, reduzindo erro de transmissão."],
+432:["O que caracteriza alerta de segurança eficaz?","É acionável, específico, entregue ao público certo no momento do processo e acompanhado de barreira ou orientação prática."],
+433:["A equipe identifica risco de troca de produtos. Qual deve ser sua resposta?","Comunicar, registrar, analisar causa e implantar barreiras no sistema, não depender exclusivamente de atenção individual."],
+434:["Como a comunicação com o usuário contribui para segurança do tratamento?","Permite identificar dúvidas, adesão, sinais de problema e uso inadequado, criando oportunidade de prevenção e encaminhamento."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?segurancaFarmacoterapeuticaLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.segurancaFarmacoterapeuticaLote=Object.keys(segurancaFarmacoterapeuticaLote).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

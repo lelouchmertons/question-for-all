@@ -19751,6 +19751,41 @@ const farmacotecnicaAplicadaLoteTres={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?farmacotecnicaAplicadaLoteTres[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.farmacotecnicaAplicadaLoteTres=Object.keys(farmacotecnicaAplicadaLoteTres).map(Number);
 
+const farmacotecnicaAplicadaLoteQuatro={
+675:["Como definir limite microbiológico de produto farmacêutico?","Deve considerar via de administração e forma farmacêutica."],
+676:["Produtos não estéreis exigem controle microbiológico?","Sim; podem exigir controle de carga microbiana conforme especificação."],
+677:["Conservante corrige falha de fabricação?","Não; auxilia controle microbiológico, mas não substitui boas práticas."],
+678:["Como especificar água de processo?","Conforme uso pretendido e requisitos aplicáveis."],
+679:["Como interpretar resultado microbiológico?","Conforme método e especificação aplicáveis."],
+680:["O que demonstra validação de processo?","Evidências de consistência sob condições definidas."],
+681:["O que verifica qualificação de instalação?","Se equipamento foi instalado conforme requisitos."],
+682:["O que avalia qualificação operacional?","Funcionamento dentro de parâmetros previstos."],
+683:["O que demonstra qualificação de desempenho?","Desempenho consistente no uso pretendido."],
+684:["Quando mudança de processo exige atenção ao estado validado?","Sempre que relevante, com avaliação de impacto."],
+685:["Como definir qualidade da água farmacêutica?","Conforme a aplicação farmacêutica pretendida."],
+686:["Por que monitorar sistema de água?","Para manter as especificações de qualidade."],
+687:["O que pode afetar qualidade microbiológica da água?","Armazenamento e distribuição."],
+688:["Como organizar amostragem de água?","Segundo pontos e frequências estabelecidos."],
+689:["O que fazer diante de desvio de qualidade da água?","Investigar impacto nos produtos envolvidos."],
+690:["Por que viscosidade é relevante?","Influencia escoamento e aplicabilidade de preparações."],
+691:["Como se comporta sistema pseudoplástico sob cisalhamento?","A viscosidade reduz com aumento do cisalhamento."],
+692:["O que descreve tixotropia?","Alteração reversível de consistência ligada ao tempo sob cisalhamento."],
+693:["Como medir viscosidade com reprodutibilidade?","Em condições padronizadas de ensaio."],
+694:["O que pode indicar mudança de viscosidade?","Alteração física da formulação."],
+695:["Quando avaliar compatibilidade físico-química?","Antes de misturar produtos em mesma preparação."],
+696:["O que pode indicar incompatibilidade?","Alteração de cor, precipitação ou turbidez."],
+697:["De que depende compatibilidade entre produtos?","Também de concentração, diluente e condições de uso."],
+698:["Onde buscar informação de compatibilidade?","Em fonte técnica confiável."],
+699:["Por que mistura intravenosa exige atenção especial?","Porque é administrada diretamente ao paciente."],
+700:["Como definir temperatura de armazenamento?","Segundo especificação aplicável ao medicamento."],
+701:["Por que registrar temperatura?","Para demonstrar manutenção das condições de armazenamento."],
+702:["Como tratar excursão de temperatura?","Avaliar produto, duração e dados disponíveis."],
+703:["O que o transporte deve assegurar?","Proteção contra condições que comprometam qualidade."],
+704:["Por que segregar itens não conformes?","Para evitar uso ou distribuição inadvertida."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?farmacotecnicaAplicadaLoteQuatro[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.farmacotecnicaAplicadaLoteQuatro=Object.keys(farmacotecnicaAplicadaLoteQuatro).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

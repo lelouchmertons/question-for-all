@@ -19109,6 +19109,28 @@ const saneamentoMatematicaGeometriaDois={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='matematica'?saneamentoMatematicaGeometriaDois[q.number]:null;return i?{...q,topic:i.t,area:i.r,stem:i.s,options:q.options.map((o,n)=>({...o,text:i.o[n]})),answer:i.a,explanation:i.e}:q;});
 questionBank.review.saneamentoMatematicaGeometriaDois=Object.keys(saneamentoMatematicaGeometriaDois).map(Number);
 
+const saneamentoMatematicaGeometriaTres={
+390:{t:"Teorema de Pitágoras",r:"Geometria plana e medidas",s:"Uma rampa vence desnível de 1,2 m em uma projeção horizontal de 1,6 m. Qual é seu comprimento?",o:["1,8 m.","2,2 m.","2,4 m.","2 m.","2,8 m."],a:"D",e:"Pelo Teorema de Pitágoras, o comprimento é √(1,2²+1,6²)=√4=2 m."},
+391:{t:"Área de triângulo",r:"Geometria plana e medidas",s:"Um triângulo de área 72 m² possui base de 16 m. Qual é sua altura?",o:["6 m.","8 m.","9 m.","10 m.","12 m."],a:"C",e:"72=16h/2=8h; portanto, h=9 m."},
+392:{t:"Perímetro de retângulo",r:"Geometria plana e medidas",s:"Um canteiro de 15 m por 9 m receberá borda em todo o contorno, exceto por um vão de 2 m. Quantos metros de borda serão usados?",o:["42 m.","44 m.","45 m.","48 m.","46 m."],a:"E",e:"O perímetro é 2(15+9)=48 m. Subtraindo o vão de 2 m, restam 46 m."},
+393:{t:"Área de retângulo",r:"Geometria plana e medidas",s:"Um piso retangular de 12 m por 8 m será coberto por placas de 0,5 m². Quantas placas são necessárias, sem perdas?",o:["168.","192.","184.","200.","216."],a:"B",e:"A área é 12×8=96 m². Dividindo por 0,5 m² por placa, obtém-se 192 placas."},
+394:{t:"Área de círculo",r:"Geometria plana e medidas",s:"Uma área circular tem diâmetro de 10 m. Qual é sua área em função de π?",o:["25π m².","10π m².","50π m².","100π m².","5π m²."],a:"A",e:"O raio é 5 m. Assim, A=πr²=25π m²."}
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='matematica'?saneamentoMatematicaGeometriaTres[q.number]:null;return i?{...q,topic:i.t,area:i.r,stem:i.s,options:q.options.map((o,n)=>({...o,text:i.o[n]})),answer:i.a,explanation:i.e}:q;});
+questionBank.review.saneamentoMatematicaGeometriaTres=Object.keys(saneamentoMatematicaGeometriaTres).map(Number);
+
+// Auditoria normativa — Portaria 344, etapa 1. Conteúdo confrontado com as
+// orientações oficiais da Anvisa sobre lista vigente e receituário físico.
+questionBank.review.portaria344LoteZeroEtapaUm={
+  reviewed:[80,81,82,83,84,85,86,100,101,102,103,104,105,106,107,114,121,122,123,124],
+  reviewedAt:"2026-11-18",
+  sources:[
+    "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/sncr/modelos-de-receituarios",
+    "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/lista-substancias"
+  ],
+  status:"conforme; manter e monitorar atualização normativa"
+};
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

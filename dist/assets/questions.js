@@ -19716,6 +19716,41 @@ const farmacotecnicaAplicadaLoteDois={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?farmacotecnicaAplicadaLoteDois[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.farmacotecnicaAplicadaLoteDois=Object.keys(farmacotecnicaAplicadaLoteDois).map(Number);
 
+const farmacotecnicaAplicadaLoteTres={
+645:["Qual evidência é buscada ao validar um processo farmacêutico?","Demonstrar que, sob condições definidas, ele é capaz de produzir resultados consistentes."],
+646:["Qual é a finalidade de qualificar uma autoclave antes do uso rotineiro?","Verificar se equipamento/sistema atende ao uso pretendido e opera conforme requisitos definidos."],
+647:["Por que a limpeza precisa ser controlada entre produtos diferentes?","Para reduzir risco de contaminação cruzada e preservar qualidade do produto seguinte."],
+648:["Como a documentação contribui para boas práticas?","Permite rastrear etapas, dados, desvios e decisões do processo."],
+649:["Um desvio é identificado antes da liberação de lote. Qual conduta é correta?","Deve ser registrado e investigado antes da liberação, com avaliação de impacto."],
+650:["O que uma especificação de qualidade define?","Critérios e limites que produto/material deve cumprir para ser considerado conforme."],
+651:["Qual requisito deve orientar plano de amostragem de lote?","Deve ser planejado conforme procedimento para representar adequadamente o lote."],
+652:["O que avalia o ensaio de dissolução?","A liberação do fármaco da forma farmacêutica em condições padronizadas."],
+653:["Qual finalidade do ensaio de teor?","Verificar se a quantidade de princípio ativo está dentro dos limites estabelecidos."],
+654:["O que deve ocorrer antes da liberação de lote?","Revisão dos resultados aplicáveis e confirmação de conformidade."],
+655:["Por que granulometria é relevante em pós?","Pode influenciar fluxo e uniformidade da mistura."],
+656:["Que risco decorre da segregação de partículas?","Pode comprometer uniformidade de dose."],
+657:["Que benefício a granulação pode trazer?","Pode melhorar fluxo e compressibilidade."],
+658:["Por que controlar umidade residual de granulados?","Pode afetar estabilidade e processamento."],
+659:["O que deve ser assegurado na mistura de pós com princípio ativo?","Distribuição adequada do fármaco na mistura."],
+660:["Como matriz hidrofílica pode atuar em comprimido?","Pode controlar velocidade de liberação do fármaco."],
+661:["Por que sistema de liberação prolongada exige dissolução específica?","O perfil de liberação é atributo crítico da tecnologia."],
+662:["Por que não triturar forma de liberação modificada sem avaliação?","Pode comprometer o mecanismo de liberação."],
+663:["Qual atributo é crítico em forma de liberação controlada?","Perfil de dissolução."],
+664:["Mesma dose assegura mesmo perfil de liberação?","Não; equivalência de dose não garante equivalência do perfil de liberação."],
+665:["O que caracteriza embalagem primária?","Mantém contato direto com o medicamento."],
+666:["Quando barreira à umidade é relevante?","Em produtos higroscópicos ou sensíveis à umidade."],
+667:["Por que avaliar compatibilidade entre formulação e embalagem?","Para evitar interação que comprometa qualidade ou estabilidade."],
+668:["Qual a função de fechamento adequado?","Reduz risco de perda de integridade no armazenamento."],
+669:["O que a rotulagem deve assegurar?","Identificação inequívoca do produto e lote."],
+670:["Qual objetivo da técnica asséptica?","Reduzir introdução de contaminantes durante o preparo."],
+671:["Por que desinfetar superfícies em preparo asséptico?","Integra controle ambiental e reduz carga contaminante."],
+672:["Como planejar fluxo de materiais em área asséptica?","Para reduzir risco de contaminação."],
+673:["Qual papel da paramentação em preparo estéril?","Compõe barreira de proteção contra contaminação."],
+674:["Para que serve monitoramento ambiental?","Avaliar condições do processo e apoiar ações preventivas/corretivas."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?farmacotecnicaAplicadaLoteTres[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.farmacotecnicaAplicadaLoteTres=Object.keys(farmacotecnicaAplicadaLoteTres).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

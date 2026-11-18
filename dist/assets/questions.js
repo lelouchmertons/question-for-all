@@ -19131,6 +19131,33 @@ questionBank.review.portaria344LoteZeroEtapaUm={
   status:"conforme; manter e monitorar atualização normativa"
 };
 
+const portaria344RastreabilidadeLote={
+78:["Após dispensar medicamento sujeito a retenção de receita, qual função o documento retido desempenha no sistema de controle?","A retenção integra a trilha documental da dispensação e permite relacionar a saída do produto ao ato que a respaldou."],
+79:["Em uma conferência prévia de receita de controlado, qual abordagem reduz efetivamente o risco de dispensação irregular?","A avaliação deve cruzar substância, documento aplicável, dados obrigatórios, quantidade, prazo e demais requisitos; nenhum desses elementos isoladamente basta."],
+91:["Uma receita apresentada para dispensação exige tipo documental incompatível com a classificação atual da substância. Qual deve ser a conduta inicial?","A dispensação deve aguardar esclarecimento ou regularização. O farmacêutico não transforma unilateralmente um documento inadequado em compatível."],
+92:["Ao detectar que a quantidade prescrita não atende aos requisitos aplicáveis ao controle especial, qual é o limite da intervenção farmacêutica?","A atuação profissional busca regularizar a prescrição; não autoriza alterar unilateralmente quantidade, apresentação ou dose para viabilizar a dispensação."],
+93:["Durante auditoria, qual evidência demonstra melhor rastreabilidade de um medicamento controlado dispensado?","A evidência robusta é a coerência verificável entre documento, produto, movimentação registrada e saldo físico."],
+94:["Uma contagem revela saldo físico menor que o registrado para um medicamento controlado. Qual é a primeira providência segura?","A divergência precisa ser apurada e documentada antes de qualquer ajuste de sistema, preservando a possibilidade de reconstruir a movimentação."],
+95:["Qual organização de estoque é mais adequada para medicamentos sujeitos a controle especial?","A guarda deve combinar acesso restrito, segurança física, identificação e condições de conferência periódica."],
+96:["Qual é o papel de um sistema informatizado no controle de medicamentos sujeitos a regime especial?","O sistema apoia registro e rastreabilidade, mas não substitui conferência farmacêutica, documentação, inventário e responsabilidade técnica."],
+131:["Por que a conciliação entre estoque físico e registros é indispensável na rotina de controlados?","Ela revela divergências de movimentação e preserva a rastreabilidade necessária para investigação e fiscalização."],
+132:["Em uma divergência de estoque, qual prática compromete a auditoria posterior?","Ajustar o sistema imediatamente, sem registrar e investigar a causa, apaga elementos essenciais da trilha de controle."],
+133:["Uma unidade reorganizará seu armário de controlados. Qual resultado deve ser alcançado?","A organização correta restringe acesso indevido sem prejudicar identificação, inventário e conciliação das movimentações."],
+134:["Qual estratégia é mais eficaz contra desvio de medicamentos controlados?","Prevenção efetiva depende de barreiras combinadas: acesso restrito, registros consistentes e conferências periódicas."],
+135:["Em qual situação a dispensação deixa de ser plenamente rastreável?","A rastreabilidade se rompe quando a saída registrada não pode ser vinculada ao documento que a fundamentou."],
+136:["Qual benefício prático decorre de vincular documento, produto e baixa de estoque?","O vínculo permite reconstruir a dispensação e verificar se documento, produto e movimentação são compatíveis."],
+137:["Qual ordem operacional reduz o risco na dispensação de medicamento controlado?","A sequência segura começa pela conferência documental e regulatória, segue a dispensação regular e termina nos registros exigidos."],
+138:["Por que validade e quantidade são conferidas antes da dispensação de controlado?","Esses dados protegem contra dispensação em desconformidade com limites e requisitos aplicáveis."],
+139:["Qual é a finalidade dos campos obrigatórios do receituário vigente?","Eles permitem identificar, analisar e verificar a prescrição; não são mera formalidade gráfica."],
+140:["Uma receita contém todos os campos obrigatórios. Ela pode ser dispensada automaticamente?","Não. O preenchimento é necessário, mas deve ser analisado com classificação, validade, quantidade e demais critérios."],
+177:["Qual conjunto de elementos deve estar coerente para demonstrar uma dispensação controlada rastreável?","A trilha completa reúne documento, produto dispensado, registro de saída e saldo de estoque."],
+178:["Qual prática enfraquece diretamente a rastreabilidade de medicamentos controlados?","Registrar movimentação sem vinculá-la ao documento correspondente impede a reconstituição segura da operação."],
+179:["Como a dispensação de controlados contribui para o uso racional de medicamentos?","Ela deve unir verificação regulatória, entrega correta e orientação adequada, sem tratar uma dessas etapas como substituta das outras."],
+180:["Em uma revisão interna de controlados, qual indicador sinaliza maior fragilidade de processo?","Divergências entre saldo físico, documentos retidos e registros de movimentação evidenciam falhas que exigem apuração."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?portaria344RastreabilidadeLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.portaria344RastreabilidadeLote=Object.keys(portaria344RastreabilidadeLote).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

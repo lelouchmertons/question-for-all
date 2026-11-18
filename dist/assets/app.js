@@ -1,4 +1,4 @@
-import { questionBank } from "./questions.js?v=171";
+import { questionBank } from "./questions.js?v=172";
 
 const STORAGE_KEY = "caderno330-progress-v1";
 const FOCUS_KEY = "caderno330-focus-mode";
@@ -260,3 +260,4 @@ els["reset-progress"].addEventListener("click", () => els["reset-dialog"].showMo
 
 initFocus(); renderBankCounts(); renderSubjectOptions(); renderProgressSubjectOptions(); renderTopicOptions(); renderProgress(); renderSimulatorSubjects(); renderSimulationHistory();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");
+

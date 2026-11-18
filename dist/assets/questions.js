@@ -19621,6 +19621,31 @@ const calculosFarmaceuticosLoteTres={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?calculosFarmaceuticosLoteTres[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.calculosFarmaceuticosLoteTres=Object.keys(calculosFarmaceuticosLoteTres).map(Number);
 
+const farmacocineticaFarmacodinamicaAplicadaLote={
+485:["Um paciente apresenta redução importante da função renal e utiliza fármaco predominantemente eliminado pelos rins. Que fatores podem alterar sua depuração?","Filtração, secreção, reabsorção e função renal influenciam eliminação; a conduta deve considerar o fármaco e recomendações específicas."],
+486:["Em doença renal avançada, por que a fração livre de alguns fármacos é relevante para filtração glomerular?","A filtração glomerular incide principalmente sobre fração não ligada; ligação proteica e função renal precisam ser interpretadas conjuntamente."],
+487:["Dois fármacos compartilham transportador de secreção tubular. Qual consequência farmacocinética pode ocorrer?","Competição na secreção tubular ativa pode alterar a depuração de determinados medicamentos e aumentar exposição de um deles."],
+488:["Em intoxicação específica, a manipulação de pH urinário é discutida pela equipe. Qual mecanismo explica sua relevância para certos fármacos?","O pH urinário pode alterar ionização e reabsorção tubular de substâncias selecionadas; é estratégia dependente do caso e não universal."],
+489:["Paciente com função renal significativamente reduzida usa medicamento de margem terapêutica estreita. Qual precaução é esperada?","Pode ser necessário ajustar dose ou intervalo conforme recomendações, função renal e monitoramento, para evitar acúmulo e toxicidade."],
+490:["O resultado da concentração plasmática de um fármaco cai de 20 para 10 mg/L em determinado período. O que esse período representa em cinética de primeira ordem?","Representa uma meia-vida: tempo necessário para redução aproximada de metade da concentração corporal."],
+491:["Por que a meia-vida pode permanecer aproximadamente constante em cinética de primeira ordem?","Nessa condição, a velocidade de eliminação é proporcional à concentração, mantendo a fração eliminada por unidade de tempo semelhante."],
+492:["Ao programar administração repetida, por que a meia-vida é informação útil?","Ela orienta estimativa de intervalo de dose e risco de acúmulo, juntamente com objetivo terapêutico e características clínicas."],
+493:["Em esquema estável e cinética linear, por que o estado de equilíbrio não ocorre imediatamente após a primeira dose?","Ele é aproximado após várias meias-vidas, quando entrada e eliminação tendem a se equilibrar."],
+494:["Um medicamento apresenta meia-vida maior após piora renal em paciente previamente estável. Qual interpretação é adequada?","Diminuição da eliminação pode prolongar meia-vida; devem ser avaliados ajuste recomendado e sinais de toxicidade."],
+495:["Um fármaco se liga a receptor e desencadeia resposta mensurável no tecido. Como ele é classificado em relação a esse receptor?","É agonista, pois ativa o alvo e produz resposta farmacológica."],
+496:["Um ligante ocupa receptor e, mesmo sem outro medicamento presente, produz efeito no sistema. O que explica essa ação?","Possui atividade intrínseca, característica de agonista capaz de desencadear resposta após ligação ao receptor."],
+497:["Um ligante ativa receptor, mas não atinge a resposta máxima produzida por outro agonista no mesmo tecido, mesmo em altas concentrações. Como classificá-lo?","É agonista parcial: sua eficácia máxima é menor que a de agonista pleno naquele sistema."],
+498:["Dois agonistas atingem o mesmo efeito máximo, mas um exige concentração menor para produzir determinado efeito. O que difere entre eles?","Difere a potência, relacionada à concentração necessária para obter um nível definido de resposta."],
+499:["Dois agonistas são administrados em concentrações altas; um produz maior resposta máxima. Qual propriedade é maior nesse agonista?","Sua eficácia é maior, pois eficácia se relaciona ao efeito máximo alcançável no sistema."],
+500:["Um medicamento reduz a resposta produzida por agonista em receptor específico. Como se descreve sua ação?","Atua como antagonista, pois bloqueia ou diminui a resposta de agonista no alvo."],
+501:["Um ligante ocupa receptor, não o ativa e impede ligação de agonista. Como esse mecanismo modifica a resposta?","Pode diminuir o efeito do agonista ao ocupar o receptor sem atividade agonista própria."],
+502:["Em antagonismo competitivo reversível, o aumento de concentração do agonista pode restaurar resposta. O que tende a ocorrer na curva concentração-resposta?","A curva do agonista pode deslocar-se para a direita, exigindo maior concentração para efeito semelhante."],
+503:["Um antagonista reduz de forma persistente a disponibilidade funcional de receptores. Qual consequência farmacodinâmica pode ocorrer?","Pode haver redução da resposta máxima disponível ao agonista, dependendo do sistema e de receptores de reserva."],
+504:["Um antagonista modifica a resposta observada sem produzir por si próprio o efeito típico do agonista. Que afirmação é correta?","Não precisa ter efeito agonista próprio para reduzir ou bloquear a resposta mediada por agonista."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?farmacocineticaFarmacodinamicaAplicadaLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.farmacocineticaFarmacodinamicaAplicadaLote=Object.keys(farmacocineticaFarmacodinamicaAplicadaLote).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

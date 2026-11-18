@@ -19596,6 +19596,31 @@ const calculosFarmaceuticosLoteDois={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?calculosFarmaceuticosLoteDois[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.calculosFarmaceuticosLoteDois=Object.keys(calculosFarmaceuticosLoteDois).map(Number);
 
+const calculosFarmaceuticosLoteTres={
+565:["Em insulina U-100, qual volume em mL corresponde a 10 unidades?","U-100 significa 100 unidades/mL; 10 ÷ 100 = 0,1 mL."],
+566:["Qual volume de insulina U-100 corresponde a 15 unidades?","15 ÷ 100 = 0,15 mL."],
+567:["Em uma apresentação U-100, 20 unidades correspondem a qual volume?","20 ÷ 100 = 0,2 mL."],
+568:["Para administrar 25 unidades de insulina U-100, qual volume em mL é necessário?","25 ÷ 100 = 0,25 mL."],
+569:["Em insulina U-100, 30 unidades equivalem a:","30 ÷ 100 = 0,3 mL."],
+570:["Uma dose de 250 microgramas corresponde a quantos miligramas?","1 mg equivale a 1.000 microgramas; 250 ÷ 1.000 = 0,25 mg."],
+571:["Converta 500 microgramas para miligramas.","500 ÷ 1.000 = 0,5 mg."],
+572:["Uma prescrição indica 750 microgramas. A quantidade em mg é:","750 ÷ 1.000 = 0,75 mg."],
+573:["Quantos miligramas correspondem a 1.000 microgramas?","1.000 microgramas correspondem a 1 mg."],
+574:["Uma dose de 1.250 microgramas equivale a quantos mg?","1.250 ÷ 1.000 = 1,25 mg."],
+575:["Uma infusão de 250 mL será administrada em 75 minutos. Qual velocidade em mL/h?","75 minutos equivalem a 1,25 h; 250 ÷ 1,25 = 200 mL/h."],
+576:["Para infundir 500 mL em 150 minutos, qual velocidade deve ser programada em mL/h?","150 min = 2,5 h; 500 ÷ 2,5 = 200 mL/h."],
+577:["Uma bolsa de 750 mL deve terminar em 225 minutos. Qual velocidade em mL/h?","225 min = 3,75 h; 750 ÷ 3,75 = 200 mL/h."],
+578:["Para administrar 1.000 mL em 300 minutos, a velocidade de infusão é:","300 min = 5 h; 1.000 ÷ 5 = 200 mL/h."],
+579:["Uma infusão de 400 mL precisa ser concluída em 120 minutos. Qual velocidade em mL/h?","120 min = 2 h; 400 ÷ 2 = 200 mL/h."],
+580:["Há 60 comprimidos e o usuário toma 6 comprimidos ao dia. Por quantos dias o estoque é suficiente?","60 ÷ 6 = 10 dias."],
+581:["Uma dispensação contém 80 comprimidos para posologia de 8 comprimidos por dia. A duração é de:","80 ÷ 8 = 10 dias."],
+582:["Se o usuário toma 9 comprimidos diariamente e recebe 90 comprimidos, por quantos dias terá tratamento?","90 ÷ 9 = 10 dias."],
+583:["Uma caixa possui 100 comprimidos; a posologia é 10 comprimidos por dia. Qual duração prevista?","100 ÷ 10 = 10 dias."],
+584:["Foram dispensados 120 comprimidos e a dose diária é 12 comprimidos. Por quantos dias o medicamento dura?","120 ÷ 12 = 10 dias."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?calculosFarmaceuticosLoteTres[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.calculosFarmaceuticosLoteTres=Object.keys(calculosFarmaceuticosLoteTres).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

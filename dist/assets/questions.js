@@ -19561,6 +19561,41 @@ const calculosFarmaceuticosLoteUm={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?calculosFarmaceuticosLoteUm[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.calculosFarmaceuticosLoteUm=Object.keys(calculosFarmaceuticosLoteUm).map(Number);
 
+const calculosFarmaceuticosLoteDois={
+535:["Uma infusão de 500 mL deve ser concluída em 4 horas. Qual velocidade de infusão em mL/h?","500 ÷ 4 = 125 mL/h."],
+536:["Para administrar 600 mL em 5 horas, a bomba deve ser programada para:","600 ÷ 5 = 120 mL/h."],
+537:["Uma bolsa de 700 mL deve correr em 6 horas. A velocidade aproximada é:","700 ÷ 6 = 116,67 mL/h."],
+538:["Uma infusão de 800 mL tem duração prevista de 7 horas. A velocidade aproximada será:","800 ÷ 7 = 114,29 mL/h."],
+539:["Um volume de 900 mL deve ser administrado em 8 horas. Qual velocidade em mL/h?","900 ÷ 8 = 112,5 mL/h."],
+540:["Quantos gramas de soluto são necessários para preparar 100 mL de solução a 1% (m/v)?","1% m/v equivale a 1 g em 100 mL; portanto, são necessários 1 g."],
+541:["Para preparar 150 mL de solução a 2% (m/v), qual massa de soluto é necessária?","2 g/100 mL × 150 mL = 3 g."],
+542:["Qual massa de soluto é necessária para 200 mL de solução a 3% (m/v)?","3 g/100 mL × 200 mL = 6 g."],
+543:["Para preparar 250 mL de solução a 4% (m/v), quantos gramas de soluto são necessários?","4 g/100 mL × 250 mL = 10 g."],
+544:["Uma preparação exige 300 mL de solução a 5% (m/v). A massa de soluto é:","5 g/100 mL × 300 mL = 15 g."],
+545:["Há 300 unidades em estoque e consumo previsto de 20 unidades/dia. Qual cobertura de estoque, em dias?","300 ÷ 20 = 15 dias."],
+546:["Um item tem saldo de 400 unidades e consumo médio de 25 unidades/dia. A cobertura corresponde a:","400 ÷ 25 = 16 dias."],
+547:["Com 500 unidades disponíveis e consumo previsto de 30 unidades/dia, por quantos dias o estoque cobre a demanda?","500 ÷ 30 = 16,67 dias, aproximadamente."],
+548:["Um estoque de 600 unidades atende consumo de 35 unidades/dia por aproximadamente:","600 ÷ 35 = 17,14 dias."],
+549:["Há 700 unidades em estoque e previsão de uso de 40 unidades/dia. A cobertura é de:","700 ÷ 40 = 17,5 dias."],
+550:["Prescrição: 250 mg por tomada, duas tomadas ao dia. Qual dose diária total?","250 × 2 = 500 mg/dia."],
+551:["Um usuário recebe 300 mg por tomada, três vezes ao dia. Qual é a dose diária?","300 × 3 = 900 mg/dia."],
+552:["A prescrição determina 350 mg a cada 6 horas. Qual dose diária total?","São quatro tomadas/dia: 350 × 4 = 1.400 mg/dia."],
+553:["Um medicamento deve ser administrado a 500 mg, quatro vezes ao dia. A dose diária total é:","500 × 4 = 2.000 mg/dia."],
+554:["Prescrevem-se 450 mg por tomada, seis vezes ao dia. Qual dose diária total?","450 × 6 = 2.700 mg/dia."],
+555:["Após reconstituição, a concentração é 50 mg/mL. Qual volume fornece 500 mg?","500 ÷ 50 = 10 mL."],
+556:["Uma solução reconstituída possui 60 mg/mL. Para administrar 900 mg, qual volume é necessário?","900 ÷ 60 = 15 mL."],
+557:["Com concentração final de 70 mg/mL, qual volume corresponde a dose de 1.400 mg?","1.400 ÷ 70 = 20 mL."],
+558:["Uma preparação reconstituída contém 80 mg/mL. Para dose de 2.000 mg, qual volume deve ser usado?","2.000 ÷ 80 = 25 mL."],
+559:["Após reconstituição, há 90 mg/mL. Qual volume fornece 2.700 mg?","2.700 ÷ 90 = 30 mL."],
+560:["Quantos gramas de soluto são necessários para preparar 10 mL de solução a 2% (m/v)?","2 g/100 mL × 10 mL = 0,2 g."],
+561:["Para preparar 15 mL de solução a 3% (m/v), qual massa de soluto é necessária?","3 g/100 mL × 15 mL = 0,45 g."],
+562:["Uma solução a 4% (m/v) terá volume final de 20 mL. Quantos gramas de soluto são necessários?","4 g/100 mL × 20 mL = 0,8 g."],
+563:["Para 25 mL de solução a 5% (m/v), a massa de soluto é:","5 g/100 mL × 25 mL = 1,25 g."],
+564:["Uma solução de 30 mL será preparada a 6% (m/v). Qual massa de soluto é necessária?","6 g/100 mL × 30 mL = 1,8 g."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?calculosFarmaceuticosLoteDois[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.calculosFarmaceuticosLoteDois=Object.keys(calculosFarmaceuticosLoteDois).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

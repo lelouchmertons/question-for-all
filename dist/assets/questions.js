@@ -19681,6 +19681,41 @@ const farmacotecnicaAplicadaLoteUm={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?farmacotecnicaAplicadaLoteUm[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.farmacotecnicaAplicadaLoteUm=Object.keys(farmacotecnicaAplicadaLoteUm).map(Number);
 
+const farmacotecnicaAplicadaLoteDois={
+615:["Uma preparação oral contém fármaco totalmente dissolvido e aspecto uniforme. Como ela é classificada?","É solução: sistema homogêneo em que o soluto está dissolvido no veículo."],
+616:["Ao conferir solução de 20 mg/mL, qual cuidado evita erro de interpretação?","A concentração deve ser lida com unidade compatível e relacionada ao volume a administrar."],
+617:["Qual recurso deve acompanhar dispensação de solução oral pediátrica?","Dispositivo de medida apropriado reduz erro de volume; colher doméstica não é referência segura."],
+618:["Por que pH e temperatura podem interferir em solução?","Podem alterar solubilidade e estabilidade do fármaco, favorecendo precipitação ou degradação."],
+619:["Uma solução permanece límpida, mas está sem identificação de lote e validade. Pode ser dispensada?","Não; aspecto visual adequado não substitui identificação, rastreabilidade e verificação de validade."],
+620:["Uma formulação oral contém partículas sólidas dispersas que sedimentam em repouso. Trata-se de:","Suspensão, sistema heterogêneo com partículas dispersas em veículo."],
+621:["Por que o rótulo de uma suspensão pode orientar agitar antes de usar?","A sedimentação pode ocorrer e a homogeneização restaura distribuição mais uniforme antes da dose."],
+622:["Que atributo de suspensão favorece dose uniforme após repouso?","Redispersibilidade: o sedimento deve voltar a se distribuir adequadamente com agitação prevista."],
+623:["Como tamanho de partícula influencia suspensão?","Pode afetar velocidade de sedimentação, redispersão e estabilidade física do sistema."],
+624:["Após agitação, um sedimento permanece endurecido e não se dispersa. Qual interpretação é adequada?","Pode haver problema de redispersão; o produto deve ser avaliado antes de uso."],
+625:["Uma formulação mistura duas fases líquidas não miscíveis, uma dispersa na outra. É uma:","Emulsão, estabilizada por sistema que reduz a tendência de separação entre fases."],
+626:["Uma emulsão apresenta separação persistente de fases. O que isso pode indicar?","Pode indicar instabilidade, devendo ser avaliada antes da liberação ou do uso."],
+627:["Qual função tem o emulsificante na formulação?","Auxilia a estabilizar a interface entre fases líquidas imiscíveis e reduzir separação."],
+628:["Creme e loção podem compartilhar qual característica farmacotécnica?","Podem ser sistemas emulsificados, embora forma, viscosidade e uso possam variar."],
+629:["Alteração em emulsão persiste após agitação. Como orientar?","Não usar automaticamente; alteração persistente requer avaliação de qualidade."],
+630:["Qual forma farmacêutica é tipicamente semissólida e de uso tópico?","Pomada, cuja base semissólida influencia aplicação e liberação do fármaco."],
+631:["Como um creme se diferencia de pomada em muitas formulações?","Cremes usualmente combinam fases aquosa e oleosa em sistema semissólido."],
+632:["O que confere consistência característica a um gel?","Uma rede estrutural na formulação confere sua consistência e comportamento reológico."],
+633:["Por que escolher corretamente a base de semissólido?","A base pode modificar liberação do fármaco, aceitabilidade, oclusão e adequação ao local de aplicação."],
+634:["Que cuidado reduz contaminação de semissólidos durante o uso?","Evitar contato inadequado do aplicador/embalagem e conservar conforme orientação preserva integridade."],
+635:["Por que produtos parenterais exigem controle rigoroso de esterilidade?","São administrados por via que contorna barreiras naturais e contaminação pode causar dano grave."],
+636:["Por que apirógenos são relevantes em injetáveis?","Podem desencadear reação febril; formulações parenterais exigem controles apropriados além da esterilidade."],
+637:["Que verificação visual é essencial antes de usar produto parenteral?","Partículas visíveis, integridade da embalagem e aspecto devem ser avaliados conforme especificação."],
+638:["Qual finalidade do processo asséptico?","Evitar introdução de contaminantes durante preparo/manuseio quando não há esterilização terminal adequada."],
+639:["Como selecionar método de esterilização?","Deve ser compatível com produto, embalagem e processo, preservando qualidade e segurança."],
+640:["O que a estabilidade química preserva em medicamento?","Identidade e potência do fármaco ao longo do prazo definido."],
+641:["Quais alterações podem indicar instabilidade física?","Mudanças de cor, precipitação, separação de fases ou viscosidade podem indicar alteração física."],
+642:["Como luz, calor e umidade afetam medicamentos sensíveis?","Podem acelerar degradação, exigindo armazenamento nas condições especificadas."],
+643:["Em que se fundamenta prazo de validade?","Em estudos de estabilidade conduzidos sob condições definidas e avaliação de manutenção das especificações."],
+644:["O produto ficou fora da faixa de armazenamento recomendada. Qual conduta é adequada?","Avaliar impacto na qualidade conforme produto, tempo e condição de desvio antes de liberar ou usar."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?farmacotecnicaAplicadaLoteDois[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.farmacotecnicaAplicadaLoteDois=Object.keys(farmacotecnicaAplicadaLoteDois).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

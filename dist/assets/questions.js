@@ -19158,6 +19158,43 @@ const portaria344RastreabilidadeLote={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?portaria344RastreabilidadeLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.portaria344RastreabilidadeLote=Object.keys(portaria344RastreabilidadeLote).map(Number);
 
+const portaria344CasosGestaoLote={
+145:["Um prescritor apresenta formulário físico antigo, impresso regularmente antes da mudança de modelo. Qual verificação deve anteceder a dispensação?","A regra de transição não dispensa conferir autenticidade, validade, preenchimento e compatibilidade do documento com a situação concreta."],
+146:["Durante a conferência, o sistema informa que a substância foi remanejada para outra lista por ato posterior. Qual dado deve prevalecer?","A classificação vigente em fonte oficial deve orientar a dispensação e a atualização do cadastro interno."],
+147:["Uma receita está formalmente completa, mas o tipo de documento não corresponde à lista vigente da substância. Qual é a decisão segura?","Campos preenchidos não corrigem incompatibilidade documental; a dispensação depende de regularização antes de prosseguir."],
+148:["Qual barreira reduz mais efetivamente erro na dispensação de controlados?","A barreira consistente associa conferência humana, classificação atual, documento correto e registro da saída."],
+149:["Após dispensar receita válida, a equipe não vinculou a baixa de estoque ao documento retido. Qual risco foi criado?","Sem esse vínculo, a trilha de auditoria fica incompleta e a dispensação deixa de ser plenamente reconstituível."],
+150:["Uma rotina propõe dispensar controlados habituais sem conferência detalhada. Essa prática deve ser classificada como:","Uso contínuo não elimina os requisitos de conferência e rastreabilidade; a rotina é inadequada."],
+151:["Após atualização de lista, qual conjunto de ações caracteriza gestão de mudança adequada?","A atualização deve alcançar fonte, cadastro, procedimento, treinamento e evidência documental da implantação."],
+152:["Qual é a finalidade principal de treinar a equipe após alteração de modelo de receituário?","O treinamento busca aplicação uniforme da nova regra e prevenção de falhas operacionais, não apenas ciência formal."],
+153:["Em auditoria interna de controlados, qual achado exige investigação imediata?","Divergência entre saldo, documentos e registros é achado relevante porque pode indicar falha de processo ou desvio."],
+154:["A auditoria detectou repetição de receita com campo obrigatório incompleto. Qual melhoria é mais adequada?","A resposta deve corrigir a causa, orientar a equipe e monitorar a efetividade, sem normalizar a falha."],
+155:["Uma lista de controlados circula em rede social, sem ato oficial, versão ou data. Como ela deve ser usada?","Ela não serve como base normativa; a informação deve ser confirmada em fonte oficial e atualizada."],
+156:["Qual fonte deve validar informação de inclusão de substância em lista de controle especial?","A validação deve ocorrer no ato e na página oficial vigente da Anvisa, não em material secundário sem referência."],
+157:["Quando o controle especial é mais confiável em uma drogaria?","Quando receituário, classificação, estoque, registros, procedimento e atuação farmacêutica funcionam de maneira integrada."],
+158:["Uma conferência documental correta elimina quais obrigações posteriores?","Ela não elimina registro, guarda segura, conciliação de estoque ou acompanhamento das regras aplicáveis."],
+159:["Qual síntese orienta a atuação diante de receita sujeita a controle especial?","Conferir antes, dispensar somente quando regular, registrar a movimentação e preservar a rastreabilidade."],
+160:["Como devem ser compreendidas as atualizações recentes de controle especial?","Cada ato deve ser lido pelo seu alcance específico, sem transferir regra de modelo físico para lista ou sistema eletrônico."],
+161:["Uma drogaria quer dispensar conferência humana porque o sistema bloqueia documentos incompatíveis. A medida é:","O sistema é apoio; a análise profissional e as demais barreiras permanecem necessárias."],
+162:["A adoção de formulário físico vigente basta para tornar a dispensação regular?","Não. Ainda é preciso conferir substância, requisitos da prescrição, quantidade, prazo e registrar corretamente a saída."],
+163:["O que demonstra que o estudo da Portaria 344 deve ser contínuo?","As listas e os instrumentos operacionais podem receber atualizações, exigindo consulta permanente à versão vigente."],
+164:["Por que tratar exigências de controlados como mera burocracia é um erro?","Receituário, retenção e registros são barreiras sanitárias contra uso indevido, erro e perda de rastreabilidade."],
+165:["Como o estabelecimento deve tratar a lista de substâncias da Portaria 344?","Como referência normativa dinâmica, consultada em sua versão vigente e incorporada à rotina operacional."],
+166:["Por que uma mudança de lista é também risco operacional?","Ela pode alterar documento, parametrização, fluxo de dispensação, estoque e treinamento necessários."],
+167:["Qual rotina documental é correta em controle especial?","Usar o documento aplicável, conferir sua regularidade, reter quando exigido e registrar a movimentação correspondente."],
+168:["Uma receita está bem preenchida, mas incompatível com a lista vigente. Como agir?","A regularidade formal não supera a incompatibilidade material; a dispensação deve aguardar solução adequada."],
+169:["O que a retenção da receita não substitui?","Ela não substitui escrituração, conciliação de estoque, guarda segura e análise farmacêutica."],
+170:["Por que o farmacêutico não pode corrigir unilateralmente elemento essencial de prescrição?","A correção unilateral altera documento de responsabilidade do prescritor e compromete validade e rastreabilidade."],
+171:["Em que momento a conformidade de uma dispensação controlada deve ser verificada?","Antes da entrega, com registro posterior adequado; não apenas em revisão mensal ou após uma ocorrência."],
+172:["Por que o controle especial exige barreiras sucessivas?","Porque falhas humanas ou sistêmicas podem ocorrer, e controles independentes reduzem a chance de erro alcançar o paciente."],
+173:["O que caracteriza a versão vigente de modelo físico de receituário?","Ela é a referência obrigatória para novas impressões conforme cronograma oficial, sem dispensar os demais requisitos."],
+174:["O adiamento de funcionalidade eletrônica do SNCR demonstra o quê?","Prazos eletrônicos e requisitos físicos podem ter alcances distintos e não devem ser confundidos."],
+175:["Uma unidade usa formulário físico vigente, mas mantém cadastro de listas desatualizado. Qual é a conclusão?","Há falha relevante de conformidade, pois formulário correto não compensa classificação interna incorreta."],
+176:["Quando a consulta a fontes oficiais deve ser reforçada?","Especialmente após publicação de atualização, diante de substância nova/remanejada ou quando há divergência entre sistemas."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?portaria344CasosGestaoLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.portaria344CasosGestaoLote=Object.keys(portaria344CasosGestaoLote).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

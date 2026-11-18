@@ -19526,6 +19526,41 @@ const errosEfarmacocineticaLote={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?errosEfarmacocineticaLote[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.errosEfarmacocineticaLote=Object.keys(errosEfarmacocineticaLote).map(Number);
 
+const calculosFarmaceuticosLoteUm={
+505:["Uma prescrição determina 7 mg/kg para paciente com 52 kg. Qual é a dose total, em mg?","Multiplica-se 7 por 52: 7 × 52 = 364 mg."],
+506:["Para paciente de 58 kg, foi prescrita dose de 8 mg/kg. Qual dose total deve ser calculada?","8 × 58 = 464 mg."],
+507:["Um medicamento foi prescrito a 9 mg/kg para pessoa com 64 kg. A dose total corresponde a:","9 × 64 = 576 mg."],
+508:["Em dose única de 10 mg/kg para paciente de 70 kg, qual quantidade total em mg é necessária?","10 × 70 = 700 mg."],
+509:["Paciente com 76 kg receberá 11 mg/kg de um fármaco. Qual é a dose total?","11 × 76 = 836 mg."],
+510:["Uma ampola contém 1 g de princípio ativo. Essa quantidade equivale a quantos miligramas?","1 g corresponde a 1.000 mg."],
+511:["Uma dose prescrita de 2 g equivale a qual valor em miligramas?","2 g × 1.000 = 2.000 mg."],
+512:["Um frasco contém 3 g de medicamento. Quantos mg estão presentes no frasco?","3 g correspondem a 3.000 mg."],
+513:["A prescrição registra 4 g de um medicamento. Qual é a conversão correta para miligramas?","4 g equivalem a 4.000 mg."],
+514:["Uma solução fornece 5 g de fármaco por dose. Isso corresponde a quantos miligramas?","5 g correspondem a 5.000 mg."],
+515:["Uma solução contém 500 mg em volume final de 10 mL. Qual sua concentração em mg/mL?","500 mg ÷ 10 mL = 50 mg/mL."],
+516:["Um frasco tem 600 mg de medicamento em 10 mL. A concentração é de:","600 ÷ 10 = 60 mg/mL."],
+517:["Uma preparação contém 700 mg em 10 mL. Qual concentração em mg/mL?","700 ÷ 10 = 70 mg/mL."],
+518:["Uma solução de 8 mL contém 640 mg de princípio ativo. Sua concentração é:","640 ÷ 8 = 80 mg/mL."],
+519:["Um volume de 10 mL contém 900 mg de medicamento. A concentração corresponde a:","900 ÷ 10 = 90 mg/mL."],
+520:["Uma solução apresenta concentração de 25 mg/mL. Para administrar 100 mg, qual volume deve ser aspirado?","Volume = dose ÷ concentração: 100 ÷ 25 = 4 mL."],
+521:["Para dose de 160 mg de medicamento disponível a 40 mg/mL, qual volume é necessário?","160 ÷ 40 = 4 mL."],
+522:["Um medicamento está disponível a 75 mg/mL e a dose prescrita é 300 mg. Qual volume deve ser administrado?","300 ÷ 75 = 4 mL."],
+523:["Em uma apresentação de 125 mg/mL, qual volume fornece dose de 500 mg?","500 ÷ 125 = 4 mL."],
+524:["A dose prescrita é 1.000 mg e a solução contém 250 mg/mL. Qual volume corresponde à dose?","1.000 ÷ 250 = 4 mL."],
+525:["Para preparar 100 mL de solução a 5% a partir de solução estoque a 20%, qual volume da solução estoque é necessário?","C1V1 = C2V2: 20 × V1 = 5 × 100; V1 = 25 mL."],
+526:["Qual volume de solução a 10% é necessário para preparar 100 mL de solução a 5%?","10 × V1 = 5 × 100; V1 = 50 mL."],
+527:["Para obter 300 mL de solução a 5% usando solução a 20%, quantos mL da solução concentrada são necessários?","20 × V1 = 5 × 300; V1 = 75 mL."],
+528:["Qual volume de solução a 25% é preciso para preparar 500 mL de solução a 5%?","25 × V1 = 5 × 500; V1 = 100 mL."],
+529:["Para preparar 500 mL de solução a 5% a partir de solução a 20%, qual volume da solução concentrada deve ser usado?","20 × V1 = 5 × 500; V1 = 125 mL."],
+530:["Infundir 500 mL em 240 minutos com equipo de 20 gotas/mL resulta em quantas gotas por minuto?","(500 × 20) ÷ 240 = 41,67 gotas/minuto."],
+531:["Uma infusão de 600 mL deve correr em 300 minutos com equipo de 20 gotas/mL. Qual gotejamento em gotas/minuto?","(600 × 20) ÷ 300 = 40 gotas/minuto."],
+532:["Com equipo de 20 gotas/mL, devem ser infundidos 350 mL em 180 minutos. O gotejamento é de aproximadamente:","(350 × 20) ÷ 180 = 38,89 gotas/minuto."],
+533:["Uma solução de 800 mL será infundida em 420 minutos com equipo de 20 gotas/mL. Qual gotejamento aproximado?","(800 × 20) ÷ 420 = 38,1 gotas/minuto."],
+534:["Para infundir 450 mL em 240 minutos com equipo de 20 gotas/mL, o gotejamento corresponde a:","(450 × 20) ÷ 240 = 37,5 gotas/minuto."]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='farmacia'?calculosFarmaceuticosLoteUm[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.calculosFarmaceuticosLoteUm=Object.keys(calculosFarmaceuticosLoteUm).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

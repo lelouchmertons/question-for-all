@@ -19989,6 +19989,41 @@ const inglesGramaticaAplicadaLoteDois={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='ingles'?inglesGramaticaAplicadaLoteDois[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.inglesGramaticaAplicadaLoteDois=Object.keys(inglesGramaticaAplicadaLoteDois).map(Number);
 
+// Reforma editorial de Língua Inglesa — lote 7: reescrita, inferência e relações lógico-textuais.
+const inglesReescritaAvancadaLoteUm={
+  251:[`A review board postponed its analysis because the submitted report omitted essential information. Select the sentence that preserves both the cause and the consequence.`,`The selected wording preserves the causal chain: the report’s incompleteness caused the postponement. It does not invert cause and effect or claim that the report was accurate.`],
+  252:[`A report does not contain enough essential information for a conclusive examination. Which option expresses that limitation without changing the intended meaning?`,`“Incomplete enough to require further review” preserves the idea that the deficiency in the report made additional examination necessary.`],
+  253:[`Choose the option that accurately paraphrases the following relation: a review was postponed because the report lacked essential information.`,`The correct sentence keeps both propositions and their causal link. The review is postponed as a result of the report’s missing information.`],
+  254:[`Which counterfactual sentence correctly restates the idea that the report’s incompleteness caused the postponement?`,`The past perfect conditional “Had the report been complete” correctly imagines the opposite past condition and its different past result.`],
+  255:[`In a formal summary, select the nominalized paraphrase that preserves the causal relation between an incomplete report and a postponed review.`,`The noun phrase “the report’s incompleteness” correctly functions as the cause of “the postponement of the review.”`],
+
+  256:[`A technical study produced consistent findings even though its sample was limited. Which option preserves this concessive relation?`,`“Despite” introduces a concession: the limited sample is acknowledged, but consistency of the findings is maintained.`],
+  257:[`Select the sentence that restates a concessive relation between a limited sample and consistent findings.`,`“Although” introduces the limiting circumstance without making it the cause of inconsistent findings. The findings remain consistent.`],
+  258:[`Which sentence preserves the idea that consistency was achieved notwithstanding the small size of the sample?`,`“Even with” maintains the concessive meaning: the limited sample exists, yet the findings are consistent.`],
+  259:[`A report must state that the sample was limited but that the results remained consistent. Which option correctly uses a contrastive connector?`,`“Nevertheless” signals that the second clause holds despite the limitation stated in the first clause.`],
+  260:[`Choose the reformulation that most accurately expresses that limited sampling did not block the consistency of the findings.`,`The sentence explicitly preserves the non-preventive relation: limited sampling did not prevent consistent findings.`],
+
+  261:[`A policy was revised as a direct result of compelling evidence. Which option preserves the cause-and-consequence relation?`,`“Consequently” signals the result of the compelling evidence: the policy was revised because the evidence justified that action.`],
+  262:[`Select the sentence that makes explicit why a policy revision occurred.`,`The causal clause introduced by “because” correctly identifies compelling evidence as the reason for the revision.`],
+  263:[`Which nominalized formulation accurately restates that compelling evidence caused a policy revision?`,`The phrase “led to” retains the causal relationship while changing the verbal structure to a nominalized form.`],
+  264:[`Choose the option that correctly begins with the cause and then presents the policy outcome.`,`“Because the evidence was compelling” establishes the reason before stating the resulting revision.`],
+  265:[`In a formal chronology, which option preserves the fact that a policy revision followed compelling evidence?`,`“Followed” expresses temporal and causal sequence here: the evidence preceded and justified the policy revision.`],
+
+  266:[`A database update made recent records easier to access. Select the version that preserves the referential link between “this change” and the update.`,`“This change” correctly refers back to the database update, maintaining cohesion and the causal link to improved access.`],
+  267:[`Which gerund-based sentence accurately paraphrases the effect of updating a database?`,`“Updating the database” functions as the activity that improved access to recent records; no reversal of the relation occurs.`],
+  268:[`Select the option that preserves the sequence in which a database update preceded easier access to recent records.`,`The phrase “after the update” correctly locates improved access after the database update.`],
+  269:[`A technical report needs a concise nominal formulation of the effect of a database update. Which option is correct?`,`“The database update” is the cause, and “facilitated access” is its effect. “Current information” preserves the reference to recent records.`],
+  270:[`Which sentence correctly foregrounds the result, while preserving that it was produced by a database update?`,`The passive-like result formulation keeps the causal direction: improved access resulted from the update, not the reverse.`],
+
+  271:[`A committee considered the evidence and then rejected a proposal. Which sentence preserves this order and agency?`,`The chosen sentence retains the committee as the agent, the proposal as the object rejected, and the evidentiary review as preceding the decision.`],
+  272:[`Select the passive-voice version that preserves the meaning of: “The committee rejected the proposal after reviewing the evidence.”`,`The passive form correctly changes the focus to the proposal while retaining the committee as agent and the prior review of evidence.`],
+  273:[`Which option preserves the original meaning while fronting the participial clause about the evidentiary review?`,`The introductory participial phrase “After reviewing the evidence” still modifies the committee’s decision and preserves the event order.`],
+  274:[`Choose the sentence that accurately states the temporal sequence between review of evidence and rejection of a proposal.`,`The wording correctly makes review of the evidence prior to the committee’s rejection, without changing the substantive outcome.`],
+  275:[`In a formal report, which nominalized sentence preserves the conclusion that a proposal was rejected after evidentiary review?`,`The expression “followed the committee’s review” retains the sequence and the committee’s role in examining the evidence before rejection.`]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='ingles'?inglesReescritaAvancadaLoteUm[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.inglesReescritaAvancadaLoteUm=Object.keys(inglesReescritaAvancadaLoteUm).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

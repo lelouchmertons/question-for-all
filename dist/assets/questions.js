@@ -19834,6 +19834,7 @@ const clinicaFarmaceuticaLoteDois={855:"O que avaliar antes de dispensar anticoa
 questionBank.questions=questionBank.questions.map(q=>q.subjectId==='farmacia'&&clinicaFarmaceuticaLoteDois[q.number]?{...q,stem:clinicaFarmaceuticaLoteDois[q.number]}:q);
 questionBank.review.clinicaFarmaceuticaLoteDois=Object.keys(clinicaFarmaceuticaLoteDois).map(Number);
 questionBank.review.farmaciaPenultimoLoteAuditado=questionBank.questions.filter(q=>q.subjectId==='farmacia'&&q.number>=905&&q.number<=954).map(q=>q.number);
+questionBank.review.farmaciaLoteFinalAuditado=questionBank.questions.filter(q=>q.subjectId==='farmacia'&&q.number>=955&&q.number<=1000).map(q=>q.number);
 
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [

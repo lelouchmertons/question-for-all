@@ -20024,6 +20024,41 @@ const inglesReescritaAvancadaLoteUm={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='ingles'?inglesReescritaAvancadaLoteUm[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.inglesReescritaAvancadaLoteUm=Object.keys(inglesReescritaAvancadaLoteUm).map(Number);
 
+// Reforma editorial de Língua Inglesa — lote 8: inferência crítica e linguagem de evidência.
+const inglesReescritaAvancadaLoteDois={
+  276:[`A preliminary dataset has not yet undergone complete validation. Select the option that expresses the appropriate degree of caution in interpreting its results.`,`The correct sentence explicitly links cautious interpretation to the preliminary character of the data, without rejecting the results or presenting them as final.`],
+  277:[`Which concise statement preserves the idea that preliminary data should not receive definitive interpretation?`,`The wording retains the modal force of the original claim: preliminary data call for caution, not automatic acceptance or dismissal.`],
+  278:[`Choose the option that accurately restates the methodological implication of results based on preliminary data.`,`The selected option preserves the relation between preliminary status and the need for cautious interpretation.`],
+  279:[`A research summary must explain why its conclusions remain tentative. Which sentence correctly expresses that causal relation?`,`“Because the data are preliminary” supplies the reason why firm conclusions cannot yet be drawn.`],
+  280:[`Select the nominalized formulation that preserves the limitation imposed by preliminary data.`,`The “preliminary nature” of the data is correctly identified as a limitation on certainty, not as proof that the results are false.`],
+
+  281:[`An observational study identifies a correlation between two variables. Which statement best respects the limits of that finding?`,`An association may be informative, but it does not by itself establish a causal relation. The answer preserves that essential methodological distinction.`],
+  282:[`Choose the option that correctly distinguishes observed association from proof of causation.`,`The wording makes clear that correlation or association does not necessarily prove causation; additional design and evidence may be required.`],
+  283:[`Which option correctly reports a finding that supports a possible association but not a causal conclusion?`,`“Suggest a possible association” accurately calibrates the claim and avoids overstating what the data can establish.`],
+  284:[`Select the sentence that states the appropriate inferential limit of an association described in a study.`,`The sentence correctly states that causation cannot be inferred solely from association, preserving the distinction between the two concepts.`],
+  285:[`In an evidence review, which formulation accurately characterizes data compatible with association but insufficient for causal proof?`,`The correct option maintains both parts of the evidence claim: compatibility with association and insufficiency for causation.`],
+
+  286:[`An agency discovered an error after, and not before, an audit. Which inversion correctly emphasizes this temporal restriction?`,`The inversion after “Only after” is grammatical and highlights that the audit preceded the agency’s identification of the error.`],
+  287:[`Choose the non-inverted sentence that preserves the sequence: audit first, identification later.`,`The phrase “only after the audit” accurately keeps the temporal restriction without changing the agent or event order.`],
+  288:[`Which formulation accurately states the temporal relation between an audit and the identification of an error?`,`The correct sentence directly establishes that the audit occurred before the agency identified the error.`],
+  289:[`Select the cleft construction that emphasizes when the agency identified the error.`,`The structure “It was after the audit that ...” correctly focuses the timing while preserving the fact that identification occurred later.`],
+  290:[`In a formal chronology, which passive formulation preserves that an audit came before the discovery of an error?`,`“Following the audit” correctly places the identification of the error after the audit, without claiming that the audit itself made the error.`],
+
+  291:[`A quantitative analysis reports statistical significance. Which statement correctly distinguishes this result from practical importance?`,`Statistical significance does not, on its own, establish that an effect is large, useful, or practically important.`],
+  292:[`Select the option that accurately states a limitation of statistical significance as a decision criterion.`,`A significance test alone does not measure practical relevance; effect size, context, consequences, and uncertainty can also matter.`],
+  293:[`Which sentence correctly describes a result that is statistically significant but may have limited practical impact?`,`The correct option preserves the coexistence of statistical significance and limited practical importance.`],
+  294:[`Choose the statement that correctly explains why decision-makers should not rely solely on a significance test.`,`Practical importance requires more than the test result; it depends on the scale and context of the effect as well.`],
+  295:[`Which formulation most accurately relates statistical significance and practical relevance?`,`The concepts may inform each other, but they are distinct. A statistically significant estimate can still have little practical consequence.`],
+
+  296:[`A public-policy brief argues that evidence alone is insufficient for sustained effectiveness. Which option preserves its integrated approach?`,`The answer retains all three complementary elements—evidence, transparency, and periodic evaluation—as parts of effective policy.`],
+  297:[`Choose the sentence that correctly interprets evidence, transparency, and evaluation in a policy framework.`,`The three elements are presented as complementary rather than mutually exclusive or interchangeable.`],
+  298:[`In the policy framework described, which conclusion about periodic evaluation is warranted?`,`Periodic evaluation is presented as part of an effective approach, allowing policy to be reviewed as evidence and conditions change.`],
+  299:[`Select the option that correctly identifies the role of transparency in an effective policy design.`,`Transparency is treated as one component of effective policy, alongside evidence and periodic evaluation.`],
+  300:[`Which synthesis best captures the policy brief’s central recommendation?`,`The brief supports integrating several elements in policy design instead of treating any one element as sufficient by itself.`]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='ingles'?inglesReescritaAvancadaLoteDois[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.inglesReescritaAvancadaLoteDois=Object.keys(inglesReescritaAvancadaLoteDois).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

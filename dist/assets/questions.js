@@ -19954,6 +19954,41 @@ const inglesGramaticaAplicadaLoteUm={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='ingles'?inglesGramaticaAplicadaLoteUm[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.inglesGramaticaAplicadaLoteUm=Object.keys(inglesGramaticaAplicadaLoteUm).map(Number);
 
+// Reforma editorial de Língua Inglesa — lote 6: precisão gramatical e vocabulário em documentos técnicos.
+const inglesGramaticaAplicadaLoteDois={
+  226:[`A maintenance report must describe the way in which a device performs under ordinary operating conditions. Select the grammatically correct wording.`,`The verb “operates” is modified by the adverb “reliably.” An adjective such as “reliable” would describe a noun, not the action of operating.`],
+  227:[`In an audit trail, which option correctly modifies the action of documenting an analysis?`,`“Carefully” is an adverb and correctly modifies the past participle “documented,” indicating how the analysis was documented.`],
+  228:[`Choose the option that correctly describes the degree of effectiveness of a newly adopted method.`,`“Highly” is an adverb modifying the adjective “effective.” The construction is appropriate when expressing a high degree of effectiveness.`],
+  229:[`A crisis-response memorandum describes the team’s reaction to an alert. Which sentence is grammatically correct?`,`“Quickly” is an adverb modifying the verb “responded.” It describes the manner in which the team acted.`],
+  230:[`Select the sentence suitable for reporting the result of a quantitative study.`,`“Statistically significant” is an adjective phrase functioning after the linking verb “was,” characterizing the result rather than an action.`],
+
+  231:[`A report acknowledges a methodological limitation while preserving its main finding. Which connector produces the correct logical relation?`,`“Although” introduces a concessive clause: the small sample is acknowledged, but it does not prevent the pattern from being clear.`],
+  232:[`Select the connector that correctly indicates a conclusion or consequence in an inspection record.`,`“Therefore” marks a result: because the record was incomplete, a review followed. The semicolon appropriately separates the related independent clauses.`],
+  233:[`In a laboratory incident report, which sentence correctly introduces the reason for repeating a test?`,`“Because” introduces the cause of the repeated test: the result was inconsistent. The connector establishes a causal, not concessive, relation.`],
+  234:[`Choose the sentence that correctly contrasts the validity of data with a limitation on their interpretation.`,`“However” signals contrast between two valid propositions: the data were valid, yet their interpretation was limited.`],
+  235:[`Which connector appropriately adds an additional verification step to a quality-control report?`,`“In addition” introduces supplementary information. It adds the check of the original files to actions already mentioned.`],
+
+  236:[`A storage log records an action completed in the past with relevance to the present. Select the correct passive construction.`,`The present perfect passive “have been stored” is formed with have + been + past participle and links the completed storage action to the present record.`],
+  237:[`Which option correctly reports an ongoing institutional review taking place this week?`,`The present continuous passive “is being reviewed” indicates that the policy is currently undergoing review.`],
+  238:[`A project schedule sets a deadline for a future completion. Which passive form is correct?`,`The future perfect passive “will have been checked” expresses that the checking will be completed by the stated future time.`],
+  239:[`Choose the grammatically correct sentence for an annual report describing a completed past implementation.`,`The simple past passive “was introduced” correctly reports that the system came into use last year; the agent need not be named.`],
+  240:[`Which sentence correctly places data collection before a later meeting in a past narrative?`,`The past perfect passive “had been collected” marks data collection as completed before the subsequent meeting.`],
+
+  241:[`In a procedural guideline, select the conditional sentence that expresses a likely future consequence.`,`The first conditional uses present simple in the if-clause and “will” in the main clause: if the evidence is sufficient, the case will proceed.`],
+  242:[`Choose the sentence that expresses a hypothetical present or future situation contrary to current expectation.`,`The second conditional uses past subjunctive-like “were” in the if-clause and “would” in the result clause to express a hypothetical situation.`],
+  243:[`Which option correctly refers to an unreal past condition and its past consequence?`,`The third conditional uses past perfect in the if-clause and “would have + past participle” in the result clause.`],
+  244:[`A standing procedure describes what routinely happens whenever records are lost. Select the correct conditional construction.`,`The zero conditional uses present forms in both clauses to state a general procedure or regular consequence.`],
+  245:[`Which sentence correctly uses “were” in a formal hypothetical statement?`,`In formal English, “were” may be used with “I” in an unreal conditional: “If I were responsible, I would request another review.”`],
+
+  246:[`In a validation protocol, what does “baseline” mean when measurements are compared with an earlier condition?`,`A baseline is the initial reference point against which later observations, performance, or changes are assessed.`],
+  247:[`A compliance notice says that a step is “mandatory.” Which interpretation is correct?`,`A mandatory requirement is compulsory: it must be followed. It is not optional or merely recommended.`],
+  248:[`In an expert report, to “assess” a result is to:`,`To assess is to evaluate a result by considering relevant criteria or evidence. It does not mean merely record, ignore, or reproduce it.`],
+  249:[`A study identifies a “limitation” in its methodology. What does the term indicate?`,`A limitation is a factor that restricts the scope, strength, or interpretation of a study’s conclusions.`],
+  250:[`In source evaluation, a “reliable” source is one that:`,`A reliable source is dependable or trustworthy because its information and methods can be relied upon.`]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='ingles'?inglesGramaticaAplicadaLoteDois[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.inglesGramaticaAplicadaLoteDois=Object.keys(inglesGramaticaAplicadaLoteDois).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

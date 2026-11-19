@@ -19919,6 +19919,41 @@ const inglesCoesaoLoteDois={
 questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='ingles'?inglesCoesaoLoteDois[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
 questionBank.review.inglesCoesaoLoteDois=Object.keys(inglesCoesaoLoteDois).map(Number);
 
+// Reforma editorial de Língua Inglesa — lote 5: gramática aplicada à redação institucional.
+const inglesGramaticaAplicadaLoteUm={
+  201:[`A regulatory agency is preparing a notice for international circulation. Which sentence uses articles correctly in formal written English?`,`“An official notice” introduces a singular countable noun for the first time, while “the agency” refers to the institution already identifiable in context.`],
+  202:[`Choose the sentence whose use of articles is appropriate for a technical report intended for external readers.`,`The indefinite article in “a relevant change” introduces one non-specified change. The noun is singular and countable, so an article is required.`],
+  203:[`In a laboratory safety manual, select the option that follows standard English article use.`,`The equipment is a specific item or set of items under discussion; therefore, “the equipment” is appropriate. The passive form then correctly states the prior inspection.`],
+  204:[`Which sentence is grammatically suitable for an audit summary with respect to article use?`,`“An auditor” introduces one member of that professional category, and “the records” identifies the documents examined in the audit context.`],
+  205:[`Select the sentence that uses articles correctly in a public-information notice.`,`“The information” is correct because information is an uncountable noun and the context identifies the material made available online.`],
+
+  206:[`A research team is qualifying the evidential basis for a claim. Which option uses quantity expressions correctly?`,`Evidence is normally uncountable in this use; “little evidence” correctly expresses a small amount. It cannot take the plural marker used with countable nouns.`],
+  207:[`In a laboratory report, choose the grammatically correct sentence concerning countable nouns.`,`Samples are countable plural items, so “several samples were analyzed” uses both a suitable determiner and plural verb agreement.`],
+  208:[`Which sentence correctly treats “equipment” in a laboratory inventory?`,`Equipment is uncountable in standard English. “Much equipment” is grammatically possible in formal usage; “equipments” would not be standard here.`],
+  209:[`After a document revision, which sentence expresses the comparison correctly?`,`Errors are countable, and “fewer” is used with countable plural nouns. The sentence correctly compares the number of errors before and after revision.`],
+  210:[`Select the option appropriate for a project-update report regarding uncountable nouns.`,`Information is uncountable; “useful information” requires no plural ending or plural determiner. The singular verb agrees with the team, treated as a unit.`],
+
+  211:[`Which option uses a restrictive relative clause appropriately in a formal notice?`,`The clause “that was published yesterday” identifies which report is meant. No commas are used because the information is necessary to identify the report.`],
+  212:[`Choose the sentence that correctly uses a relative pronoun to identify a person.`,`“Who” is the standard relative pronoun for a person functioning as the subject of the relative clause: the officer signed the document.`],
+  213:[`In an accreditation report, which sentence uses the relative adverb correctly?`,`“Where” refers to the place in which the tests were conducted. It appropriately links the laboratory to the action performed there.`],
+  214:[`Select the option that correctly punctuates and uses a non-restrictive relative clause.`,`The commas show that “which was revised” adds supplementary information about an already identified procedure; “which” is appropriate in this non-restrictive clause.`],
+  215:[`Which sentence correctly uses the possessive relative pronoun in a data-governance context?`,`“Whose” expresses possession: the source belongs to, or is associated with, the data. It can refer to things as well as people.`],
+
+  216:[`In a quality-control record, choose the sentence that correctly follows the verb “decide.”`,`“Decide” is followed by the infinitive when it expresses a choice or plan to perform an action: “decided to repeat.”`],
+  217:[`Which instruction is grammatically appropriate for a document-control procedure?`,`“Avoid” is followed by a gerund when the action itself is the object to be avoided. Thus, “avoid using” is the standard construction.`],
+  218:[`Select the sentence that correctly follows the verb “plan” in an institutional announcement.`,`“Plan” is followed by the infinitive to express an intended future action: “plans to publish.”`],
+  219:[`In a laboratory debriefing, which option correctly reports a recommendation?`,`“Suggest” can be followed by a gerund when proposing an action. “Suggested reviewing the sample” states the recommendation without changing the meaning.`],
+  220:[`Choose the formulation suitable for a forensic preservation protocol.`,`The extraposed-subject pattern “It is important to + infinitive” is standard for expressing the importance of an action.`],
+
+  221:[`Which sentence has correct subject–verb agreement in a technical report?`,`The head of the subject is “results,” not “test.” Because “results” is plural, the verb must be “are.”`],
+  222:[`Choose the sentence with correct agreement after the distributive determiner “each.”`,`“Each participant” is grammatically singular, so it requires the singular verb “receives,” even though the statement concerns multiple participants.`],
+  223:[`In a committee-minute entry, which option reflects standard subject–verb agreement?`,`When “committee” is treated as a single decision-making body in formal American-style usage, it takes the singular verb “has.”`],
+  224:[`Select the sentence that correctly agrees with the correlative expression “neither ... nor.”`,`With “neither option,” the subject is singular, and “meets” correctly agrees with “option.” The sentence states that both alternatives fail the requirement.`],
+  225:[`Which sentence uses agreement correctly with “a number of”?`,`“A number of” is followed by a plural noun and normally takes a plural verb: “A number of records were missing.” This differs from “the number of,” which takes a singular verb.`]
+};
+questionBank.questions=questionBank.questions.map(q=>{const i=q.subjectId==='ingles'?inglesGramaticaAplicadaLoteUm[q.number]:null;return i?{...q,stem:i[0],explanation:i[1]}:q;});
+questionBank.review.inglesGramaticaAplicadaLoteUm=Object.keys(inglesGramaticaAplicadaLoteUm).map(Number);
+
 // Direito Penal — lote 5 (201–250): revisão aplicada e conclusão da matéria.
 const direitoPenalLoteCinco = [
   [201,"Teoria do delito","Lei penal no tempo","Se lei posterior deixa de considerar criminosa determinada conduta, ela deve alcançar os fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. Trata-se de:","abolitio criminis.",["novatio legis in pejus.","ultratividade de lei mais gravosa.","erro de proibição.","crime impossível."],"A abolitio criminis elimina a incriminação e retroage para beneficiar o agente, alcançando inclusive condenações definitivas quanto aos efeitos penais."],

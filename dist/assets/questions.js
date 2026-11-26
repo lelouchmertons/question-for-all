@@ -23424,6 +23424,9 @@ questionBank.questions=questionBank.questions.map(question=>{
   return {...question,stem,explanation:`${question.explanation} ${complemento}`,answer,options:textos.map((text,index)=>({letter:letrasAlternativas[index],text}))};
 });
 questionBank.review.criminalisticaReworkLoteQuatroCompleto=Array.from({length:50},(_,index)=>index+151);
+const criminalisticaLoteCincoRespostas=["D","A","E","B","C","B","D","A","E","C","E","C","B","A","D","A","D","C","E","B","C","E","A","D","B","D","B","E","C","A","B","D","E","A","C","E","A","C","B","D","D","C","A","E","B","A","E","B","D","C"];
+questionBank.questions=questionBank.questions.map(q=>{if(q.subjectId!=="criminalistica"||q.number<201||q.number>250)return q;const answer=criminalisticaLoteCincoRespostas[q.number-201],correct=q.options.find(o=>o.letter===q.answer).text,rest=q.options.filter(o=>o.letter!==q.answer).map(o=>o.text);rest.splice(letrasAlternativas.indexOf(answer),0,correct);const areas={"Incêndio":"origem, causa e preservação","Explosões":"segurança, fragmentos e dinâmica","Acidente de trânsito":"reconstrução viária","Cadeia de custódia":"rastreabilidade e integridade"};const area=areas[q.topic]||"análise integrada de local";return {...q,stem:`Em cenário de ${area}, ${q.stem.charAt(0).toLowerCase()+q.stem.slice(1)}`,explanation:`${q.explanation} A conclusão deve permanecer vinculada ao contexto, aos registros e aos limites do material examinado.`,answer,options:rest.map((text,index)=>({letter:letrasAlternativas[index],text}))};});
+questionBank.review.criminalisticaReworkLoteCincoCompleto=Array.from({length:50},(_,i)=>i+201);
 
 // Mantém a numeração sequencial também na ordem física do banco, inclusive quando
 // lotes de uma mesma matéria foram publicados em momentos diferentes.

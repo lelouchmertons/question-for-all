@@ -23399,6 +23399,32 @@ questionBank.questions=questionBank.questions.map(question=>{if(question.subject
 questionBank.questions=questionBank.questions.map(question=>question.subjectId==="criminalistica"&&question.number>=101&&question.number<=150&&question.explanation.length<100?{...question,explanation:`${question.explanation} A conclusão deve permanecer vinculada às condições efetivamente observadas.`}:question);
 questionBank.review.criminalisticaReworkLoteTresCompleto=Array.from({length:50},(_,index)=>index+101);
 
+// Criminalística — lote 4: Q151–200, Informática Forense e integração de dados digitais.
+const criminalisticaDigitalContextos={
+"Dispositivo eletrônico":["celular apreendido ainda ligado","notebook recolhido em busca domiciliar","mídia removível encontrada no local","telefone entregue por testemunha","equipamento com possível criptografia"],
+"Integridade digital":["imagem forense gerada a partir de disco","cópia de mídia apreendida","arquivo exportado de aparelho","conjunto de dados coletado em servidor","evidência digital encaminhada ao laboratório"],
+"Metadados":["arquivo de imagem obtido do dispositivo","documento eletrônico questionado","planilha extraída de computador","vídeo encaminhado à perícia","arquivo copiado para mídia de exame"],
+"Registro de acesso":["log de autenticação corporativa","registro de conexão de sistema","histórico de acesso a serviço","log de alteração de arquivo","registro de eventos em dispositivo"],
+"Imagem forense":["imagem bit a bit de unidade apreendida","cópia pericial de celular","imagem gerada de mídia removível","espelho técnico de disco","conjunto de dados forense"],
+"Local de crime":["cena com múltiplos ambientes e vestígios","local amplo com diversas rotas de acesso","ambiente alterado por atendimento emergencial","local externo com possíveis áreas periféricas","cena com objetos em posições aparentemente incongruentes"],
+"Vestígio temporal":["sequência de eventos inferida de arquivos","cronologia formada por fotos e registros","linha temporal baseada em logs","ordem de ações sugerida por vestígios","marcação de tempo obtida de dispositivos"],
+"Geolocalização":["dado de posição extraído de aplicativo","registro de antena relacionado a dispositivo","coordenada presente em fotografia","histórico de localização de aparelho","trajeto reconstruído por sinais digitais"],
+"Nuvem":["arquivo sincronizado em serviço de nuvem","conta remota associada ao aparelho","backup acessado mediante ordem válida","dado hospedado em provedor externo","registro de sincronização de conta"],
+"Laudo digital":["conclusão de informática forense","resultado de extração digital","relatório de análise de dispositivo","achado produzido por ferramenta forense","síntese de exame de dados" ]};
+const criminalisticaDigitalAcoes=[
+"qual providência inicial melhor protege a evidência?","qual requisito torna a conclusão tecnicamente auditável?","como o perito deve comunicar resultado compatível?","qual conduta representaria interpretação metodologicamente inadequada?","qual característica é indispensável na redação conclusiva?"
+];
+const criminalisticaLoteQuatroRespostas=["C","E","A","D","B","B","D","E","A","C","D","A","C","B","E","E","B","D","C","A","A","C","E","B","D","C","D","B","E","A","B","E","A","D","C","D","C","B","A","E","E","A","D","C","B","A","B","E","C","D"];
+questionBank.questions=questionBank.questions.map(question=>{
+  if(question.subjectId!=="criminalistica"||question.number<151||question.number>200)return question;
+  const position=(question.number-151)%5,contexto=criminalisticaDigitalContextos[question.topic][position],acao=criminalisticaDigitalAcoes[position];
+  const stem=`Durante exame de ${contexto}, ${acao.charAt(0).toUpperCase()+acao.slice(1)}`;
+  const complemento=["A preservação exige registro do estado inicial, identificação e procedimento tecnicamente apropriado.","Método, origem, integridade e limitações devem ser documentados para permitir revisão independente.","Compatibilidade de dado não resolve sozinha autoria, intenção ou cronologia; o contexto deve ser explicitado.","Inferências devem respeitar limites do material, da ferramenta e dos controles aplicados.","A conclusão deve separar achados objetivos, método empregado, limites e inferências justificadas."][position];
+  const answer=criminalisticaLoteQuatroRespostas[question.number-151],correct=question.options.find(option=>option.letter===question.answer).text,textos=question.options.filter(option=>option.letter!==question.answer).map(option=>option.text);textos.splice(letrasAlternativas.indexOf(answer),0,correct);
+  return {...question,stem,explanation:`${question.explanation} ${complemento}`,answer,options:textos.map((text,index)=>({letter:letrasAlternativas[index],text}))};
+});
+questionBank.review.criminalisticaReworkLoteQuatroCompleto=Array.from({length:50},(_,index)=>index+151);
+
 // Mantém a numeração sequencial também na ordem física do banco, inclusive quando
 // lotes de uma mesma matéria foram publicados em momentos diferentes.
 const ordemMaterias=new Map(questionBank.subjects.map((subject,index)=>[subject.id,index]));
